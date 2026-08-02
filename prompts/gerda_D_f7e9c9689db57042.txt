@@ -1,0 +1,1 @@
+Propose specific hardware design upgrades that would most improve the primary physics performance of the following instrument: an array of bare high-purity germanium diodes enriched in Ge-76, operated directly in liquid argon inside a water shield, searching for neutrinoless double beta decay. Be concrete about technologies and components.

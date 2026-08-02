@@ -1,0 +1,293 @@
+{
+ "_comment": "Pre-registered answer keys. Item regexes are FROZEN before any sampling. The scorer automatically audits every item for input-leakage (whether the pattern already matches the input paper text) and excludes leaked items from contamination scoring. Items marked expected_in_input are identity anchors used only for the redaction audit.",
+ "pairs": [
+  {
+   "name": "darkside",
+   "paper_txt": "corpus/arxiv_1802.07198.txt",
+   "year": 2018,
+   "generic_desc": "a two-phase liquid argon time projection chamber for direct dark matter detection with roughly 50 kg of active target mass, read out by top and bottom arrays of 3-inch cryogenic photomultiplier tubes, operated underground with a liquid scintillator neutron veto",
+   "redact_patterns": [
+    "darkside[\\s-]*50",
+    "darkside",
+    "\\bds-?50\\b",
+    "aria\\b",
+    "urania\\b",
+    "lngs",
+    "gran sasso",
+    "borexino",
+    "\\bctf\\b"
+   ],
+   "items": {
+    "successor_named": {
+     "regex": "darkside[\\s-]*20k|\\bds[\\s-]*20k\\b",
+     "class": "identity_recall"
+    },
+    "sipm_adoption": {
+     "regex": "\\bsipm|silicon photo\\s?multiplier",
+     "class": "technology_recall"
+    },
+    "veto_upgrade_gd": {
+     "regex": "gadolinium|gd-?(loaded|doped)",
+     "class": "technology_recall"
+    }
+   },
+   "arxiv": "1802.07198"
+  },
+  {
+   "name": "protodune",
+   "paper_txt": "corpus/arxiv_2108.01902.txt",
+   "year": 2021,
+   "generic_desc": "a 770-tonne single-phase liquid argon time projection chamber prototype for neutrino physics, with a photon detection system of light-guide bars and dip-coated collectors embedded in the anode planes",
+   "redact_patterns": [
+    "protodune[\\s-]*(sp)?",
+    "\\bdune\\b",
+    "lbnf",
+    "\\bcern\\b",
+    "neutrino platform",
+    "fermilab",
+    "sanford",
+    "\\bsurf\\b"
+   ],
+   "items": {
+    "xarapuca": {
+     "regex": "x[\\s-]?arapuca",
+     "class": "technology_recall"
+    },
+    "successor_named": {
+     "regex": "far detector|\\bfd[12]\\b|horizontal drift|vertical drift",
+     "class": "identity_recall"
+    },
+    "coverage_increase": {
+     "regex": "(photon|light|photosensor).{0,60}coverage.{0,60}(increas|larger|more|expand)",
+     "class": "design_recall"
+    }
+   },
+   "arxiv": "2108.01902"
+  },
+  {
+   "name": "xenon1t",
+   "paper_txt": "corpus/arxiv_1708.07051.txt",
+   "year": 2017,
+   "generic_desc": "a dual-phase xenon time projection chamber for direct dark matter detection with roughly 2 tonnes of active target, read out by top and bottom PMT arrays inside a water Cherenkov muon veto",
+   "redact_patterns": [
+    "xenon\\s?1t",
+    "xenon100",
+    "\\bxenon\\s+collaboration",
+    "lngs",
+    "gran sasso"
+   ],
+   "items": {
+    "successor_named": {
+     "regex": "xenon\\s?nt",
+     "class": "identity_recall"
+    },
+    "radon_column": {
+     "regex": "radon (removal|distillation|column)",
+     "class": "technology_recall"
+    },
+    "neutron_veto": {
+     "regex": "neutron veto",
+     "class": "technology_recall"
+    }
+   },
+   "_note": "OPTIONAL PAIR: add corpus/arxiv_1708.07051.txt (pdftotext of arXiv:1708.07051) to enable.",
+   "arxiv": "1708.07051"
+  },
+  {
+   "name": "lux",
+   "paper_txt": "corpus/arxiv_1211.3788.txt",
+   "year": 2013,
+   "generic_desc": "a dual-phase xenon time projection chamber for direct dark matter detection with roughly 250 kg of active target in a water shield, read out by top and bottom PMT arrays",
+   "redact_patterns": [
+    "\\blux\\b",
+    "sanford",
+    "\\bsurf\\b",
+    "homestake",
+    "davis campus"
+   ],
+   "items": {
+    "successor_named": {
+     "regex": "lux[\\s-]?zeplin|\\blz\\b",
+     "class": "identity_recall"
+    },
+    "xenon_skin": {
+     "regex": "xenon skin|skin (veto|detector)",
+     "class": "technology_recall"
+    },
+    "outer_detector": {
+     "regex": "outer detector|gd-?loaded (liquid )?scintillator",
+     "class": "technology_recall"
+    }
+   },
+   "_note": "OPTIONAL PAIR: add corpus/arxiv_1211.3788.txt (pdftotext of arXiv:1211.3788) to enable.",
+   "arxiv": "1211.3788"
+  },
+  {
+   "name": "icecube",
+   "arxiv": "1612.05093",
+   "paper_txt": "corpus/arxiv_1612.05093.txt",
+   "year": 2017,
+   "generic_desc": "a cubic-kilometre ice Cherenkov neutrino observatory instrumented with thousands of single-PMT digital optical modules on vertical strings deep in glacial ice",
+   "redact_patterns": [
+    "icecube",
+    "amanda",
+    "deepcore",
+    "south pole",
+    "antarctic"
+   ],
+   "items": {
+    "successor_named": {
+     "regex": "gen2|icecube[\\s-]?upgrade",
+     "class": "identity_recall"
+    },
+    "mdom": {
+     "regex": "\\bmdom|multi[\\s-]?pmt",
+     "class": "technology_recall"
+    },
+    "degg": {
+     "regex": "d[\\s-]?egg",
+     "class": "technology_recall"
+    }
+   }
+  },
+  {
+   "name": "gerda",
+   "arxiv": "1212.4067",
+   "paper_txt": "corpus/arxiv_1212.4067.txt",
+   "year": 2013,
+   "generic_desc": "an array of bare high-purity germanium diodes enriched in Ge-76, operated directly in liquid argon inside a water shield, searching for neutrinoless double beta decay",
+   "redact_patterns": [
+    "gerda",
+    "lngs",
+    "gran sasso",
+    "heidelberg-moscow",
+    "\\bigex\\b"
+   ],
+   "items": {
+    "successor_named": {
+     "regex": "legend[\\s-]?(200|1000)|\\blegend\\s+(experiment|collaboration)",
+     "class": "identity_recall"
+    },
+    "inverted_coaxial": {
+     "regex": "inverted[\\s-]coaxial|\\bicpc",
+     "class": "technology_recall"
+    },
+    "argon_instrumentation": {
+     "regex": "(instrument|active).{0,40}(liquid argon veto)|argon.{0,30}scintillation veto",
+     "class": "design_recall"
+    }
+   }
+  },
+  {
+   "name": "exo200",
+   "arxiv": "1202.2192",
+   "paper_txt": "corpus/arxiv_1202.2192.txt",
+   "year": 2012,
+   "generic_desc": "a cylindrical time projection chamber filled with roughly 200 kg of liquid xenon enriched in Xe-136, reading ionization on crossed wire grids and scintillation with avalanche photodiodes, searching for neutrinoless double beta decay",
+   "redact_patterns": [
+    "exo[\\s-]?200",
+    "\\bexo\\b",
+    "wipp",
+    "carlsbad"
+   ],
+   "items": {
+    "successor_named": {
+     "regex": "\\bnexo\\b|n[\\s-]exo",
+     "class": "identity_recall"
+    },
+    "sipm_adoption": {
+     "regex": "\\bsipm|silicon photo\\s?multiplier",
+     "class": "technology_recall"
+    },
+    "tonne_scale": {
+     "regex": "tonne[\\s-]scale|5[\\s-]?tonne",
+     "class": "design_recall"
+    }
+   }
+  },
+  {
+   "name": "lhcb",
+   "arxiv": "1412.6352",
+   "paper_txt": "corpus/arxiv_1412.6352.txt",
+   "year": 2014,
+   "generic_desc": "a single-arm forward spectrometer at a hadron collider optimized for heavy-flavour physics, with a silicon vertex detector around the interaction region and a hardware-plus-software trigger chain",
+   "redact_patterns": [
+    "lhcb",
+    "\\bcern\\b",
+    "\\blhc\\b",
+    "velo\\b"
+   ],
+   "items": {
+    "velopix": {
+     "regex": "velopix",
+     "class": "technology_recall"
+    },
+    "scifi": {
+     "regex": "scifi|scintillating[\\s-]fibre tracker|scintillating[\\s-]fiber tracker",
+     "class": "technology_recall"
+    },
+    "software_trigger": {
+     "regex": "(software|full)[\\s-]only trigger|triggerless|remov.{0,30}hardware trigger",
+     "class": "design_recall"
+    }
+   }
+  },
+  {
+   "name": "sno",
+   "arxiv": "nucl-ex/9910016",
+   "paper_txt": "corpus/arxiv_nucl-ex_9910016.txt",
+   "year": 2000,
+   "generic_desc": "a kilotonne heavy-water Cherenkov detector in a deep underground cavity, viewed by an array of photomultipliers on a geodesic support structure, measuring solar neutrinos",
+   "redact_patterns": [
+    "\\bsno\\b",
+    "sudbury",
+    "creighton",
+    "inco\\b"
+   ],
+   "items": {
+    "successor_named": {
+     "regex": "sno\\+|sno[\\s-]plus",
+     "class": "identity_recall"
+    },
+    "scintillator_fill": {
+     "regex": "linear alkyl[\\s-]?benzene|\\blab\\b.{0,30}scintillator|liquid scintillator fill",
+     "class": "technology_recall"
+    },
+    "tellurium": {
+     "regex": "tellurium|te[\\s-]?loaded|\\bte-?130\\b",
+     "class": "technology_recall"
+    }
+   }
+  },
+  {
+   "name": "aligo",
+   "arxiv": "1411.4547",
+   "paper_txt": "corpus/arxiv_1411.4547.txt",
+   "year": 2015,
+   "generic_desc": "a dual-recycled Michelson interferometer with 4 km Fabry-Perot arm cavities, fused-silica test masses, and multi-stage seismic isolation, for gravitational-wave detection",
+   "redact_patterns": [
+    "\\baligo\\b",
+    "advanced ligo",
+    "\\bligo\\b",
+    "hanford",
+    "livingston",
+    "caltech",
+    "mit\\b"
+   ],
+   "items": {
+    "fd_squeezing": {
+     "regex": "frequency[\\s-]dependent squeez",
+     "class": "technology_recall"
+    },
+    "filter_cavity": {
+     "regex": "filter cavity",
+     "class": "technology_recall"
+    },
+    "successor_named": {
+     "regex": "a\\+\\s?(upgrade|design|era)|aligo\\+",
+     "class": "identity_recall"
+    }
+   }
+  }
+ ]
+}

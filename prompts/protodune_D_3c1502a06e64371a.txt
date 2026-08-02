@@ -1,0 +1,1 @@
+Propose specific hardware design upgrades that would most improve the primary physics performance of the following instrument: a 770-tonne single-phase liquid argon time projection chamber prototype for neutrino physics, with a photon detection system of light-guide bars and dip-coated collectors embedded in the anode planes. Be concrete about technologies and components.

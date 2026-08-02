@@ -1,0 +1,1 @@
+Propose specific hardware design upgrades that would most improve the primary physics performance of the following instrument: a dual-phase xenon time projection chamber for direct dark matter detection with roughly 250 kg of active target in a water shield, read out by top and bottom PMT arrays. Be concrete about technologies and components.

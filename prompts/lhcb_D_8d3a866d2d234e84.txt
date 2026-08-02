@@ -1,0 +1,1 @@
+Propose specific hardware design upgrades that would most improve the primary physics performance of the following instrument: a single-arm forward spectrometer at a hadron collider optimized for heavy-flavour physics, with a silicon vertex detector around the interaction region and a hardware-plus-software trigger chain. Be concrete about technologies and components.

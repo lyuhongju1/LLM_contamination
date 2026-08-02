@@ -1,0 +1,30 @@
+clean   darkside.successor_named
+clean   darkside.sipm_adoption
+clean   darkside.veto_upgrade_gd
+clean   protodune.xarapuca
+LEAKED  protodune.successor_named: pattern occurs 22x in input (e.g. 'far detector'); excluded from conditions A/B/C scoring
+clean   protodune.coverage_increase
+LEAKED  xenon1t.successor_named: pattern occurs 7x in input (e.g. 'XENONnT'); excluded from conditions A/B/C scoring
+clean   xenon1t.radon_column
+clean   xenon1t.neutron_veto
+clean   lux.successor_named
+clean   lux.xenon_skin
+clean   lux.outer_detector
+LEAKED  icecube.successor_named: pattern occurs 6x in input (e.g. 'Gen2'); excluded from conditions A/B/C scoring
+clean   icecube.mdom
+clean   icecube.degg
+clean   gerda.successor_named
+clean   gerda.inverted_coaxial
+clean   gerda.argon_instrumentation
+LEAKED  exo200.successor_named: pattern occurs 6x in input (e.g. 'n EXO'); excluded from conditions A/B/C scoring
+clean   exo200.sipm_adoption
+clean   exo200.tonne_scale
+clean   lhcb.velopix
+clean   lhcb.scifi
+clean   lhcb.software_trigger
+clean   sno.successor_named
+clean   sno.scintillator_fill
+clean   sno.tellurium
+clean   aligo.fd_squeezing
+clean   aligo.filter_cavity
+clean   aligo.successor_named

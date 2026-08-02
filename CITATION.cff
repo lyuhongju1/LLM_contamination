@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Hindsight-contamination probe kit and atlas dataset
+authors:
+  - family-names: Ryoo
+    given-names: Hong Joo
+    affiliation: Johns Hopkins University
+version: 1.0.0
+date-released: 2026-08-02
+doi: 10.5281/zenodo.XXXXXXX
+license: MIT

@@ -1,0 +1,1316 @@
+The following is the text of a published detector paper.
+
+<paper>
+The Large Underground Xenon (LUX) Experiment
+D. S. Akeribb, X. Baih, S. Bedikianq, E. Bernardq, A. Bernsteine, A. Bolozdynyag,
+A. Bradleyb, D. Byramp, S. B. Cahnq, C. Campj, M. C. Carmona-Benitezb, D. Carre,
+J. J. Chapmana, A. Chillerp, C. Chillerp, K. Clarkb, T. Classenl, T. Coffeyb, A. Curioniq,
+E. Dahlb, S. Dazeleye, L. de Viveirosf, A. Dobin, E. Dragowskyb, E. Druszkiewiczo,
+B. Edwardsq, C. H. Fahama, S. Fioruccia, R. J. Gaitskella, K. R. Gibsonb,
+M. Gilchriesed, C. Halln, M. Hanhardth, B. Holbrookl, M. Ihmk, R. G. Jacobsenk,
+L. Kastensq, K. Kazkaze, R. Knochen, S. Kyrem, J. Kwong1, R. Landerl, N. A. Larsenq,
+C. Leeb, D. S. Leonardn, K. T. Leskod, A. Lindotef, M. I. Lopesf, A. Lyashenkoq,
+D. C. Mallinga, R. Manninoj, Z. Marquezj, D. N. McKinseyq, D. -M. Meip, J. Mockl,
+M. Moongweluwano, M. Moriic, H. Nelsonm, F. Nevesf, J. A. Nikkelq, M. Pangilinana,
+P. D. Parkerq, E. K. Peaseq, K. Pechb, P. Phelpsb, A. Rodionovj, P. Robertsj, A. Sheil,
+T. Shuttb, C. Silvaf, W. Skulskio, V . N. Solovovf, C. J. Sofka j, P. Sorensene, J. Spaansp,
+T. Stieglerj, D. Stolpl, R. Svobodal, M. Sweanyl, M. Szydagisl, D. Taylori, J. Thomsonl,
+M. Tripathil, S. Uvarovl, J. R. Verbusa, N. Walshl, R. Webbj, D. Whitem, J. T. Whitej,
+T. J. Whitisb, M. Wlasenkoc, F. L. H. Wolfso,∗, M. Woodsl, C. Zhangp
+aBrown University, Dept. of Physics, 182 Hope St., Providence, RI 02912, United States
+bCase Western Reserve University, Dept. of Physics, 10900 Euclid Ave, Cleveland, OH 44106, United States
+cHarvard University, Dept. of Physics, 17 Oxford St., Cambridge, MA 02138, United States
+dLawrence Berkeley National Laboratory, 1 Cyclotron Rd., Berkeley, CA 94720, United States
+eLawrence Livermore National Laboratory, 7000 East Ave., Livermore, CA 94551, United States
+fLIP-Coimbra, Department of Physics, University of Coimbra, Rua Larga, 3004-516 Coimbra, Portugal
+gMoscow Engineering Physics Institute, 31 Kashirskoe shosse, Moscow 115409, Russia
+hSouth Dakota School of Mines and Technology, 501 East St Joseph St., Rapid City, SD 57701, United
+States
+iSouth Dakota Science and Technology Authority, Sanford Underground Research Facility, Lead, SD 57754,
+United States
+jTexas A & M University, Dept. of Physics, College Station, TX 77843, United States
+kUniversity of California Berkeley, Dept. of Physics, Berkeley, CA 94720, United States
+lUniversity of California Davis, Dept. of Physics, One Shields Ave., Davis, CA 95616, United States
+mUniversity of California Santa Barbara, Dept. of Physics, Santa Barbara, CA 95616, United States
+nUniversity of Maryland, Dept. of Physics, College Park, MD 20742, United States
+oUniversity of Rochester, Dept. of Physics and Astronomy, Rochester, NY 14627, United States
+pUniversity of South Dakota, Dept. of Physics, 414E Clark St., Vermillion, SD 57069, United States
+qYale University, Dept. of Physics, 217 Prospect St., New Haven, CT 06511, United States
+Abstract
+The Large Underground Xenon (LUX) collaboration has designed and constructed a
+dual-phase xenon detector, in order to conduct a search for Weakly Interacting Massive
+Particles(WIMPs), a leading dark matter candidate. The goal of the LUX detector is to
+∗Corresponding Author: wolfs@pas.rochester.edu
+Preprint submitted to Elsevier November 27, 2024
+arXiv:1211.3788v2  [physics.ins-det]  21 Nov 2012
+clearly detect (or exclude) WIMPS with a spin independent cross section per nucleon
+of 2× 10−46 cm2, equivalent to∼1 event/100 kg/month in the inner 100-kg ﬁducial
+volume (FV) of the 370-kg detector. The overall background goals are set to have
+<1 background events characterized as possible WIMPs in the FV in 300 days of
+running.
+This paper describes the design and construction of the LUX detector.
+1. Introduction
+Two-phase liquid xenon detectors use a powerful new technology for the detection
+of dark matter [1, 2, 3, 4, 5, 6]. The operation of a two-phase detector is schematically
+shown in Fig. 1. Events in the liquid xenon (LXe) target create direct scintillation light
+(S1), while electrons escaping recombination at the event site are drifted to the liquid
+surface and extracted into the gas phase by applied electric ﬁelds, where they create
+electro-luminescence light (S2). Both signals are measured by arrays of photomultipli-
+ers (PMTs), located above and below the active LXe region. The bottom PMT array
+largely measures the S1 signal, as photons in the liquid are mostly trapped by total
+internal reﬂection. The top PMT array images the x-y location of the S2 signal, and
+thus the x-y location of the event site. The drift time, obtained from the time difference
+between the S1 and S2 signals, gives the depth of the interaction. This technique thus
+provides 3D imaging of the event location.
+The noble gas xenon has no naturally occurring radioactive isotopes, and can be
+readily puriﬁed, providing very low internal radioactivity. External backgrounds are
+minimized by the appropriate choice of detector materials and the design of shielding.
+Two other methods further reduce the remaining background to levels allowing the
+detection of WIMPs: (1) discrimination of electron recoils (ER), arising from back-
+groundγ rays and betas, from nuclear recoils (NR) from WIMPs, based on the ratio
+of charge to scintillation light; and (2) the strong self-shielding capability of the dense
+LXe, combined with precise 3-D event position determination.
+In this paper we describe the design and construction of the LUX detector which
+will operate in the Davis Cavern at the Sanford Underground Research Facility (SURF)
+2
+Figure 1: Schematic of a dark matter interaction in a two-phase xenon de-
+tector. The primary interaction produces scintillation light (S1). The ion-
+ization electrons, created during the primary interaction, create an electro-
+luminescence pulse (S2) after entering the gas region above the liquid.
+The S1 and S2 light is captured with two arrays of PMTs, located below
+and above the active region of the detector. The intensity of the S2 light
+captured in each PMT is shown on a gray scale. White and black cor-
+respond to the smallest and largest number of photoelectrons detected by
+the PMTs, respectively. The scattered outgoing dark matter particle is not
+shown in this Figure.
+3
+at Homestake, South Dakota. In Sec. 2 of this paper, the LUX design is described.
+Details of the internals of the LUX detector are discussed in Sec. 3. The hardware
+used for detector calibrations is presented in Sec. 4. The puriﬁcation and gas handling
+of the xenon is covered in Sec. 5. Light collection and the LUX photomultipliers
+tubes (PMTs) are the focus of Sec. 6, and the analog electronics, used to process the
+PMT signals, and the trigger and data acquisition systems are described in Sec. 7. The
+LUX water shield is discussed in Sec. 8. Background studies and measurements are
+described in Sec. 9. The integration of the detector on the surface and underground is
+covered in Sec. 10.
+2. LUX Detector Design and Sensitivity
+The goal of LUX is to detect (or exclude) WIMPS with spin-independent cross
+sections per nucleon as low as 2×10−46 cm2, equivalent to∼0.5 events/100 kg/month
+in the inner 100-kg ﬁducial volume of the 370-kg LXe detector. The overall goal
+is to ensure that during a 10-months running period not a single WIMP candidate in
+the ﬁducial volume is due to a background interaction. The backgrounds consist of
+electron recoils, primarily fromγ rays, and nuclear recoils from neutrons. Based on the
+calibrations performed in above-ground laboratories [7] and data from the XENON10
+experiment [3], we project that the detector will reject 99.3 - 99.9% (energy dependent)
+of electron-recoil events for a 50% acceptance of nuclear recoil events in the energy
+range relevant to dark matter detection. With this rejection power, the goal for the
+residual low-energy ER background, using appropriate scaling factors for electron and
+nuclear recoil quenching, can be >150 times higher than the rate of background from
+NR.
+The combined goal for γ and β rates in the LUX ﬁducial volume is <8x10−4
+events/kg/day/(keV electron equivalent or keVee) at threshold energy. The 3D-imaging
+capability of the detector is a powerful tool to eliminate the major backgrounds in the
+outer portions of the detector, and can also be used to eliminate resolvable multiple-
+scattering events. The effectiveness of these rejection methods depends strongly on
+the speciﬁc detector design. Extensive Monte Carlo simulations have been performed
+for the LUX detector, and show that the necessary suppression can readily be achieved
+4
+[8]. Fig. 2 shows the upper limit of the single-scatter ER event rate associated with the
+radioactivity of the PMTs, which dominates the LUX background rate. The expected
+background rate due to the PMTs in the ﬁducial volume is< 10−3 events/kg/keVee/day.
+More details on background rates in LUX are provided in Sec. 9.
+A schematic of the LUX detector system is shown in Fig. 3. The outer portion of
+the detector is a large water shield, discussed in more detail in Sec. 8, instrumented with
+PMTs, and used as a Cherenkov veto for muons. The rate of single-scatter NR events
+in the LXe ﬁducial volume from muon-generated neutrons in the water or surrounding
+materials is∼1 event per 3 years, before applying the veto. Nevertheless, we want to
+ensure that any event associated with muons can be eliminated and also demonstrate
+that any WIMP candidate is not correlated with muons.
+The projected sensitivity of LUX, after running for 100 days in dark matter search
+mode (10,000 kg-days of exposure), is shown by the dashed curve in Fig. 4. Also
+shown are limits from ZEPLIN-III (solid black, Ref. [5]) and XENON100 (solid grey,
+Ref. [6]).
+3. Detector Internals
+3.1. Cryostat
+The LUX detector cryostat vessels, schematically shown in Fig. 5, are made of
+0.223” thick grade CP1 titanium sheets [10], machined and welded by Ability Engi-
+neering. The outer vessel holds a vacuum to insulate the inner vessel while the in-
+ner vessel contains the detector internals and the liquid xenon. The inner vessel is a
+39.75-inch tall, 24.25-inch diameter cylinder with a dome welded to the bottom and a
+27.75-inch diameter ﬂange welded to the upper rim. It hangs from the upper dome of
+the outer vessel and is mechanically attached and thermally isolated via plastic in three
+hangers. The instrumentation wiring and circulation plumbing lines penetrate through
+the outer vessel into the inner vessel via commercially available stainless steel ﬂexible
+couplings to compensate for thermal contraction of the plastic in the hangers. The cou-
+plings are formed of thin-walled stainless steel and have low thermal conductivity. The
+ﬂanges of both vessels are designed to use Helicoﬂex gaskets.
+5
+Figure 2: Upper limit on the expected single-scatter ER event rate for
+energies between 5 and 25 keV ee, arising from the radioactivity of the
+R8778 PMTs, in terms of log(DRU) where 1 DRU = 1 event/kg/keVee/day.
+The dashed rectangle outlines the ﬁducial volume of the detector.
+6
+Water tank
+Cryostat
+Source tubes
+Breakout cartThermosyphon
+Figure 3: Overview of the LUX detector system installed in the Davis
+Cavern. Shown are the water tank and the central cryostat. The PMTs of
+the muon-veto system are not shown.
+7
+WIMP Mass [GeV/c2]
+Crossïsection [cm2] (normalised to nucleon)
+10
+1
+10
+2
+10
+310
+ï46
+10
+ï45
+10
+ï44
+10
+ï43
+10
+ï42
+Figure 4: LUX projected WIMP spin-independent sensitivity at the 90%
+conﬁdence level (dashed, black) after an exposure of 10,000 kg-days.
+Also shown are current limits from ZEPLIN-III (solid black, Ref. [5]) and
+XENON100 (solid grey, Ref. [6]). Plot generated using the software of
+Ref. [9].
+8
+Top thermosyphon Feedthroughs
+Anode and electron
+extraction grids
+Xenon recirculation
+and heat exchanger
+300 kg active liquid xenon
+Cathode grid
+Photomultiplier tubes
+Titanium cryostats
+PTFE reflector panels
+Bottom thermosyphon
+Figure 5: Cross-sectional view of the LUX cryostats. The vertical distance
+between the inner faces of the top and bottom PMT arrays is 61.6 cm.
+9
+3.2. Cryogenics
+To efﬁciently and economically cool the LUX detector we use a unique cryogenic
+system based on thermosyphon technology [11]. Each thermosyphon consists of a
+sealed tube, partially ﬁlled with a variable amount of gaseous nitrogen (N 2), and com-
+prised of three regions: at the top, a condenser which is immersed in a bath of liquid
+nitrogen (LN); at the bottom, an evaporator which is attached to the detector; and
+connecting these two active sections, a passive length made of stainless steel. The
+thermosyphons are oriented vertically since they work with gravity, and are closed and
+pressurized with N 2. The N 2 condenses inside the condenser and trickles down the
+stainless steel lines to the copper cold heads (evaporators) that are securely fastened
+to various points on the detector’s inner can. The nitrogen evaporates, removing heat
+from the detector. It then rises back up the lines towards the condenser. Figure 6 shows
+that the pressure in the thermosyphons is slightly below the equilibrium vapor pres-
+sure corresponding to the temperature of the evaporator. This condition allows for the
+highly efﬁcient operation of the thermosyphons. Measurements of the thermosyphon
+thermal conductivity put it at∼55 kW/K/m, much higher than copper, and comparable
+to carbon nanotubes at low temperatures (see Ref. [11] and references therein). This
+technology has demonstrated excellent efﬁciency in cooling, as shown in Fig. 6.
+Four thermosyphon cold heads are deployed in the LUX detector. One large ca-
+pacity cold head is placed at the top of the inner vessel and thermally coupled to the
+top copper thermal and radiation shield. A smaller capacity cold head is placed at the
+bottom of the inner vessel and thermally coupled to the bottom copper thermal and
+radiation shield. These two cold heads are used to cool the detector internals slowly
+and uniformly from room temperature to 175 K. The other two cold heads are attached
+to the copper thermal shield surrounding the inner vessel and are used to maintain a
+thermal gradient along the vertical dimension of the detector. The cold heads can con-
+vey∼200-400 W of cooling power. Each head is instrumented with a 50-W heater and
+a thermometer as part of a Proportional-Integral-Derivative (PID) loop for ﬁne tem-
+perature control. The top and bottom cold heads are additionally instrumented with
+a 750-W heater and a PID control thermometer to assist with warming the detector
+internals and LXe recovery.
+10
+1000
+800
+600
+400
+200
+0
+Power (W)
+1051009590858075Temperature (K)
+140120100806040200
+N2 Pressure (psi) Power N2 Gas Pressure N2 Liquid-Vapor Pressure
+Figure 6: Thermosyphon temperature as a function of power applied to
+the cold head. Shown are the temperature of the cold head (open squares),
+the gas pressure inside thermosyphon (solid circles), and the vapor-liquid
+equilibrium pressure for nitrogen at the temperature of the cold head (solid
+squares). The error bars are similar to the size of the data points. Data
+taken from Ref. [11].
+11
+PTFE 
+reflector 
+panels
+Top
+grids
+Bottom
+grids
+Bottom PMT array
+Top PMT array
+61.6 cm
+Gamma 
+shield
+Gamma 
+shield
+Field
+rings
+Figure 7: Rendering of the LUX TPC, supported from the top ﬂange of
+the inner cryostat.
+3.3. Grids, ﬁelds, and light reﬂecting cage
+The LUX Time-Projection Chamber (TPC) is a dodecagonal structure enclosing an
+active region with approximately 300 kg of liquid xenon. The active region is viewed
+from above and below by arrays of 61 PMTs, as illustrated in Fig. 7. Monte Carlo
+optimization of background rejection and ﬁducial volume resulted in a design with a
+drift distance of 49 cm, a diameter of 50 cm, and a buffer distance of 5 cm between the
+cathode and the bottom PMT array. The inner walls of the TPC consist of twelve poly-
+tetraﬂuoroethylene (PTFE) reﬂector panels that cover forty-eight copper ﬁeld rings,
+supported by Ultra High Molecular Weight Polyethylene (UHMW) panels. All PTFE
+components are made from ultrahigh purity grade materials and all copper components
+are C101 OFHC grade. The ﬁeld cage includes ﬁve grids, supported by PTFE struc-
+tures, that maximize light collection and minimize the leakage of scintillation light
+from xenon outside the TPC into the viewing region. The entire structure is supported
+12
+from the top ﬂange of the inner vessel, as shown in Fig. 7. A 5 cm thick copper disk
+with a diameter of 55 cm is mounted directly on to the ﬂange. It connects to the large
+capacity thermosyphon through a cold ﬁnger and is used for temperature control and
+heat sinking of cables, and serves as a γ shield. All other components are supported
+from six titanium straps (alloy CP1) attached to this shield. The top PMT array is
+supported 15 cm below the shield in a copper structure and PTFE reﬂectors cover the
+regions between the faces of the PMTs. The polyethylene panels hang from the PMT
+support and are attached to the bottom PMT support with slotted holes to allow for
+thermal contraction when cooled. All components were designed to remain stress free
+during baking at temperatures up to 40 ◦C and cooling to liquid xenon temperatures.
+The bottom PMT support is a copper structure, similar to the top PMT support, with
+PTFE reﬂectors covering the gaps between the PMT faces as well. Below the bottom
+PMT support, a 15 cm thick copper structure ﬁlls the dome shape of the inner vessel to
+displace inactive xenon and to provide additionalγ shielding. This copper structure is
+also connected to a thermosyphon to provide control of the temperature gradient in the
+detector and to adjust the temperature of the returning xenon in the circulation system.
+The lowest grid is located 2 cm above the bottom PMTs to shield the photocathodes
+of the PMTs from the high voltage on the cathode grid. It employs 206 micron diameter
+ultra-ﬁnished stainless steel wires spaced with a pitch of 1 cm and supported by a thin
+stainless steel ring. Except for the screws, all stainless steel used in grid construction
+is alloy 316. This grid has an open area of 98% and its voltage is adjusted to zero the
+electric ﬁeld at the photocathodes of the PMTs. The gauge and pitch of the wires were
+selected to achieve the required shielding while maintaining the mechanical strength
+to allow a voltage of up to 100 kV on the cathode. The cathode grid is located 4 cm
+above the bottom PMT shield and is identical in construction, except that it has a pitch
+of 5 mm and a 96% open area. These two grids were tested at the design spacing
+with 100 kV between them to verify mechanical stability. The liquid xenon surface
+is nominally 49.5 cm above the cathode grid. Sitting ∼5 mm below the surface of the
+liquid is the gate grid that is used in conjunction with the anode to generate the 5 kV/cm
+extraction ﬁeld just below the liquid surface and the 10 kV/cm electro-luminescence
+ﬁeld in the gas above the liquid. The gate grid has a pitch of 5 mm and uses 50 micron
+13
+stainless steel wires, resulting in a 99% open area. The pitch was optimized to result in
+a variation in the extraction ﬁeld across the surface of the liquid of less than 1%. The
+anode sits a distance of 1 cm above the gate grid and is constructed using a stainless
+steel mesh with 30 micron wires, spaced by 0.5 mm. The open area of the anode grid
+is 88% and the structure supporting the mesh allows tensioning of the mesh after it is
+mounted on to the frame. After tensioning, the deﬂection of the mesh was measured
+to be 130 microns at the design electroluminescence ﬁeld. The top grid is located
+4 cm above the anode and 2 cm below the top PMT array. Its function and geometry
+are identical to the bottom PMT shield, except that it is strung with 50 micron wires,
+resulting in a 99% open area.
+The copper rings used to shape the drift ﬁeld have a thickness of 3.2 mm, a width
+of 12.7 mm, and a spacing of 1 cm. They are held in grooves in the polyethylene panels
+behind the PTFE reﬂector panels. The spacing and thickness of the rings, along with
+the location and voltage step to the cathode and gate, were chosen to provide as uniform
+a drift ﬁeld as possible while shielding the region from the electric ﬁeld generated by
+the cathode HV cable.
+A resistor chain between the gate and the cathode grids is used to ﬁx the voltage of
+the ﬁeld rings. Adjacent ﬁeld rings are connected by a parallel pair of 1 G Ω resistors.
+A parallel pair of 0.875 G Ω resistors connects the top ﬁeld ring to the gate grid and a
+parallel pair of 1.25 GΩ resistors connects the bottom ﬁeld ring to the cathode grid.
+3.4. Cathode HV
+The LUX high-voltage system can deliver up to 100 kV to the cathode in order to
+create a 2 kV/cm drift ﬁeld in the liquid. This is particularly challenging because
+high-purity noble gases will readily discharge. Rather than design a custom, low-
+radioactivity feedthrough for low-temperature operation, as was done in the ICARUS
+and W ARP experiments, the LUX cathode high-voltage system places the feedthrough
+outside the water shield at room temperature. The feedthrough forms a vacuum seal be-
+tween commercial high-voltage cable (HVC100, made by Heinzinger Electronic) and
+a standard conﬂat ﬂange. One side of the feedthrough is surrounded by transformer
+oil (PMX-561, made by Xiameter), while the other side is in xenon gas and connects
+14
+to the high-voltage cable, which passes through a xenon-gas-ﬁlled umbilical into the
+liquid xenon detector. The cable is shielded until it is 25 cm deep into the liquid xenon,
+where the ground shielding is removed. The cable then continues another 30 cm down
+to the cathode, where the ﬁnal connection is made with a spring-loaded pin, surrounded
+by liquid xenon and polyethylene. In order to avoid back-diffusion of outgassed im-
+purities from the high-voltage cable into the detector, xenon gas is drawn away from
+the detector through the umbilical and returned to the xenon puriﬁcation system at a
+controlled rate of 0.1 standard liters per minute (SLPM).
+The system avoids discharges in the xenon by excluding gas from all high-ﬁeld
+regions. Within the transformer oil, a current limiting resistor is added in series to
+minimize the harmful consequences of a short. A second cable connects this resistor to
+the power supply.
+3.5. Internal circulation system
+The LUX circulation system was designed to allow for the continuous puriﬁcation
+of the xenon target to maintain the required electron drift length necessary for full 3D
+imaging within the detector. This puriﬁcation is accomplished through the use of a
+SAES hot metal getter (see Sec. 5 and Ref. [12]). As the SAES getter requires gaseous
+xenon, the xenon is continuously evaporated and recondensed in the circulation system.
+LUX uses a series of heat exchangers to mitigate the heat load of this process.
+The ﬂuid path through these heat exchangers during circulation, shown in Fig. 8,
+is as follows. Starting from the top of the active region, liquid spills over the weir lip
+into the weir reservoir. The weir reservoir is a buffer volume designed to handle any
+changes in effective liquid level due to changes in temperature or circulation rate. The
+level of the liquid in the weir is monitored using a capacitive level sensor. From the
+weir, the liquid xenon ﬂows into the evaporator side of a dual-phase heat exchanger
+and evaporates. The gaseous xenon ﬂows out of the detector through a single-phase
+concentric-tube heat exchanger, which warms the gas to nearly room temperature. A
+diaphragm pump then pumps the xenon through the getter. In order to avoid contam-
+ination of xenon by air, the inter-diaphragm space is pumped on. After puriﬁcation,
+the gas ﬂows back into the detector, ﬁrst passing through the concentric tube heat ex-
+15
+Figure 8: Rendering of the LUX central cryostat with its reﬂector panels
+suppressed. The circulation path and level sensors are shown. (a) De-
+tector from 11:00 position. Only one parallel-plate level sensor is shown.
+(b) Detector from 5:00 position. The lowest copper section is rendered
+transparent for clarity.
+changer, where it cools to near its condensation point. Entering the condenser side of
+the dual-phase heat exchanger, the gas condenses and drains down into the lowerγ-ray
+shield. Here, the condensed xenon is fed through a channel to ensure it is at the same
+temperature as the rest of the detector before it is reintroduced at the bottom of the
+active region.
+The dual-phase heat exchanger, shown in Fig. 9, consists of a series of ﬁve tubes
+inside an encapsulating space. This heat exchanger mitigates the heat load that is in-
+curred due to gaseous xenon condensation. Liquid xenon enters the evaporator side of
+the heat exchanger from the weir reservoir, is pumped on by the external circulation
+system, and evaporates. This evaporation creates a cooling surface which is used to
+condense xenon gas being returned by the external circulation system. This heat ex-
+changer technology has been demonstrated to work at greater than 94% efﬁciency, up
+to a rate of 350 kg/d [13].
+The dual-phase heat exchanger is instrumented with a variety of sensors for diag-
+16
+Figure 9: LUX dual-phase heat exchanger. A total of eight thermometers,
+equally spaced along the vertical dimension of the heat exchanger, are
+shown as small grey rectangles on the left-hand side. The ﬁve condenser
+tubes are shown to the right of the thermometers. A single capacitance
+level sensor of the parallel wire type is shown on the right-hand side of the
+heat exchanger.
+17
+nostic and control functions. As the circulation rate changes, the overall liquid height
+in the evaporator changes. Thermometers are used in addition to a differential pressure
+measurement to gauge the liquid height because evaporation leads to the creation of
+froth which renders capacitance level meters unreliable. Inside the condenser, a single
+parallel-wire capacitance based level sensor is used to gauge the liquid level.
+3.6. Internal instrumentation
+3.6.1. Thermometers
+The temperature sensors used in LUX consist of thin ﬁlm platinum resistors (100 Ω)
+deposited onto a ceramic substrate from Omega (part number F2020-100-1/3B-100,
+Class AA tolerance [14]). The precision of these thermometers is quoted as 100 mK at
+0◦C. The majority of these thermometers are monitored with Advantech ADAM mod-
+ules (model # 6015) that use a three-wire measurement technique [15]. The speciﬁed
+intra-channel accuracy of any given module is 400 mK.
+The majority of thermometers are mounted on Cirlex R⃝ boards [16] such that the
+ceramic substrate of the thermometer is pressed against the surface being monitored
+using a stainless steel 6-32 screw and a lock-washer. The ﬂexibility of the lock-washer
+ensures that the ceramic substrate of the thermometer is always in good thermal contact
+with the monitored surface. A total of 40 thermometers are installed in he xenon space
+and 23 are mounted in the vacuum space.
+Prior to installation, each thermometer was cycled 10 to 15 times between 300 K
+and 77 K. The calibration procedure consisted of mounting 14 thermometers on an alu-
+minum block, covered with a heat shield, and allowing the system to equilibrate while
+sitting in various temperature baths, such as liquid nitrogen, dry ice and ethyl alcohol,
+and room temperature. One thermometer was chosen as the standard and tempera-
+ture differences from the standard thermometer were recorded. At each temperature,
+data were collected for one minute. Typically, each thermometer was cycled ﬁve times
+through each temperature bath.
+Surprisingly, it was observed that the temperature differences from the standard
+thermometer had a quadratic dependence upon temperature, a dependence upon the
+particular triplet of wires used in the calibration process, and a dependence on the par-
+ticular ADAM module used to make the measurement. Furthermore, we observed a
+18
+high failure rate (40%) of thermometers during the calibration process. Several ther-
+mometers reported irreproducible results and/or differences with the standard ther-
+mometer of several kelvin. It was determined that the failure rates was signiﬁcantly
+higher for thermometers with a non-standard thermometer mount . A redesign of this
+mount resulted in a signiﬁcant reduction of the failure rate.
+Experiments were carried out to determine the effect that the wiring and the ADAM
+module have on the temperature measurements. The observed discrepancy between
+temperature measurements made with two different ADAM modules is 60± 9 mK.
+The corresponding discrepancy due to the wiring is147±47 mK. The total RMS value
+of the temperature offsets of thermometers installed in the xenon space was determined
+to be 780± 270 mK. After applying the proper calibration constants and corrections,
+the accuracy of the temperature measurements in LUX is determined to be 170 mK.
+3.6.2. Level sensors
+Two varieties of liquid level sensor are deployed in LUX, as shown in Fig. 8. In
+the circulation plumbing, where unimpeded ﬂuid ﬂow is important, parallel-wire level
+sensors are used. Level sensors of this type are used to measure the liquid level in the
+main chamber, the weir, the condenser of the dual-phase heat exchanger, and the liquid
+return line that reintroduces liquid to the active region after circulation. These sensors
+consist of two parallel wires, mounted in compression-type connections, and designed
+to ﬁt into standard Swagelok R⃝ ﬁttings. Measuring the capacitance of each wire pair
+allows the length of the submerged portion of the wires to be determined.
+A different type of level sensor is used to measure the liquid xenon level in relation
+to the electric ﬁeld grids. To achieve the level of accuracy required, three level sensors
+of a parallel-plate design were incorporated into the structure surrounding the active
+region between the gate and the anode grids. These sensors, spaced 120 degrees apart,
+surround the electron extraction region and provide a method to determine if the liquid
+surface is level with respect to the grids, thus ensuring a uniform extraction ﬁeld.
+3.7. Slow control
+To monitor detector health and control operations, a uniﬁed slow control system
+has been implemented that covers all of the LUX instrumentation. The detector tem-
+19
+perature is monitored in 61 separate places. Thermometers are also placed on external
+equipment. The liquid xenon level in the detector is monitored in nine different loca-
+tions and the xenon gas system is fully instrumented with ﬂow controllers and pressure
+gauges. The PMT and grid high-voltage supplies, residual gas analyzers, and liquid
+nitrogen systems are also monitored and controlled through the same interface. All
+data is stored permanently in a master database which is mirrored both on-site and
+off-site. The primary user interface is through a web browser, though the ﬂexibility of
+the database structure means that many other interfaces are possible. Both ROOT and
+MATLAB interfaces to the slow control database have been implemented for special-
+ized analysis tasks.
+A set of alarm and watchdog systems alert people, both on and off site, with lights,
+sirens, emails, and text messages, depending on the severity of the situation. Each
+sensor can be associated with any combination of high or low (value or rate) alarm
+trigger points, and alerts are routed to those responsible for the system that triggered
+the alarm.
+In total more than two hundred sensors are monitored and dozens of instruments
+are controlled by the slow control system. The system was originally designed for the
+DEAP/CLEAN collaboration and has been deployed in numerous other experiments,
+including the LUX 0.1 prototype detector [13].
+4. Detector Calibration System
+Calibrations of the LUX detector are used to determine the predicted WIMP sig-
+nal and the detector’s ability to distinguish between nuclear and electron recoils. The
+calibrations are performed using sealed γ-ray and neutron sources as well as internal
+83mKr [17, 18] and Tritium beta sources. For electron-recoil calibrations we employ
+γ rays covering a broad energy range from about one hundred keV to a few MeV ,
+as well as beta electrons in a range from a few keV to a few tens of keV from in-
+ternal sources. Low-energy γ-ray sources (e.g. 57Co) and 83mKr are used to deﬁne
+the electron-equivalent energy scale (keV ee) and for xenon purity monitoring. High-
+energyγ-ray sources, such as 137Cs, 22Na, 208Tl, and Tritium, are used to determine
+20
+the boundaries of the electron-recoil energy band in the S2/S1 vs S1 plane. The nuclear-
+recoil energy band and the nuclear recoil scintillation yield are studied using neutron
+sources. In order to reduce the attenuation of the γ-ray and neutron ﬂux by the water,
+the radioactive sources are placed inside the LUX water tank, in close proximity to the
+outer cryostat. The γ-rays are collimated to reduce the number of interactions in the
+layer of LXe outside the region of interest.
+The calibration system for sealed sources includes six dry source-tubes, shown
+in Fig. 10, and collimator assemblies for γ-ray sources, shown in Fig. 11. Equally
+spaced at an appropriate radius from the center of the cryostat, the source tubes drop
+down from the top of the tank to the bottom of the cryostat. They are attached to the
+cryostat stand using stainless steel mounting brackets. Each tube has two mounting
+ﬂanges which rest on the brackets using ﬂexible mounts, permitting adjustment of the
+orientation of the tubes. The inside of the source tubes is kept dry. The amount of air
+in the tubes produces a negligible background in the detector. The source tubes have
+a square cross-section to ﬁx the orientation of source holders as they move inside the
+source tubes. The collimation holes in the source holders vary from 0.5 mm to 17 mm.
+Large collimation holes are used for measurements of the electron-recoil energy and the
+electron-equivalent energy scale while narrow collimator holes are used for position-
+resolution measurements. A tungsten backing is installed behind the source in order
+to minimize the number of photons that enter the active volume of the detector after
+backscattering in the source assembly. To study the detector response as a function of
+height, the sources can be moved up and down along the tube, using a mechanism with
+reels and pulleys. Three collimator assemblies for each collimation hole are available,
+allowing for the simultaneous irradiation of the active volume of the detector from three
+different sides.
+Internal sources, such as 83mKr and tritiated methane, will be introduced by doping
+the gaseous xenon with the radioactive isotopes. In the case of83mKr, the isotopes will
+decay away within 1.86 hours. Tritiated methane will be removed from the xenon
+using the getter. We have determined that 99.9% of the tritiated methane is removed in
+a single pass throughout the puriﬁcation system. Details about calibration techniques
+using internal sources can be found in Refs. [17, 18].
+21
+ SolidWorks Student License
+ Academic Use Only
+Figure 10: Rendering of the six source tubes surrounding the central LUX
+cryostat. The top two sections of each source tube are made of steel; the
+bottom section is made of clear acrylic. Clear acrylic water displacers are
+installed in front of the active xenon volume to limit source attenuation.
+22
+Collimation Hole 
+Reducer (Tungsten)
+Tungsten Shield
+Tungsten Shield
+Back Plate
+Source
+Casing (SS)
+Casing (SS)
+Handle
+Figure 11: Gamma-ray source assembly used for detector calibrations.
+5. Puriﬁcation and Gas Handling
+The LUX puriﬁcation system removes electronegative and molecular impurities
+that affect charge and light collection using gas-phase recirculation through a commer-
+cial heated getter (SAES MonoTorr [12]), developed for the semiconductor industry.
+This is the same approach as has been used in ZEPLIN-II, XENON10, and LUX 0.1
+[13] where absorption lengths of several meters have been achieved. This is sufﬁcient
+as a baseline for the 49-cm depth of LUX. The xenon evaporates from the detector and
+is circulated through the getter using a double-diaphragm pump. The xenon ﬂow rates
+and pressures are monitored by the slow control system.
+The LUX puriﬁcation system is capable of processing 50 SLPM (420 kg/day). In
+order to deal with the associated 400 W heat load, LUX employs internal heat ex-
+changers, described in Sec. 3.5, that use the cooling provided by xenon evaporation
+to condense the returning gas. These heat exchangers, developed for LUX, result in a
+demonstrated 98% reduction in required cooling power [19]. Increased xenon puriﬁ-
+cation rate is accomplished with commercially available pumps, plumbing, and getters
+that allow higher xenon gas throughput. Xenon storage and recovery is handled us-
+ing a combination of a liquid nitrogen encased pressure vessel and a balloon to allow
+emergency recovery of the xenon.
+23
+During operation of LUX on the surface, a circulation rate of 300 kg/day was
+achieved, limited by the sub-optimal circulation path used during surface operation
+[19]. The measured heat load was less than 5 W.
+The xenon handling system is equipped with an integrated xenon gas purity assay
+system. A 0.5 liter sample of xenon gas can be collected from four critical locations
+in the system: the input to the getter, the output from the getter, the detector return
+line, and a conduit purge line. The gas samples are collected via plumbed-in stainless
+steel lines which connect the xenon system to the assay system. The impurity content
+of each sample is evaluated using the cold trap mass spectrometry method which is
+described in Refs. [20, 21]. This technique is sensitive to oxygen and nitrogen at a
+level of better than one part-per-billion, and can detect krypton at the part-per-trillion
+level. The mass spectrometer is periodically calibrated by collecting a sample of xenon
+gas from a specially prepared cylinder which contains xenon with a known impurity
+content. The assay system is used to monitor the effectiveness and performance of the
+getter, to monitor the puriﬁcation process, and to conﬁrm that the xenon gas system is
+leak tight.
+6. PMTs and Light Collection
+LUX uses two arrays of 61 Hamamatsu R8778 PMTs [22]. One array is placed
+above the liquid surface and is used primarily for x-y position reconstruction from
+the S2 signal pattern. Using likelihood pattern recognition techniques, developed for
+XENON10 [4] and ZEPLIN [23], a ∼1 cm position reconstruction accuracy (20% of
+the PMT diameter) is expected at low energy. The second array is placed in the liquid,
+below the cathode grid. This array gets most of the S1 scintillation signal, due to
+internal reﬂection at the liquid surface.
+The R8778 is a 12-stage, 5.7 cm round PMT, developed by Hamamatsu and the
+XMASS collaboration speciﬁcally for operation in LXe. The photocathode is sensitive
+to 175 nm LXe scintillation, has a typical quantum efﬁciency (QE) of 33% at that
+wavelength, can operate at 170 K, and can withstand up to 5 atm of pressure. Other
+relevant R8778 characteristics are listed in Table 1.
+24
+Every PMT was biased and single photoelectron (sphe) pulses were recorded to
+conﬁrm that they were all operational. The sphe pulse shape (rise time, fall time,
+FWHM, height) and sphe spectrum (gain, peak-to-valley ratio, sphe resolution) were
+evaluated for 25 PMTs at room temperature. The anode output linearity was measured
+for one PMT, and the measurement agreed with the 13 mA at ±2% deviation spec-
+iﬁed by Hamamatsu. An extensive ion-feedback afterpulsing (AP) characterization
+study was performed for 90 PMTs, and the residual gas populations were identiﬁed for
+each of the 5 major peaks in the AP spectrum using each ion’s mass-to-charge timing
+dependance. This allows us to track the PMT health throughout the experiment (see
+section 6.2). To ensure that the PMTs can operate in LXe, a 12 PMT (10%) sample
+was tested in a LXe chamber. An AP measurement was performed before and during
+LXe immersion, and the Xe+ peak was monitored to ensure that the PMT vacuum was
+not compromised during cooldown. None of the PMTs showed any sign of vacuum
+deterioration during LXe testing.
+During the LUX 0.1 program [13], four R8778 PMTs (three above the liquid sur-
+face, one below the cathode grid) were used to collect the scintillation light in the active
+LXe region for a period of 2 years. During that time, LED, 57Co, 133Ba, and 252Cf
+calibration measurements were successfully performed with them. The energy calibra-
+tions with 57Co and 133Ba allowed us to monitor the purity of the LXe by measuring
+the electron lifetime.
+The slow control database is used to manage all aspects of PMT handling and char-
+acterization. In this way, we can correlate changes in the PMT integrity with particular
+actions that were performed. Gain calibrations, AP health monitoring and other tests
+results are included in this database, and are integrated into the data analysis chain.
+In situ PMT gain calibrations are performed with 12 blue (430 nm) LEDs, placed
+inside the detector. Six LEDs are mounted on the top PMT holder to illuminate the
+bottom PMTs and six LEDs are installed on the bottom PMT holder to illuminate the
+top PMTs. The LEDs have PTFE diffusers to ensure a more uniform illumination of
+the PMT arrays. The LED system is also used for weekly AP measurements for PMT
+health monitoring.
+25
+Minimum Photocathode Effective Area 15.9 cm2
+Typical voltage for a 2×106 gain⋆† 1100 V
+Maximum voltage† 1750 V
+Single photoelectron (sphe) rise time⋆ 3.5 ns
+Sphe FWHM⋆ 6.8 ns
+Sphe fall time⋆ 10.8 ns
+Typical sphe spectrum peak-to-valley ratio⋆ ∼4
+Typical sphe peak resolution⋆ (σ/µ) 37%
+Typical quantum efﬁciency (QE) at 175 nm† 33%
+Standard deviation of the QE at 175 nm† 2.3%
+Collection efﬁciency⋆ ∼90%
+Anode linearity at±2% deviation⋆† 13 mA
+Afterpulsing ratio at 1300 V in 5µs⋆ <5%
+⋆Measured by LUX
+†Measured by Hamamatsu
+Table 1: Characterestics of the LUX R8778 PMTs.
+Figure 12: A Hamamatsu R8778 PMT and one of the supporting copper
+blocks.
+26
+U Th Co-60 K-40
+9.8± 0.7 2.3± 0.5 2.2± 0.4 65± 2
+Table 2: Radioactivity levels of the LUX R8778 PMT, based on a 15 PMT
+sample. Units are mBq/PMT
+6.1. PMT Radioactivity
+A total of 15 LUX PMTs were counted for radioactivity at SOLO, the SOudan LOw
+background counting facility at the Soudan Underground laboratory in Minnesota [24].
+The counting was performed using the Diode-M, a 0.6-kg high-purity Ge detector, in-
+side a Pb shield, providing>30 cm shielding in all directions, with an 5-cm thick inner
+liner of low-background Pb. The shield cavity can comfortably accomodate 5 R8778
+PMTs at a time. Table 2 summarizes the results obtained from these measurements.
+The impact of the PMT radioactivity on the LUX background counting rates are dis-
+cussed in detail in Sec. 9.
+6.2. PMT Health Monitoring
+The characterization of afterpulsing populations for the R8778 allows us to track
+the levels of residual gases inside the PMT. This is of vital importance for tracking the
+health of each PMT at different handling stages. The following list describes the main
+afterpulsing populations and the most common cause for a residual gas population to
+cross the PMT vacuum seal:
+• Elevated He+ AP levels indicate environmental He contamination which implies
+poor PMT storage conditions. Since He diffuses easily through the PMT quartz
+window, it is a PMT health hazard.
+• Elevated N+/O+ AP levels are indicative of a compromised PMT vacuum seal,
+which allows some air to leak into the PMT interior. Assuming the PMT seals
+were good at the time of fabrication, this elevated AP indicates that the PMT
+may have experienced mechanical shock due to poor handling. PMTs with such
+vacuum breach should not be used in LXe.
+• Any sign of a Xe+ AP level when the PMT is placed in LXe indicates a vacuum
+breach and an impending PMT failure. That PMT must not be used and the unit
+27
+must be replaced when possible. A Xe + level with low N+/O+ levels indicates
+that the vacuum breach occurred inside the chamber, very likely due to stress
+from differential contraction in the PMT body during cooling.
+During dark matter operation, weekly AP measurements will be performed to track
+small changes in the PMT vacuum along with LED gain calibrations.
+6.3. Light Collection
+The efﬁciency of the LUX detector to collect scintillation photons has been opti-
+mized by careful positioning of PTFE reﬂectors around the active volume of the detec-
+tor. High UV-reﬂective PTFE panels are used to surround the active region, a technique
+which has been shown to increase the light yield in previous detectors by up to a factor
+of 5. LUX photon collection is augmented beyond previous designs with the addi-
+tion of PTFE reﬂectors, completely enclosing the gas phase, and a network of PTFE
+“trifoils”, completely ﬁlling the gaps between the PMTs. This design ensures that the
+active region is surrounded in 4π by high-reﬂectivity material or PMTs.
+Electric ﬁeld grids have been designed to minimize their optical footprint in the
+detector. The LUX grids are 96-99% transparent at 0◦ angle of incidence, due to thin
+wire diameter, large spacing, and the use of a strung pattern instead of a mesh. The
+exception is the anode grid, which uses a mesh design and is 88% transparent. The grids
+are constructed from stainless steel, a material shown to be ∼57% reﬂective at xenon
+scintillation wavelengths [25]. Further details on the grids can be found in Sec. 3.3.
+The LUX light collection efﬁciency was measured during the above-ground com-
+missioning run, described in detail in Ref. [19]. Using the photo peak from the 662 keV
+γ-ray from 137Cs, the light collection efﬁciency was determined to be 8 phe/keVee. Us-
+ing Monte Carlo simulations, it was determined that the reﬂectivity of the PTFE panels
+is> 95% in LXe and that the photo absorption length of the scintillation light in the
+liquid is at least 5 m [19].
+7. Electronics and Readout
+7.1. PMT Bias Distribution and Cabling
+Custom Cirlex R⃝ circuit boards were built to supply bias voltage to the PMTs. Both
+bias and signal voltages are transmitted through custom Gore coaxial cable with stain-
+28
+less steel braid (to minimize conductive heat loss) and Fluorinated Ethylene Propylene
+(FEP) dielectric. The connections to the circuit boards are made with custom Cirlex R⃝
+strain-relieving connectors. The top of the circuit boards are covered with a Teﬂon cap
+to prevent an electric short or breakdown. All cables are heat-sunk and strain-relieved
+at the top of the copper radiation shield, just above the top array of PMTs.
+Signal propagation in the cables is equivalent to that of RG178 cables and thus
+transmit the fast photoelectron signals with minimal distortion and low loss. The 10 m
+internal cable lengths result in an approximately 25% reduction in signal pulse height.
+7.2. Analog Electronics
+The goal of the LUX electronics is to have 95% of the single photoelectrons in any
+PMT be clearly resolved from a 5 σ ﬂuctuation in the baseline noise. The measured
+noise at the input of the LUX data acquisition system (DAQ) is 155µVRM S (1.3 ADC
+counts). Since the typical resolution of single photoelectron distributions measured
+with the LUX PMTs is 37%, the gain of the analog chain must put the peak of the
+single photoelectron distribution at 30 ADC counts. The LUX PMTs operate with a
+gain of 3.3×106 and a single photoelectron produces a pulse with an area of 13.3 mVns
+and a FWHM of 7.7 ns at the PMT base with 50 Ω termination.
+Two stages of ampliﬁcation are provided by the analog chain. The preampliﬁer,
+discussed in Sec. 7.2.1, provides an effective gain of×5 into 50 Ω. The postampliﬁer,
+discussed in Sec. 7.2.2, provides three differently shaped outputs for the DAQ digitiz-
+ers, the DDC-8 digitizers of the trigger system, and the CAEN discriminators.
+7.2.1. Preampliﬁer
+The preampliﬁers employed in LUX have a simple single IC (AD8099) design that
+provides a gain element at the interface between the xenon space of the detector and
+the air space of the outside world. This avoids reﬂection problems due to impedance
+mismatch and reduces the effects of electromagnetic interference in the air space. The
+nominal voltage gain of× 5 can be reduced by a factor of 10 using a selectable voltage
+divider at the input. This selection is performed via an analog transmission gate in the
+front-end that is activated by a reduction in the supply voltage. Supply voltages are
+provided by the postampliﬁer (see Sec. 7.2.2.)
+29
+The PMT signals exit the xenon space in groups of 32. Each preampliﬁer board
+hosts eight preampliﬁer channels and four preampliﬁer boards are housed in a single
+shielded enclosure.
+7.2.2. Postampliﬁer
+The output signals from the preampliﬁers are sent through 50 Ω coaxial cables to
+the postampliﬁers, located in the detector electronics racks. Each input channel of the
+postampliﬁer produces three output signals: the ‘Struck’ output drives a Struck ﬂash
+ADC, the ‘fast’ output drives a CAEN V814 discriminator, and the ‘DDC-8’ output
+feeds into an 8-channel analog-sum circuit, which in turn drives a DDC-8DSP digital
+signal processor.
+The output pulse heights for a single photoelectron signal, assuming a PMT gain
+of 3.3×106, are approximately 80 mV for the fast output, and 5 mV for the Struck
+and DDC-8 outputs. The pulse shape of the fast output is close to single-pole with the
+−6 dB bandwidth of 100 MHz. The Struck and DDC-8 outputs use 4-pole Bessel ﬁlters
+with cut-off frequencies at 60 MHz and 30 MHz, respectively. Circuit simulations
+predict the input equivalent noise to be less than 2 nV/
+√
+Hz, which is dominated by the
+termination resistors at the PMT and at the preampliﬁer input, and by the opamp in the
+preampliﬁer. The predicted output noise levels are 0.17 mV RM S for the ‘Struck’ and
+‘DDC-8’ outputs, and 1.8 mVRM S for the ‘fast’ output. The output dynamic range is
+greater than 2 V for the ‘Struck’ and ‘DDC-8’ outputs. The channel-to-channel cross
+talk inside the postampliﬁer has been measured to be 0.2% for the ‘fast’ output, and
+<0.2% for the ‘Struck’ and ‘DDC-8’ outputs.
+The postampliﬁers are implemented in 9U×160 mm Eurocard modules, with each
+module containing 8 channels. The front panel carries 8 input (SMA) and 24 output
+(LEMO) coaxial connectors. The DC power is supplied via a custom backplane. A
+4-pin mini-DIN connector on the front panel sends the power to the preampliﬁer. A
+front-panel switch selects the positive power voltage for the preampliﬁer to be +4 V or
++8 V , which selects a preampliﬁer gain of×5 or×0.5, respectively. The preampliﬁer
+power cable is also used to send test pulses to the preampliﬁers.
+30
+7.3. Trigger Electronics
+The LUX trigger system utilizes the pulse shape information of the PMT signals to
+select potential dark matter events and reject background events. It has the capability to
+differentiate between S1 and S2 signals. Trigger decisions can be made based on just S1
+signal information, just S2 signal information, or the combination of these two. Pattern
+recognition can be used to select events of interest based on the geometrical information
+provided by the PMTs. Background events, associated with large S1 and/or S2 signals
+and/or invalid geometrical patterns, can be vetoed. Trigger decisions are made within
+a couple microseconds of a valid S2 signal.
+The operation of the LUX trigger is shown schematically in Fig. 13. The trigger
+system uses two 14-bit, 64 MHz, 8-channel digital signals processors (DDC-8DSP).
+Information about the detection of S1 and S2 signals is shared with the Trigger Builder
+(TB) where the trigger decision is made. In order to utilize all 16 channels of the signal
+processors, the top and bottom PMTs have been summed into 16 groups, 8 for the top
+PMTs and 8 for the bottom PMTs. The analog sums of the PMT signals is produced
+by LeCroy 628 Linear Fan-Ins. Each group is connected to a dedicated channel in one
+of the two DDC-8DSP boards. One DDC-8DSP module handles the groups associated
+with the top PMTs; the other handles the bottom PMTs. The Trigger Builder (TB) is
+connected to the DDC-8DSPs, as shown in Fig. 13. The Fast and Slow Links use HDMI
+cables; the remaining signals use regular NIM cables. The fast unidirectional link uses
+four differential pairs of the HDMI cable and is used to transfer big blocks of data,
+such as S1 and S2 hit vectors, S1 and S2 multiplicities, waveforms, and timestamps.
+The slow link uses seven single ended bidirectional signals of the HDMI cable and is
+used for communicating the ﬁnite state machine states across the boards. The TB takes
+<1µs to process the hit-vectors from the DDC-8DSPs and generate the ﬁnal trigger
+signal that is send to the DAQ. The TB has one dedicated HDMI connection to send
+operational, conﬁguration, and diagnostic information to an XLM VME module [26]
+which allows trigger information to be merged with the DAQ data stream.
+The DDC-8DSPs and TB are controlled via a USB 2.0 interface, using a dedi-
+cated host computer. The host PC control software is written in BlackBox Component
+Builder (developed by Oberon microsystems [29]) and is the component-based devel-
+31
+Figure 13: Schematic of the communication between the components of
+the LUX trigger system
+opment environment for the programming language Component Pascal. Combined
+with LibUSB, an open-source USB driver [27], and DevC++ [28], BlackBox has be-
+come a successful tool for controlling the trigger system.
+The LUX trigger system can be operated in three trigger modes: S1Mode, S2Mode,
+and S1&S2Mode. S1Mode and S2Mode are very alike, except that they search for dif-
+ferent pulse types: S1 pulses and S2 pulses, respectively. These trigger modes require
+a quiet period for all channels before an S1 or S2 is detected. During a 0.1-8µs period
+after an S1 or S2 signal is detected, the DDC-8DSP looks for signals in the other chan-
+nels. The hit information is stored in S1 and S2 hit vectors. S1&S2Mode is a combined
+trigger mode which requires the detection of at least one S1 and one S2 pulses. The
+minimum and maximum time between the detection of the S1 and S2 pulses allows us
+to make event selections based on event depth.
+All trigger modes utilize a trigger map which is used to select events based on
+the location of the groups of PMTs in which signals are observed. The trigger map and
+other parameters, such as the upper and lower thresholds, the length of the quiet period,
+32
+and the minimum and maximum time between S1 and S2 signals, can be adjusted by
+the user via the BlackBox interface, or settings in the DAQ GUI.
+7.4. Data Acquisition
+The DAQ system [30] uses 16 Struck 8-channel Fast ADC modules, model number
+SIS3301. These ADCs digitize at 100 MHz with a resolution of 14 bits. They have
+2× 128 k sample dual memory banks that allow for acquisition on one bank while data
+is being downloaded from the other. Each board is connected to a VME bus, which
+is connected to the DAQ computer via a ﬁber optic Gbit connection (Struck commu-
+nication modules SIS3100 and SIS1100). The boards are capable of downloading to
+the acquisition computer at the maximum VME download speed of 80 MB/s (2eVME
+protocol). Each board is controlled by four FPGAs (one per pair of channels) whose
+ﬁrmware was developed by Struck in collaboration with the LUX collaboration to oper-
+ate in Pulse Only Digitization (POD) mode, described in detail in Ref. [30]. The Struck
+inputs have been ﬁtted with an on-board single-pole anti-aliasing ﬁlter of 30 MHz on
+each channel. A detailed description of the DAQ system and its performance can be
+found in Ref. [30].
+8. Water Shield and Muon Tagging System
+8.1. Water Tank
+The LUX cryostat is shielded from background radiation with a 7.6-m diameter,
+6.1-m high water tank, shown in Fig. 3. Compared to standard lead and polyethylene
+shields, a water shield achieves much lower γ-ray backgrounds and provides superior
+shielding of neutrons from cavern radioactivity and the very high-energy tail of neu-
+trons from muon interactions in cavern walls. The water shield is very cost competitive,
+particularly as the detector size increases, and provides great ﬂexibility in modifying
+the size and shape of the central detector.
+The water shield provides a minimum shielding thickness of 2.75 m at the detector
+top, 3.5 m at the sides, and 1.2 m below. Backgrounds associated with cavern sources
+ofγ and neutron activities are reduced to a level where the internal radioactivity from
+detector components is the dominant source of background (see Sec. 9).
+33
+The LUX detector is lowered into the tank through a 1.2 m diameter opening at the
+top of the tank. Once in the tank, it is fastened to a metallic frame, anchored inside
+the tank, which provides stability and safety. The tank is hermetically sealed once the
+detector is installed and nitrogen gas is circulated continuously above the surface of the
+water in order to prevent radon accumulation. The water can be circulated through an
+industrial purifying system, designed by South Coast Water Co., in order to maintain
+appropriate levels of purity. The maximum acceptable level of U/Th/K impurities in
+the water is 2 ppt/3 ppt/4 ppb, which is about 6 orders of magnitude lower than their
+concentration in the surrounding rock. These purity levels are readily achievable with
+a commercial puriﬁer.
+The detector is leveled using three leveling rods that can be moved up or down.
+The end of these rods are connected to a leveling ring that is attached to the top of the
+detector. The width of the S2 pulse increases as the gap between the anode grid and
+the liquid surface increases. In an unleveled detector, the S2 width will be largest on
+the highest side of the detector and smallest on the lowest side. The vertical positions
+of the leveling rods are adjusted until the width of the S2 pulse is uniform across the
+detector, independent of the horizontal interaction position. After adjusting the leveling
+rods, the detector can be leveled to within± 250µm of horizontal. Three parallel-plate
+style level sensors are also used to measure the tilt of the detector, independent of the
+S2 response of the detector.
+Aside from the central 1.2 m diameter central opening, the tank is equipped with
+several secondary access ports. Two 1.8 m diameter ports are located on each side to
+the east and west, and can potentially be used by other experiments to take advantage
+of the water shielding. Two additional 0.6 m diameter ports are used for maintenance
+and equipment feedthroughs. There is also one manhole hatch on the top surface, and
+one on the side of tank at about ground level.
+The walls, ﬂoor, and ceiling of the tank are lined with Tyvek reﬂectors in order to
+optimize the collection of Cherenkov light emitted by passing muons.
+34
+8.2. Muon Tagging System
+The water tank is instrumented with 20 ten inch PMTs, and incoming muons can
+be tagged as they enter the water and emit Cherenkov radiation. Any nuclear recoil
+events in the LUX ﬁducial volume that are coincident with a muon in the water tank
+are eliminated during data analysis. A single downward-going muon will, on average,
+produce about 200 photoelectrons. The amount of light collected from muons that pro-
+duce a hadronic shower in the tank will be even greater. Thus, essentially all showering
+muons passing within two meters of the edge of the detector can be vetoed. It should
+be noted that the 2.4-meter thick reﬂective veto in Super-Kamiokande [31] is estimated
+to be more than 99.99% efﬁcient with similar photomultiplier coverage.
+Figure 14: The water-tight housing for the water tank PMTs. The la-
+bels correspond to the following: A. Hamamatsu R7081 10-inch diameter
+PMT, B. Adhesives, C. 6 inch schedule 80 PVC pipe, D. RG-58P coax
+cable, E. PMT bias board, and F. clear acrrylic end-plate.
+The PMTs used for the water tank are Hamamatsu R7081 PMTs. The PMTs are
+placed in waterproof housings and use positive high voltage. Each PMT is epoxied
+to a PVC pipe and sealed with a removable clear acrylic back. An RG-58 cable is
+fed through the side of the PVC pipe and connected to a feed-through at the top of
+the water tank. The cable jacket is water-blocked to prevent water from entering the
+housing. The PMT housing is weighed down to counter-balance the buoyant force of
+the PMT cathode and waterproof housing. Figure 14 shows a sketch of the PMT with
+35
+its watertight housing.
+The PMTs are arranged in four vertical strings, one foot from the edge of the tank.
+Each string has four PMTs, with one additional PMT located at the bottom of the tank,
+two feet away from the edge. The PMTs on the string are mounted on two parallel
+cables, held in place by eyebolts on the top and bottom of the tank. The remaining
+PMTs that sit on the bottom of the tank are weighed down with PVC piping attached
+to the PMT housing and ﬁlled with iron pellets. The RG-58 cables inside the water
+tank were chosen for their low-radon outgassing properties. The cables connect to a
+break-out box on the top of the tank. From there, standard high-voltage cables are used
+to reach the electronics.
+Because the PMTs used in the system are supplied with positive high voltage, they
+require a circuit to capacitively pickoff the fast signal pulses. The parts were specially
+chosen to provide a good high-frequency response, especially capacitors with a COG
+dielectric, and rated up to 3 kV . The ampliﬁers used provide two identical outputs; one
+output is digitized by the Struck ADCs (see Sec. 7.4) while the other signal is sent to
+a discriminator and a fast trigger system composed of off-the-shelf NIM modules to
+generate a muon trigger. Muon trigger data will be recorded to monitor backgrounds
+observed in the water tank. The information provided by the muon tagging system
+will be used to veto events off-line in which activity in the water tank was recorded in
+coincidence with signals in the ﬁducial volume of the central detector.
+9. Background Studies
+The LUX background model and screening program were constructed with the
+goal of maintaining a background expectation of <1 WIMP-like background event in
+30,000 kg days. This goal lowers the WIMP sensitivity limit of the experiment below
+2×10−46 cm2 for a WIMP mass around 40-50 GeV/c 2, nearly an order of magnitude
+lower than the lowest limit from current dark matter experiments at the same mass
+[6]. This sensitivity corresponds to a 14 µDRUnr event rate within the ﬁducial volume
+over the energy range 5-25 keVr. This rate corresponds to an upper limit of 8.6 back-
+ground events within the 100 kg ﬁducial volume for a 300 day WIMP search, reduced
+to< 3.9 events at 90% CL after applying the 45% nuclear recoil acceptance cut.
+36
+LUX background levels are greatly suppressed by the use of an unprecedented
+amount of liquid xenon. The self-shielding properties of liquid xenon, combined with
+ﬁducialization and multiple-scatter event rejection, serve to reject WIMP-like γ-ray
+backgrounds for LUX at the level of ∼10−6, before consideration of recoil band dis-
+crimination factors, typically at the level of >99.5% for liquid xenon. Nuclear recoil
+backgrounds are reduced at the level of∼10−3, more than sufﬁcient to render neutron
+backgrounds subdominant toγ-ray contributions.
+An extensive background modeling campaign using the LUXSim package [8] has
+been performed in order to assess the impact of both internal and external backgrounds.
+For estimates of background contributions from internal components, γ simulations
+use energy spectra from all major isotopes and their decay chains, measured for each
+internal component. Neutron simulations combine calculated (α,n) and ﬁssion spectra
+for measured levels of 238U and 232Th.
+9.1. Internal Backgrounds
+Internal contributions are expected primarily to come from the PMT arrays, due to
+their proximity to the active region and variety of materials used in their construction.
+Internal background benchmarks are set by measurements of PMT radioactivities listed
+in Table 2. Upper limit measurements from Hamamatsu were initially used to generate
+conservative background benchmarks; subsequent counting at SOLO found the PMTs
+to have overall γ-ray activities reduced by over a factor of ×1/2. LUXSim modeling
+using current SOLO measurements predict a single-scatter ﬁducial γ-ray event rate of
+437±37µDRUee in the energy range 1.3-8 keVee, corresponding to 88±7 events within
+the 100 kg ﬁducial volume in 300 days, before applying electron-recoil rejection cuts.
+The neutron production rate of the Hamamatsu R8778 PMTs used by LUX has not
+been directly measured, but a reasonable estimate can be made. Neutrons are gener-
+ated in the PMT through ﬁssion and ( α,n) processes. The ( α,n) neutron production
+rate is a function of the chemical composition of the target material for theα-particles,
+i.e. the components in the vicinity of the decays site. The chemical composition of
+the R8778 PMT internal components has been made available by Hamamatsu to the
+LUX Collaboration [32], but is protected by a conﬁdentiality agreement. The mass
+37
+of the PMT is dominated by Fe, Ni, and Co in the steel body and the electrodes, and
+by O and Si in the glass of the window and stem. The ( α,n) neutron production rate
+for each one of the listed compounds can be calculated using the “Neutron Yield” tool
+[33] based on the techniques described in Ref. [34]. Assuming that the aforementioned
+materials are evenly spread throughout the PMT volume, and using the PMT contami-
+nation levels measured at SOLO, the neutron production rate combined for ﬁssion and
+(α,n) processes is calculated to be 1.2 n/PMT/yr [22]. Recent results obtained by the
+XMASS collaboration (oral presentations only at the time of this writing), using the
+same R8778 PMTs as LUX, hint at a possible break in equilibrium in the 238U chain
+and a high concentration of radioactive impurities in the small aluminum ring around
+the perimeter of the PMT faces. LUX performed simulations of the worst-case sce-
+nario, assuming that all of a PMT’s radioactivity originates from the Al ring, with the
+upper limit levels indicated by XMASS. The result is a total neutron background rate in
+the ﬁducial volume which is a factor×5 above the baseline scenario described above.
+To estimate the background contributions from each major internal component,
+LUXSim Monte Carlo estimates of γ-ray and neutron background contributions were
+generated using a faithful recreation of the precise LUX geometry, including all inter-
+nals to CAD speciﬁcations, as well as the water shield and outer components. Gamma
+simulations use energy spectra from all major isotopes and their decay chains, mea-
+sured for each internal component, while neutron simulations combine calculated (α,n)
+and ﬁssion spectra for measured levels of 238U and 232Th. These simulations yield a
+scaling factor in units of DRU ee/mBq or DRU nr/mBq for each major isotope identi-
+ﬁed in the counting process. Counting results for major LUX internals, described in
+Sec. 9.3, are combined with the Monte Carlo background estimates to predict the to-
+tal electron- and nuclear-recoil contributions from all components. Totals are listed in
+Table 3.
+Over 200 materials were used during the LUX construction phase. To estimate the
+background contribution from each of these components, a generic Monte Carlo back-
+ground ”map” was created for 15 separate regions in the detector. DRU/mBq scaling
+factors were obtained for each region and each particular isotope. Minor components
+then inherit the scaling factor from their corresponding regions, and screening results
+38
+WIMP-Like Events
+30,000 kg days)
+ER NR
+PMTs 0.4 0.03
+Cryostats <0.02 <0.002
+Grid wires <0.01 <0.001
+PTFE panels <0.05 <0.009
+HDPE <0.01 <0.002
+Cu 0.03 <10−4
+85Kr <0.13 –
+Table 3: ER and NR projected activity contributions from all major inter-
+nal components in the energy range between 1.3 and 8 keV ee. Measured
+material activities from Table 2 are combined with Monte Carlo simu-
+lations to predict the total background contribution from each individual
+component. The ER event rate from the copper components is estimated
+from [36], pending a ﬁnal measurement of copper samples exposed at the
+Sanford Surface Laboratory for the duration of LUX above-ground run-
+ning. The 85Kr event rate is estimated from the projected efﬁciency of the
+LUX Kr removal system.
+are integrated to obtain a total contribution. For (α,n) background estimates, the dom-
+inant surrounding material in each region is used. The screening program for minor
+components is currently ongoing.
+Particular attention has been paid to modeling the multiple-scintillation single-
+ionization (MSSI) background, in which a γ-ray undergoes multiple scattering with
+one of the scattering vertices in the ﬁeld region and the rest outside of the active region,
+e.g. in the reverse-ﬁeld region (RFR) below the cathode grid. As only the scattering
+vertex within the ﬁeld region will generate charge for an S2 signal, but S1 light from
+all vertices will be counted as a single event, the relative S2/S1 size will be shifted
+downward, greatly reducing the ER rejection efﬁciency for these events. The goal is to
+reduce the fraction of MSSI events to total γ-ray events below the level of (1 - ER re-
+jection), or 6×10−3 assuming a very conservative 99.4% ER discrimination. Monte
+Carlo studies of these event types were performed in order to optimize the detector
+geometry for minimization of MSSI events. Using the expected dominant PMT γ-ray
+model, it is predicted that a MSSI fractional level below6×10−3 will be obtained with
+a RFR height≤5 cm for events depositing 1-50 keV ee in the ﬁducial volume; for the
+39
+0 500 1000 1500 2000 2500 3000 3500 400010
+−7
+10
+−6
+10
+−5
+10
+−4
+10
+−3
+10
+−2
+10
+−1
+10
+0
+Z [mm]
+Attenuation ( Flux / Initial Flux )
+ 
+ 
+Rock Gammas
+Rock Neutrons
+mu Neutrons
+Figure 15: Measured γ-ray and neutron ﬂux reduction in water. The ﬂux
+reduction is measured in a semi-inﬁnite wall of water, and is deﬁned as the
+number of particles that travel beyond a depth Z, divided by the number
+of emitted particles. For the neutron ﬂux, an energy cut of E n> 1 keV is
+applied to remove low-energy and thermal neutrons.
+LUX RFR height of 3.5 cm, a fractional level of 4× 10−3 is projected. Note that this
+does not include additional rejection of MSSI events through analysis cuts.
+9.2. External Backgrounds
+External neutron backgrounds are expected to be rendered subdominant to internal
+backgrounds due to the use of the water shield described in Sec. 8. The water shield
+size was chosen primarily to bring the high-energy muon-induced neutron ﬂux well
+below the background target. Water shield moderation efﬁciency for various external
+backgrounds is shown in Fig. 15.
+Externalγ-ray backgrounds will be reduced well below the internal background by
+the water shield and the steel pyramid. The γ-ray ﬂux from the cavern rock will be
+reduced by a factor of 8×10−9 through water shielding alone, with a further factor of
+×1/40 reduction from the steel conﬁguration. This is expected to reduce the external
+γ-ray background contribution to <6×10−3 γ in the 1.3− 8 keVee energy range in
+30,000 kg·days, assuming a highly radioactive cavern composed entirely of rhyolite,
+40
+producing∼ 9γ/cm2/s at the water shield outer edge.
+External neutron backgrounds are generated primarily from high-energy muons
+interacting in both the cavern rock and the water shield. At the 4850 level of the
+Homestake mine, shielding from muons is provided by a 4,300 m water-equivalent rock
+overburden, reducing the muon ﬂux to 4.4×10−9µ/cm2/s. There are no measurements
+of theµ-induced neutron ﬂux in the Davis laboratory. However, the neutron ﬂux from
+the rock has been measured at several underground sites, and the neutrons ﬂux vs.
+depth can be ﬁtted by an empirical equation [35]. The neutron ﬂux from the rock at
+Homestake is calculated to be(0.54±0.01)×10−9 n/cm2/s, corresponding to an event
+rate of 163 nDRU nr. Requiring a single-scattering in the ﬁducial volume reduces the
+background rate by a factor of 3, resulting in a rate of 54 nDRUnr in the 5− 25 keVr
+energy range. This corresponds to a total event rate of ∼ 0.03 NR events in 30,000
+kg·days ﬁducial.
+The background contribution from neutrons produced in the water shield is ex-
+pected to double that of rock-produced neutrons. The total activity for water-produced
+neutrons is calculated to be 121±8 nDRUnr after application of single-scatter and ﬁdu-
+cial cuts, corresponding to 0.07 events in 30,000 kg·days ﬁducial. Event rates corre-
+sponding to these neutron backgrounds can be found in Table 4. The effectiveness
+of the water shield against muon-induced neutrons is further enhanced by the muon
+tagging system, in which the instrumented water shield will act as a Cherenkov light
+detector with>90% muon rejection efﬁciency.
+Background models assume that the concrete used in the Davis laboratory will
+match the radioactive contamination levels in the surrounding rock (0.16/0.20 ppm or
+2/0.8 Bq/kg for 238U/232Th), and no increase to the γ-ray and neutron background is
+expected. Recent radioactive screening of the concrete mixes conﬁrm that assumption
+as valid and conservative. From the ratio of contamination levels, we expect the fast
+neutron ﬂux at the Davis laboratory to be ×37 lower than the ﬂux at Gran Sasso, or
+16.2× 10−9 n/cm2/s for En > 1 MeV [35]. The fast neutron background is moderated
+very efﬁciently by the water shield. The ﬂux is attenuated by a factor of 3× 10−4 in
+the ﬁrst 50 cm of water, as is shown in Fig. 15). The fast neutron ﬂux is attenuated
+by a factor of 2× 10−15 by 2.5 m of water, and by a factor of 5× 10−21 by 3.5 m of
+41
+Differential Event Rate Event Total
+ﬁducial volume (100kg) 30,000 kg-days (ﬁducial)
+5− 25 keVr (1.3− 8
+keVee)
+5− 25 keVr (1.3− 8
+keVee)
+γ’s from rock 0.54 ndruee (no rhyolite) 1× 10−4
+27 ndruee (all rhyolite) 6× 10−3
+µ-induced high energy
+neutrons from water
+shield
+(121± 8) ndrur (73± 5)× 10−3
+µ-induced high energy
+neutrons from rock ∼ 54 ndrur ∼ 33× 10−3
+Table 4: LUX event rates for external backgrounds, using the full LUX
+shield.
+water. The integrated ﬂux is reduced by6×10−22, corresponding to only∼ 2×10−16
+neutrons/year incident on the cryostat surface.
+9.3. Materials Screening Program
+The components that are used for the LUX detector are γ screened to ensure that
+the overall background goals are met. The SOLO germanium detector at the Soudan
+Mine is being used for the screening program. SOLO is able to reach sensitivities of
+0.1 ppb U, 0.1 ppb Th, 0.25 ppm K. The screening facility can accept large samples
+(8”× 8”× 8”) which allows it to be used for batch screening of the PMTs.
+LUX has also access to the LBL counting facility at Oroville. It is through this
+program that a source of ultra-low radioactivity titanium was identiﬁed for the cryostat
+[10]. The majority of all relevant parts of the detector’s internals are organized in a
+database which is directly linked to a simpliﬁed LUX background model software.
+This provides a convenient way to assess a particular component’s potential danger to
+the experiment’s background, and easier prioritization of the counting queues.
+10. Integration and Underground Deployment
+10.1. Assembly of the Main Detector
+The detector subsystems were fully integrated at the surface facility at SURF. The
+TPC was assembled and sealed within the inner and outer cryostats in a clean room.
+The cryostat domes were suspended from a structure mounted on rails while the TPC
+42
+was assembled. The cryostat cans were initially located in a pit within the clean room
+and mounted and removed using a counter-weight system. After sealing the TPC within
+the inner cryostat, cold heads, heat exchangers, and thermal sensors were mounted on
+the exterior of the inner cryostat. After sealing the external cryostat, and with the ﬂex-
+ible conduits connected between the dome and the breakout assembly, the completed
+detector was rolled on rails out of the clean room and positioned above the water tank.
+The installation of the detector into the water tank is a step-wise process, due to the
+limited headroom available in the Davis Lab. The center of mass of the detector when
+it is installed in the water tank is located 5.2 m below the deck level. The overhead
+space constrains the maximum hook height of the hoist to 2.7 m above the deck. This
+vertical geometry was duplicated at the surface facility to be able to exercise the design
+and the methods of installation prior to deployment of the detector underground.
+The detector is removed from the cart with the hoist and mounted on the detector
+supports located at the deck level, while the ﬁrst stage of the supporting structure is
+attached. The detector is then lifted off the supports and lowered below the deck level.
+This process is repeated, and the ﬂexible conduits and rigid thermosyphon plumbing
+and conduit are ﬁxed to the supporting tower structure. When the second tower sections
+are installed, the detector is lowered onto the stand in the water tank and secured in
+place using fasteners engaged from the deck above.
+Transport of the detector assembly to the Davis Cavern occurred without opening
+the inner TPC cryostat or any of the ﬂexible conduits that are extensions of the xenon
+gas space. The detector and breakout carts were designed to constrain the detector into
+a volume 11.3 m long, 1.4 m wide, and 2.6 m high. These dimensions were imposed by
+the dimensions of the Yates hoist conveyance. The cryostats were cushioned by coiled-
+cable springs upon which the external dome is mounted to the detector cart. The carts
+were transported from the surface laboratory to the Yates cage using a forklift. The rail
+wheels were removed and pneumatic cushions were installed underneath. The carts
+were gently pushed in and out of the cage, and gently moved all the way to the doors
+of the Davis laboratory. At this point, the carts was transitioned back to rail wheels.
+After the PMTs and grids were checked, the detector was installed into the water tank.
+Commissioning of the detector started in Fall 2012.
+43
+10.2. Below-ground Integration
+In July 2012, the LUX detector was moved into the newly re-commissioned Davis
+Underground Laboratory. Located 4850 feet deep within the former Homestake gold
+mine near Lead, SD, it consists of a single cavern, ∼10.5 m long,∼18 m wide, and
+∼12 m high. Between 1970 and 1994, the cavern was used by Ray Davis for his solar
+neutrino experiment. After it was decommissioned and the mine closed down, water
+ﬁlled the galleries to levels well above the Davis laboratory. It was only in May 2009
+that the 4850 ft level became available again. Since then, intensive work has been
+taking place to clean up and renovate the laboratory, to bring it up to modern standards
+of safety. The LUX collaboration has been tightly involved in all phases of the re-
+design of the cavern. A rendering of the laboratory’s main features can be found on
+Fig. 16.
+The LUX water tank sits on the ﬂoor of the cavern (level 0), on top of ∼20 ton
+of low-radioactivity steel acting as an additional shield used to decrease the overall
+γ-ray even rate in LUX by an additional factor of 40. The xenon gas system and the
+storage vessels are also located on this level. An emergency xenon recovery bladder
+hangs below the deck structure to the south of the water tank. It can expand to ﬁll the
+available space there and contain all 370 kg of xenon in warm gas state, if all other
+recovery methods fail.
+A metallic deck was constructed 7.6 m above ﬂoor level to support additional equip-
+ment and infrastructure speciﬁc to LUX. It sports a noise-insulated control room in the
+south-west corner, and a class 1,000 clean room on the north side for detector assembly
+work. The electronics and slow-control systems are also located on this level. The main
+entry into the laboratory is made at deck level from the south side, through a newly ex-
+cavated access tunnel. The entire cavern space is maintained at a class 100,000 clean
+space level and isolated from the rest of the underground complex by air-tight doors.
+In order to enter the Davis laboratory, all personnel and equipment has to go through a
+clean-transition area, located in the new access tunnel; personnel go through adequate
+cleaning procedures and changes into clean clothing, while equipment goes through an
+airlock to be scrubbed and cleaned. The transition space is shared with the Majorana
+collaboration, who run a low-background facility adjacent to it. The LUX detector
+44
+Clean room
+Water tank
+Cryostat
+Control room Breakout system
+Liquid nitrogen system
+Xenon 
+recovery
+bladder Gas system
+Figure 16: Rendering of the layout of the Davis Laboratory.
+followed that route to enter the laboratory. After entering the laboratory, the detector
+and the breakout carts were lowered onto a rail system, running North-South on the
+deck, passing over the central opening of the water tank, and continuing all the way
+into the clean room on the north side. During normal operations, the breakout cart sits
+just to the south of the central tank opening, connected through a radon-tight seal to the
+detector inside the tank, while the detector cart is moved away. During testing and/or
+detector assembly in the clean room the detector is installed on its cart, which acts as a
+working stand, while the breakout cart remains just outside the clean room doors. This
+allows us to operate most electronics and diagnostic systems through the breakout cart
+even while the detector is in clean room.
+11. Summary
+In this paper we have described the design of the LUX dark matter detector, in-
+stalled at the Sanford Underground Research Laboratory in Lead, South Dakota. The
+45
+detector has been assembled and commissioned at the surface facility of SURF and
+was transported to the 4850 level in July 2012. Detector commissioning started in Fall
+2012 and operation is expected to start in early 2013.
+12. Acknowledgements
+This work was partially supported by the U.S. Department of Energy (DOE) un-
+der award numbers DE-FG02-08ER41549, DE-FG02-91ER40688, DOE, DE-FG02-
+95ER40917, DE-FG02-91ER40674, DE-FG02-11ER41738, DE-SC0006605, DE-AC02-
+05CH11231, DE-AC52-07NA27344, the U.S. National Science Foundation under award
+numbers PHYS-0750671, PHY-0801536, PHY-1004661, PHY-1102470, PHY-1003660,
+the Research Corporation grant RA0350, the Center for Ultra-low Background Exper-
+iments in the Dakotas (CUBED), and the South Dakota School of Mines and Tech-
+nology (SDSMT). LIP-Coimbra acknowledges funding from Fundac ¸˜ao para a Ciˆencia
+e Tecnologia (FCT) through the project-grant CERN/FP/123610/2011. We gratefully
+acknowledge the logistical and technical support and the access to laboratory infras-
+tructure provided to us by the Sanford Underground Research Facility (SURF) and its
+personnel at Lead, South Dakota.
+46
+References
+[1] D. Yu. Akimov, et al., “The ZEPLIN-III dark matter detector: Instrument design,
+manufacture and commissionin,” Astropart. Phys. 27 (2007) 46.
+[2] G.J. Alner, et al., “Limits on spin-dependent WIMP-nucleon cross-sections from
+the ﬁrst ZEPLIN-II data,” Phys. Lett. B. 653 (2007) 161.
+[3] J. Angle et al., “First Results from the XENON10 Dark Matter Experiment at the
+Gran Sasso National Laboratory,” Phys. Rev. Lett. 100 (2008) 021303.
+[4] E. Aprile, et. al., “Design and performance of the XENON10 dark matter experi-
+ment,” Astroparticle Physics 34 (2011) 679-698.
+[5] D. Yu. Akimov, et al., “WIMP-nucleon cross-section results from the second sci-
+ence run of ZEPLIN-III,” Phys. Lett. B709 (2012) 14.
+[6] E. Aprile, et al., “Dark Matter Results from 225 Live Days of XENON100 Data,”
+Phys. Rev. Lett. 109 (2012) 181301.
+[7] T. Shutt, et al., “Performance and Fundamental Processes at Low Energy in a
+Two-Phase Liquid Xenon Dark Matter Detector,” Nucl. Instrum. Meth. A 579
+(2007) 451-453.
+[8] D.S. Akerib, et al., ’“LUXSim: A Component-Centric Approach to Low-
+Background Simulations,” Nucl. Instrum. Meth. A 675 (2012) 63.
+[9] An interactive plotter of experimental and theoretical data on the direct detection
+of WIMP dark matter, http://dmtools.brown.edu/.
+[10] D.S. Akerib, et al., ’“Radio-assay of Titanium samples for the LUX Experiment,”
+Submitted to Nucl. Inst. Meth. A., arXiv:1112.1376v3.
+[11] A. Bolozdynya, et al., “Cryogenics for the LUX detector,” IEEE Trans. on Nucl.
+Sci., 46 (2009) 2309 - 2312.
+[12] SAES Pure Gas, Inc., http://www.saespuregas.com/default.aspx?idPage=1113.
+47
+[13] D. S. Akerib, et al., “The LUX 0.1 Detector,” Submitted to Nucl. Inst. Meth. A,
+arXiv:1207.3665.
+[14] Omega Engineering, Inc., http://www.omega.com/.
+[15] Advantec Cp., Ltd., http://www.advantech.com/.
+[16] Cirlex, http://www.cirlex.com/.
+[17] L. Kastens et. al., “Calibration of a liquid xenon detector with 83m,” Phys. Rev.
+C80 (2009) 045809.
+[18] A. Manalaysay et al., “Spatially uniform calibration of a liquid xenon detector at
+low energies using 83mKr,” Rev. Sci. Instr. 81 (2010) 073303.
+[19] D. S. Akerib, et al., “Technical Results from the Surface Run of the LUX Dark
+Matter Experiment,” Submitted to Astroparticle Physics, arXiv:1210.4569.
+[20] D.S. Leonard, A. Dobi, C. Hall, L.J. Kaufman, T. Langford, S. Slutsky, Y .-R.
+Yen, “A simple high-sensitivity technique for purity analysis of xenon gas,” Nucl.
+Instrum. Meth. A 621 (2010) 678-684.
+[21] A. Dobi, C. G. Davis, C. Hall, T. Langford, S. Slutsky, Y .-R. Yen, “Detection
+of krypton in xenon for dark matter applications,” Nucl. Instrum. Meth. A 665
+(2011) 1-6.
+[22] D.S. Akerib, et al., ’“An Ultra-Low Background PMT for Liquid Xenon Detec-
+tors,” Nucl. Inst. Meth. A 10.1016/j.nima.2012.11.020.
+[23] V . N. Solovov, et. al., “Position Reconstruction in a Dual Phase Xenon Scin-
+tillation Detector,” Accepted for publication in IEEE Trans. on Nuc. Sci.,
+arXiv:1112.1481.
+[24] M. Attisha et al., “Soudan Low Background Counting Facility (SOLO),” AIP 785
+(2005) 75.
+48
+[25] S. Bricola, A. Menegolli, M. Prata, G. L. Raselli, M. Rossella, C. Vignoli, “Noble-
+gas liquid detectors: measurement of light diffusion and reﬂectivity on commonly
+adopted inner surface materials,” Nucl. Phys. B -Proc. Suppl. 172 (2007) 260.
+[26] JTEC Instruments, http://www.jtec-instruments.com/.
+[27] LibUsb-Win32, http://libusb-win32.sourceforge.net/.
+[28] Dev-C++, http://www.bloodshed.net/devcpp.html.
+[29] Oberon BlackBox, http://www.oberon.ch/blackbox.html.
+[30] D.S. Akerib, et al., ’“Data Acquisition and Readout System for the LUX Dark
+Matter Experiment,” Nucl. Instrum. Meth. A 668 (2012) 1.
+[31] S. Fukuda, et. al., “The Super-Kamiokande Detector,” Nucl. Instrum. Meth. A
+501 (2003) 418-462.
+[32] Hamamatsu Photonics K.K. Private communication.
+[33] D.-M. Mei and C. Zhang, “Neutron Yield in Materials,”
+http://neutronyield.usd.edu/.
+[34] D.-M. Mei et al. “Evaluation of (α,n) Induced Neutrons as a Background for Dark
+Matter Experiments,” Nucl. Inst. Meth. A 606 (2009) 651-660.
+[35] D. -M. Mei and A. Hime. “Muon-Induced Background Study for Underground
+Laboratories,” Phys. Rev. D 73 (2006) 053044.
+[36] M. Laubenstein and G. Heusser, “Cosmogenic radionuclides in metals as indi-
+cator for sea level exposure history,” Applied Radiation and Isotopes 67 (2009)
+750-754.
+49
+</paper>
+
+Based on this instrument, propose specific hardware design upgrades that would most improve its primary physics performance. Be concrete about technologies and components.

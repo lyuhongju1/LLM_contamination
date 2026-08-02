@@ -1,0 +1,3659 @@
+The following is the text of a published detector paper.
+
+<paper>
+EUROPEAN ORGANIZATION FOR NUCLEAR RESEARCH ([REDACTED])
+[REDACTED]-PH-EP-2014-290
+[REDACTED]-DP-2014-002
+19th December 2014
+[REDACTED] Detector Performance
+The [REDACTED] collaboration†
+Abstract
+The [REDACTED] detector is a forward spectrometer at the Large Hadron Collider ([REDACTED])
+at [REDACTED]. The experiment is designed for precision measurements of CP violation
+and rare decays of beauty and charm hadrons. In this paper the performance of the
+various [REDACTED] sub-detectors and the trigger system are described, using data taken
+from 2010 to 2012. It is shown that the design criteria of the experiment have been
+met. The excellent performance of the detector has allowed the [REDACTED] collaboration
+to publish a wide range of physics results, demonstrating [REDACTED]’s unique role, both
+as a heavy ﬂavour experiment and as a general purpose detector in the forward
+region.
+Keywords: Large detector systems for particle and astroparticle physics; Particle
+tracking detectors; Gaseous detectors; Calorimeters; Cherenkov detectors; Particle
+identiﬁcation methods; Detector alignment and calibration methods; Trigger; [REDACTED]
+Published in Int. J. Mod. Phys. A 30, 1530022 (2015)
+c⃝ [REDACTED] on behalf of the [REDACTED] collaboration, license CC-BY-4.0.
+†Authors are listed at the end of this paper.
+arXiv:1412.6352v2  [hep-ex]  11 Mar 2015
+ii
+Contents
+1 Introduction 3
+1.1 Physics goals of the [REDACTED] experiment . . . . . . . . . . . . . . . . . . . . 3
+1.2 Overview of the experimental setup . . . . . . . . . . . . . . . . . . . . . . 4
+1.3 Data taking periods and operating conditions . . . . . . . . . . . . . . . . 7
+2 Charged particle reconstruction 11
+2.1 Hit eﬃciencies and hit resolutions of the tracking detectors . . . . . . . . . 11
+2.1.1 Vertex Locator . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.1.2 Silicon Tracker . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+2.1.3 Outer Tracker . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+2.1.4 Muon system . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+2.2 Track reconstruction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+2.2.1 Track ﬁnding eﬃciency . . . . . . . . . . . . . . . . . . . . . . . . . 24
+2.2.2 Mass and momentum resolution . . . . . . . . . . . . . . . . . . . . 25
+2.3 Spatial alignment of the tracking detectors . . . . . . . . . . . . . . . . . . 27
+2.3.1 Vertex locator alignment . . . . . . . . . . . . . . . . . . . . . . . . 29
+2.3.2 Alignment of the silicon tracker and outer tracker . . . . . . . . . . 31
+2.3.3 Muon system alignment . . . . . . . . . . . . . . . . . . . . . . . . 33
+2.4 Vertexing and decay time resolution . . . . . . . . . . . . . . . . . . . . . . 35
+2.4.1 Primary vertex reconstruction . . . . . . . . . . . . . . . . . . . . . 36
+2.4.2 Impact parameter resolution . . . . . . . . . . . . . . . . . . . . . . 36
+2.4.3 Decay time resolution . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+2.4.4 V 0 reconstruction . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+3 Neutral particle reconstruction 39
+3.1 Calibration of the calorimeter system . . . . . . . . . . . . . . . . . . . . . 40
+3.2 Selection of neutral energy deposits in ECAL . . . . . . . . . . . . . . . . . 42
+3.3 Photon reconstruction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+3.4 Neutral pion reconstruction . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+4 Particle identiﬁcation 44
+4.1 Calorimeter system based particle identiﬁcation . . . . . . . . . . . . . . . 45
+4.1.1 Photon and merged π0 identiﬁcation . . . . . . . . . . . . . . . . . 45
+4.1.2 Electron identiﬁcation . . . . . . . . . . . . . . . . . . . . . . . . . 46
+4.2 RICH system based particle identiﬁcation . . . . . . . . . . . . . . . . . . 49
+4.2.1 Cherenkov angle resolution . . . . . . . . . . . . . . . . . . . . . . . 49
+4.2.2 Photoelectron yield . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+4.2.3 Particle identiﬁcation performance . . . . . . . . . . . . . . . . . . 52
+4.3 Muon system based particle identiﬁcation . . . . . . . . . . . . . . . . . . . 53
+4.4 Combined particle identiﬁcation performance . . . . . . . . . . . . . . . . . 56
+1
+5 Trigger 58
+5.1 Data driven trigger performance determination . . . . . . . . . . . . . . . . 58
+5.2 Level-0 hardware trigger . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+5.3 High Level Trigger . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+5.3.1 First level . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+5.3.2 Second level . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+5.4 Deferred trigger . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+5.5 Trigger performance summary . . . . . . . . . . . . . . . . . . . . . . . . . 67
+6 Conclusion and outlook 67
+2
+1 Introduction
+1.1 Physics goals of the [REDACTED] experiment
+[REDACTED] is a dedicated heavy ﬂavour physics experiment at the [REDACTED]. Its main goal is to
+search for indirect evidence of new physics in CP violation and rare decays of beauty and
+charm hadrons, by looking for the eﬀects of new particles in processes that are precisely
+predicted in the Standard Model (SM) and by utilising the distinctive ﬂavour structure
+of the SM with no tree-level ﬂavour-changing neutral currents. Quark mixing in the SM
+is described by the Cabibbo-Kobayashi-Maskawa (CKM) matrix [1], which has a single
+source of CP violation. Since the level of CP violation in weak interactions cannot explain
+the matter-antimatter asymmetry in the universe [2], new sources of CP violation beyond
+the SM are needed. The eﬀect of such new sources might be seen in heavy ﬂavour physics,
+where many models of new physics produce contributions that change the expectation
+values of the CP violating phases or the branching fractions of rare decays. Some models
+even predict decay modes that are forbidden in the SM. To examine such possibilities, CP
+violation and rare decays of hadrons containing b and c quarks must be studied with large
+data samples, using many diﬀerent decay modes.
+Thanks to the large beauty and charm production cross-section at the [REDACTED] [3,4], the
+[REDACTED] experiment collected∼ 1012 heavy ﬂavour decays during 2011 and 2012. Despite
+these large yields, at the [REDACTED] centre-of-mass energies of √s = 7–8 TeV the charm and
+beauty cross-sections are approximately a factor 10 and 200 smaller than the total cross-
+section, respectively. To separate the decays of interest from the background, both
+displaced vertex and high transverse momentum signatures are exploited. Excellent vertex
+resolution is required to measure impact parameters and to achieve a good decay time
+resolution, which is essential to resolve B0
+s ﬂavour oscillations and to reject various sources
+of background. Good momentum and invariant mass resolution are important to minimise
+combinatorial background and resolve heavy-ﬂavour decays with kinematically similar
+topologies. Charged particle identiﬁcation is essential in any ﬂavour physics programme,
+for instance to isolate suppressed decays and for b-quark ﬂavour tagging. Detection of
+photons, in addition to charged particles, allows the reconstruction of rare radiative decays
+and more common decays with a π0 or an η meson in the ﬁnal state. Finally, to beneﬁt
+from the high event rate at the [REDACTED], a high-bandwidth data acquisition system and a
+robust and selective trigger system are required.
+[REDACTED] has various advantages over thee+e−B factories, including a higher cross-section,
+a larger boost and the fact that all species of b hadrons are produced. Less attractive
+characteristics of the [REDACTED] environment are the generally increased background levels
+encountered, inherent to hadronic collisions, which result in a number of experimental
+compromises, such as reducedb ﬂavour tagging eﬃciency and the diﬃculty in reconstructing
+ﬁnal states with missing or neutral particles. Despite these challenges, the results [5]
+obtained from data taken between 2010 and 2013 ([REDACTED] Run I) have clearly established
+[REDACTED] as the next generation ﬂavour physics experiment. Thanks to eﬃcient charged
+particle tracking and dedicated triggers for lepton, hadron and photon signatures, [REDACTED]
+3
+has the world’s largest sample of exclusively reconstructed charm and beauty decays.
+With these samples, [REDACTED] has already made many key results, such as the ﬁrst evidence
+for the rare decay B0
+s→ µ+µ− [6, 7] and measurements of angular distributions in the
+B0→K∗0µ+µ− decay [8,9], which are particularly sensitive to deviations from the SM.
+Another example is the measurement of the CP violating phase (φs) in the interference
+between mixing and decay of B0
+s mesons, where the value predicted within the SM is small,
+but much larger values are possible in new physics models. [REDACTED] has measured this phase
+with results that are at present consistent with the SM within the uncertainties [10,11].
+The measurement of the angle γ of the Unitarity Triangle from B→ DK decays is a
+crucial component in the determination of the parameters of the CKM quark mixing
+matrix. The γ results from [REDACTED] [12,13] already dominate the global averages. In the
+charm sector, one of the most interesting observables ( AΓ) is the diﬀerence in the inverse
+eﬀective lifetimes between D0 and D0 decays. The most precise measurement of AΓ to
+date has been presented by [REDACTED] [14]. These are just some of the results from [REDACTED] that
+have made a signiﬁcant impact on the ﬂavour physics landscape.
+The physics output of [REDACTED] extends well beyond this core programme. Examples of
+other topics include: measurements of the production of electroweak gauge bosons in the
+forward kinematic region, uniquely covered by the [REDACTED] acceptance [15,16]; measurements
+of the properties of newly discovered exotic hadrons [17,18]; searches for lepton number
+and lepton ﬂavour violation [19,20], and measurements of heavy quarkonia in proton-lead
+collisions [21,22]. These illustrate the wide variety in electroweak and QCD topics covered
+by the [REDACTED] experiment and establish [REDACTED] as a general purpose detector in the forward
+region at a hadron collider.
+In the remainder of this introduction an overview of the [REDACTED] detector is given, together
+with a summary of the data-taking periods and the operating conditions. Thereafter,
+the paper discusses charged particle reconstruction, vertexing and decay-time resolution
+in Section 2, neutral particle reconstruction in Section 3 and particle identiﬁcation in
+Section 4. The performance results shown are indicative, and depend on the speciﬁc
+requirements set by a physics analysis, for example to achieve high eﬃciency or high purity.
+Section 5 discusses the trigger and the paper concludes with a short summary in Section 6.
+1.2 Overview of the experimental setup
+[REDACTED] is a single-arm spectrometer with a forward angular coverage from approximately
+15 mrad to 300 (250) mrad in the bending (non-bending) plane [24]. The choice of the
+detector geometry is driven by the fact that at high energies production of the b- and
+b-hadrons is highly correlated, such that they are predominantly produced in the same
+forward or backward cone. The layout of the [REDACTED] spectrometer is shown in Figure 1.
+Most detector subsystems are assembled in two halves, which can be moved out horizontally
+for assembly and maintenance purposes, as well as to provide access to the beam-pipe.
+They are referred to as the detector A- and C-sides. A right-handed coordinate system
+is deﬁned with z along the beam axis into the detector, y vertical and x horizontal.
+Cylindrical polar coordinates (r,φ,z) are also used, as appropriate.
+4
+Figure 1: View of the [REDACTED] detector [23].
+The spectrometer magnet, required for the momentum measurement of charged particles,
+is a warm dipole magnet providing an integrated ﬁeld of about 4 Tm, which deﬂects charged
+particles in the horizontal plane. The ﬁeld of the spectrometer magnet also has an impact
+on the trajectory of the [REDACTED] beams. Three dipole magnets are used to compensate for
+this eﬀect and to ensure a closed orbit for the beams [25].
+The tracking system consists of the VErtex LOcator ([REDACTED]), situated around the
+interaction region inside a vacuum tank, and four planar tracking stations: the Tracker
+Turicensis (TT) upstream of the dipole magnet, and tracking stations T1–T3 downstream
+of the magnet. Silicon microstrips are used in TT and the region close to the beam-pipe
+(Inner Tracker, IT) of stations T1–T3, whereas straw tubes are employed for the outer
+parts (Outer Tracker, OT). Charged particles require a minimum momentum of 1 .5 GeV/c
+to reach the tracking stations, T1–T3.
+The [REDACTED] contains 42 silicon modules arranged along the beam, each providing a
+measurement of the r (R sensors) and φ (Φ sensors) coordinates. The pitch within a
+module varies from 38 µm at the inner radius of 8.2 mm, increasing linearly to 102 µm
+at the outer radius of 42 mm. For detector safety, the [REDACTED] modules are retracted by
+29 mm in the horizontal direction during injection of the [REDACTED] beams and are subsequently
+moved back, using a fully automated procedure once stable conditions have been declared.
+From the declaration of stable beams the [REDACTED] takes, on average, 210 seconds to close.
+During [REDACTED] Run I approximately 750 closing procedures were performed.
+The TT and IT detectors use silicon microstrip sensors with a strip pitch of 183 µm
+and 198 µm, respectively. The TT is about 150 cm wide and 130 cm high, with a total
+5
+active area of around 8 m2. The IT covers a 120 cm wide and 40 cm high cross-shaped
+region in the centre of the three tracking stations T1–T3. The total active area of the
+IT is approximately 4 m2. Each of the tracking stations has four detection layers in an
+x - u - v - x arrangement with vertical strips in each of the twox layers, and strips rotated
+by a stereo angle of −5◦ and +5◦ in the u and v layers, respectively.
+The Outer Tracker is a drift-tube gas detector consisting of approximately 200 gas-tight
+straw-tube modules with drift-time read-out. Each module contains two staggered layers
+of drift-tubes with an inner diameter of 4 .9 mm. As a counting gas, a mixture of Argon
+(70%), CO2 (28.5%) and O 2 (1.5%) is chosen to guarantee a drift time below 50 ns and a
+spatial resolution of 200 µm. As for the IT part of T1–T3, the OT has four layers arranged
+in an x - u - v - x geometry. The total active area of a station is 597 cm × 485 cm.
+Charged hadron identiﬁcation in the momentum range from 2 to 100 GeV/c is achieved
+by two Ring Imaging Cherenkov detectors (RICH1 and RICH2) read out by Hybrid Photon
+Detectors (HPDs). The upstream detector, RICH1, covers the low momentum charged
+particle range from about 2 to 60 GeV/c and uses Aerogel and C 4F10 as radiators, while
+the downstream detector, RICH2, covers the high momentum range from about 15 GeV/c
+to 100 GeV/c, using a CF4 radiator. RICH1 has a wide acceptance, covering the [REDACTED]
+acceptance from±25 mrad to±300 mrad (horizontal) and±250 mrad (vertical), while
+RICH2 has a limited angular acceptance of ±15 mrad to±120 mrad (horizontal) and
+±100 mrad (vertical).
+The calorimeter system is composed of a Scintillating Pad Detector (SPD), a Preshower
+(PS), a shashlik type electromagnetic calorimeter (ECAL) and a hadronic calorimeter
+(HCAL). It provides the identiﬁcation of electrons, photons and hadrons as well as the
+measurement of their energies and positions, and selects candidates with high transverse
+energy for the ﬁrst trigger level (L0). The SPD improves the separation of electrons
+and photons. A 15 mm lead converter with a thickness of 2.5 radiation lengths ( X0)
+is placed between the planes of rectangular scintillating pads of the SPD and the PS.
+The background from charged pions is reduced by a measurement of the longitudinal
+partitioning of the electromagnetic shower in the PS detector and the main section of
+ECAL. The ECAL is made of a sampling scintillator/lead structure with a total thickness
+of 25 X0. The calorimeter system has a variable lateral segmentation which takes into
+account the variation in hit density of two orders of magnitude over the calorimeter
+surface. A segmentation into three diﬀerent sections has been chosen for the ECAL with
+a corresponding projective geometry for the SPD and PS detectors, meaning that all
+of their transverse dimensions scale with the distance from the interaction point. The
+outer dimensions match projectively those of the tracking system, while the square hole
+around the beam-pipe approximately limits the inner acceptance to projective polar angles
+θx,y > 25 mrad. The hadron calorimeter (HCAL) is a sampling device made from iron and
+scintillating tiles, as absorber and active material, respectively. The special feature of this
+sampling structure is the orientation of the scintillating tiles which run parallel to the
+beam-axis. Given the dimensions of the hadronic showers, the HCAL is segmented into
+two zones with diﬀerent lateral dimensions. The thickness of the HCAL is limited to 5.6
+nuclear interaction lengths (λi) due to space constraints.
+6
+The muon detection system provides muon identiﬁcation and contributes to the L0
+trigger of the experiment. It is composed of ﬁve stations (M1–M5) of rectangular shape
+equipped predominantly with Multi Wire Proportional Chambers (MWPC), except in the
+highest rate region of M1, where triple Gas Electron Multiplier (GEM) detectors are used.
+The full system comprises 1380 chambers and covers a total area of 435 m2. Stations M2
+to M5 are placed downstream of the calorimeters and are interleaved with 80 cm thick
+iron absorbers to select penetrating muons. The minimum momentum that a muon must
+have to traverse the ﬁve stations is approximately 6 GeV/c. The total absorber thickness,
+including the calorimeters, is approximately 20 λi. Station M1 is placed in front of the
+calorimeters and is used to improve the pT measurement in the trigger. The geometry of
+the ﬁve stations is projective, with each station divided into four regions, R1 to R4, with
+increasing distance from the beam axis. The linear dimensions of the regions R1, R2, R3,
+R4, and their segmentation scale in the ratio 1:2:4:8. With this geometry, the channel
+occupancies are comparable in each of the four regions of a given station.
+The [REDACTED] trigger system consists of two levels. The ﬁrst level is implemented in
+hardware and is designed to reduce the event rate from the nominal [REDACTED] bunch crossing
+rate of 40 MHz to a maximum of 1.1 MHz. The complete detector is then read out and
+the data is sent to the High Level Trigger (HLT) implemented on the Event Filter Farm
+(EFF), which had about 30000 processing cores in 2012. The HLT is a software trigger,
+running a simpliﬁed version of the oﬄine event reconstruction to accommodate the more
+stringent CPU time requirements.
+1.3 Data taking periods and operating conditions
+At the end of 2009, [REDACTED] recorded its ﬁrst pp collisions at the injection energy of the
+[REDACTED],√s = 0.9 TeV. These data have been used to ﬁnalise the commissioning of the
+sub-detector systems and the reconstruction software, and to perform a ﬁrst alignment
+and calibration of the tracking, calorimeter and particle identiﬁcation (PID) systems. In
+this period, the [REDACTED] was left in the open position, due to the larger aperture required
+at lower beam energies.
+During 2010 the operating conditions changed rapidly due to the ramp-up of the [REDACTED]
+luminosity. A critical parameter for [REDACTED] performance is the pile-up µvis, deﬁned as the
+average number of visible interactions per beam-beam crossing [26]. The evolution of
+the [REDACTED] operating conditions during [REDACTED] Run I is shown in Figure 2. Starting with
+luminosities∼ 1028 cm−2s−1 and almost no pile-up, the luminosity reached 10 32 cm−2s−1
+with µvis≈ 2.5.
+While the highest luminosity in 2010 was already 75% of the [REDACTED] design luminosity,
+the pile-up was much larger than the design value due to the low number of bunches in
+the machine. It was demonstrated that the trigger and reconstruction work eﬃciently
+under such harsh conditions with increased detector occupancy due to pile-up, and that
+the physics output was not compromised.
+The [REDACTED] beam energy was 3.5 TeV during 2010 and 2011. In the ﬁrst part of the
+2011 data taking the number of bunches in the machine increased in several steps to
+7
+Figure 2: Average number of visible interactions per bunch crossing (’pile-up’, top) and instanta-
+neous luminosity (bottom) at the [REDACTED] interaction point in the period 2010-2012. The dotted
+lines show the design values.
+about 1300, the maximum possible with 50 ns bunch spacing. Due to the larger number
+of bunches the pile-up over the year could be reduced, while [REDACTED] took the majority
+of the data at a luminosity of 3 .5× 1032 cm−2s−1. This was 1.75 times more than the
+design luminosity of 2× 1032 cm−2s−1, as shown in Figure 2. In 2011 a luminosity levelling
+procedure was introduced at the [REDACTED] interaction point. By adjusting the transverse
+overlap of the beams at [REDACTED], the instantaneous luminosity could be kept stable to within
+about 5% during a ﬁll, as illustrated in Figure 3. For this particularly long ﬁll, a maximum
+overlap with head-on beams was reached only after 15 hours. The luminosity levelling
+procedure minimises the eﬀects of luminosity decay, allowing to maintain the same trigger
+conﬁguration during a ﬁll and to reduce systematic uncertainties due to changes in the
+detector occupancy.
+In 2012 the [REDACTED] beam energy was increased to 4 TeV. [REDACTED] took data at a luminosity
+of 4× 1032 cm−2s−1, twice the [REDACTED] design luminosity. The [REDACTED] delivered stable beams
+for about 30% of the operational year. An eﬀort was made in 2012 to use more eﬃciently
+the processing power available in the Event-Filter-Farm (EFF), which otherwise would
+have been idle during 70% of the time. The mechanism put in operation defers a fraction
+of the HLT processing to the inter-ﬁll time, typically several hours, between the [REDACTED]
+collision periods. In this approach about 20% of the L0 accepted events during data-taking
+are temporarily saved on the local disks of the EFF nodes and are processed only after
+8
+Figure 3: Development of the instantaneous luminosity for ATLAS, CMS and [REDACTED] during
+[REDACTED] ﬁll 2651. After ramping to the desired value of 4 × 1032cm−2s−1 for [REDACTED], the luminosity
+is kept stable in a range of 5% for about 15 hours by adjusting the transversal beam overlap.
+The diﬀerence in luminosity towards the end of the ﬁll between ATLAS, CMS and [REDACTED] is due
+to the diﬀerence in the ﬁnal focusing at the collision points, commonly referred to as the beta
+function, β∗.
+the end of stable beams. This deferred triggering method allowed [REDACTED] to increase the
+data sample available for physics analysis.
+The integrated luminosity recorded by [REDACTED] was 38 pb−1 in 2010, 1.11 fb−1 in 2011
+and 2.08 fb−1 in 2012. The evolution of the integrated luminosity for the years 2010 to
+2012 is shown in Figure 4.
+Luminosity calibrations were carried out with the [REDACTED] detector for the various centre-
+of-mass energy√s at which data has been taken. Both the ”van der Meer scan” and
+”beam-gas imaging” luminosity calibration methods were employed [27]. For proton-proton
+interactions at√s = 8 TeV a relative precision of the luminosity calibration of 1.47% was
+obtained using van der Meer scans and 1.43% using beam-gas imaging, resulting in a
+combined precision of 1.12%. Applying the calibration to the full data set determines
+the luminosity with a precision of 1.16%. This represents the most precise luminosity
+measurement achieved so far at a bunched-beam hadron collider.
+The average operational eﬃciency, deﬁned as the ratio of recorded over delivered
+luminosity, was 93% during [REDACTED] Run I, reaching 95% on average in 2012. The ineﬃciency
+contains two irreducible sources. The ﬁrst one is the detector-safety procedure for the
+[REDACTED] closing, amounting to 0.9%, which is in line with expectations. The second originates
+9
+Figure 4: Integrated luminosity in [REDACTED] during the three years of [REDACTED] Run I. The ﬁgure shows
+the curves for the delivered (dark coloured lines) and recorded (light coloured lines) integrated
+luminosities.
+from non-conformities in the implementation of the read-out protocol of some sub-detector
+front-end systems and introduces 2.4% of dead-time at 1 MHz read-out frequency. The
+remaining 3.6% is related to short technical problems with the sub-detector electronics or
+the central read-out system. About 99% of the recorded data is used for physics analyses.
+After a short pilot run in 2012, the [REDACTED] delivered for the ﬁrst time proton-lead
+collisions in January and February 2013. The beam energy of the proton beam was 4 TeV,
+while the corresponding nucleon energy of the lead beam was 1.58 TeV, corresponding to a
+centre-of-mass energy of 5 TeV. The [REDACTED] delivered collisions with both protons and lead
+nuclei as the clockwise, and anti-clockwise beams, which made it possible for [REDACTED] to
+collect data in the forward and backward direction of proton-lead collisions. The integrated
+recorded luminosity during the proton-lead run was 1.6 nb−1.
+Since the [REDACTED] magnet deﬂects positive and negative particles in opposite directions
+in the x−z plane, a diﬀerence in performance of the left and right sides of the detector
+leads to charge detection asymmetries. To reach its design sensitivity in CP violation
+measurements, [REDACTED] aims to control such detection asymmetries to a precision of 10 −3
+or better. This is achieved by changing the direction of the magnetic ﬁeld regularly and
+then combining data sets with diﬀerent polarity to cancel left-right asymmetries. In Run I
+the polarity of the magnet was inverted about two times per month, such that smoothly
+varying changes in data-taking conditions or detector performance would not jeopardise
+10
+the cancellation.
+The [REDACTED] operation with both ﬁeld polarities leads to diﬀerent eﬀective crossing
+angles between the two beams, in particular when the beam crossing is performed in the
+horizontal plane, as it was the case in 2010 and 2011. The eﬀective total crossing angles
+varied between about 40 µrad and 1040 µrad for the two spectrometer polarities. During
+2012 the beam crossing was performed in the vertical plane. Together with the deﬂection
+caused by the [REDACTED] spectrometer magnet this led to more similar total eﬀective crossing
+angles of about ± 470 µrad in the horizontal plane for the two spectrometer polarities,
+respectively, and of± 200 µrad in the vertical plane. However, the physics performance of
+the experiment has not been aﬀected by the various beam crossing scenarios mentioned
+here.
+2 Charged particle reconstruction
+The trajectories of charged particles inside the [REDACTED] detector are reconstructed using
+dedicated tracking detectors; The [REDACTED] detector encompassing the interaction region, the
+TT stations before the spectrometer magnet and the T1-T3 stations further downstream.
+By determining the deﬂection of the charged particles after traversing the magnetic ﬁeld,
+their momentum can be determined. The high spatial resolution of the [REDACTED] enables
+a precise determination of the particle’s ﬂight direction close to the primary interaction
+point, resulting in a good vertex resolution.
+2.1 Hit eﬃciencies and hit resolutions of the tracking detectors
+The hit eﬃciencies and hit resolutions of the diﬀerent tracking detectors are discussed
+in the following sections. Hit eﬃciencies in general exceeding 99% were achieved, more
+than suﬃcient for an eﬃcient track reconstruction. The hit resolutions of all tracking
+detectors are as expected from test-beam measurements. Hit occupancies for the 2011
+data taking conditions, although running at much higher luminosity and pile-up than
+originally planned, are well within acceptable levels, only mildly aﬀecting the track ﬁnding
+eﬃciency and rate of wrongly reconstructed trajectories.
+2.1.1 Vertex Locator
+The overall performance of the [REDACTED] is described in detail in Reference [28]. A summary
+of the hit eﬃciency, hit resolution, occupancy and radiation damage given below.
+The [REDACTED] hit eﬃciency is evaluated by two methods. The cluster ﬁnding eﬃciency [29]
+is determined by removing each sensor in turn from the track reconstruction, extrapolating
+the tracks to this sensor and searching for a hit around the intercept point. Alternatively,
+the channel occupancy spectra is analysed to identify strips with a substantially lower or
+higher number of hits than the average. The two methods are in agreement. At the end of
+[REDACTED] Run I, the occupancy method identiﬁed 0.6% ineﬃcient strips and 0.02% noisy strips
+11
+m]μStrip Pitch [
+30 40 50 60 70 80 90 100
+m]μ Resolution [
+0
+5
+10
+15
+20
+25
+30
+35
+Projected angle 0-4 degrees
+Projected angle 7-11 degrees
+Binary Resolution
+[REDACTED]
+Projecte d Angle (degree)
+0 5 10 15 20
+Res./pitch
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45 mµpitch bin (40-45) 
+mµpitch bin (50-55) 
+mµpitch bin (75-80) 
+mµpitch bin (95-100) 
+ [REDACTED]
+ 
+Figure 5: The [REDACTED] hit resolution as a function of the inter-strip pitch (left) evaluated with
+2010 data for the R sensors. Results are shown for two projected angle ranges and the expected
+resolution of a single-hit binary system is indicated for comparison. Resolution divided by pitch
+as a function of the track projected angle for four diﬀerent strip pitches (right).
+in the detector, these numbers are eﬀectively identical to those at the start of operations
+in 2010.
+The hit resolution in silicon devices depends on the inter-strip read-out pitch and
+the charge sharing between strips. The charge sharing varies with the operational bias
+voltage and the projected angle of the track. The bias voltage was 150V throughout the
+physics data taking in 2010 to 2013. The projected angle [29] provides information on
+the number of strips that the particle crosses while it traverses the thickness of the silicon
+sensor. Initially the resolution improves with increasing angle due to the charge sharing
+between strips, allowing more accurate interpolation of the hit position. The optimal
+resolution is obtained when the tracks cross the width of one strip when traversing the
+300 µm thickness of the sensor. For the [REDACTED] the optimal projected angle varies between
+about 7◦ at the lowest inter-strip pitch of 40 µm to about 18◦ for the largest 100 µm pitch
+strips, as shown in Figure 5 (right). Above the optimal angle the resolution begins to
+deteriorate due to the ﬂuctuations in the charge on the strips and because the signal to
+noise ratio on individual strips may drop below the clustering threshold.
+The [REDACTED] reads out analogue pulse-height information from the strips, and this
+information is used oﬄine to calculate the cluster position [29] using the weighted average
+of the strip ADC values. The resolution of the sensors is determined from the residual
+between the extrapolated position of the ﬁtted track and the measured cluster position.
+The use of the evaluated cluster position in the track ﬁt gives rise to a bias in the residual,
+for which a correction is applied.
+The resolution is determined as a function of the strip pitch and of the projected angle.
+For each bin, the resolution is determined from the width of the ﬁt of a Gaussian function
+12
+to the distribution of the corrected residuals. The resolution is evaluated using tracks that
+have hits in the tracking stations behind the magnet and hence for which the momentum
+measurement is available. The tracks are required to have a momentum greater than
+10 GeV/c to reduce the dependence of the estimation on the multiple scattering eﬀect, and
+a number of other track quality criteria are applied to reject fake tracks. The results are
+presented here for the R sensor. The Φ sensor results are compatible with those of the R
+sensor but the almost radial geometry of the Φ sensor strips means that tracks primarily
+have small projected angles.
+The measured hit resolution has a linear dependence on the strip pitch in projected
+angle bins, as shown in Figure 5 (left). The best hit precision measured is around 4 µm
+for an optimal projected angle of 8 ◦ and the minimum pitch of approximately 40 µm.
+The detector occupancy is a key parameter in the performance of the pattern recognition
+and tracking algorithms. The cluster occupancy was measured to be around 0 .5% in
+randomly triggered events and 1% in events passing the high level trigger, for data with
+a µvis = 1.7. The pitch of the strips on the sensors increases with radius, keeping the
+local occupancy values to within 25% of these typical values. The occupancy from noise
+is negligible compared with that from particles; in the absence of circulating beams the
+occupancy is below 0.01%.
+The proximity of the [REDACTED] sensors to the [REDACTED] pp collisions results in the sensors
+receiving a signiﬁcant radiation dose. A study of the observed eﬀects is available in
+Reference [30]. During [REDACTED] Run I the sensors have been exposed to a range of ﬂuences
+up to a maximum value of 1.8× 1014 1 MeV neutron equivalents/ cm2 ( neq) at the radius
+of the inner strip of 8.2 mm.
+The current drawn from a silicon sensor increases linearly with ﬂuence. The sensor
+current is composed of two dominant sources, referred to as bulk and surface currents.
+Studying the current as a function of the temperature allows the two sources to be
+separated, and dedicated data is taken to allow this study to be performed. At the
+operational sensor temperature of approximately −7◦C, the average rate of sensor current
+increase is 18 µA per fb−1, in agreement with predictions [30].
+Dedicated data are taken around three times a year to study the charge collection
+of the [REDACTED] as a function of the bias voltage of the sensors. The bias voltage required
+to extract a ﬁxed fraction of the maximum charge can then be determined. From this
+measurement the ‘eﬀective depletion voltage’ can be determined [30], and this is shown
+as a function of ﬂuence in Figure 6. Each sensor contributes multiple points to this plot
+in each data sample as the sensors are divided in the analysis into radial regions that
+have received similar ﬂuences, as denoted by the diﬀerent colours in the ﬁgure. The
+n-bulk sensors undergo space-charge sign inversion under irradiation, and hence their
+depletion voltage initially reduces with irradiation. This continues until type inversion
+occurs, after which it increases with further irradiation. The ﬁrst observation of n+-on-n
+sensor space-charge-sign-inversion at the [REDACTED] was made during 2011 [30], occurring at
+a ﬂuence of a round 15× 1012 1 MeVneq. The eﬀective depletion voltage at the maximal
+ﬂuence at the end of [REDACTED] Run I was approximately 100 V, and followed the expectation.
+The current detector is predicted to deliver an acceptable physics performance until the
+13
+ fluence
+eq1 MeV n0
+50 100 150 12
+10×Effective depletion voltage [V]
+0 20
+40
+60
+80
+100
+120
+Sensor radius:
+8-11 mm
+11-16 mm
+16-23 mm
+23-34 mm
+34-45 mm
+[REDACTED]
+Figure 6: The eﬀective depletion voltage versus ﬂuence for all [REDACTED] sensors up to the end of
+[REDACTED] Run 1 at 3.4 fb−1 delivered integrated luminosity.
+end of [REDACTED] Run II with an operating voltage below 500 V.
+2.1.2 Silicon Tracker
+The Tracker Turicensis (TT) and the Inner Tracker (IT) are constructed from p+-on-n
+silicon microstrip detectors. The TT sensors are 9.64 cm wide, 9.44 cm long and 500 µm
+thick. The TT modules have read-out sectors with one, two, three or four sensors bonded
+together, and are arranged such that the single-sensor sectors are closest to the beam-pipe
+in the region with the highest ﬂux of particles. The sensors in the IT are 7.6 cm wide,
+11 cm long and are either 320 µm or 410 µm thick. Two 410 µm thick sensors are bonded
+together for the IT modules on either side of the beam-pipe while the modules above and
+below the beam-pipe use one 320 µm sensor. In total, there are 280 (336) read-out sectors
+with 512 (384) strips in the TT (IT).
+The cluster ﬁnding eﬃciency of the detectors depends on the fraction of working
+channels and the intrinsic hit eﬃciency of the silicon sensor. The number of working
+channels is aﬀected by problems with the read-out, and the masking of dead or noisy
+strips found during the calibration of the detector. The fraction of working channels varied
+during data taking. The luminosity-weighted average of the fraction of working channels
+during Run I is calculated to be 99.7% and 98.6% for the TT and IT, respectively. Repairs
+can be made to the TT read-out during short technical stops whereas problems with the
+IT read-out can only be ﬁxed during the [REDACTED] shutdowns at the end of each year. Two
+read-out sectors were disabled in the IT as they could not be properly conﬁgured.
+The intrinsic hit eﬃciency of the silicon sensors can be measured using reconstructed
+tracks to probe whether or not the expected hits on a track are found. The eﬃciency is
+14
+Sector number
+20
+40 60 ]
+m µ Resolution [ 0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+A-side
+CentralC-side[REDACTED]
+X1
+U
+V
+X2
+Figure 7: Hit resolution measured for all modules in the TT. The sector number corresponds
+approximately to the x-direction. The resolution improves in the outer regions of the “A-side”
+and “C-side” regions where there is more charge sharing due to the larger track angle. It is
+almost constant in the sectors in the “Central” region where the occupancy is highest. The
+labels X1,U,V andX2 correspond to the four detection layers arranged with an ( x−u−v−x)
+geometry in the TT box.
+deﬁned as the ratio between the number of hits found and the number of hits expected for
+a given sector. The measurement uses daughter tracks from clean samples of J/ψ→µ+µ−
+decays. The method looks for hits in a window around the intersection point between a
+track and each sensor on the track where a hit is expected. The tracks are required to have
+momentum greater than 10 GeV/c to reduce the eﬀect of multiple scattering. Additional
+cuts are placed on the track quality to minimise the eﬀect of fake tracks on the eﬃciency
+measurement. The eﬃciency is calculated relative to the number of working channels
+i.e. hits are not expected to be found when a channel or group of channels is disabled.
+The overall hit eﬃciency is determined to be greater than 99.7% and 99.8% for TT and
+IT, respectively.
+The hit resolution is determined from the residuals between the measured hit position
+and the extrapolated track position. The unbiased residual is calculated by removing the
+hit from the track ﬁt and calculating the distance between the hit and the extrapolated
+track position. The resolution is given by the spread of the unbiased residual distribution
+after correcting for the uncertainty in the track parameters. The hit resolution measured
+using the 2011 data is 52.6 µm for the TT and 50.3 µm for the IT. The resolution measured
+using the 2012 data is shown as a function of the sector number in Figure 7 for the four
+TT layers and in Figure 8 for the IT. The resolution is worse in the central regions closest
+to the beam-pipe where the track angles are smallest and, consequently, where there is the
+least amount of charge sharing between strips.
+15
+Sector number
+10
+20 0
+20
+40
+60
+80
+100
+X1
+U V X2 [REDACTED]Sector number
+0
+20
+40
+60
+80
+100
+Sector number
+]
+m µ Resolution [ 0
+20
+40
+60
+80
+100
+C-side Top Bottom A-side 
+Figure 8: Hit resolution measured for modules in IT1 (bottom), IT2 (middle) and IT3 (top).
+The sector number corresponds approximately to the x-direction. The resolution in the 1-sensor
+sectors in the boxes above (Top) and below (Bottom) the beam-pipe are constant. The resolution
+improves for the 2-sensor sectors in the A- and C-side boxes with increasing distance from
+beam-pipe where the track angle is typically larger. The labels X1, U, V and X2 correspond to
+the four detection layers arranged with an ( x−u−v−x) geometry in each box.
+Table 1: Summary of the hit eﬃciency and resolution measurements made using 2011 and 2012
+data. Results are also shown for simulated events.
+Detector Measurement 2011 Data 2012 Data 2011 MC 2012 MC
+TT Hit eﬃciency 99.7% 99.8% 99.9% 99.9%
+Hit resolution 52.6 µm 53.4 µm 47.8 µm 48.0 µm
+IT Hit eﬃciency 99.8% 99.9% 99.9% 99.9%
+Hit resolution 50.3 µm 54.9 µm 53.8 µm 53.9 µm
+The measurements of the hit eﬃciency and the resolution are summarised in Table 1
+for the 2011 and 2012 data taking periods. The results are compared with the expectation
+from simulations for 2011 and 2012 data taking conditions, respectively. The measured hit
+resolutions are in agreement with those expected from simulation. The small diﬀerences
+observed can be partially explained by the remaining misalignment of the modules. The
+measured hit eﬃciency is well above 99% in all cases.
+The particle density falls signiﬁcantly as the distance from the beam-pipe is increased.
+16
+Entries    1.141146e+07
+Mean       77
+RMS      34.2
+Measured time [ns]
+0 25 50 75
+ per event / (0.8 ns)hitsN
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+Entries    1.141146e+07
+Mean       77
+RMS      34.2
+Entries    1.636098e+07
+Mean       81
+RMS      47.3
+Entries    2.491852e+07
+Mean     79.4
+RMS      48.4
+75 ns bunch spacing
+50 ns bunch spacing
+25 ns bunch spacing
+unbiased distance [mm]
+-2 0 2
+drift time [ns]
+-5
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+[REDACTED]
+[REDACTED]
+Figure 9: Drift time distribution (left) for the modules located closest to the beam (“M8”). Drift
+time versus distance relation (right) where the red-dotted lines indicate the centre and the edge
+of the straw, corresponding to drift times of 0 and 36 ns, respectively [31].
+The occupancy in each of the read-out sectors was estimated using a data sample containing
+events randomly selected after the Level-0 trigger with µ = 1.7. The average occupancy in
+the TT varies between 1.9% for the sectors closest to be beam-pipe compared to 0.2% for
+the outermost modules. Similarly, the average occupancy was found to vary between 1.9%
+and 0.2% for the IT sectors.
+2.1.3 Outer Tracker
+The outer parts of the tracking stations T1–T3 are equipped with a straw-tube detector
+(OT) [31]. Charged particles traversing the straw-tubes will ionise the gas along their
+trajectory. The drift-times of the ionisation electrons to the wire located at the centre
+of the straw are measured with respect to the beam crossing signal. The distribution of
+the recorded drift-time, which is proportional to the distance of the particle trajectory
+to the wire, is shown in Figure 9 (right). The calibration of the drift-time to distance
+relation [31] has been done on data.
+The maximum drift time in the straw tubes is about 35 ns, but to account for variations
+in the time-of-ﬂight of the particles, the signal propagation time through the wire, and
+variations in time oﬀset constants in the electronics, three bunch crossings are read out
+upon a positive L0 trigger on the ﬁrst bunch crossing, corresponding to a time window of
+75 ns.
+During Run I, the [REDACTED] was operating predominantly in either 75 ns or 50 ns bunch
+spacing schemes. A short running period in 2012 with 25 ns bunch spacing was also
+performed, allowing a study of the detector performance under these conditions to be
+undertaken. The contribution from earlier and later bunch crossings is visible in the drift
+time spectrum, see Figure 9. These additional hits from diﬀerent bunch crossings increase
+the occupancy as shown in Figure 10. The occupancy for the most central modules is
+reduced with respect to the neighbouring modules, as these modules are located further
+away from the beam, in the vertical direction. The straws with highest average occupancy
+17
+/g1 /g2/g3/g4/g5 /g6 /g2/g3/g4/g5 Entries 2.190445e+07 
+Mean 89.6 
+RMS 1.03e+03 
+Straw 
+-2000 -1000 0 1000 2000 
+Straw occupancy 
+0
+0.05 
+0.1 
+0.15 
+0.2 
+0.25 
+0.3 
+0.35 
+Entries 2.190445e+07 
+Mean 89.6 
+RMS 1.03e+03 
+25 ns bunch crossing 
+50 ns bunch crossing 
+75 ns bunch crossing 
+/g7/g8 
+/g7/g9 
+/g7/g10 
+/g7/g11 
+/g7/g12 
+/g7/g13 
+/g7/g14 
+/g7/g15 
+/g7/g16 
+/g7/g16 
+/g7/g15 
+/g7/g14 
+/g7/g13 
+/g7/g12 
+/g7/g11 
+/g7/g10 
+/g7/g9 
+/g7/g8 
+[REDACTED]
+Figure 10: Straw occupancy for (red) 75 ns, (black) 50 ns and (blue) 25 ns bunch-crossing spacing,
+for comparable pile-up conditions [31]. The modules are indicated by ’M’, and contain 256 straws
+each. The width of the module is 340 mm.
+for typical running conditions in 2011 ( i.e. 50 ns bunch spacing conditions and about 1.4
+visible overlapping events) amounts to about 17%. This increases to about 25% for 25 ns
+bunch spacing conditions with on average 1.2 overlapping events. The average pile-up
+conditions in 2012 were slightly diﬀerent, corresponding to about 1.8 visible overlapping
+events, resulting in a higher multiplicity compared to 2011.
+A scan of the hit eﬃciency as a function of the predicted distance between the expected
+hit and the centre of the considered straw is performed on 2011 and 2012 data. An eﬃciency
+proﬁle of the detector single cell is thus obtained, an example of which is shown in Figure 11.
+The eﬃciency drops close to the cell edges due to two eﬀects. First, the probability for
+ionisation to occur decreases for shorter path lengths inside the straw. Secondly, a fraction
+of the hits are positioned outside the straw volume due to the uncertainty on the track
+extrapolation. The average single cell eﬃciency for tracks in the central half of the straw,
+closer than 1.25 mm to the wire, amounts to 99.2%. Radiation damage could in principle
+lead to a decrease in signal amplitude. This was monitored during the 2011 and 2012
+running periods and no degradation is observed [32].
+The single hit resolution is determined by comparing the predicted hit position from
+the track with the hit position obtained from the drift-time. The hit under study is not
+used in the reconstruction of the extrapolated track, in order not to bias the resolution
+determination. The resulting single hit resolution is 205 µm, close to the design value of
+200 µm. Only tracks with a momentum larger than 10 GeV/c are used, and the residual is
+corrected for the uncertainty in the track parameters, caused by eﬀects such as multiple
+scattering.
+2.1.4 Muon system
+To discriminate muons against the abundant hadronic background, muon candidates
+are formed from aligned hits in each of the ﬁve stations. Since [REDACTED] aims at a trigger
+18
+r [mm]
+-6 -4 -2 0 2 4 6
+efficiency
+0
+0.2
+0.4
+0.6
+0.8
+1
+[REDACTED]
+Figure 11: Example of the OT eﬃciency proﬁle as a function of the distance between the
+extrapolated track position and the centre of the straw for hits in the detector modules on either
+side of the beam-pipe (type M7) [31]. The vertical bars represent the edges of the straw cell.
+eﬃciency for muons larger than 95%, the average eﬃciency of each muon station must
+exceed 99%. To meet this stringent requirement, a redundant design was chosen for the
+muon chambers, consisting of four active layers per chamber for the M2–M5 stations, and
+two for the M1 station [24]. Chambers are operated with a gas gain providing a signal
+detection eﬃciency, for the logical OR of the diﬀerent layers, well above the required 99%.
+A conﬂicting demand, also dictated by the L0 trigger algorithm, is to minimise cross-talk
+between channels. The cluster size of muon track hits, deﬁned as the average number of
+adjacent pads ﬁred by an isolated muon track, is measured using 2010 data. The result
+depends on the station (M1 to M5) and region (from the innermost R1 to the outermost
+R4), since twenty chamber types of diﬀerent size and granularity are used. As shown in
+Figure 12, the cluster size values observed in the data are in reasonable agreement with
+the simulation and are suﬃcient to meet the L0 trigger requirements [33].
+Due to the redundant design, all of the 1380 muon chambers were continuously operating
+during the whole data taking. The few cases of a broken MWPC or GEM detector layer
+only caused a locally limited reduction of eﬃciency. Dead detector channels were only due
+to faulty components in the read-out chain, and never aﬀected more than 0.2% of the
+total detector surface. Their eﬀect on the muon trigger eﬃciency is estimated to be less
+than 1%. The other main sources of ineﬃciencies are incorrect time reconstruction and
+dead-time of the read-out electronics.
+Since the signals must be detected within the 25 ns [REDACTED] time gate around a bunch
+crossing, the detector time resolution is required to be smaller than 4.5 ns. The 122,112
+physical channels were aligned in time with an accuracy of 1 ns using samples of cosmic
+rays [35] and tracks from the ﬁrstpp collisions in the detector [34]. The timing performance
+is measured from special calibration runs where events triggered by the calorimeters were
+acquired in a 125 ns wide gate around the triggered collision. A high-purity sample of muon
+19
+M1R1
+M1R2
+M1R3
+M1R4
+M2R1
+M2R2
+M2R3
+M2R4
+M3R1
+M3R2
+M3R3
+M3R4
+M4R1
+M4R2
+M4R3
+M4R4
+M5R1
+M5R2
+M5R3
+M5R4
+cluster size
+1
+1.05
+1.1
+1.15
+1.2
+1.25
+1.3
+1.35
+1.4
+2010 data
+simulation
+[REDACTED]
+Figure 12: Average cluster size in each detector region for data and simulation [34]. The labels
+refer to the stations (M1 to M5) and to the four regions with diﬀerent granularity used in each
+station (from the innermost R1 to the outermost R4) . Only isolated muon tracks are used, and
+angular eﬀects are corrected for.
+candidates is obtained by reconstructing track segments from aligned muon detector hits in
+all of the ﬁve stations, and matching such segments with high-quality tracks reconstructed
+by the tracking detectors. The time resolution of muon detector hits associated to these
+tracks is measured to be between 2.5 and 4 ns, depending on the detector region [34]. The
+ineﬃciency due to tails in the time measurement is estimated by counting the fraction
+of muon tracks having one or more hits outside the 25 ns time gate. In each of the time
+alignment runs acquired during the data taking, such ineﬃciency is found to never exceed
+1.2%.
+The total hit eﬃciency of the muon chambers is measured using muon candidates in
+events triggered independently of the muon detector during the normal data taking. The
+eﬃciency for each station is estimated by searching hits around the position predicted by
+the segment reconstructed using only the other four stations, which must have a good
+matching with a high-quality track. For station M1, which is located upstream of the
+calorimeter system, candidate muons are also required to originate from a J/ψ decay.
+Tracks close to the known dead channels are removed from the sample. The contribution of
+background hits accidentally matching the candidate track is subtracted using a statistical
+model.
+The resulting eﬃciencies, measured separately for the twenty chamber types, and for
+the 2010 and 2011-2012 data taking conditions, are shown in Figure 13. The 2010 values
+are compatible with the ineﬃciencies due to incorrect time reconstruction [34]. The larger
+ineﬃciency observed in 2011 and 2012 is due to the diﬀerent beam conditions, with 50 ns
+20
+Efficiency (%)
+97
+97.5
+98
+98.5
+99
+99.5
+100
+2010 data
+2011/2012 data
+M1R1
+M1R2
+M1R3
+M1R4
+M2R1
+M2R2
+M2R3
+M2R4
+M3R1
+M3R2
+M3R3
+M3R4
+M4R1
+M4R2
+M4R3
+M4R4
+M5R1
+M5R2
+M5R3
+M5R4
+[REDACTED]
+Figure 13: Average measured hit eﬃciency, in percent, for the diﬀerent regions of the muon
+detector. Statistic and systematic uncertainties are added in quadrature. The eﬀect of the few
+known dead channels is not included. Measurement in the 2010 and 2011/2012 data taking
+periods are shown separately due to diﬀerent pile-up conditions.
+bunch spacing and higher luminosity, causing a non-negligible dead-time of the read-out
+chain.
+The dead-time of the front-end read-out chips varies from 50 to 100 ns, depending
+on the region and on the signal amplitude. This aﬀects in particular the inner regions
+having the highest channel occupancy, reaching average values of 2.5% in M1R1 and 0.6%
+in M2R1 for the 2012 data taking. A second source of dead time is the ﬁnite length
+of the digital output signals, 18 to 25 ns, depending on the region and the data taking
+period. In order to reduce the number of oﬀ-detector read-out channels, these signals are
+formed from the logical OR of several contiguous physical channels. The occupancy of
+these logical channels is thus larger than the occupancy of physical channels, and can
+lead to measurable dead-time eﬀects, even in the outer detector regions. This happens in
+particular for station M5, which is aﬀected by spurious hits due to back-scattering from the
+beam-line elements located behind the detector. Since the detector was operated at twice
+the nominal luminosity of 2× 1032 cm−2s−1, the dead-time eﬀect is larger than originally
+expected. Nonetheless, most regions meet the 99% eﬃciency requirement. Taking into
+account the combined response of the ﬁve stations, the detector is found to provide muon
+identiﬁcation for trigger and oﬄine reconstruction with an eﬃciency larger than 95%.
+21
+Upstream track
+TT
+[REDACTED]
+T1 T2 T3
+T track
+[REDACTED] track
+Long track
+Downstream track
+0
+0
+-0.2
+-0.4
+-0.6
+-0.8
+-1.0
+-1.2
+2 4 6 8 z    (m)
+By (T)
+Figure 14: A schematic illustration of the various track types [24]: long, upstream, downstream,
+[REDACTED] and T tracks. For reference the main B-ﬁeld component (By) is plotted above as a
+function of the z coordinate.
+2.2 Track reconstruction
+The trajectories of the charged particles traversing the tracking system are reconstructed
+from hits in the [REDACTED], TT, IT and OT detectors. Depending on their paths through the
+spectrometer, the following track types are deﬁned, as illustrated in Figure 14:
+• Long tracks traverse the full tracking system. They have hits in both the [REDACTED]
+and the T stations, and optionally in TT. As they traverse the full magnetic ﬁeld
+they have the most precise momentum estimate and therefore are the most important
+set of tracks for physics analyses.
+• Upstream tracks pass only through the [REDACTED] and TT stations. In general their
+momentum is too low to traverse the magnet and reach the T stations. However,
+they pass through the RICH1 detector and may generate Cherenkov photons if they
+22
+havep> 1 GeV/c. They are therefore also used to understand backgrounds in the
+particle identiﬁcation algorithm of the RICH.
+• Downstream tracks pass only through the TT and T stations. They are important
+for the reconstruction of long lived particles, such as K0
+S and Λ, that decay outside
+the [REDACTED] acceptance.
+• [REDACTED] tracks pass only through the [REDACTED] and are typically large-angle or backward
+tracks, which are useful for the primary vertex reconstruction.
+• T tracks pass only through the T stations. They are typically produced in secondary
+interactions, but are still useful during the treatment of RICH2 data for particle
+identiﬁcation.
+The long track reconstruction starts with a search in the [REDACTED] for straight line
+trajectories [36,37]. To be reconstructed as [REDACTED] tracks, traversing particles must provide
+at least three hits in the R sensors and three hits in the Φ sensors. Then, there are two
+complementary algorithms to add information from the downstream tracking stations to
+these [REDACTED] tracks. In the ﬁrst algorithm, the forward tracking [38], the [REDACTED] tracks
+are combined with information from the T stations. The momentum of a particle and its
+trajectory through the detector are fully determined from the information provided by
+the [REDACTED] and a single T station hit. Further hits in the T stations are then searched
+along this trajectory to ﬁnd the best possible combination of hits deﬁning the long track.
+In the second algorithm, called track matching [39,40], the [REDACTED] tracks are combined
+with track segments found after the magnet in the T stations, using a standalone track
+ﬁnding algorithm [41]. In order to form such a track segment, particles traversing the T
+stations need to provide at least one hit in the x layers and one in the stereo layers in each
+of the three stations. The candidate tracks found by each algorithm are then combined,
+removing duplicates, to form the ﬁnal set of long tracks used for analysis. Finally, hits in
+the TT consistent with the extrapolated trajectories of each track are added to improve
+their momentum determination.
+Downstream tracks are found starting with T tracks, extrapolating them through the
+magnetic ﬁeld and searching for corresponding hits in the TT [42,43]. Upstream tracks
+are found by extrapolating [REDACTED] tracks to the TT where matching hits are then added
+in a procedure similar to that used by the downstream tracking. At least three TT hits
+are required to be present by these algorithms [44].
+In a ﬁnal step, the tracks are ﬁtted using a Kalman ﬁlter [45,46]. The ﬁt takes into
+account multiple scattering and corrects for energy loss due to ionisation. The χ2 per
+degree of freedom of the ﬁt is used to determined the quality of the reconstructed track.
+After the ﬁt, the reconstructed track is represented by state vectors ( x, y, dx/dz, dy/dz,
+q/p) which are speciﬁed at given z-positions in the experiment. If two or more tracks have
+many hits in common, only the one with most hits is kept. Figure 15 shows the tracks
+reconstructed in a typical event.
+Mis-reconstructed (fake) tracks are those that do not correspond to the trajectory of a
+real charged particle. Due to the large extrapolation distance in traversing the magnet,
+23
+Figure 15: Display of the reconstructed tracks and assigned hits in an event in the x-z plane [24].
+The insert shows a zoom into the [REDACTED] region in the x-y plane.
+most of these fake tracks originate from wrong associations between [REDACTED] tracks and
+tracks in the T stations. The fraction of fake tracks in minimum bias events is typically
+around 6.5%, increasing to about 20% for large multiplicity events [47]. This fake rate
+is signiﬁcantly reduced, at the cost of a small drop in eﬃciency, with a neural network
+classiﬁer which uses as input the result of the track ﬁt, the track kinematics and the
+number of measured hits in the tracking stations versus the number of expected hits.
+2.2.1 Track ﬁnding eﬃciency
+The tracking eﬃciency is deﬁned here as the probability that the trajectory of a charged
+particle that has passed through the full tracking system is reconstructed. In particular it
+does not account for interactions with the material, decays in ﬂight and particles that ﬂy
+outside of the detector acceptance.
+The eﬃciency is measured using a tag-and-probe technique with J/ψ→µ+µ− decays.
+In this method one of the daughter particles, the “tag” leg, is fully reconstructed, while the
+other particle, the “probe” leg, is only partially reconstructed. The probe leg should carry
+enough momentum information such that the J/ψ invariant mass can be reconstructed
+with a suﬃciently high resolution. The tracking eﬃciency is then obtained by matching
+the partially reconstructed probe leg to a fully reconstructed long track. If a match is
+found the probe leg is deﬁned as eﬃcient. In the trigger and oﬄine selection of the J/ψ
+candidates, no requirements are set on the particle used for the probe leg to avoid biases
+on the measured eﬃciency.
+24
+]
+c [GeV/p0
+50 100 150 200 Efficiency
+0.86
+0.88
+0.9
+0.92
+0.94
+0.96
+0.98
+1
+1.02
+1.04
+2011 2012
+[REDACTED]
+η
+2
+3 4 5 Efficiency
+0.86
+0.88
+0.9
+0.92
+0.94
+0.96
+0.98
+1
+1.02
+1.04
+2011 2012
+[REDACTED]
+track
+N0
+200 400 Efficiency
+0.86
+0.88
+0.9
+0.92
+0.94
+0.96
+0.98
+1
+1.02
+1.04
+2011 2012
+[REDACTED]
+PV
+N0
+2 4 6 Efficiency
+0.86
+0.88
+0.9
+0.92
+0.94
+0.96
+0.98
+1
+1.02
+1.04
+2011 2012
+[REDACTED]
+Figure 16: Tracking eﬃciency as function of the momentum, p, the pseudorapidity, η, the total
+number of tracks in the event,Ntrack, and the number of reconstructed primary vertices,NPV [49].
+The error bars indicate the statistical uncertainty.
+Two diﬀerent tag-and-probe methods [48, 49] are used to measure the eﬃciency for
+long tracks. The overall eﬃciency depends on the momentum spectrum of the tracks and
+the track multiplicity of the event. The tracking eﬃciency is shown in Figure 16 as a
+function of the absolute momentum, p, of the pseudorapidity, η, of the total number of
+tracks in the event, Ntrack, and of the number of reconstructed primary vertices, NPV. The
+performance in the 2012 data is slightly worse, which is partially due to the higher hit
+multiplicity at the higher centre-of-mass energy. As can be seen, the average eﬃciency is
+above 96% in the momentum range 5 GeV/c<p< 200 GeV/c and in the pseudorapidity
+range 2 <η < 5, which covers the phase space of [REDACTED]. Only in high multiplicity events
+(Ntrack > 200) it is slightly less than 96%. The track reconstruction eﬃciency has been
+shown to be well reproduced in simulated events [49].
+2.2.2 Mass and momentum resolution
+The momentum resolution for long tracks in data is extracted using J/ψ→µ+µ− decays.
+The mass resolution of the J/ψ is primarily deﬁned by the momentum resolution of the
+25
+]
+c [GeV/p100
+200 300  [%]
+p/p δ 0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+1.1
+1.2
+[REDACTED]
+Figure 17: Relative momentum resolution versus momentum for long tracks in data obtained
+using J/ψ decays.
+two muons. Neglecting the muon masses and considering decays where the two muons
+have a similar momentum, the momentum resolution, δp, can be approximated as:
+(δp
+p
+)2
+= 2
+(σm
+m
+)2
+− 2
+( pσθ
+mcθ
+)2
+, (1)
+wherem is the invariant mass of theJ/ψ candidate andσm is the Gaussian width obtained
+from a ﬁt to the mass distribution. The second term is a correction for the opening angle,
+θ, between the two muons, where σθ is the per-event error on θ which is obtained from the
+track ﬁts of the two muons. Figure 17 shows the relative momentum resolution, δp/p, as a
+function of the momentum, p. The momentum resolution is about 5 per mille for particles
+below 20 GeV/c, rising to about 8 per mille for particles around 100 GeV/c.
+The mass resolution is compared for six diﬀerent dimuon resonances: the J/ψ, ψ(2S),
+Υ (1S), Υ (2S) and Υ (3S) mesons, and the Z0 boson. These resonances are chosen as they
+share the same topology and exhibit a clean mass peak. A loose selection is applied to
+obtain the invariant mass distributions, as shown in Figure 18.
+The momentum scale is calibrated using large samples of J/ψ→ µ+µ− and B+→
+J/ψK+ decays, as is done for the precision measurements of b-hadron and D meson
+masses [50–53]. By comparing the measured masses of known resonances with the world
+average values [54], a systematic uncertainty of 0.03% on the momentum scale is obtained.
+As shown in Figure 17 the momentum resolution depends on the momentum of the
+ﬁnal-state particles, and therefore the mass resolution is not expected to behave as a pure
+single Gaussian. Nevertheless, a double Gaussian function is suﬃcient to describe the
+observed mass distributions. Final-state radiation creates a low-mass-tail to the left side
+of the mass distribution, which is modelled by an additional power-law tail. To describe
+26
+]
+2c [MeV/µµM3050
+3100 3150 )
+2 c Candidates/(1.6 MeV/ 0 200
+400
+600
+800
+1000
+1200
+1400
+3
+10×[REDACTED]
+]
+2c [MeV/µµM3650
+3700 3750 )
+2 c Candidates/(1.6 MeV/ 0 10000
+20000
+30000
+40000
+50000
+[REDACTED]
+]
+2c [GeV/µµM9000
+9500 10000 10500 11000 )
+2 c Candidates/(22 MeV/ 0 50
+100
+150
+200
+250
+3
+10×[REDACTED]
+9
+9.5 10 10.5 11 
+]
+2c [GeV/µµM60
+80 100 120 3
+10×)
+2 c Candidates/(0.6 GeV/ 0 500
+1000
+1500
+2000
+2500
+3000
+3500
+4000
+4500
+[REDACTED]
+60
+80 100 120 
+Figure 18: Mass distributions for (top left) J/ψ, (top right) ψ(2S), (bottom left) Υ (1S), Υ (2S)
+and Υ (3S), and (bottom right) Z0 candidates. The shapes from the mass ﬁts are superimposed,
+indicating the signal component (dotted line), the background component (dashed line) and the
+total yield (solid line).
+the Z0 mass distribution, a single Gaussian function with power-law tail is convolved with
+a Breit-Wigner function, where the natural width is ﬁxed to 2495 .2 MeV/c2 [54]. In all
+cases, an exponential shape models the background. The results from the ﬁts are overlaid
+in Figure 18. The overall mass resolution is calculated as the root mean square of the
+double Gaussian function. The mass resolution obtained from the ﬁts are shown in Table 2.
+The uncertainties are statistical only. Figure 19 shows the mass resolution and relative
+mass resolution versus the mass of the resonance. It can be seen that the relative mass
+resolution, σm/m, is about 5 per mille up to the Υ masses.
+2.3 Spatial alignment of the tracking detectors
+The alignment of the [REDACTED] tracking detector uses information from optical and mechanical
+surveys and from reconstructed charged particle trajectories. To ensure adequate tracking
+performance, the position and orientation of detector elements in the global reference frame
+must be known with an accuracy signiﬁcantly better than the single hit resolution. Since
+27
+Table 2: Mass resolution for the six diﬀerent dimuon resonances.
+Resonance Mass resolution ( MeV /c2)
+J/ψ 14.3± 0.1
+ψ(2S) 16 .5± 0.4
+Υ (1S) 42 .8± 0.1
+Υ (2S) 44 .8± 0.1
+Υ (3S) 48 .8± 0.2
+Z0 1727± 64
+]
+2c [MeV/m4
+105 10]
+2 c  [MeV/ m σ 10
+2
+103
+10[REDACTED]
+]
+2c [MeV/m4
+105 10 [%]
+ / m m σ 0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+1.6
+1.8
+2
+[REDACTED] 
+Figure 19: Mass resolution ( σm) (left) and relative mass resolution (right) as a function of the
+mass (m) of the dimuon resonance. The mass of the muons can be neglected in the invariant
+mass calculation of these resonances. The mass resolution is obtained from a ﬁt to the mass
+distributions. The superimposed curve is obtained from an empirical power-law ﬁt through the
+data points.
+[REDACTED] is a forward spectrometer, the requirements in terms of absolute units of distance
+are diﬀerent for the diﬀerent coordinate axes: tracks are less sensitive to displacements of
+elements in the z direction compared to equally sized displacements in x and y. Similarly,
+rotations around the z axis are more important than those around the x and y axis.
+Although the ﬁnal alignment precision is obtained with reconstructed tracks, a precise
+survey is indispensable both as a starting point for the track-based alignment and to
+constrain degrees of freedom to which ﬁtted track trajectories are insensitive. For example,
+the knowledge of thez scale of the vertex detector originates solely from the pre-installation
+survey. Ultimately this is what limits, for example, certain measurements such as the B0
+s
+oscillation frequency.
+Several methods have been deployed for track-based alignment in [REDACTED]. One technique
+used for the [REDACTED] divides the alignment in three stages, corresponding to diﬀerent detector
+granularity [55,56]. The relative alignment of each Φ sensor with respect to the R sensor in
+the same module is performed by ﬁtting an analytical form to the residuals as a function
+28
+of φ. The relative alignment of the modules within each [REDACTED] half are obtained with
+a χ2 minimisation based on an implementation of Millepede method [57]. The relative
+alignment of one [REDACTED] half with respect to the other half is also based on the Millepede
+method. It is performed using a track sample crossing the overlap region between the two
+halves and with a χ2 minimisation that exploits the diﬀerence in the position between
+primary vertices reconstructed in both halves. Similar approaches based on Millepede
+have been considered for the OT [58] and IT.
+The implementations of the Millepede algorithm in [REDACTED] use a simpliﬁed model of
+the track, ignoring the eﬀects of the magnetic ﬁeld, multiple scattering and energy loss.
+These eﬀects are accounted for in the default [REDACTED] track ﬁt, which is based on a Kalman
+ﬁlter. Therefore, another global χ2 minimisation that uses the default track ﬁt has been
+implemented [59,60]. The algorithm can align all tracking detectors simultaneously. The
+correct treatment of magnetic ﬁeld and material eﬀects facilitates the use of relatively
+low-momentum tracks in the alignment, which helps to constrain the z scale of the
+spectrometer. Another novel aspect is that tracks can be combined in vertices, allowing
+for the use of primary vertex and mass constraints [61].
+All methods were used during the commissioning of the detectors and in the initial pp
+collisions and found to be in good agreement [62]. The method using the Kalman track ﬁt
+is used routinely for the tracking alignment updates.
+2.3.1 Vertex locator alignment
+The most stringent alignment requirements apply to the vertex detector. In order not to
+degrade impact parameter or decay time resolutions, the [REDACTED] sensors need to be aligned
+with a precision of a few microns in x andy and a few tens of microns in z. Components of
+the detector have been surveyed at various stages of the assembly at ambient temperature.
+The relative position of the Φ sensor with respect to the R sensor in each module has
+been measured with an accuracy of about 3 µm for the x and y translation and with an
+accuracy of about 20 µrad for rotations around the x and y axis. The relative module
+position within each half of the detector has been measured with a precision of about
+10 µm for the translations along x, y and z. The position of the two [REDACTED] halves has
+been determined with an accuracy of 100 µm for the translations and 100 µrad for the
+rotations.
+The main degrees of freedom in the track alignment of the [REDACTED] sensors and modules
+are the x and y translation and the rotation around the z axis. The alignment for the x
+andy translation can be evaluated at the sensor level, while the one for the rotation around
+the z axis can be determined only at the module level, as only the Φ sensors are sensitive
+to this degree of freedom. The misalignment due to the other three degrees of freedom (the
+z translation and the rotations around the x and y axis) causes a second-order eﬀect. To
+obtain the desired sensitivity, a track sample with a wide distribution of the angle between
+the track and the strips in the sensor plane is required. Consequently, the alignment for
+these degrees of freedom can be evaluated only for the R sensors.
+The track-based alignment is insensitive to the overall z scale, xz and yz shearing
+29
+Run number
+74000 76000 78000 80000
+m]μ ) [ PVx∆ Mean (
+-20
+-15
+-10
+-5
+0
+5
+10
+15
+20
+    [REDACTED]
+Figure 20: Run dependence of the relative misalignment of the two [REDACTED] halves along the x
+axis evaluated with primary vertices.
+and to the global position and orientation of the [REDACTED] [55]. To constrain these degrees
+of freedom the position of two modules in each half are ﬁxed to their nominal survey
+position in the [REDACTED] half frame. The average position and rotation of the two halves is
+also ﬁxed. After correcting for diﬀerences in temperature, the position of the modules and
+sensors evaluated by the alignment with tracks is found to be in good agreement with the
+metrology.
+The alignment of the two [REDACTED] halves relies on two constraints. The ﬁrst one is
+determined by tracks that cross both halves of the detector, in particular those that
+traverse the region where the sensors in the two halves overlap. This gives sensitivity to
+misalignment due to x and y translations and to rotation around the z axis. In addition,
+reconstructed primary vertices are used which adds sensitivity to relative x, y and z
+translations and to rotations around the x and y axis.
+The operating temperature was found to have an eﬀect on the alignment and hence is
+kept suﬃciently stable such that variations can be ignored. A more important issue is the
+fact that the [REDACTED] halves are moved every ﬁll in order to put them at a safe distance
+from the beam during [REDACTED] injection. This movement corresponds to about 29 mm in
+x. The [REDACTED] is closed only once stable beam conditions are declared. The position
+of the [REDACTED] stepper motors is measured using resolvers mounted on the motor axes
+and is reproducible with a precision better than 10 µm. This measurement is then used
+as an alignment correction. Figure 20 shows the distribution of the diﬀerence between
+the x position of primary vertices that are separately reconstructed in the left and right
+detector halves as a function of time. The variation illustrates that the resolver position
+measurement is accurate to about 5 µm.
+The uncertainty in the z scale of the [REDACTED] is important for precision measurements
+30
+]c-1 [GeVTp1/
+0 0.5 1 1.5 2 2.5 3
+m]μ  resolution [x IP
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+Pre-2010 alignment
+Pre-2010 + halves alignment
+2010 collisions alignment
+[REDACTED]
+Figure 21: IP x resolution as a function of 1/pT, comparing diﬀerent qualities of alignment,
+measured on 2010 data.
+of b-hadron lifetimes and B0
+(s) mixing frequencies. At the time of assembly the length of
+the [REDACTED] base plate was measured with an accuracy of approximately 100 µm over the
+full length of the [REDACTED] [28]. This translates into a length scale uncertainty of about
+0.01%. To verify the understanding of the survey, the measurements are compared to the
+track-based alignment. In the latter, the length scale is ﬁxed by constraining two modules
+in each half to their nominal position. The RMS of the diﬀerences in the z positions of
+unconstrained modules is 20 µm, in agreement with the estimated survey uncertainty. To
+interpret this as a length scale, the RMS of the distribution of the z positions of the ﬁrst
+hits on typical [REDACTED] track segments is conservatively used. In combination with the
+number above this leads to a total systematic uncertainty on the length scale of 0 .022%.
+To illustrate the eﬀects of misalignment on the [REDACTED] performance, the impact param-
+eter (IP) resolution is examined (see Section 2.4.2). Figure 21 shows the IP x resolution
+versus 1/pT obtained at diﬀerent stages of the alignment, namely by using the alignment
+from the commissioning phase, after a track-based alignment that only corrects for the
+relative alignment of the two halves, and after the full alignment of the sensors. The
+reﬁnement of the alignment improves the IP resolution by about 25% at high transverse
+momentum. As the remaining alignment uncertainties are smaller than the corrections
+obtained in the last stage, the residual misalignment has no signiﬁcant eﬀect on the IP
+resolution.
+2.3.2 Alignment of the silicon tracker and outer tracker
+The rest of the spectrometer is aligned relative to the [REDACTED] using long tracks. The
+alignment is performed at diﬀerent levels of granularity, exploiting diﬀerences in the
+31
+precision of survey between ‘small’ and ‘large’ structures. Typical alignment degrees of
+freedom are displacements in x and rotations around the z axis for the smallest structures
+(modules in the OT and ladders in IT and ST) and displacements in z for the layers.
+Global deformations are a concern in a forward spectrometer with parallel detector
+planes, in particular x scaling, z scaling, xz shearing and curvature (q/p) bias. An x
+scaling corresponds to a displacement along x of detector modules assembled in a single
+layer proportional to the x coordinate. In the TT and IT detectors such a scaling is
+constrained by tracks that traverse neighbouring ladders in the same layer. To proﬁt
+from this constraint the sample of tracks is enriched by preferentially selecting such
+‘overlap’ tracks.
+In principle, the z scaling of the spectrometer is ﬁxed by the z scale of the vertex
+detector, which comes from a survey. In practice, this leads to a relatively poor constraint
+on the tracking layers downstream of the magnet. It has been veriﬁed that the last OT
+detector plane downstream of the magnet can be ﬁxed to its survey position without
+introducing a momentum bias.
+A globalxz shearing can also be ﬁxed using information from the [REDACTED] survey. Whilst
+this leads to a relatively weak constraint on the tracking layers downstream of the magnet,
+any remaining shearing between the [REDACTED] and the rest of the tracking system is absorbed
+in the curvature bias, which is a global deformation that is typical for alignment with
+tracks in a non-zero ﬁeld [61, 63]. The curvature bias is constrained by including mass
+constraints from cleanly selected D0→K−π+ or J/ψ→µ+µ− candidates [61].
+Another concern are observed displacements in the z coordinate, in particular in TT
+and IT1, the detectors closest to the magnet. In the presence of a magnetic ﬁeld, tracks
+are sensitive to the position of the tracking detectors relative to the dipole ﬁeld. An
+alignment performed with early 2010 data indicated a displacement of approximately 1 cm
+of the entire spectrometer along the z axis. In winter 2011 an in-situ measurement of the
+magnetic ﬁeld map on a ﬁnite number of points along the x, y and z axes in the centre of
+the magnet conﬁrmed this displacement.
+The survey of the tracking detectors was performed with the dipole magnet switched
+oﬀ. After anomalously large diﬀerences between survey data and track-based alignment
+were observed in IT1, the position of all IT boxes was monitored before and after ramping
+the ﬁeld, revealing movements of up to 5 mm. This illustrates that data collected in the
+absence of magnetic ﬁeld are only of limited value in the alignment.
+As for the [REDACTED] a crucial aspect of the alignment is stability over time. Detectors
+may be moved, for example, for maintenance during accelerator technical stops. These
+occurred at least once every two months in the ﬁrst years of [REDACTED] running. The dipole
+ﬁeld is reversed about twice per month, which also aﬀects alignment. Consequently, the
+detector is realigned after every technical stop and every magnetic ﬁeld reversal. Remaining
+misalignments in the relative position of neighbouring detector modules are estimated
+from hit residual distributions to be approximately 10 µm in IT and 30 µm in TT.
+Figure 22 shows the position of the peak of theJ/ψ→µ+µ− invariant mass distribution
+as a function of time in a period in which the operating temperature of the TT modules
+was varied by 15◦ C in order to study detector performance. The temperature change
+32
+Run
+450
+500 550 ]
+2 c ) [MeV/ ψ J/ M( 3092 3094
+3096
+3098
+[REDACTED] 
+Run
+450
+500 550 ]
+2 c ) [MeV/ ψ J/ M( 3092 3094
+3096
+3098
+[REDACTED]
+Figure 22: Fitted position of the peak of the J/ψ→ µ+µ− invariant mass distribution as a
+function of run number in a two-week period in which the operating temperature of TT modules
+was varied. The mass is evaluated using the same alignment for the full period on the top and
+using a dedicated track alignment for each period with constant temperature on the bottom.
+causes the support structure on which the modules are mounted to contract by an amount
+that is large enough to aﬀect the curvature measurement, as shown by the bias in the J/ψ
+mass. After a separate track-based alignment is performed for each period with constant
+temperature, the bias in the mass disappears [64]. This illustrates the importance of
+operating the detector under stable conditions.
+Although the average curvature bias is constrained with D0→K−π+ decays, other
+misalignment eﬀects, uncertainties in modelling of the magnetic ﬁeld (evaluated to be about
+0.1%) and detector material still aﬀect the reconstructed invariant mass. In particular,
+small variations in the invariant mass as function of particle momentum are observed. To
+obtain precise mass measurements corrections on the momentum scale are tabulated and
+calibrated using samples of J/ψ→µ+µ− and B+→J/ψK+ decays (see Section 2.2.2).
+2.3.3 Muon system alignment
+The read-out pads of the muon detector are less ﬁne-grained than the read-out channels
+of the other tracking systems, leading to a coarser spatial resolution. Consequently the
+alignment of the muon chambers is in general less critical. However, misalignments larger
+than a few mm in the ﬁrst two muon stations can aﬀect the eﬃciency of the L0 muon
+33
+Z [m]
+11
+12 13 14 15 16 17 18 19 Half station X position [mm]
+-20
+-15
+-10
+-5
+0
+5
+10
+15
+20
+A-side final
+C-side final
+A-side survey
+C-side survey
+[REDACTED]
+A-side final
+C-side final
+A-side survey
+C-side survey
+[REDACTED]
+Z [m]
+11
+12 13 14 15 16 17 18 19 Half station Y position [mm]
+-10
+-8
+-6
+-4
+-2
+0
+2
+4
+6
+8
+10
+A-side final
+C-side final
+A-side survey
+C-side survey
+[REDACTED]
+A-side final
+C-side final
+A-side survey
+C-side survey
+[REDACTED]
+Figure 23: Alignment of the ten muon half stations for the 2012 run. The values of the inner
+edge in the x position (left) and of the median y position are shown as a function of the station
+position alongz. The empty and full dots represent the results from the survey measurements and
+the software alignment respectively. The error bars, when visible, show the sum in quadrature of
+statistic and systematic uncertainties.The dashed lines represent the ideal projective alignment
+of the detector in the closed position.
+trigger and introduce a charge asymmetry. In the L0 trigger the muon momentum is
+estimated by the x coordinate of hits in stations M1 and M2. Studies on simulated events
+have shown that an alignment precision of 1 mm is enough to guarantee charge symmetry
+of the trigger eﬃciency and momentum measurement to the 0.1% level. The alignment is
+even less critical for the other stations, which are not used for momentum estimate and
+have lower spatial resolution.
+The muon chambers are mounted in support structures called ‘half stations’. The
+alignment accuracy of the chambers within a half station is about 1 mm in the x and
+y direction. Each half station can be independently moved on rails in the x direction.
+Due to mechanical limitations observed during installation, the half stations could not
+be put exactly in their nominal position. Moreover, in order to keep a safe distance from
+the beam-pipe, a small separation between the two sides was maintained, preserving as
+much as possible the symmetry and projectivity with respect to the interaction point. The
+position of the closed half stations was surveyed using four reference points on each half
+station. The result of the survey is shown in Figure 23. Displacements with respect to the
+ideal projective position are found to be within 2 mm.
+The alignment obtained from the survey is reﬁned oﬄine using reconstructed tracks
+after the alignment of the tracking system. Muon hits are attached to reconstructed tracks
+matching standalone muon segments with a good χ2. The global χ2 of an ensemble of
+tracks is minimised using the same method as used for the rest of the tracking system.
+34
+decay time [ps]
+01234
+candidates / (0.1 ps)
+0
+200
+400
+Tagged mixed
+Tagged unmixed
+Fit mixed
+Fit unmixed
+[REDACTED]
+Figure 24: Decay time distribution for B0
+s→D−
+sπ+ candidates tagged as mixed (diﬀerent ﬂavour
+at decay and production; red, continuous line) or unmixed (same ﬂavour at decay and production;
+blue, dotted line) [65].
+As shown in Figure 23 for 2012 data, small, but signiﬁcant, diﬀerences are found for the
+translational degrees of freedom, while no signiﬁcant rotations are found. The result of
+this procedure is conﬁrmed, independently of the alignment of the other tracking detectors,
+using standalone muon segment reconstruction from events selected without the muon
+trigger. The resulting diﬀerences with respect to the survey positions are within 1 .5 mm
+in x and y. The accuracy of the alignment based on tracks is 1 mm or less, suﬃcient to
+avoid any detector eﬃciency eﬀects that could introduce charge asymmetries in the L0
+trigger. The alignment results are thus used by the L0 muon trigger for the computation
+of transverse momenta and are accounted for in the subsequent oﬄine reconstruction of
+muons.
+2.4 Vertexing and decay time resolution
+The study of CP violation and rare decays in the heavy ﬂavour sector requires the
+accurate measurement of production and decay vertices and track impact parameters,
+both for ﬂavour tagging and for background rejection. The most stringent demands on the
+vertex reconstruction arise from the decay time resolution requirements to resolve the fast
+ﬂavour oscillations induced by B0
+s–B0
+s mixing. [REDACTED] has made the world’s most precise
+measurement of the B0
+s oscillation frequency using the decay B0
+s→D−
+sπ+ [65]. The decay
+time resolution in [REDACTED] is suﬃcient to observe the oscillations in the ﬂavour tagged decay
+time distribution, as illustrated in Figure 24.
+35
+N
+10
+20 30 40 50 60 m]
+µ PV resolution [ 0
+5
+10
+15
+20
+25
+30
+35
+40
+[REDACTED]
+x
+ y
+ 
+]c -1 [GeVTp1/
+0 0.5 1 1.5 2 2.5 3
+m]µ  resolution [x IP
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+2012 data
+Simulation
+[REDACTED]
+Figure 25: The primary vertex resolution (left), for events with one reconstructed primary vertex,
+as a function of track multiplicity. The x (red) and y (blue) resolutions are separately shown and
+the superimposed histogram shows the distribution of number of tracks per reconstructed primary
+vertex for all events that pass the high level trigger. The impact parameter in x resolution as a
+function of 1/pT (right). Both plots are made using data collected in 2012.
+2.4.1 Primary vertex reconstruction
+The primary vertex (PV) resolution is measured by comparing two independent measure-
+ments of the vertex position in the same event. This is achieved by randomly splitting the
+set of tracks in an event into two and reconstructing the PVs in both sets. The width of
+the distribution of the diﬀerence of the vertex positions is corrected for a factor
+√
+2 to
+extract the vertex resolution. The number of tracks making a vertex ranges from 5 (the
+minimum required by the PV reconstruction) to around 150, and this technique allows
+the resolution to be measured using up to around 65 tracks. The PV resolution is strongly
+correlated to the number of tracks in the vertex (the track multiplicity). To determine
+the vertex resolution as a function of the track multiplicity, only vertex pairs with exactly
+the same number of tracks are compared. The result for the resolution in the x and y
+direction is shown in Figure 25. A PV with 25 tracks has a resolution of 13 µm in the x
+and y coordinates and 71 µm in z.
+2.4.2 Impact parameter resolution
+The impact parameter (IP) of a track is deﬁned as its distance from the primary vertex
+at its point of closest approach to the primary vertex. Particles resulting from the decay
+of long lived B or D mesons tend to have larger IP than those of particles produced at
+the primary vertex. Selections on IP and IP χ2 are extensively used in [REDACTED] analyses
+to reduce the contamination from prompt backgrounds. Consequently, an optimal IP
+resolution and a good understanding of the eﬀects contributing to the IP resolution are of
+prime importance to [REDACTED] performance.
+36
+The IP resolution is governed by three main factors: multiple scattering of particles by
+the detector material; the resolution on the position of hits in the detector from which
+tracks are reconstructed; and the distance of extrapolation of a track between its ﬁrst hit
+in the detector and the interaction point. The minimisation of these factors is achieved in
+the design of the [REDACTED]. The sensors are positioned close to the beams, separated from
+them by only a thin aluminium foil. The ﬁrst active strips are only 8 mm away from
+the beams during physics collisions. The detector provides high-precision hit position
+measurements as shown in Section 2.1.1.
+As the IP is deﬁned as the distance between a point and a line, it is not a Gaussian
+distributed quantity. It is therefore customary to divide the IP in two quantities that
+follow a normal distribution by projecting out two independent components. In [REDACTED]
+these are the components of the IP vector in the transverse plane,
+IPx = x−xPV− (z−zPV)tx (2)
+and similarly for y, where (x,y,z )PV is the position of the primary vertex, ( x,y,z ) is
+the point on the track of closest approach to the primary vertex and ( tx,ty, 1) is the
+direction vector of the track. Figure 25 shows the IP x resolution as a function 1pT. The
+IPy resolution is similar. The linear dependence on 1/ pT is a consequence of multiple
+scattering and the geometry of the vertex detector. At asymptotically high pT the IPx
+resolution is about 13 µm [28].
+2.4.3 Decay time resolution
+The distance between the production and secondary decay vertices of long lived mesons is
+used to reconstruct the particle’s decay time. This is required for lifetime measurements
+and for resolving ﬂavour oscillations in time-dependent CP violation measurements. Con-
+sequently, the performance of the [REDACTED] is illustrated here with an analysis of the decay
+time resolution of B0
+s→J/ψφ decays [66].
+Time dependent CP violation eﬀects are measured as the amplitude of an oscillation
+in the B decay time distribution. The size of the observed amplitude is damped by a
+dilution factor from the ﬁnite decay time resolution [67]. Hence, achieving optimal decay
+time resolution is important and any bias in the estimated decay time resolution leads to
+a bias in the measurement of the CP violating eﬀect.
+The reconstructed decay time in the rest frame of the decaying particle can be expressed
+in terms of the reconstructed decay length l, momentum p and mass m of the particle in
+the [REDACTED] frame as t =ml/p. The decay time is computed with a vertex ﬁt that constrains
+the decaying particle to originate from the primary vertex. The uncertainty on the decay
+length l and on the momentum p are essentially uncorrelated in [REDACTED]. Consequently, the
+decay time uncertainty can be expressed in terms of the decay length uncertainty σl and
+the momentum uncertainty σp as
+σ2
+t =
+(m
+p
+)2
+σ2
+l +
+(t
+p
+)2
+σ2
+p . (3)
+37
+]
+-1c [GeV p0
+100 200 300 400 500 resolution [fs]
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+ 2011
+ 2012
+[REDACTED]
+ [fs]
+tσ20
+40 60 80 resolution [fs]
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+ 2011
+ 2012
+[REDACTED]
+Figure 26: Decay time resolution as a function of momentum (left) and as a function of the
+estimated decay time uncertainty (right) of fake, prompt B0
+s→J/ψφ→µ+µ−K+K− candidates
+in 2011 and 2012 data. Only events with a single reconstructed primary vertex are used. The
+superimposed histogram shows the distribution of momentum (left) and estimated decay time
+uncertainty (right) on an arbitrary scale.
+This expression shows an explicit dependence on the decay time. However, for decay
+times up to a few times the B meson lifetime, the uncertainty is dominated by the σl term,
+motivating the use of a ‘prompt’ control channel to calibrate the decay time uncertainty.
+The decay time resolution depends on the topology of the decay and is calibrated for
+each ﬁnal state on data. For B0
+s→ J/ψφ decays, the calibration method uses prompt
+combinations that fake signal candidates. Subtracting the small contribution from signal
+candidates and long-lived background using the sPlot technique [68], the shape of the
+decay time distribution is determined only by the resolution function.
+Figure 26 shows the resolution as a function of the (fake) B candidate momentum.
+It should be noted that the decay time resolution is essentially independent of the B
+momentum, illustrating that σl∝p. This is a consequence of the fact that the larger the
+momentum is, the smaller the opening angle, and hence the larger the uncertainty on
+the position of the vertex in the direction of the boost. The resolution is also shown as a
+function of the per-event estimated uncertainty in the decay time, which is obtained from
+the vertex ﬁt. As expected, the resolution is a linear function of the estimated uncertainty.
+A decay time resolution of ∼ 50 fs is obtained in [REDACTED]. For a mixing frequency of
+17.7 ps−1, such as for B0
+s oscillations, this decay time resolution leads to a dilution of the
+CP asymmetry by a factor∼ 0.7.
+2.4.4 V 0 reconstruction
+Reconstructed V 0 decays (K0
+S → π+π− and Λ→ pπ−) are an essential ingredient of
+many [REDACTED] analyses. If the decay time is suﬃciently small, the daughter particles are
+reconstructed as long tracks, and for these decays the invariant mass resolution is as good
+as for short-lived resonances (see Section 2.2.2 and Figure 27). For V 0s that decay outside
+38
+]
+2 [MeV/c-π+πm450
+460 470 480 490 500 510 520 530 540 550 )
+2 # Candidates/(1 MeV/c 0
+1000
+2000
+3000
+4000
+5000
+0
+S
+Long K[REDACTED]
+]
+2 [MeV/c-π+πm450
+460 470 480 490 500 510 520 530 540 550 )
+2 # Candidates/(1 MeV/c 0
+1000
+2000
+3000
+4000
+5000
+0
+S
+Downstream K[REDACTED]
+Figure 27: Distribution of the invariant mass of K0
+S→ π+π− candidates with a decay vertex
+at a signiﬁcant distance to the PV, for long tracks (left) and downstream tracks (right). A
+mass resolution of 3.5 MeV/c2 is achieved for the candidates reconstructed from long tracks and
+7 MeV/c2 for those using downstream tracks.
+the [REDACTED] acceptance, but before the magnet, the daughter particles are reconstructed as
+downstream tracks from hits in the TT and T stations. As the resolution on the track
+direction reconstructed in the layers of the TT is not as good as in the [REDACTED], the invariant
+mass resolution for the downstream category is worse than for the short-lived category, as
+shown in Figure 27. For K0
+S momenta typical of B decay products, about two thirds of the
+reconstructed K0
+S decays are found using downstream tracks, illustrating the importance
+of the downstream tracking for physics performance.
+3 Neutral particle reconstruction
+Neutral particle reconstruction is based on information provided by the four systems (SPD,
+PS, ECAL and HCAL), which together form the calorimeter. The SPD and the PS both
+consist of a plane of scintillator tiles, separated from each other by a thin lead layer, while
+the ECAL and HCAL have shashlik and sampling constructions, respectively. In all four
+cases, the light produced in the organic scintillators is transmitted to photomultiplier tubes
+(PMT) by optical ﬁbres [24, 69]. In general, the detected signal pulses are longer than
+the nominal read-out window of 25 ns, and this must be taken into account to minimise
+spill-over eﬀects. In the ECAL and HCAL detectors, this is performed by ﬁrst clipping
+the signal to ﬁt within the read-out window. In the PS and SPD detectors, the eﬀects of
+spill-over are removed by subtracting a fraction of the signal integrated in the previous
+clock cycle.
+The SPD uses a single bit for each cell to indicate whether or not it was traversed by a
+charged particle, with a discriminator comparing the energy deposited in the given cell
+39
+to half of that expected from a minimum ionising particle (MIP). The signal from the
+PS detector is digitised using a 10-bit ADC with a dynamic range of 0.1–100 times the
+corresponding MIP energy deposit. The ECAL and the HCAL have the same read-out
+electronics, which digitises signals with a 12-bit precision and a dynamic range that results
+in a maximum detectable transverse energy of 10 GeV, optimised for the typical energy
+deposits that occur in [REDACTED] events. The operational status and stability of the ECAL and
+the HCAL detectors are examined using dedicated systems based on light emitting diodes
+(LEDs). The average PMT responses when illuminated by pulses of known intensities are
+used to monitor the behaviour of the corresponding read-out channels.
+Reliable neutral particle reconstruction requires calibration [70,71] of the calorimeter
+system, which is therefore outlined brieﬂy before describing the methods used to reconstruct
+neutral particles
+3.1 Calibration of the calorimeter system
+The SPD calibration is performed by adjusting the discriminator threshold for each channel
+to half of the expected MIP energy deposit. These values are established at the beginning
+of each data taking period, and the fraction of tracks pointing to SPD cells that have an
+associated SPD hit is used to monitor performance during data-taking [72]. Thresholds
+are adjusted to ensure high and uniform eﬃciency.
+The PS calibration consists of equalising the ADC response of all channels, based
+on the most probable values of MIP energy deposits. The MIP sample is composed of
+reconstructed tracks of particles with momentum greater than 2 GeV/c to ensure that they
+reach the PS [73]. As for the SPD, the calibration is established at the beginning of each
+data-taking period, checked regularly and corrected as necessary during the run.
+The calibration of the ECAL requires two main steps: the ﬁrst to set an initial
+calibration, and the second to reﬁne the values through an iterative procedure. The
+ﬁrst step was performed at the beginning of [REDACTED] commissioning by using test-beam
+measurements to reproduce the design energy range. With these settings, a π0→γγ mass
+resolution at the level of 10% was achieved for the ﬁrst collisions in 2009. In subsequent
+years, initial settings were obtained using the LED system, achieving a similar accuracy
+of 8–10%. In the second step, initial calibration parameters are reﬁned by studying
+the energy deposited over many events and requiring continuity across cell boundaries
+[74]. The calibration constants are improved by performing ﬁts to the invariant mass
+distribution of π0→γγ decays [75], combining a photon hitting the cell to be calibrated
+with another reconstructed photon. The procedure is repeated until all coeﬃcients are
+stable. Figure 28 shows the change in the ﬁtted π0 invariant mass distribution, before and
+after the calibration procedure. By applying the method to a sample of miscalibrated
+simulated events, the ﬁnal precision of the cell-to-cell intercalibration is estimated to be
+approximately 2%. In order to apply the π0 mass ﬁt to every cell in the ECAL, several
+hundred thousand events are required.
+The calibration of the HCAL uses two 137Cs sources of∼ 10 mCi, one per detector
+side. This procedure takes about an hour during which they are transported through all
+40
+0
+0
+)2  (MeV/cγγM
+80 100 120 140 160 180 200
+2MeV/c
+1
+γγdM
+dN
+1500
+2000
+2500
+3000
+3500
+310×
+0mπ     135.4  
+0σπ 8.93
+0
+mπ    137.20
+σπ     12.94[REDACTED]
+Figure 28: Invariant mass distribution for π0→γγ candidates upon which the ﬁne calibration
+algorithm is applied. The red curve corresponds to the distribution before applying the method,
+while the blue curve is the ﬁnal one. Values in the red (blue) box are the mean and sigma of the
+signal peak distribution in MeV/c2 before (after) applying the ﬁne calibration method.
+of the scintillator cells by a hydraulic system. The response of the PMTs is measured by a
+dedicated system of current integrators. The relationship between the integrated anode
+current and the particle energy was measured in test-beam and is used to set the values
+for the HCAL parameters, obtaining a cell-to-cell intercalibration at the level of 5%. The
+use of the in-situ source limits the calibration procedure of the HCAL to technical stops,
+which occur bi-monthly.
+The performance of the ECAL and the HCAL is monitored during the data-taking
+periods using the built-in LED system: the response to the LED ﬂashes is found to
+agree well with the response to actual particles. In addition, the distribution of E/pc, for
+electrons in the case of the ECAL and hadrons in the case of the HCAL, can be compared
+to simulations and is used for monitoring purposes.
+While no signiﬁcant degradation of the SPD and the PS performance has been seen,
+ageing has been observed in both the ECAL and the HCAL. The main cause of this is a
+decrease of the PMT gains due to the degradation of the dynode system at high integrated
+anode current. The gain losses are compensated by increasing the voltage between the
+PMT dynodes. The time period over which the gradual gain reduction takes place is
+shorter than the interval between which absolute calibrations can be performed for the
+ECAL (using π0 mass reconstruction) and the HCAL (using the 137Cs sources). Therefore,
+the relative corrections required to maintain performance are estimated using dedicated
+procedures. For the ECAL, the E/pc ratio is used whilst the HCAL is monitored using
+the LED pulse system. The change in performance with time is illustrated in Figure 29,
+which shows the ratio between the L0-hadron trigger rate, based on the HCAL hardware,
+41
+Recordedhluminosityh[pb-1]h
+0hhhhhhhhhhhh200hhhhhhhhhh400hhhhhhhhhh600hhhhhhhhhh800hhhhhhhhh1000hhhhhhhh1200hhhhhhhh1400hhhhhhhh1600hhhhhhhh1800hhhhhhhh2000hhhhhhh2200h
+hh
+TL0-hadron)/TL0-Muon+DimuonhTHLT))h
+1.40
+1.35
+1.30
+1.25
+1.20
+1.15
+1.10
+1.05
+1.00h
+Figure 29: Ratio between the rate of events triggered by the L0-hadron trigger, based on the
+HCAL, and Muon-based triggers. Distinct increases in rate, e.g. as at a recorded luminosity of
+around 50 pb−1, correspond to the application of a new set of PMT gains.
+and a combination of muon-based triggers. As a result of the ageing, a gradual reduction
+of the rate is observed, with intermittent increases, corresponding to the application of a
+new set of PMT gains.
+3.2 Selection of neutral energy deposits in ECAL
+ECAL cells with energy deposits are grouped together to form clusters by applying a
+3× 3 cell pattern around local energy deposition maxima. Consequently, the centres of
+the reconstructed clusters are always separated by at least one cell. If a given cell is
+present in more than one cluster, its energy is redistributed between the clusters under
+consideration according to the total energies of the clusters. Although this process is
+iterative, it converges rapidly because the eﬀective Moli` ere radius (3.5 cm) of the ECAL is
+smaller than the size of the cells, which have lengths of side of 4.04 cm, 6.06 cm and 12.12 cm
+for the inner, middle and outer regions, respectively. Each cluster is characterised by its
+energy-weighted moments up to second order, namely the total energy, the energy-weighted
+position and the two-dimensional energy spread matrix.
+Clusters corresponding to energy deposits of neutral particles are identiﬁed as those
+without an associated charged track. This is done using the procedure summarised below.
+First, all reconstructed tracks in the event are extrapolated to the calorimeter. Next, all
+pairwise combinations of extrapolated tracks and reconstructed clusters are formed. The
+matching between tracks and clusters is evaluated using the χ2
+2D metric,
+χ2
+2D = (⃗ rtr−⃗ rcl)T (Ctr +Scl)−1 (⃗ rtr−⃗ rcl), (4)
+where⃗ rtr and⃗ rcl represent the local coordinates of tracks and clusters, respectively,
+at the z barycentres of clusters, Ctr is the covariance matrix of the ⃗ rtr, and Scl is the
+42
+2Candidates / 50 MeV/c
+0
+100
+200
+300
+400
+500
+600 [REDACTED] Data
+Full fit
+a
+*
+ KA0
+dB
+Combinatorial
+a0,+/*0 KA0,+B
+X0/ VAB
+)2) (MeV/ca-/+M(K
+4500 5000 5500 6000
+Figure 30: Mass distribution of reconstructed B0→K∗0(K+π−)γ candidates obtained in the
+2011 data sample. The blue curve corresponds to the mass shape ﬁt. The K∗0γ signal (green
+dotted line) and the various background contaminations are shown [77].
+cluster energy spread matrix. The z barycentre of a cluster is the average energy-weighted
+position of clusters in z, corrected assuming logarithmic energy dependence. A cluster
+generated by a neutral particle is considered to be isolated, and hence a photon candidate,
+if it has a minimum value of χ2
+2D with respect to any extrapolated track of at least 4. This
+cut signiﬁcantly suppresses the clusters due to other charged particles while keeping high
+eﬃciency for photons [76].
+3.3 Photon reconstruction
+The photon energy is determined from the total cluster energy in the ECAL and the
+reconstructed energy deposit in the PS [76]. The photon direction is derived from an
+assumed origin for the photon and the energy-weighted position of the photon candidate:
+the transverse proﬁle is corrected for the spread of the cluster, and the z barycentre
+calculated as for the χ2
+2D matching.
+The performance of high-energy photon reconstruction is illustrated by the recon-
+structed B0→K∗0γ mass distribution shown in Figure 30. The mass resolution obtained
+for this radiative decay is dominated by the ECAL energy resolution and is found to
+be 93 MeV/c2 [77]. A comparison of the data with simulated samples shows that this
+corresponds to an accuracy of the cell-to-cell intercalibration of around 2%.
+43
+)2 (MeV/c0π+π
+-
+ Km
+1650 1700 1750 1800 1850 1900 1950 2000 2050
+ )2 Events / ( 5 MeV/c
+0
+5000
+10000
+15000
+20000
+25000
+30000
+35000
+[REDACTED]
+ 
+)2 (MeV/c0π+π
+-
+ Km
+1650 1700 1750 1800 1850 1900 1950 2000 2050
+ )2 Events / ( 5 MeV/c
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+16000
+[REDACTED]
+ 
+Figure 31: Mass distributions of reconstructed D0→ K−π+π0 candidates with resolved π0
+(left) and merged π0 (right). Both are obtained from the 2011 data sample. The overall mass
+ﬁt [78] is represented by the blue curve, with the signal (red dashed line) and background (green
+dash-dotted line and purple dotted lines) contributions also shown.
+3.4 Neutral pion reconstruction
+Neutral pions with low transverse momenta are mostly reconstructed as pairs of well-
+separated photons (resolved π0 candidates). A mass resolution of 8 MeV/c2 is obtained
+for such neutral pions. However, due to the ﬁnite ECAL granularity, photon pairs from
+the decay of suﬃciently high momentum π0 cannot be resolved as individual clusters.
+This essentially holds for all π0 meson decays with transverse momentum above 2 GeV/c.
+To reconstruct such ‘merged’ π0 candidates, a procedure has been designed to identify
+overlapping clusters. The algorithm consists of splitting each single ECAL cluster into
+two 3× 3 subclusters built around the two highest energy deposits of the original cluster.
+The energy of the common cells is then distributed between the two assumed subclusters
+by ﬁtting the energy distribution with that of two photons, using the expected transverse
+proﬁle obtained from simulations. Since the position of the two subcluster barycentres is a
+function of the energy distribution, this procedure requires an iterative process.
+The performance of neutral pion reconstruction is illustrated in Figure 31, which shows
+the invariant mass distribution for D0→K−π+π0 candidates for resolved and merged π0
+candidates [78]. In this example, the estimated invariant mass resolution is 30 MeV/c for
+the merged π0 candidates and 20 MeV/c for the resolved ones.
+4 Particle identiﬁcation
+Particle identiﬁcation in [REDACTED] is provided by four diﬀerent detectors: the calorimeter
+system, the two RICH detectors and the muon stations. In the following sections the
+44
+performance of the individual sub-systems is presented ﬁrst, followed by a description
+of the methods used to combine the information for charged particles in a single set of
+variables that provide optimal particle identiﬁcation performance.
+4.1 Calorimeter system based particle identiﬁcation
+The main role of the calorimeters in terms of particle identiﬁcation is to provide for the
+recognition of photons, electrons and π0 candidates. Distinguishing charged from neutral
+particles is performed by studying the presence or absence of tracks in front of the energy
+deposits using the techniques described in Section 3.2. For energy deposits related to
+neutral particles, the shape of the cluster is used to distinguish between photons and π0
+candidates. The photon hypothesis is established by taking into account the possibility that
+photons convert when interacting with the detector material upstream of the calorimeter.
+When an energy deposit corresponds to a charged particle, the electron hypothesis is
+constructed to distinguish electrons from hadrons. Outline descriptions of how the photon
+and electron hypotheses are built are given below.
+4.1.1 Photon and merged π0 identiﬁcation
+Two independent estimators are built to establish the photon hypothesis, one each for
+the converted and non-converted candidates. Non-converted photons are identiﬁed by
+computing a photon hypothesis likelihood from the signal and background probability
+density functions of several variables, namely the PS energy deposited in front of the ECAL
+cluster cells, the matching estimator χ2
+2D between the cluster and any track deﬁned for a
+charged particle, and the ratio between the energy of the central cell of the ECAL cluster
+and the total ECAL energy. Because the non-converted photon estimator depends on
+the energy and the calorimeter zone, several probability density functions are constructed
+from simulations, for both signal and background, corresponding to each of the zones. The
+diﬀerence in log-likelihood between the photon and the background hypotheses (∆ log L)
+is calculated and used to identify photons. Figure 32 shows the performance of the
+photon identiﬁcation in terms of the eﬃciency and purity obtained for candidates with
+pT > 200 MeV/c.
+To avoid the misidentiﬁcation of photons with high- ET merged π0 candidates, the
+diﬀerence between the distribution of the expected energy deposit of a photon with respect
+to that of aπ0 is used. This diﬀerence is evaluated by a neural network classiﬁer (speciﬁcally,
+a multi-layer perceptron) trained with photons from a simulated B0→K∗0γ sample as
+signal and π0 mesons from a mixture of B decays as background. These π0 mesons are
+reconstructed and selected as photons using the same B0→K∗0γ preselection used for the
+signal sample. A photon identiﬁcation eﬃciency of 95% can be obtained while rejecting
+45% of the merged π0 meson background that are reconstructed as photons. Figure 32
+shows the photon identiﬁcation eﬃciency with respect to the π0 rejection eﬃciency for
+simulation and data.
+Photons converted before the magnet are reconstructed from electron-positron tracks.
+45
+0.45
+0.5
+0.55
+0.6
+0.65
+0.7
+0.75
+0
+0.2
+0.4
+0.6
+0.8
+1
+ rejection (%)0π
+0 50 100
+ efficiency (%)γ
+0
+20
+40
+60
+80
+100
+[REDACTED]
+Simulation 
+Signal Data
+[REDACTED]
+Purity
+Eﬃciency
+Figure 32: Performance of the photon identiﬁcation. Purity as a function of eﬃciency for (green)
+the full photon candidate sample, (blue) converted candidates according to the SPD information
+and (red) non-converted candidates (left). Photon identiﬁcation eﬃciency as a function of π0
+rejection eﬃciency for the γ−π0 separation tool for simulation, the red curve, and data, the
+blue curve (right).
+The electron (positron) is selected on the basis of its electron PID variables and electron
+conﬁdence level, requiring a minimum pT value and an E/pc value within a selected range.
+The algorithm only combines electron-positron pairs for which the associated clusters have
+energy-weighted positions that are closer than 3σ of cluster extent (and 200 mm) in the
+vertical plane, at the average z barycentre of clusters. Pairs are selected on the basis of
+their transverse momenta, their di-electron masses and their reconstructed vertex positions.
+The electron energy is corrected by including any bremsstrahlung photons measured by
+the calorimeters that are compatible with the electron-positron pair.
+Figure 33 shows the ratio of photon detection eﬃciencies between converted and
+non-converted photons coming from the decay of π0 mesons for both simulation and
+data. The simulation provides a good description of the photon reconstruction eﬃciency
+implying that the detector material where the conversions occur is modelled well, and
+that the reconstruction algorithms work equally well in data and simulation. The level
+of performance is illustrated by analyses that beneﬁt from the good resolution obtained
+using converted photons, such as χc→J/ψγ [79] or χb→ Υγ [80]. In the case of the χc,
+for instance, the resolution on the mass diﬀerence ∆ M =M(µ+µ−γ)−M(µ+µ−) is about
+5 MeV/c2. With this resolution, the χc0, χc1 and χc2 states can be disentangled from one
+another [79].
+4.1.2 Electron identiﬁcation
+The identiﬁcation of electrons in the calorimeter system uses information derived from
+the ECAL, the PS and the HCAL. The procedure to combine these diﬀerent sources of
+46
+]
+c
+[GeV/
+γ
+T
+p
+1
+1.5
+2
+2.5
+)
+CALO
+γ
+(
+ε
+)/
+-
+e
++
+e
+γ
+(
+ε
+0
+0.01
+0.02
+0.03
+0.04
+0.05
+[REDACTED]
+Simulation
+Data
+Figure 33: Ratio of photon detection eﬃciencies ϵ(γ→e+e−)/ϵ(γCALO) from the decay of π0
+mesons in data (red) and simulations (blue).
+information is based on signal and background likelihood distributions constructed for each
+sub-detector. In each case, reference histograms correlating the energy measurement with
+the particle momentum are produced. For example, Figure 34 shows the E/pc distribution
+in the ECAL for electrons and hadrons, produced using the ﬁrst 340 pb−1 recorded in 2011.
+The electron distribution has been produced using reconstructed electrons from photon
+conversions and the hadron distribution using pions and kaons from D0 meson decays.
+From these distributions, the log-likelihood diﬀerence between electrons and hadrons is
+derived.
+For the ECAL, the log-likelihood diﬀerence for electron and hadron hypotheses
+∆logLECAL(e−h) is computed based on both E/pc and the χ2
+2D estimator deﬁned in
+Section 3.2. The electron hypothesis likelihoods for the PS, ∆ logLPS(e−h) and the HCAL
+∆logLHCAL(e−h) are built using the energy deposits in each sub-detector. A combined
+estimator is then formed for the calorimeter system by taking the sum of the individual
+estimators from the PS, the ECAL and the HCAL,
+∆logLCALO(e−h) = ∆logLECAL(e−h) + ∆logLHCAL(e−h) + ∆logLPS(e−h) . (5)
+Figure 35 shows the combined electron identiﬁcation eﬃciency deﬁned above versus the
+misidentiﬁcation rate obtained by varying the selection criteria applied to the likelihood
+diﬀerence.
+The electron identiﬁcation performance is evaluated using the data recorded in 2011,
+which are suﬃcient for it to be measured using a tag-and-probe method. This is applied
+to B±→J/ψK± candidates with J/ψ→e+e−, where one of the electrons is required to
+be identiﬁed by its electron ID (etag) while the second electron is selected without using
+47
+Fraction of Events
+[REDACTED]
+E/pc
+0 0.2 0.4 0.6 0.8 1 1.2 1.4 1.6 1.8 20
+0.02
+0.04
+0.06
+0.08
+0.1
+0.12
+0.14
+0.16
+Figure 34: Distribution for the ECAL of E/pc for electrons (red) and hadrons (blue), as obtained
+from the ﬁrst 340 pb −1 recorded in 2011.
+[REDACTED]
+misID rate
+Electron eﬃciency
+Figure 35: Electron identiﬁcation eﬃciency versus misidentiﬁcation rate.
+48
+[REDACTED]
+[REDACTED]
+Electron eﬃciency (%)
+misID rate (% )
+momentum, GeV/c momentum, GeV/c
+∆ logLCALO(e− h) > 0
+∆ logLCALO(e− h) > 1
+∆ logLCALO(e− h) > 2
+∆ logLCALO(e− h) > 3
+∆ logLCALO(e− h) > 0
+∆ logLCALO(e− h) > 1
+∆ logLCALO(e− h) > 2
+∆ logLCALO(e− h) > 3
+Figure 36: Electron identiﬁcation performances for various ∆ log LCALO(e−h) cuts: electron
+eﬃciency (left) and misidentiﬁcation rate (right) as functions of the track momentum.
+any information from the calorimeter system ( eprobe). This second electron is then used to
+estimate the eﬃciency of the electron ID.
+The eﬃciency and the misidentiﬁcation rate as a function of the eprobe momentum are
+presented in Figure 36 for several cuts on ∆ logLCALO(e−h). The electron identiﬁcation
+eﬃciency is observed to be lower for p <10 GeV/c. As expected, the higher momenta
+particles have higher misidentiﬁcation rates as illustrated in Figure 36. To quantify the
+typical identiﬁcation performance of the entire calorimeter system, the average identiﬁcation
+eﬃciency of electrons from theJ/ψ→e+e− decay inB±→J/ψK± events is (91.9±1.3)%
+for a misidentiﬁcation rate of (4.54± 0.02)% after requiring ∆logLCALO(e−h)> 2.
+4.2 RICH system based particle identiﬁcation
+The primary role of the RICH system is the identiﬁcation of charged hadrons ( π, K,
+p). The information provided is used both at the ﬁnal analysis level, and as part of the
+software trigger (see Section 5). In addition, the RICH system can contribute to the
+identiﬁcation of charged leptons (e, µ), complementing information from the calorimeter
+and muon systems, respectively.
+4.2.1 Cherenkov angle resolution
+One of the primary measures of the RICH performance is σ(θC), the resolution of the
+Cherenkov angle with which the photons, radiated from the particles as they traverse
+the various radiator volumes, can be reconstructed. The distributions for ∆ θC, the
+diﬀerence between the reconstructed and expected photon Cherenkov angles, are shown
+in Figure 37 for 2011 data, after all detector alignment and calibration procedures have
+been performed [81]. The expected Cherenkov angles for each track are calculated using
+49
+ (mrad)θ∆
+-5 0 5
+Events / ( 0.2 mrad )
+400
+500
+600
+700
+800
+900
+1000
+310×
+ 0.002 mrad± =  1.618 θ∆σ
+[REDACTED]
+ (mrad)θ∆
+-2 0 2
+Events / ( 0.1 mrad )
+310×
+10
+15
+20
+25
+30
+ 0.02 mrad± =  0.68 θ∆σ
+[REDACTED]
+ (mrad)e 6
+-40 -20 0 20 40
+Events / ( 0.9 mrad )
+15
+20
+25
+30
+35
+40
+45
+310×
+[REDACTED]
+Figure 37: ∆θC distributions for the RICH 1 gas (top left), RICH 2 gas (top right) and Aerogel
+(bottom) [81].
+reconstructed momenta and radiator refractive index information. Only high-momentum
+tracks are selected, to ensure that the Cherenkov angle is close to saturation.
+The values ofσ(θC), extracted from a simple ﬁt to the ∆θC distributions, are determined
+to be 1.618± 0.002 mrad for RICH1 gas (C 4F10) and 0.68± 0.02 mrad for RICH2 (CF4),
+comparable with the expectations from simulation of 1.52±0.02 mrad and 0.68±0.01 mrad
+respectively. The disagreement seen between data and simulation for C 4F10 are largely
+attributed to imperfect corrections for distortions in the RICH photon detector images
+caused by the residual magnetic ﬁeld in the vicinity of the RICH1 detector. Enhancements
+to the procedures used to compute these corrections are foreseen for Run II, thus improving
+the resolutions achieved in data.
+For the RICH1 aerogel radiator, where the distribution is not symmetric, the standard
+deviation is estimated to be 5 .6 mrad. This value is about a factor of 1.8 larger than
+the expectation from simulation. This discrepancy is, at least partially, explained by the
+unmodelled absorption of C 4F10 gas by the very porous aerogel radiator, with which it is
+in contact.
+Due to the high average track multiplicity in [REDACTED] events, a reconstructed Cherenkov
+50
+Momentum (GeV/c)Momentum (GeV/c)
+2
+10 102
+50
+45
+40
+35
+30
+25
+20
+15
+K p
+Cherenkov Angle (mrad)
+µ Ƈ
+220
+200
+180
+160
+140
+120
+100
+80
+60
+40
+20
+0
+Figure 38: Reconstructed Cherenkov angle for isolated tracks, as a function of track momentum
+in the C4F10 radiator [81]. The Cherenkov bands for muons, pions, kaons and protons are clearly
+visible.
+ring will generally overlap with several neighbouring rings. Solitary rings from isolated
+tracks, where no overlap is found, provide a useful test of the RICH performance, since
+isolated rings can be cleanly and unambiguously associated with a single track. Figure 38
+shows the Cherenkov angle as a function of particle momentum using information from
+the C4F10 radiator for isolated tracks selected in data (∼ 2% of all tracks). As expected,
+the events populate distinct bands according to their mass.
+4.2.2 Photoelectron yield
+The average number of detected photons for each track traversing the Cherenkov radiator
+media, called the photoelectron yield (Npe), is another important measure of the perfor-
+mance of a RICH detector. The yields for the three radiators used in [REDACTED] are measured
+in data using two diﬀerent samples of events [81]. The ﬁrst sample is representative of
+normal [REDACTED] data taking conditions, and consists of the kaons and pions originating from
+the decay D0→K−π+, where the D0 is selected from D∗+→D0π+ decays. The second
+sample consists of low detector occupancy pp→ppµ +µ− events, which provide a clean
+track sample with very low background levels. In both samples, only high-momentum
+tracks are selected, to ensure that the Cherenkov angle is close to saturation.
+51
+Table 3: Comparison of photoelectron yields ( Npe) determined from D∗+→ D0π+ decays in
+simulation and data, and pp→ppµ +µ− events in data.
+Radiator Npe from data Npe from simulation
+D0→K−π+ pp→ppµ +µ− D0→K−π+
+Aerogel 5 .0± 3.0 4 .3± 0.9 8 .0± 0.6
+C4F10 20.4± 0.1 24 .5± 0.3 28 .3± 0.6
+CF4 15.8± 0.1 17 .6± 0.2 22 .7± 0.6
+Table 3 shows the results of the photoelectron yield extraction, performed on both
+real and simulated data. In data, the D∗+→ D0π+ events have values of Npe that are
+less than those for pp → ppµ +µ− events. This is mainly due to the higher charged
+track multiplicities of the D∗+→D0π+ events, reducing the eﬀective Npe, and the track
+geometry cut that is applied to the pp→ppµ +µ− events increasing their Npe yield. The
+aerogelNpe data values have a large uncertainty due to the signiﬁcant background levels in
+the ∆θC distributions and the additional uncertainty in the shape of the signal peak [81].
+The photoelectron yields for data are lower than those predicted by the simulation.
+One reason for this is a small detector read-out ineﬃciency, which was identiﬁed during
+high trigger rate data taking in Run I. The results presented include a retuning of the
+read-out settings, applied during data taking to minimise the impact of the ineﬃciency. A
+further optimisation will be performed for [REDACTED] Run II to reduce the eﬀect to the negligible
+level, and is expected to improve the yields further by a few percent. The remaining
+discrepancy is accounted for by an over-estimate of the yield in the simulation, which
+will be addressed by improved simulation tunings. It must be stressed however, that the
+smaller yield measured in data does not have a signiﬁcant impact on the ﬁnal particle
+identiﬁcation performance, as described in Section 4.2.3.
+4.2.3 Particle identiﬁcation performance
+To determine the RICH particle identiﬁcation performance on data, large samples of genuine
+π, K and p tracks are required. Such control samples must be selected independent of
+RICH information which would otherwise bias the results. The strategy employed is to
+reconstruct exclusive decays purely from kinematic selections. Only decay modes with
+large branching fractions, for which large samples can be easily collected, are used to allow
+for precise calibration over a range of track kinematics.
+The following decays, and their charge conjugates, are identiﬁed:K0
+S→π+π−, Λ→pπ−
+andD∗+→D0(K−π+)π+. This ensemble of ﬁnal states provides a complete set of charged
+particle types needed to assess comprehensively the hadron PID performance. Utilising the
+track samples obtained from these exclusive control decay modes, Figure 39 demonstrates
+the kaon eﬃciency (kaons identiﬁed as kaons) and pion misidentiﬁcation (pions misidentiﬁed
+as kaons) fraction achieved in [REDACTED] data, as a function of momentum. For illustration
+the data is shown with two diﬀerent PID requirements, one optimising the eﬃciency, the
+52
+Momentum (GeV/c)
+20 40 60 80 100
+Efficiency
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+) > 0/ LogL(K - 6
+) > 5/ LogL(K - 6
+ KAK 
+ KA /
+[REDACTED] Data
+Momentum (GeV/c)
+20 40 60 80 100
+Efficiency
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+) > 0/ LogL(K - 6
+) > 5/ LogL(K - 6
+ KAK 
+ KA /
+[REDACTED] Simulation
+Figure 39: Kaon identiﬁcation eﬃciency and pion misidentiﬁcation rate as measured using
+data (left) and from simulation (right) as a function of track momentum [81]. Two diﬀerent
+∆logL(K−π) requirements have been imposed on the samples, resulting in the open and ﬁlled
+marker distributions, respectively.
+other minimising the misidentiﬁcation rate.
+For each track the likelihood that it is an electron, muon, pion, kaon or proton is
+computed. In the ﬁrst approach it is required that, for each track, the likelihood for the
+kaon mass hypothesis is larger than that for the pion hypothesis, i.e. ∆log L(K−π) > 0.
+When averaging over the momentum range 2 – 100 GeV/c one ﬁnds the kaon eﬃciency
+to be∼ 95% with a pion misidentiﬁcation rate of ∼ 10%. A stricter PID requirement,
+∆logL(K−π) > 5, reduces the pion misidentiﬁaction rate to ∼ 3% at a modest loss in
+kaon eﬃciency of∼ 10% on average. Figure 39 also shows the performance in simulation,
+for the same exclusive control channels and PID requirements as above for data. Good
+agreement with data is observed for both sets of PID requirements.
+The Run I conditions, with multiple interactions per bunch crossing and the resulting
+high particle multiplicities, provide an insight into the RICH performance at possible future
+higher luminosity running. Figure 40 shows the pion misidentiﬁcation fraction versus
+the kaon identiﬁcation eﬃciency as a function of track multiplicity and the number of
+reconstructed primary vertices, as the requirement on the likelihood diﬀerence ∆logL(K−π)
+is varied. The results demonstrate some degradation in PID performance with increased
+interaction multiplicity. However, the performance is still excellent and gives conﬁdence
+that the RICH system will continue to perform well during [REDACTED] Run II.
+4.3 Muon system based particle identiﬁcation
+The identiﬁcation of a track reconstructed in the tracking system as a muon is based on the
+association of hits around its extrapolated trajectory in the muon system [82]. A search
+is performed for hits within rectangular windows around the extrapolation points where
+the x and y dimensions of the windows are parameterised as a function of momentum at
+53
+Kaon ID Efficiency
+0.6 0.8 1
+ Pion Mis-ID Efficiency
+-210
+-110
+[REDACTED]
+No. Tracks in Event
+[0,100]
+[100,200]
+[200,300]
+[300,400]
+Kaon ID Efficiency
+0.6 0.7 0.8 0.9 1
+ Pion Mis-ID Efficiency
+-210
+-110
+[REDACTED]
+No. Reco. PVs in Event
+1
+2
+3
+4
+Figure 40: Pion misidentiﬁcation fraction versus kaon identiﬁcation eﬃciency as measured in
+7 TeV [REDACTED] collisions: (left) as a function of track multiplicity, and (right) as a function of the
+number of reconstructed primary vertices [81]. The eﬃciencies are averaged over all particle
+momenta.
+each station and separately for each muon system region. The parameters are optimised
+to maximise the eﬃciency and at the same time provide low misidentiﬁcation probabilities
+of pions as muons. The same criterion is used to deﬁne the number of stations required to
+have hits within a window as a function of momentum. A minimum momentum of 3 GeV/c
+is necessary for a muon to traverse the calorimeters and reach the M2 and M3 stations,
+while above 6 GeV/c they traverse all ﬁve of the stations. For each muon candidate,
+likelihoods for the muon and non-muon hypotheses are computed, based on the average
+squared distance of the hits that are closest to the extrapolation points.
+The performance of the muon identiﬁcation is obtained from data using muons from
+J/ψ→ µ+µ− decays, protons from Λ → pπ− decays and kaons and pions from D0→
+K−π+, where the D0 is selected from D∗+→D0π+ decays. These samples can be selected
+without using PID information and are characterised by relatively high statistics and low
+background. The latter is subtracted by ﬁtting the appropriate invariant mass distribution.
+Figure 41 shows, as a function of the track momentum and for diﬀerent ranges of transverse
+momentum, the eﬃciency of the muon candidate selection, and the probabilities of incorrect
+identiﬁcation of protons, pions and kaons as muons.
+The incorrect assignment of the muon identity to a proton occurs either due to a
+combination of spurious hits in the diﬀerent muon stations that are aligned with the
+proton direction, or due to the existence of a true muon in the event that points in the
+same direction as the proton in the muon system. This muon can be produced close to
+the interaction point or in the calorimeter shower. Since the window dimension decreases
+with momentum and an increasing number of hits is required for tracks above 10 GeV/c, a
+strong reduction of the proton misidentiﬁcation rate is seen in the interval 3 − 30 GeV/c
+and for pT < 1.7 GeV/c. For higher pT values, the protons have a high polar angle and
+therefore fall outside of the high-occupancy part of the detector. Decays in ﬂight are the
+54
+Muon momentum [GeV/c]
+0 20 40 60 80 100
+Muon efficiency
+0.8
+0.85
+0.9
+0.95
+1
+1.05
+1.1
+<1.7 [GeV/c]T0.8<p
+<3.0 [GeV/c]T1.7<p
+<5.0 [GeV/c]T3.0<p
+>5.0 [GeV/c]Tp
+Proton momentum [GeV/c]
+0 20 40 60 80 100
+Proton  mis-ID efficiency
+0
+0.005
+0.01
+0.015
+0.02
+0.025
+0.03
+<0.8 [GeV/c]Tp
+<1.7 [GeV/c]T0.8<p
+<3.0 [GeV/c]T1.7<p
+<5.0 [GeV/c]T3.0<p
+Pion momentum [GeV/c]
+0 10 20 30 40 50 60 70
+Pion mis-ID efficiency
+0
+0.02
+0.04
+0.06
+0.08
+0.1
+0.12
+0.14
+0.16
+0.18
+0.2
+[REDACTED][REDACTED][REDACTED]
+ < 1.7 [GeV/c]T0.8 < p
+ < 3.0 [GeV/c]T1.7 < p
+ <5.0 [GeV/c]T3.0 < p
+ < 10.0 [GeV/c]T5.0 < p
+Kaon momentum [GeV/c]
+0 10 20 30 40 50 60 70
+Kaon mis-ID efficiency
+0
+0.01
+0.02
+0.03
+0.04
+0.05
+0.06
+0.07
+0.08
+0.09
+0.1
+[REDACTED][REDACTED][REDACTED]
+ < 1.7 [GeV/c]T0.8 < p
+ < 3.0 [GeV/c]T1.7 < p
+ <5.0 [GeV/c]T3.0 < p
+ < 10.0 [GeV/c]T5.0 < p
+Figure 41: Top left: eﬃciency of the muon candidate selection based on the matching of hits
+in the muon system to track extrapolation, as a function of momentum for diﬀerent pT ranges.
+Other panels: misidentiﬁcation probability of protons (top right), pions (bottom left), and kaons
+(bottom right) as muon candidates as a function of momentum, for diﬀerent pT ranges.
+55
+main cause of misidentiﬁcation of pions and kaons as muons. To a good approximation,
+the misidentiﬁcation rate is the sum of the contribution of decays in ﬂight and the proton
+misidentiﬁcation probability.
+The background rejection power can be improved by the computation of a likelihood for
+the muon and non-muon hypotheses, based on the pattern of hits around the extrapolation
+to the diﬀerent muon stations of the charged particles trajectories reconstructed with
+high precision in the tracking system. The logarithm of the ratio between the muon and
+non-muon hypotheses, ∆logL(µ), is used as a discriminating variable. The likelihood for
+the non-muon hypothesis is calibrated using proton data, since the other charged hadrons
+(pions or kaons) selected as muons will have a component identical to the protons and a
+component very similar to the true muons, due to decays in ﬂight before the calorimeter.
+The muon likelihood has been calibrated with muons from J/ψ→µ+µ− decays selected
+from data, while the non-muon likelihood has been calibrated with a simulated sample of
+Λ→pπ− decays.
+4.4 Combined particle identiﬁcation performance
+The PID information obtained separately from the muon, RICH, and calorimeter systems
+is combined to provide a single set of more powerful variables. Two diﬀerent approaches
+are used. In the ﬁrst method the likelihood information produced by each sub-system is
+simply added linearly, to form a set of combined likelihoods, ∆ logLcomb(X−π), where X
+represents either the electron, muon, kaon or proton mass hypothesis. These variables give
+a measure of how likely the mass hypothesis under consideration is, for any given track,
+relative to the pion hypothesis. A second approach has been subsequently developed to
+improve upon the simple log likelihood variables both by taking into account correlations
+between the detector systems and also by including additional information. This is carried
+out using multivariate techniques [83], combining PID information from each sub-system
+into a single probability value for each particle hypothesis.
+To illustrate the improvement made by combining information from diﬀerent sub-
+detectors, the performance of the variable ∆ logLcomb(e−π) is ﬁrst considered, using a
+similar tag and probe technique to that of Section 4.1.2 in which the calorimeter-only
+performance is presented. Figure 42 shows the pion misidentiﬁcation versus electron
+identiﬁcation probability, for various cuts on ∆logLcomb(e−π). Compared to Figure 35
+the improvement in the misidentiﬁcation rate can clearly be seen, e.g. at∼ 90 % electron
+eﬃciency the pion misidentiﬁcation rate drops from ∼ 6 % to∼ 0.6 %.
+An improvement in performance can also be seen for the muon identiﬁcation, as
+illustrated by one of the most prominent [REDACTED] results, the measurement of theB0
+s→µ+µ−
+branching fraction and the search for B0→ µ+µ− decays [7]. The B0
+(s)→ h+h− decay
+modes, where h = (K,π ), can fake a signal if both hadrons are misidentiﬁed as muons.
+Therefore the minimisation of these backgrounds is of paramount importance for this
+analysis. This double misidentiﬁcation probability has been evaluated by folding the
+K→ µ and π→ µ fake rates extracted from a D0→ Kπ sample from D∗+→ D0π+
+decays, in bins of p and pT, into the spectrum for selected simulated B0
+(s)→h+h− events.
+56
+e efficiency
+0.7 0.8 0.9 1
+ mis-ID rateπ
+-310
+-210
+-110
+[REDACTED]
+Momentum (GeV/c)
+50
+100 150 Efficiency
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+1.4
+) > 0
+π (e - comb
+ log LΔ) > 3
+π (e - comb log LΔ e
+→e  e
+→ π = 8 TeV Data
+s[REDACTED]
+Figure 42: Electron identiﬁcation performance using the ∆ logLcomb(e−π) variable, as measured
+in 8 TeV collision data, using a tag and probe technique with electrons from the decay B±→
+(J/ψ→e+e−)K±. Left, pion misidentication rate versus electron identiﬁcation probability when
+the cut value is varied. Right, electron identiﬁcation eﬃciency and pion misidentiﬁcation rate as
+a function of track momentum, for two diﬀerent cuts on ∆logLcomb(e−π).
+Signal efficiency
+0 0.2 0.4 0.6 0.8 1
+Background rejection
+0
+0.2
+0.4
+0.6
+0.8
+1 [REDACTED]
+)π -µ log L(Δ
+µProbNN
+Signal efficiency
+0 0.2 0.4 0.6 0.8 1
+Background rejection
+0
+0.2
+0.4
+0.6
+0.8
+1 [REDACTED]
+)π log L(p -Δ
+ProbNNp
+Figure 43: Background misidentiﬁcation rates versus muon (left) and proton (right) identiﬁcation
+eﬃciency, as measured in the Σ+→pµ+µ− decay study. The variables ∆logL(X−π) (black) and
+ProbNN (red), the probability value for each particle hypothesis, are compared for 5 − 10 GeV/c
+muons and 5 − 50 GeV/c protons, using data sidebands for backgrounds and Monte Carlo
+simulation for the signal.
+If the tracks identiﬁed as muons are also required to satisfy a selection using the combined
+PID information (∆logLcomb(K−π)< 10 and ∆logLcomb(µ−π)>−5), the B0
+(s)→h+h−
+misidentiﬁcation probability is reduced by a factor of ∼ 6, whilst only ∼ 3% of the
+Bs→µ+µ− signal is lost.
+The possible improvement of the multivariate approach with respect to the simple log
+likelihood may also be illustrated by the ongoing search for the ﬂavour-changing neutral
+current decay Σ+→pµ+µ−. In Figure 43 the misidentiﬁcation rates versus eﬃciency curves
+57
+for the ∆logL(X−π) and the probability value for each particle hypothesis variables are
+shown. The improvement is clearly visible for both muons and protons. These multivariate
+variables will be further developed and utilised more extensively during Run II.
+5 Trigger
+The [REDACTED] trigger consists of two levels; Level-0 (L0) and the High Level Trigger (HLT). In
+Run I the trigger reduced the rate of events to be saved for physics analysis to 2 – 5 kHz.
+The L0 trigger is implemented in hardware and makes decisions based on information
+from the calorimeter and muon systems in order to reduce the event rate to below 1 MHz,
+at which point the whole detector can be read out. The HLT is a software application
+running on the event ﬁlter farm (EFF). A fraction of L0 accepted events are deferred to
+disk for processing by the HLT during the inter-ﬁll time, optimising the use of available
+EFF resources.
+After the HLT, events are stored and later processed with a more accurate alignment
+and calibration of the sub-detectors, and with the reconstruction software described in
+Section 2.2. This part of the reconstruction and subsequent selection of interesting events
+is referred to as the oﬄine reconstruction and selection for the remainder of this discussion.
+Section 5.1 describes a data-driven method to determine the eﬃciency and purity of the
+signals that are selected by the [REDACTED] trigger. The implementation of the L0 trigger [24]
+is brieﬂy summarised in Section 5.2 and the performance of the HLT [84] is discussed in
+Section 5.3. The selection criteria used in the two trigger levels during 2011 and 2012 are
+described in detail in Reference [85]. The deferral system is discussed in Section 5.4 and a
+short summary of the [REDACTED] trigger is provided in Section 5.5.
+The results presented here are based on the conﬁguration and performance of the
+[REDACTED] trigger during 2012 when the deferral system was ﬁrst used and the majority of the
+Run I dataset was collected.
+5.1 Data driven trigger performance determination
+The trigger eﬃciencies are evaluated using events reconstructed with the full oﬄine software,
+and are calculated with respect to candidates selected by the full oﬄine analysis of the
+respective channel, excluding the trigger. They therefore quantify the ineﬃciencies due to
+the simpliﬁed reconstruction, possible misalignments and reduced resolution, as compared
+to the oﬄine reconstruction. They also account for any tighter selection requirements
+that are needed to satisfy the rate and processing time limitations. The following decay
+channels are chosen to highlight the performance of the trigger 1 :
+• B+→J/ψK+ decays, with J/ψ→µ+µ−. This decay evaluates the muon trigger
+eﬃciency and serves as a proxy for several key physics decay channels likeB0
+s→J/ψφ,
+B0→K∗0µ+µ− or B0
+s→µ+µ−.
+1Here, and in the following, charge conjugated decays are implicitly included.
+58
+• B0→K+π− as a typical two-body hadronic beauty decay.
+• B0→D+π− with D+→K−π+π+, as a typical four-body beauty decay.
+• D0→K−π+ as a two-body charm decay.
+• D+→K−π+π+ represents a three-body charm decay.
+• D∗+→D0π+, followed by the four-body charm decay D0→K−π+π−π+.
+These decay channels and their selections are representative of the trigger needs of
+the core physics analyses of the [REDACTED] experiment. The selected charm modes cover
+the topologies that are most sensitive to CP violating eﬀects. All samples used in this
+study carry a large signal to background ratio. Nevertheless, the yields are determined by
+ﬁtting the signal peaks in the invariant mass distributions in order to subtract the residual
+background.
+In the following, the term ‘signal’ refers to a combination of tracks forming the oﬄine
+reconstructed and selected b- or c-hadron candidates. To determine the trigger eﬃciency,
+trigger objects are associated with signal tracks. The criteria used to associate a trigger
+object with a signal track are as follows. An event is classiﬁed as Trigger on Signal (TOS)
+if the trigger objects that are associated with the signal candidate are suﬃcient to trigger
+the event. An event is classiﬁed as Trigger Independent of Signal (TIS) if it has been
+triggered by trigger objects that are not associated with the signal. Some events can be
+classiﬁed as TIS and TOS simultaneously ( TIS & TOS), which allows the determination
+of the trigger eﬃciency relative to the oﬄine reconstructed events from data alone. The
+eﬃciency to trigger an event independently of the signal, ϵTIS, is given by
+ϵTIS =N TIS & TOS/NTOS,
+where N TOS is the number of events classiﬁed as TOS. The eﬃciency to trigger an event
+on the signal alone, ϵTOS, is given by
+ϵTOS =N TIS & TOS/NTIS,
+where N TIS is the number of events classiﬁed as TIS. This method of measuring trigger
+eﬃciencies is discussed in detail in Reference [86].
+5.2 Level-0 hardware trigger
+The L0 trigger is divided into three independent units; the L0-Calorimeter trigger, the
+L0-Muon trigger and the L0-PileUp trigger, the latter being used only for the determination
+of the luminosity [26]. The L0 trigger system is fully synchronous with the 40 MHz bunch
+crossing rate of the [REDACTED]. The latencies are ﬁxed and are independent of the occupancy or
+the bunch crossing history.
+The L0-Calorimeter system uses information from the SPD, PS, ECAL and HCAL
+detectors, as described in Section 3. It computes the transverse energy, ET, deposited by
+59
+Table 4: Typical L0 thresholds used in Run I [85].
+pT or ET SPD
+2011 2012 2011 and 2012
+single muon 1.48 GeV /c 1.76 GeV/c 600
+dimuonpT1×pT2 (1.30 GeV/c)2 (1.60 GeV/c)2 900
+hadron 3.50 GeV 3.70 GeV 600
+electron 2.50 GeV 3.00 GeV 600
+photon 2.50 GeV 3.00 GeV 600
+incident particles in clusters of 2× 2 cells. From these clusters, the following three types of
+candidates are built. L0Hadron is the highest ET HCAL cluster, which also contains the
+energy of the matching ECAL cluster. L0Photon is the highest ET ECAL cluster with 1 or
+2 PS hits in front of the ECAL cluster and no hit in the SPD cells corresponding to the PS
+cells. L0Electron has the same requirements as L0Photon, with the additional condition
+of at least one SPD cell hit in front of the PS cells. The ET of each candidate is compared
+to a ﬁxed threshold and events containing at least one candidate above threshold ﬁre the
+L0 trigger. The total number of hits in the SPD is also determined, and is used to veto
+events that would take a disproportionately large fraction of the available processing time
+in the HLT. The SPD hit multiplicity requirements are listed in Table 4.
+The L0 muon processors look for the two highest pT muon tracks in each quadrant.
+The position of a track in the ﬁrst two stations allows the determination of its pT with a
+measured momentum resolution of roughly 25%. The trigger considers the eight candidates
+and sets a single threshold on either the largest transverse momentum, pTlargest, or on the
+product, pTlargest×pT2nd largest . These thresholds are listed in Table 4. The tightening of
+L0 thresholds in the 2012 conﬁguration is a consequence of the increased luminosity and
+beam energy.
+The trigger eﬃciencies are measured on oﬄine selected events, using the techniques
+described in Section 5.1. The eﬃciencies of the L0 muon triggers evaluated onB+→J/ψK+
+events are shown in Figure 44. The majority of events are accepted by the single muon
+trigger. The largest ineﬃciency originates from the tight muon identiﬁcation requirements
+inside the L0 reconstruction algorithm. The L0 dimuon trigger selects a small fraction of
+additional candidates at lower transverse momenta. The combined eﬃciency for both L0
+muon triggers is evaluated to be 89 ± 0.5% [86].
+The L0 hadron eﬃciency is shown in Figure 44 for the two- and three-prong beauty
+decaysB0→K+π− and B0→D+π− and the two-, three- and four-prong charm decays
+D0→K−π+, D+→K−π+π+ and D∗+→D0π+, as a function of the B or D meson pT.
+The two-prong beauty decay is triggered with highest eﬃciency by the L0 hadron ET
+criterion (ϵTOS = 40%) while the four-prong charm decay D∗+→D0π+ is selected with
+the lowest eﬃciency (ϵTOS = 22%). The other modes lie in between, as shown in Figure 44.
+With the inclusion of TIS triggers, the total eﬃciencies increase signiﬁcantly, e.g. from
+60
+]
+c [MeV/Tp 0
+5 10 15 20 3
+10× / 100%
+ TOS ε  0
+0.2
+0.4
+0.6
+0.8
+1
+L0Muon
+L0DiMuon
+L0Muon OR L0DiMuon
+[REDACTED]
+]
+c [MeV/Tp 0
+5 10 15 20 3
+10× / 100%
+ TOS ε  0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
++
+π0 D→ +B-
+π+ K→ 0B+
+π-
+ K→ 0D+
+π+π-
+ K→ +D+
+π0 D→ *+D[REDACTED]
+Figure 44: (left) L0 muon trigger performance: TOS trigger eﬃciency for selected B+→J/ψK+
+candidates. (right) L0 hadron trigger performance: TOS trigger eﬃciency for diﬀerent beauty
+and charm decay modes.
+40% to 53% for B0→K+π− .
+The total output rate of the L0 trigger is limited to 1 MHz, which is the maximum rate
+at which the [REDACTED] detector can be read out. This output rate consists of approximately
+400 kHz of muon triggers, 500 kHz of hadron triggers and 150 kHz of electron and photon
+triggers, where the individual triggers have an overlap of about 10%.
+5.3 High Level Trigger
+Events accepted by L0 are transported by the data acquisition network to one of the
+processors of the EFF. The HLT is a software application, of which 29 500 instances run
+on the EFF, and each instance consists of independently operating trigger “lines”, each of
+which consists of selection parameters for a speciﬁc class of events.
+The HLT is based on the same software framework used throughout [REDACTED]. Given
+the available resources in the EFF, the time per event is around ﬁfty times smaller than
+in the oﬄine processing. The HLT is divided in two levels. In the ﬁrst level (HLT1), a
+partial event reconstruction is performed. In the second level (HLT2), the complete event
+is reconstructed. Where time allows, the HLT uses the same reconstruction algorithms as
+employed oﬄine, with some simpliﬁcations that are needed to satisfy the time constraints.
+5.3.1 First level
+The oﬄine [REDACTED] reconstruction algorithm which performs a full 3D pattern recognition
+is suﬃciently fast to be run on all events entering the HLT. However, the oﬄine algorithm
+makes a second pass on unused hits to enhance the eﬃciency for tracks pointing far away
+from the beam-line, while in the HLT this second pass is not used due to CPU constraints.
+Vertices are reconstructed from a minimum of ﬁve intersecting [REDACTED] tracks. Vertices
+61
+within a radius of 300 µm of the mean position of thepp-interaction envelope are considered
+to be primary vertices.
+HLT1 limits the number of [REDACTED] tracks that are passed through the forward tracking
+algorithm that searches for matching hits in the tracking stations. [REDACTED] tracks must
+have a signiﬁcant IP with respect to all PVs, or be matched to muon chamber hits by
+a fast muon identiﬁcation algorithm. This algorithm is only run in events that were
+triggered by a muon line in the hardware step. To further limit the processing time, the
+forward track search has a minimum momentum requirement that varied between 3 and
+6 GeV/c during Run I. [REDACTED] tracks without matching muon hits are also subject to a
+minimumpT threshold that varied between 0.5 and 1.25 GeV/c. The reconstructed forward
+tracks are ﬁtted using a Kalman ﬁlter with a simpliﬁed detector geometry description
+and fewer iterations than in the oﬄine conﬁguration. The invariant mass resolution of
+J/ψ→µ+µ− candidates reconstructed with this procedure is found to be 3% worse than
+the 15.1 MeV/c2 obtained oﬄine. For tracks identiﬁed as muon candidates, the basic oﬄine
+muon identiﬁcation algorithm [82] is applied to increase the purity of the muon sample.
+The inclusive beauty and charm trigger is based on the properties of one good quality
+track candidate. The selection is based on track pT (typical valuepT > 1.6− 1.7 GeV/c)
+and displacement from the primary vertex (typical value IP > 0.1 mm). This trigger line
+produces around 58 kHz of output, which is the largest contribution to the allocated HLT1
+bandwidth. It is the most eﬃcient line for physics channels that do not contain leptons in
+the ﬁnal state. The performance of HLT1 for hadronic signatures is shown in Figure 45 as
+a function of the pT of the resonance considered. The inclusive one-track based trigger
+also exists in a version for electrons or photons identiﬁed by L0, with reduced thresholds
+relative to the inclusive version. The output rate of these lines is around 7 kHz.
+A similar line exists for tracks that are matched to hits in the muon chambers [87].
+This single muon trigger line selects good quality muon candidates that are displaced
+from the primary vertex and satisfy pT > 1 GeV/c. Single muon candidates that satisfy
+pT > 4.8 GeV/c are selected by a special trigger line without any vertex separation
+requirements.
+Dimuon candidates are either selected based on their mass (mµµ > 2.5 GeV/c2) without
+any displacement requirement, or based on their displacement without the mass restriction.
+The dominant ineﬃciency for these lines originates from the online muon identiﬁcation
+algorithms. The performance of HLT1 on muonic signatures as a function of pT of the
+B+ parent is shown in Figure 45. The single muon line has an eﬃciency of around 90%
+to select B+→J/ψK+ decays, while the dimuon lines have an eﬃciency of around 70%.
+The combination of muon trigger lines produces an output rate of around 14 kHz.
+In addition to the trigger lines discussed above, several dedicated lines are implemented
+to enhance the trigger performance for events containing candidates for high pT electrons,
+di-protons, displaced vertices or high ET jets. A set of technical lines including selections
+for luminosity and beam-gas measurements completes the list of HLT1 triggers.
+62
+]
+c [MeV/Tp 0
+5 10 15 20 3
+10× / 100%
+ TOS ε  0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
++
+π0 D→ +B-
+π+ K→ 0B+
+π-
+ K→ 0D+
+π+π-
+ K→ +D+
+π0 D→ *+D[REDACTED]
+]
+c [MeV/Tp 0
+5 10 15 20 3
+10× / 100%
+ TOS ε  0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+Hlt1TrackMuon
+Hlt1DiMuonHighMass
+Hlt1DiMuonLowMass
+[REDACTED]
+Figure 45: HLT1 inclusive track trigger performance: TOS eﬃciency for various channels as a
+function of B orD pT (left) . HLT1 muon trigger performance : TOS eﬃciency for B+→J/ψK+
+candidates as function of B+ pT (right).
+5.3.2 Second level
+HLT1 reduces the event rate to about 80 kHz, which is suﬃciently low to allow the forward
+tracking of all [REDACTED] tracks in HLT2. As described in Section 2.2, the oﬄine reconstruction
+uses two complementary tracking algorithms. Due to the CPU constraints, HLT2 only
+searches for long tracks based on [REDACTED] seeds. This simpliﬁcation leads to a lower tracking
+eﬃciency compared to the oﬄine reconstruction of 1 − 2% per track.
+The processing time is further reduced by restricting the search to tracks with
+p > 3 GeV/c and pT > 0.3 GeV/c. Muon identiﬁcation in HLT2 is performed using
+the oﬄine muon identiﬁcation algorithm. Tracks are also associated to ECAL clusters to
+identify electrons. Photons and neutral pions are built starting from the energy clusters
+reconstructed by the L0-Calorimeter system.
+Generic beauty trigger
+A signiﬁcant portion of the output rate of HLT2 is selected by the ‘topological’ lines, which
+are designed to trigger on partially reconstructed b-hadron decays. These topological
+lines cover all b-hadron decays with at least two charged particles in the ﬁnal state and a
+displaced decay vertex. The inclusive nature of these lines makes them less susceptible to
+the 1− 2% loss in eﬃciency per reconstructed track in HLT2. Tracks are selected based on
+their track ﬁt χ2/ndf, IP and muon or electron identiﬁcation. Two-, three- or four-body
+vertices are constructed from the selected tracks with a requirement on their distance of
+closest approach (DOCA).
+Candidate n-body combinations are selected based on the following variables:∑|pT|, pmin
+T , n-body invariant mass ( m), DOCA, IP χ2 and ﬂight distance (FD) χ2.
+In addition, the corrected mass is deﬁned as mcorr =
+√
+m2 +|p′
+Tmiss|2 +|p′
+Tmiss|, where
+p′
+Tmiss is the missing momentum transverse to the line of ﬂight between the n-body vertex
+and the PV to which it has the smallest IP [88]. Figure 46 shows the reconstructed 2-body
+63
+)2mass (GeV/c
+2 3 4 5 6 7
+candidates (a.u.)
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+Corrected
+Measured
+[REDACTED] simulation
+Figure 46: Simulated B0 → K∗0µ+µ−
+events. The reconstructed 2-body mass is
+shown in red and the corrected mass (mcorr,
+see text for deﬁnition) is shown in black.
+]
+c [MeV/Tp 0
+5 10 15 20 3
+10× / 100%
+ TOS ε  0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+ , TopoNBody
++π0 D→ +B , Topo2Body
+-π+ K→ 0B , B2HH
+-π+ K→ 0B , Topo2 or B2HH
+-π+ K→ 0B[REDACTED]
+Figure 47: HLT2 inclusive beauty trigger
+performance as a function of B pT. The eﬃ-
+ciency for the exclusiveB0→K+π− trigger
+line is also given.
+and corrected mass distributions for B0→K∗0µ+µ− events. These variables are combined
+using a boosted decision tree trained on simulated signal events and data taken in 2010 [89].
+An explicit veto on prompt charm is also applied to reduce its output rate.
+Figure 47 shows the eﬃciency for the topological trigger lines for B0→K+π− and
+B0→D+π− events as well as the additional eﬃciency that can be gained by an exclusive
+selection for B0→K+π− in the low pT regime. The output rate of the topological trigger
+is 2 kHz, in which it eﬃciently selects beauty decays to charged tracks. For example, the
+eﬃciencies for B0→K+π− and B0→D+π− decays are approximately 78% and 76%,
+respectively.
+If one of the tracks forming the generic beauty trigger decision is identiﬁed as a muon,
+the selection on the boosted decision tree classiﬁer is loosened which enhances the eﬃciency
+for muonic beauty decays like B0→K∗0µ+µ− .
+Muon triggers
+Several trigger lines select events that contain one or two muons. The muon identiﬁcation
+procedure in HLT2 is identical to that which is used oﬄine [82]. Single muon candidate
+events are selected if the muon passes a tight pT requirement (pT > 10 GeV/c) or if
+candidates are inconsistent with originating from the PV and they satisfy moderate pT
+(pT > 1.3 GeV/c) and tight track quality requirements. Candidates selected with the latter
+criteria are prescaled by factor of two.
+Dimuon candidate events are selected without a mass requirement if the dimuon
+vertex is separated from the primary vertex. If the mass of the muon pair is within
+±100 MeV/c2 (∼ 8σ) of the J/ψ mass, three trigger selections are considered. Decay-time
+64
+]
+c [MeV/Tp 0
+5 10 15 20 3
+10× / 100%
+ TOS ε  0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+Hlt2DiMuonJPsiHighPT
+Hlt2DiMuonJPsi
+Hlt2DiMuonDetachedJPsi
+[REDACTED]
+]
+c [MeV/Tp 0
+5 10 15 20 3
+10× / 100%
+ TOS ε  0
+0.5
+1
++
+π-
+ K→ 0Exclusive  D+
+π+π-
+ K→ +Exclusive  D+
+π0 D→ *+Exclusive  D+
+π0 D→ *+Inclusive  D+
+π0 D→ *+Ex OR In   D[REDACTED]
+Figure 48: HLT2 muon trigger performance for the J/ψ trigger lines (left). The trig-
+gers Hlt2DiMuonJPsi and Hlt2DiMuonJPsiHighPT are the two prompt J/ψ triggers and
+Hlt2DiMuonDetachedJPsi is the trigger that selects J/ψ candidates that are inconsistent with
+coming from the primary vertex. HLT2 charm trigger performance for inclusive and exclusive
+selections (right). The decay D∗+→D0π+ is followed by D0→K−π+π+π−.
+unbiasedJ/ψ→µ+µ− candidates are extensively used for calibration of the [REDACTED] decay
+time acceptance. Therefore, all muon pairs with pT > 2 GeV/c are considered, as well
+as a fraction of those without any pT requirement. These two prompt selections are
+complemented by an additional detached J/ψ trigger. The separation requirement of this
+trigger is looser than that of the generic detached dimuon trigger described above.
+This set of lines is optimised to fully exploit the large physics potential of both prompt
+J/ψ and B→J/ψX decays. Relative to the oﬄine selection, the trigger eﬃciencies are
+typically above 90%. Figure 48 shows the performance of the J/ψ triggers, where the
+eﬀective prescale of about a factor of two on the prompt J/ψ line is visible, as well as the
+pT acceptance of the high pT line. The total output rate of all single and dimuon trigger
+lines is around 1 kHz.
+Charm triggers
+In the 2012 running conditions, roughly 600 kHz of c¯c-events are produced within the
+acceptance of [REDACTED]. This large rate of charm production means that tight exclusive
+selections are required in the trigger. The exception is the decay chain D∗+→ D0π+,
+which can be selected inclusively, i.e. only reconstructing two charged tracks from the
+D0 decay matched to a slow pion from the D∗+ decay. The mass diﬀerence between the
+D∗+ and D0 candidates remains a good discriminating variable, enabling the rate to be
+suﬃciently reduced. The D0 is partially reconstructed in all combinations containing π±,
+K±, p, µ±, K0
+S or Λ0 enabling both rare decay and CP violation measurements.
+The dominant exclusive selections for prompt charm are the hadronic two body and
+three body lines. The eﬃciency of these triggers is summarised in Figure 48. Additional
+65
+selections for hadronic, leptonic and semi-leptonic D andΛ+
+c decays are implemented. The
+total output rate of all charm selections is ∼ 2 kHz, but the trigger eﬃciencies strongly
+depend on the oﬄine selection: using a pure sample of D0→ K−π+ events from D∗+
+decays, the HLT2 eﬃciency is 90%, while the trigger eﬃciency for the multibody decay
+D∗+→D0π+ is 26%.
+Exclusive and technical lines
+The HLT incorporates a large number of exclusive and technical trigger lines to complement
+the signal selection by the inclusive lines discussed above. For example, 100 Hz of random
+events are recorded throughout the full data taking period. These events can be used
+to understand the trigger system, for fast monitoring of the data and for luminosity
+determinations. A number of trigger lines also exist that maximise the performance for
+decays with electrons or photons in the ﬁnal state [90]. A single muon line with hard
+pT requirements is designed to select heavy particles decaying promptly to one or more
+muons, like W± or Z0 for electroweak measurements.
+The remaining lines are required for luminosity measurements, prescaled physics lines
+with looser cuts, lines which trigger on low multiplicity events and lines which look for large
+transverse momentum jets. The trigger also contain lines that pass events for monitoring
+to allow fast feedback on the quality of the data.
+5.4 Deferred trigger
+The [REDACTED] delivers stable beams ∼ 30% of the available time, and thus unless otherwise
+occupied the EFF would be idle the remaining ∼ 70% of the time. Therefore to maximise
+the use of available resources, [REDACTED] developed a deferred triggering system for data taking
+in 2012 [91, 92]. Around 20% of the L0 accepted events are temporarily saved on the
+EFF node local disks and these events are subsequently processed by the HLT during the
+inter-ﬁll periods. The eﬀective increase in CPU resources this provides was used to reduce
+the pT requirement in the forward tracking algorithm and to include additional tracking
+algorithms that allow the reconstruction of tracks from particles that decay beyond the
+[REDACTED] acceptance. These modiﬁcations signiﬁcantly enhance the eﬃciency for charm
+decays.
+An additional beneﬁt of this system is that it provides redundancy against problems
+downstream in the dataﬂow. Prior to the adoption of this scheme, such problems would
+quickly lead to back-pressure all the way up into the farm and lead to dead-time. In
+the deferred trigger scheme, although the fraction of deferred events would increase, no
+dead-time would be incurred. The deferred trigger requires a substantial amount of local
+disk space, which was added to the farm before the 2012 run. The requirements on the
+performance of the disks are modest 2, such that inexpensive desktop hard drives could be
+used.
+2The input data rate per farm-server is about 60 MB/s, which is signiﬁcantly lower than the typical
+disk performance of about 120 MB/s.
+66
+Table 5: Eﬃciencies of selected channels for the whole trigger chain using the 2012 trigger
+conﬁguration. The eﬃciencies are normalised to the number of events that are oﬄine selected.
+channel L0 HLT1 HLT2
+B+→J/ψK+ , J/ψ→µ+µ− 89% 92% 87%
+B0→K+π− 53% 97% 80%
+B0→D+π− , D+→K−π+π+ 59% 98% 77%
+D+→K−π+π+ 44% 89% 91%
+D∗+→D0π+, D0→K−π+π−π+ 49% 93% 30%
+5.5 Trigger performance summary
+The [REDACTED] trigger system has delivered a range of physics modes with high eﬃciency in the
+ﬁrst running phase of the [REDACTED]. It is primarily designed to select charm and beauty hadrons
+over a large range of momentum and decay time, and its eﬃciency can be determined
+directly from the data.
+The ﬂexible design of the HLT, which is fully deployed in software, allows for the
+rapid adaptation to changes in running conditions and physics goals. Several innovative
+concepts have been developed that enable inclusive selections to be utilised in the full
+trigger chain and thus provide an eﬃcient trigger for nearly any beauty decay to charged
+particles. The deferred triggering permits optimisation of computing resources for mean
+instead of peak usage, leading to an eﬀective increase in farm size in 2012 of 20 – 30%.
+Multivariate selections allow the inclusive triggering of beauty decays to charged tracks
+with high eﬃciency.
+Typical trigger eﬃciencies for selected signals are summarised in Table 5. The trigger
+eﬃciency is high for muonic b-decays. For hadronic b-decays, the hardware trigger stage
+causes a signiﬁcant loss of eﬃciency, but the software component remains eﬃcient. The
+trigger eﬃciency for multibody charm decays is lower than for b-hadron decays, due to the
+softer momentum spectra of the ﬁnal state particles.
+The [REDACTED] trigger system also eﬃciently covers physics beyond the core beauty and
+charm programme. This includes W± or Z0 production, inclusive particle production, and
+exotic phenomena, for instance displaced vertices from heavy long-lived particles.
+6 Conclusion and outlook
+During the ﬁrst running period of the [REDACTED] between 2009 and 2013, the [REDACTED] experiment
+recorded a total of about 3.2 fb−1 of integrated luminosity with pp collisions at centre-of-
+mass energies of of 0.9, 7 and 8 TeV, and 1.6 nb−1 of integrated luminosity with proton-lead
+collisions. The majority of the data were recorded under conditions corresponding to a
+luminosity of 4× 1032 cm−2s−1, a bunch spacing of 50 ns and a pile-up of 1.8. Despite the
+fact that these are signiﬁcantly more challenging than the conditions originally foreseen
+67
+for the experiment, it has been demonstrated that the performance of each sub-system
+and the global performance of the detector are in good agreement with the original
+expectations presented in the [REDACTED] detector paper [24]. For some physics analyses
+the original expectations are even exceeded, thanks to new ideas and well understood
+backgrounds.
+During Run II of the [REDACTED], the [REDACTED] experiment expects to collect an additional
+5 fb−1 of data, which improves the prospects for observing physics beyond the Standard
+Model using heavy quark ﬂavours as a tool. However, the read-out and trigger scheme of
+the current [REDACTED] detector limit the luminosity that can be recorded. To overcome these
+limitations, the [REDACTED] experiment will be upgraded [93 –98] to allow the detector to be read
+out at the maximum [REDACTED] bunch crossing rate of 40 MHz with a ﬂexible software-based
+trigger. This will not only allow the data rate to be increased substantially, but will also
+increase the trigger eﬃciency, especially for channels currently triggered at the hardware
+level by energy deposits in the calorimeters. In addition to the signiﬁcant increase in
+sensitivity for ﬂavour physics, the experiment will continue to explore other interesting
+signatures and thus act as a general purpose detector in the forward region.
+68
+Acknowledgements
+We express our gratitude to our colleagues in the [REDACTED] accelerator departments for the
+excellent performance of the [REDACTED]. We thank the technical and administrative staﬀ at the
+[REDACTED] institutes. We acknowledge support from [REDACTED] and from the national agencies:
+CAPES, CNPq, FAPERJ and FINEP (Brazil); NSFC (China); CNRS/IN2P3 (France);
+BMBF, DFG, HGF and MPG (Germany); SFI (Ireland); INFN (Italy); FOM and NWO
+(The Netherlands); MNiSW and NCN (Poland); MEN/IFA (Romania); MinES and FANO
+(Russia); MinECo (Spain); SNSF and SER (Switzerland); NASU (Ukraine); STFC (United
+Kingdom); NSF (USA). The Tier1 computing centres are supported by IN2P3 (France),
+KIT and BMBF (Germany), INFN (Italy), NWO and SURF (The Netherlands), PIC
+(Spain), GridPP (United Kingdom). We are indebted to the communities behind the
+multiple open source software packages on which we depend. We are also thankful for
+the computing resources and the access to software R&D tools provided by Yandex LLC
+(Russia). Individual groups or members have received support from EPLANET, Marie
+Sk lodowska-Curie Actions and ERC (European Union), Conseil g´ en´ eral de Haute-Savoie,
+Labex ENIGMASS and OCEVU, R´ egion Auvergne (France), RFBR (Russia), XuntaGal
+and GENCAT (Spain), Royal Society and Royal Commission for the Exhibition of 1851
+(United Kingdom).
+References
+[1] N. Cabibbo, Unitary symmetry and leptonic decays , Phys. Rev. Lett. 10 (1963) 531;
+M. Kobayashi and T. Maskawa, CP violation in the renormalizable theory of weak
+interaction, Prog. Theor. Phys. 49 (1973) 652.
+[2] A. Sakharov, Violation of CP invariance, C asymmetry, and baryon asymmetry of
+the universe, Pisma Zh. Eksp. Teor. Fiz. 5 (1967) 32.
+[3] [REDACTED] collaboration, R. Aaij et al., Measurement of σ(pp→b¯bX) at√s = 7 TeV in
+the forward region, Phys. Lett. B694 (2010) 209, arXiv:1009.2731.
+[4] [REDACTED] collaboration, R. Aaij et al. , Prompt charm production in pp collisions at√s = 7 TeV, Nucl. Phys. B871 (2013) 1, arXiv:1302.2864.
+[5] [REDACTED] collaboration, R. Aaij et al., and A. Bharucha et al., Implications of [REDACTED]
+measurements and future prospects, Eur. Phys. J. C73 (2013) 2373, arXiv:1208.3355.
+[6] [REDACTED] collaboration, R. Aaij et al., First evidence for the decay B0
+s→µ+µ−, Phys.
+Rev. Lett. 110 (2013) 021801, arXiv:1211.2674.
+[7] [REDACTED] collaboration, R. Aaij et al., Measurement of theB0
+s→µ+µ− branching fraction
+and search for B0→ µ+µ− decays at the [REDACTED] experiment , Phys. Rev. Lett. 111
+(2013) 101805, arXiv:1307.5024.
+69
+[8] [REDACTED] collaboration, R. Aaij et al., Diﬀerential branching fraction and angular analysis
+of the decay B0→K∗0µ+µ−, JHEP 08 (2013) 131, arXiv:1304.6325.
+[9] [REDACTED] collaboration, R. Aaij et al. , Measurement of form-factor-independent ob-
+servables in the decay B0 → K∗0µ+µ−, Phys. Rev. Lett. 111 (2013) 191801,
+arXiv:1308.1707.
+[10] [REDACTED] collaboration, R. Aaij et al. , Measurement of the CP -violating phase φs in
+¯B0
+s→J/ψπ +π− decays, Phys. Lett. B736 (2014) 186, arXiv:1405.4140.
+[11] [REDACTED] collaboration, R. Aaij et al., Precision measurement of CP violation in B0
+s→
+J/ψK +K− decays, arXiv:1411.3104, submitted to Phys. Rev. Lett.
+[12] [REDACTED] collaboration, R. Aaij et al. , A measurement of the CKM angle γ from a
+combination ofB±→Dh± analyses, Phys. Lett. B726 (2013) 151, arXiv:1305.2050.
+[13] [REDACTED] collaboration, Improved constraints on γ: CKM2014 update , [REDACTED]-CONF-
+2014-004.
+[14] [REDACTED] collaboration, R. Aaij et al. , Measurements of indirect CP asymmetries
+in D0 → K−K+ and D0 → π−π+ decays, Phys. Rev. Lett. 112 (2014) 041801,
+arXiv:1310.7201.
+[15] [REDACTED] collaboration, R. Aaij et al. , Inclusive W and Z production in the forward
+region at√s = 7 TeV, JHEP 06 (2012) 058, arXiv:1204.1620.
+[16] [REDACTED] collaboration, R. Aaij et al., Measurement of the forward W boson production
+cross-section in pp collisions at√s = 7 TeV, arXiv:1408.4354, to appear in JHEP.
+[17] [REDACTED] collaboration, R. Aaij et al., Determination of the X(3872) meson quantum
+numbers, Phys. Rev. Lett. 110 (2013) 222001, arXiv:1302.6269.
+[18] [REDACTED] collaboration, R. Aaij et al. , Observation of the resonant character of the
+Z(4430)− state, Phys. Rev. Lett. 112 (2014) 222002, arXiv:1404.1903.
+[19] [REDACTED] collaboration, R. Aaij et al., Searches for Majorana neutrinos in B− decays,
+Phys. Rev. D85 (2012) 112004, arXiv:1201.5600.
+[20] [REDACTED] collaboration, R. Aaij et al., Searches for violation of lepton ﬂavour and baryon
+number in tau lepton decays at [REDACTED] , Phys. Lett. B724 (2013) 36, arXiv:1304.4518.
+[21] [REDACTED] collaboration, R. Aaij et al., Study of J/ψ production and cold nuclear matter
+eﬀects in pPb collisions at √sNN = 5 TeV, JHEP 02 (2014) 072, arXiv:1308.6729.
+[22] [REDACTED] collaboration, R. Aaij et al., Study of Υ production and cold nuclear eﬀects in
+pPb collisions at √sNN = 5 TeV, JHEP 07 (2014) 094, arXiv:1405.5152.
+70
+[23] [REDACTED] collaboration, [REDACTED] reoptimized detector design and performance: Technical
+Design Report, [REDACTED]-LHCC-2003-030. [REDACTED]-TDR-009.
+[24] [REDACTED], A. Alves et al., The [REDACTED] Detector at the [REDACTED] , JINST 3 (2008) S08005.
+[25] L. Evans and P. Bryant, [REDACTED] Machine, JINST 3 (2008) S08001.
+[26] [REDACTED] collaboration, R. Aaij et al., Absolute luminosity measurements with the [REDACTED]
+detector at the [REDACTED] , JINST 7 (2012) P01010, arXiv:1110.2866.
+[27] [REDACTED] collaboration, R. Aaij et al. , Precision luminosity measurements at [REDACTED] ,
+JINST 9 (2014) P12005, arXiv:1410.0149.
+[28] R. Aaij et al., Performance of the [REDACTED] Vertex Locator , JINST 9 (2014) P09007,
+arXiv:1405.7808.
+[29] C. Parkes, T. Ruf, and T. Szumlak, Reconstruction of cluster positions in the [REDACTED]
+[REDACTED], Tech. Rep. [REDACTED]-2007-151. [REDACTED]-[REDACTED]-2007-151, [REDACTED], Geneva, Dec,
+2007.
+[30] A. Aﬀolder et al. , Radiation damage in the [REDACTED] vertex locator , JINST 8 (2013)
+P08002, arXiv:1302.5259.
+[31] R. Arink et al., Performance of the [REDACTED] Outer Tracker , JINST 9 (2014) P01002,
+arXiv:1311.3893.
+[32] D. van Eijk et al., Radiation hardness of the [REDACTED] Outer Tracker , Nucl. Instrum.
+Meth. A685 (2012) 62.
+[33] E. Aslanides et al. , Performance of the muon trigger with a realistic simulation ,
+[REDACTED]-[REDACTED]-2002-041.
+[34] A. A. Alves Jr. et al., Performance of the [REDACTED] muon system , JINST 8 (2013) P02022,
+arXiv:1211.1346.
+[35] M. Anelli et al., Performance of the [REDACTED] muon system with cosmic rays , JINST 5
+(2010) P10003, arXiv:1009.1963.
+[36] O. Callot, Fast[REDACTED], a fast and eﬃcient pattern recognition package for the [REDACTED] ,
+[REDACTED]-PUB-2011-001.
+[37] D. Hutchcroft, [REDACTED] pattern recognition, [REDACTED]-2007-013.
+[38] O. Callot and S. Hansmann-Menzemer, The forward tracking : Algorithm and perfor-
+mance studies, [REDACTED]-2007-015.
+[39] M. Needham and J. van Tilburg, Performance of the track matching , [REDACTED]-2007-020.
+[40] M. Needham, Performance of the track matching , [REDACTED]-2007-129.
+71
+[41] O. Callot and M. Schiller, PatSeeding: A standalone track reconstruction algorithm ,
+[REDACTED]-2008-042.
+[42] O. Callot, Downstream pattern recognition, [REDACTED]-2007-026.
+[43] S. Stahl, Reconstruction of displaced tracks and measurement of K0
+S production in
+proton–proton collisions at√s = 900 GeV at the [REDACTED] experiment , Master’s thesis,
+Heidelberg University, 2010.
+[44] O. Callot, M. Kucharczyk, and M. Witek, [REDACTED]-TT track reconstruction, [REDACTED]-
+2007-010.
+[45] R. Fruhwirth, Application of Kalman ﬁltering to track and vertex ﬁtting , Nucl. Instrum.
+Meth. A262 (1987) 444.
+[46] J. A. N. van Tilburg, Track simulation and reconstruction in [REDACTED] , PhD thesis, Vrije
+Universiteit, Amsterdam, The Netherlands, 2005, [REDACTED]-THESIS-2005-040.
+[47] [REDACTED] collaboration, R. Aaij et al., Measurement of charged particle multiplicities and
+densities in pp collisions at√s = 7 TeV in the forward region , Eur. Phys. J. C74
+(2014) 2888, arXiv:1402.4430.
+[48] A. Jaeger et al., Measurement of the track ﬁnding eﬃciency , [REDACTED]-PUB-2011-025.
+[49] [REDACTED] collaboration, R. Aaij et al., Measurement of the track reconstruction eﬃciency
+at [REDACTED], arXiv:1408.1251, submitted to JINST.
+[50] [REDACTED] collaboration, R. Aaij et al. , Measurement of b-hadron masses, Phys. Lett.
+B708 (2012) 241, arXiv:1112.4896.
+[51] [REDACTED] collaboration, R. Aaij et al., Measurements of B+
+c production and mass with
+the B+
+c →J/ψπ + decay, Phys. Rev. Lett. 109 (2012) 232001, arXiv:1209.5634.
+[52] [REDACTED] collaboration, R. Aaij et al. , Measurements of the Λ0
+b, Ξ−
+b , and Ω−
+b baryon
+masses, Phys. Rev. Lett. 110 (2013) 182001, arXiv:1302.1072.
+[53] [REDACTED] collaboration, R. Aaij et al., Precision measurement of D meson mass diﬀer-
+ences, JHEP 06 (2013) 065, arXiv:1304.6865.
+[54] Particle Data Group, K. A. Olive et al., Review of particle physics , Chin. Phys. C38
+(2014) 090001.
+[55] S. Viret, C. Parkes, and M. Gersabeck, Alignment procedure of the [REDACTED] vertex
+detector, Nucl. Instrum. Meth. A596 (2008) 157, arXiv:0807.5067.
+[56] M. Gersabeck, S. Viret, and C. Parkes, Performance of the [REDACTED] vertex detector
+alignment algorithm determined with beam test data , Nucl. Instrum. Meth. A596
+(2008) 164, arXiv:0807.5069.
+72
+[57] V. Blobel and C. Kleinwort, A new method for the high precision alignment of track
+detectors, arXiv:hep-ex/0208021.
+[58] M. Deissenroth, Software alignment of the [REDACTED] b outer tracker chambers, PhD thesis,
+Heidelberg U., 2010, [REDACTED]-THESIS-2010-063.
+[59] W. Hulsbergen, The global covariance matrix of tracks ﬁtted with a Kalman ﬁlter
+and an application in detector alignment , Nucl. Instrum. Meth. A600 (2009) 471,
+arXiv:0810.2241.
+[60] J. M. Amoraal, Alignment with Kalman ﬁlter ﬁtted tracks and reconstruction of
+B0
+s→ J/ψφ decays, PhD thesis, Vrije Universiteit, Amsterdam, The Netherlands,
+2011, [REDACTED]-THESIS-2011-011.
+[61] J. Amoraal et al., Application of vertex and mass constraints in track-based alignment ,
+Nucl. Instrum. Meth. A712 (2013) 48, arXiv:1207.4756.
+[62] S. Borghi, [REDACTED] vertex locator commissioning and results from the ﬁrst [REDACTED] beam
+reconstructed tracks, Nuclear Instruments and Methods in Physics Research Section A:
+Accelerators, Spectrometers, Detectors and Associated Equipment 623 (2010), no. 1
+156 , 1st International Conference on Technology and Instrumentation in Particle
+Physics.
+[63] E. E. Simioni, New physics from rare beauty , PhD thesis, Vrije Universiteit, Amster-
+dam, The Netherlands, 2010, [REDACTED]-THESIS-2010-031.
+[64] R. S. M¨ arki, Measurements of b-baryon properties at [REDACTED] , PhD thesis, ´Ecole
+Polytechnique F´ ed´ erale de Lausanne, Switzerland, Jan, 2014, [REDACTED]-THESIS-2014-
+029.
+[65] [REDACTED] collaboration, R. Aaij et al. , Precision measurement of the B0
+s− ¯B0
+s os-
+cillation frequency in the decay B0
+s → D−
+sπ+, New J. Phys. 15 (2013) 053021,
+arXiv:1304.4741.
+[66] [REDACTED] collaboration, R. Aaij et al., Measurement of the CP -violating phase φs in the
+decayB0
+s→J/ψφ, Phys. Rev. Lett. 108 (2012) 101803, arXiv:1112.3183.
+[67] H. Moser and A. Roussarie, Mathematical methods for B0 ¯B0 oscillation analyses ,
+Nucl. Instrum. Meth. A384 (1997) 491.
+[68] M. Pivk and F. R. Le Diberder, sPlot: A statistical tool to unfold data distributions ,
+Nucl. Instrum. Meth. A555 (2005) 356, arXiv:physics/0402083.
+[69] [REDACTED] collaboration, [REDACTED] calorimeters: Technical Design Report , [REDACTED]-LHCC-
+2000-036. [REDACTED]-TDR-002.
+[70] C. Abellan Beteta et al., Time alignment of the front end electronics of the [REDACTED]
+calorimeters, JINST 7 (2012) P08020.
+73
+[71] I. Machikhiliyan and the [REDACTED] calorimeter group, Current status and performance of
+the [REDACTED] electromagnetic and hadron calorimeters , Journal of Physics: Conference
+Series 293 (2011), no. 1 012052.
+[72] R. V. Gomez, Commissioning of the scintillator pad detector of [REDACTED] with cosmic
+rays and ﬁrst [REDACTED] collisions , Journal of Physics: Conference Series 293 (2011), no. 1
+012059.
+[73] V. Niess, Commissioning of the [REDACTED] preshower detector with cosmic rays and ﬁrst
+[REDACTED] collisions, Journal of Physics: Conference Series 293 (2011), no. 1 012060.
+[74] A. Martens, Towards a measurement of the angle γ of the Unitarity Triangle with the
+[REDACTED] detector at the [REDACTED] ([REDACTED]): calibration of the calorimeters using an energy
+ﬂow technique and ﬁrst observation of the B0
+s→ D
+0
+K
+∗0
+decay, PhD thesis, Orsay,
+Orsay, 2011, [REDACTED]-THESIS-2011-128, LAL-11-172.
+[75] I. Belyaev et al., Kali: The framework for ﬁne calibration of the [REDACTED] electromagnetic
+calorimeter, Journal of Physics: Conference Series 331 (2011), no. 3 032050.
+[76] O. Deschamps et al., Photon and neutral pion reconstruction , [REDACTED]-2003-091.
+[77] [REDACTED] collaboration, R. Aaij et al., Measurement of the ratio of branching fractions
+B(B0→ K∗0γ)/B(B0
+s → φγ) and the direct CP asymmetry in B0→ K∗0γ, Nucl.
+Phys. B867 (2013) 1, arXiv:1209.0313.
+[78] D. A. R. Romero, Study of charmless B0
+d,s→h+h′−π0 decays in [REDACTED], PhD thesis,
+Universit´ e Blaise Pascal, Clermont-Ferrand (France), 2013, [REDACTED]-THESIS-2013-051.
+[79] [REDACTED] collaboration, R. Aaij et al., Measurement of the relative rate of prompt χc0,
+χc1 and χc2 production at√s = 7 TeV, JHEP 10 (2013) 115, arXiv:1307.4285.
+[80] [REDACTED] collaboration, R. Aaij et al. , Measurement of the fraction of Υ(1S) origi-
+nating from χb(1P ) decays in pp collisions at √s = 7 TeV, JHEP 11 (2012) 031,
+arXiv:1209.0282.
+[81] M. Adinolﬁ et al., Performance of the [REDACTED] RICH detector at the [REDACTED] , Eur. Phys.
+J. C73 (2013) 2431, arXiv:1211.6759.
+[82] F. Archilli et al., Performance of the muon identiﬁcation at [REDACTED] , JINST 8 (2013)
+P10020, arXiv:1306.0249.
+[83] A. Hoecker et al., TMVA: Toolkit for multivariate data analysis , PoS ACAT (2007)
+040, arXiv:physics/0703039.
+[84] [REDACTED] HLT Group, J. Albrecht, V. Gligorov, G. Raven, and S. Tolk, Performance
+of the [REDACTED] high level trigger in 2012 , J. Phys. Conf. Ser. 513 (2014) 012001,
+arXiv:1310.8544.
+74
+[85] A. Puig, The [REDACTED] trigger in 2011 and 2012 , [REDACTED]-PUB-2014-046. [REDACTED]-[REDACTED]-
+PUB-2014-046.
+[86] S. Tolk, J. Albrecht, F. Dettori, and A. Pellegrino, Data driven trigger eﬃciency
+determination at [REDACTED] , [REDACTED]-PUB-2014-039.
+[87] R. Aaij and J. Albrecht, Muon triggers in the high level trigger of [REDACTED] , [REDACTED]-
+PUB-2011-017.
+[88] SLD Collaboration, K. Abe et al. , A measurement of Rb using a vertex mass tag ,
+Phys. Rev. Lett. 80 (1998) 660, arXiv:hep-ex/9708015.
+[89] V. V. Gligorov and M. Williams, Eﬃcient, reliable and fast high-level triggering using
+a bonsai boosted decision tree, JINST 8 (2013) P02013, arXiv:1210.6861.
+[90] R. Aaij et al., The [REDACTED] trigger and its performance in 2011 , JINST 8 (2013) P04022,
+arXiv:1211.3055.
+[91] D. Campora, N. Neufeld, and R. Schwemmer, Improvements in the [REDACTED] DAQ , Tech.
+Rep. Proceedings of the 19th IEEE RealTime Conference, Nara, Japan, 2014.
+[92] M. Frank et al. , Deferred high level trigger in [REDACTED] : A boost to CPU resource
+utilization, Journal of Physics: Conference Series 513 (2014), no. 1 012006.
+[93] [REDACTED] collaboration, Letter of intent for the [REDACTED] upgrade , [REDACTED]-LHCC-2011-001.
+LHCC-I-018.
+[94] [REDACTED] collaboration, Framework TDR for the [REDACTED] Upgrade: Technical Design
+Report, [REDACTED]-LHCC-2012-007. [REDACTED]-TDR-012.
+[95] [REDACTED] collaboration, [REDACTED] [REDACTED] Upgrade Technical Design Report , [REDACTED]-LHCC-
+2013-021. [REDACTED]-TDR-013.
+[96] [REDACTED] collaboration, [REDACTED] PID Upgrade Technical Design Report, [REDACTED]-LHCC-
+2013-022. [REDACTED]-TDR-014.
+[97] [REDACTED] collaboration, [REDACTED] Tracker Upgrade Technical Design Report, [REDACTED]-LHCC-
+2014-001. [REDACTED]-TDR-015.
+[98] [REDACTED] collaboration, [REDACTED] trigger and online upgrade technical design report , [REDACTED]-
+LHCC-2014-016. [REDACTED]-TDR-016.
+75
+[REDACTED] collaboration
+R. Aaij41, B. Adeva37, M. Adinolﬁ 46, A. Aﬀolder 52, Z. Ajaltouni 5, S. Akar6, J. Albrecht9,
+F. Alessio38, M. Alexander 51, S. Ali 41, G. Alkhazov30, P. Alvarez Cartelle37, A.A. Alves Jr 25,38,
+S. Amato2, S. Amerio 22, Y. Amhis 7, L. An 3, L. Anderlini 17,g, J. Anderson 40, R. Andreassen 57,
+M. Andreotti16,f, J.E. Andrews 58, R.B. Appleby54, O. Aquines Gutierrez 10, F. Archilli38,
+A. Artamonov35, M. Artuso 59, E. Aslanides 6, G. Auriemma 25,n, M. Baalouch5, S. Bachmann11,
+J.J. Back48, A. Badalov36, C. Baesso 60, W. Baldini 16, R.J. Barlow54, C. Barschel38, S. Barsuk 7,
+W. Barter47, V. Batozskaya28, V. Battista 39, A. Bay39, L. Beaucourt 4, J. Beddow51,
+F. Bedeschi23, I. Bediaga 1, S. Belogurov31, K. Belous 35, I. Belyaev31, E. Ben-Haim 8,
+G. Bencivenni18, S. Benson 38, J. Benton46, A. Berezhnoy32, R. Bernet 40, M.-O. Bettler 47,
+M. van Beuzekom41, A. Bien 11, S. Bifani 45, T. Bird 54, A. Bizzeti 17,i, P.M. Bjørnstad54,
+T. Blake48, F. Blanc 39, J. Blouw10, S. Blusk 59, V. Bocci 25, A. Bondar 34, N. Bondar 30,38,
+W. Bonivento15,38, S. Borghi 54, A. Borgia 59, M. Borsato 7, T.J.V. Bowcock52, E. Bowen40,
+C. Bozzi16, T. Brambach9, J. Bressieux 39, D. Brett 54, M. Britsch10, T. Britton 59, J. Brodzicka54,
+N.H. Brook46, H. Brown52, A. Bursche40, J. Buytaert 38, S. Cadeddu 15, R. Calabrese 16,f,
+M. Calvi20,k, M. Calvo Gomez 36,p, P. Campana18,38, D. Campora Perez 38, A. Carbone 14,d,
+G. Carboni24,l, R. Cardinale 19,38,j, A. Cardini 15, L. Carson 50, K. Carvalho Akiba 2, G. Casse 52,
+L. Cassina20,k, L. Castillo Garcia 38, M. Cattaneo 38, Ch. Cauet 9, R. Cenci 58, M. Charles 8,
+Ph. Charpentier38, M. Chefdeville 4, S. Chen 54, S.-F. Cheung 55, N. Chiapolini 40,
+M. Chrzaszcz40,26, K. Ciba 38, X. Cid Vidal 38, G. Ciezarek 53, P.E.L. Clarke50, M. Clemencic 38,
+H.V. Cliﬀ47, J. Closier 38, V. Coco 38, J. Cogan 6, E. Cogneras 5, V. Cogoni 15,e, L. Cojocariu 29,
+G. Collazuol22, P. Collins38, A. Comerma-Montells11, A. Contu15,38, A. Cook 46, M. Coombes 46,
+S. Coquereau8, G. Corti 38, M. Corvo16,f, I. Counts56, B. Couturier 38, G.A. Cowan50,
+D.C. Craik48, A.C. Crocombe 48, M. Cruz Torres60, S. Cunliﬀe 53, R. Currie 53, C. D’Ambrosio38,
+J. Dalseno46, P. David8, P.N.Y. David41, A. Davis57, K. De Bruyn 41, S. De Capua 54,
+M. De Cian 11, J.M. De Miranda 1, L. De Paula 2, W. De Silva 57, P. De Simone18, D. Decamp 4,
+M. Deckenhoﬀ9, L. Del Buono 8, N. D´ el´ eage4, D. Derkach55, O. Deschamps5, F. Dettori 38,
+A. Di Canto38, H. Dijkstra 38, S. Donleavy52, F. Dordei 11, M. Dorigo 39, A. Dosil Su´ arez37,
+D. Dossett48, A. Dovbnya43, K. Dreimanis 52, G. Dujany54, F. Dupertuis 39, P. Durante38,
+R. Dzhelyadin35, A. Dziurda 26, A. Dzyuba 30, S. Easo 49,38, U. Egede 53, V. Egorychev31,
+S. Eidelman34, S. Eisenhardt 50, U. Eitschberger9, R. Ekelhof9, L. Eklund 51, I. El Rifai 5,
+Ch. Elsasser40, S. Ely 59, S. Esen 11, H.M. Evans47, T. Evans55, A. Falabella14, C. F¨ arber11,
+C. Farinelli41, N. Farley45, S. Farry52, R. Fay52, D. Ferguson50, V. Fernandez Albor 37,
+F. Ferreira Rodrigues1, M. Ferro-Luzzi38, S. Filippov 33, M. Fiore 16,f, M. Fiorini 16,f, M. Firlej 27,
+C. Fitzpatrick39, T. Fiutowski27, P. Fol53, M. Fontana10, F. Fontanelli19,j, R. Forty38,
+O. Francisco2, M. Frank38, C. Frei38, M. Frosini17, J. Fu21,38, E. Furfaro24,l, A. Gallas Torreira37,
+D. Galli14,d, S. Gallorini 22,38, S. Gambetta 19,j, M. Gandelman 2, P. Gandini59, Y. Gao 3,
+J. Garc´ ıa Pardi˜ nas37, J. Garofoli 59, J. Garra Tico 47, L. Garrido 36, D. Gascon 36, C. Gaspar 38,
+R. Gauld55, L. Gavardi9, A. Geraci 21,v, E. Gersabeck 11, M. Gersabeck 54, T. Gershon 48,
+Ph. Ghez4, A. Gianelle 22, S. Gian` ı39, V. Gibson 47, L. Giubega 29, V.V. Gligorov38, C. G¨ obel60,
+D. Golubkov31, A. Golutvin 53,31,38, A. Gomes 1,a, C. Gotti 20,k, M. Grabalosa G´ andara5,
+R. Graciani Diaz 36, L.A. Granado Cardoso 38, E. Graug´ es36, E. Graverini40, G. Graziani 17,
+A. Grecu29, E. Greening 55, S. Gregson 47, P. Griﬃth45, L. Grillo 11, O. Gr¨ unberg62, B. Gui 59,
+E. Gushchin33, Yu. Guz35,38, T. Gys 38, C. Hadjivasiliou59, G. Haefeli 39, C. Haen 38,
+S.C. Haines47, S. Hall 53, B. Hamilton 58, T. Hampson 46, X. Han 11, S. Hansmann-Menzemer 11,
+76
+N. Harnew55, S.T. Harnew 46, J. Harrison 54, J. He 38, T. Head 38, V. Heijne 41, K. Hennessy 52,
+P. Henrard5, L. Henry 8, J.A. Hernando Morata 37, E. van Herwijnen 38, M. Heß 62, A. Hicheur2,
+D. Hill55, M. Hoballah 5, C. Hombach54, W. Hulsbergen 41, P. Hunt55, N. Hussain 55,
+D. Hutchcroft52, D. Hynds 51, M. Idzik 27, P. Ilten56, R. Jacobsson 38, A. Jaeger 11, J. Jalocha 55,
+E. Jans41, P. Jaton39, A. Jawahery58, F. Jing 3, M. John 55, D. Johnson 38, C.R. Jones 47,
+C. Joram38, B. Jost 38, N. Jurik 59, S. Kandybei 43, W. Kanso 6, M. Karacson 38, T.M. Karbach38,
+S. Karodia51, M. Kelsey 59, I.R. Kenyon45, T. Ketel 42, B. Khanji 20,k, C. Khurewathanakul39,
+S. Klaver54, K. Klimaszewski 28, O. Kochebina 7, M. Kolpin 11, I. Komarov39, R.F. Koopman 42,
+P. Koppenburg41,38, M. Korolev 32, A. Kozlinskiy 41, L. Kravchuk33, K. Kreplin 11, M. Kreps 48,
+G. Krocker11, P. Krokovny34, F. Kruse 9, W. Kucewicz 26,o, M. Kucharczyk20,26,k,
+V. Kudryavtsev34, K. Kurek 28, T. Kvaratskheliya31, V.N. La Thi 39, D. Lacarrere 38,
+G. Laﬀerty54, A. Lai 15, D. Lambert 50, R.W. Lambert 42, G. Lanfranchi18, C. Langenbruch48,
+B. Langhans38, T. Latham 48, C. Lazzeroni 45, R. Le Gac 6, J. van Leerdam 41, J.-P. Lees4,
+R. Lef` evre5, A. Leﬂat 32, J. Lefran¸ cois7, S. Leo 23, O. Leroy6, T. Lesiak 26, B. Leverington11,
+Y. Li3, T. Likhomanenko63, M. Liles 52, R. Lindner 38, C. Linn 38, F. Lionetto 40, B. Liu 15,
+S. Lohn38, I. Longstaﬀ 51, J.H. Lopes 2, N. Lopez-March 39, P. Lowdon40, D. Lucchesi22,r,
+H. Luo50, A. Lupato 22, E. Luppi 16,f, O. Lupton 55, F. Machefert7, I.V. Machikhiliyan31,
+F. Maciuc29, O. Maev 30, S. Malde 55, A. Malinin 63, G. Manca 15,e, G. Mancinelli 6, A. Mapelli 38,
+J. Maratas5, J.F. Marchand4, U. Marconi 14, C. Marin Benito 36, P. Marino23,t, R. M¨ arki39,
+J. Marks11, G. Martellotti 25, A. Martens 8, A. Mart´ ın S´ anchez7, M. Martinelli 39,
+D. Martinez Santos42,38, F. Martinez Vidal 64, D. Martins Tostes2, A. Massaﬀerri 1, R. Matev 38,
+Z. Mathe38, C. Matteuzzi 20, A. Mazurov45, M. McCann 53, J. McCarthy45, A. McNab 54,
+R. McNulty12, B. McSkelly52, B. Meadows57, F. Meier 9, M. Meissner 11, M. Merk 41,
+D.A. Milanes8, M.-N. Minard 4, N. Moggi 14, J. Molina Rodriguez 60, S. Monteil5, M. Morandin 22,
+P. Morawski27, A. Mord` a6, M.J. Morello 23,t, J. Moron 27, A.-B. Morris 50, R. Mountain59,
+F. Muheim50, K. M¨ uller40, M. Mussini 14, B. Muster 39, P. Naik46, T. Nakada39,
+R. Nandakumar49, I. Nasteva2, M. Needham 50, N. Neri 21, S. Neubert 38, N. Neufeld 38,
+M. Neuner11, A.D. Nguyen39, T.D. Nguyen39, C. Nguyen-Mau39,q, M. Nicol 7, V. Niess 5,
+R. Niet9, N. Nikitin 32, T. Nikodem 11, A. Novoselov35, D.P. O’Hanlon48,
+A. Oblakowska-Mucha27,38, V. Obraztsov35, S. Oggero 41, S. Ogilvy 51, O. Okhrimenko44,
+R. Oldeman15,e, C.J.G. Onderwater65, M. Orlandea 29, J.M. Otalora Goicochea 2, P. Owen53,
+A. Oyanguren64, B.K. Pal59, A. Palano13,c, F. Palombo21,u, M. Palutan18, J. Panman38,
+A. Papanestis49,38, M. Pappagallo51, L.L. Pappalardo16,f, C. Parkes54, C.J. Parkinson9,45,
+G. Passaleva17, G.D. Patel52, M. Patel53, C. Patrignani19,j, A. Pearce54,49, A. Pellegrino41,
+G. Penso25,m, M. Pepe Altarelli 38, S. Perazzini14,d, P. Perret5, M. Perrin-Terrin6, L. Pescatore45,
+E. Pesen66, G. Pessina20, K. Petridis53, A. Petrolini19,j, E. Picatoste Olloqui 36, B. Pietrzyk 4,
+T. Pilaˇ r48, D. Pinci 25, A. Pistone 19, S. Playfer50, M. Plo Casasus 37, F. Polci8, A. Poluektov48,34,
+I. Polyakov31, E. Polycarpo 2, A. Popov35, D. Popov10, B. Popovici29, C. Potterat2, E. Price 46,
+J.D. Price52, J. Prisciandaro 39, A. Pritchard52, C. Prouve46, V. Pugatch44, A. Puig Navarro39,
+G. Punzi23,s, W. Qian 4, B. Rachwal26, J.H. Rademacker46, B. Rakotomiaramanana39,
+M. Rama18, M.S. Rangel 2, I. Raniuk 43, N. Rauschmayr38, G. Raven42, F. Redi 53, S. Reichert54,
+M.M. Reid48, A.C. dos Reis 1, S. Ricciardi 49, S. Richards46, M. Rihl 38, K. Rinnert 52,
+V. Rives Molina36, P. Robbe7, A.B. Rodrigues 1, E. Rodrigues 54, P. Rodriguez Perez54,
+S. Roiser38, V. Romanovsky35, A. Romero Vidal 37, M. Rotondo 22, J. Rouvinet 39, T. Ruf 38,
+H. Ruiz36, P. Ruiz Valls64, J.J. Saborido Silva 37, N. Sagidova30, P. Sail51, B. Saitta 15,e,
+V. Salustino Guimaraes 2, C. Sanchez Mayordomo64, B. Sanmartin Sedes 37, R. Santacesaria25,
+77
+C. Santamarina Rios37, E. Santovetti24,l, A. Sarti 18,m, C. Satriano 25,n, A. Satta 24,
+D.M. Saunders46, D. Savrina31,32, M. Schiller42, H. Schindler38, M. Schlupp9, M. Schmelling10,
+B. Schmidt38, O. Schneider39, A. Schopper 38, M.-H. Schune7, R. Schwemmer38, B. Sciascia 18,
+A. Sciubba25,m, A. Semennikov31, I. Sepp 53, N. Serra 40, J. Serrano 6, L. Sestini 22, P. Seyfert11,
+M. Shapkin35, I. Shapoval16,43,f, Y. Shcheglov30, T. Shears 52, L. Shekhtman34, V. Shevchenko63,
+A. Shires9, R. Silva Coutinho 48, G. Simi 22, M. Sirendi 47, N. Skidmore 46, I. Skillicorn 51,
+T. Skwarnicki59, N.A. Smith 52, E. Smith 55,49, E. Smith 53, J. Smith 47, M. Smith 54, H. Snoek 41,
+M.D. Sokoloﬀ57, F.J.P. Soler51, F. Soomro 39, D. Souza 46, B. Souza De Paula 2, B. Spaan 9,
+A. Sparkes50, P. Spradlin51, S. Sridharan 38, F. Stagni 38, M. Stahl 11, S. Stahl 11, O. Steinkamp40,
+O. Stenyakin35, S. Stevenson55, S. Stoica 29, S. Stone 59, B. Storaci 40, S. Stracka23,t,
+M. Straticiuc29, U. Straumann 40, R. Stroili 22, V.K. Subbiah 38, L. Sun 57, W. Sutcliﬀe 53,
+K. Swientek27, S. Swientek9, V. Syropoulos 42, M. Szczekowski28, P. Szczypka39,38, T. Szumlak 27,
+S. T’Jampens4, M. Teklishyn7, G. Tellarini16,f, F. Teubert38, C. Thomas 55, E. Thomas 38,
+J. van Tilburg41, V. Tisserand 4, M. Tobin39, S. Tolk42, L. Tomassetti16,f, D. Tonelli38,
+S. Topp-Joergensen55, N. Torr55, E. Tourneﬁer4, S. Tourneur39, M.T. Tran39, M. Tresch40,
+A. Tsaregorodtsev6, P. Tsopelas41, N. Tuning41, M. Ubeda Garcia 38, A. Ukleja 28,
+A. Ustyuzhanin63, U. Uwer11, C. Vacca15,e, V. Vagnoni14, G. Valenti14, A. Vallier7,
+R. Vazquez Gomez18, P. Vazquez Regueiro37, C. V´ azquez Sierra37, S. Vecchi16, J.J. Velthuis46,
+M. Veltri17,h, G. Veneziano39, M. Vesterinen11, B. Viaud 7, D. Vieira 2, M. Vieites Diaz 37,
+X. Vilasis-Cardona36,p, A. Vollhardt40, D. Volyanskyy10, D. Voong46, A. Vorobyev30,
+V. Vorobyev34, C. Voß62, J.A. de Vries41, R. Waldi62, C. Wallace48, R. Wallace12, J. Walsh23,
+S. Wandernoth11, J. Wang59, D.R. Ward47, N.K. Watson45, D. Websdale53, M. Whitehead 48,
+J. Wicht38, D. Wiedner 11, G. Wilkinson 55,38, M.P. Williams48,49, M. Williams 56,
+H.W. Wilschut65, F.F. Wilson 49, J. Wimberley 58, J. Wishahi 9, W. Wislicki28, M. Witek 26,
+G. Wormser7, S.A. Wotton47, S. Wright47, K. Wyllie 38, Y. Xie 61, Z. Xing 59, Z. Xu 39, Z. Yang3,
+X. Yuan3, O. Yushchenko35, M. Zangoli 14, M. Zavertyaev10,b, L. Zhang 59, W.C. Zhang 12,
+Y. Zhang3, A. Zhelezov11, A. Zhokhov31, L. Zhong 3, A. Zvyagin38.
+1Centro Brasileiro de Pesquisas F´ ısicas (CBPF), Rio de Janeiro, Brazil
+2Universidade Federal do Rio de Janeiro (UFRJ), Rio de Janeiro, Brazil
+3Center for High Energy Physics, Tsinghua University, Beijing, China
+4LAPP, Universit´ e de Savoie, CNRS/IN2P3, Annecy-Le-Vieux, France
+5Clermont Universit´ e, Universit´ e Blaise Pascal, CNRS/IN2P3, LPC, Clermont-Ferrand, France
+6CPPM, Aix-Marseille Universit´ e, CNRS/IN2P3, Marseille, France
+7LAL, Universit´ e Paris-Sud, CNRS/IN2P3, Orsay, France
+8LPNHE, Universit´ e Pierre et Marie Curie, Universit´ e Paris Diderot, CNRS/IN2P3, Paris, France
+9Fakult¨ at Physik, Technische Universit¨ at Dortmund, Dortmund, Germany
+10Max-Planck-Institut f¨ ur Kernphysik (MPIK), Heidelberg, Germany
+11Physikalisches Institut, Ruprecht-Karls-Universit¨ at Heidelberg, Heidelberg, Germany
+12School of Physics, University College Dublin, Dublin, Ireland
+13Sezione INFN di Bari, Bari, Italy
+14Sezione INFN di Bologna, Bologna, Italy
+15Sezione INFN di Cagliari, Cagliari, Italy
+16Sezione INFN di Ferrara, Ferrara, Italy
+17Sezione INFN di Firenze, Firenze, Italy
+18Laboratori Nazionali dell’INFN di Frascati, Frascati, Italy
+19Sezione INFN di Genova, Genova, Italy
+20Sezione INFN di Milano Bicocca, Milano, Italy
+21Sezione INFN di Milano, Milano, Italy
+78
+22Sezione INFN di Padova, Padova, Italy
+23Sezione INFN di Pisa, Pisa, Italy
+24Sezione INFN di Roma Tor Vergata, Roma, Italy
+25Sezione INFN di Roma La Sapienza, Roma, Italy
+26Henryk Niewodniczanski Institute of Nuclear Physics Polish Academy of Sciences, Krak´ ow, Poland
+27AGH - University of Science and Technology, Faculty of Physics and Applied Computer Science,
+Krak´ ow, Poland
+28National Center for Nuclear Research (NCBJ), Warsaw, Poland
+29Horia Hulubei National Institute of Physics and Nuclear Engineering, Bucharest-Magurele, Romania
+30Petersburg Nuclear Physics Institute (PNPI), Gatchina, Russia
+31Institute of Theoretical and Experimental Physics (ITEP), Moscow, Russia
+32Institute of Nuclear Physics, Moscow State University (SINP MSU), Moscow, Russia
+33Institute for Nuclear Research of the Russian Academy of Sciences (INR RAN), Moscow, Russia
+34Budker Institute of Nuclear Physics (SB RAS) and Novosibirsk State University, Novosibirsk, Russia
+35Institute for High Energy Physics (IHEP), Protvino, Russia
+36Universitat de Barcelona, Barcelona, Spain
+37Universidad de Santiago de Compostela, Santiago de Compostela, Spain
+38European Organization for Nuclear Research ([REDACTED]), Geneva, Switzerland
+39Ecole Polytechnique F´ ed´ erale de Lausanne (EPFL), Lausanne, Switzerland
+40Physik-Institut, Universit¨ at Z¨ urich, Z¨ urich, Switzerland
+41Nikhef National Institute for Subatomic Physics, Amsterdam, The Netherlands
+42Nikhef National Institute for Subatomic Physics and VU University Amsterdam, Amsterdam, The
+Netherlands
+43NSC Kharkiv Institute of Physics and Technology (NSC KIPT), Kharkiv, Ukraine
+44Institute for Nuclear Research of the National Academy of Sciences (KINR), Kyiv, Ukraine
+45University of Birmingham, Birmingham, United Kingdom
+46H.H. Wills Physics Laboratory, University of Bristol, Bristol, United Kingdom
+47Cavendish Laboratory, University of Cambridge, Cambridge, United Kingdom
+48Department of Physics, University of Warwick, Coventry, United Kingdom
+49STFC Rutherford Appleton Laboratory, Didcot, United Kingdom
+50School of Physics and Astronomy, University of Edinburgh, Edinburgh, United Kingdom
+51School of Physics and Astronomy, University of Glasgow, Glasgow, United Kingdom
+52Oliver Lodge Laboratory, University of Liverpool, Liverpool, United Kingdom
+53Imperial College London, London, United Kingdom
+54School of Physics and Astronomy, University of Manchester, Manchester, United Kingdom
+55Department of Physics, University of Oxford, Oxford, United Kingdom
+56Massachusetts Institute of Technology, Cambridge, MA, United States
+57University of Cincinnati, Cincinnati, OH, United States
+58University of Maryland, College Park, MD, United States
+59Syracuse University, Syracuse, NY, United States
+60Pontif´ ıcia Universidade Cat´ olica do Rio de Janeiro (PUC-Rio), Rio de Janeiro, Brazil, associated to2
+61Institute of Particle Physics, Central China Normal University, Wuhan, Hubei, China, associated to 3
+62Institut f¨ ur Physik, Universit¨ at Rostock, Rostock, Germany, associated to11
+63National Research Centre Kurchatov Institute, Moscow, Russia, associated to 31
+64Instituto de Fisica Corpuscular (IFIC), Universitat de Valencia-CSIC, Valencia, Spain, associated to 36
+65Van Swinderen Institute, University of Groningen, Groningen, The Netherlands, associated to 41
+66Celal Bayar University, Manisa, Turkey, associated to 38
+aUniversidade Federal do Triˆ angulo Mineiro (UFTM), Uberaba-MG, Brazil
+bP.N. Lebedev Physical Institute, Russian Academy of Science (LPI RAS), Moscow, Russia
+cUniversit` a di Bari, Bari, Italy
+dUniversit` a di Bologna, Bologna, Italy
+79
+eUniversit` a di Cagliari, Cagliari, Italy
+f Universit` a di Ferrara, Ferrara, Italy
+gUniversit` a di Firenze, Firenze, Italy
+hUniversit` a di Urbino, Urbino, Italy
+iUniversit` a di Modena e Reggio Emilia, Modena, Italy
+jUniversit` a di Genova, Genova, Italy
+kUniversit` a di Milano Bicocca, Milano, Italy
+lUniversit` a di Roma Tor Vergata, Roma, Italy
+mUniversit` a di Roma La Sapienza, Roma, Italy
+nUniversit` a della Basilicata, Potenza, Italy
+oAGH - University of Science and Technology, Faculty of Computer Science, Electronics and
+Telecommunications, Krak´ ow, Poland
+pLIFAELS, La Salle, Universitat Ramon Llull, Barcelona, Spain
+qHanoi University of Science, Hanoi, Viet Nam
+rUniversit` a di Padova, Padova, Italy
+sUniversit` a di Pisa, Pisa, Italy
+tScuola Normale Superiore, Pisa, Italy
+uUniversit` a degli Studi di Milano, Milano, Italy
+vPolitecnico di Milano, Milano, Italy
+80
+</paper>
+
+Based on this instrument, propose specific hardware design upgrades that would most improve its primary physics performance. Be concrete about technologies and components.
