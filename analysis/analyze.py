@@ -14,7 +14,11 @@ for r in recs:
     if k not in final or r['max_tokens'] > final[k]['max_tokens']:
         final[k] = r
 recs = list(final.values())
-assert len(recs) == 1600, len(recs)
+from collections import Counter as _C
+_cells = _C((r['pair'], r['condition'], r['model']) for r in recs)
+N_CELL = max(_cells.values())
+assert len(set(_cells.values())) == 1, f"uneven cells: {sorted(set(_cells.values()))}"
+print(f"records: {len(recs)} ({N_CELL} per cell)")
 assert all(r['stop_reason'] == 'end_turn' for r in recs)
 
 cfg = json.load(open('keys.json', encoding='utf-8'))
@@ -28,7 +32,8 @@ for pn, p in pairs.items():
                 leaked.add((pn, item))
 print('leakage-excluded items (from available corpus files):', sorted(leaked))
 
-def wilson(k, n=20, z=1.96):
+def wilson(k, n=None, z=1.96):
+    n = n or N_CELL
     p = k/n; d = 1+z*z/n
     c = (p+z*z/(2*n))/d; h = z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))/d
     return p, max(0, c-h), min(1, c+h)
@@ -45,7 +50,7 @@ with open('data/atlas_scores_v2.csv', 'w', newline='', encoding='utf-8') as f:
     for (p,i,m), s in sorted(score.items()):
         for c in 'ABCD':
             r_, lo, hi = wilson(s[c])
-            w.writerow([p, i, pairs[p]['items'][i]['class'], m, c, s[c], 20,
+            w.writerow([p, i, pairs[p]['items'][i]['class'], m, c, s[c], N_CELL,
                         f"{r_:.3f}", f"{lo:.3f}", f"{hi:.3f}", (p,i) in leaked and c != 'D'])
 print('scores written to data/atlas_scores_v2.csv')
 
@@ -60,7 +65,7 @@ items = [(p,i) for p in pairs for i in pairs[p]['items'] if (p,i) not in excl]
 items.sort(key=lambda pi: -sum(score[(pi[0],pi[1],m)]['A'] for m in models))
 fig, axes = plt.subplots(1, 2, figsize=(9, 8), sharey=True)
 for ax, m, t in zip(axes, models, ['Sonnet 4.5', 'Sonnet 4.6']):
-    M = np.array([[score[(p,i,m)][c]*5 for c in 'ABCD'] for p,i in items])
+    M = np.array([[score[(p,i,m)][c]*100/N_CELL for c in 'ABCD'] for p,i in items])
     ax.imshow(M, cmap='Greys', vmin=0, vmax=100, aspect='auto')
     ax.set_xticks(range(4)); ax.set_xticklabels(list('ABCD')); ax.set_title(t)
     for y in range(len(items)):
@@ -74,10 +79,10 @@ plt.tight_layout(); plt.savefig('analysis/fig1_heatmap.pdf', bbox_inches='tight'
 
 fig, axes = plt.subplots(1, 2, figsize=(9, 4.6), sharex=True)
 for ax, m, t in zip(axes, models, ['Sonnet 4.5', 'Sonnet 4.6']):
-    sel = [(p,i) for p,i in items if abs(score[(p,i,m)]['A']-score[(p,i,m)]['B'])*5 >= 15]
+    sel = [(p,i) for p,i in items if abs(score[(p,i,m)]['A']-score[(p,i,m)]['B'])*100/N_CELL >= 15]
     sel.sort(key=lambda pi: score[(pi[0],pi[1],m)]['B']-score[(pi[0],pi[1],m)]['A'])
     for y,(p,i) in enumerate(sel):
-        a, b = score[(p,i,m)]['A']*5, score[(p,i,m)]['B']*5
+        a, b = score[(p,i,m)]['A']*100/N_CELL, score[(p,i,m)]['B']*100/N_CELL
         ax.plot([a,b],[y,y], color='0.6', lw=1.2)
         ax.scatter([a],[y], s=34, c='black')
         ax.scatter([b],[y], s=34, facecolor='white', edgecolor='black')

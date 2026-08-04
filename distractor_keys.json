@@ -1,0 +1,15 @@
+{
+  "_comment": "AMENDMENT 4 distractor set. Technologies that were plausible candidates at each baseline's date and were NOT adopted in the documented upgrade. Frozen 2026-08-02 before any distractor scoring. Same leakage-audit rule applies; audit status per pair recorded at scoring time.",
+  "distractors": {
+    "darkside":  {"apd": "\\bapd\\b|avalanche photodiode", "mcp": "microchannel plate|mcp-?pmt"},
+    "protodune": {"cryo_pmt": "8[\\s-]?inch.{0,30}(pmt|photomultiplier)|cryogenic (pmt|photomultiplier)", "reflector_foils": "(tpb|wls|wavelength[\\s-]shift\\w*)[\\s-]coated reflector|reflector foil"},
+    "xenon1t":   {"sipm_readout": "\\bsipm|silicon photo\\s?multiplier", "mcp": "microchannel plate|mcp-?pmt"},
+    "lux":       {"sipm_readout": "\\bsipm|silicon photo\\s?multiplier", "boron_plastic": "boron[\\s-]loaded plastic"},
+    "icecube":   {"hpd": "hybrid photo[\\s-]?detector|\\bhpd\\b", "mapmt": "multi[\\s-]anode"},
+    "gerda":     {"segmented": "segmented germanium|detector segmentation", "organic_ls": "(organic|linear alkyl|\\blab\\b)[\\s-]?.{0,20}scintillator"},
+    "exo200":    {"pmt_readout": "large[\\s-]area (pmt|photomultiplier)|(photomultiplier|pmt) (readout|array)", "barium_tagging": "barium[\\s-]tagg"},
+    "lhcb":      {"maps": "monolithic active pixel|\\bmaps\\b", "diamond": "diamond (pixel|sensor|detector|tracker)"},
+    "sno":       {"wbls": "water[\\s-]based (liquid )?scintillator|\\bwbls\\b", "gd_loading": "gadolinium|gd[\\s-]load"},
+    "aligo":     {"cryogenic": "cryogenic (test mass|mirror|suspension|operation)|cryogenically cooled", "sapphire": "sapphire (test mass|mirror|substrate)"}
+  }
+}
