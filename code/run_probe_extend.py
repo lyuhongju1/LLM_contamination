@@ -45,7 +45,7 @@ def api(method, path, body=None, raw_url=None):
     data = json.dumps(body).encode() if body is not None else None
     req = urllib.request.Request(url, data=data, headers=HDRS(), method=method)
     try:
-        with urllib.request.urlopen(req, timeout=600) as r:
+        with urllib.request.urlopen(req, timeout=1800) as r:
             payload = r.read()
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")[:2000]
@@ -55,14 +55,25 @@ def api(method, path, body=None, raw_url=None):
     except json.JSONDecodeError:  # results endpoint returns JSONL
         return [json.loads(l) for l in payload.decode().splitlines() if l.strip()]
 
-def submit(model, tasks, prompts, max_tokens):
-    reqs = [{"custom_id": f"{p}__{c}__{i}__mt{max_tokens}",
-             "params": {"model": model, "max_tokens": max_tokens, "temperature": 1.0,
-                        "messages": [{"role": "user", "content": prompts[(p, c)][0]}]}}
-            for (p, c, i) in tasks]
-    b = api("POST", "/messages/batches", {"requests": reqs})
-    print(f"submitted batch {b['id']} ({model}, {len(reqs)} requests, max_tokens={max_tokens})")
-    return b["id"]
+def submit(model, tasks, prompts, max_tokens, chunk_bytes=20_000_000):
+    ids, reqs, size = [], [], 0
+    def flush():
+        nonlocal reqs, size
+        if not reqs: return
+        b = api("POST", "/messages/batches", {"requests": reqs})
+        ids.append(b["id"])
+        print(f"submitted batch {b['id']} ({model}, {len(reqs)} requests, max_tokens={max_tokens})")
+        reqs, size = [], 0
+    for (p, c, i) in tasks:
+        prompt = prompts[(p, c)][0]
+        if size + len(prompt) > chunk_bytes:
+            flush()
+        reqs.append({"custom_id": f"{p}__{c}__{i}__mt{max_tokens}",
+                     "params": {"model": model, "max_tokens": max_tokens, "temperature": 1.0,
+                                "messages": [{"role": "user", "content": prompt}]}})
+        size += len(prompt)
+    flush()
+    return ids
 
 def poll(bid):
     while True:
@@ -132,11 +143,13 @@ def main():
             state[model] = submit(model, tasks, prompts, args.max_tokens)
             json.dump(state, open(state_path, "w"))
 
+    def as_list(v): return v if isinstance(v, list) else [v]
     seen = set()
     with open("results/raw_v2.jsonl", "a", encoding="utf-8") as out:
         for model in args.models:
             if model in state:
-                poll(state[model]); harvest(state[model], model, prompts, out, seen)
+                for bid in as_list(state[model]):
+                    poll(bid); harvest(bid, model, prompts, out, seen)
 
     # pre-registered QC: resample max_tokens-stopped responses once at 8000
     recs = [json.loads(l) for l in open("results/raw_v2.jsonl", encoding="utf-8")]
@@ -151,8 +164,9 @@ def main():
         json.dump(state, open(state_path, "w"))
     if "qc" in state:
         with open("results/raw_v2.jsonl", "a", encoding="utf-8") as out:
-            for m, bid in state["qc"].items():
-                poll(bid); harvest(bid, m, prompts, out, seen)
+            for m, bids in state["qc"].items():
+                for bid in as_list(bids):
+                    poll(bid); harvest(bid, m, prompts, out, seen)
     # final stop_reason census
     recs = [json.loads(l) for l in open("results/raw_v2.jsonl", encoding="utf-8")]
     from collections import Counter
