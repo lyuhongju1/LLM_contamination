@@ -74,3 +74,9 @@ Two additions responding to external review.
 
 ### Amendment 6 completion note, battery (2026-08-05)
 The battery leakage audit found all five new items clean against their baseline texts. Scored on the existing N=50 responses: all class Q items suppress to at or near zero under condition B on both models, and the class P item p_lz suppresses on both models despite predating its cutoff, joining DarkSide-20k and VeloPix. Combined with the retention of pre-cutoff technologies and suppression of the post-cutoff inverted-coaxial item, the frozen predictions resolve as: date-level filtering for technologies, association-level suppression for successor-branded names. D-prime sampling remains pending.
+
+### Amendment 6 execution note, scale contrast (2026-08-05)
+Before any further open-weight sampling: the open-weight arm extends to
+qwen2.5:72b-instruct under the identical protocol, prompts, temperature, and N,
+adding a within-family scale contrast at fixed vendor and training pipeline.
+Serving context 32768 tokens, with the same documented size-guard subset.
