@@ -1,0 +1,1 @@
+Propose specific hardware design upgrades that would most improve the primary physics performance of the following instrument: a xenon detector for dark matter, earlier generation. Be concrete about technologies and components.

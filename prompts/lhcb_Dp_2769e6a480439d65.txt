@@ -1,0 +1,1 @@
+Propose specific hardware design upgrades that would most improve the primary physics performance of the following instrument: a forward spectrometer for flavour physics at a collider. Be concrete about technologies and components.
