@@ -75,8 +75,8 @@ Two additions responding to external review.
 ### Amendment 6 completion note, battery (2026-08-05)
 The battery leakage audit found all five new items clean against their baseline texts. Scored on the existing N=50 responses: all class Q items suppress to at or near zero under condition B on both models, and the class P item p_lz suppresses on both models despite predating its cutoff, joining DarkSide-20k and VeloPix. Combined with the retention of pre-cutoff technologies and suppression of the post-cutoff inverted-coaxial item, the frozen predictions resolve as: date-level filtering for technologies, association-level suppression for successor-branded names. D-prime sampling remains pending.
 
-### Amendment 6 execution note, scale contrast (2026-08-05)
-Before any further open-weight sampling: the open-weight arm extends to
-qwen2.5:72b-instruct under the identical protocol, prompts, temperature, and N,
-adding a within-family scale contrast at fixed vendor and training pipeline.
-Serving context 32768 tokens, with the same documented size-guard subset.
+### Amendment 6 completion note, D-prime (2026-08-05)
+D-prime sampling completed: 400 samples, 397 terminating naturally, three cap-terminated responses scored as-is and flagged. Outcome: rates on the stripped one-line descriptions equal or exceed condition D on nearly every key item, including identity elicitation. The specification-prompting concern is empirically bounded; the direction of the effect is opposite to the concern.
+
+### Amendment 6 completion note, scale contrast (2026-08-06)
+The 72B run completed: 1,250 samples, all terminating naturally, paper conditions covering the five shortest baselines under the 32,768-token guard (a smaller subset than the 32B run's, which served at 49,152), condition D complete for all ten pairs. Outcome: salience-default items rise strongly with scale while successor naming, program-specific adopted technologies, and cutoff compliance remain absent, decomposing the frontier-model contamination into a default component that scales and an episodic component that does not appear in this family at either scale.
