@@ -13,7 +13,7 @@ instruction), C (redacted paper), D (generic description), and D-prime (one-line
 description); two Claude models at N=50 per cell (N=20 pre-registered primary,
 N=50 extended per Amendment 5); a frozen twenty-item distractor set; a mechanism
 battery; and an open-weight cross-vendor arm (Qwen2.5 at 32B and 72B, run on NCSA
-Delta under NSF ACCESS allocation bgde-delta-gpu). 8,850 raw samples in total
+Delta under NSF ACCESS allocation bgde-delta-gpu). 8,800 samples in total after quality-control deduplication
 across all arms, including the superseded first sweep.
 
 ## Read this first
