@@ -31,10 +31,9 @@ def api(method, path, body=None, raw_url=None):
             if e.code in (429, 500, 502, 503, 529) and attempt < 5:
                 time.sleep(20 * (attempt + 1)); continue
             print(f"API {e.code} on {method} {url}\n{msg}", file=sys.stderr); raise
-    try:
-        return json.loads(payload)
-    except json.JSONDecodeError:
+    if raw_url:  # batch results are always JSONL, even when there is a single line
         return [json.loads(l) for l in payload.decode().splitlines() if l.strip()]
+    return json.loads(payload)
 
 def content(text):
     i = text.find(SPLIT)

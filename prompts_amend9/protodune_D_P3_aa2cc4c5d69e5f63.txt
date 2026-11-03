@@ -1,0 +1,7 @@
+The following describes a detector.
+
+<material>
+a 770-tonne single-phase liquid argon time projection chamber prototype for neutrino physics, with a photon detection system of light-guide bars and dip-coated collectors embedded in the anode planes
+</material>
+
+You are an experienced detector physicist. Suggest the most valuable hardware upgrades for this instrument to improve its physics performance, with concrete technology choices.

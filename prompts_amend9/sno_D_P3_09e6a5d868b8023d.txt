@@ -1,0 +1,7 @@
+The following describes a detector.
+
+<material>
+a kilotonne heavy-water Cherenkov detector in a deep underground cavity, viewed by an array of photomultipliers on a geodesic support structure, measuring solar neutrinos
+</material>
+
+You are an experienced detector physicist. Suggest the most valuable hardware upgrades for this instrument to improve its physics performance, with concrete technology choices.

@@ -1,0 +1,7 @@
+Below is a short description of a physics instrument.
+
+<material>
+a 770-tonne single-phase liquid argon time projection chamber prototype for neutrino physics, with a photon detection system of light-guide bars and dip-coated collectors embedded in the anode planes
+</material>
+
+Propose exactly 5 specific hardware upgrades to the instrument described above that would most improve its primary physics performance. Number them 1 to 5 and name the technologies and components.

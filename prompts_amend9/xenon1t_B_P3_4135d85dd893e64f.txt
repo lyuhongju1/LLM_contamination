@@ -1,0 +1,2419 @@
+Respond using only knowledge that existed in or before 2017; treat anything later as unknown.
+
+The following is a detector paper.
+
+<material>
+Eur . Phys. J. C manuscript No.
+(will be inserted by the editor)
+The XENON1T Dark Matter Experiment
+E. Aprile1, J. Aalbers 2, F . Agostini3,4, M. Alfonsi 5, F . D. Amaro6, M. Anthony 1,
+B. Antunes6, F . Arneodo7, M. Balata 3, P . Barrow8, L. Baudis 8, B. Bauermeister 9,
+M. L. Benabderrahmane 7, T. Berger 10, A. Breskin 11, P . A. Breur2, A. Brown 2,
+E. Brown10, S. Bruenner 12, G. Bruno 3, R. Budnik 11, L. Bütikofer 13,a, J. Calvén 9,
+J. M. R. Cardoso 6, M. Cervantes 14, A. Chiarini 4, D. Cichon 12, D. Coderre 13,
+A. P . Colijn2,d, J. Conrad 9,b, R. Corrieri 3, J. P . Cussonneau15, M. P . Decowski2,
+P . de Perio1, P . Di Gangi4, A. Di Giovanni 7, S. Diglio 15, J.-M. Disdier 3, M. Doets 2,
+E. Duchovni11, G. Eurin 12, J. Fei16, A. D. Ferella 9, A. Fieguth 17, D. Florin8, D. Front11,
+W. Fulgione3,18, A. Gallo Rosso 3, M. Galloway 8, F . Gao1, M. Garbini 4, C. Geis 5,
+K.-L. Giboni1, L. W. Goetzke1, L. Grandi 19, Z. Greene 1, C. Grignon 5, C. Hasterok 12,
+E. Hogenbirk2, C. Huhmann 17, R. Itay 11, A. James 8, B. Kaminsky 13,a, S. Kazama 8,
+G. Kessler8, A. Kish 8, H. Landsman 11, R. F . Lang14, D. Lellouch 11, L. Levinson 11,
+Q. Lin1, S. Lindemann 13,12, M. Lindner 12, F . Lombardi16, J. A. M. Lopes 6,c, R. Maier 8,
+A. Manfredini11, I. Maris 7, T. Marrodán Undagoitia 12, J. Masbou 15, F . V . Massoli4,
+D. Masson14, D. Mayani 8, M. Messina 7,1,e, K. Micheneau 15, A. Molinario 3, K. Morå 9,
+M. Murra17, J. Naganoma 20, K. Ni 16, U. Oberlack 5, D. Orlandi 3, R. Othegraven 5,
+P . Pakarha8, S. Parlati 3, B. Pelssers 9, R. Persiani 15, F . Piastra8, J. Pienaar 19,14,
+V . Pizzella12, M.-C. Piro 10, G. Plante 1, N. Priel 11, D. Ramírez García 13,5, L. Rauch 12,
+S. Reichard14, C. Reuter 8,14, A. Rizzo 1, S. Rosendahl 17, N. Rupp 12, J. M. F . dos Santos6,
+R. Saldahna 19, G. Sartorelli 4, M. Scheibelhut 5, S. Schindler 5, J. Schreiner 12,
+M. Schumann13,f, L. Scotto Lavina 21, M. Selvi 4, P . Shagin20, E. Shockley 19, M. Silva 6,
+H. Simgen12, M. v. Sivers 13,a, M. Stern 1, A. Stein 22, D. Tatananni1, L. Tatananni3,
+D. Thers15, A. Tiseni2, G. Trinchero18, C. Tunnell19, N. Upole19, M. Vargas17, O. Wack12,
+R. Walet2, H. Wang22, Z. Wang3, Y. Wei16,8, C. Weinheimer17, C. Wittweg 17, J. Wulf8,
+J. Y e16, Y. Zhang1 (XENON Collaborationg).
+1Physics Department, Columbia University, New York, NY 10027, USA
+2Nikhef and the University of Amsterdam, Science Park, 1098XG Amsterdam, Netherlands
+3INFN-Laboratori Nazionali del Gran Sasso and Gran Sasso Science Institute, 67100 L’Aquila, Italy
+4Department of Physics and Astrophysics, University of Bologna and INFN-Bologna, 40126 Bologna, Italy
+5Institut für Physik & Exzellenzcluster PRISMA, Johannes Gutenberg-Universität Mainz, 55099 Mainz, Germany
+6LIBPhys, Department of Physics, University of Coimbra, 3004-516 Coimbra, Portugal
+7New York University Abu Dhabi, Abu Dhabi, United Arab Emirates
+8Physik Institut, University of Zurich, 8057 Zurich, Switzerland
+9Oskar Klein Centre, Department of Physics, Stockholm University, AlbaNova, Stockholm SE-10691, Sweden
+10Department of Physics, Applied Physics and Astronomy, Rensselaer Polytechnic Institute, Troy, NY 12180, USA
+11Department of Particle Physics and Astrophysics, Weizmann Institute of Science, Rehovot 7610001, Israel
+12Max-Planck-Institut für Kernphysik, 69117 Heidelberg, Germany
+13Physikalisches Institut, Universität Freiburg, 79104 Freiburg, Germany
+14Department of Physics and Astronomy, Purdue University, West Lafayette, IN 47907, USA
+15SUBATECH, IMT Atlantique, CNRS/IN2P3, Université de Nantes, Nantes 44307, France
+16Department of Physics, University of California, San Diego, CA 92093, USA
+17Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, 48149 Münster, Germany
+18INFN-Torino and Osservatorio Astroﬁsico di Torino, 10125 Torino, Italy
+19Department of Physics & Kavli Institute of Cosmological Physics, University of Chicago, Chicago, IL 60637, USA
+20Department of Physics and Astronomy, Rice University, Houston, TX 77005, USA
+21LPNHE, Université Pierre et Marie Curie, Université Paris Diderot, CNRS/IN2P3, Paris 75252, France
+22Physics & Astronomy Department, University of California, Los Angeles, CA 90095, USA
+arXiv:1708.07051v1  [astro-ph.IM]  23 Aug 2017
+2
+Abstract The XENON1T experiment at the Laboratori Na-
+zionali del Gran Sasso (LNGS) is the ﬁrst WIMP dark mat-
+ter detector operating with a liquid xenon target mass above
+the ton-scale. Out of its 3.2 t liquid xenon inventory, 2.0 t
+constitute the active target of the dual-phase time projec-
+tion chamber. The scintillation and ionization signals from
+particle interactions are detected with low-background pho-
+tomultipliers. This article describes the XENON1T instru-
+ment and its subsystems as well as strategies to achieve an
+unprecedented low background level. First results on the de-
+tector response and the performance of the subsystems are
+also presented.
+1 Introduction
+The fact that dark matter exists, as evidenced by a large
+number of indirect observations in astronomy and cosmol-
+ogy [1], is seen as a striking indication that there must be
+new physics beyond the Standard Model (BSM) of particle
+physics. The postulated dark matter particle has not been
+directly observed yet, and theoretical predictions about its
+mass, couplings and production mechanisms span a large
+parameter space [2]. A well-motivated candidate, which
+arises naturally in several BSM models, is the weakly inter-
+acting massive particle (WIMP) [3]. It might be directly de-
+tectable in sensitive Earth-based detectors, as it is expected
+to scatter off the detector’s target nuclei. Most models pre-
+dict an exponentially falling nuclear recoil spectrum, with
+mean energies of a few keV [4].
+The XENON dark matter project aims at the detec-
+tion of WIMP dark matter with dual-phase time projec-
+tion chambers ﬁlled with a liquid xenon (LXe) target.
+The ﬁrst WIMP search conducted with XENON10 [5, 6]
+featured a target mass of 14 kg (25 kg total). It was fol-
+lowed by XENON100 (62 kg target, 161 kg total mass) [7],
+which published competitive results on spin-independent [8,
+9], spin-dependent [10] and other WIMP-nucleon interac-
+tions [11–13], axions and axion-like particles [14], and chal-
+lenged the interpretation of the DAMA/LIBRA signal as be-
+ing due to leptophilic dark matter interacting with atomic
+electrons [15–17].
+The XENON1T experiment described in this article is
+located underground in Hall B of the Laboratori Nazionali
+del Gran Sasso (LNGS), Italy, at a depth of 3600 meter wa-
+ter equivalent. With its large target mass of 2.0 t (2000 kg) it
+aAlso at Albert Einstein Center for Fundamental Physics, University of
+Bern, 3012 Bern, Switzerland
+bWallenberg Academy Fellow
+cAlso at Coimbra Engineering Institute, Coimbra, Portugal
+dcolijn@nikhef.nl
+emmessina@astro.columbia.edu
+fmarc.schumann@physik.uni-freiburg.de
+gxenon@lngs.infn.it
+aims at probing spin-independent WIMP-nucleon scattering
+cross sections of 1.6 × 10−47 cm2 at a WIMP mass of mχ =
+50 GeV/c2, with an exposure of 2.0 t× y [18]. At low WIMP
+masses, the sensitivity approaches the predicted “neutrino
+ﬂoor” [19] caused by background events from the coherent
+scattering of solar 8B neutrinos off the xenon nuclei. The
+ﬁrst dark matter search results from XENON1T (from “sci-
+ence run 0”) probe spin-independent WIMP-nucleon cross
+sections below 1 × 10−46 cm2 for the ﬁrst time [20].
+Most XENON1T subsystems were designed such that
+they can also support a signiﬁcantly larger dark matter de-
+tector, with a target of ∼6 t. This phase of the project,
+XENONnT, is being prepared during XENON1T data tak-
+ing to allow for a rapid exchange of the larger instrument af-
+ter the science goals of XENON1T will have been reached.
+XENONnT aims at improving the spin-independent WIMP
+sensitivity by another order of magnitude compared to
+XENON1T [18].
+The article is structured as follows: in section 2, the
+XENON1T experiment with all its subsystems is introduced
+in detail. Section 3 presents selected results from detector
+commissioning and from science run 0, and section 4 pro-
+vides an outlook.
+2 The XENON1T Experiment
+This section describes the XENON1T detector. The dual-
+phase TPC (section 2.1) is installed inside a double-walled
+vacuum cryostat (section 2.1.4) in the center of a large wa-
+ter tank. The tank serves as passive shield as well as a
+Cherenkov muon veto (section 2.2.1). A three-ﬂoor building
+accommodates all auxiliary systems. These include the sys-
+tems to cool (section 2.1.4), store, and purify the xenon gas
+(section 2.1.5), the cryogenic distillation column for kryp-
+ton removal (section 2.2.3), the data acquisition system (sec-
+tion 2.4) as well as the control and monitoring systems for
+the entire experiment (section 2.5). The TPC calibration sys-
+tems are installed on the puriﬁcation system as well as on the
+top of the water shield (section 2.3).
+2.1 Time Projection Chamber
+This section describes the working principle and design of
+the XENON1T TPC, the photosensors (photomultipliers,
+PMTs) to register particle interactions, and the systems that
+handle the ∼3.2 t of xenon in liquid and gaseous form. All
+materials and components constituting the TPC were se-
+lected for a low intrinsic radioactivity (see section 2.2.2).
+2.1.1 Working Principle
+Dual-phase TPCs [21] were ﬁrst used for WIMP dark matter
+searches by the ZEPLIN-II [22] and XENON10 [5] collab-
+3
+  
+Amplitude Dark Matter WIMP
+Background (β, γ)
+Background (neutron)
+Top Screen
+Anode
+Gate
+Cathode
+Bottom Screen
+Drift
+Field
+Top PMTs
+Time
+e– 
+S1
+S2
+Bottom PMTs
+S2
+S1
+Liquid Xe
+Gas Xe
+AmplitudeAmplitude
+Time
+Time
+Fig. 1 Working principle of a dual-phase LXe TPC: The prompt scin-
+tillation light (S1) generated in the LXe is recorded by PMTs installed
+above and below the target. The same PMTs also measure the delayed
+secondary-light signal S2, which is created by proportional scintilla-
+tion induced by ionization electrons (e −) in the gas phase. A set of
+TPC electrodes is used to establish the required electric ﬁelds. The in-
+teraction position can be reconstructed in 3-dimensions by means of
+the S2-signal pattern observed by the top PMTs (lateral) and the time
+difference between S1 and S2 (depth). Background events are rejected
+by the charge to light (S2/S1) ratio and the scatter multiplicity (number
+of S2 signals), as indicated on the panels on the right.
+orations and are now successfully employed by number of
+experiments [23, 24]. The working principle is illustrated
+in ﬁgure 1: particles entering a cylindrical LXe target can
+scatter off xenon nuclei (in case of WIMPs or neutrons) or
+can interact with atomic electrons ( γ rays and β electrons),
+generating nuclear recoils or electronic recoils, respectively.
+The recoils excite and ionize the LXe; some energy is lost
+to heat. The partition into the different energy-loss chan-
+nels depends on the recoil type and energy and can there-
+fore be used to distinguish a WIMP signal from electronic
+recoil backgrounds, provided that the resulting excitation
+and ionization signals can be measured independently [25].
+The Xe∗
+2 excimers, that are eventually formed, de-excite un-
+der the emission of 178 nm scintillation light. In dual-phase
+TPCs, this light signal (S1) is observed by photosensors in-
+stalled above and below the target. An electric ﬁeld across
+the target, established between the negatively biased cathode
+at the bottom of the TPC and the gate electrode at ground
+potential at the top, is used to move the ionization electrons
+away from the interaction site, drifting them to the liquid-
+gas interface. A second ﬁeld, generated between the gate
+and the positively-biased anode, extracts them into the gas
+phase and provides the electrons sufﬁcient energy to excite
+and ionize the gas atoms. This generates a secondary scin-
+tillation signal (S2) which is proportional to the number of
+extracted electrons [26]. The position of the initial interac-
+tion, as well as the scatter multiplicity, can be reconstructed
+in 3-dimensions from the position and number of S2 signals
+observed by the top photosensors and the S1-S2 time differ-
+Fig. 2 Illustration of the XENON1T TPC. It is built from materials se-
+lected for their low radioactivity, e.g., OFHC copper, stainless steel and
+PTFE. The top and bottom PMT arrays are instrumented with 127 and
+121 Hamamatsu R11410-21 PMTs, respectively.
+ence. The ratio S2/S1 can be employed for electronic recoil
+background rejection, with typically>99.5% discrimination
+at 50% signal acceptance.
+2.1.2 XENON1T TPC
+The cylindrical TPC of 97 cm length and 96 cm diameter
+contains an active LXe target of 2.0 t, in which the light and
+the charge signals from each interaction can be detected, see
+ﬁgure 2. It is enclosed by 24 interlocking and light-tight
+PTFE (polytetraﬂuoroethylene, Teﬂon) panels, whose sur-
+faces were treated with diamond tools in order to optimize
+the reﬂectivity for vacuum ultraviolet (VUV) light [27]. Due
+to the rather large linear thermal expansion coefﬁcient of
+PTFE, its length is reduced by about 1.5% at the operation
+temperature of −96◦C. An interlocking design allows the ra-
+dial dimension to remain constant while the vertical length
+is reduced.
+To ensure drift ﬁeld homogeneity, the TPC is sur-
+rounded by 74 ﬁeld shaping electrodes with a cross sec-
+tion of ∼ 10 × 5 mm2; they are made from low-radioactivity
+oxygen-free high thermal conductivity (OFHC) copper. The
+electrodes are connected by two redundant chains of 5 G Ω
+resistors; a 25 GΩ resistor connects each chain to the cath-
+ode. The resistor settings, as well as the electrical trans-
+parency of the TPC electrodes (gate, anode and screening
+electrode on top, and cathode and screening electrode on
+4
+Table 1 Speciﬁcations of the ﬁve TPC electrodes. The bottom screening electrode features a single wire installed perpendicularly mid-way to all
+others to minimize elastic deformation of the frame. The last column indicates the vertical position of the electrodes inside the TPC. The distance
+between the top (bottom) screen to the top (bottom) PMTs is 11 mm (12 mm).
+TPC Electrode Type Material Wire Diameter Pitch/Cell opening Transparency Position
+Top screen hex etched stainless steel 178 µm 10.2 mm 96.5% 63 mm
+Anode hex etched stainless steel 178 µm 3.5 mm 89.8% 5 mm
+Gate hex etched stainess steel 127 µm 3.5 mm 92.7% 0 mm
+Cathode parallel wires Au plated stainless steel 216 µm 7.75 mm 97.2% −969 mm
+Bottom screen parallel wires Au plated stainless steel 216 µm 7.75 mm 97.2% −1017 mm
+bottom), were optimized by means of electrostatic simula-
+tions, using ﬁnite element (COMSOL Multiphysics [28])
+and boundary element methods (KEMField [29]). The high-
+voltage conﬁguration realized during science run 0 is shown
+in ﬁgure 3. Most S1 light is detected by the photosensors
+below the target. The electrodes were thus designed for
+S1 light collection by optimizing the optical transparency
+of the gate, the cathode and the bottom screening elec-
+trodes. The details are summarized in table 1. The circu-
+lar stainless-steel frames supporting the electrodes are elec-
+tropolished and optimized for high-voltage operation. The
+etched meshes were spot-welded to the frames, while the
+single wires were pre-stretched on an external structure and
+ﬁxed by wedging them between the upper and lower parts
+of the frames. Gold-plated wires were used to increase the
+work function of the metal.
+The cathode is negatively biased using a
+Heinzinger PNC 150000-1 NEG high-voltage supply
+via a custom-made high-voltage feedthrough. The latter
+consists of a conducting stainless-steel rod inside an ultra-
+high molecular weight (UHMW) polyethylene insulator,
+Fig. 3 Finite element simulation of the electric ﬁeld conﬁguration in-
+side and outside of the TPC, separated by the gate and cathode as
+well as the ﬁeld-shaping electrodes. The ﬁgure shows the ﬁeld lines
+as well as the equipotential lines for cathode, gate and anode biased
+with −12 kV , 0 kV and+4 kV , respectively, as realized during science
+run 0.
+cryoﬁtted into a 25.4 mm diameter stainless-steel tube to
+make it vacuum tight. Before installation, the feedthrough
+was successfully tested to voltages exceeding −100 kV . The
+total length of the feedthrough is about 1.5 m, out of which
+1.2 m are located inside the cryostat. This ensures that the
+connection point to the PTFE insulated metal rod, which
+supplies the voltage to the cathode frame, is covered by
+LXe. The anode is positively biased by a CAEN A1526P
+unit via a commercial Kapton-insulated cable (Accuglass
+26 AWG, TYP22-15). The gate electrode is kept at ground
+potential and the screening electrodes can be biased to
+minimize the ﬁeld in front of the PMT photocathodes.
+A “diving bell” made of stainless steel, which is directly
+pressurized by a controlled gas ﬂow, is used to maintain a
+stable liquid-gas interface between the gate and anode elec-
+Fig. 4 The top and bottom PMT arrays are equipped with 127 and
+121 Hamamatsu R11410-21 tubes, respectively. The top array is in-
+stalled inside a diving bell, used to maintain and precisely control the
+LXe level. The bottom image also shows the cathode and the bottom
+screening electrode, installed in front of the PMTs.
+5
+X [cm]
+-40 -20 0 20 40
+Y [cm]
+-40
+-20
+0
+20
+40
+2830323436384042
+0 1 2 3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18192021
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36 37 38 39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51525354
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66 67 68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+787980
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90 91 92
+93
+94
+95
+96
+97
+98
+99100101
+102
+103
+104
+105
+106
+107
+108 109
+110
+111
+112
+113
+114115
+116
+117
+118
+119
+120 121
+122
+123124
+125 126
+Top array
+X [cm]
+-40 -20 0 20 40
+Y [cm]
+-40
+-20
+0
+20
+40
+28
+30
+32
+34
+36
+38
+40
+42
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+Bottom array
+Quantum efficiency [%]
+Fig. 5 The PMTs were distributed in the top and bottom arrays mainly according to their quantum efﬁciency to ensure that the best-performing
+PMTs are located at the center of the bottom array, where most of the scintillation light is collected. Deviations take into account aspects such as
+increased radioactivity of individual tubes.
+trodes. It encloses the top PMT array. The height of the
+liquid level inside the bell is controlled via a vertically-
+adjustable gas-exhaust tube. Possible tilts of the TPC are
+measured by means of four custom-made parallel-plate-
+capacitive levelmeters installed inside the diving bell. They
+cover a dynamic range of 10 mm and have a precision of
+∼30 µm. Two cylindrical levelmeters of 1360 mm length
+measure the LXe level during ﬁlling and recovery from be-
+low the cathode to above the bell, with 2 mm precision.
+2.1.3 Photomultipliers
+A total of 248 Hamamatsu R11410-21 PMTs of 76.2 mm di-
+ameter are used to record the signals from the TPC. They
+are radially installed in the top array (127 PMTs) to facil-
+itate radial position reconstruction, and packed as tightly
+as possible in the bottom array (121 PMTs) to maximize
+scintillation-light collection efﬁciency, see ﬁgure 4. They
+feature an average room-temperature quantum efﬁciency of
+34.5% at 178 nm (bialkali-LT photocathode) [30], a high
+photoelectron collection efﬁciency of 90% and are designed
+to operate stably in gaseous and liquid xenon at cryogenic
+temperature [31, 32]. The low-radioactivity PMT version 21
+was jointly developed by Hamamatsu and the XENON col-
+laboration [33]. Six 25.4 mm square-window Hamamatsu
+R8520 PMTs, as used in the XENON100 detector [7], were
+installed in the LXe region outside of the TPC, next to
+the upmost ﬁeld-shaping electrodes, for detector calibration
+studies [34].
+All installed R11410-21 PMTs were screened for their
+intrinsic radioactivity levels in batches of typically 15 tubes
+[33] and tested at room temperature and under gaseous ni-
+trogen atmosphere at −100◦C. All PMTs were subject to
+at least two cooling cycles prior to installation. A subset of
+44 tubes was additionally tested in LXe (2-3 cooling cycles).
+The PMTs feature a peak-to-valley ratio of∼3, a single pho-
+toelectron resolution of 27% for gains above 3 × 106 and a
+transit time spread (TTS) of (9.1 ± 1.3) ns [30]. A total of
+73 tubes were rejected after the tests: 8 because of vacuum
+loss (“leak”), 53 because of emission of small amounts of
+light and 12 because of unstable dark count rates [30].
+Based on the measured performance and the speciﬁca-
+tions provided by the manufacturer, the PMTs were placed
+in the two arrays. The PMTs with the highest quantum ef-
+ﬁciency were installed at the center of the bottom array to
+maximize the light collection efﬁciency, see ﬁgure 5. Both
+arrays consist of a massive OFHC copper support plate with
+circular cut-outs for the PMTs. A single PTFE plate holds
+the individual PMTs and a PTFE reﬂector-plate covers the
+areas between the PMT windows (see ﬁgure [? ]. Both PTFE
+plates are attached to the copper support in a self-centering
+way to ensure that all PMTs move radially inward upon
+cool-down to LXe temperatures while the support plate,
+which is connected to the remaining TPC structure, stays
+in place.
+The 12 dynodes of the R11410-21 PMT are connected to
+a custom-made low-background high-voltage divider circuit
+on a Cirlex printed circuit board. It was optimized for lin-
+ear operation within the entire dynamic range of the ADCs
+(see section 2.4), covering the entire energy region of in-
+terest for XENON1T (≲ 1.5 MeV). The signals are read via
+50 Ω RG196 coaxial cables. The PMTs are individually bi-
+ased using CAEN A1535N and A1536N units via Kapton
+single-wire UHV cables (Accuglass 26 AWG, TYP28-30),
+with the return current being routed through dedicated lines
+(2 redundant lines for 24 channels). Custom-developed low-
+pass ﬁlters installed on each high-voltage and return line re-
+duce the electronic noise to sub-dominant levels. The cables
+were routed through the cryogenic pipe connecting the cryo-
+stat to the service building (see section 2.1.4). The cables
+6
+were potted into Conﬂat ﬂanges (RH seals), with certiﬁed
+leak rates below 1×10−8 mbar l/s, to ensure that the coaxial
+shields, as well as the high-voltage returns, remain separated
+from each other and from the detector ground. Installation
+was eased by integrating two custom-made low-background
+connectors for each bunch of 24 coaxial or 26 high-voltage
+cables (24 PMTs plus 2 return lines) [35, 36]. One connector
+was placed above the TPC and the second one in front of the
+Conﬂat ﬂanges in the gaseous xenon.
+2.1.4 Cryogenics
+This section describes the cryostat, which contains the TPC
+with the LXe target, and the cryogenic system for gas lique-
+faction and compensating for heat losses.
+Cryostat and Support Frame The TPC is installed inside a
+double-walled, cylindrical stainless-steel cryostat made of
+low-radioactivity material [37]. The inner vessel is 1960 mm
+Fig. 6 The stainless-steel cryostat containing the LXe TPC is installed
+inside a 740 m 3 water shield equipped with 84 PMTs deployed on
+the lateral walls. The cryostat is freely suspended (dark yellow) on a
+stainless-steel support frame, which can be converted into a cleanroom
+around the cryostat. The cryostat is connected to the outside by means
+of two pipes. The large, vacuum-insulated cryogenic pipe carries all
+gas/LXe pipes and cables. A small pipe (yellow) is used for the cath-
+ode high-voltage. Also shown is the system for calibrating XENON1T
+with external sources installed in movable collimators attached to belts
+(blue, red).
+high and 1100 mm in diameter. Its inner surface, in direct
+contact with the liquid xenon, was electro-polished in or-
+der to reduce the emanation of radon. It is enclosed by
+an outer vessel of 2490 mm height and 1620 mm diame-
+ter, large enough to accomodate the detector of the upgrade
+stage XENONnT as well. The inner vessel is metal-sealed
+(Helicoﬂex) and thermally decoupled from the outer one by
+polyamid-imid (Torlon) spacers. Thirty layers of superinsu-
+lation (RUAG Space Austria) reduce static thermal losses
+to ∼75 W. The cryostat is installed in the center of the wa-
+ter Cherenkov detector (see ﬁgure 6 and section 2.2.1). The
+connections to the outside are made through a double-walled
+cryogenic pipe (406 mm external diameter; 254 mm inner
+diameter) enclosing all the connections to the cryogenic sys-
+tem (cooling, puriﬁcation, fast emergency recovery, diving
+bell pressurization) and the cables for the PMTs and auxil-
+iary sensors. A separate, single-walled pipe carries the high-
+voltage cable to the TPC cathode feedthrough.
+The cryostat is freely suspended from three
+M20 threaded rods, attached to the top of a 10 m high
+stainless-steel support frame erected inside the water tank.
+In order to minimize radioactive background from the
+frame, its components were selected for low radioactivity.
+The distance between the cryostat and the frame is at least
+1 m. The tilt of the cryostat, and thus the orientation of
+the TPC electrode planes with respect to the liquid xenon
+surface, can be adjusted from outside the water shield
+by changing the length of the three threaded rods. The
+precision of the tilt adjustment is better than 50µrad; the tilt
+is measured in real-time with a MEMS biaxial submersible
+tiltmeter (RST instruments). A chain connecting the cryo-
+stat to the water shield ﬂoor compensates buoyancy forces
+if the cryostat is empty.
+A temporary 4.5 × 4.5 m2 platform can be installed on
+the detector support frame at 3.2 m height, to facilitate work
+on the detector.
+Cooling XENON1T follows the “remote cooling” concept
+that was successfully employed by XENON100 [7]. It al-
+lows for maintenance of the cryogenic system, which is in-
+stalled far away from the TPC, while the detector is cold.
+The xenon gas inside the XENON1T cryostat is lique-
+ﬁed and kept at its operating temperature T0 = −96◦C by
+means of two redundant pulse-tube refrigerators (PTRs [38],
+Iwatani PC-150), which each provide ∼250 W of cooling
+power at T0. Each PTR is connected to a copper cold ﬁn-
+ger reaching into the xenon volume such that the PTR can
+be removed without exposing the inner vessel. The PTR in-
+sulation volumes are separated such that one PTR can be
+serviced while the other is in operation. The measured total
+heat load of the system is 150 W, hence one PTR is sufﬁcient
+to operate the detector. The xenon pressure inside the cryo-
+stat is kept constant by controlling the temperature of the ac-
+7
+Fig. 7 The cryogenic system of XENON1T: cooling is provided by means of three redundant cold heads (two pulse-tube refrigerators (PTR),
+1 LN2), installed on individual cooling towers located outside of the water shield. The liqueﬁed xenon runs back to the main cryostat in a 6 m long
+vacuum-insulated cryogenic pipe, through which all connections to the TPC are made with the exception of the cathode bias voltage which is not
+shown in the ﬁgure. The connections to the systems for xenon puriﬁcation and storage (ReStoX) are also shown. Figure not to scale.
+tive PTR cold ﬁnger using resistive heaters. A proportional-
+integral-derivative (PID) controller (Lakeshore 340) reads
+the temperature at the cold ﬁnger and controls the power
+supplied to the heaters.
+In case of a sudden pressure increase beyond a deﬁned
+set point due to, e.g., a power loss, a PTR failure, or a partial
+loss of insulation vacuum, an additional backup liquid nitro-
+gen (LN2) cooling system maintains the pressure at a safe
+level. Its cold ﬁnger is cooled with a LN2 ﬂow and the cool-
+ing power is controlled by adjusting the nitrogen evaporation
+rate. The LN2 is supplied by the same 10 m3 tank as used by
+the xenon storage system ReStoX (see section 2.1.5). Only
+∼100 l/d are required to provide sufﬁcient cooling power for
+XENON1T without PTRs. In normal operation, the backup
+LN2 cooling system cold ﬁnger is kept a few degrees above
+the xenon liquefaction temperature. To ensure operation dur-
+ing a prolonged power loss, all safety-critical sensors and
+controllers for the emergency cooling system are powered
+by a uninterruptible power supply.
+The cryogenic system interfaces with the cryostat
+through the vacuum-insulated cryogenic pipe. Xenon gas
+from the inner cryostat vessel streams to the cryogenic sys-
+tem, is liqueﬁed by the PTR, collected in a funnel and ﬂows
+back to the cryostat vessel, driven by gravity, in a pipe that
+runs inside the cryogenic tube. Another pipe carries LXe out
+of the cryostat, evaporates it in a heat exchanger, and feeds it
+to the xenon puriﬁcation system (see section 2.1.5). The pu-
+riﬁed xenon gas is liqueﬁed in the same heat exchanger and
+ﬂows back to the cryostat. The pipe that carries the puriﬁed
+LXe back to the cryostat is also used during the cryostat ﬁll-
+ing operation. Figure 7 shows a schematic of the different
+components of the XENON1T cryogenic system and its in-
+terfaces to other systems.
+2.1.5 Xenon Puriﬁcation and Storage
+While the TPC encloses a LXe target of 2.0 t, a total of 3.2 t
+is required to operate the detector. The additional xenon lead
+is contained in the 60 mm layer between the cathode elec-
+trode and the bottom PMTs, in the 58 mm layer between the
+TPC ﬁeld-shaping electrodes and the cryostat wall, in be-
+tween and below the bottom PMTs, in the gas phase and in
+the gas puriﬁcation and storage systems described below.
+8
+Fig. 8 Piping and instrumentation diagram (P&ID) of the XENON1T puriﬁcation system. The system also serves as the main interface to the other
+components of the gas-handling system (see ﬁgure 9) and allows the insertion of short-lived isotopes for calibration. Some instrumentation such
+as temperature and pressure sensors, as well as several access ports are omitted for clarity. The path of the xenon gas during standard puriﬁcation
+is indicated in blue.
+Fig. 9 The gas-handling system of XENON1T consists of the cryogenic system (cooling), the puriﬁcation system (online removal of electronega-
+tive impurities), the cryogenic distillation column (natKr removal), ReStoX (LXe storage, ﬁlling and recovery), the gas bottle rack (injection of gas
+into the system) and gas analytics station (gas chromatograph). The cryostat inside the water shield accomodates the TPC.
+The total xenon inventory from various suppliers com-
+prises research-grade gas with a low concentration of im-
+purities, especially natKr. The impurity level was measured
+in sets of four gas bottles by gas chromatography (custom-
+optimized Trace GC Ultra from Thermo Fisher) [39]. In case
+a higher level than speciﬁed was detected, the bottles were
+puriﬁed using the distillation system (section 2.2.3) before
+adding the gas to the storage system.
+Xenon Puriﬁcation Electronegative impurities, such as wa-
+ter or oxygen, absorb scintillation light and reduce the num-
+ber of ionization electrons by capture in an electron drift-
+time dependent fashion. These impurities are constantly out-
+gassing into the xenon from all detector components. There-
+9
+fore, the gas must be continuously puriﬁed to reduce the im-
+purities to the 10−9 O2-equivalent level (ppb). Driven by gas
+transfer pumps, LXe is extracted from the cryostat at its bot-
+tom, next to the LXe condensate inlet from the cryogenic
+system. The LXe is evaporated in a heat exchanger system,
+made from a concentric tube in combination with a plate
+heat exchanger, which also cools the return gas from the pu-
+riﬁcation system [40]. It is 96% efﬁcient and reduces the
+heat input into the cryostat to only 0.39 W/slpm (standard
+liters per minute).
+Two redundant and independently serviceable puriﬁca-
+tion loops are operated in parallel, see ﬁgure 8. The com-
+ponents of one loop can be serviced or replaced without
+stopping the xenon puriﬁcation. Each loop consists of a
+gas transfer pump (CHART QDrive; one loop is equipped
+with two pumps to improve operational conditions and sta-
+bility), a mass-ﬂow controller (MKS 1579A) and a high-
+temperature rare-gas puriﬁer (getter, SAES PS4-MT50-R);
+the latter removes oxide, carbide and nitride impurities by
+forming irreducible chemical bonds with the getter material
+(zirconium). The high-capacity magnetic-resonance QDrive
+pumps feature a hermetically sealed pump volume and trans-
+fer the gas by means of externally-driven pistons oscillating
+in a compression space. Since all pistons, motors and valves
+are unlubricated, the QDrive is well-suited for high-purity
+applications. As the re-condensed, puriﬁed LXe ﬂows back
+directly into the TPC, at two opposite locations below the
+cathode electrode (see also ﬁgure 7), a low 222Rn emanation
+of puriﬁcation system is crucial for a low ER background,
+see also section 2.2.
+More than 30 actuated pneumatic valves, shown in ﬁg-
+ures 8 and 9 (green), are controlled by the slow control sys-
+tem (section 2.5). Besides state-changes of individual com-
+ponents, it allows for automated changes between different
+operation modes. For safety reasons, a few manual valves
+were added at selected locations. Various pressure, temper-
+ature and other sensors are used to monitor the key param-
+eters and instruments of the system, which was constructed
+from electropolished components and can be baked to 80-
+120◦C. Oil-free vacuum pumps allow for the evacuation of
+either the whole system or of individual sections, to ease
+servicing.
+The puriﬁcation efﬁciency can be monitored by a Tiger
+Optics HALO + H2O monitor, which measures the water
+concentration in the xenon gas, and can be useful for de-
+tecting possible leaks. The puriﬁcation system is also used
+to inject calibration sources into the detector, which are dis-
+solved in the xenon gas (see section 2.3).
+Xenon Storage In the past, LXe detectors were ﬁlled by liq-
+uefying xenon from the gas phase and emptied by evap-
+orating the liquid target. This technique poses operational
+challenges for experiments at the multi-ton scale. Filling
+Fig. 10 Drawing of the xenon storage facility ReStoX, which can hold
+up to 7.6 t of xenon in liquid or gaseous state. The condenser in the
+center of the 2.1 m diameter sphere provides >3 kW of cooling power.
+XENON1T starting with xenon gas at 15 ◦C would require
+∼2 months using 250 W of cooling power. In addition, a
+fast recovery of the LXe in case of an emergency would be
+impossible.
+The newly developed xenon-storage system
+ReStoX [41] addresses these problems. It consists of a
+vacuum-insulated stainless-steel sphere with 2.1 m diameter
+(4.95 m3 volume), see ﬁgure 10. Its volume and the wall
+thickness of 28 mm allow for storage of up to 7.6 t of
+xenon as a liquid, as a gas and even as a super-critical
+ﬂuid (being capable to withstand pressures up to 73 bar).
+Superinsulation and minimized thermal contact between the
+inner and the outer cryostat spheres reduce the external heat
+load to ∼50 W.
+Cooling is achieved by means of LN 2, provided by an
+external 10 m3 dewar. A total of 16 LN 2 lines are welded
+to the outer surface of the inner vessel to cool down the
+sphere. Sixteen thin stainless-steel ﬁns inside the volume
+additionally increase the heat exchange. In normal opera-
+tion, i.e., while storing xenon in the liquid state, a condenser
+and heater system mounted in the center of the vessel pre-
+cisely controls the pressure and ensures that the entrance
+pipe does not get blocked by frozen xenon. Its cooling power
+of >3 kW is distributed over a total of 4.3 m2 of copper sur-
+face.
+The vessel and its cryogenic valves are all metal sealed
+and electropolished to allow for the storage of pre-puriﬁed
+LXe without sacriﬁcing the target purity. To this end,
+ReStoX is connected to the detector (for ﬁlling and fast re-
+covery) and to the puriﬁcation system via an independent
+heat exchanger (for puriﬁcation of the gas in ReStoX). The
+latter also provides access to the distillation column (for
+10
+Table 2 Summary of the sources contributing to the background of XENON1T in a ﬁducial target of 1.0 t and a NR energy region from 4 to
+50 keV (corresponding to 1 to 12 keV ER equivalent). The expected rates are taken from the Monte Carlo simulation-based study [18] and assume
+no ER rejection. CNNS stands for “coherent neutrino nucleus scattering”.
+Background Source Type Rate Mitigation Approach
+[(t × y)−1]
+222Rn (10 µBq/kg) ER 620 material selected for low Rn-emanation; ER rejection
+solar pp- and 7Be-neutrinos ER 36 ER rejection
+85Kr (0.2 ppt of natKr) ER 31 cryogenic distillation; ER rejection
+2νβ β of 136Xe ER 9 ER rejection
+Material radioactivity ER 30 material selection; ER and multiple scatter rejection; ﬁducialization
+Radiogenic neutrons NR 0.55 material selection; multiple scatter rejection; ﬁducialization
+CNNS (mainly solar 8B-neutrinos) NR 0.6 –
+Muon-induced neutrons NR <0.01 active Cherenkov veto [43]; multiple scatter rejection; ﬁducialization
+85Kr removal, see section 2.2.3). All components of the gas-
+handling system, their relative placement and connections
+are shown in ﬁgure 9. ReStoX is installed on the ground
+ﬂoor, about 7 m below the top of the detector. The pumps
+of the puriﬁcation system are used to transfer the xenon into
+the cryostat in a controlled way, at a speed of up to 50 slpm:
+the LXe is evaporated in the ReStoX heat exchanger, puri-
+ﬁed, re-condensed in the same exchanger and transfered to
+the cryostat. The recovery of xenon into ReStoX via direct
+vacuum-insulated lines is driven by the pressure difference
+in the two systems. In case of emergency or for any recuper-
+ation of Xe gas, the detector pressure can be reduced within
+O(1) minute.
+2.2 Background Sources and Suppression
+The science goals of XENON1T require an unprecendented
+low background level [18]. The main background sources
+are summarized in table 2, divided into electronic (ER) and
+nuclear recoils (NR). The latter are most signiﬁcant for the
+WIMP search, as single-scatter NR signatures from neutrons
+or neutrinos are indistinguishable from WIMP signals.
+Besides background suppression by shielding (see sec-
+tion 2.2.1), material selection (section 2.2.2) and active re-
+moval of radioactive isotopes (section 2.2.3), backgrounds
+are effectively reduced in the data analysis: multiple scat-
+ter signatures are rejected based on the number of S2 peaks,
+ER-like events are identiﬁed based on the event’s S2/S1 ra-
+tio, and external backgrounds, e.g., from radioactive decays
+in the detector construction materials or from muon-induced
+cosmogenic neutrons, are reduced by ﬁducialization, i.e., the
+selection of an inner detector region. However, ﬁducializa-
+tion is not effective for target-intrinsic sources, such as the
+noble gases 222Rn and 85Kr, or the two-neutrino double-beta
+decay (2 νβ β ) of 136Xe ( T1/2 = 2.17 × 1021 y [42] with a
+8.9% abundance in natXe). It is also not effective for solar
+neutrino-induced backgrounds.
+2.2.1 Water Shield and active Muon Veto
+An active water Cherenkov detector [43] surrounds the cryo-
+stat. It identiﬁes both muons, that have a ﬂux of (3.31 ±
+0.03) ×10−8 cm−2s−1 with an average energy of∼270 GeV
+in Hall B of LNGS [44], and muon-induced neutrons by de-
+tecting showers originating from muon interactions outside
+the water shield. The water additionally provides effective
+shielding against γ rays and neutrons from natural radioac-
+tivity present in the experimental hall. The tank has a di-
+ameter of 9.6 m and a height of 10.2 m. The deionized wa-
+ter is provided by a puriﬁcation plant (Osmoplanet DEMRO
+2M 840), delivering up to 2.2 m 3 of water per hour with a
+residual conductivity of 0.07 µS/cm.
+Operated as a Cherenkov muon veto, the water tank is
+instrumented with 84 PMTs of 20.3 cm in diameter (Hama-
+matsu R5912ASSY) with a bialkali photocathode on a
+borosilicate window. The quantum efﬁciency is ∼30% for
+wavelengths between 300 nm and 600 nm, and the mean
+gain is 6 × 106 for a bias voltage of 1500 V . The PMTs op-
+erate with a threshold that allows for the detection of single
+photoelectrons with ∼50% efﬁciency. After optimization in
+a Monte Carlo study [43], the PMTs were deployed in ﬁve
+rings at the circumference of the water shield at different
+heights. The bottom (z = 0 m) and top (z = 10 m) rings con-
+sist of 24 evenly spaced PMTs, while only 12 PMTs are
+each installed in the three rings at z = 2.5 m, z = 5.0 m, and
+z = 7.5 m height. To further enhance the photon detection
+efﬁciency, the inner surface of the water tank was cladded
+with reﬂective foil (3M DF2000MA) featuring a reﬂectivity
+of >99% at wavelengths between 400 nm and 1000 nm [45].
+The wavelength of the ultraviolet Cherenkov photons can be
+shifted towards longer wavelengths in the reﬂection process
+to better match the PMT sensitivity.
+Each PMT can be calibrated by illumination with blue
+LED light through a plastic ﬁber. In addition, the response
+of the full system can be measured by light emitted from
+four diffuser balls mounted on the cryostat support frame.
+11
+2.2.2 Detector Construction Materials
+In order to reduce ER and NR background events, that arise
+from radioactive decays in the detector materials, all mate-
+rials of the TPC, the cryostat and the support structure were
+selected for a low content of radioactive isotopes. Monte
+Carlo simulations were used to deﬁne the acceptable lev-
+els. The radioactivity measurements were performed us-
+ing low-background high-purity germanium spectrometers
+of the XENON collaboration [46–48]. The most sensitive
+spectrometers, located at the LNGS underground laboratory,
+can reach sensitivities down to the µBq/kg level. In addi-
+tion, standard analytical mass spectroscopy methods (ICP-
+MS, GD-MS) were employed at LNGS and at external com-
+panies. The measured radioactivity levels of the PMTs are
+summarized in [33]; that of all other materials and compo-
+nents in [37].
+Most materials in contact with the liquid or gaseous
+xenon during standard operation were additionally selected
+for a low 222Rn emanation rate. This includes most compo-
+nents of the TPC, the inner cryostat and its connection pipes,
+the cryogenic system with its heat exchangers and the pu-
+riﬁcation system. The LXe storage vessel and the cryogenic
+distillation column are irrelevant sources of Rn-emanation
+as they are not continuously connected to the TPC. Thus all
+222Rn originating from these systems will rapidly decay to a
+negligible level. Even though the emanation rate is usually
+related to the 226Ra content of a material, which is obtained
+by γ spectrometry, it must be measured independently since
+in most cases emanation is dominated by surface impurities.
+The measurements were performed according to the proce-
+dure described in [49] using the 222Rn emanation facility at
+MPIK Heidelberg [50] and a similar one at LNGS. The re-
+sults are summarized in [51].
+To remove radioactive isotopes from surfaces, all TPC
+components were cleaned after production according to the
+following procedures: after degreasing, all copper pieces
+were pickled in a solution of 1% H 2SO4 and 3% H 2O2
+and passivated in a 1% citric acid (C 6H8O7) solution. Af-
+terwards the pieces were rinsed with de-ionized water and
+ethanol. The large stainless-steel pieces (diving bell, TPC
+electrode frames) were electropolished and cleaned with
+acetone, de-ionized water and ethanol. All small stainless-
+steel components (screws, rods, etc.) were degreased, pick-
+led in a solution of both 20% HNO3 and 2% HF, and ﬁnally
+passivated in a 15% HNO3 solution before rinsing with de-
+ionized water and ethanol. The degreased PTFE components
+were immersed in a 5% HNO 3 solution and rinsed with de-
+ionized water and ethanol. Care was taken to not touch the
+reﬂecting TPC surfaces during cleaning, and all PTFE parts
+were stored under vacuum after the cleaning procedure. In
+cases of size limitations, the HNO3-step was omitted and the
+sample was instead immersed in ethanol for a few hours.
+The TPC was assembled above ground at LNGS, inside
+a custom-designed ISO 5 class cleanroom with a measured
+particle concentration just above the ISO 4 speciﬁcation, us-
+ing a movable installation and transport frame. The double-
+bagged TPC (aluminized mylar), ﬁxed to the transportation
+frame, was moved to the underground laboratory by truck
+and attached to the top ﬂange of the inner cryostat. A mobile
+class ISO 6 softwall cleanroom (4.5 × 4.5 m2) was erected
+around the cryostat for this purpose.
+2.2.3 Krypton Removal by Cryogenic Distillation
+Natural krypton, which contains the β-decaying isotope
+85Kr (T1/2 = 10.76 y) at the 2 × 10−11 level, is removed by
+cryogenic distillation, exploiting the 10.8 times larger vapor
+pressure of Kr compared to Xe at −96◦C. In a cryogenic
+distillation column, the more volatile Kr will hence be col-
+lected at the top while Kr-depleted Xe will be collected at
+the bottom. Given a natKr/Xe concentration of <0.02 ppm in
+commercial high-purity Xe gas, a Kr reduction factor around
+105 is required to reach the design goal ofnatKr/Xe<0.2 ppt.
+To achieve this goal, a distillation column using 2.8 m of
+structured stainless-steel package material (Sulzer, type EX)
+was built following ultra-high vacuum standards. The total
+height of the XENON1T distillation system is 5.5 m (see
+ﬁgure 11). The system is described in [52] and can be op-
+erated stably at Xe gas ﬂows up to 18 slpm, corresponding
+to 6.5 kg/h.
+The Kr particle ﬂux inside the column and the separa-
+tion efﬁciency can be monitored using the short-lived iso-
+tope 83mKr as a tracer [53, 54]. After installation at LNGS,
+a separation factor of (6.4+1.9
+−1.4) × 105 was measured [52,
+55], reaching a concentration natKr/Xe < 0.026 ppt and
+Package tube
+Input condenser
+Reboiler
+Top condenser
+Heat exchanger
+Gas inlet
+Gas outlet
+(low Kr)
+Off-gas
+(high Kr)
+5.5m
+Fig. 11 The custom-designed XENON1T cryogenic distillation col-
+umn. The outer vessels for vacuum insulation and most of the column
+package material were omitted for clarity.
+12
+demonstrating that the system fulﬁlls the requirements for
+XENON1T and for the future XENONnT. Such low con-
+centrations are measured with a gas chromatography system
+coupled to a mass spectrometer (rare gas mass spectrome-
+ter, RGMS [56]). The possibility for online removal of Rn
+was demonstrated ﬁrst in a single stage setup [57] and by
+installing a shortened (1 m package material) version of the
+ﬁnal cryogenic distillation column in reverse and lossless
+mode on XENON100. A radon reduction factor of >27 (at
+95% CL) was achieved [58].
+For the most efﬁcient puriﬁcation, the entire gas in-
+ventory would have to be transferred from ReStoX (sec-
+tion 2.1.5), via the distillation column, into the evacuated
+cryostat. This procedure would last for ∼3 weeks, for a total
+Xe amount of 3.2 t. However, to allow for data acquisition
+with a fully operational dual-phase TPC while at the same
+time reducing the Kr concentration, the XENON1T col-
+laboration has successfully established the online removal
+of Kr. To this end, 7% of the puriﬁcation gas ﬂow was
+routed through the distillation column and the Kr-enriched
+gas (0.07% of the total ﬂow) was removed from the sys-
+tem. After continuously operating in this mode for 70 days,
+with an initial measured natKr/Xe concentration of 60 ppb,
+a ﬁnal concentration of (0 .36 ± 0.06) ppt was measured by
+RGMS. This concentration is the lowest ever achieved in
+a LXe dark matter experiment. Being only a factor of ∼2
+above the XENON1T design goal, the concentration was
+sufﬁcient for a ﬁrst science run [20].
+2.3 TPC Calibration System
+The PMT gains are calibrated by stimulating the emission
+of single photoelectrons from the photocathode by means
+of low-level light pulses from a blue LED. A total of four
+LEDs, installed in the counting room for easy accessibil-
+ity, are simultaneously controlled by a 4-channel BNC-505
+pulse generator. The light is guided into the cryostat via four
+optical ﬁbers using SMA-SMA optical feedthroughs. Stan-
+dard plastic ﬁbers (980 µm diameter core, light-tight jacket)
+are used externally. Bakeable synthetic silica ﬁbers (600µm
+core, −190◦C to +350◦C) transfer the light to the cryostat.
+To reach uniform illumination of all PMTs and to minimize
+the calibration time, each of the silica ﬁbers is split into
+six thin plastic ﬁbers (250 µm core) that feed the light into
+the TPC at various angular positions and heights around the
+ﬁeld cage. A periodic external signal triggers the pulser and
+the TPC DAQ system; the LED calibration procedure is the
+only measurement which is not self-triggered (see also sec-
+tion 2.4).
+Neutrons with energies around 2.2 MeV and 2.7 MeV
+from a Deuterium-Deuterium (DD) fusion neutron genera-
+tor (NSD Gradel Fusion NSD-35-DD-C-W-S) are used to
+Fig. 12 The deployment system for external calibration sources. Two
+belts (“I-belts”, blue) allow for vertical movement of sources in-
+side their W-collimators, while one belt (“U-belt”, red) reaches areas
+around the detector bottom. The DD-fusion neutron generator (green)
+can be vertically displaced along the cryostat.
+calibrate the detector’s NR response. By setting the genera-
+tor voltage and current, the neutron ﬂux can be tuned to the
+desired value. The generator was modiﬁed to achieve very
+low emission rates, around 10 n/s in 4 π under stable con-
+ditions, as required for reducing the rate of pile-up events.
+The generator is stored outside of the water shield and can
+be displaced into it at three positions around the cryostat, to
+achieve a uniform illumination of the target. Details of the
+neutron generator system are given in [59].
+γ sources (228Th, 137Cs) and a 241AmBe source to cali-
+brate the ER and NR response, respectively, are installed in
+W-collimators; they can be deployed by means of belts from
+the top of the water shield to the cryostat. Two belts (“I-
+belt”, blue in ﬁgures 6 and 12) allow for moving the source
+vertically at two angular positions. Another belt (“U-belt”,
+red) crosses below the cryostat at ∼20 cm distance from the
+central point. The collimators, which are stored above the
+water level when dark matter data are acquired, constrain the
+particles to a cone with 40 ◦-wide opening. This illuminates
+a central ∼1 t ﬁducial volume when located at half height of
+the TPC. Residual 60Co activity in the steel of the cryostat
+ﬂanges can also be used to assess the detector response to
+O(1) MeV γ rays.
+Due to the excellent self-shielding efﬁciency of LXe, the
+central target can only be calibrated with low-energy single-
+scatter ERs from dissolved sources. XENON1T uses 83mKr
+(T1/2 = 1.8 h), the short-lived daughter of 83Rb, which de-
+livers mono-energetic conversion electron lines at 32.1 keV
+and 9.4 keV [60, 61]. The 83Rb source is installed in the pu-
+riﬁcation system to release the 83mKr into the TPC when
+required. While the noble gas Kr mixes very well with Xe,
+it was shown that no long-lived 83Rb is emitted [62]. Tri-
+13
+  
+          MongoDB
+            TPC
+PMT0
+PMT1
+PMT246
+PMT247 
+ 
+MV_PMT0
+MV_PMT1
+ 
+MV_PMT82 
+MV_PMT83
+x10
+x10
+x10
+x10
+Clock
+GPS   50 MHz
+EventBuilder
+Trigger FileBuilder
+MV_FileBuilder
+processing
+V1495
+Logic
+MV_Reader
+Sum
+bottom
+array
+Sum
+top
+ring
+DDC-10
+Veto
+Reader 1
+Reader 2
+Reader 3
+Reader 4
+Reader 5
+AcqMonitor
+Reader 0
+MV TrgMV Trg
+MV Trg
+Busy
+V1724
+ADC
+       
+V1724
+ADC
+Veto       
+V1724
+ADC
+Veto       
+V1724
+ADC
+Trg    Maj
+V1724
+ADC
+Trg    Maj
+          MongoDB
+            TPC
+MV
+data 
+storage
+...
+...
+... ...
+...
+yes   
+no  
+TPC
+Muon Veto
+Fig. 13 Illustration of the XENON1T DAQ system for the TPC and the muon veto. The two detectors are time-synchronized. The acquisition
+monitor consists of one high-data bandwidth ADC which records the sum of all bottom array PMTs and selected digital information, even when
+the other ADCs are busy or vetoed.
+tiated methane (CH 3T), which delivers the tritium β spec-
+trum with the endpoint of 18.6 keV and was pioneered by
+LUX [63], can also be injected into the XENON1T gas sys-
+tem. Due to its long half-life of 12.3 y, it has to be removed
+from the LXe by the hot Zr-getters of the puriﬁcation sys-
+tem [64]. The last intrinsic source is the noble gas isotope
+220Rn (T1/2 = 56 s) which is efﬁciently emanated by an elec-
+trodeposited 228Th source ( T1/2 = 1.9 y). The 220Rn decay
+chain produces α, β and γ particles that are all useful for de-
+tector calibration [65], as demonstrated in XENON100 [66].
+The β decay of 212Pb (12.3% branching ratio to the ground
+state, Q = 570 keV) delivers single-scatter ERs in the dark
+matter region of interest. Due to the rather short half-life
+T1/2 = 10.6 h of 212Pb, which dominates the chain, the ac-
+tivity is reduced by a factor 6 × 104 within one week.
+2.4 Data Acquisition, Electronics and Computing
+The XENON1T TPC and the muon veto share a common
+data aquisition (DAQ) system; it can operate the two sub-
+detectors either simultaneously, during acquisition of dark
+matter search data, or separately for calibration. The over-
+all DAQ scheme is illustrated in ﬁgure 13. The PMT sig-
+nals from the TPC and the muon veto are digitized by
+100 MHz CAEN V1724 ﬂash ADC boards with 14 bit res-
+olution, 40 MHz bandwidth and a 2.25 V or 0.5 V dynamic
+range, respectively. The TPC channels are ﬁrst ampliﬁed by
+a factor of 10 using Phillips Scientiﬁc 776 ampliﬁers (band-
+width: DC to 275 MHz). All ADCs share a common external
+clock signal to ensure that the two detectors and all digitizers
+are properly synchronized and share identical time stamps.
+The time signal can be optionally provided by a custom-
+developed module to obtain absolute GPS timing, relevant
+for the detection of supernova neutrinos [67]. The module
+also provides a 0.1 Hz synchronization signal. The DAQ is
+controlled via a web interface that also allows monitoring of
+the incoming data quality. Both DAQ systems are installed
+in the temperature stabilized XENON counting room and
+differ mainly in their trigger mode.
+The TPC DAQ is trigger-less in the sense that every
+pulse above a ∼0.3 photoelectron (PE) digitization thresh-
+old, from every PMT, is read asynchronously and indepen-
+dently from all other channels. The baseline in-between such
+pulses is not digitized (zero suppression). To this end, a
+novel digitizer ﬁrmware was developed in cooperation with
+CAEN. Six computers (“readers”) are used for the paral-
+lel read-out of the 32 ADC boards, at a maximum rate of
+300 MB/s, corresponding to an event rate of∼100 Hz in cal-
+ibration mode. The time-stamped digitized pulses are stored
+in a MongoDB noSQL database, along with some basic
+quantities of each pulse (time, channel). The sum signal of
+all bottom PMTs, generated by adding the individual signals
+by means of linear fan-in/fan-out modules, is continuously
+read by another computer (“acquisition monitor”) together
+14
+with additional veto/busy information. The latter is used to
+precisely determine the measurement deadtime.
+To reduce the input data rate during TPC calibration, a
+veto module based on a Skutek DDC-10 was developed. De-
+pending on the size of the bottom array sum-signal or the
+relative amount of signal in the outer detector region, it is-
+sues a real-time veto signal which blocks the entire PMT
+data stream from being digitized. The digitizer ﬁrmware de-
+lays the incoming data for the required amount of time.
+The trigger decision whether a particle interaction has
+occurred in the TPC is made in real-time by a software
+eventbuilder running on three server-grade machines (Fu-
+jitsu). It scans the MongoDB database for relevant signals,
+groups the data into causally connected events and stores
+them in a ﬁle. While a variety of trigger algorithms may
+be adapted to speciﬁc use cases, the standard dark matter
+and calibration S2 trigger is based on the time-clustering of
+pulses in individual PMT channels. A >99% trigger efﬁ-
+ciency is achieved at 200 PE (≈7 e−). Meta-data on the trig-
+ger decision is stored with the raw data. It is available for
+online monitoring of the eventbuilder performance and of-
+ﬂine analysis.
+The muon veto employs a classical coincidence trig-
+ger, managed by a custom-programmed CAEN V1495 VME
+unit, which requires at least Npmt PMT signals in coinci-
+dence within a certain time window. The logic trigger signal
+is also sent to a channel of TPC acquisition monitor. For ev-
+ery muon veto PMT, the digitized waveform has a length of
+5.12 µs around the trigger signal. The data are written to the
+central MongoDB database and stored in ﬁles in the same
+way as the TPC data.
+Raw data from the DAQ system are temporarily
+moved to a buffer-storage at LNGS by an underground-
+to-aboveground connection using two 10 Gbps ﬁbers. Sub-
+sequently, the data are automatically transferred [68] to
+dedicated storage points on the U.S. Open Science Grid
+(OSG) [69] and the European Grid Infrastructure (EGI) [70].
+The data are backed up in Stockholm. Data processing fol-
+lows a similar philosophy and leverages the CI Connect ser-
+vice [71]. It allows for a unique submission portal while
+granting access to shared resources on OSG and EGI (using
+HTCondor [72] and glideinWMS services [73]) as well as
+dedicated allocations on local clusters at the member institu-
+tions. The data processor (see section 3.2) derives high-level
+quantities from the digitized waveforms which are stored
+in ﬁles accessible through a JupyterHub infrastructure [74].
+The data quality is constantly monitored by the DAQ system
+(noise, baselines, trigger, etc.). Certain high-level quantities
+such as electron lifetime or light yield are computed ofﬂine
+and monitored as well.
+2.5 Slow Control System
+The various XENON1T subsystems and their instruments
+are operated, controlled and their status are monitored and
+recorded by a slow control system which is based on
+industry-standard process control hardware and software
+from General Electric (GE): Programmable Automation
+Controllers (PACs) for hardware and Cimplicity SCADA
+(Supervisory Control And Data Acquisition) for software.
+Alarm conditions (e.g., parameter out of range, equipment
+failure, connection loss, etc.) are notiﬁed by email, cellu-
+lar phone SMS [75] and pre-recorded voice messages via a
+landline. The values of nearly 2500 parameters are stored
+in a GE Proﬁcy Historian database, which ofﬂine analysis
+programs may query via a custom-developed Web API. The
+alarm notiﬁcation, slow control viewer and ofﬂine analysis
+tool were custom-developed to complement the GE func-
+tionality.
+The sensors and actuators of the cryogenics, LXe puri-
+cation, LXe storage, Kr distillation, and water puriﬁcation
+systems are controlled via individual PACs (GE RX3i fam-
+ily) that are connected to a private front-end network. Ex-
+ceptions at PAC level are communicated to the alarm sys-
+tem using the GE Alarm&Event Express tool. Local op-
+eration by means of touch screens is also possible should
+the SCADA system be unavailable. The high-voltage sup-
+plies, the DAQ system and the motor controllers of the cal-
+ibration system are integrated into the slow control system
+via industry standard Open Platform Communication (OPC)
+servers, the Modbus protocol or web services. Potentially
+unsafe operations are additionally “guarded” by requiring
+speciﬁc conditions to be met before the operation can be ex-
+ecuted.
+Two redundant SCADA servers in active-passive fail-
+over mode connect to the PACs and OPC servers on the pri-
+vate front-end network. All supervisory and data storage ele-
+ments, such as the Historian database, the alarm system, the
+slow control viewer as well as the central XENON1T control
+room in an aboveground building are connected to the pri-
+vate back-end network. Two dedicated, redundant ﬁber links
+connect the experiment underground with the aboveground
+laboratory. In case of failure of the laboratory network, the
+slow control system is directly connected to a backup net-
+work at a point outside of LNGS. For safety reasons, the
+entire slow control system is powered by a dedicated unin-
+terruptable power supply with extended on-battery runtime
+and generator backup. The system is protected by a ﬁrewall
+and only authorized users have the possibility to perform op-
+erations beyond data access, according to their pre-deﬁned
+role. More details on the system are presented in [76].
+15
+3 Detector Commissioning Results
+This section reports on the performance of the XENON1T
+detector during commissioning in summer 2016. It focuses
+especially on science run 0, which is comprised of 34.2 live
+days of data acquired between November 2016 and Jan-
+uary 2017. The detector was operated under stable condi-
+tions over that period (see ﬁgure 14). The result of this
+run led to the most stringent exclusion of spin-independent
+WIMP-nucleon scattering interactions for WIMP masses
+mχ > 10 GeV/c2, with a minimum of 7 .7 × 10−47 cm2 for
+mχ = 35 GeV/c2 (90% CL) [20].
+Date
+Nov 20 Dec 10 Dec 31 Jan 20
+Pressure [bar]
+1.920
+1.925
+1.930
+1.935
+1.940
+1.945
+1.950
+0.3%±
+Date
+Nov 20 Dec 10 Dec 31 Jan 20
+Temperature [°C]
+-96.5
+-96.4
+-96.3
+-96.2
+-96.1
+0.1%±
+Fig. 14 Xenon gas pressure (top) and liquid xenon temperature at the
+TPC’s half-height (bottom) measured by the XENON1T slow con-
+trol system over a period of two months, during science run 0. The
+dip in temperature and pressure around December 19 is from a well-
+understood change in operating conﬁguration, starting a Rn distillation
+campaign.
+With a rate of (70 ± 9) (t×y×keV)−1 in the low-energy
+region of interest for WIMP searches and inside a 1.0 t ﬁdu-
+cial target, the ER background achieved in science run 0
+is the lowest ever reached in a dark matter experiment. It
+agrees with the prediction of (84 ± 7) (t×y×keV)−1, where
+the Monte Carlo result [18] was updated for the measured
+Kr-concentration. This demonstrates that the XENON1T
+goal for the dominant background source, namely a 222Rn
+concentration around 10 µBq/kg (see table 2), was also
+reached. Due to the short exposure, NR backgrounds were
+irrelevant for science run 0.
+3.1 Muon Veto Performance
+The water shield of XENON1T was ﬁrst ﬁlled in mid July
+2016. The gains of the 84 PMTs in the water were equal-
+ized to 6 .2 × 106. For science run 0, the muon veto trigger
+was slightly modiﬁed compared to the conﬁguration pre-
+sented in [43]: the coincidence condition was increased from
+a PMT number of Npmt = 4 to Npmt = 8 above a thresh-
+old of 1 PE in a 300 ns window. This increase has little im-
+pact on the muon tagging efﬁciency as the trigger rate of
+R = 0.04 Hz is constant above Npmt = 11, indicating that
+nearly all crossing muons are detected. The measured rate
+corresponds to 144 muons/h and agrees with the expecta-
+tions. The trigger rate at Npmt = 8 is 0.35 Hz, signiﬁcantly
+smaller than the ∼80 Hz when triggering with Npmt = 4,
+which reduces the total amount of data considerably. The
+rate increase toward lower coincidence levels is due toγ rays
+from natural radioactivity, dominated by the primordial iso-
+topes 238U, 232Th and 40K in the rock, concrete and struc-
+tures of the Hall B of LNGS. The observed γ ray ﬂux is in
+agreement with direct measurements performed at the same
+location [77].
+The muon detection efﬁciency under these trigger con-
+ditions was obtained by means of a Monte Carlo simulation,
+taking into account all relevant signal creation and detection
+aspects. The muon veto is able to tag 99.5% of the muons
+passing through the shield. Using the emission characteris-
+tics of Cherenkov light, the distribution of the signal arrival
+times on the 84 PMTs can be used to reconstruct the muon
+track through the water (see ﬁgure 15). The same simulation
+was also used to assess the efﬁciency to tag muon-induced
+neutrons from a shower generated by a muon interaction
+outside of the water shield, which is 43%. It is planned to
+Fig. 15 The arrival time information of light in the PMTs of the muon
+veto detector (color coded points) allows the approximate reconstruc-
+tion of the muon track (black line) though the water shield. This exam-
+ple shows an event where the muon traversed the shield close but next
+to the TPC.
+16
+s]µTime [
+400 500 600 700 800 900 1000 1100 1200 1300
+Amplitude [PE/bin]
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0 S1: 4.3 PE
+S2: 250 PE
+s]µTime [
+473.0 473.2 473.4 473.6 473.8 474.0
+Amplitude [PE/bin]
+-0.2
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+1.2
+S1: 4.3 PE
+S2: 250 PE
+s]µTime [
+998 1000 1002 1004 1006 1008
+Amplitude [PE/bin]
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0S1: 4.3 PE
+S2: 250 PE
+Fig. 16 Low-energy single-scatter NR event recorded by XENON1T during a 241AmBe calibration run. All panels show the sum of all TPC PMT
+waveforms. An S1 signal of 4.3 PE (blue marker) is followed by an S2 signal of 250 PE (red), where the quoted numbers do not yet take into
+account corrections. The drift time of 529.7 µs corresponds to a depth of Z = −75.9 cm. The lower panels focus on the main S1 and S2 peak,
+respectively. The smaller signals on the event trace are uncorrelated pulses from PMT dark counts, which are only seen by single PMT channels.
+ X [cm]
+-40 -20 0 20 40
+ Y [cm]
+-40
+-20
+0
+20
+40
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+220 1 2 3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18192021
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36 37 38 39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51525354
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66 67 68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+787980
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90 91 92
+93
+94
+95
+96
+97
+98
+99100101
+102
+103
+104
+105
+106
+107
+108 109
+110
+111
+112
+113
+114115
+116
+117
+118
+119
+120 121
+122
+123124
+125 126
+S2 top
+Event 2963 from 161021_1814
+ X [cm]
+-40 -20 0 20 40
+ Y [cm]
+-40
+-20
+0
+20
+40
+0
+0.2
+0.4
+0.6
+0.8
+1
+1.2
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+S1 bottom
+Event 2963 from 161021_1814
+Fig. 17 Distribution of the S2 signal on the top (left) and the S1 signal on the bottom PMT array (right) of the event shown in ﬁgure 16. The color
+scales are given in uncorrected PE. The S2 signal is very localized and allows for the reconstruction of the lateral (XY ) event position (star-shaped
+marker). This low-energy single-scatter NR event is located well inside in a ﬁducial volume containing 1 t of LXe.
+17
+reduce the trigger to a coincidence level of Npmt = 5 in the
+future to achieve the design efﬁciency of tagging >70% of
+the neutrons from a muon-induced shower [43].
+The distribution of time differences between TPC events
+and their closest muon veto trigger during science run 0
+shows the presence of tight time coincidences ( <1 µs)
+which appear on top of accidental background. This popu-
+lation originates from simultaneous events in the two detec-
+tors and can be vetoed with a simple time coincidence cut.
+Since the muon veto trigger rate is small, the rate of acciden-
+tal coincidences between the two systems ( RMV = 0.35 Hz,
+RTPC ∼ 5 Hz) is small during a dark matter run. This leads to
+a negligible loss of live time even if only the muon veto trig-
+ger information is used to reject TPC events, without further
+analysis of the digitized muon veto PMT data. In science
+run 0, no low-energy event in the TPC was rejected because
+of a muon veto coincidence [20].
+3.2 Event Reconstruction
+An example of raw TPC event data (“waveform”) from the
+DAQ system (see section 2.4) is shown in ﬁgures 16 and 17
+for a low-energy single-scatter NR. Physical quantities such
+as signal area and position are reconstructed from the raw
+data by the custom-developed PAX data processor. PAX op-
+erates in ﬁve stages: (1) identify “hits” due to digitized pho-
+ton signals in each PMT channel individually, (2) group hits
+into clusters, (3) compute properties for the clusters, (4)
+classify them as S1 or S2 candidates, and ﬁnally (5) com-
+pute physical quantities of interest for possible S1-S2 pairs.
+These stages are explained brieﬂy below.
+First, the processor ﬁnds hits in individual channels. For
+each ADC waveform segment (“pulse”, see section 2.4), it
+computes the local baseline and noise level using samples
+before the self-triggering peak. Next, it searches the pulse
+for hits, deﬁned as intervals above a threshold equal to or
+(for high-noise channels) higher than the digitization thresh-
+old, extended left by 30 ns and right by 200 ns to capture the
+entire photoelectron signal area.
+Second, temporally nearby hits from all channels are
+clustered. The hits are initially split into groups separated
+by 2 µs or more. Next, these groups are split at local min-
+ima in the gain-corrected sum waveform using information
+from all identiﬁed hits, with signiﬁcantly higher maxima on
+either side. Finally, we run a recursive algorithm minimizing
+the intra-cluster variance, up to a level calibrated on simu-
+lated waveforms.
+Third, the PAX processor calculates properties for each
+hit cluster, such as total area, amplitude (in the gain-
+corrected sum waveform) and various measures of pulse
+width. The lateral XY -position of the cluster is computed
+by a likelihood maximizer that works with hitpatterns gener-
+ated by optical Monte Carlo simulations. The reconstruction
+algorithm uses the results from simpler methods (maximum
+PMT, area-weighted mean, etc.) as an initial seed. It was
+shown in Monte-Carlo studies to have a radial resolution of
+∆R < 2 cm. In addition the algorithm produces conﬁdence
+contours on the reconstructed position.
+Fourth, hit clusters are classiﬁed as S1, S2 or “unknown”
+peaks. A cluster is identiﬁed as an S1 if the rise-time of the
+signal is between 70 ns and 100 ns, and at least 3 PMTs con-
+tribute within 50 ns. Slower rising clusters are classiﬁed as
+S2 signals if they are observed by at least 4 separate PMTs.
+Finally, the processor considers every possible pairing
+of the largest S1 and S2 candidates. For each pair, the 3-
+dimensional position of the original interaction is recon-
+structed using the XY -position of the S2 signal and the Z-
+position from the time between the maxima of the S1 and
+S2 peaks (“drift time”). The electron drift velocity is directly
+measured from the drift time distribution in the detector and
+the known TPC length. Using the position information, the
+signals are now corrected for spatial effects: primarily, light
+collection efﬁciency for S1 and electron loss on impurities
+for S2 (see section 3.4).
+The muon veto raw data are time-synchronized to the
+TPC. They are searched for pulses from particle interac-
+tions using the same program package, however, in a slightly
+modiﬁed form since only prompt Cherenkov light pulses are
+expected to be detected.
+3.3 Photomultiplier Performance
+The continuous long-term operation of the R11410-21
+PMTs in XENON1T started in April 2016, when they were
+cooled-down in the TPC at a rate of 6 mK/min. The PMTs
+have remained cold and immersed in LXe for more than
+16 months and the majority of tubes showed a stable perfor-
+mance. Instead of aiming for the most uniform gain distribu-
+tion, the individual bias voltages were chosen to maximize
+the PMT’s individual single photoelectron (SPE) accep-
+tance. For every PMT the highest stable operation voltage
+was selected, without exceeding a maximum of −1550 V
+and a maximum gain of 5 × 106, to minimize light emission
+and elevated dark count rates. This optimizes the detector
+response to low signals and improves the S1 threshold. In-
+dividual gain variations are corrected by the data processor
+(see section 3.2).
+The SPE acceptance is deﬁned as the fraction of the SPE
+peak above the hardware ADC digitization threshold (see
+section 2.4), which is set to 15 ADC units ( =2.06 mV) for
+channels with the lowest electronic noise. At the start of sci-
+ence run 0 the SPE acceptance was around 89% increasing
+to 93% after optimization of the thresholds.
+The PMT gains are regularly measured by stimulating
+the emission of SPEs by blue LED light. A new model-
+18
+independent approach is employed [78] which allows ex-
+tracting PMT parameters such as gain and occupancy with-
+out making assumptions on the underlying SPE distribu-
+tion. The average gain is 2 .6 × 107 when the additional
+×10 ampliﬁcation stage is taken into account. The gains
+are distributed between (2.0-5.0) × 107; the distribution has
+a rather wide standard deviation of 1.5 ×107. All gains were
+stable in time within 2%, reﬂecting the uncertainty of the
+calibration method.
+After installation in XENON1T, the PMT’s average dark
+count rate decreased from ∼40 Hz measured during the
+characterization campaign in gaseous N2 at −100◦C [30] to
+∼12 Hz and ∼24 Hz for the top and bottom PMT arrays, re-
+spectively. The difference between the arrays is explained
+by the contribution of a larger fraction of LXe scintillation
+events to the dark count rate, which cannot be distinguished
+from “real” PMT dark counts. The overall reduction, likely
+thanks to the lower environmental radioactivity, is impor-
+tant to minimize the probability of accidental coincidences
+of uncorrelated dark count pulses, mimicking a low-energy
+S1 signal.
+Even though PMTs indicating a loss of vacuum by the
+presence of lines from xenon ions (Xe +, Xe++) in their af-
+terpulse spectra [30, 31] were not installed in the XENON1T
+PMT arrays, some tubes have developed new leaks during
+the operation in the cryogenic environment. The afterpulse
+spectra are thus investigated regularly to identify such tubes
+and to monitor the leak’s evolution with time. The PMTs re-
+main fully operational if the loss of vacuum is not too large.
+28 PMTs showed a Xe-induced afterpulse rate of rXe > 1%.
+Reducing their bias voltage helps to improve their perfor-
+mance, however, once their afterpulse rate becomes too large
+they have to be turned off. The PMTs with rXe ≲ 1% were
+operated normally without a negative impact on the data
+analysis. Tubes with an identiﬁed leak showed a slight in-
+crease of the afterpulse rate of ∆rXe < 0.1%/month.
+During science run 0, a total of 27 R11410 PMTs (11 on
+the top and 16 on the bottom array) were switched off, corre-
+sponding to a loss of 11% of the channels. While the issues
+with 6 of the tubes are related to cabling and bad connec-
+tions, the majority of the non-operational PMTs shows leak-
+related problems. The observed symptoms are PMT trips at
+rather low bias voltages, a high signal rate at the SPE level
+and a “ﬂashing behavior”. The latter is characterized by a
+sudden increase of the PMT’s trigger rate which lasts for a
+few minutes. The affected PMTs showed a high afterpulse
+rate, a clear indication for a leak, and seem to emit light dur-
+ing these periods as the rate of neighboring channels and
+of channels in the opposing array also increased. In many
+cases, these ﬂashes appear to be triggered by high-energy
+depositions (e.g., from muons). Thanks to the large number
+of PMTs installed inside the XENON1T TPC, the impact of
+the missing channels on ﬁducialization is minor.
+3.4 Target Puriﬁcation
+The loss of ionization electrons is caused by their attach-
+ment to electronegative impurities in the LXe target (H 2O,
+O2, etc.) and it is described by the ﬁnite electron lifetime τe,
+which thus serves as a measurement of the target purity. An
+initial charge signal of size S20 is exponentially reduced de-
+pending on the drift time t between the interaction point and
+the liquid-gas interface:
+S2(t) = S20 exp(−t/τe). (1)
+This drift-time dependent effect is the most important charge
+signal correction and is applied to every event. To compen-
+sate for outgassing from materials and to maximize τe, the
+LXe target is constantly puriﬁed (see Sect. 2.1.5). The elec-
+tron lifetime τe is regularly measured by characterizing the
+signal loss of mono-energetic charge signals (e.g., full ab-
+sorption peaks) across the TPC. Figure 18 shows such a
+measurement using the mono-energetic conversion electron
+line at 32.1 keV from metastable 83mKr, which is very well
+described by an exponential function.
+Figure 19 shows the electron lifetime evolution over
+a period of approximately two months, during science
+s]µDrift Time [
+100 200 300 400 500 600
+S2 [PE]
+5000
+10000
+15000
+20000
+0
+100
+200
+300
+400
+500
+600
+700
+Fig. 18 The loss of electrons due to the presence of electronegative im-
+purities in the LXe is measured via the drift time-dependent decrease
+of the charge signal size, e.g., from the mono-energetic 32.1 keV line
+from 83mKr. The example shown here corresponds to an electron life-
+time τe = (467 ± 5) µs, derived from the exponential ﬁt (red line).
+Date
+Nov 16 Dec 09 Jan 01 Jan 23
+s]µ Electron Lifetime [
+350
+400
+450
+500
+550
+Fig. 19 Evolution of the electron lifetime over science run 0, which
+is indicated by the vertical lines. The two step-like decreases are well-
+understood and related to detector operation (e.g., online 222Rn distil-
+lation which started on December 19). The model (red line) describes
+the data well.
+19
+run 0 data acquisition. It was measured using mono-
+energetic α peaks from the 222Rn decay chain observed in
+background data. During science run 0, τe varied between
+350 µs and 500 µs, with an average of 452 µs. The purity
+was limited by detector outgassing and a puriﬁcation ﬂow of
+50 slpm ( ≈ 425 kg/d), above which the QDrive gas pumps
+could not operate reliably given the ﬂow impedance in the
+circuit.
+A few sudden decreases of the electron lifetime are visi-
+ble in ﬁgure 19. They are all related to the detector operation
+conditions and can be modeled as shown by the ﬁt. The de-
+crease after December 19, 2016, for example, was caused
+by starting the online removal of radon from the Xe target,
+which required re-routing part of the puriﬁcation gas ﬂow
+(see also ﬁgure 14).
+In principle, also the primary scintillation signal S1
+could be affected by the LXe purity via light absorption on
+impurities (mainly H 2O). However, even in the very ﬁrst
+measurements during detector commissioning, the attenu-
+ation length of the scintillation light of >10 m was much
+larger than the detector dimensions.
+3.5 Light and Charge Measurements in the TPC
+A drift ﬁeld of 0.125 kV/cm in the TPC was established by
+biasing the cathode with −12 kV and keeping the gate elec-
+trode at ground potential. The maximal drift time at this
+ﬁeld is 673 µs for events occurring at the cathode. With
+the known TPC length, a drift velocity of 1.44 mm/ µs was
+calculated. The anode was biased with +4.0 kV , leading to
+an 8.1 kV/cm extraction ﬁeld across the liquid-gas interface,
+which was placed right between gate and anode electrodes,
+2.5 mm above the gate. The top and bottom screening elec-
+trodes were biased with −1.55 kV to realize a ﬁeld-free re-
+gion in front of the PMT photocathodes.
+Due to the lower drift ﬁeld compared to the initial de-
+sign, boundary effects to the ﬁeld become relatively more
+important, especially close to the TPC walls and close to the
+cathode. The ﬁeld lines at large radii are no longer straight
+but bend toward smaller radii (see ﬁgure 3). This leads to an
+inward-bias of the reconstructed event positions but ensures
+that no charge signal is lost. An ( R,Z)-dependent ﬁeld cor-
+rection map was constructed using an axisymmetric 3D ﬁ-
+nite element simulation of the realized geometry. The map
+was veriﬁed by means of calibration data (83mKr, 220Rn) and
+using α events which clearly deﬁne the PTFE TPC walls. In
+a central, cylindrical ﬁducial volume of 1 t, the radial dif-
+ference between reconstructed and real interaction positions
+was determined to be below 10 mm for most of the volume,
+but it can increase to ∼50 mm for high radii and depths.
+The TPC was calibrated by means of various internal and
+external sources to measure its response to light and charge
+signals. In science run 0, a 241AmBe source was used to cal-
+ibrate the NR response; the neutron generator was success-
+fully employed in science run 1.
+Light Signal The light collection efﬁciency in the active
+TPC volume is not uniform but affected by factors such as
+the solid-angle coverage of the PMTs and the average num-
+ber of reﬂections before a photon hits a photocathode. In or-
+der to correct for this effect, the mono-energetic light signal
+induced by 32.1 keV conversion electrons from 83mKr was
+measured in discrete (R,Z)-regions, see ﬁgure 20. The mean
+of the individual distributions was used to construct a cor-
+rection map relative to the mean light yield in the TPC (ﬁg-
+ure 21). The light collection efﬁciency varies by a factor ∼2
+across the TPC, with the maximum being in the TPC center,
+S1 [PE]
+100 150 200 250 300 350 400 450
+Events
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+Fig. 20 Primary scintillation light (S1) from 83mKr 32.1 keV con-
+version electron events in detector regions close to the central axis
+(R = 8 . . .16 cm) but at different heights: just below the gate (red), in
+the TPC center (blue) and above the cathode (green). These spectra
+were used to construct the correction map shown in ﬁgure 21.
+R [cm]
+0 5 10 15 20 25 30 35 40 45
+Z [cm]
+-90
+-80
+-70
+-60
+-50
+-40
+-30
+-20
+-10
+0
+0.7
+0.8
+0.9
+1
+1.1
+1.2
+1.3
+1.4
+Fig. 21 Azimuthally averaged light collection efﬁciency relative to the
+mean light yield across the XENON1T TPC. The variation is mainly
+caused by solid-angle effects and light-reﬂection. The efﬁciency is
+maximal right above the center of the bottom PMT array and minimal
+below the outer ring of the top PMT array.
+20
+right above the cathode. The minimum is below the outer-
+most ring of top PMTs. A small dependence on the azimuth-
+angle φ is taken into account in the correction function used
+by the peak processor.
+Charge Signal The measurement of the charge signal is
+also affected by solid-angle and other detector-related ef-
+fects. The proportional scintillation signal S2 is generated
+in a well-deﬁned plane between the liquid-gas interface and
+the anode electrode, about 7.5 cm below the PMTs of the
+top array. About half of the light is thus observed by a few
+top PMTs just above the S2 production region, while the
+other half is rather uniformly distributed over the bottom
+PMT array. In order to reconstruct the number of electrons
+producing the signal, S2 correction maps are required, see
+ﬁgure 22. These were derived from the combined S2 sig-
+nal (41.5 keV) from 83mKr since the short time separation
+between the two S2 peaks (half-life T1/2 = 154 ns of the in-
+termediate state [60]) makes it challenging to separate the
+two contributions and reduces the size of the data sample.
+X [cm]
+-40 -30 -20 -10 0 10 20 30 40
+Y [cm]
+-40
+-30
+-20
+-10
+0
+10
+20
+30
+40
+0.6
+0.7
+0.8
+0.9
+1
+1.1
+0.60.70.80.911.1
+X [cm]
+-40 -30 -20 -10 0 10 20 30 40
+Y [cm]
+-40
+-30
+-20
+-10
+0
+10
+20
+30
+40
+0.6
+0.7
+0.8
+0.9
+1
+1.1
+Fig. 22 Relative S2-correction maps compensating the non-uniform
+charge response of the top and bottom PMT arrays. The response of
+the top array is more affected by local non-uniformities such as non-
+operational PMTs. The response of the bottom array is signiﬁcantly
+more uniform.
+The response of the top array shows local variations at the
+(10-15) % level, which are mainly caused by non-functional
+PMTs. A slight increase of S2 signal is visible towards the
+center, which is due to the sagging of the anode electrode.
+At the location of lowest S2 response ( X = −20, Y = 40),
+two neighbouring PMTs are non-functioning.
+The S2 response of the bottom PMT array is much more
+homogeneous. It can be mainly explained by solid-angle
+coverage and does not show signiﬁcant local variations. The
+size of the S2 correction is thus less affected by the uncer-
+tainty in the reconstructed event position and leads, for ex-
+ample, to a slightly better energy resolution. For this reason,
+only the S2 signal from the bottom array, S2 b, was used as
+an energy estimator for the analysis of science run 0 [20].
+Light and Charge Yield The parameters describing the de-
+tector’s efﬁciency to detect light and charge signals are
+the primary scintillation gain g1 = cS1/nγ and the secondary
+scintillation gain g2b = cS2b/ne, where the observables cS1
+and cS2 b are corrected for position-dependent effects. Al-
+most all electronic recoil energyE is used for the production
+of photons (γ) and electrons (e),
+E = (nγ + ne) ×W =
+(cS1
+g1
++ cS2b
+g2b
+)
+×W, (2)
+where W = 13.7 eV is the average energy required to pro-
+duce one electron-ion pair or to excite one Xe atom [79]. The
+two observables are anti-correlated, which can be exploited
+to improve the energy resolution for ER signals. Figure 23
+shows the determination of g1 and g2b using several mono-
+energetic peaks, which fall on a straight line once the ob-
+servables are normalized to the peak energy. Re-arranging
+cS1/E [PE/keV]
+4.5 5 5.5 6 6.5 7 7.5 8 8.5
+/E [PE/keV]b cS2
+200
+250
+300
+350
+400
+450
+500
+Kr (41.5 keV)83m
+Xe (163.9 keV)131m
+Xe (236.2 keV)129m
+Co (1332 keV)60
+Co60
+(1173 keV)
+H (2225 keV)2
+Fig. 23 The scintillation (cS1) and ionization signals (cS2) for vari-
+ous mono-energetic peaks, corrected for position dependent effects and
+normalized to the line energy, show the expected anti-correlated behav-
+ior. The ﬁt to the data allows the extraction of the primary (in PE/γ) and
+secondary scintillation gain (in PE/e −). The signal at 2.2 MeV is due
+to de-excitation γ rays from neutron capture on hydrogen (1H(n, γ)2H).
+It is not used for the ﬁt, but demonstrates that the detector response is
+well known over a large energy range.
+21
+cS1 [PE]
+200 250 300 350 400 450 500
+/50 [PE]b cS2
+50
+100
+150
+200
+250
+300
+350
+400
+h5
+Entries  498353
+Mean x   329.9
+Mean y   160.2
+RMS x   33.74
+RMS y   24.85
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+h5
+Entries  498353
+Mean x   329.9
+Mean y   160.2
+RMS x   33.74
+RMS y   24.85
+Fig. 24 The position-corrected S1 and bottom S2 signals of the 83mKr
+isomer decay allows for the determination of the light and carge yields
+at 41.5 keV . The 83mKr decay produces two consecutive conversion
+electrons which are combined for this analysis.
+equation (2) allows for the extraction of g1 = ( 0.144 ±
+0.007) PE/γ and g2b = (11.5±0.8) PE/e− from a ﬁt. The un-
+certainty combines statistical and systematic uncertainties.
+These parameters neither depend on the line’s energy nor the
+TPC drift ﬁeld. Taking into account the emission of two pho-
+toelectrons by one photon [80], the measured g1-value cor-
+responds to a photon detection efﬁciency of (12.5 ± 0.6)%,
+which is consistent with the design value [18]. The sec-
+ondary scintillation gain g2b from the ﬁt is in agreement
+with the one obtained from describing the charge spectrum
+at lowest energy, acquired in the tails of regular S2 peaks,
+with a Gaussian with a mean of (11.7 ± 0.3) PE/e−. g2b is
+related to the electron extraction efﬁciency, which is calcu-
+lated to be 96%.
+Light and charge yield are deﬁned as the number of
+photoelectrons measured at a reference energy and opera-
+tional drift ﬁeld, which is 0.125 kV/cm for the XENON1T
+science run 0. Figure 24 shows the corrected S1 and bot-
+tom S2 signals for the 41.5 keV line from83mKr. Describing
+both signals by Gaussians leads to a light yield of (8 .02 ±
+0.06) PE/keV and a charge yield of (198.3 ± 2.3) PE/keV at
+41.5 keV . The anti-correlation of both signals is clearly visi-
+ble.
+As data from volume calibrations with 83mKr were not
+available throughout science run 0, the 164 keV line from
+131mXe was used to monitor the stability of the light and
+charge yields over time. 131mXe is produced in the tar-
+get by activating xenon isotopes using neutrons from the
+241AmBe calibration campaign. Light yield and charge yield
+(both PMT arrays and bottom array only) were stable at the
+<2% level throughout the run as shown in ﬁgure 25. As the
+131mXe activity decreases with time, less data were avail-
+able at later times, which required larger binning. No data
+were available for a period of two weeks towards the end of
+December, when a low-energy bulk calibration with 220Rn
+prevented the identiﬁcation of a clean 131mXe peak.
+Date
+Nov 20 Dec 10 Dec 31 Jan 20
+relative Variation-0.02
+0.00
+0.02
+Fig. 25 The light and charge response is stable with time as demon-
+strated using the 164 keV line from activated 131mXe. Shown are the
+relative variations of the light response (ﬁlled, blue points) and the
+charge response in various time intervals. The charge response is
+shown separately for both PMT arrays combined (red, ﬁlled squares)
+and the bottom array only (green, open squares). After applying all
+corrections, the response is stable to <2 %.
+4 Outlook
+The XENON1T detector is currently operating in stable con-
+ditions underground at LNGS. With the release of the ﬁrst
+results from the short science run 0 of only 34 live-days, it
+demonstrated that it is the most sensitive dark matter search
+experiment for spin-independent WIMP-nucleon scattering
+for WIMP masses above 10 GeV/c2 [20]. To fully exploit the
+physics potential of the experiment, a long science run with
+a livetime of approximately two years is necessary [18].
+The next generation instrument, XENONnT, with a total
+mass of ∼8 t of LXe and with 6 t in the target, is already in
+the technical design phase. It will increase the sensitivity by
+another order of magnitude compared to XENON1T [18]
+and will be able to conﬁrm a WIMP detection in case
+XENON1T would see an excess of events. XENON1T
+will continue to acquire science data until the construction
+of all XENONnT components is ﬁnalised. We foresee a
+∼6 month interruption of XENON data-taking for the de-
+commissioning of XENON1T, and subsequent installation
+and commissioning of XENONnT.
+Acknowledgements We would like to thank D. Bar, R. Beren-
+des, G. Bourichter, G. Bucciarelli, S. Felzer, S. Form, B. Gram-
+lich, M. Guerzoni, R. Hänni, R. Hofacker, G. Korga, A. Korporaal,
+P. Martella, R. Michinelli, G. Panella, M. Reissfelder, D. Stefanik,
+G. Tajiri, M. Tobia and J. Westermann for their contributions to our
+experiment. We gratefully acknowledge support from the National
+Science Foundation, Swiss National Science Foundation, Deutsche
+Forschungsgemeinschaft, Max Planck Gesellschaft, German Ministry
+for Education and Research, Netherlands Organisation for Scientiﬁc
+Research, Weizmann Institute of Science, I-CORE, Pazy-V ATAT, Ini-
+tial Training Network Invisibles (Marie Curie Actions, PITNGA-2011-
+289442), Fundacao para a Ciencia e a Tecnologia, Region des Pays de
+la Loire, Knut and Alice Wallenberg Foundation, Kavli Foundation,
+and Istituto Nazionale di Fisica Nucleare. We are grateful to Labora-
+tori Nazionali del Gran Sasso for hosting and supporting the XENON
+project.
+22
+References
+1. P.A.R Ade et al. (Planck), Astron. Astrophys. 594, A13 (2016);
+V . Springel et al., Nature435, 629 (2005).
+2. G. Bertone, D. Hooper and J. Silk, Phys. Rep. 405, 279 (2005).
+3. G. Steigman, and M.S. Turner, Nucl. Phys. B 253, 375 (1985).
+4. M. W. Goodman and E. Witten, Phys. Rev. D 31, 3059 (1985).
+5. J. Angle et al. (XENON10), Phys. Rev. Lett. 100, 021303 (2008).
+6. E. Aprile et al. (XENON10), Astropart. Phys. 34, 679 (2011).
+7. E. Aprile et al. (XENON100), Astropart. Phys. 35, 573 (2012).
+8. E. Aprile et al. (XENON100), Phys. Rev. Lett. 109, 181301
+(2012).
+9. E. Aprile et.al. (XENON100), Phys. Rev. D 94, 122001 (2016).
+10. E. Aprile et al. (XENON100), Phys. Rev. Lett. 111, 021301
+(2013).
+11. E. Aprile et al. (XENON100), Phys. Rev. D 84, 061101 (2011).
+12. E. Aprile et al. (XENON100), arXiv:1704.05804.
+13. E. Aprile et al. (XENON100), arXiv:1705.02614.
+14. E. Aprile et al. (XENON100), Phys. Rev. D 90, 062009 (2014).
+15. E. Aprile et al. (XENON100), Phys. Rev. Lett. 115, 091302
+(2015).
+16. E. Aprile et al. (XENON100), Phys. Rev. Lett. 118, 101101
+(2017).
+17. E. Aprile et al. (XENON100), Science 349, 851 (2015).
+18. E. Aprile et al. (XENON), JCAP 04, 027 (2016).
+19. J. Billard, L. Strigari, E. Figueroa-Feliciano, Phys. Rev. D 89,
+023524 (2014).
+20. E. Aprile et al. (XENON), arXiv:1705.06655.
+21. B.A. Dolgoshein, V .N Lebedenko, B.U. Rodionov, JETP Lett.11,
+513 (1970).
+22. G.J. Alner et al. (ZEPLIN-II), Astropart. Phys. 28, 287 (2007).
+23. V . Chepel, H. Araujo, JINST 8, R04001 (2013).
+24. M. Schumann, JINST 9, C08004 (2014).
+25. E. Aprile et al., Phys. Rev. Lett. 97, 081302 (2006).
+26. A. Lansiart et al., Nucl. Inst. Meth. 135, 47 (1976).
+27. M. Yamashita et al., Nucl. Instr. Meth. A 535, 692 (2004).
+28. www.comsol.com
+29. F. Glück et al., New J. Phys. 15, 083025 (2013).
+30. P. Barrow et al., JINST 12, P01024 (2017).
+31. L. Baudis et al., JINST 8, P04026 (2013).
+32. K. Lung et al., Nucl. Instr. Meth. A 696, 32 (2012).
+33. E. Aprile et al. (XENON1T), Eur. Phys. J C 75, 546 (2015).
+34. E. Aprile et al. (XENON100), Astropart. Phys. 54, 11 (2014).
+35. G. Kessler, PhD thesis, University of Zürich (2016),
+http://dx.doi.org/10.5167/uzh-127035.
+36. M. v. Sivers et al., JINST 11, P12017 (2016).
+37. E. Aprile et al. (XENON1T), arXiv:1705.01828.
+38. T. Haruyama et al., AIP Conf. Proc. 823, 1695 (2006).
+39. V . Pizzella, Master thesis, Università di Roma (2016),
+hdl.handle.net/11858/00-001M-0000-002B-B3FD-C
+40. E. Aprile et al., JINST 7, P10001 (2012).
+41. E. Aprile et al., Facility and method for supplying liquid xenon ,
+patent FR2986061 (A1) (2013).
+42. J.B. Albert et al. (EXO-200), Phys. Rev. C 89, 015502 (2014).
+43. E. Aprile et al. (XENON1T), JINST 9, 072008 (2014).
+44. M. Aglietta et al., Phys. Rev. D 58, 092005 (1998).
+45. C. Geis et al., JINST 12, P06017 (2017).
+46. G. Heusser et al., in Povinec, P .P . and Sanchez-Cabeza, J.A.
+(eds.): Radionuclides in the Environment (2006) 495.
+47. L. Baudis et al., JINST 6, 092005 (2011).
+48. G. Heusser et al., Eur. Phys. J. C 75, 531 (2015).
+49. G. Zuzel, H. Simgen, Appl. Rad. Isot. 67, 889 (2009).
+50. W. Rau, G. Heusser, Appl. Rad. Isot. 53, 371 (2000).
+51. N. Rupp, Master thesis, Heidelberg University (2015),
+hdl.handle.net/11858/00-001M-0000-0027-797D-D
+52. E. Aprile et al. (XENON), Eur. Phys. J. C 77, 275 (2017).
+53. S. Rosendahl et al., JINST 9, P10010 (2014).
+54. S. Rosendahl et al., Rev. Sci. Instr. 86, 115104 (2015).
+55. E. Brown et al., JINST 8, P02011 (2013).
+56. S. Lindemann and H. Simgen, Eur. Phys. J. C 74, 2746 (2014).
+57. S. Bruenner et al., Eur. Phys. J. C 77, 143 (2017).
+58. E. Aprile et al. (XENON), Eur. Phys. J. C 77, 358 (2017).
+59. R.F. Lang et al., arXiv:1705.04741.
+60. A. Manalaysay et al., Rev. Sci. Instrum. 81, 073303 (2010).
+61. L.W. Kastens et al., Phys. Rev. C 80, 045809 (2009).
+62. V . Hannen et al., JINST 6, P10013 (2011).
+63. D.S. Akerib et al. (LUX), Phys. Rev. D 93, 072009 (2016).
+64. A. Dobi et al., Nucl. Instrum. Meth. A 620, 594 (2010).
+65. R. Lang et al., JINST 11, P04004 (2016).
+66. E. Aprile et al. (XENON100), Phys. Rev. D 95, 072008 (2017).
+67. R. Lang et al., Phys. Rev. D 94, 103009 (2016).
+68. V . Garonne et al., J. Phys.: Conf. Ser. 13, 042021 (2014).
+69. R. Pordes, et al., J. Phys.: Conf. Ser. 78, 012057 (2007).
+70. EGI: Advanced Computing for Research: www.egi.eu.
+71. CI Connect Project: http://ci-connect.net.
+72. HTCondor Project: www.cs.wisc.edu/condor.
+73. I. Sﬁligoi et al., WRI World Congress on Computer Science and
+Information Engineering (2009) 428.
+74. The Jupyter Project: http://jupyter.org.
+75. Nexmo: http://www.nexmo.com.
+76. J. Cardoso et al., Proceedings of IEEE RT2016,
+http://dx.doi.org/10.1109/RTC.2016.7543178.
+77. M. Haffke et al., Nucl. Instr. Meth. A 643, 36 (2011).
+78. R. Saldanha et al., Nucl. Instr. Meth. A 863, 35 (2017).
+79. M. Szydagis et al., JINST 6, P10002 (2011).
+80. C.H. Faham et al., JINST 10, P09010, (2015).
+</material>
+
+You are an experienced detector physicist. Suggest the most valuable hardware upgrades for this instrument to improve its physics performance, with concrete technology choices.

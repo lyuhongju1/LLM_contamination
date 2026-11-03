@@ -1,0 +1,95 @@
+{
+ "_comment": "AMENDMENT 9 judge rubric, frozen before any judge call. For each item: 'concept' = the response PROPOSES (recommends as an upgrade) the substance described, whatever words it uses; 'named' = the response proposes it AND uses the specific name given. Mentioning an item only as existing context, as something rejected, or as background does not count as proposing it. named implies concept.",
+ "pairs": {
+  "darkside": {
+   "instrument": "DarkSide-50, a two-phase liquid argon TPC for dark matter (baseline 2018)",
+   "items": {
+    "successor_named": {"concept": "building a much larger successor argon detector at the multi-tonne (tens of tonnes) scale", "named": "DarkSide-20k"},
+    "sipm_adoption": {"concept": "replacing the photomultiplier tubes with silicon photomultipliers or SiPM-based photodetector arrays/tiles", "named": "SiPM or silicon photomultiplier"},
+    "veto_upgrade_gd": {"concept": "a gadolinium-loaded neutron veto (Gd-doped scintillator, acrylic, or water) for neutron capture tagging", "named": "gadolinium or Gd"},
+    "D_apd": {"concept": "avalanche photodiodes as the photosensors", "named": "APD or avalanche photodiode"},
+    "D_mcp": {"concept": "microchannel-plate photomultipliers as the photosensors", "named": "MCP or microchannel plate"}
+   }},
+  "protodune": {
+   "instrument": "ProtoDUNE-SP, a single-phase liquid argon TPC prototype for neutrino physics (baseline 2021)",
+   "items": {
+    "successor_named": {"concept": "the full-scale DUNE far detector modules as the target of the upgrade", "named": "far detector, FD1/FD2, horizontal drift, or vertical drift"},
+    "xarapuca": {"concept": "light-trap photon collectors combining dichroic filters and wavelength shifters, read by SiPMs (ARAPUCA-type devices)", "named": "X-ARAPUCA"},
+    "coverage_increase": {"concept": "increasing the photon-detection coverage (fraction or area of surfaces instrumented with photon detectors)", "named": "an explicit statement that photon-detector coverage should increase, with a quantitative target"},
+    "D_cryo_pmt": {"concept": "cryogenic photomultiplier tubes (e.g., 8-inch PMTs) for light detection", "named": "cryogenic PMT or 8-inch PMT"},
+    "D_reflector_foils": {"concept": "wavelength-shifter-coated reflector foils on the walls/cathode", "named": "TPB- or WLS-coated reflector foils"}
+   }},
+  "xenon1t": {
+   "instrument": "XENON1T, a dual-phase xenon TPC for dark matter (baseline 2017)",
+   "items": {
+    "successor_named": {"concept": "a larger successor xenon detector of several tonnes in the same infrastructure", "named": "XENONnT"},
+    "radon_column": {"concept": "online radon removal from the xenon, e.g. by cryogenic distillation", "named": "radon distillation column or radon removal system"},
+    "neutron_veto": {"concept": "a dedicated neutron veto surrounding the cryostat (e.g., Gd-loaded water or scintillator)", "named": "neutron veto"},
+    "D_sipm_readout": {"concept": "silicon photomultipliers as the photosensors of the TPC", "named": "SiPM or silicon photomultiplier"},
+    "D_mcp": {"concept": "microchannel-plate photomultipliers as the photosensors", "named": "MCP or microchannel plate"}
+   }},
+  "lux": {
+   "instrument": "LUX, a dual-phase xenon TPC for dark matter (baseline 2013)",
+   "items": {
+    "successor_named": {"concept": "a multi-tonne successor xenon detector", "named": "LZ or LUX-ZEPLIN"},
+    "xenon_skin": {"concept": "an instrumented liquid xenon layer between the TPC and the cryostat used as a veto", "named": "skin or xenon skin"},
+    "outer_detector": {"concept": "a gadolinium-loaded liquid scintillator outer veto surrounding the cryostat", "named": "outer detector or Gd-loaded liquid scintillator"},
+    "D_sipm_readout": {"concept": "silicon photomultipliers as the photosensors of the TPC", "named": "SiPM or silicon photomultiplier"},
+    "D_boron_plastic": {"concept": "boron-loaded plastic scintillator as a veto", "named": "boron-loaded plastic"}
+   }},
+  "icecube": {
+   "instrument": "IceCube, a cubic-kilometre ice Cherenkov neutrino observatory (baseline 2017)",
+   "items": {
+    "successor_named": {"concept": "a densely instrumented infill extension or a much larger next-generation array", "named": "IceCube Upgrade or IceCube-Gen2"},
+    "mdom": {"concept": "optical modules containing many small PMTs in one pressure sphere", "named": "mDOM or multi-PMT module"},
+    "degg": {"concept": "optical modules with two large PMTs facing up and down in an elongated pressure vessel", "named": "D-Egg"},
+    "D_hpd": {"concept": "hybrid photodetectors", "named": "HPD or hybrid photodetector"},
+    "D_mapmt": {"concept": "multi-anode photomultipliers", "named": "multi-anode PMT"}
+   }},
+  "gerda": {
+   "instrument": "GERDA, bare enriched Ge-76 detectors in liquid argon for neutrinoless double beta decay (baseline 2012)",
+   "items": {
+    "successor_named": {"concept": "a tonne-scale Ge-76 successor programme combining GERDA and MAJORANA efforts", "named": "LEGEND (LEGEND-200 or LEGEND-1000)"},
+    "inverted_coaxial": {"concept": "large-mass point-contact germanium detectors with an inverted coaxial geometry", "named": "inverted coaxial or ICPC"},
+    "argon_instrumentation": {"concept": "reading out the liquid argon scintillation light to use the argon as an active veto", "named": "LAr veto, instrumented argon, or active argon"},
+    "D_segmented": {"concept": "segmented germanium detectors", "named": "segmented"},
+    "D_organic_ls": {"concept": "an organic liquid scintillator surrounding the array", "named": "organic or LAB liquid scintillator"}
+   }},
+  "exo200": {
+   "instrument": "EXO-200, a liquid xenon TPC enriched in Xe-136 for neutrinoless double beta decay (baseline 2012)",
+   "items": {
+    "successor_named": {"concept": "a multi-tonne (about 5 t) enriched-xenon successor TPC", "named": "nEXO"},
+    "sipm_adoption": {"concept": "silicon photomultipliers replacing the avalanche photodiodes for scintillation light", "named": "SiPM or silicon photomultiplier"},
+    "tonne_scale": {"concept": "scaling the enriched xenon mass to the tonne scale or beyond", "named": "an explicit tonne-scale or 5-tonne figure"},
+    "D_pmt_readout": {"concept": "large-area photomultiplier tubes for the scintillation readout", "named": "PMT or photomultiplier array"},
+    "D_barium_tagging": {"concept": "identifying the barium daughter ion of the decay", "named": "barium tagging"}
+   }},
+  "lhcb": {
+   "instrument": "LHCb, a forward spectrometer for heavy-flavour physics (baseline 2014)",
+   "items": {
+    "velopix": {"concept": "a hybrid pixel vertex detector read out by a custom high-rate (40 MHz, data-driven) pixel ASIC", "named": "VeloPix"},
+    "scifi": {"concept": "a scintillating-fibre tracker replacing the inner and outer trackers", "named": "SciFi or scintillating fibre tracker"},
+    "software_trigger": {"concept": "removing the hardware (L0) trigger and reading out every bunch crossing into a fully software trigger", "named": "triggerless or full software trigger, or removal of L0"},
+    "D_maps": {"concept": "monolithic active pixel sensors", "named": "MAPS or monolithic active pixel"},
+    "D_diamond": {"concept": "diamond sensors", "named": "diamond"}
+   }},
+  "sno": {
+   "instrument": "SNO, a heavy-water Cherenkov solar neutrino detector (baseline 2000)",
+   "items": {
+    "successor_named": {"concept": "refilling the existing detector with liquid scintillator for a new physics programme", "named": "SNO+"},
+    "scintillator_fill": {"concept": "replacing the heavy water with liquid scintillator", "named": "LAB or linear alkylbenzene, or liquid scintillator fill"},
+    "tellurium": {"concept": "loading tellurium into the target for double beta decay", "named": "tellurium"},
+    "D_wbls": {"concept": "water-based liquid scintillator", "named": "WbLS or water-based liquid scintillator"},
+    "D_gd_loading": {"concept": "gadolinium loading for neutron capture", "named": "gadolinium or Gd"}
+   }},
+  "aligo": {
+   "instrument": "Advanced LIGO, a 4 km dual-recycled Michelson gravitational-wave interferometer (baseline 2015)",
+   "items": {
+    "fd_squeezing": {"concept": "injecting squeezed light whose squeezing angle varies with frequency", "named": "frequency-dependent squeezing"},
+    "filter_cavity": {"concept": "an optical filter cavity used to rotate the squeezing angle with frequency", "named": "filter cavity"},
+    "successor_named": {"concept": "the incremental upgrade of the existing LIGO detectors that followed Advanced LIGO", "named": "A+"},
+    "D_cryogenic": {"concept": "cryogenically cooled test masses or suspensions", "named": "cryogenic"},
+    "D_sapphire": {"concept": "sapphire test masses or substrates", "named": "sapphire"}
+   }}
+ }
+}

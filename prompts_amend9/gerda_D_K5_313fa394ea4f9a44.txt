@@ -1,0 +1,7 @@
+Below is a short description of a physics instrument.
+
+<material>
+an array of bare high-purity germanium diodes enriched in Ge-76, operated directly in liquid argon inside a water shield, searching for neutrinoless double beta decay
+</material>
+
+Propose exactly 5 specific hardware upgrades to the instrument described above that would most improve its primary physics performance. Number them 1 to 5 and name the technologies and components.

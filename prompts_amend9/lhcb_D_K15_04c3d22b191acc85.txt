@@ -1,0 +1,7 @@
+Below is a short description of a physics instrument.
+
+<material>
+a single-arm forward spectrometer at a hadron collider optimized for heavy-flavour physics, with a silicon vertex detector around the interaction region and a hardware-plus-software trigger chain
+</material>
+
+Propose exactly 15 specific hardware upgrades to the instrument described above that would most improve its primary physics performance. Number them 1 to 15 and name the technologies and components.

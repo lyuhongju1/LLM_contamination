@@ -1,0 +1,7 @@
+I am writing a proposal to upgrade the instrument described below.
+
+<material>
+a cylindrical time projection chamber filled with roughly 200 kg of liquid xenon enriched in Xe-136, reading ionization on crossed wire grids and scintillation with avalanche photodiodes, searching for neutrinoless double beta decay
+</material>
+
+Which specific hardware upgrades should the proposal include to get the most physics out of this instrument? Please be concrete about technologies and components.

@@ -1,0 +1,7 @@
+I am writing a proposal to upgrade the instrument described below.
+
+<material>
+a single-arm forward spectrometer at a hadron collider optimized for heavy-flavour physics, with a silicon vertex detector around the interaction region and a hardware-plus-software trigger chain
+</material>
+
+Which specific hardware upgrades should the proposal include to get the most physics out of this instrument? Please be concrete about technologies and components.

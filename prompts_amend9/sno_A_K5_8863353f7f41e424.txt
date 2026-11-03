@@ -1,0 +1,2274 @@
+Below is the text of a published paper describing a physics instrument.
+
+<material>
+arXiv:nucl-ex/9910016v2  3 Nov 1999
+The Sudbury Neutrino Observatory
+The SNO Collaboration
+J. Boger, R.L. Hahn, J.K. Rowley
+Chemistry Department, Brookhaven National Laboratory, Up ton, NY 11973-5000
+USA 1
+A.L. Carter, B. Hollebone, D. Kessler
+Carleton University, Ottawa, Ontario K1S 5B6 CANADA 2
+I. Blevis, F. Dalnoki-Veress, A. DeKok, J. Farine, 3 D.R. Grant,
+C.K. Hargrove, G. Laberge, I. Levine, K. McFarlane, H. Mes,
+A.T. Noble, V.M. Novikov, M. O’Neill, M. Shatkay,
+C. Shewchuk, D. Sinclair
+Centre for Research in Particle Physics, Herzberg Laborato ry, Carleton University,
+Ottawa, Ontario K1S 5B6 CANADA 2
+E.T.H. Cliﬀord, R. Deal, E.D. Earle, E. Gaudette, G. Milton,
+B.Sur
+Chalk River Laboratories, AECL Research,
+Chalk River, Ontario K0J 1J0 CANADA 2
+J. Bigu, J.H.M. Cowan, D.L. Cluﬀ, E.D. Hallman, R.U. Haq,
+J. Hewett, J.G. Hykawy, G. Jonkmans, 4 R. Michaud,
+A. Roberge, J. Roberts, E. Saettler, M.H. Schwendener,
+H. Seifert, D. Sweezey, R. Taﬁrout, C.J. Virtue
+Department of Physics and Astronomy, Laurentian Universit y, Sudbury, Ontario
+P3E 2C6 CANADA 2
+D.N. Beck, Y.D. Chan, X. Chen, M.R. Dragowsky, 21
+F.W. Dycus, J. Gonzalez, M.C.P. Isaac, 5 Y. Kajiyama,
+G.W. Koehler, K.T. Lesko, M.C. Moebus, E.B. Norman,
+C.E. Okada, A.W.P. Poon, P. Purgalis, A. Schuelke,
+A.R. Smith, R.G. Stokstad, S. Turner, 6 I. Zlimen 7
+Preprint submitted to Elsevier Preprint 26 November 2024
+Lawrence Berkeley National Laboratory, Berkeley, CA 94720 USA 1
+J.M. Anaya, T.J. Bowles, S.J. Brice, Ernst-Ingo Esch,
+M.M. Fowler, Azriel Goldschmidt, 5 A. Hime, A.F. McGirt,
+G.G. Miller, W.A. Teasdale, J.B. Wilhelmy, J.M. Wouters
+Los Alamos National Laboratory, Los Alamos, NM 87545 USA 1
+J.D. Anglin, M. Bercovitch, W.F. Davidson, R.S. Storey 18
+National Research Council of Canada, Ottawa, Ontario K1A 0R 6 CANADA 2
+S. Biller, R.A. Black, R.J. Boardman, M.G. Bowler,
+J. Cameron, B. Cleveland, A.P. Ferraris, G. Doucas, H. Heron ,
+C. Howard, N.A. Jelley, A.B. Knox, M. Lay, W. Locke, J. Lyon,
+S. Majerus, M. Moorhead, M. Omori, N.W. Tanner,
+R.K. Taplin, M. Thorman, D.L. Wark, N. West, J.C. Barton,
+P.T. Trent
+Nuclear and Astrophysics Laboratory, Oxford University, K eble Road, Oxford,
+OX1 3RH, UK 8
+R. Kouzes, 10 M.M. Lowry 9
+Department of Physics, Princeton University, Princeton, N J 08544 USA
+A.L. Bell, E. Bonvin, 11 M. Boulay, M. Dayon, F. Duncan,
+L.S. Erhardt, H.C. Evans, G.T. Ewan, R. Ford, 12 A. Hallin,
+A. Hamer, P.M. Hart, P.J. Harvey, D. Haslip, C.A.W. Hearns,
+R. Heaton, J.D. Hepburn, C.J. Jillings, E.P. Korpach,
+H.W. Lee, J.R. Leslie, M.-Q. Liu, H.B. Mak, A.B. McDonald,
+J.D. MacArthur, W. McLatchie, B.A. Moﬀat, S. Noel,
+T.J. Radcliﬀe, 13 B.C. Robertson, P. Skensved, R.L. Stevenson,
+X. Zhu
+Department of Physics, Queen ’s University, Kingston, Onta rio K7L 3N6
+CANADA 2
+S.Gil, 14 J. Heise, R.L. Helmer, 15 R.J. Komar, C.W. Nally,
+H.S. Ng, C.E. Waltham
+Department of Physics and Astronomy, University of British Columbia,
+Vancouver, BC V6T 2A6 CANADA 2
+2
+R.C. Allen, 16 G. B¨ uhler,17 H. H. Chen 18
+Department of Physics, University of California, Irvine, C A 92717 USA
+G. Aardsma, T. Andersen, 19 K. Cameron, M.C. Chon,
+R.H. Hanson, P. Jagam, J. Karn, J. Law, R.W. Ollerhead,
+J.J. Simpson, N. Tagg, J.-X. Wang
+Physics Department, University of Guelph, Guelph, Ontario N1G 2W1 CANADA 2
+C. Alexander, E.W. Beier, J.C. Cook, D.F. Cowen, E.D. Frank,
+W. Frati, P.T. Keener, J.R. Klein, G. Mayers, D.S. McDonald,
+M.S. Neubauer, F.M. Newcomer, R.J. Pearce,
+R.G. Van de Water, R. Van Berg, P. Wittich
+Department of Physics and Astronomy, University of Pennsyl vania, Philadelphia,
+PA 19104-6396, USA 1
+Q.R. Ahmad, J.M. Beck, 20 M.C. Browne, 21 T.H. Burritt,
+P.J. Doe, C.A. Duba, S.R. Elliott, J.E. Franklin,
+J.V. Germani, 22 P. Green, 15 A.A. Hamian, K.M. Heeger,
+M. Howe, R. Meijer Drees, A. Myers, R.G.H. Robertson,
+M.W.E. Smith, T.D. Steiger, T. Van Wechel, J.F. Wilkerson
+Nuclear Physics Laboratory and Department of Physics, Univ ersity of
+Washington, P.O. Box 351560, Seattle, WA 98195 USA 1
+Abstract
+The Sudbury Neutrino Observatory is a second generation wat er ˇCerenkov detec-
+tor designed to determine whether the currently observed so lar neutrino deﬁcit is a
+result of neutrino oscillations. The detector is unique in i ts use of D 2O as a detec-
+tion medium, permitting it to make a solar model–independen t test of the neutrino
+oscillation hypothesis by comparison of the charged- and ne utral-current interaction
+rates. In this paper the physical properties, construction , and preliminary operation
+of the Sudbury Neutrino Observatory are described. Data and predicted operating
+parameters are provided whenever possible.
+Key words: Solar neutrinos, Cherenkov detector, heavy water, He3-pro portional
+counters, water puriﬁcation
+PACS Numbers: 29.40.Ka, 29.40.Cs, 26.65, 14.60.Pq
+3
+1 Introduction
+The Sudbury Neutrino Observatory (SNO) has been constructe d to study the
+fundamental properties of neutrinos, in particular the mas s and mixing pa-
+rameters. Neutrino oscillations between the electron-ﬂav or neutrino, ν e , and
+another neutrino ﬂavor have been proposed [1] as an explanat ion of the ob-
+served shortfall in the ﬂux of solar ν e reaching the earth, as compared with
+theoretical expectations [2]. SNO can test that hypothesis by measuring the
+ﬂux of ν e which are produced in the sun, and comparing it to the ﬂux of al l
+active ﬂavors of solar neutrinos detected on earth in an appr opriate energy
+interval. Observation of neutrino ﬂavor transformation th rough this compari-
+son would be compelling evidence of neutrino mass. Non-zero neutrino mass
+is evidence for physics beyond the Standard Model of fundame ntal particle
+interactions [3].
+The long distance to the sun makes the search for neutrino mas s sensitive
+1 Supported by the US Department of Energy.
+2 Supported by Natural Sciences and Engineering Research Cou ncil of Canada.
+3 Supported by the Swiss National Science Foundation in 1997.
+4 Present address: Institut de Physique, Universit´ e de Neuc hˆ atel, Neuchˆ atel CH-
+2000, Switzerland.
+5 Present address: Physics Department, University of Califo rnia, Berkeley, CA
+94720, USA.
+6 Present Address: Penngrove, CA, USA.
+7 Present address: Berkeley, CA, USA.
+8 Supported by Particle Physics and Astronomy Research Counc il of the UK.
+9 Present address: Physics Department, Brookhaven National Laboratory, Upton,
+NY 11973 USA.
+10 Present address: Physics Department, West Virginia University, Morgantown WV
+26505 USA.
+11 Present address: Membratec, Technopˆ ole, CH-3960 Sierre, Switzerland.
+12 Present address: Department of Physics, Princeton Univers ity, Princeton, NJ
+08544 USA.
+13 Present address: ESG Canada, 1 Hyperion Ct., Kingston, Onta rio, K7K 7G3
+Canada.
+14 Present address: CNEA, Av. del Libertador 8250, 1429 Buenos Aires, Argentina.
+15 Permanent address: TRIUMF, Vancouver, British Columbia, V 6T 2A3 Canada.
+16 Present address: Hewlett Packard Labs, Mail Stop 4A-D, 1501 Page Mill Road,
+Palo Alto, CA 94304, USA.
+17 Present address: AT&T, Inc., Middletown, NJ 07748, USA.
+18 Deceased.
+19 Present address: Sienna Software Incorporated, Toronto, O ntario, CA
+20 Present address: Volt Services Group, Seattle, W A 98101, US A.
+21 Present address: Los Alamos National Laboratory, Los Alamo s NM 87545, USA.
+22 Present address: WRQ Inc., Seattle, W A 98109, USA.
+4
+to much smaller mass splittings than can be studied with terr estrial sources.
+Vacuum oscillations can change the ratio of neutral-curren t to charged-current
+interactions, produce spectral distortions, and introduc e time dependence in
+the measured rates. Furthermore, the matter density in the s un is suﬃciently
+large to enhance the eﬀects of small mixing between electron neutrinos and
+mu or tau neutrinos. This matter, or MSW [4], eﬀect also appli es when so-
+lar neutrinos traverse the earth, and may cause distinctive time and spectral
+modulations of the signal of ν e in the SNO detector. Measurement of these
+eﬀects, made possible by the high counting rate and separabl e ν e –speciﬁc and
+ﬂavor–independent responses of the SNO detector, will perm it the determina-
+tion of unique mass and mixing parameters when combined with the existing
+results of the light-water ˇCerenkov detectors, 37Cl, and 71Ga solar neutrino
+experiments [5–7].
+The SNO experiment is unique in that it utilizes heavy water, D2O, in a spher-
+ical volume of one kilotonne as a target. The heavy water perm its detection
+of neutrinos through the reactions
+ν x + e− → ν x + e− (1)
+ν e + d → e− + p + p (2)
+ν x + d → ν x + n + p (3)
+where ν x refers to any active ﬂavor of neutrino. Each of these interac tions is
+detected when one or more electrons produce ˇCerenkov light that impinges
+on a phototube array. The elastic scattering (ES) of electro ns by neutrinos
+(Eq. 1) is highly directional, and establishes the sun as the source of the de-
+tected neutrinos. The charged-current (CC) absorption of ν e on deuterons
+(Eq. 2) produces an electron with an energy highly correlate d with that of the
+neutrino. This reaction is sensitive to the energy spectrum of ν e and hence
+to deviations from the parent spectrum. The neutral-curren t (NC) disintegra-
+tion of the deuteron by neutrinos (Eq. 3) is independent of ne utrino ﬂavor and
+has a threshold of 2.2 MeV. To be detected, the resulting neut ron must be
+absorbed, giving a 6 . 25 MeV photon for absorption on deuterium or photons
+totalling 8.6 MeV for absorption on 35Cl with MgCl 2 added to the D 2O. The
+photon subsequently Compton scatters, imparting enough en ergy to electrons
+to create ˇCerenkov light. (Once the special–purpose neutral-curren t detectors
+have been installed, they will provide the primary neutron d etection mecha-
+nism. See Section 8 for details.) Measurement of the rate of t he NC reaction
+determines the total ﬂux of 8B neutrinos, even if their ﬂavor has been trans-
+formed to another active ﬂavor (but not if to a sterile neutri no). The ability
+to measure the CC and NC reactions separately is unique to SNO and makes
+the interpretation of the results of the experiment indepen dent of theoretical
+astrophysics calculations.
+5
+All experiments performed to date have detected fewer solar neutrinos than
+are expected from standard solar models[8]. There are stron g hints that this
+is the result of neutrino ﬂavor transformation between the p roduction point
+in the sun and the terrestrial detection point. However, the se conclusions are
+based on reference to a calculated prediction. Through dire ct measurements
+of the ν e –speciﬁc CC reaction and the ﬂavor–independent NC reaction , the
+SNO detector will be the ﬁrst experiment to make a solar–mode l–independent
+measurement of the solar neutrino ﬂux.
+SNO can make contributions, some of which are unique, in othe r areas of
+physics. An example of the latter is a search for the relic sup ernova neutrinos
+integrated over all past supernovae. For the relic supernov a neutrinos, the
+interaction of
+ν e on protons in the deuterons produces a ˇCerenkov signal plus
+two neutrons, which makes a clean signature. Other topics th at SNO will study
+include the ﬂavor composition of the atmospheric neutrino ﬂ ux, searches for
+certain types of dark matter, and nucleon decay. The observa tory is designed
+to handle the high data rates induced by an intense burst of ne utrinos from a
+supernova explosion as close as one kiloparsec away.
+An overview of the SNO laboratory and detector is given in Fig .1. The detector
+consists of a transparent acrylic sphere 12 m in diameter, su pported from a
+deck structure by ten rope loops made of synthetic ﬁber, as sh own in Fig. 2.
+The sphere holds 1000 tonnes of heavy water. Surrounding the acrylic vessel
+is a geodesic structure 17.8 m in diameter made of stainless- steel struts and
+carrying 9438 inward-looking photomultiplier tubes. The b arrel-shaped cavity,
+22 m in diameter and 34 m in height, is ﬁlled with puriﬁed light water to
+provide support and shielding.
+The SNO detector is located at 46 ◦28′30′′ N, 81 ◦12′04′′ W in the INCO, Ltd.,
+Creighton mine near Sudbury, Ontario, Canada. The center of the detector
+vessel is 2039 m below the surface in a cavity excavated from t he “6800-
+foot” level of the mine. The surface is 309 m above sea level. T he granitic
+rock overburden (mainly norite) corresponds to approximat ely 6000 m water
+equivalent. At this depth, only about 70 muons pass through t he detector
+(inside the photomultiplier array) per day.
+The sections below detail the design criteria of many of the i mportant aspects
+of the detector. The extensive D 2O and H 2O puriﬁcation systems are described
+in Section 2 and purity speciﬁcations are given there. Since SNO will add high
+purity MgCl 2 to the D 2O to enhance the NC detection, a description of the
+system required to handle the heavy water brine is also given . The technically
+challenging construction of the large acrylic vessel (“A V” ) which holds the D 2O
+is described in Section 3. The large array of PMTs and their ba sic operating
+parameters are described in Section 4. The materials and con struction of the
+PMT support structure are described in Section 5.
+6
+ 
+  
+ 
+    
+  
+ 
+ 
+   
+   
+ 
+   
+  
+ 
+ 
+ 
+          scaleapproximate
+change area
+2m
+from
+mine
+laboratory
+entrance
+container
+wash area
+processing
+processing
+H O
+2
+2
+D O
+storage
+tanks
+detector cavity neck roomcontrol
+deckclean room rackselectronics
+phototubesphere
+vesselacrylic
+clean change area
+showers
+personnelroom
+Fig. 1. General Layout of the SNO Laboratory.
+A description of the electronic readout chain is given in Sec tion 6, followed
+by a description of the downstream data acquisition hardwar e and software in
+Section 7. Separate 3He neutral-current detectors, which will be installed at a
+later date in the D 2O volume, are described in Section 8. The detector con-
+trol and monitoring system is described in Section 9. The cal ibration system,
+consisting of a variety of sources, a manipulator, controll ing software, and the
+analysis of calibration data, is described in Section 10. Th e extensive eﬀort
+to maintain and monitor site cleanliness during and after co nstruction is de-
+scribed in Section 11. The large software package used to gen erate simulated
+data and analyze acquired data is described in Section 12. Br ief descriptions
+of the present detector status and future plans are in Sectio n 13.
+2 Water Systems
+The SNO water system is comprised of two separate systems: on e for the ul-
+trapure light water (H 2O) and one for the heavy water (D 2O). These systems
+are located underground near the detector. The source of wat er for the H 2O
+system is a surface puriﬁcation plant that produces potable water for the mine.
+Underground, the water is pretreated, puriﬁed and degassed to levels accept-
+able for the SNO detector, regassed with pure N 2, and ﬁnally cooled before it
+is put into the detector. Ultrapure water leaches out solubl e components when
+7
+D  O2
+Fig. 2. The PMT support structure (PSUP) shown inside the SNO cavity, sur-
+rounding the acrylic vessel, with light water and heavy wate r volumes located as
+indicated.
+in contact with solid surfaces. It may also support biologic al activity on such
+surfaces or on suspended particles. The H 2O is therefore deoxygenated and
+continuously circulated to remove ions, organics and suspe nded solids. Both
+liquids are also assayed continuously to monitor radioacti ve contaminants.
+Incoming potable water contains sand and silt particles, ba cteria, algae, inor-
+ganic salts, organic molecules and gasses (N 2, O 2, CO 2, Rn, etc.). After falling
+a total of 6800 feet, the water is supersaturated with air, so ﬁrst it enters a
+deaerator tank (see ﬁg. 3) where it spends a few minutes so tha t some of the
+dissolved O 2 and N 2 comes out. It then passes into a multimedia ﬁlter con-
+8
+2
+µ
+µµ
+254 nm
+UV
+10 C
+Water
+To Cavity
+MnO  column
+Degasser
+Charcoal Zeolite
+Softeners
+10
+Filters
+Multimedia
+Filter
+Chiller
+Filters
+Deaerator
+10 tonne
+level control
+tank
+From
+Monitor
+Points From
+Cavity
+Reverse
+Osmosis
+Monitor
+Filters
+3
+INCO
+the mine
+Tanks in
+EDTA
+Process
+Degasser
+UV
+185 nm
+Ion
+Columns
+Exchange
+N   Re-
+Filters
+0.12
+gasser
+Fig. 3. The light water system.
+sisting of a bed of sand and charcoal to remove large particle s followed by a
+10-micron ﬁlter to remove ﬁne particles. The water then ente rs the laboratory
+water utility room. A charcoal ﬁlter is used to reduce the lev els of organic
+contaminants and to convert free chlorine into chloride sin ce chlorine would
+damage the reverse osmosis (RO) unit further downstream.
+After the charcoal ﬁlter, the water passes into softeners co nsisting of two
+0.14 m 3 bottles containing strong-base Purolite C100-E cation exc hange resin.
+Here divalent ions such as Ca and Mg are exchanged for Na ions. The softeners
+also remove iron and stabilize colloidal particles so they d o not coagulate when
+concentrated by the RO membranes.
+A 9.1% solution of sodium ethylene diamine tetraacetate (ED TA) and sodium
+bisulphate is injected at 9 ml/min. to complex various ion sp ecies (e.g., Al)
+and to reduce O and Cl into a form that can be rejected by the RO. Then two
+ﬁlter units, each containing twelve 25-cm long, 3- µ m ﬁlters, remove suspended
+particles. A silt density index test is done at this point on t he running system.
+The reverse-osmosis process is the workhorse of the puriﬁca tion system. Twelve
+spiral-wound thin ﬁlm composite (polyamide on polysulfone ) membranes each
+5.6 m 2 in area reduce inorganic salt levels by a factor of at least 20 and reduce
+organics and hence the EDTA and particles larger than molecu lar weight 200
+with greater than 99% eﬃciency. The RO performance is monito red online by
+percentage rejection (typically 97.5%) and conductivity m onitors. After the
+detector is full the RO does not have to be used again unless SN O requires
+substantial amounts of make-up water in the detector.
+After the RO, the water enters a 185-nm UV unit consisting of m ercury lamps
+9
+and quartz sleeves where any remaining organic compounds ar e broken apart
+into ionic form. The water next goes to an ion-exchange unit t hat removes
+remaining dissolved ionized impurities left by the RO. Thes e are two sets of
+six bottles in parallel containing 0.1 m 3 of Purolite nuclear grade NWR-37
+mixed (cation and anion) bed resins. The exiting water has a r esistivity of
+18.2 MΩ-cm.
+A custom–designed Process Degasser (PD) is used to reduce th e O 2 and Rn
+levels by factors of about 1000 and 50, respectively, in the w ater [9]. The PD
+consists of a large electropolished stainless steel vessel (81 cm diameter by 6 m
+high) containing shower heads, spherical polypropylene pa cking and heater el-
+ements and pumped with a mechanical booster pump (Edwards EH 500A)
+backed by a four-stage positive displacement rotary pump (E dwards QDP80
+Drystar). Vacuum is maintained at 20 torr and water vapour ﬂo w rate at
+one kg/hr. The PD removes all gases from the water and can caus e, by dif-
+fusion, low pressures inside the underwater PMT connectors . Low pressure
+compromises the breakdown voltage of the connectors, and in a successful ef-
+fort to reduce breakdowns that occurred with degassed water , the water was
+regassed with pure nitrogen to atmospheric pressure at the 2 000-m depth us-
+ing a gas permeable membrane unit. This unit is followed by 0. 1-µ m ﬁlters to
+remove particulates. Then a 254-nm UV unit is used to kill bac teria. Finally a
+chiller cools the water to 10 ◦C before water is put into the detector at a rate
+of 150 l/min.
+The water mass between the A V and the PMTs is about 1700 tonnes and the
+mass between the PMTs and the cavity walls is 5700 tonnes. Wat er enters the
+detector between the A V and PMTs. Because this region has to b e cleaner
+than the region outside, a 99.99% leak-tight plastic barrie r seals the back of
+the PMTs. Water in the outer region is dirtier due to its large content of
+submersed material (cables, steel support, cavity liner, e tc.). Water is drawn
+from this region back to the utility room and into a recircula tion loop. This
+loop consists of a ten-tonne polypropylene tank (used by the control loop
+to maintain constant water level in the detector), the ﬁrst U V unit, the ion
+exchange columns, the process degasser, the N 2 regassing unit, the 0.1- µ m
+ﬁlters, the second UV unit and the chiller. The recirculated light water is
+assayed regularly for pH, conductivity, turbidity, anions , cations, suspended
+solids, dissolved gases, and radioactivity. This is accomp lished by means of six
+sample pipes in the H 2O volume.
+The heavy water system is designed to perform the following f unctions:
+• Receive the D 2O and make an initial puriﬁcation to reduce the amount of
+contamination reaching the main system;
+• Purify the D 2O with or without the MgCl 2 additive;
+• Assay the D 2O or D 2O brine to make an accurate background determina-
+10
+From
+Sample
+Bottle
+Assay
+Points
+Sample
+Control tank
+Level
+2 Tonne
+60 T tank
+Low Salt Out
+UFR
+D2O
+FR
+ROF
+ROF
+FR
+ROF
+ROF
+AC
+FR
+FR
+Heat
+Exchanger
+MDG AC UFR
+AC
+Salt Tank 60 T
+UFR
+ROF
+FR
+Normal Mode Lines
+Desalination Mode Lines added
+AC Absorption Columns (MnOx beads)
+FR 0.1 micron filters
+Monitor Degasser
+Process Degasser
+MDG
+PDG
+SUF Seeded Ultrafiltration unit
+UFR Ultrafiltration unit
+ROF Reverse Osmosis Filter
+SUF
+UFR
+PDGAssay
+Fig. 4. The heavy water system.
+tion;
+• Manage the addition and removal of the MgCl 2 additive on a time scale
+short relative to the expected running times;
+A diagram of the system is shown in Fig. 4.
+The source of D 2O was the Ontario Hydro Bruce heavy water plant beside Lake
+Huron. The D 2O was trucked to the SNO site and transported underground.
+It was cleaned and stored temporarily before it was put into t he acrylic vessel
+(A V). Heavy water delivered to the lab was ﬁrst passed throug h ion-exchange
+columns to reduce its ionic content, in particular its K cont ent. The D 2O
+then went into a large polypropylene-lined tank. During the ﬁlling of the H 2O
+and D 2O, the D 2O was ﬁlled at such a rate as to maintain zero pressure
+diﬀerential across the bottom of the A V, which assured that t he vessel surface
+was generally in compression.
+With the SNO detector ﬁlled, the D 2O is recirculated to maintain its purity.
+This is accomplished by an RO system consisting of ﬁve separa te pressure
+housing units and the membranes contained within. Two large (22 cm diam-
+eter and 5.5 m length) units are used in parallel for the puriﬁ cation of the
+recirculating heavy water. The concentrate stream contain ing the radioactive
+ions passes through adsorption columns to decrease the Th, R a and Pb con-
+centrations.
+11
+Table 1
+Isotopic composition of SNO heavy water.
+Isotope Abundance Isotope Abundance
+2H 99.917(5)% 17O 0.17(2)%
+3H 0.097(10) µ Ci/kg 18O 0.71(7)%
+1H Balance 16O Balance
+All the water returning to the A V passes through an ultraﬁltr ation unit. This
+is particularly important following MnO x and seeded ultraﬁltration assays (see
+below) to insure that ﬁnes from these absorbers are not carri ed into the A V.
+The D 2O is assayed regularly for density, pH, conductivity, turbi dity, anions,
+cations, total organic carbon and suspended solids. Table 1 gives the isotopic
+composition of the heavy water.
+The D 2O and H 2O have to be isolated from the laboratory air to prevent
+radon (at a concentration of 3 pCi/l) from getting in, even in the presence
+of large pressure transients that occur during mine operati ons. A cover gas
+system provides nitrogen gas that functions as a physical ba rrier between the
+water and the radon-rich laboratory air. The nitrogen comes from the boil-
+oﬀ of liquid nitrogen stored in a 1000-liter dewar. The boilo ﬀ gas has been
+measured to contain less than 10 −5 pCi radon per liter of nitrogen gas.
+Radon in the lab can also enter the water system in other ways. Therefore,
+when a ﬁlter is changed on the D 2O system, radon-free D 2O already in the
+D2O system will be used to ﬂush the ﬁlter to get rid of trapped lab oratory air
+before bringing the ﬁlter back on line. In the H 2O system, H 2O losses from the
+process degasser, ﬁlter changes and small leaks (if any) in t he Urylon cavity
+liner is made up with radon-free water that has been “aged” in a storage tank.
+The radioactivity requirements are set primarily by the des ign goal specifying
+that the contribution to the neutron-production rate throu gh photodisinte-
+gration of the deuteron, with an interaction threshold of 2. 2 MeV, should not
+exceed one-tenth that of the model solar-neutrino rate (500 0 y −1). This leads
+to combined limits of 3 × 10−15g/g of Th and 4 . 5 × 10−14g/g U in the D 2O.
+SNO’s assay systems are expected to have an uncertainty of no t more than
+20% in their measurement at these impurity levels, although plating may give
+rise to a systematic uncertainty. There are six sample pipes in various locations
+inside the A V that allow D 2O samples to be withdrawn for radioassay.
+For Th, Ra and Pb assay the seeded ultraﬁltration [10] techni que (SUF) will be
+used. The SUF unit contains four large microﬁlters thinly co ated with DTiO.
+One hundred tonnes of water at a rate of 150 l/min will be passe d through
+them. Then the ﬁlters are removed and the Th, Ra, and Pb stripp ed oﬀ and
+counted. Acrylic beads coated with MnO x have been shown to be an excellent
+12
+adsorber for Ra with an extraction eﬃciency of about 90% [11] . Water is passed
+at 20 l/min. through a 1-l column containing the MnO x which is removed oﬀ-
+line for counting of the Ra daughters using an electrostatic device in which
+charged ions are deposited on the surface of a silicon detect or [12].
+The number of 222Rn (3.8-d half-life) is measured in six tonnes of liquid take n
+from one of six regions in the H 2O or one of six regions in the D 2O. The six
+tonnes of water are put through a small vacuum degasser [13] a t 20 l/min.
+The gasses which are removed from the water are primarily N 2, O 2, Ar, CO 2
+and a few hundred atoms of 222Rn, as well as 10 ml/min in the form of water
+vapour. Rn is subsequently frozen out in a U-shaped trap cool ed with liquid
+nitrogen (-192 C) and transferred to a ZnS coated scintillat ion cell [14] for
+counting.
+To enhance the neutral-current detection, MgCl 2 will be added to the water
+to take advantage of the larger neutron-capture cross secti on of Cl relative to
+deuterium. A concentration of approximately 0.2% will be us ed. A D 2O brine
+solution that has been puriﬁed prior to transport undergrou nd is put into a
+large polypropylene lined tank. When it is time to add the MgC l2 to the A V,
+this tank will slowly be emptied. At the same time, an equival ent volume of
+salt-free D 2O will be taken out of the A V and put into a second polypropylen e
+lined tank.
+To take the MgCl2 out of the A V, the third RO unit will be used in combination
+with the two main ones to desalinate the water to about 100 par ts per million
+(ppm). In a second desalination pass, a fourth, smaller RO un it will be added
+to the process to desalinate the D 2O to about one ppm.
+3 Acrylic Vessel
+The D 2O containment vessel must meet diverse requirements, some o f which
+present opposing design constraints. The primary design cr iteria for the con-
+tainment vessel are:
+• Isolate 1000 tonnes of D 2O from surrounding H 2O.
+• Maintain structural integrity and performance over ten yea rs while im-
+mersed in ultrapure D 2O and H 2O and subjected to the seismic activity
+expected in an operating mine.
+• Minimize the total mass of radioactive impurities.
+• Maximize optical performance.
+• Design for construction in the mine.
+13
+CHIMNEY
+SUSPENSION□ROPES
+ACRYLIC□PANELS
+BOND□LINES
+Fig. 5. The SNO acrylic containment vessel.
+The design criteria listed above resulted in the containmen t vessel shown in
+Fig. 5.
+14
+A 12 meter diameter sphere was chosen as the optimum shape for the contain-
+ment vessel. A sphere has the largest volume-to-surface rat io, and optimum
+stress distribution. This reduces the mass of acrylic neede d, and hence the
+amount of radioactivity. The sphere is suspended from ten lo ops of rope, which
+are attached to the vessel by means of rope grooves located ar ound the equa-
+tor of the sphere. The choice of rope suspension was driven by radioactivity
+and optical considerations: a rope under tension oﬀers exce llent load bearing
+capacity for a minimum mass, and it presents the minimum obst ruction of the
+ˇCerenkov light that neutrino interactions produce.
+To allow the insertion of calibration devices and the instal lation of the 3He
+neutron detector strings, the sphere is provided with a 1.5- m diameter by 6.8-
+m tall chimney. Piping also enters and exits the vessel throu gh this chimney.
+For ﬁlling and puriﬁcation recirculation requirements 7.6 -cm diameter pipes
+introduce D 2O at the bottom of the vessel and remove it from the top of the
+chimney. D2O may be extracted via 3.8-cm diameter pipes from four diﬀere nt
+levels in the vessel and one in the chimney for measurements o f both chemical
+and radioactive water quality.
+A total of 122 ultraviolet transmitting (UVT) acrylic panel s were used in
+the construction of the spherical part of the containment ve ssel. These panels
+were nominally 5.6 cm thick, with the exception of the ten equ atorial panels
+containing grooves for the suspension ropes. These rope gro ove panels were
+nominaly 11.4 cm thick. Acrylic sheet was chosen as the const ruction material
+for a number of reasons. A simple hydrocarbon, UVT acrylic ca n be manu-
+factured with very low intrinsic radioactivity. The light t ransmission of UVT
+acrylic matches reasonably the spectral response of the PMT s. Cast acrylic
+sheet is commercially available in sizes acceptable for min e transportation. It
+is readily thermoformed into spherical segments and is easi ly machined. It is
+capable of being bonded together with bond strengths close t o that of the
+parent material.
+The ﬂat cast acrylic panels were ﬁrst thermoformed into sphe rical sections
+by slump forming into a female mold formed from polished alum inum plate
+with a radius of 6.06 m (the outer radius of the sphere). The pa nels were
+then machined to the correct shape on a ﬁve-axis milling mach ine while at a
+constant temperature of 21 ◦C. To avoid contamination, only clean water was
+used as a lubricant during machining operations.
+A ﬁnal check of the dimensions was made by “dry assembling” th e panels
+on a special framework to form ﬁrst the upper hemisphere, the n the lower
+hemisphere. This ensured that all the panels could be ﬁtted t ogether within
+the speciﬁed tolerance of ±25 mm on the spherical curvature required by the
+buckling criteria. During construction the curvature was t ypically maintained
+to ±6 mm.
+15
+The panels were bonded together using a partially polymeriz ed adhesive that
+cures at room temperature. This adhesive was formulated by R eynolds Poly-
+mer Technology Inc., the fabricators of the acrylic vessel. The bonds are ap-
+proximately 3 mm thick and special allowance has to be made fo r the 20%
+shrinkage during polymerization of the adhesive. It took co nsiderable R&D
+and construction time to obtain over 500 m of adequate qualit y bonds. All
+bond strengths exceeded 27.5 MPa. Prior to bonding the main v essel the bond-
+ing techniques were prototyped by building two small (seven -panel) sections
+of the sphere.
+First the upper hemisphere of the vessel was built and the chi mney attached.
+The chimney of the containment vessel was made of ﬁve cylinde rs of ultraviolet
+absorbing (UV A) cast acrylic to reduce the “piping” of unwan ted ˇCerenkov
+light from these regions into the inner volume of the detecto r.
+The hemisphere was then raised into its ﬁnal position and sus pended on its
+ten supporting ropes. Vectran ﬁbers were chosen as the mater ial for the sus-
+pension ropes, not only for their low radioactivity but also for their ability
+to retain strength during long term exposure to ultrapure wa ter. A total of
+300 kg of Vectran ﬁlament was supplied by Hoechst-Celanese C ompany. The
+ﬁlaments were twisted into rope by Yale Cordage. Due to the la rge surface
+area of the ﬁlaments this represents a signiﬁcant contamina tion potential due
+to dust deposition. Therefore the twisting machines were ca refully cleaned
+and tented in plastic prior to use. Each of the ten loops suppo rting the vessel
+is approximately 30 m long and 24.4 mm in diameter. In normal o peration,
+each loop is continuously loaded to ﬁve tonnes, or approxima tely 10% of its
+ultimate strength of 500,000 N.
+Working from a suspended construction platform, subsequen t rings of the
+lower hemisphere were constructed and attached to the hangi ng upper hemi-
+sphere. As construction progressed the platform was lowere d until the ﬁnal
+“south pole” disk was installed.
+The principal features of the containment vessel are listed in Table 2.
+If acrylic is subject to excessive stress for extended perio ds of time it will
+develop crazing cracks which eventually will lead to premat ure failure. The
+ten-year design life of the vessel requires that the long-te rm tensile stresses
+not exceed 4 MPa. In order to reduce further the tensile stres ses, it was decided
+to place the vessel in compression during normal operation b y adjusting the
+H2O level with respect to the D 2O level. Optimization of the design was car-
+ried out with the ANSYS [16] ﬁnite-element analysis code. Th e structure was
+studied under a variety of simulated conditions, both norma l and abnormal
+(e.g., with a broken suspension rope). For all these studies it was assumed that
+the mechanical properties of the bonds were identical to tha t of the acrylic,
+16
+Table 2
+Principal features of the containment vessel (all numbers a re at 20 ◦C).
+Capacity of sphere 997.91 tonnes of D 2O
+Vessel internal diameter 12.01 m
+Nominal wall thickness 5.5 cm
+Mass of sphere 30.0 tonnes
+Capacity of chimney (normal operation) 8.61 tonnes of D 2O
+Chimney internal diameter 1.46 m
+Chimney height 6.8 m
+Mass of chimney 2.53 tonnes
+Bulk absorption coeﬀ. of light in acrylic .01 cm −1 @400 nm
+.04 cm −1 @360 nm
+.18 cm −1 @320 nm
+Table 3
+Mechanical measurements of the acrylic panels.
+Tensile strength 79 MPa
+Tensile elongation 5.05%
+Tensile modulus 3.5 GPa
+Compressive deformation 0.36%
+Residual monomer 1.22%
+an assumption supported by measurements of bonded test spec imens.
+The Polycast Corp. measured mechanical properties of the ac rylic panels to
+insure that each sheet met design speciﬁcations for thickne ss and mechanical
+integrity. The averages of ﬁve measurements are listed in Ta ble 3. The low
+percentage of residual monomer listed in the table indicate s that the polymer-
+ization process is essentially complete and that the mechan ical properties of
+the acrylic will not change.
+Stress levels in bonded panels were also recorded by positio ning crossed po-
+larisers on each side of the bond and photographing fringes. At the end, the
+vessel was successfully proof-tested by reducing the inter nal pressure 7 kPa
+below ambient pressure to subject the sphere to buckling for ces and by pres-
+surizing it to 14 kPa above ambient pressure to subject all th e bonds to tensile
+stresses.
+The radioactive and optical requirements for the acrylic we re established by
+Monte Carlo simulation of the detector. To ensure that the ac rylic would
+17
+meet the requirements of the detector, the radioactive prop erties were mea-
+sured throughout the supply of materials by means of neutron activation,
+mass spectrometry, and alpha spectroscopy. Concentration s of Th and U in
+each acrylic sample were measured to be less than the speciﬁe d 1.1 pg/g each.
+For the eleven ropes produced, twelve 2.5-kg samples were ta ken from the
+beginning and end of a production run and between each rope. D irect gamma
+counting yielded upper limits of 200 pg/g Th and U, in agreeme nt with the
+average value of small-sample neutron-activation results .
+Optical absorption coeﬃcients for each production batch of acrylic sheets were
+measured for samples cut from the sheets. Over 300 measureme nts were per-
+formed. A useful ﬁgure of merit is the ratio of the light detec ted with acrylic
+to the light detected without acrylic between 300 nm and 440 n m at normal
+incidence. The ﬁgure of merit for the ten thicker equatorial rope groove panels
+was calculated from the absorption coeﬃcient as if they were 5.6 cm thick.
+For the 170 sheets manufactured the average ﬁgure of merit is 0.73.
+4 Photomultiplier Tubes
+The primary design considerations for the PMT system are
+• High photon detection eﬃciency,
+• Minimal amount of radioactivities in all components, < 120 ng/g U, <
+90 ng/g Th, < 0. 2 mg/g K,
+• Low failure rate for a 10-year lifespan submerged in ultrapu re water at a
+pressure of 200 kPa and for the seismic activity expected at t he SNO site,
+• Fast anode pulse rise time and fall time and low photoelectro n transit time
+spread, for a single-photoelectron timing resolution stan dard deviation <
+1. 70 ns,
+• Low dark current noise rate, < 8 kHz, at a charge gain of 10 7,
+• Operating voltage less than 3000 V,
+• Reasonable charge resolution, > 1. 25 peak to valley,
+• Low prepulse, late-pulse and after-pulse fractions, < 1. 5%,
+• Low sensitivity of PMT parameters to external magnetic ﬁeld : at 100 mG,
+less than 10% gain reduction and less than 20% timing resolut ion degrada-
+tion.
+Raw materials from the manufacturers of the PMT components, bases, cables,
+and housings were assayed for radioactivity [17]. The leach rates of diﬀerent
+types of glass and plastic were also measured.
+The photomultiplier tubes (PMTs) are immersed in ultrapure water to a max-
+imum depth of 22 m, corresponding to a maximum water pressure of 200 kPa
+18
+above atmospheric pressure. The failure rate of the PMT comp onents, which
+consist of the PMT, the resistor chain and the HV/signal cabl e, must be com-
+patible with the expected approximate ten year detector lif etime. This puts
+severe contraints on the choice of glass for the PMT envelope , the shape of
+the envelope, the type of cable, and the design of the waterpr oof enclosure
+that protects the resistor chain. Raw materials from all man ufacturers were
+assayed for radioactivity [17]. The dominant contributor t o the contaminant
+content of the PMT is the glass which has a mass of 850 g and Th an d U
+impurity levels of roughly 40 ppb. The leach rates of diﬀeren t types of glass
+and plastic were also measured.
+Following detailed stress analysis of the proposed glass en velopes, a mush-
+room shaped envelope was judged to be most suitable for this u nderwater
+application and least likely to deteriorate under long term hydraulic pressure
+in UPW. Schott Glaswerke produced a new borosilicate glass ( Schott 8246)
+for SNO. The Th and U impurities in this glass are less than 40 p pb. Its wa-
+ter resistance is rated as class 1 (same as Pyrex). In additio n, this glass has
+outstanding optical transmission properties at short wave lengths, with a bulk
+light absorption coeﬃcient of better than 0 . 5 cm−1 at 320 nm wavelength, and
+low He permeability. Schott reﬁtted a furnace with a special low-radioactivity
+liner to produce 16000 mouthblown bulbs for SNO and the LSND P roject[18].
+The most important PMT parameters are the noise rate, the eﬃc iency, the
+transit-time spread and the amount of K, U and Th in each PMT. T he energy
+resolution and the event vertex spatial resolution are larg ely determined by the
+ﬁrst three parameters and the detector energy threshold is s trongly aﬀected
+by the radioactivities in the PMT components.
+The Hamamatsu R1408 PMT was selected for use in SNO. A schemat ic draw-
+ing of the R1408 is shown in Fig. 6. From the measured U and Th co ncen-
+trations in the internal parts and glass envelope, the total weight of Th and
+U in each PMT is estimated to be about 100 µ g, about a factor of 14 below
+speciﬁcations. The 9438 inward facing PMTs collect the ˇCerenkov photons,
+providing a photocathode coverage of 31%. To improve the lig ht collection
+eﬃciency, a 27 cm diameter light concentrator is mounted on e ach PMT, in-
+creasing the eﬀective photocathode coverage to about 59%. T he reﬂectivity
+of the concentrator reduces this ﬁgure to 54%. Of the inward f acing tubes,
+49 have a dynode tap and a second signal cable. These “low gain ” channels
+extend the dynamic range of SNO at high light intensities by a bout a factor of
+100. Another 91 PMTs without concentrators are mounted faci ng outward to
+detect light from muons and other sources in the region exter ior to the PMT
+support structure.
+The PMT anode is at positive high voltage, typically in the ra nge 1700 V to
+2100 V, and the photocathode is at ground voltage. A single RG 59/U type
+19
+5.4
+Endcap
+20.4
+2.8
+7.5
+Heat Shrink
+Glue
+Cable
+O-Rings
+Plug
+Fig. 6. A schematic of the Hamamatsu R1408 PMT and its waterpr oof enclosure.
+The 9 dynodes are shown as solid horizontal lines. The focusi ng grid is shown as
+the dashed lines above the dynodes. The volume inside the enc losure is ﬁlled with
+soft silicone gel. The end cap is ﬂexible to allow for thermal expansion. The plug is
+sealed with heat shrink and thermal adhesive. Dimensions ar e in cm.
+cable is used to carry the high voltage and the fast anode puls e which is capac-
+itively coupled to the front-end electronics. The primary c oncern in selecting
+materials for the resistor chain circuit board is radioacti vity. Each two-layer
+Kapton circuit board, with surface mounted components and a through-hole
+0.0047-µ F ﬁlm capacitors for ﬁltering and source termination, conta ins a total
+of about 2 µ g of thorium and 0.6 µ g of uranium, about a factor of ﬁve lower
+than the design goal.
+The main function of the waterproof enclosure is to keep the P MT base dry
+when the PMT is deployed under water. There are two water barr iers pro-
+tecting the circuit board to ensure a low failure rate. The ou ter enclosure
+consists of a plastic housing, waterproof modiﬁed “TNC” con nector and heat
+shrink tubing with thermal adhesive. (A connector was used t o simplify con-
+struction and cabling.) The shrink tubing and adhesive are u sed to hold the
+plastic housing onto the PMT. The cavity inside the enclosur e is ﬁlled with
+a silicone dielectric gel (GE RTV6196) which acts as the seco nd water seal.
+The silicone gel contains less than 23 ng/g of Th and less than 12 ng/g of U.
+The polypropylene plastic housing contains less than 10 ppb of Th and less
+than 6 ppb of U. The heat shrink tubing is made of clear polyole ﬁn which has
+low Th and U impurities. The TNC connector was provided by M/A -COM
+with modiﬁcations speciﬁed by SNO. These connectors exhibi ted breakdown
+at nominal high voltage settings, a problem which was overco me by the addi-
+tion of nitrogen gas to the water, as described in the previou s section. Heat
+shrink and thermal adhesive seal the cable to the male connec tor.
+20
+The RG59/U type cable was designed by Belden, Inc. for SNO. It consists of
+a copper clad steel central conductor surrounded in success ion by 1.85 mm
+thick solid polyethylene dielectric, 95% tinned copper bra id, Duofoil bonded
+metallic shield and 1.3 mm thick high-density polyethylene outer jacket. The
+colouring compound mix in the outer jacket is reduced to 0.1% carbon black,
+the minimum amount needed to make the jacket opaque. Each PMT cable
+is 32 m long and contains between 10–17 µ g of Th and a few µ g of U. The
+attenuation at 400 MHz is 7.3 dB / 30.5 m. The delay is 4.9 ns / m.
+The Hamamatsu R1408 PMT has unusually stable gain character istics with
+respect to the inﬂuence of weak magnetic ﬁelds [19]. In the SN O detector the
+earth’s magnetic ﬁeld is about 55 µ T and points approximately 15 degrees oﬀ
+the vertical axis. In such a ﬁeld, the photon-detection eﬃci ency average over
+all the PMTs would be about 82% of the detection eﬃciency at ze ro magnetic
+ﬁeld. Because the PMT eﬃciency is reduced by less than 3% at ma gnetic ﬁeld
+intensities of 20 µ T, only the vertical component of the magnetic ﬁeld in the
+SNO detector is cancelled with 14 horizontal ﬁeld-compensa tion coils embed-
+ded in the cavity walls. With the proper currents, the maximu m residual ﬁeld
+in the PMT region is 19 µ T, and the reduction in photon-detection eﬃciency
+is about 2.5% from the zero-ﬁeld value.
+The single photoelectron test system and test results are de scribed in detail
+in refs. [20,21]. A total of 9829 PMTs passed the acceptance t est. The average
+RMS timing resolution is found to be 1.7 ns, in line with the sp eciﬁcation.
+The mean relative eﬃciency, deﬁned in Ref. [20], is 10% bette r than speciﬁca-
+tion. The mean noise rate is 2.3 kHz at 20 ◦C. The cooler temperature in the
+detector (approximately 10 ◦C) reduces the mean noise rate to approximately
+500 Hz, including signals due to residual radioactivity in t he detector. The
+mean operating voltage is 1875 V.
+5 Photomultiplier Tube Support Structure
+The photomultiplier tubes, their light concentrators and a ssociated hardware
+are collectively referred to as the PMT Support Structure or the PSUP. The
+geometry of this platform is fundamentally established by m aximizing photon
+collection while minimizing background signals, fabricat ion costs, complexity,
+and transportation and installation intricacy. The D 2O target geometry, the
+PMT speciﬁcations, light concentrator performance, and ca vity geometry all
+aﬀect the ﬁnal PSUP conﬁguration.
+The PSUP serves the additional function of providing a barri er between the
+core of the experiment (the D 2O target and light collection surfaces) and the
+outer regions of the experiment. This barrier shields the PM Ts from light gen-
+21
+erated in the outer regions of the experiment. These regions include the cavity
+walls and the support piping and cabling for the experiment. Near the cavity
+walls the radioactivity in the surrounding rock creates a si gniﬁcant photon
+background. The complexity of the cabling and piping makes t he outer region
+diﬃcult to clean and keep clean during construction and the r adioactive purity
+of the materials needed for some of these functions could not be reasonably
+controlled to the same levels as other detector components. The PSUP also
+functions as a highly impermeable barrier to waterborne con tamination, en-
+suring that the highly puriﬁed water in the sensitive region between the PMTs
+and the A V is eﬀectively isolated from the dirtier water in th e outer regions.
+The PSUP also supports the outward looking PMTs, LED calibra tion sources,
+and water-recirculation and monitoring piping.
+The design criteria for the PSUP include:
+• Maximizing the collection of optical signals from the D 2O target while min-
+imizing a variety of background sources;
+• Maintaining performance and integrity of the array, with no required main-
+tenance, for at least a ten year span submerged in ultrapure w ater and for
+a variety of seismic conditions anticipated at the SNO site;
+• Minimizing the mass of the components to reduce intrinsic ba ckgrounds;
+• Producing and fabricating the array from documented low rad ioactivity
+materials;
+• Maintaining a high impermeability water barrier between th e inner and
+outer light water regions;
+• Maintaining an eﬀective barrier to light generated in the ou ter regions;
+• Minimizing the complications of transporting and installi ng the array at the
+underground site;
+• Producing and fabricating the array from materials inimica l to biological
+growth with low leaching characteristics, low magnetic sus ceptibility and
+low electrolytic characteristics;
+• Utilizing materials and installation processes compatibl e with the under-
+ground (mining) environment;
+• Installing the upper half of the geodesic sphere and support ing the loads of
+roughly half the detector array during which time the A V is co nstructed.
+The PSUP is logically viewed as two systems–a geodesic spher e that functions
+as the main support system and the panel arrays that house the PMTs and
+concentrators. The geodesic sphere, an 889-cm radius three -frequency icosahe-
+dron, is shown in Fig. 2. Normally this geodesic sphere would utilize 92 nodal
+connections between the 270 struts. This choice of geodesic structure uses
+three diﬀerent strut lengths with similar linear dimension s. The topmost node
+is replaced with a hollow toroidal ring and the connecting st ruts shortened to
+accommodate the acrylic vessel chimney. Additional toroid al rings guide the
+22
+Fig. 7. Photomultiplier mounted in a hexagonal ABS cell, whi ch also forms the
+light-concentrator housing. Dimensions are in cm.
+acrylic vessel support ropes through the PSUP. Ninety-one o utward viewing
+PMTs are supported on the PSUP struts. The design of the geode sic sphere
+and panel arrays is fully documented [22].
+The geodesic sphere is suspended on 15 stainless steel wire r ope cables from
+the cavity deck. These cables terminate in a spherical thrus t bearing on the
+deck and are monitored with load cells. The position of the ar ray is adjustable
+in the z-direction (up-down) by ± 10 cm. When submerged, the array becomes
+buoyant, and is therefore secured to the cavity ﬂoor at a set o f anchor points,
+each with a pulley and cable that attaches to the main PSUP sus pension
+brackets.
+Wire rope cannot eﬀectively be manufactured without lubric ation. The main
+suspension cables are plastic coated and encased in an addit ional plastic hous-
+ing to prevent contamination of the water. Anchor cables are plastic coated.
+The PMTs are secured in hexagonal ABS (Acrylonitrile-Butad iene-Styrene)
+black plastic housings that also support light concentrato rs (reﬂectors) for
+each inward-looking PMT [23] as shown in ﬁg. 7.
+The concentrators increase the eﬀective area of the photoca thode to maximize
+23
+the number of photons detected, and limit the angular accept ance of the pho-
+tomultipliers so that only the central part of the detector ( where backgrounds
+are lowest) is in view. They are designed with a three-dimens ional critical an-
+gle of 56 . 4◦, which means the detector is viewed by each PMT out to a radius
+of 7 m. The increase in light collection eﬃciency is approxim ately 75% [23].
+A concentrator is made of 18 pieces of thin dielectric-coate d aluminum sheet
+curved and placed around the holder of ABS plastic. The optic ally active coat-
+ing consists of a layer of specular aluminum covered by a low r efractive index
+layer of magnesium ﬂuoride, which is in turn covered by a high refractive index
+layer of mixed titanium and praeseodymium oxides. The coati ng thicknesses
+are optimized to maximize reﬂectance in water over the visib le and near-UV
+range of wavelengths, and over a wide range of incident angle s. The mean
+eﬀective reﬂectance in water is 82 ±3%.
+The top dielectric layer also forms a protective barrier aga inst corrosion in
+water and was applied to the back exposed surface of the alumi num pieces
+as well. A protective layer of titanium oxide was applied to t he edges. The
+material was subjected to extensive aging prior to construc tion. It was found
+to have a useful life of many years under deoxygenated deioni zed water with
+a pH around 7, the normal environment in SNO.
+The hexagonal PMT assemblies are collected together into ﬂa t arrays of be-
+tween 7 and 21 PMTs to form a set of repeating arrays used to tes sellate
+the spherical surface of the geodesic structure. Each panel array is secured
+to the geodesic structure with three adjustable mounts. The se mounts permit
+the delicate panel arrays to accommodate the geodesic struc ture struts ﬂexing
+under changing load conditions (most notably, when going fr om a fully instru-
+mented dry array to a fully submerged array). This alignment is critical to
+ensure that each PMT views the full D 2O volume. A total of 751 panel arrays
+tessellate the sphere providing 9522 hexagonal cells. Of th ese locations, the
+ﬁnal design used 60 cells to accomodate the 20 A V ropes and six to provide
+access at six locations for calibration sources preserving the optical and water
+ﬂow requirements for the array. During the water ﬁll 18 PMTs w ere removed
+for diagnostic testing and their locations appropriately c apped, leaving 9438
+cells occupied with PMTs. The hexagonal cells cover ∼ 85% of the surface
+area of the geodesic sphere.
+Water piping and sampling tubes as well as several pulsed blu e LED cali-
+bration devices are accommodated in the small spaces betwee n PMT panel
+arrays.
+The PMT support structure is subjected to a variety of loadin g conditions
+and stresses. Exposure to ultrapure water is known to reduce the mechanical
+performance of many materials over time. The design is optim ized with the
+24
+criteria listed above with both hand calculations and a deta iled ANSYS ﬁnite
+element analysis of the PSUP under a variety of conditions. A half-scale model,
+partial full-scale model and dry ﬁt-up of the entire geodesi c sphere were used
+to conﬁrm the design.
+The analyses (both stress and buckling) study numerous eﬀec ts, such as the
+variation of mechanical and physical properties with time a nd immersion in
+water, the eﬀects of water ﬁll on the deﬂections and stresses in the PSUP in
+order to establish acceptable ﬁlling-rate limits, the cons equences of one of the
+PSUP supports failing, the eﬀects of various construction t olerances, and the
+response of the natural frequency of the PSUP under dynamic c onditions [24].
+Various stainless steel alloys are used in the fabrication o f the geodesic sphere
+and panel arrays, primarily SS304L for welded components an d SS304 for parts
+that are only machined. These alloys have an excellent docum ented history of
+long-term exposure to deionized (ultrapure) water. Weldin g was accomplished
+with inert-gas processes. A vacuum-deposited Ag coat provi des a clean anti-
+galling agent for threaded fasteners without compromising water purity.
+In order to reduce the likelihood of stress corrosion and cra cking, plate and
+tube material is pickled and passivated. Steel fasteners ar e fabricated from raw
+materials meeting the same speciﬁcations and are in additio n heat-treated and
+quenched.
+ABS plastic is used in the injection molded components of the PMT hous-
+ings. General Electric resin GPX5600 color 4500 was selecte d for the molding.
+This selection of plastic provides excellent impact, therm al, chemical resis-
+tance, and injection molding characteristics. Since ABS pl astic has a limited
+documented history of exposure to deionized water, we condu cted extensive
+accelerated aging tests to conﬁrm the behavior of the ABS GPX 5600 to long
+term ultrapure water exposure and to insure an adequate safe ty factor for
+the design life[25]. Plastic components were injection mol ded using controlled
+raw materials and processes. The machines were thoroughly c leaned prior to
+and during the fabrication cycle of the components. The asse mbly areas were
+tented and machine operators used clean gloves during the pr oduction of the
+items.
+Radioactivity of all components or samples of raw materials used in the fab-
+rication of the PSUP were subjected to direct counting to det ermine U and
+Th concentration. Speciﬁed limits of 15 ng/g for each of thes e species are
+met by all materials; measured upper limits are typically a f actor of 3 to 5
+times lower. All clean components were stored in clean plast ic bags prior to
+assembly. Assembly of the PSUP components was accomplished in cleanroom
+assembly areas with conditions typically better than Class 1000. Assembled
+components were stored in clean plastic bags prior to instal lation.
+25
+6 Electronics
+The electronics chain is required to provide sub-nanosecon d time and wide-
+dynamic-range charge measurement for the PMT pulses. While the solar neu-
+trino event rate is very low, the electronics chain must hand le background
+rates in excess of 1 kHz and burst rates from potential supern ovae in excess
+of 1 MHz without signiﬁcant deadtime. The chain is implement ed using three
+full custom, application speciﬁc integrated circuits (ASI Cs) and commercial
+ADCs, memory, and logic. The Data Acquisition (DAQ) interfa ce is VME
+compatible. The ASICs carry out virtually all the analog sig nal processing
+and part of the digital signal processing. The ASIC chip set c onsists of a
+wide-dynamic-range integrator, a fast and sensitive discr iminator/gating cir-
+cuit, and an analog/digital pipelined memory with a timing c ircuit. The use
+of these ASICs provides increased reliability and decrease d per-channel cost.
+Further cost reduction and improved functionality is obtai ned by using high-
+volume, large-scale-integration commercial components f or the remainder of
+the circuitry, including numerous ﬁeld programmable gate a rrays (FPGAs).
+The signal processing electronics occupies 19 crates, each processing signals
+from 512 PMTs. The signal and high voltage for each PMT are car ried on a
+single cable and connected in groups of 8 at the rear of each cr ate to one of
+sixteen PMT interface cards (PMTICs). The signal then enter s one of sixteen
+front-end cards (FECs), where it is processed by the custom A SICs. The ASICs
+reside on four daughter boards (DBs), each of which handles 8 channels. One
+FEC processes 32 channels, digitizes the signals, and store s the digital results
+in 4 MB of on–board memory, large enough to buﬀer event bursts (roughly
+speaking, the memory in all the FECs could hold a one-million -event super-
+nova burst). The FECs are attached to a custom backplane (“SN OBus”) that
+implements the SNO signal- and power-distribution protoco l. Also attached
+to the backplane are a translator card and a trigger-formati on card. The XL1
+translator card operates in conjunction with a companion XL 2 translator card
+in the DAQ VME crate to communicate with the single-board emb edded pro-
+cessor (eCPU) of the DAQ VME crate downstream (see Section 7) . The trigger
+card and the associated trigger system are described below. Programmable
+test, calibration, and diagnostic facilities are implemen ted throughout the
+crate. An overview of the full system is provided by Fig. 8.
+The analog part of the chain, from PMT to ASIC chip set, operat es as roughly
+9500 independent, asynchronous, data-driven pipelines. T he subsequent read-
+out part of the chain operates as a separate, clock-driven sy stem that moves
+the data from the FECs to the DAQ VME system. Each element of th e chain
+is described below.
+The analog pulse from each PMT travels through 32 m of 75Ω RG59 -like
+26
+DAQ
+SYSTEM
+db
+db
+db
+db
+db
+db
+db
+db
+BACKPLANE
+HV
+POWER
+LOW V
+POWER
+TRIG.
+VME
+BACKPLANE
+TRIGGER
+CENTRAL
+FEC #16
+SNO BUS
+FEC #1
+eCPU
+(GPS) TIMING
+MASTER
+TRANS.
+TRANS.
+XL2
+XL1
+CRATE
+PMT(1)
+PMT(512)
+1 CRATE x 19
+PMTIC #16 PMTIC #1
+Fig. 8. Overview of the SNO custom data acquisition electron ics.
+waterproof coaxial cable to the PMTIC. One commercial high- voltage power
+supply provides about 70 mA DC for the 16 PMTICs (512 PMTs) in o ne
+crate. Current to the PMTs passes through individual isolat ing, ﬁltering, and
+trimming networks. The PMTIC plugs into the rear of the SNOBu s crate and
+connects directly to its companion FEC in the front of the cra te. The PMTIC
+also provides disconnects for individual cables, HV blocki ng capacitors for the
+PMT signal, overvoltage and breakdown protection for the in tegrated circuits,
+limited readback of the PMT current, and a programmable cali bration pulse
+source for each channel. The PMT signal is transmitted throu gh a connector
+to the FEC where it is properly terminated, split and attenua ted.
+On the FEC, the signal current is delivered to one of four daug hter boards.
+The DBs physically separate most of the analog signals from m ost of the
+digital signals in order to reduce potential crosstalk, and simplify the overall
+FEC+DB design. The signal is then fed to a four-channel discr iminator chip
+(SNOD) where any leading edge is observed by a fast diﬀerenti ator. The cur-
+rent is split into two branches (approximately in the ratio 1 :16) and fed into
+two separate channels – one low gain, the other high gain – of a n eight-channel
+charge integrator (SNOINT). The SNOD and SNOINT chips were f abricated
+as custom designs in AT&T’s CBICU-2 process [26,27]. The SNO INT chip,
+which uses high-quality external capacitors for the actual integration, has dual
+integrator channels in order to increase the eﬀective dynam ic range to more
+than 14 bits. The SNOINT also provides shaped low and high gai n analog
+sums of the PMT input signals for use in detector triggering. Each channel of
+the SNOD chip has independent discriminator and gate genera tors to provide
+27
+Discriminator (Internal Signal)
+RESET
+Global Trigger
+T
+Q with GT
+no GT
+SAMPLE
+0 50 100 150 200 250 300 350 400
+PMT Output
+ns
+∆Q
+∆T
+Fig. 9. Single channel timing cycle. With no GT present, a cha nnel resets automat-
+ically at the end of a timing cycle ( ∼ 400 ns).
+the timing functions necessary for the SNOINT chip. A timing diagram for
+the SNOD and SNOINT chips is shown in Fig. 9. The SNOINT and SNO D
+chip outputs are then delivered to the CMOS ASIC analog memor y.
+The CMOS member of the SNO chip set (QUSN7) provides analog me mory,
+a time–to–amplitude converter (TAC), and channel and trigg er logic for the
+SNO detector. The 16–deep memory samples the low- and high-g ain channels
+of the SNOINT at early and late times, for a total of four possi ble charge
+samples [28]. The QUSN7 chip also receives a signal from the S NOD which is
+used to initiate a time measurement cycle and the creation of system trigger
+primitives. These single-channel trigger primitives cons titute the ﬁrst stage of
+a 9438-input analog sum. This mixed analog/digital device u ses custom analog
+blocks combined with auto-placed and routed standard cells and is fabricated
+in the Northern Telecom CMOS4S process [29].
+The timing sequence and TAC in QUSN7 are initiated on the lead ing edge of a
+signal from SNOD. The TAC for a given PMT is started whenever t hat PMT
+ﬁres, and is either stopped by a centrally generated Global T rigger (GT) signal
+or resets itself if no GT arrives after an internal timeout pe riod. On a valid
+GT, four analog voltages (corresponding to one time and thre e of the four
+selectable charge measurements) are stored in one of the 16 a nalog memory
+28
+banks, an associated digital memory records the sequence nu mber of the GT
+(for event building), the memory location (for second order corrections of the
+data) and any associated condition ﬂags, and a data-availab le ﬂag is set. The
+overall trigger deadtime is less than 10 ns, and since each ch annel is self-
+resetting, the only other relevant deadtime is the per PMT deadtime, which
+is set to about 400 ns to allow for light reﬂection across the S NO detector
+volume. These two contributions to the detector deadtime ar e negligible.
+The QUSN7 chip also generates two trigger primitive signals , a short coin-
+cidence (roughly 20 ns) and a long coincidence (roughly 100 n s), some basic
+utility functions, and extensive self-test capability. Se parate internal counters
+are used to keep track of PMT noise rates and count error condi tions. All
+counters and latches are accessible for testing via an exter nal scan path and
+a variety of programmable adjustments are built in.
+A data available ﬂag from any QUSN7 initiates an external 32– channel readout
+sequencer. The sequencer is a clocked, synchronous state ma chine implemented
+in a standard ﬁeld-programmable gate array (FPGA). At the se quencer’s con-
+venience, a QUSN7 chip with available data is selected and pr esents four
+individually buﬀered analog voltages to the four on-board 1 2-bit 2- µ s ADCs.
+After the ADCs have sampled the analog voltages, the sequenc er reads three
+bytes of digital information: the 16-bit GT sequence number , four bits of cell
+address, and four ﬂag bits. A fourth read strobe clears the me mory location.
+At the end of the sequencer’s cycle, a 3-word, 12-byte, ﬁxed- format data struc-
+ture is loaded into the on–board memory. The memory is a stand ard SIMM
+DRAM under the control of a commercial dual port controller. The sequencer
+operates one port of the controller as a FIFO while the second port is accessed
+via the downstream DAQ interface. Each three word descripto r is complete
+in the sense that the measured time and charge and the geograp hic chan-
+nel number and temporal GT sequence number are fully speciﬁe d, so while
+it is possible that hit descriptors will be loaded into memor y out of tempo-
+ral sequence, they can be properly sorted out in the downstre am DAQ event
+builder.
+The pair of translator cards (XL1, XL2) implements a high spe ed (> 8 MB/s)
+RS485 link between each SNOBus crate and the central DAQ VME c rate
+(shown in Fig. 8 containing a Motorola 68040 single-board co mputer, or “em-
+bedded CPU” (eCPU)). The translator card located in the SNOB us crate per-
+forms a TTL ↔ GTL conversion. The use of GTL (Gunning Transceiver Logic,
+with a 0.8-V swing) on the SNOBus backplane for all data, addr ess and control
+lines reduces the possibility of crosstalk with the sensiti ve, low voltage PMT
+signals. For the same reason, clock, DTACK (the VME data hand shake sig-
+nal) and other important signals are transmitted on the SNOB us backplane as
+low–level single–ended emitter-coupled logic. All signal s are terminated, and
+29
+the use of a 2-mm grid, 165-pin connector on this custom backp lane makes for
+a more compact and ﬂexible system and permits the use of a grea tly increased
+number of ground lines relative to standard VME.
+Each MeV of energy deposited in the SNO detector is expected t o result in
+roughly eight contemporaneous photoelectrons detected by the PMT array.
+Thus the most powerful hardware trigger for detection of sol ar neutrinos is a
+simple count of the number of PMTs that have ﬁred in the recent past. Because
+the PMT array is 17 m in diameter, diﬀerent photons from an int eraction in
+the D 2O could diﬀer in travel time to the PMTs by as much as 66 ns (or
+longer, if they undergo reﬂection(s)). For this reason the t rigger resolving
+time is set digitally to about 100 ns to allow all unreﬂected p hotons from a
+ˇCerenkov event to be counted toward a possible trigger. The a ctual counting
+of hits is done via a chain of analog summations.
+A signal from SNOD is used in QUSN7 to initiate a pair of indepe ndent current
+pulses. The longer pulse (nominally 100 ns) is sent to the ﬁrs t stage of a 9438-
+input analog sum. Summations at the FEC, crate, and full dete ctor level
+follow. The ﬁnal summation is compared against a programmab le threshold,
+and a sum above this threshold will generate a GT. The second c urrent pulse
+generated by QUSN7 is nominally much narrower (about 20 ns), has a digitally
+set width and delay and, in an identical summing tree, genera tes a separate
+trigger useful for studies in which one wishes to scrutinize a selected, smaller,
+ﬁducial volume of the detector.
+In addition to these two discrete analog sums, the SNO trigge r system can
+trigger on the analog sum of the 9438 shaped PMT signals produ ced by the
+SNOINT chips, and copies of each of the sums are sent to a digit al oscilloscope
+for real time monitoring of the state of all 9438 channels. Fo r the 100 ns
+coincidence trigger, up to three separate thresholds can be set simultaneously,
+and triggers from the lowest threshold can be prescaled with a factor as large
+as 65,534 to provide a monitor of very low energy backgrounds . A built-in
+pulser provides a “pulsed–GT” trigger, which is used as a “ze ro bias” trigger
+for the detector. All trigger types can be enabled simultane ously, and bits
+corresponding to each type that ﬁred in a given event are latc hed in a “trigger
+word” that is part of the data stream.
+Two separate oscillators are used to keep a record of absolut e and relative
+time. A commercial GPS system provides a 10 MHz signal as well as precision
+time markers at requested Universal Times. This system is no minally accurate
+to order 100 ns and will allow correlation of SNO data with tha t of other
+astronomical detectors. Since the GPS receiver must be on th e surface and
+all the other electronics is below ground, communication de lays due to the 4
+km long ﬁber optics must be continuously monitored. This is d one by using a
+separate ﬁber in the same bundle and measuring total round tr ip propagation
+30
+time. A highly stable quartz oscillator operating at 50 MHz o ﬀers a higher
+precision inter–event timing standard.
+Extensive measurements have been made of the electronics all the way from the
+integrated circuits to the full operating 9728 channel syst em (19 crates with
+512 channels each, a number of which are connected to non-PMT sources)
+which had been installed underground and was completely ope rational by the
+spring of 1998. Tests of the front end custom ASICs running as single devices,
+as a coupled chip set, and on full functionality production b oards running with
+the prototype and then production DAQ software were very suc cessful. The
+performance of the bipolar chips is very close to that predic ted in the pre-
+fabrication simulations and the CMOS chip is adequate for th e experiment.
+The charge linearity fully satisﬁes our design goals. The li nearity and preci-
+sion of the time measurement are also signiﬁcantly better th an the minimum
+requirements of SNO. Tests with pulsers and actual SNO PMTs h ave veriﬁed
+stable and reliable operation of the chip set and the system e ven under the
+unanticipated challenge of high rate full voltage breakdow ns in degassed H 2O
+at some of the underwater PMT connectors. A single-photoele ctron spectrum
+with no discriminator threshold set is shown in Fig. 10.
+Fig. 10. Single photoelectron spectrum using the full elect ronics chain with an in
+situ SNO PMT. The truncated noise peak reaches roughly 2000 count s.
+31
+7 Data Acquisition
+In this section the design and functioning of the SNO Data Acq uistion System
+(DAQ) is outlined. First, a general overview of the system ar chitecture is
+presented, followed by a more in-depth discussion of the det ails of the readout
+and control, event-building, and low- and high-level monit oring software.
+The principal hardware components of the SNO DAQ system are a single
+VME crate containing a Motorola 68040 single-board compute r without an
+operating system (the embedded CPU, or eCPU), but with 32 MBy te of on-
+board memory. A PCIbus-VME interface (the Macintosh Dual-P ort Memory
+or MDPM) with 8 MByte of memory, an SBus-VME interface (the Su n Dual-
+Port Memory or SDPM) with 8 MByte of memory, the Master Trigge r Card
+(MTC), and the seven XL1 cards needed to access the 19 “SNO cra tes” con-
+taining the front-end electronics also reside in this crate .
+Each SNO crate is read out sequentially by the eCPU, which acc esses one crate
+in turn through the transparent XL1/XL2 interface bus. With in each crate,
+the FECs are read out sequentially, by programming the slot- select register
+on the crate’s XL2 card.
+Once the contents of the FEC memory have been read by the eCPU, they
+are transferred to a circular buﬀer on the SDPM. The eCPU addi tionally
+has access to the Master Trigger Card memory; once it has chec ked every
+enabled FEC, it reads out the MTC memory and transfers the tri gger data to
+a separate circular buﬀer on the SDPM.
+The SDPM is simultaneously and asynchronously accessed in r ead-only mode
+by a Sun Ultra Sparc 1/170 workstation, which is responsible for sorting the
+FEC and MTC data and building them into events. The Sun writes full events
+to disk. A separate mechanism is responsible for copying com pleted event
+ﬁles to a tape drive located on this Sun as well as copying, via Ethernet,
+these ﬁles to a Sun on the surface, where they are copied again to tape. The
+system also supports monitoring programs running on a varie ty of platforms.
+These monitoring programs access a sampled data stream in re al time over
+the network.
+The readout of the electronics is both controlled and monito red via a user
+interface Program, the “SNO Hardware Acquisition and Reado ut Control
+(SHARC),” running on a Power Computing 250 MHz PPC Macintosh com-
+patible, which uses the MDPM to communicate with the eCPU. A s et of small,
+predeﬁned data blocks transfer control and low-level monit oring information
+such as user commands and eCPU status between SHARC and the eC PU.
+SHARC initializes the hardware, takes individual hardware elements (chan-
+nels, cards, crates) in and out of the readout, stores the cur rent hardware
+32
+conﬁguration (which elements are present and which are bein g read out), and
+ensures that this information is saved.
+SHARC controls SNO’s calibration sources through a manipul ator computer
+that moves the sources around inside the detector, and also r eceives infor-
+mation regarding individual source status from the various computers used
+to operate the diﬀerent sources themselves. The manipulato r or “calibration”
+computer inserts this slowly-varying data into the data str eam by sending it
+to SHARC, which writes it to a calibration data block in the MD PM. Source
+information that changes more quickly (additional trigger information, more
+precise timing) is generated if necessary by routing the rel evant signals from
+the sources to spare FECs and integrating the resulting data into the data
+stream exactly as if it were coming from the PMTs. Interpreta tion of the data
+is left to the oﬄine analysis.
+The eCPU reads the current conﬁguration from a control block in the MDPM
+that has been loaded by SHARC during initialization. It loop s over the desired
+hardware, incrementing error registers in the MDPM if read o r write errors
+are detected, and attaching information identifying the ba d crate or card. The
+eCPU periodically checks the conﬁguration block for change s, which if detected
+will alter the readout loop. In this manner, individual card s or even entire
+SNO crates can be removed from the readout loop. A MDPM-resid ent control
+structure containing “start” and “stop” semaphores is also polled periodically,
+and enables global control of the readout.
+Removing hardware from the readout loop or pausing the reado ut entirely does
+not prevent data from being stored in the FEC memory. Each FEC holds up to
+∼ 350, 000 PMT hits, several hours of data under normal detector ope ration.
+Individual channels (bad PMTs) are taken oﬄine through soft ware by writing
+to a FEC register that prevents the channel data from going in to the FEC
+memory.
+The eCPU transfers the FEC and MTC memory contents to two circ ular
+buﬀers in the SDPM, 7 and 1 MByte in size, respectively. The eC PU updates
+a buﬀer write pointer, while the Sun updates a buﬀer read poin ter, enabling the
+eCPU to track the Sun’s readout progress. The eCPU will pause the readout
+of the hardware if either buﬀer ﬁlls up and will wait until the Sun catches up.
+Whenever it is changed, a copy of the conﬁguration control bl ock is written to a
+block in the SDPM by the eCPU, where it is read by the Sun and inc orporated
+into the event data stream.
+The Sun, once it has read out the SDPM, sorts through the MTC an d FEC
+data and aggregates PMT hits plus MTC trigger information in to events.
+Events are stored in a buﬀer for some period of time to ensure t hat any late
+PMT hits can still be associated with the proper event. Once t he latency period
+33
+expires, the events are passed to a FORTRAN process, which tr anslates the
+data into ZEBRA format [30] for use by the oﬄine analysis and w rites the
+resulting ﬁles to disk.
+In order to monitor the state of the eCPU code, the MDPM contro l block
+contains, in addition to the start-stop semaphores, a pair o f “heartbeats,”
+counters that are incremented in turn when the eCPU is loopin g over the
+readout, or in a tight loop waiting for the start semaphore to be set. The user
+interface for SHARC displays these heartbeats.
+Data from the Sun, either in raw, pre-event-built form or as c ompleted events,
+are transmitted over the network to a Sun resident process, c alled the Dis-
+patcher, which rebroadcasts the data to any clients request ing it. As this
+rebroadcast is also over the network, clients can be located anywhere. The
+Dispatcher also receives data regarding run conditions fro m the control Mac.
+The data are labelled, and diﬀerent clients can request data with diﬀerent
+labels. Clients receive only as much data as they can process , and any data
+unsent by the Dispatcher is overwritten after some time. For high-rate data,
+e.g., certain types of calibrations, the monitor system behaves a s a sampling
+system. The system is extremely modular, and clients on vari ous platforms
+can connect and disconnect from the Dispatcher at will. Beca use of this sepa-
+ration between the Dispatcher and the monitors, the Dispatc her itself is very
+stable.
+Tools available for both UNIX and Mac platforms allow one to e xamine the
+raw PMT data, MTC data, or full event data, to check for data in tegrity, and
+to examine data either on a crate-by-crate basis or for the fu ll complement of
+channels. There are several tools for event display in the SN O detector geom-
+etry. In addition, there are Web-based monitoring tools tha t update HTML
+ﬁles on a designated server for displaying more static infor mation of interest
+to the oﬀsite collaborator.
+8 Neutral Current Detector Array
+The detection of a free neutron is the signal that a neutral-c urrent (NC) event
+has occurred, while the detection of a neutron (or two neutro ns) in coinci-
+dence with a positron indicates a
+ν e interaction. Heavy water is an excellent
+moderator, and a number of possible strategies for detectin g neutrons can be
+devised. One such strategy, discussed in Sections 1 and 2, in volves the addi-
+tion of a chloride salt to the D 2O. When a neutron captures on 75% abundant
+35Cl, it emits 8.6 MeV in γ rays, which mainly Compton scatter. The resulting
+ˇCerenkov radiation emitted by the electron can be detected b y the PMT ar-
+ray in the same way CC events are detected, and the ˇCerenkov-light patterns
+34
+produced by γ rays distinguished from those of electrons on the basis of th eir
+greater isotropy.
+Alternatively, neutrons can be detected with high eﬃciency in 3He-ﬁlled pro-
+portional counters. An array of such counters, with a total l ength of 770 m,
+and constructed of highly puriﬁed materials, has been desig ned for SNO [31].
+In this way, the NC and CC events can be recorded separately an d distin-
+guished on an event-by-event basis. Event-by-event sortin g makes optimum
+use of available statistics, and simpliﬁes interpretation of sparse signals, such
+as from a distant supernova.
+Detection of thermal neutrons by the reaction
+3He + n → p + 3H + 764 keV
+takes advantage of an enormous cross section, 5330 b, and is a well developed
+art that has included applications in neutrino physics [32– 34]. Nonetheless,
+the design of an array of 3He proportional counters for SNO poses unusual
+problems.
+The neutron production rate in SNO is expected to fall in the r ange 6 to
+42 neutrons per day based on the measurements by the SuperKam iokande
+Collaboration [35] of the rate of ν -e scattering, but not the ﬂavor composition.
+The rate predicted by recent solar-model calculations [8] i s 13 per day when the
+cross-section calculated by Kubodera and Nozawa [36] is use d. The neutron
+signal must not be overwhelmed by backgrounds from naturall y occurring
+radioactivity in construction materials, nor can substanc es be allowed to leach
+signiﬁcantly into the heavy water and interfere with water p uriﬁcation. Helium
+permeates readily through many otherwise acceptable mater ials. The counters
+are to survive under water at absolute pressures up to 3.1 atm for ten years
+or more, placing stringent demands on detector longevity an d stability. A
+counter array with high neutron eﬃciency is needed, but not a t the cost of
+signiﬁcantly obscuring the ˇCerenkov light from CC events. These conditions
+severely constrain detector design, the materials employe d in constructing the
+detector array, and the methods of handling and deployment.
+Backgrounds of several kinds can be present. Most serious is photodisintegra-
+tion of deuterium by gammas above 2.22 MeV, as the neutrons pr oduced are
+indistinguishable from the ν -induced signal.
+At the bottom of the natural Th and U decay chains are two suﬃci ently
+energetic gammas. Many cosmogenic activities also have hig h energy gammas,
+but only one, 78-d 56Co, has a long enough half-life to be relevant. Energetic
+photons can also be produced by capture of neutrons and by ( α ,pγ ) and (α ,nγ )
+reactions.
+35
+Table 4
+Capture percentages of neutrons by isotope, for pure D 2O and for pure D 2O with
+NCDs installed.
+Pure D 2O NCDs
+3He 36.6
+Ni 1.6
+D2O 66.9 36.9
+H in D 2O 16.5 9.1
+D in D 2O 32.0 17.7
+O(n,γ ) in D 2O 5.8 3.2
+O(n,α ) in D 2O 12.6 6.9
+Acrylic 28.4 20.9
+H2O exterior to A V 4.7 4.0
+Alpha particles emerging from the wall of the proportional c ounter can leave
+the same amount of ionization in the gas as a 3He(n,p)T event, as can electrons
+from β decay and Compton scattering. Even very low-energy events, such as
+the decay of tritium, can compromise the signal via random su mming.
+The principal defense against these backgrounds is to minim ize radioactivity
+in construction materials and to assure a high degree of clea nliness during
+assembly. To supplement those measures, techniques for pul se-shape discrim-
+ination and position encoding are used, both of which requir e digitizing the
+pulse ion-current proﬁles event by event. Spurious pulses f rom high-voltage
+breakdown and electromagnetic interference must be contro lled. Backgrounds
+of all types must not only be minimized, but in addition there must be robust
+techniques to measure them in situ .
+Because of the eﬃciency of heavy water as a neutron moderator and the high
+cross-section for neutron capture on 3He a rather sparse array of neutral-
+current detectors (NCD) is suﬃcient. An array of 5.08 cm diam eter propor-
+tional counters with a total length of 770 m arranged on a squa re lattice with
+1 m spacing gives a neutron capture eﬃciency of approximatel y 37% (see Ta-
+ble 4) with tolerable interference to ˇCerenkov light produced via the charged
+current interaction. Approximately 15% of uniformly gener ated optical pho-
+tons are absorbed.
+At modest pressures of 1-3 atm of 3He, the counters are essentially “black”
+to thermal neutrons. For 99.85% enriched heavy water, the me an distance
+from the point of generation to the point of capture for therm al neutrons is
+calculated to be 110 cm and the mean time to capture 16 ms with t he NCD
+36
+array, compared with 48 cm and 4 ms, respectively, for 0.2% Mg Cl2.
+The detectors are ﬁlled with a gas mixture of 85% 3He and 15% CF 4 at a
+total pressure of 2.5 atm to provide a good compromise betwee n gas gain
+and stopping power (to mitigate a “wall eﬀect” wherein eithe r the proton or
+the triton strikes the wall before the end of its range). A low er pressure, and
+therefore operating voltage, would simplify microdischar ge management and
+increase drift speeds, but would require thick-walled coun ters to resist collapse.
+At the bottom of the SNO vessel, the absolute pressure is that of a column of
+D2O of height 16.8 m plus 1.3 atm of air pressure, for a total of 3. 1 atm.
+The copper anode wire of diameter 50 µ m is low in radioactivity and ohmic
+losses. At 1650 V the gas gain is approximately 100. For highe r gas gains
+positive-ion space charge at the wire causes the avalanche m ultiplication to
+depend increasingly on track orientation.
+Trace amounts of electronegative contaminants such as oxyg en and water de-
+grade severely the performance of the gas in a sealed counter . Consequently,
+counter surfaces are electropolished, acid-etched, baked under vacuum, and
+purged with boiloﬀ N 2 prior to ﬁll. The chemical treatment also removes sur-
+face debris stripped oﬀ the mandrel during the fabrication p rocess.
+The 3He gas from the Department of Energy facility in Savannah Riv er con-
+tains a small amount of tritium, about 0.5 mCi/l, which is red uced to 5 nCi/l
+or less by passage through a charcoal-loaded cold trap and by recirculation
+through a SAES, Inc., St101 getter. At that level, random coi ncidences and
+pileup of tritium decay pulses are no longer a concern in the e nergy regime
+of interest. Some detectors, about 5% of the total by length, are ﬁlled with
+4He:CF4 to provide a check on backgrounds.
+The NCDs are fabricated in three diﬀerent unit lengths in ord er to ﬁll the
+sphere eﬃciently. ( An upper limit is set by the dimensions of the cage in the
+INCO Number 9 shaft, which permits an object 3.7 m long to be br ought
+down.) The active length is 13 cm less than the mechanical len gth. Fig. 11
+shows the main features. The important mechanical paramete rs of the detec-
+tors are summarized in Table 5.
+The bodies of the proportional counters are made of ultrapur e nickel tubes
+fabricated at Mirotech (Toronto) Inc., by thermolysis of Ni (CO)4 vapor at the
+surface of an anodized aluminum mandrel heated to 215 C. A lim ited number
+of elements (Pb, Ra, Th, and U not among them) react with CO to f orm car-
+bonyls, and the metals formed by chemical vapor deposition ( CVD) from this
+precursor can be expected to be free of the most troublesome r adioisotopes.
+The nickel deposit has properties very similar to conventio nal metallurgical
+products. Radiochemical neutron activation analysis has s hown Th levels in
+the bulk material of order 10 −12 (1 ppt) by weight or less.
+37
+Vectran braid
+Anchor balls
+Fused-silica
+insulator
+Delay line 
+termination
+Pinch-off
+fill tube
+Nickel endcap
+body
+Resistive coupler
+(cable end only)
+Readout cable
+Cable endcap
+with acrylic spacer
+Counter body
+(  He-CF   gas mix)3
+4
+Fig. 11. SNO neutral-current detector.
+Nickel is a relatively inert metal. The exposed macroscopic surface area in SNO
+is 125 m 2. In 17.3 MΩ-cm water the measured leach rate is ≤22 µ g m −2d−1,
+which is not expected to compromise the operation of the wate r puriﬁcation
+plant.
+Endcaps are also made by CVD, in this case on stainless steel m andrels, and
+are welded into the tubes with a Lumonics 50-W Nd-YAG laser we lder. In-
+sulators are Heraeus-Amersil Suprasil T-21 synthetic fuse d-silica tubes. The
+insulators are internally coated with a layer of pyrolytic g raphite at anode
+potential to eliminate electric ﬁelds inside them. They ext end 2.5 cm into
+the gas volume to act as ﬁeld tubes and prevent multiplicatio n of electrons
+from regions where the electric ﬁeld is distorted. A silica- nickel seal is highly
+38
+Table 5
+Important physical parameters of the NCD detectors.
+Item Value Variation Units
+Wall thickness 0.036 +0. 012
+−0. 000 cm
+Length 200, 250, and 300 cm
+Diameter 5.08 cm
+Wire diameter 50 µ m
+Gas pressure 2.50 ±0.03 atm
+Weight 510 gm/m
+mismatched, so the design places the silica under compressi ve stress at work-
+ing temperatures to take advantage of the high compressive s trength of that
+material. Techniques were developed in collaboration with IJ Research (Santa
+Ana), Inc. to metallize the seals and solder them with a 96.5: 3.5 eutectic Sn:Ag
+alloy. Counters are ﬁlled through copper tubes, which are th en pinched oﬀ.
+All assembly is carried out in a Class 1000 cleanroom.
+The individual units are welded together at the time of deplo yment in SNO
+in 96 “strings” of length ranging from 4 m to 11 m. A total mecha nical length
+of 770 m is to be deployed in the heavy water. The strings are in stalled by a
+remotely operated vehicle (ROV) once the vessel is ﬁlled wit h heavy water.
+Each string is anchored to an attachment point aﬃxed to the bo ttom of the
+acrylic vessel and ﬂoats upward, restrained by a ﬂexible bra ided anchor cord
+made of Vectran ﬁber.
+Spaces of 35 to 50 cm are left between the string ends and the ve ssel. The
+bottom of each string is terminated with a 30 ns open-ended 41 5Ω delay line
+to facilitate position readout by pulse-reﬂection timing. A single 91Ω coaxial
+cable, made of copper and polyethylene by South Bay Cable (Id yllwyld, CA),
+Inc., carries signals from the top of each string up the neck o f the vessel to
+preampliﬁers. The cable speciﬁc gravity is 0.955.
+In Table 6 are listed some of the decay properties of relevant isotopes. Since
+detection of ˇCerenkov light is the principal means of quantifying the pho to-
+disintegration background in situ , the production of light by other activities
+is also important.
+By means of a suite of radioassay techniques (neutron activa tion analysis,
+radiochemical methods, direct gamma counting, alpha count ing) applied to
+samples and to the complete inventory of smaller components , quantitative
+predictions can be made concerning the levels of photodisin tegration and other
+backgrounds that will accompany the NCD array in SNO. A neutr on pro-
+duction rate of 100 per year in the SNO vessel results from 1.1 µ g of Th
+39
+Table 6
+Photodisintegration and high-energy beta emitters.
+Isotope Eβ (max), MeV Eγ , MeV γ branch, % (γ ,n) Probability
+212Bi(→ 208Tl) 1.8 (18%) 2.615 36% 1/470 (per γ )
+214Bi 3.26 (18%) 2.445 1.5% 1/750 (per γ )
+56Co 1.8 var. - 1/1125 (per decay)
+228Ac 2.06 (11%) var. 89% 0
+234mPa 2.28 (100%) - - 0
+40K 1.3 (89%) 1.46 (EC) 11% 0
+in equilibrium, or 12.8 µ g of U in equilibrium. Slightly more than half of all
+neutron-capture events can be unambiguously identiﬁed via track length vs en-
+ergy as being distinct from alpha particles (for this reason the array eﬃciency
+is taken to be 25% rather than the nominal 45% capture eﬃcienc y). Electron
+and Compton backgrounds, and microdischarge events, have t opologies sepa-
+rated still further from neutron events. As a result, photod isintegration is the
+only background requiring a separate determination and sub traction, which
+can be accomplished by measurement of the ˇCerenkov light emitted by ra-
+dioactivity. Assays still in progress preliminarily indic ate that the NCD array
+will contribute fewer than 300 neutrons per year.
+9 Control–Monitor–Alarm (CMA) System
+The Control–Monitor–Alarm (CMA) system is the data-acquis ition and con-
+trol system for the underground laboratory environment. Th e system moni-
+tors approximately 250 analog and 220 digital readings. Maj or functions of
+the CMA system are:
+• Hazardous gas detection;
+• Environment monitoring (temperature, humidity, air press ure);
+• Cooling and air-circulation control;
+• Load and position sensing on critical structural elements;
+• Electrical system monitoring;
+• Control of the magnetic compensation coils for reduction of the eﬀect of the
+earth’s ﬁeld;
+• Monitoring of supply voltages and currents for the electron ics;
+• Logging of various monitored parameters.
+The system uses Paragon TNT industrial automation software from Nema-
+soft [37]. The hardware was furnished as a complete system by Sciemetric In-
+40
+struments [38]. Analog readings are converted by a single mu ltiplexed 20 kHz
+12-bit ADC. Voltages up to ±10 VDC can be converted in seven software
+selected ranges. Industrial 4–20 mA signals are converted t o voltages with
+precision resistors. Digital inputs may be 24 VDC or 120 V AC. There are 32
+solid-state relay channels for digital output. The input/o utput scan rate is up
+to 2 Hz. Systems with independent microprocessors (such as t he cooling unit,
+and the uninterruptable power supply) have serial links for ASCII output to
+the CMA.
+The CMA software is presently running on a dual 200 MHz Pentiu m-Pro sys-
+tem with 256 MBytes of RAM running Windows NT 4.0. Remote syst ems run-
+ning Paragon TNT software can connect via TCP/IP with the und erground
+system. A remote monitoring system is kept running in the SNO surface build-
+ing. Critical alarms are annunciated on the surface as well a s underground.
+Data are recorded continuously in a Microsoft Access databa se on the main
+CMA system, and are exported periodically to the custom SNO d atabase. The
+data logging program enters a new record only when a signiﬁca nt change in a
+parameter has occurred.
+10 Calibration
+Accurate measurement of the physics processes in the SNO det ector requires a
+chain of calibrations and calculations to connect the raw me asured quantities
+of PMT charge and time to a full description of the interactio n in terms of
+energy, direction, and particle type. This set of calibrati ons includes built-in
+electronic calibrations, several dedicated optical calib rators, various types of
+tagged and untagged radioactive sources and detailed radio assays of the detec-
+tor materials. Taken together with a comprehensive Monte Ca rlo simulation
+of the detector, this set of calibrations creates an overdet ermined model of the
+detector that can be used to interpolate energy scales and pa rticle identiﬁca-
+tion across the full response range of the detector. The majo r calibration tools
+are listed in Table 7 and brieﬂy described in the following se ctions.
+The conversion of the digitized values for PMT charge and tim e to photo-
+electrons (pe) and nanoseconds (ns) is a two-step process, i nvolving electronic
+pulses and light ﬂashes from known positions within the dete ctor. The elec-
+tronic pulser calibration yields the transfer functions an d oﬀsets (pedestals).
+The establishment of a common time reference for all channel s ( t0) is per-
+formed with optical sources.
+The charge oﬀsets (pedestals) are the values digitized when there is no charge
+input from the PMT. The time oﬀset is found using a full time ra mp. Dur-
+41
+Table 7
+Calibration devices for the SNO detector and their principa l uses.
+Device Calibrations
+Electronic Pulsers Time slope (ns per count); Time pedestal ;
+Charge slope (pC per count); Charge pedestal
+Laser Ball; Sonolumi-
+nescent Source; LED
+Sources
+Common time reference ( t0); D 2O absorption
+and scattering ( λ ); Acrylic absorption and scat-
+tering ( λ ,r,θ ); H 2O absorption and scattering
+(λ ); Reﬂection and scattering from structures;
+Single photoelectron (pe) response ; Relative
+single pe eﬃciency; Multiple photoelectron re-
+sponse; Walk (time vs. pulse amplitude)
+Radioactive Sources:
+16N, 252Cf, 8Li, Th, U
+Gamma energy response; Electron energy re-
+sponse; Neutron-capture eﬃciency; Angular
+response
+3H(p,γ )3He Accelerator
+Source
+Gamma energy response
+Tagged Sources: 252Cf,
+24Na, 228Th
+Gamma energy response; Neutron-capture
+eﬃciency
+Radioassay Backgrounds from construction materials; Back -
+grounds from water contaminants
+ing calibration, each cell (there are 16 analog memory cells per channel for
+each of the three charge and one time measurement) is given 10 event trigger
+pulses without any PMT input. Because the pedestal calibrat ion is done dur-
+ing normal running there are occasional coincidences with n oise or detected
+light that must be removed during the analysis stage. In the o ﬄine analysis,
+two passes are made through the data. The ﬁrst pass determine s the value of
+the digitization that occurs most frequently, and then even ts that are more
+than ±10 units away from this peak digitized value are discarded fo r a second
+pass that determines the mean (pedestal) and RMS for each cel l. Should more
+than a certain number of events be rejected with this cut, the cell is ﬂagged
+and not used again until recalibration or repair. The RMS is t ypically less
+than one ADC count and cells with an RMS greater than three cou nts are
+ﬂagged. The pedestals are run constantly in background whil e solar-neutrino
+data are being taken.
+Individual voltage pulses of varying width and amplitude (a nd, thus, charge)
+are fed to the PMT inputs to measure the high gain, long integr ation (QHL),
+high gain, short integration (QHS), and low gain, selectabl e integration (QLx)
+signals. Each cell is pulsed ten times for a given injected ch arge (Q inj). The
+charge injection is incremented in steps up to a maximum valu e. A low-order
+polynomial ﬁt of digitized value vs. Q inj is performed for each cell oﬄine.
+42
+The time calibration sends one pulse to the PMT input and a del ayed pulse to
+the event trigger; the time diﬀerence between the pulses is v aried by a known
+amount in steps as small as 100 ps. The slope calibration proc edure is similar
+to that of the charge calibration. The relation between the t ime digitized value
+and nanoseconds between two generated pulses is monotonic o ver most of the
+range.
+The risetime of the PMT pulses and leading-edge discriminat ion lead to a
+timing dependence on the PMT anode charge. Calibration of th is eﬀect is
+made by running the laserball at various intensities from a f raction of a pe
+per PMT to hundreds of pe per PMT, and then creating charge ver sus time
+(QvT) histograms for each PMT.
+Because many of the optical- and particle-calibration tech niques are posi-
+tion dependent, a general-purpose manipulator has been dev eloped to provide
+source deployment at accurately known oﬀ-axis positions in two orthogonal
+planes in the D 2O. (In addition, six calibration access tubes run from the
+deck to positions in the light water.) The source manipulato r is a carriage
+located in a plane by two Vectran ropes (see ﬁg. 12) that run do wn the vessel
+neck through pulleys on the carriage to ﬁxed locations on the acrylic vessel.
+A third, center rope connects directly to the source carriag e. The source can
+be introduced at the neck and visit 70% of the plane with a posi tion accuracy
+of better than 5 cm.
+At the deck interface the carriage is pulled up into a glove bo x that is part of
+the cover-gas volume. There a person can work on a source whil e keeping the
+detector isolated from light and airborne radioactivity. T he source can then
+be pulled through a gate valve into an interlock box where it c an be removed
+or serviced.
+Some of the calibration sources require power cable, signal cable and/or gas
+capillary connections to equipment on deck. To provide unif orm and reliable
+manipulator operation, these auxiliaries are cabled into a standard sized um-
+bilical cable. The umbilical cable runs through the center o f the source carriage
+to a compression ﬁtting at the top of the source. The cable con nections are
+then internal to the source. The umbilical cables are stored and paid out from
+a pulley array mechanism held under tension, thereby avoidi ng twisting of the
+umbilical cable.
+Optical sources are used in both the optical calibration and the electronics
+calibration. They include a wavelength-selectable dye las er, a sonoluminescent
+source, and light-emitting diodes (LEDs). Both the laser an d sonoluminescent
+source have emission times well suited to making precision t iming calibrations.
+The LED sources are slightly broader in time, but multiple so urces in well-
+surveyed positions oﬀer a useful and easily operated check o n the detector
+43
+Fig. 12. SNO calibration source manipulator system.
+geometry and stability.
+The nitrogen or dye laser with a ﬁber-optic cable to a diﬀuser ball (“laserball”)
+is the primary light source [39]. The laser (Laser Photonics Inc. LN203C)
+provides pulsed radiation at 337 . 1 nm with a 600 ps pulse width and peak
+power of 150 kW. The laser pulses up to 45 Hz and can be used dire ctly or
+as a pump for several dye lasers that provide wavelengths in t he range of
+360–700 nm. Neutral-density ﬁlters mounted into two select or wheels allow
+remote intensity adjustment. The laser light is delivered t o a diﬀuser ball via
+a ﬁber-optic bundle within an umbilical cable.
+The dye laser frequency and attenuation ﬁlters can be adjust ed remotely by
+computer control. The output from the dye lasers is focused i nto quartz ﬁber
+with length 1 m and diameter 1 mm (Fiberguide Ind. SFS-1000N) to enhance
+beam structure stability.
+The laser pulses are transmitted to the detector by a bundle o f 22 high-
+OH 100 µ m silica step-index ﬁbers (Fiberguide Ind. SFS-100/110/24 0/310N).
+These ﬁbers oﬀered the best combination of UV transmission, low dispersion
+and cost. The ﬁber-optic umbilical cable terminates with a 1 0 cm diameter
+diﬀuser ball that serves to distribute light quasi-isotrop ically through the de-
+tector. A plug at the neck of the ball contains a ﬁber-optic po sitioning guide
+44
+tube and also houses a miniature monitoring PMT (Hamamatsu R 5600). The
+ﬁber-optic guide tube allows the umbilical cable to be detac hed from the laser-
+ball and reconnected with no eﬀect on the light output patter n. The light
+distribution pattern from the laserball is mapped out with m onitor PMTs by
+rotating the ball in a dark room. The diﬀuser ball light pulse width is about
+2 nsec (FWHM).
+A sonoluminescent source provides bright, isotropic light of extremely short
+duration. Single bubble sonoluminescence (SBSL) can occur when an air bub-
+ble is introduced into water at the node of an intense, spheri cally symmetric
+sound ﬁeld. The light[40] has a very short ( < 100 ps) pulse width and a fre-
+quency distribution corresponding to a blackbody at a tempe rature of over
+20,000 K [41], very similar to the ˇCerenkov spectrum. The relatively high rep-
+etition rate ( ∼25 kHz) oﬀers a good test of the system’s burst capability. Th e
+short pulse width and isotropic output make the SBSL source u seful for PMT
+timing calibrations and some optical analysis. In addition , the SNO detector
+provided an opportunity to investigate a variety of fundame ntal properties of
+SBSL [42].
+The SNO SBSL source consists of a 250 ml spherical ﬂask with tw o cylindrical
+piezoelectric transducers. The ﬂask is housed within a sphe re made of two
+15 cm radius hemispherical acrylic sections to provide an ai r buﬀer. It is ﬁlled
+with pure distilled water to the neck level, and driven at the natural monopole
+resonance (28.5 kHz) with an inductively matched circuit. A small microphone
+transducer aids in scanning the frequency to ﬁnd the natural resonance.
+A bubble is generated remotely with a nichrome heater wire wi thin the wa-
+ter. The bubble stability is monitored by observing the spik es on the micro-
+phone voltage trace. As sonoluminescence output begins, th e light output is
+monitored with a small PMT (Hamamatsu R5600) within the acry lic source
+housing. The light output contains of order a million blue ph otons which are
+isotropically distributed in space when averaged over time scales of seconds
+or longer. The heater wire also provides some control over th e light intensity,
+which decreases with increasing water temperature.
+Light emitting diodes provide a simple and robust optical so urce for veri-
+ﬁcation of water transparency, acrylic vessel and source po sitions, and PMT
+response. During the ﬁnal construction stages of the PSUP, n ew LED products
+became available from Nichia Corporation. These indium-ga llium nitride sin-
+gle quantum well (NSPB500) and double hetero-structure (NL PB500) devices
+oﬀer high intensity blue radiation (420–480 nm), and the lat ter device can
+even emit in the UV (380 nm) when strongly overdriven in pulse mode [43]. A
+pulse of width approximately 7 ns is observed. Six of these de vices have been
+packaged with a pulser circuit and mounted at the locations, in cm, (695, 248,
+399), (-162, 681, -463), (-699, 49, -462), (-8, -764, -346), (698, 54, -463), and
+45
+(37, 1, -838) on the PSUP, where the center of the PSUP is (0,0, 0), the z axis is
+up, and the x and y axes are deﬁned with respect to constructio n coordinates.
+The optical calibration process results in the determinati on of attenuation
+and scattering coeﬃcients for the heavy water, light water, and acrylic [47].
+By using the various measured optical coeﬃcients, it is poss ible to simulate via
+a Monte Carlo calculation the optical transport of ˇCerenkov light produced
+by a neutrino or background particle. These simulations can then be used to
+interpolate (in space and amplitude) between the various en ergy calibrations
+discussed in the next session.
+Most of the optical analysis is performed using data from the quasi-isotropic
+laserball at near single photoelectron (spe) light intensi ty, and utilizes the
+detected light intensities as a function of the calibrated t ime between the
+fast laser trigger and the digitized time value of the PMT dis criminators.
+Light reﬂected from various parts of the detector produces s ubstructure in the
+time distribution. This substructure can be used to charact erize the optical
+properties of various parts of the detector, such as the PMT r eﬂectors and
+the acrylic vessel, and to determine the Rayleigh, Mie and la rge particulate
+contributions to the scattering of light in the water volume s [48,49].
+By moving the laserball to various oﬀ-center positions, abs orption coeﬃcients
+can be measured. Calibration source access ports into the H 2O volume within
+the PSUP will aid in determining the light attenuation in the acrylic panels.
+The relative PMT anode eﬃciencies and the overall optical “g ain” of the de-
+tector are to be monitored at the spe level over time, and can b e separated
+from changes in other optical constants by taking data at sev eral source posi-
+tions and at 400 nm where the acrylic transmission is high and uniform across
+acrylic sheets.
+There are three gas transport sources: a 16N gamma ray source, a 17N neutron
+source and a 8Li beta source [44], of which the 16N is fully developed. The gas
+transport sources consist of a D-T generator neutron source , a neutron tar-
+get chamber, gas capillaries, and decay chambers that can be deployed within
+the detector. The D-T generator, producing 14 MeV neutrons, is enclosed in
+concrete 30 m from the detector. Various target chambers can be moved into
+the neutron ﬂux by stepper-motor control. Gases from the tar get chamber are
+routed via capillaries to the deck area and down into the sour ce umbilical ca-
+bles. The decay chambers can attach to the manipulator carri age and connect
+to the umbilical cable gas lines.
+The 16N is produced via ( n, p ) on the oxygen in CO 2 gas and decays by a beta
+delayed 6.13-MeV (66%) or 7.12-MeV (4.8%) gamma ray with 7.1 3-s half-life.
+The decay chamber is 41.9 cm long and 5.7 cm radius, and is made from 5-
+mm thick stainless steel so that the electrons (which have a 1 0-MeV endpoint
+46
+energy) are absorbed. A beta tag is provided by a 3-mm thick sc intillator
+sleeve on the inside of the chamber with a 5-cm PMT. The source has been
+tested in the SNO detector and produced over 300 16N decays per second.
+To reach gamma energies above 6 MeV a miniature accelerator s ource drives
+the 3H(p,γ )4He reaction to produce 19.8 MeV gammas [45]. The source con-
+sists of a cold-cathode Penning ion source, electron optics for beam extraction
+and acceleration, and a ﬁxed target. It is housed in a 25-cm di ameter, 60-cm
+long stainless steel capsule and operates with a beam voltag e of 20–30 kV to
+produce approximately one photon per second.
+Tagged sources have been developed that permit speciﬁc kind s of events in
+SNO to be identiﬁed by time coincidence with a trigger, allow ing one to ac-
+quire calibration data in an essentially background-free m anner. Such sources
+are valuable for testing PMT response, particularly at low e nergies, for deter-
+mining backgrounds, for checking neutron transport simula tion code, and for
+calibrating event reconstruction.
+Tagged neutron sources are fabricated using 252Cf at several diﬀerent activity
+levels. The 2.64-y 252Cf decays with a spontaneous ﬁssion branch at 3.09%,
+which provides neutrons and a trigger from fragment betas an d gammas.
+Another tagged source is constructed from a NaI crystal coup led to a PMT.
+The crystal is activated to produce 15-h 24Na. The trigger can be gated on
+the energy deposited in the NaI in order to tag the 1.37 MeV or t he 2.75 MeV
+gammas in SNO to study the response to low-energy gammas, and to mea-
+sure photodisintegration neutrons. A third source [46] und er development is
+a polycarbonate-housed proportional counter with a radioa ctive source ( e.g.,
+228Th) deposited on the anode wire. The source is designed so tha t emitted
+betas will deposit little energy in the counter and will mimi c the spectrum
+produced by natural radioactivity present in SNO.
+After correcting for relative response due to position and d irection, an event
+is assigned an energy according to a calibrated NHIT scale. T he 16N source
+sets the absolute scale and provides a measurement of the ene rgy resolution
+for a 6.13-MeV gamma ray. The energy response to electrons wi ll be inferred
+from this measurement since the diﬀerence in response betwe en gamma rays
+and electrons is well modeled with the EGS4 code and will not c ontribute
+signiﬁcantly to the uncertainty in the electron energy scal e. For each event
+there is a signiﬁcant probability for recording unrelated n oise hits. The rate of
+background hits is directly measured by regularly sampling the detector using
+the pulsed–GT trigger. The high-energy end of the scale is ca librated with the
+accelerator source.
+The detector angular resolution is primarily determined fr om theoretical treat-
+ment of electron scattering and production of ˇCerenkov light, together with
+47
+the geometry of the PMT array. The treatment can be veriﬁed th rough the
+Monte Carlo against data from the 16N gamma source. If the ﬁtted event po-
+sition is taken to be the point of momentum transfer from the g amma ray to
+the electron, then the initial direction of electron motion for single Compton
+interactions is the vector to this position from the 16N source position. A cut
+on large radial distances reduces the source angle uncertai nty, while a cut on
+the larger NHIT events will select mostly those events of lar ge momentum
+transfers to the electron in the ﬁrst scatter. Deconvolutio n of the Compton
+scattering angle can be accomplished with the Monte Carlo si mulation.
+11 Control of Radioactive Contaminants
+The minimization of background events requires a high intri nsic purity of
+materials and the reduction of radioactivity on the surface s of the detector
+components. The purity of materials was addressed at the tim e they were
+selected for fabrication by measuring the activity in sampl es. Low background
+γ −ray counting and neutron activation analysis have been used extensively for
+analysis of diﬀerent materials in the SNO detector. Since th e detector is located
+in an active mine where the rock and ore dust contains typical ly 60 mg/g Fe,
+about 1.1 µ g/g U, and about 6.4 µ g/g Th, while the inner components of the
+detector require at or below 10 −12 g/g U and Th, dust levels had to be kept
+very low. A program to keep contamination as low as reasonabl y achievable
+during the construction and operation of the detector was pl anned from the
+inception of the experiment. This section describes the met hods for controlling
+and reducing surface contamination.
+Radon ( 222Rn) is of special concern in the SNO detector, since it can diﬀ use
+from components, dust or the cavity walls into the water and m ove into critical
+regions of the detector. Radon emanation from components de pends on diﬀu-
+sion properties as well as the U content, and hence it varies w ith the density,
+hardness and surface properties of the materials. Extensiv e measurements of
+radon emanation were carried out in both vacuum and water tes t chambers
+for all critical materials for the SNO detector.
+Because of the presence of small amounts of radioactive cont aminants–1 . 1 ±
+0. 2 µ g/g U and 5 . 5 ± 0. 5 µ g/g Th in the host rock and 1 . 2 ± 0. 1 µ g/g U
+amd 2. 4 ±0. 2 µ g/g Th in the concrete liner–in the SNO detector cavity, rado n
+ingress from the cavity walls is a potentially serious backg round source. Radon
+diﬀusion studies were carried out on several polyurethane c oating materials,
+both in the laboratory and in an underground test facility, t o determine the
+radon attenuation properties of these sprayed-on coatings . To meet the de-
+sign maximum of 12 radon atoms per square meter per hour diﬀus ing into
+the cavity from rock, concrete and liner materials, the coat ing material (Ury-
+48
+lon HH453 and 201-25 polyurethanes) was required to be 8 ± 1 mm thick.
+The coating was applied to a smooth concrete base on the cavit y walls and
+ﬂoor in 9 separate layers (of alternating white and gray colo ur). The coating
+thickness was monitored with a portable probe, developed es pecially for this
+work, which measured the amount of backscattered x-rays fro m a radioisotope
+source mounted in the probe [50]. This backscatter signal wa s proportional to
+the coating thickness and a standard calibration procedure was developed to
+give coating thicknesses directly. The coating is expected to attenuate radon
+from the walls by a blocking factor of 2 × 10−7.
+Contamination control at SNO has several elements. At the be ginning of as-
+sembly of the detector a clean environment (air and surfaces ) was established
+in the underground laboratory and maintained throughout co nstruction. The
+entire laboratory became, and continues to be, a clean room. Fresh air en-
+tering the laboratory and the air that is cooled and circulat ed within much
+of the laboratory passes through HEPA ﬁlters. Detector comp onents were
+cleaned above ground and appropriately packaged for shipme nt underground.
+Material and equipment enter the laboratory through an inte rlocked area with
+high-pressure water cleaning equipment. Personnel take we t showers and put
+on clean garments before entering the laboratory proper. Th ese transition ar-
+eas, the car wash and the personnel entry, are indicated on th e general layout
+of the laboratory (see Fig. 1).
+The surfaces of the laboratory (walls, ﬂoors, and construct ion equipment) were
+cleaned repeatedly as necessary during construction. Pers onnel pass through
+air showers at critical locations. Components of the detect or (such as the
+acrylic vessel) were given a ﬁnal cleaning after assembly. C omponents that
+could not be accessed for cleaning or that have topologicall y complicated sur-
+faces, for example, the PMTs and reﬂectors, were covered whe rever possible
+with clean tarpaulins or plastic sheeting (dust covers), wh ich were removed at a
+later time. Dust covers were used extensively in the constru ction of the acrylic
+vessel and the PSUP. Toward the end of construction, the infr astructure (plat-
+forms, ladder ways, ductwork, elevator, etc.) was removed i n a manner that
+left the detector cavity clean. Care was required as much of t his infrastructure
+was installed before the cavity was ﬁrst cleaned.
+At the end of construction the cavity deck was sealed to inhib it the move-
+ment of radon, and a separate clean room was established on th e deck above
+the chimney of the acrylic vessel. This local clean room encl oses the inser-
+tion points and devices that are used in the calibration and o peration of the
+detector and subsequently in the installation of the neutra l-current detectors.
+To control surface contamination one must be able to measure it and to moni-
+tor the factors aﬀecting it. Commercial air-particle count ers are used to sample
+the number and sizes of ﬁne particles in the air. The number of particles larger
+49
+than 0.5 µ m in diameter in 28 l of ambient air deﬁnes the “class” of the ai r
+and of the clean room. Class values vary dramatically depend ing on the work
+going on in a particular area. In general, the quality of the a ir within the lab-
+oratory has been in the range of class 1000 to 10,000, dependi ng on location
+and level of activity. The amount (mass) of dust that accumul ates depends
+on the number versus size distribution and on the density of t he particulate.
+Mass versus size distributions for mine dust were measured w ith a cascade
+impactor, and number-versus-size distributions with an op tical microscope.
+The dust deposition rate and the total accumulated dust are t he most relevant
+quantities. Several methods were used to measure the amount of contamina-
+tion on a surface. A quick method is the “white glove test,” in which a white
+cloth, mounted on the sharp edge of an eraser, is wiped over a s urface for a
+given distance. Through calibration measurements and adop tion of consistent
+procedures this test has been made semi-quantitative, and i t is sensitive down
+to about 0.5 µ g/cm2 of dust.
+X-ray ﬂuorescence spectrometry (XRF) was used for more sens itive and precise
+measurements. In this method, one detects elements in the ra nge Z = 20 to
+45 by the characteristic X-rays emitted following ﬂuoresce nce of the sample
+with an x-ray tube. A spectrometer was built for this purpose and located
+underground for convenient use.
+In one type of XRF measurement, thin, spectroscopically-pu re plastic ﬁlms
+were used as “witness plates” to collect dust over a known per iod of time.
+The amount of mine dust deposited was inferred by measuring t he amount of
+iron, which is present in the local mine dust at the level of 7% . A sensitivity
+of about 0.1 µ g/cm2 is possible in a counting time of 20 minutes.
+In a second type, dust is removed from a surface by placing a se ction of thin
+adhesive tape (low in Fe) on the surface, pulling it oﬀ and pla cing it in the
+spectrometer. When a single piece of tape is used to perform ﬁ ve lifts from
+adjacent areas on a surface, the sensitivity can be extended down to about
+0.015 µ g/cm2. This method was used to monitor the surface cleanliness of t he
+acrylic vessel.
+A few direct measurements of U and Th in deposited dust were ma de using
+neutron-activation analysis to verify the correlation of F e with U/Th.
+During more than three years of construction since clean con ditions were ﬁrst
+established, fairly regular patterns and deposition rates emerged. The quality
+of the air was characterized by an average class value of 2500 ± 500. Average
+deposition rates ranged from 1 µ g/cm2/month of mine dust in busy areas to
+one tenth that amount in inactive areas. (The air particle co unts and mass
+deposition rates are roughly consistent with the number-si ze distributions for
+airborne particulates measured inside the laboratory.) Th e level of cleanliness
+50
+on the surface of the acrylic vessel at the time of water ﬁll wa s typically better
+than 0.1 µ g/cm2. (Zinc was also regularly observed in the XRF spectra at a
+level typically 20% of the mine dust. Zinc comes mainly from t he use of galva-
+nized scaﬀolding in construction.) Since a mass deposition of 1 µ g/cm2/month
+integrated over a thirty-month period would exceed the targ et contamination
+limits in any region of the detector, periodic cleaning of ac cessible surfaces
+and the use of dust covers on inaccessible areas was required to achieve target
+levels.
+12 Oﬄine Analysis and Simulation Code–SNOMAN
+The oﬄine software is required to perform two major function s: the analysis of
+SNO data, and a detailed and complete simulation by Monte Car lo techniques
+of all signiﬁcant signals and backgrounds using as accurate a model of the de-
+tector and its response as possible. Both of these functions are combined in the
+SNO Monte Carlo and Analysis code, or SNOMAN. SNOMAN consist s of a
+set of largely autonomous processors written primarily in F ORTRAN. In order
+to ease distributed development and maintenance (and to ove rcome the lack
+of dynamic memory allocation in FORTRAN) these processors c ommunicate
+through a central data structure managed by the CERNLIB pack age ZEBRA.
+ZEBRA is also the basis for the management of banks of data, ca lled “titles.”
+Titles-management routines in SNOMAN insure that as succes sive events are
+analysed the constants describing the detector response ar e the appropriate
+ones for that time and detector conﬁguration. The use of auto nomous proces-
+sors working on a central data structure allowed staged deve lopment of the
+processors. Since at the time of this writing there are over 2 5 processors in
+SNOMAN, only selected ones will be discussed.
+In addition to SNOMAN there is another major oﬄine analysis t ool: the SNO
+database, or SNODB, which is based on the CERNLIB package HEP DB.
+SNODB is a distributed master-slave database that runs coll aboration wide
+via PERL installation and management scripts. The scripts s et up SNODB
+on the large variety of platforms in use and manage the update s that keep
+the various slave copies of the database in step with the mast er copy. SNODB
+contains ZEBRA banks that encode all the information about c alibrations and
+detector status, conﬁguration, and performance which is ne eded to interpret
+SNO data.
+The basic units of the data structure for the Monte Carlo are t he vertex and the
+track. A vertex represents any event of interest in the movem ent of a particle
+(the origin of the particle, when it encounters a boundary, a ny interactions
+it undergoes, etc.), while tracks specify how particles mov e from one vertex
+to the next. The Monte Carlo can then be divided into generati on (deciding
+51
+what seed vertices to create), propagation (taking the init ial seed vertices and
+creating successive tracks and vertices based on the transp ort of that type
+of particle in the SNO detector, and creating any additional particle such as
+ˇCerenkov photons which the initial particle may spawn), det ection (either of
+photons by the PMTs or of neutrons by the NCDs), and electroni cs simulation.
+In order to achieve accurate, usable code with the least time and eﬀort well-
+established and tested software packages have been used whe rever possible.
+For example the propagation of electrons, positrons, and ga mmas is handled
+by EGS4 [51] (modiﬁed to produce tracks and vertices), the pr opagation of
+neutrons is handled by routines lifted from MCNP [52], the mu on physics is
+largely taken from GEANT [53], and much of the code that descr ibes how
+the spectra might be modiﬁed by the MSW eﬀect is taken from the work
+of Hata [54]. Cross-sections doubly diﬀerential with respe ct to energy and
+angle for neutrino interactions with deuterium are those of Kubodera and
+Nozawa [36]. A large amount of work has gone into verifying se veral aspects
+of these modiﬁed external codes, which are particularly cri tical to SNO physics
+but which may not have been extensively tested in the past. In particular a
+considerable amount of eﬀort has been expended on understan ding the angular
+distribution of ˇCerenkov photons produced by an electron of a few MeV [55],
+which is important for some of the analysis techniques discu ssed below.
+The Monte Carlo code for which reliable, pre-tested softwar e like EGS4 was
+not available was written by the SNO collaboration. The phot on propaga-
+tion includes the eﬀects of attenuation, refraction, reﬂec tion, and Rayleigh
+scattering (Mie scattering is expected to be negligible for the levels of clean-
+liness expected in SNO) as a function of wavelength and polar isation. The
+light concentrator/PMT response has been the focus of subst antial software
+development and experimental eﬀort. A detailed stand-alon e simulation of a
+concentrator and PMT was written [56] and tested against exp eriment [57],
+then installed as a SNOMAN processor.
+The geometry of the detector is a compromise between a totall y data-driven
+system that would be slow but ﬂexible and a completely hard-w ired structure
+that would be fast but inﬂexible. The geometry consists of de tector elements,
+each of which is made up of primitives (such as spheres, cylin ders, elliptical
+toroids, etc.) for which the actual calculations are made. T he ability to al-
+ter the complexity of the geometry simulation allows the use r to switch oﬀ
+features that are computationally expensive in situations where they do not
+signiﬁcantly aﬀect the results.
+The actual data from the SNO detector are written to tape in th e form of
+packed ZEBRA banks. SNOMAN processors unpack the data and th en cali-
+brate it by applying pedestal, slope and oﬀsets to the ADC dat a to produce
+PMT hits with corrected times and charges (other processors exist to uncal-
+ibrate and then pack the Monte Carlo data, thus allowing the w hole data
+52
+stream to be tested with Monte Carlo data). After the calibra tion processor,
+the data handling is identical for Monte Carlo and detector d ata. A number
+of processors then exist to derive additional information f rom the PMT hit
+times and positions. The ﬁrst type of these are called “ﬁtter s.” These derive
+an event position and direction from the PMT data. A number of diﬀerent
+algorithms exist for this purpose. In addition to the ﬁtters there are proces-
+sors called classiﬁers that derive information from the ang ular distribution of
+hits in the event. This information has been shown to be a powe rful tool for
+discriminating between neutral-current and charged-curr ent events [58] and
+for measuring the most important background events directl y [59].
+Once all of these processors have ﬁnished the resulting data can be viewed
+using two tools–the event viewer and the event analyzer. The event viewer is
+a graphical display of the SNO detector which displays the va rious detector
+elements and PMT hits in 3D and a number of 2D formats. The anal yzer
+is a data-driven tool for sifting through the entries in the d ata structure (or
+through quantities derived from the entries in the data stru cture by one of a
+large number of supplied functions) to ﬁnd those that satisf y either individual
+cuts or logical combinations of a number of cuts applied to di ﬀerent quantities.
+Any entries or quantities which pass the cuts are written as a n entry in a
+CERNLIB HBOOK ntuple for later additional analysis with PA W [60]. A
+slightly unusual feature of SNO (from the point of view of a ty pical high-energy
+physics experiment) is that some events are correlated in ti me or position (the
+spallation products following a through muon, for example) . This information
+can be extracted from the data using the time correlation pro cessor, which
+allows the analyzer to combine information from diﬀerent ev ents that satisfy
+conditions placed on their relative time or position into a s ingle ntuple entry.
+13 Conclusion
+The Sudbury Neutrino Observatory is a large, second-genera tion neutrino de-
+tector with active ﬁducial volumes consisting of 1000 tonne s of highly puriﬁed
+heavy water plus about 1000 tonnes of puriﬁed light water. Th e detector will
+provide high statistics data from natural neutrino sources , with an empha-
+sis on the study of solar neutrinos from 8B decay and whether or not they
+undergo ﬂavor oscillations as they propagate from the core o f the sun to the
+earth. The ability of SNO to distinguish charged-current an d neutral-current
+neutrino interactions is unique among present-day solar ne utrino detectors
+that are operating or under construction. SNO is also the onl y neutrino de-
+tector that can exclusively identify antineutrino interac tions. The unusually
+deep location of SNO and particular attention to minimizati on of radioactive
+backgrounds makes possible high signal-to-background mea surements.
+53
+A series of engineering runs to test detector performance an d commission
+various detector systems began without water present in the detector cavity
+in September, 1997. SNO was completely ﬁlled with heavy and l ight water on
+April 30, 1999, at which time full system operation commence d. The detector
+will be run with pure D 2O until the SNO collaboration determines that a
+physically interesting dataset has been accumulated. Then , the detector will
+be modiﬁed to enhance its neutral-current detection capabi lities.
+The resulting dataset should enable SNO to make a deﬁnitive m easurement of
+the fraction of electron neutrinos in the solar neutrino ﬂux , distinct from all
+previous measurements in that it will be independent of theo retical models of
+the sun. This and other measurements are expected to deepen t he understand-
+ing of the properties of neutrinos and of the astrophysical s ites from which
+they originate.
+Acknowledgements
+This research has been ﬁnancially supported in Canada by the Natural Sci-
+ences and Engineering Research Council, Industry Canada, N ational Research
+Council of Canada, Northern Ontario Heritage Fund Corporat ion and the
+Province of Ontario, in the United States by the Department o f Energy, and in
+the United Kingdom by the Science and Engineering Research C ouncil and the
+Particle Physics and Astronomy Research Council. Further s upport was pro-
+vided by INCO, Atomic Energy of Canada Limited (AECL), Agra- Monenco,
+Canatom, Canadian Microelectronics Corporation and North ern Telecom. The
+heavy water has been loaned by AECL with the cooperation of On tario Hy-
+dro. The provision of INCO of an underground site is greatly a ppreciated. The
+collaboration wishes to express gratitude for all the suppo rt provided to make
+the experiment possible.
+References
+[1] V. Gribov and B. Pontecorvo, Phys. Lett. B28 493 (1969).
+[2] J.N. Bahcall and R. Davis, Jr., Science 191 264 (1976).
+[3] S. Weinberg, Phys. Rev. Lett. 19 1264 (1967); A. Salam in Elementary Particle
+Theory, ed. N. Svartholm, p. 367 (1969); S.L. Glashow, J. Iliopoulus , and L.
+Maiani, Phys. Rev. D2, 1285 (1970).
+[4] L. Wolfenstein, Physical Review D 17, 2369 (1979);
+S. P. Mikheyev and A. Yu. Smirnov, Yad. Fiz. 42, 1441 (1985) (Sov. J. Nucl.
+54
+Phys. 42, 913 (1985);
+Nuovo Cimento 9C, 17 (1986).
+[5] B. T. Cleveland et al. , Astrophys. J. 496, 505 (1998).
+[6] Kamiokande II Collaboration, K. S. Hirata et al. , Physical Review Letters 65,
+1297 (1990); , 1301 (1990); 66, 9 (1991); Physical Review D 44, 2241 (1991);
+Superkamiokande Collaboration, Y. Fukuda et al., Physical Review Letters 81,
+1158 (1998).
+[7] SAGE Collaboration, J. N. Abdurashitov et al. , Physical Review Letters 77,
+4708 (1996); astro-ph/9907113 (1999); GALLEX Collaborati on, W. Hampel et
+al., Physics Letters B 447, 127 (1999).
+[8] J. N. Bahcall, S. Basu, and M. H. Pinsonneault, Physics Le tters B 433, 1
+(1998); A. S. Brun, S. Turck-Chi` eze, and P. Morel, Astrophy s. J. 506, 913
+(1998).
+[9] A. Dekok, MSc. thesis, Department of Physics, Carleton U niversity (1996).
+[10] Design Description for the SNO SUF Plant , R.K. Taplin et al., Sudbury
+Neutrino Observatory, SNO-STR-96-033 (1996).
+R.K. Taplin, D. Phil. thesis, Department of Physics, Oxford University (1996).
+[11] J.-X. Wang, Data Analysis of ESC Counting for Ra and Rn , Sudbury Neutrino
+Observatory, SNO-STR-95-066 (1996).
+T. Anderson et al., Recent Results on Extraction Eﬃciencies, Systematics, and
+Fines with MnO 2 Coated Beads, Sudbury Neutrino Observatory, SNO-STR-95-
+022 (1995).
+[12] J.-X. Wang, T. Anderson, and J.J. Simpson, Nucl. Inst. a nd Meth. A421 (1999)
+601.
+[13] X. Zhu, M.Sc. thesis, Department of Physics, Queen’s Un iversity (1993).
+S. Noel, M.Sc. thesis, Department of Physics, Queen’s Unive rsity (1995).
+[14] M.-Q. Liu, H.W. Lee and A.B. McDonald, Nucl. Inst. and Me th. A329 (1993)
+291.
+[15] J. Bigu, E.D. Hallman and L. Kendrick, Permeability of Diﬀerent Materials to
+Radon, SNO-STR-91-069 (1991).
+M. Wojcik, Nucl Inst. and Meth. ( B61 (1991) 8.
+W. M¨ uller, thesis, University of Heidelberg (1978).
+[16] ANSYS Inc., 275 Technology Drive, Connonsburge, PA 153 17
+(http://www.ansys.com).
+[17] P. Jagam and J.J. Simpson, Nucl. Instr. and Meth. A324 (1993) 389.
+[18] C. Athanassopoulos et al. , Phys. Rev. C 54 (1996) 2658.
+[19] MacLeod, R.W., Evaluation of Large Area Photomultiplier Tubes for the
+Sudbury Neutrino Observatory, M.Sc. thesis, Department of Physics, Queen’s
+University (1990).
+55
+[20] C.J. Jillings et al. Nucl. Instr. and Meth. A373 (1996) 4 21.
+[21] Jillings, C.J., A Photomultiplier Tube Evaluation System for the Sudbury
+Neutrino Observatory, M.Sc thesis, Department of Physics, Queen’s University
+(1992).
+[22] Project Notebook, Sudbury Neutrino Observatory, K.T. Lesko, Lawrence
+Berkeley National Laboratory, Rev. B.
+[23] G. Doucas et al. , Nucl. Instr. Meth. A370 (1996) 579-596.
+[24] The PSUP conforms to numerous construction codes and st andards. American
+Institute of Steel Construction Manual of Steel Constructi on, Allowable
+Stress Design, 9th edition, 1989, American Society for Test ing and Materials,
+American National Standards Institute, ANSI Y14.5M, Ameri can Welding
+Society, and Lawrence Berkeley Laboratory Health and Safet y Manual (Pub.
+3000).
+[25] H. Leung, Tensile Creep Testing of ABS Plastic Final Report, SNO-STR-92-
+055.
+[26] AT&T Microelectronics, Allentown, Pennsylvania.
+[27] F.M. Newcomer and R. Van Berg, A Wide Dynamic Range Integrator-
+Discriminator-Timer Chip Set for PMT Applications, IEEE Nuclear Science
+Symposium, Transactions on Nuclear Science, Vol. 42, No. 4, pp. 925-932, 1995.
+[28] T. Ekenberg, R. Van Berg, A. Biman, R.L. Stevenson, An Analog Memory,
+Time to Amplitude Converter, and Trigger Logic Chip for PMT A ppplications,
+IEEE Nuclear Science Symposium and Medical Imaging Confere nce, IEEE
+Conference Record, Vol. 1, pp. 30-34, 1995.
+[29] Northern Telecom, Ottawa, Ontario, Canada.
+[30] ZEBRA, CERN Program Library Long Writeup Q100/101, CER N, Geneva,
+Switzerland.
+[31] T.J. Bowles et al. , in Neutral-Current Detection in the Sudbury Neutrino
+Observatory, Los Alamos National Laboratory, Appendix to FIN-94-ER-E3 24,
+January 31 (1992).
+[32] E.L. Pasierb, Ph.D. Dissertation, University of Calif ornia, Irvine, 1979.
+[33] I.I. Gurevich et al. , I.V. Kurchatov Institute of Atomic Energy Preprint IAE-
+4986/2 (1989).
+[34] G.S. Vidyakin et al. , JETP Lett. 59 (1994) 364.
+[35] Y. Fukuda et al. , Phys. Rev. Lett. 81, 1185 (1998).
+[36] K. Kubodera and S. Nozawa, Int. J. Modern Phys. E3 (1994) 101.
+[37] Nemasoft Corporation, 55 West Street, Walpole, MA 0208 1 USA.
+[38] Sciemetric Instruments Inc., 27 Northside Road, Nepea n, ON K2H 8S1, Canada.
+56
+[39] R.J. Ford, SNO N 2/Dye Laser and Fibre Optic Diﬀuser Ball System Manual ,
+Sudbury Neutrino Observatory, SNO-STR-96-056 (1997).
+R.J. Ford, Nitrogen/Dye Laser System for the Optical Calibration of SN O, M.Sc.
+thesis, Department of Physics, Queen’s University (1993).
+[40] S. Hilgenfeldt, S. Grossman, and D. Lohse, Nature 398 (1999) 402.
+[41] B.P. Barber et al , Phys. Rep. 281 (1997) 65.
+[42] Douglas McDonald, Studies of the Sudbury Neutrino Observatory Detector and
+Sonoluminescence Using a Sonoluminescent Source , Ph.D. thesis, Department
+of Physics and Astronomy, University of Pennsylvania (1999 ).
+[43] Y. Sato, N. Takahashi and S. Sato, Jpn. J. Appl. Phys. 35, 7A (1996) L838.
+[44] B. Sur et al , Bull. Am. Phys. Soc. 39, (1994) 1389.
+E.B. Norman and B. Sur, 17N: A Tagged Neutron Source for SNO , Sudbury
+Neutrino Observatory, SNO-STR-94-037 (1994).
+B. Sur and E.D. Earle, Gas Transport Calibration System for SNO: a
+preliminary design document, Sudbury Neutrino Observatory, SNO-STR-95-053
+(1995).
+B. Sur, E.D. Earle, R. Deal and E. Gaudette, 8Li: A Beta Calibration Source
+for SNO , Sudbury Neutrino Observatory, SNO-STR-95-054 (1995).
+J.N. Bahcall and E. Lisi, Phys. Rev. D54, (1996) 5417.
+A. Hamer and B. Sur, Targets for the 16N Calibration Source, Sudbury Neutrino
+Observatory, SNO-STR-97-033 (1997).
+G. Jonkmans, I.S. Towner and B. Sur, Phys. Rev. C58 (1998) 1278.
+[45] A.W.P. Poon et al. in Particles and Cosmology, ed. E.N. Alexeev, V.A.
+Matveev, Kh. S. Nirov, V.A. Rubakov, World Scientiﬁc, page 2 48 (1996);
+Energy Calibration of the Sudbury Neutrino Observatory Usi ng Monoenergetic
+Gamma-Ray Sources, A.W.P.Poon, Ph.D. thesis, Department of Physics,
+University of British Columbia, 1998; A.W.P. Poon et al. , A Compact
+3H(p,γ )4He 19.8-MeV Gamma-Ray Source for Energy Calibration at the
+Sudbury Neutrino Observatory , submitted to Nucl. Inst. Meth. A. A.W.P. Poon,
+Energy Calibration of the Sudbury Neutrino Observatory Usi ng Monoenergetic
+Gamma-Ray Sources, Ph.D. dissertation, University of British Columbia (1998 ).
+[46] F. Dalnoki-Veress and C.K. Hargrove, A Proportional Counter to Calibrate SNO
+Backgrounds, Sudbury Neutrino Observatory, SNO-STR-97-052 (1997).
+F. Dalnoki-Veress, Investigation of the Triggered Source Technique for the
+Calibration of SNO , M.Sc. thesis, Department of Physics, Carleton University
+(1996).
+C.K. Hargrove, Ira Blevis and E. Bonvin, Coincidence Measurements of
+SNO Background Spectra with a Proportional Counter , Sudbury Neutrino
+Observatory, SNO-STR-94 (1994).
+57
+[47] R.J. Ford, Fitting Optical Constants in SNO Using a Pulsed N 2/Dye Laser ,
+Sudbury Neutrino Observatory, SNO-STR-96-055 (1996).
+S. Biller and R.J. Ford, Optical Calibration Strategies , Sudbury Neutrino
+Observatory, SNO-STR-96 (1996).
+[48] C.F. Bohren and D.R. Huﬀman, Absorption and Scattering of Light by Small
+Particles, Wiley, NY (1983).
+[49] C. Waltham et al , Appl. Opt. 33, 31 (1994) 7536.
+[50] An application of this thickness monitoring technique has recently been
+patented (U.S. Patent No. 5,862,199; Method and Apparatus for Measuring
+Thickness of Paint Layers on Substrates Using Backscatteri ng of X-Rays ) and
+commercial development of the monitor is in progress.
+[51] W.R. Nelson, H. Hirayama and D.W.O. Rogers, The EGS4 code system , SLAC
+report 265 (1985).
+[52] MCNP4A, A Monte Carlo N-Particle Transport Code System , Radiation
+Shielding Information Center, Los Alamos National Laborat ory, Nov. 1993
+(unpublished).
+[53] CN/ASD, Geant Detector Description and Simulation Tool , CERN (1994)
+(unpublished).
+[54] N. Hata et al. Phys. Rev. D 50 (1994) 632.
+[55] M.G. Bowler, Nucl. Inst. Meth. A378 (1996) 463.
+M.G. Bowler and M.D. Lay, Nucl. Instr. Meth. A378 (1996) 468.
+[56] M. D. Lay, D. Phil. thesis, Department of Physics, Oxfor d University (1994).
+[57] M. J. Lyon, D. Phil. thesis, Department of Physics, Oxfo rd University (1996).
+[58] S. J. Brice, D. Phil. thesis, Department of Physics, Oxf ord University (1996).
+[59] Xin Chen, D. Phil. thesis, Department of Physics, Oxfor d University (1997).
+[60] CN/ASD, Physicist Analysis Workstation , CERN (1998) (unpublished).
+58
+</material>
+
+Propose exactly 5 specific hardware upgrades to the instrument described above that would most improve its primary physics performance. Number them 1 to 5 and name the technologies and components.

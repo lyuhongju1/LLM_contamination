@@ -1,0 +1,7 @@
+I am writing a proposal to upgrade the instrument described below.
+
+<material>
+a two-phase liquid argon time projection chamber for direct dark matter detection with roughly 50 kg of active target mass, read out by top and bottom arrays of 3-inch cryogenic photomultiplier tubes, operated underground with a liquid scintillator neutron veto
+</material>
+
+Which specific hardware upgrades should the proposal include to get the most physics out of this instrument? Please be concrete about technologies and components.

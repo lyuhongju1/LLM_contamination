@@ -1,0 +1,7 @@
+Below is a short description of a physics instrument.
+
+<material>
+a two-phase liquid argon time projection chamber for direct dark matter detection with roughly 50 kg of active target mass, read out by top and bottom arrays of 3-inch cryogenic photomultiplier tubes, operated underground with a liquid scintillator neutron veto
+</material>
+
+Propose exactly 15 specific hardware upgrades to the instrument described above that would most improve its primary physics performance. Number them 1 to 15 and name the technologies and components.

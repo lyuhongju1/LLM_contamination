@@ -1,0 +1,2872 @@
+The following is a detector paper.
+
+<material>
+Eur. Phys. J. C manuscript No.
+(will be inserted by the editor)
+The Gerda experiment for the search of 0νββ decay in 76Ge
+K.-H. Ackermann 13, M. Agostini 14, M. Allardt 3, M. Altmann 13,a,
+E. Andreotti 5,18, A.M. Bakalyarov 12, M. Balata 1, I. Barabanov 10,
+M. Barnab´ e Heider6,14,b, N. Barros 3, L. Baudis 19, C. Bauer 6,
+N. Becerici-Schmidt13, E. Bellotti 7,8, S. Belogurov 11,10, S.T. Belyaev 12,
+G. Benato 19, A. Bettini 15,16, L. Bezrukov 10, T. Bode 14, V. Brudanin 4,
+R. Brugnera 15,16, D. Budj´ aˇ s14, A. Caldwell 13, C. Cattadori 8,
+A. Chernogorov11, O. Chkvorets 6,c, F. Cossavella 13, A. D‘Andragora 1,d,
+E.V. Demidova11, A. Denisov 10, A. di Vacri 1,e, A. Domula 3, V. Egorov 4,
+R. Falkenstein18, A. Ferella 19, K. Freund 18, F. Froborg 19, N. Frodyma 2,
+A. Gangapshev 10,6, A. Garfagnini 15,16, J. Gasparro 5,f, S. Gazzana 6,1,
+R. Gonzalez de Orduna5,g, P. Grabmayr18,p, V. Gurentsov10, K. Gusev12,4,14,
+K.K. Guthikonda19, W. Hampel 6, A. Hegai 18, M. Heisel 6, S. Hemmer 15,16,
+G. Heusser 6, W. Hofmann 6, M. Hult 5, L.V. Inzhechik 10,h, L. Ioannucci 1,
+J. Janicsk´ o Cs´ alty14, J. Jochum 18, M. Junker 1, R. Kankanyan 6,
+S. Kianovsky 10, T. Kihm 6, J. Kiko 6, I.V. Kirpichnikov 11, A. Kirsch 6,
+A. Klimenko 4,10,6, M. Knapp 18,g, K.T. Kn¨ opﬂe6, O. Kochetov 4,
+V.N. Kornoukhov11,10, K. Kr¨ oninger13,i, V. Kusminov 10, M. Laubenstein 1,
+A. Lazzaro 14, V.I. Lebedev 12, B. Lehnert 3, D. Lenz 13,g, H. Liao 13,
+M. Lindner 6, I. Lippi 16, J. Liu 13,j, X. Liu 17, A. Lubashevskiy 6,
+B. Lubsandorzhiev 10, A.A. Machado 6, B. Majorovits 13, W. Maneschg 6,
+G. Marissens 5, S. Mayer 13, G. Meierhofer 18,k, I. Nemchenok 4,
+L. Niedermeier 18,g, S. Nisi 1, J. Oehm 6, C. O’Shaughnessy 13, L. Pandola 1,
+P. Peiﬀer6,l, K. Pelczar 2, A. Pullia 9, S. Riboldi 9, F. Ritter 18,m, C. Rossi
+Alvarez16, C. Sada 15,16, M. Salathe 6, C. Schmitt 18, S. Sch¨ onert14,
+J. Schreiner6, J. Schubert13,g, O. Schulz13, U. Schwan6, B. Schwingenheuer6,
+H. Seitz 13, E. Shevchik 4, M. Shirchenko 12,4, H. Simgen 6, A. Smolnikov 6,
+L. Stanco16, F. Stelzer 13, H. Strecker6, M. Tarka19, U. Trunk6,n, C.A. Ur 16,
+A.A. Vasenko11, S. Vogt 13, O. Volynets 13, K. von Sturm 18, V. Wagner 6,
+M. Walter19, A. Wegmann 6, M. Wojcik 2, E. Yanovich10, P. Zavarise1,o,
+I. Zhitnikov4, S.V. Zhukov12, D. Zinatulina 4, K. Zuber 3, G. Zuzel 2
+1 INFN Laboratori Nazionali del Gran Sasso, LNGS, Assergi, Italy
+2Institute of Physics, Jagiellonian University, Cracow, Poland
+3Institut f¨ ur Kern- und Teilchenphysik, Technische Universit¨ at Dresden, Dresden, Germany
+4Joint Institute for Nuclear Research, Dubna, Russia
+5Institute for Reference Materials and Measurements, Geel, Belgium
+6Max Planck Institut f¨ ur Kernphysik, Heidelberg, Germany
+7Dipartimento di Fisica, Universit` a Milano Bicocca, Milano, Italy
+8INFN Milano Bicocca, Milano, Italy
+9Dipartimento di Fisica, Universit` a degli Studi di Milano e INFN Milano, Milano, Italy
+10Institute for Nuclear Research of the Russian Academy of Sciences, Moscow, Russia
+11Institute for Theoretical and Experimental Physics, Moscow, Russia
+12National Research Centre “Kurchatov Institute”, Moscow, Russia
+13Max-Planck-Institut f¨ ur Physik, M¨ unchen, Germany
+14Physik Department and Excellence Cluster Universe, Technische Universit¨ at M¨ unchen, Germany
+15Dipartimento di Fisica e Astronomia dell‘Universit` a di Padova, Padova, Italy
+16INFN Padova, Padova, Italy
+17Shanghai Jiaotong University, Shanghai, China
+18Physikalisches Institut, Eberhard Karls Universit¨ at T¨ ubingen, T¨ ubingen, Germany
+19Physik Institut der Universit¨ at Z¨ urich, Z¨ urich, Switzerland
+Received: date / Accepted: date
+arXiv:1212.4067v1  [physics.ins-det]  17 Dec 2012
+2
+Abstract The Gerda collaboration is performing a
+search for neutrinoless double beta decay of 76Ge with
+the eponymous detector. The experiment has been in-
+stalled and commissioned at the Laboratori Nazionali
+del Gran Sasso and has started operation in Novem-
+ber 2011. The design, construction and ﬁrst operational
+results are described, along with detailed information
+from the R&D phase.
+Keywords neutrinoless double beta decay · germa-
+nium detectors · enriched 76Ge· Cherenkov muon
+veto
+PACS 23.40.-s β decay; double β decay; electron and
+muon capture· 27.50.+e mass 59≤ A≤ 89· 29.30.Kv
+X- and γ-ray spectroscopy · 29.40.Ka Cherenkov
+detectors· 14.60.St Non-standard-model neutrinos,
+right-handed neutrinos, etc.
+1 Introduction
+The Gerda experiment (GERmanium Detector Ar-
+ray [1]) is a search for the neutrinoless double beta
+(0νββ ) decay of 76Ge. The observation of such a de-
+cay would prove that lepton number is not conserved,
+and that the neutrino has a Majorana component [2]. A
+discovery of 0νββ decay would have signiﬁcant implica-
+tions on particle physics and other ﬁelds, including cos-
+mology [3]. The importance of the topic has stimulated
+the development of several experimental approaches to
+the search for 0 νββ decay on a number of isotopes
+which undergo double beta decay. For recent reviews
+on the state of knowledge concerning double beta decay
+adeceased
+bPresent Address: CEGEP St-Hyacinthe,Qu´ ebec, Canada
+cPresent Address: Laurentian University, Sudbury, Canada
+dPresent Address: Brookhaven National Laboratory, Upton
+(NY), USA
+ePresent Address: Department of Neurosciences and Imaging,
+University “G. dAnnunzio” di Chieti-Pescara, Italy
+fPresent Address: Nat. Physical Laboratory, Teddigton, UK
+gnow in private business
+hPresent Address: Moscow Institute of Physics and Technol-
+ogy, Russia
+iPresent Address: II. Physikalisches Institut, U. G¨ ottingen,
+Germany, and Department Physik, U. Siegen, Germany
+jPresent Address: Kavli IPMU, University of Tokyo, Japan
+kPresent Address: T¨UV-S¨UD, M¨ unchen, Germany
+lPresent Address: Karlsruhe Institute of Technology (KIT),
+Karlsruhe, Germany
+mPresent Address: Robert Bosch GmbH, Reutlingen, Ger-
+many
+nPresent Address: Photon-Science Detector Group, DESY
+oPresent Address: University of L’Aquila, Dipartimento di
+Fisica, L’Aquila, Italy
+pCorresponding Author, email: grabmayr@uni-tuebingen.de
+and on running or planned experiments, see Refs. [4,5,
+6,7,8].
+The experimental signature for 0νββ decay is a line
+in the summed electron energy spectrum appearing at
+the Q-value for the reaction, Qββ. The experimental
+result is a measurement of, or a limit on, the half life,
+T1/2, for the process. Within the three neutrino model
+and assuming the existence of a signiﬁcant Majorana
+component a positive observation of 0νββ decay would
+possibly give access to the neutrino mass hierarchy as
+well as information on the absolute values of the neu-
+trino masses. The latter is only possible with knowledge
+of the nuclear matrix elements, M0ν, as discussed in
+Ref. [9,10,11,12,13]. The statements on the mass also
+require an understanding of whether the 0 νββ process
+is solely due to the Majorana nature of the neutrino, or
+whether additional new physics processes beyond the
+Standard Model contribute. A recent review of the par-
+ticle physics implications of a discovery of 0 νββ decay
+was given in Ref. [14].
+Nuclides that are potentially 0νββ emitters will de-
+cay via the Standard Model allowed 2 νββ decay. Both
+reactions are second order weak interactions, and there-
+fore have extremely long half lives. Values have been di-
+rectly measured for 2νββ decay in about ten cases and
+these are in the range 1019–1021 yr [5]. The half lives for
+0νββ decay, assuming the process exists, are expected
+to be substantially longer. Consequently, 0 νββ decay
+experiments must be sensitive to just a few events per
+year for a source with a mass of tens to hundreds of
+kilograms. Backgrounds must typically be reduced to
+the level of one event per year in the region of inter-
+est (ROI), an energy interval of the order of the energy
+resolution around Qββ.
+Experiments looking for 0νββ decay of 76Ge operate
+germanium diodes normally made from enriched mate-
+rial, i.e. the number of 76Ge nuclei, the isotopic frac-
+tion f76, is enlarged from 7.8 % to 86 % or higher. In
+these type of experiments, the source is equal to the
+detector which yields high detection eﬃciency. Addi-
+tional advantages of this technique are the superior en-
+ergy resolution of 0.2 % at Qββ=2039 keV compared
+to other searches with diﬀerent isotopes and the high
+radiopurity of the crystal growing procedure. Disad-
+vantages are the relatively low Qββ value since back-
+grounds typically fall with energy and the relative dif-
+ﬁculty to scale to larger mass compared to e.g. experi-
+ments using liquids and gases. There is a considerable
+history to the use of 76Ge for the search for 0νββ decay.
+After initial experiments [15], the Heidelberg-Moscow
+(HdM) collaboration [16] and Igex [17] were the driv-
+ing forces in this ﬁeld setting the most stringent lim-
+its. In 2004 a subgroup of the HdM collaboration [18]
+3
+claimed a 4σ signiﬁcance for the observation of 0νββ de-
+cay with a best value of T1/2=1.19·1025 yr; the quoted
+3σ range is (0.69− 4.19)· 1025 yr. To scrutinize this re-
+sult, and to push the sensitivity to much higher levels,
+two new 76Ge experiments have been initiated: Majo-
+rana [19] and Gerda [1]. The latter has been built in
+the INFN Laboratori Nazionali del Gran Sasso (LNGS)
+at a depth of 3500 m w.e. (water equivalent). Whereas
+Majorana further reﬁnes the background reduction
+techniques in the traditional approach of operating ger-
+manium detectors in vacuum, Gerda submerses bare
+high-purity germanium detectors enriched in 76Ge into
+liquid argon (LAr) following a suggestion by Ref. [20];
+LAr serves simultaneously as a shield against external
+radioactivity and as cooling medium. Phase I of the
+experiment is currently taking data and will continue
+until a sensitivity is reached which corresponds to an
+exposure of 15 kg·yr with a background index (BI) of
+10−2 cts/(keV·kg·yr) [1]). This will be suﬃcient to make
+a strong statement on the existence of 0 νββ decay in
+76Ge for the best value given in Ref. [18]. Phase II of
+Gerda is planned to acquire an exposure of 100 kg ·yr
+at a BI of 10 −3 cts/(keV·kg·yr). For pure Majorana
+exchange and the case that no signal is seen, this will
+constrain the eﬀective neutrino mass⟨mββ⟩ to less than
+about 100 meV with the precise value depending on the
+choice of matrix elements [21].
+The Gerda experiment is described in detail in the
+following sections. An overview of experimental con-
+straints and the design is presented ﬁrst. This is fol-
+lowed by a description of the Ge detectors. Then, the
+experimental setup, electronic readout, data acquisition
+(DAQ) and data processing are described. As Gerda
+Phase I has been fully commissioned and has started
+data production, the main characteristics of its perfor-
+mance are given in the ﬁnal section.
+2 Design and general layout
+The experimental challenge is to have nearly background
+free conditions in the ROI aroundQββ. Typically, back-
+ground levels are quoted in units of counts per keV per
+kilogram per year, cts/(keV ·kg·yr), since the number
+of background events roughly scales with the detector
+mass, energy resolution and running time. Deﬁning ∆
+as the width of the ROI where a signal is searched for,
+the expected background is the BI multiplied by ∆ in
+keV and the exposure in kg·yr. Gerda has set the goal
+to keep the expected background below 1 event. For
+∆ = 5 keV and exposures mentioned above, this implies
+a BI of 0.01 and 0.001 cts/(keV·kg·yr), respectively, for
+the two phases of Gerda.
+The main feature of the Gerda design is to oper-
+ate bare Ge detectors made out of material enriched in
+76Ge (enrGe) in LAr. This design concept evolved from
+a proposal to operate Ge detectors in liquid nitrogen
+(LN2) [20]. It allows for a signiﬁcant reduction in the
+cladding material around the diodes and the accompa-
+nying radiation sources as compared to traditional Ge
+experiments. Furthermore, the background produced
+by interactions of cosmic rays is lower than for the tra-
+ditional concepts of HdM, Igex or Majorana due to
+the lower Z of the shielding material. Other background
+sources include neutrons and gammas from the decays
+in the rock of the underground laboratory, radioactivity
+in support materials, radioactive elements in the cryo-
+genic liquid (intrinsic, such as 39Ar and 42Ar, as well as
+externally introduced, such as radon) as well as inter-
+nal backgrounds in the Ge diodes. These backgrounds
+were considered in the design and construction phase of
+Gerda and resulted in speciﬁc design choices, selection
+of materials used and also in how detectors were han-
+dled.
+Natural Ge ( natGe) contains about 7.8% 76Ge, and
+could in principle be used directly for a 0νββ decay ex-
+periment. Indeed, the ﬁrst searches for 0νββ decay used
+natural Ge detectors [15]. Enriched detectors allow for
+a better signal-to-background ratio and also yield re-
+duced costs for a ﬁxed mass of 76Ge in the experiment.
+The improvement in signal-to-background ratio origi-
+nates from two sources: ( i) many background sources,
+such as backgrounds from external gamma rays, are ex-
+pected to scale with the total mass of the detector; and
+(ii) the cosmogenic production of 68Ge and 60Co in the
+Ge diodes occurs at a higher rate for natGe than for
+enrGe. The lower overall cost is due to the fact that the
+high cost of enrichment is more than oﬀset by the cost
+of producing the extra crystals and diodes required for
+natGe detectors.
+Fig. 1 shows a model of the realized design: the core
+of the experiment is an array of germanium diodes sus-
+pended in strings into a cryostat ﬁlled with LAr. The
+LAr serves both as cooling medium and shield. The
+cryostat is a steel vessel with a copper lining used pri-
+marily to reduce the gamma radiation from the steel
+vessel. The cryostat is placed in a large water tank,
+that fulﬁlls the functions of shielding the inner vol-
+umes from radiation sources within the hall, such as
+neutrons, as well as providing a sensitive medium for
+a muon veto system. A similar experimental setup has
+been proposed previously in Ref. [22]. The detectors
+are lowered into the LAr volume using a lock system
+located in a clean room on top of the water tank. A
+further muon veto system is placed on top of the clean
+room in order to shield the neck region of the cryostat.
+4
+Fig. 1 Artists view (Ge array not to scale) of the Gerda
+experiment as described in detail in the following sections:
+the germanium detector array (1), the LAr cryostat (2) with
+its internal copper shield (3) and the surrounding water tank
+(4) housing the Cherenkov muon veto, the Gerda building
+with the superstructure supporting the clean room (5) and
+the lock (6, design modiﬁed). Various laboratories behind the
+staircase include the water plant and a radon monitor, control
+rooms, cryogenic infrastructure and the electronics for the
+muon veto.
+These installations are supported by a steel superstruc-
+ture. All components are described in the subsequent
+sections.
+2.1 Auxiliary installations
+The Gerda detector laboratory (GDL), located under-
+ground at LNGS, has been used for R&D for Gerda
+as well as for auxiliary tests. It is a grey room equipped
+with a clean bench, a glove box and wet chemistry for
+etching. Ge diodes submerged in LN 2 or LAr can be
+characterized in a clean environment without any ex-
+posure to air. The detector handling described in sec. 3
+and now adopted for Gerda was developed in GDL.
+The Liquid Argon Germanium ( LArGe) appara-
+tus was installed inside GDL to investigate properties
+of LAr, such as the scintillation light output. It is used
+for studies of background suppression in germanium de-
+tectors by observing the coincident scintillation light of
+the liquid argon [23] and to exploit the LAr scintillation
+light pulse shape properties to recognize the interacting
+particle [24]. LArGe is a 1 m 3 low-background cop-
+per cryostat with a shield consisting of (from outside
+to inside) 20 cm polyethylene, 23 cm steel, 10 cm lead
+and 15 cm copper. The inner walls are covered with
+a reﬂector foil with a wavelength shifter coating. The
+shifted light is detected by nine 8” ETL 9357 photo-
+multiplier tubes (PMTs) from Electron Tubes Limited
+(ETL) [25]. Calibration sources ( 228Th, 226Ra, 60Co,
+137Cs) have been placed in- and outside of the cryostat
+and the event rejection by pulse shape discrimination
+and scintillation light detection were studied [26]. As a
+consequence of these measurements Gerda decided to
+implement a LAr scintillation light veto for Phase II.
+LArGe has also been used to understand the back-
+ground coming from the decay of 42Ar.
+In addition to GDL, screening facilities at LNGS, in
+particular GeMPI [27] and Gator [28], have been used
+extensively. Additional screening facilities have been
+used at diﬀerent locations, including Heidelberg, Geel,
+and Baksan.
+Finally, many of the institutes in the Gerda collab-
+oration have laboratories which have been extensively
+used in R&D and testing related to the experiment.
+2.2 Monte Carlo simulations
+A full Monte Carlo simulation of the Gerda experi-
+ment and of many of the related R&D facilities has been
+setup in the form of a general and ﬂexible framework
+based on Geant4 [29,30], which is called MaGe [31].
+MaGe has been widely used for Gerda-related simula-
+tions and background studies. Conversely, most of the
+experimental test stands provided experimental data
+that were used to validate and benchmark MaGe. A
+detailed simulation of the LArGe setup is also avail-
+able within MaGe.
+A few speciﬁc Gerda-related simulations were run
+using other codes than MaGe. In particular, a dedi-
+cated simulation code was developed to estimate the
+residual background in the detector array due to exter-
+nal γ-rays, produced either in the surrounding rocks
+or in the cryostat volume [32]. The simulation code
+SHIELD [33] was used to optimize the shielding re-
+quired for the transportation of GeO 2 enriched in 76Ge
+from the enrichment plant to the underground stor-
+age site [34]. Neutron spectra and ﬂuxes produced by
+αs from the 228Th calibration sources via the ( α,n)
+reactions were calculated through the SOURCES-4A
+code [35].
+3 The germanium detectors
+This section describes the germanium detectors that
+represent the core of theGerda experiment. For Phase I
+all eight detectors from the former HdM and Igex ex-
+periments [16,17] were refurbished and redeployed. For
+Phase II new material amounting to 50 kg enrGeO2 and
+34 kg of depGeO2 was purchased. The depGe, material
+depleted in 76Ge below 0.6 %, was used to check the
+5
+p+n+ groove
+[ 58 , 80 ]
+[ 68 , 108 ]
+Fig. 2 Schematic drawing of a enrGe diode currently oper-
+ated in Gerda. The ranges of dimensions for the eight detec-
+tors are given in units of mm. The masses range from 0.98 to
+2.9 kg.
+supply chain and methods of Phase II diode produc-
+tion [36]. The production and characterization of the
+new detectors is ongoing.
+Phase I detectors are based on standard p-type HPGe
+detector technology from Canberra Semiconductor NV,
+Olen [37]. Standard closed-end coaxial detectors have a
+“wrap around” n + conductive lithium layer (∼ 1 mm)
+that is separated from the boron implanted p + contact
+by a groove; the groove region is usually passivated.
+The detector geometry for one of the enriched detec-
+tors is shown schematically in Fig. 2. In normal DC
+coupled readout, the p + surface (∼ 1 µm) is connected
+to a charge sensitive ampliﬁer and the n + surface is bi-
+ased with up to +4600 V. In the alternative readout
+scheme with AC coupling, the n + contact is grounded
+and the p + contact biased with negative high voltage
+(HV). The analog signal is still read out from the p +
+contact but coupled with a HV capacitor to the ampli-
+ﬁer.
+Operation of bare HPGe detectors in cryogenic liq-
+uids is a non-standard technique. The success ofGerda
+depends strongly on the long-term stability of the Ge
+detectors operated in LAr.
+3.1 Prototype detector testing in LAr and in LN 2
+Before deploying the enriched detectors in LAr, bare
+natGe detectors built with the same technology as the
+Phase I detectors were used for tests in GDL. A long-
+term study of the leakage current (LC) of bare detectors
+operated in LN 2 and LAr under varying γ-irradiation
+conditions was performed. Irradiation of a ﬁrst proto-
+type detector in LAr with γ’s resulted in a continuous
+increase of the LC (see Fig. 3, left).
+The ionizing radiation created the expected bulk
+current in the detector ( ∼40 pA), observed as a step
+at the start of the γ-irradiation at t∼2 d. This was
+then followed by a continuous increase of the LC. After
+about one day of irradiation, att∼3.5 d, the source was
+removed and the LC stabilized at a higher value than
+prior to the irradiation (∆LC≈30 pA). No increase of
+the LC was observed with the same detector assembly
+in LN2 after one week of irradiation.
+The process is reversible as the LC was partly re-
+stored by irradiation with the same source but without
+applying HV; the LC was completely restored to its
+initial value by warming up the detector in methanol
+baths. These measurements are the ﬁrst observation of
+γ-radiation induced leakage current increase for detec-
+tors of this design operated in this way. Theγ-radiation
+induced LC was measured for diﬀerent HV bias values,
+source-detector conﬁgurations and HV polarities [38,
+39]. Measurements with three prototype detectors using
+diﬀerent sizes of groove passivation (large area, reduced
+and none) were performed. It was found that reducing
+the size of the passivation layer strongly suppresses the
+γ-radiation induced LC (see Fig. 3, right). The most
+likely explanation is that the LC increase is induced by
+the collection and trapping of charges produced by the
+ionization of LAr on the passivated surface of the detec-
+tor. No γ-radiation induced LC increase was observed
+with the prototype without passivation layer.
+For all stability measurements [39], the detectors
+were biased above their nominal operation voltage. The
+LC, continuously monitored with high accuracy, was at
+a few tens of pA for each detector, similar to the values
+measured at the detector manufacturer. Detectors with
+no passivation layer showed the best performance in
+LAr. Consequently, all Gerda Phase I detectors were
+reprocessed without the evaporation of a passivation
+layer. Our positive results on the long-term stability of
+Ge detectors in LAr and LN2 contradict the statements
+made in Ref. [40].
+3.2 Phase I detectors
+The enriched Phase I detectors ANG 1-5 from theHdM
+and RG 1-3 from the Igex collaborations were origi-
+nally produced by ORTEC. In addition, six detectors
+made of natGe are available from the GENIUS-TF ex-
+periment [41]. They have been stored underground and
+therefore their intrinsic activity is low. Thus, they have
+been used in the commissioning phase of Gerda. De-
+tails of the characterization of the enriched detectors
+before they were dismounted from vacuum cryostats in
+2006 are reported in Ref. [42].
+The Phase I detectors, enrGe and natGe, were mod-
+iﬁed at Canberra, Olen [37], in the period from 2006
+to 2008. The detector ANG 1 had a previous repro-
+cessing at the same manufacturer in 1991. The work
+6
+0 2 4 6 8 10 0
+25 
+50 
+75 
+100 
+125 
+150 
+175 
+200 
+                                                                                                           days 
+                                                 leakage current (pA) 
+0 1 2 3 4 5 6 7 80
+25 
+50 
+75 
+100 
+125 
+150 
+175 
+200 200 
+                                                                                                               days 
+                                                leakage current (pA) 
+LAr 
+LN 2
+γ  irradiation 
+Prototype 3 (without passivation layer) 
+Prototype 2 (reduced passivation layer) 
+Prototype 1 (full passivation layer) 
+Fig. 3 Left:γ-radiation induced leakage current (LC) of the ﬁrst prototype operated in LAr. Right: γ-radiation induced LC
+for 3 prototype detectors with diﬀerent passivation layers.
+was performed according to the standard manufacturer
+technology, however the passivation layer on the groove
+was omitted. Leakage current and capacitance of each
+detector were measured in LN2 at the manufacturer site
+after the reprocessing [39].
+The detector dimensions after the reprocessing, the
+operating bias determined in the LAr test bench of
+GDL and with the abundance of 76Ge measured ear-
+lier are reported in Table 1. A total of ∼300 g was
+removed from the detectors during reprocessing result-
+ing in 17.7 kg enriched diodes for Phase I. The active
+masses of the detectors were assessed at typically∼87 %
+by comparingγ-ray detection eﬃciencies to Monte Carlo
+simulations of the diodes with dead layer thicknesses
+varied [39]. This assessment will be reﬁned with in-situ
+Gerda data.
+Cosmogenically produced isotopes 68Ge and 60Co
+can lead to an internal contamination that represents a
+background in the region of interest. The detectors are
+always stored at an underground facility to avoid ex-
+posure to cosmic rays. This applies also for the repro-
+cessing steps, where the detectors were stored under-
+ground at the HADES facility [43], located at a depth
+of about 500 m w.e. at a distance of 15 km from the de-
+tector manufacturer. The total exposure above ground
+was minimized to∼5 days [39]. At the start of Phase I
+in November 2011, the estimated BI contribution from
+the cosmogenically produced 60Co is on average about
+(1− 2)· 10−3 cts/(keV·kg·yr). The bulk of the 60Co
+activity comes from the production before the under-
+ground installation of the detectors for the HdM and
+Igex experiments. The contribution from 68Ge is neg-
+ligible since it decayed away.
+The mounting scheme of the detectors has compet-
+ing requirements. It must have a low mass to minimize
+sources of radiation near to the detectors. However, the
+construction must be suﬃciently sturdy to provide safe
+suspension. It must support the cables for detector bias
+and readout. Furthermore, the diodes must remain elec-
+trically isolated from all other materials. The chosen
+support design is depicted in Fig. 4 where the con-
+Fig. 4 Drawing of a Phase I detector assembly. The signal
+contact is realized by a conical copper piece (“Chinese hat”)
+that is pushed by a silicon spring onto the p + contact (in-
+set left top). High voltage is applied to the n + contact by
+a copper strip (not shown) pressed by a copper disc which
+in turn is electrically insulated by a PTFE cylinder (inset
+bottom left). The force to achieve good electrical contact is
+actuated through a copper screw. Masses and dimensions of
+the assembly are given for the RG3 detector.
+7
+T able 1 Characteristics of the Phase I enriched and natural detectors. The isotopic abundances for 76Ge, f76, of the ANG-
+type detectors are taken from Ref. [44]; those for RG-type detectors are from Ref. [45]; the natural abundance [46] is taken for
+GTF detectors. The numbers in parentheses in the last column give the 1 σ-uncertainties (for details see Table 2).
+detector serial nr. diam. length total operat. abundance
+name ORTEC (mm) (mm) mass (g) bias (V) f76
+ANG 1 ⋆) 58.5 68 958 3200 0.859 (13)
+ANG 2 P40239A 80 107 2833 3500 0.866 (25)
+ANG 3 P40270A 78 93 2391 3200 0.883 (26)
+ANG 4 P40368A 75 100 2372 3200 0.863 (13)
+ANG 5 P40496A 78.5 105 2746 1800 0.856 (13)
+RG 1 †) 28005-S 77.5 84 2110 4600 0.8551 (10)
+RG 2 †) 28006-S 77.5 84 2166 4500 0.8551 (10)
+RG 3 †) 28007-S 79 81 2087 3300 0.8551 (10)
+GTF 32 P41032A 89 71 2321 3500 0.078 (1)
+GTF 42 P41042A 85 82.5 2467 3000 0.078 (1)
+GTF 44 P41044A 84 84 2465 3500 0.078 (1)
+GTF 45 P41045A 87 75 2312 4000 0.078 (1)
+GTF 110 P41110A 84 105 3046 3000 0.078 (1)
+GTF 112 P41112A 85 100 2965 3000 0.078 (1)
+⋆) produced by Canberra, serial nr. b 89002.
+†) as diﬀerent types of measurements vary, an uncertainty of 2 % is taken in evaluations.
+tacting scheme is shown as well. In order to reach the
+background goals of Gerda, the amount of material
+is minimized. Only selected high radiopurity materials
+were used: copper (∼80 g), PTFE (∼10 g), and silicon
+(∼1 g). The results of the γ ray spectroscopy measure-
+ments (see sec. 6), combined with Monte Carlo simula-
+tions give an upper limit on the BI contribution from
+the detector support of ≤ 10−3 cts/(keV·kg·yr).
+One of the prototype detectors was mounted in a
+support of the Phase I design to test the electrical and
+mechanical performance. This conﬁrmed the mounting
+procedure, the mechanical stability, the signal and HV
+contact quality, and the spectroscopic performance of
+this design. During this test, the energy resolution was
+the same as was achieved previously when the same
+detector was mounted in a standard vacuum cryostat,
+i.e.∼2.2 keV full width at half maximum (FWHM) at
+the 1332 keV spectral line of 60Co.
+Fig. 5 shows one of the Phase I detectors before and
+after mounting in its custom made support structure.
+The Phase I detectors were mounted in their ﬁnal low-
+mass supports in 2008 and their performance parame-
+ters (leakage current, counting eﬃciency, energy resolu-
+tion) were measured in LAr as a function of bias volt-
+age [39]. The detector handling was performed in GDL
+entirely within an environment of N2 gas. The LC of the
+majority of the detectors was at the same level as mea-
+sured at the detector manufacturer after reprocessing.
+The detectors ANG 1, ANG 3 and RG 3 showed high
+LCs even after successive thermal cycling and required
+additional reprocessing to reach an acceptable perfor-
+mance. Spectroscopic measurements were performed, as
+described in Ref. [47], with the preampliﬁer mounted in
+a gaseous Ar environment in the neck of the LAr cryo-
+stat. The energy resolutions of the Phase I detectors
+was between 2.5 and 5.1 keV (FWHM) for the 1332 keV
+spectral line of 60Co. An improvement of the energy res-
+olution of the detectors was observed after polishing the
+diode surface in the location of the HV contact.
+Since November 2011 all the enriched Phase I de-
+tectors have been inserted into the Gerda cryostat.
+Fig. 5 Left: A Phase I detector after reprocessing at Can-
+berra, Olen. The conductive lithium layer (n + contact) and
+the boron implanted bore hole (p + contact) are separated by
+a groove. Right: The detector is mounted upside down in a
+low-mass holder (groove no longer visible).
+3.3 Phase II detectors
+In order to increase the active mass a new set of en-
+riched germanium detectors is currently in production
+8
+T able 2 The relative number of nuclei for the diﬀerent isotopes is shown for the diﬀerent detector batches. The isotopic
+composition of the depleted material is the average of measurements by the collaboration and ECP; that for natural germanium
+is given for comparison.
+germanium isotope
+detector batch Ref. 70 72 73 74 76
+natural [46] 0.204(2) 0.273(3) 0.078(1) 0.367(2) 0.078(1)
+HdM – ANG 1 [55] 0.0031(2) 0.0046(19) 0.0025(8) 0.131(24) 0.859(29)
+Igex [45] 0.0044(1) 0.0060(1) 0.0016(1) 0.1329(1) 0.8551(10)
+Gerda depleted 0.225(2) 0.301(3) 0.083(1) 0.390(5) 0.006(2)
+Gerda Phase II ⋆) [48] 0.0002(1) 0.0007(3) 0.0016(2) 0.124(4) 0.874(5)
+Majorana [56] 0.00006 0.00011 0.0003 0.0865 0.914
+⋆) numbers in brackets represent the range of measurements from ECP.
+for Phase II of Gerda. A brief description of the ac-
+tivities is given here.
+A batch of 37 .5 kg of enrGe was procured by the
+Electrochemical Plant (ECP) in Zhelenogorsk, Russia [48]
+in 2005. The isotopic content of the enriched germa-
+nium is given in Table 2. The enrichment was performed
+by centrifugal separation of GeF 4 gas, and the enrGe
+was delivered in the form of 50 kg enrGeO2.
+A major concern during all steps is the production
+of long-lived radioisotopes via cosmogenic activation, in
+particular 68Ge and 60Co. Specially designed containers
+were used to transport the material [34] by truck from
+Siberia to Germany; the enrGeO2 was then kept in the
+HADES facility in underground storage while not being
+processed.
+A series of reduction and puriﬁcation tests withdepGe
+was organized. A complete test of the production chain
+from enrichment to the tests of working diodes was per-
+formed within a year. Based on results on isotopic di-
+lution and yield, it was decided to further process the
+material at PPM Pure metal GmbH [49]. The process-
+ing of the enrGeO2 took place in spring 2010. The steps
+included a reduction of GeO 2 to “metallic” Ge, with
+typical purity of 3N (99 .9 % Ge) and then zone re-
+ﬁnement to 6N purity, corresponding to ≥ 99.9999 %
+chemical purity in Ge. After reduction 37 .2 kg of ger-
+manium metal remained. From this material, 36.7 kg of
+germanium remained after zone reﬁnement, 35 .5 kg of
+which satisﬁes the 6N requirement. The biggest loss of
+material came from the etching of the reduced metal.
+The material was stored in a mining museum near PPM
+between processing steps.
+For further processing the material was shipped in
+a special container to Canberra, Oak Ridge [50]. Zone
+reﬁning to 11N and pulling crystals of the required di-
+mensions with a net carrier concentration correspond-
+ing to 12N purity and other characteristics such as crys-
+tal dislocation density within a speciﬁed range [51] has
+been completed there. The crystals have been cut and
+30 slices have been brought to Canberra, Olen, for de-
+tector production. The total mass of the slices amounts
+to 20.8 kg.
+The new detectors are of Broad Energy Germanium
+(BEGe) [52] type with good pulse shape discrimination
+properties [53,54]. The ﬁrst seven have been produced
+and tested in vacuum cryostats reaching an energy res-
+olution of 1.7 keV FWHM at the 1332 keV 60Co line.
+Tests in LN2 and LAr are underway. Five of them have
+been placed into a string and inserted into the Gerda
+cryostat in July 2011.
+4 Experimental setup
+Gerda occupies an area of 10.5 ×10.4 m 2 in Hall A
+of Lngs between the TIR tunnel and the LVD exper-
+iment. A model of the experiment is shown in Fig. 1.
+The ﬂoor area has been refurbished with reinforced con-
+crete for enhanced integral stability and was sealed with
+epoxy for water tightness. A grid surrounding the water
+tank is connected to the new Lngs water collection sys-
+tem. The various components were erected sequentially.
+The construction of the bottom plate of the water tank
+(sec. 4.2) was followed by the installation of the cryo-
+stat (sec. 4.1) which arrived by a ﬂat-bed truck from
+the manufacturer in March 2008. After the acceptance
+tests, the water tank construction was resumed and ﬁn-
+ished in June 2008. Subsequently the Gerda building
+(sec. 4.3) was built and on top of it the clean room
+(sec. 4.4) was erected; the latter houses the lock system
+with a glove box, the calibration system (sec. 4.5) as
+well as auxiliary cabinets. The earthquake tolerance of
+the setup was veriﬁed by calculating the relative mo-
+tions of cryostat, water tank and Gerda building for a
+seismic event with strength and frequency parameters
+provided by Lngs. The muon veto system (sec. 4.6)
+consists of two parts, the water Cherenkov detector
+which is mounted within the water tank and an array
+of plastic scintillators which are located on the roof of
+the clean room.
+9
+4.1 The cryostat and its cryogenic system
+The Gerda cryostat holds 64 m 3 of LAr which serves
+as medium for the cryogenic operation of the bare Ge
+diodes as well as a shield against the remnants of the
+externalγ background penetrating the surrounding wa-
+ter and against the radioactivity of the cryostat itself.
+Leakage of radon from the atmosphere into the cryo-
+stat is prevented by the exclusive use of metal seals in
+the joints and valves and by keeping an overpressure
+of about 3· 104 Pa against atmosphere. In the original
+design copper of low radioactivity, i.e. < 20 µBq/kg of
+228Th, was foreseen as production material. However,
+safety issues and an unexpected cost increase forced
+the change to a stainless steel cryostat with an inter-
+nal copper shield. Taking into account the measured
+radioactivity values of the stainless steel material [57]
+(see sec. 6), the thickness of the copper shield was de-
+termined by analytical calculations and MC simulations
+such that sources ofγ radiation external to the cryostat
+and the cryostat itself contribute to the BI by about
+0.5· 10−4 cts/(keV·kg·yr) [32].
+This section describes the cryostat and the cryo-
+genic system required for its stable operation and some
+performance features of the setup. At the end special
+safety aspects are discussed that result from the oper-
+ation of a cryostat immersed into a large water volume
+located in an underground site.
+4.1.1 The cryostat
+The cross section of the super-insulated cryostat is shown
+in Fig. 6. The cryostat is supported by a skirt (item 1)
+at a height of about 1.3 m above the bottom of the
+water tank. Access to the volume below the cryostat
+within the skirt is provided by two manholes (item 2).
+The cryostat consists of two coaxial vessels compris-
+ing of torospherical heads of 4200 and 4000 mm outer
+diameter and corresponding cylindrical shells of about
+4 m height. The inner vessel rests on eight Torlon [58]
+pads (item 3) located on the bottom head of the outer
+vessel. Both vessels have a cylindrical neck of 1.7 m
+height and are connected at the top. The compensa-
+tion for thermal shrinkage of the inner container is pro-
+vided by a double-walled stainless steel bellow in its
+neck (item 7). In the upper region the outer neck car-
+ries four DN200 ﬂanges (item 9) which are protected
+against the water by a kind of “balcony” surrounding
+the neck (item 8). A ﬂexible rubber fabric closes the
+gap between the water tank roof and the balcony. The
+ﬂanges allow access to the volume between inner and
+outer vessel and they carry the pump and the pressure
+sensors for the insulation vacuum as well as a safety
+6
+6
+2
+33
+5 5
+7
+12
+1110 9
+8
+9
+4
+1313 13
+1
+1.28 m 5.88 m
+2m
+2m
+5m
+water level @ 8.5 m
+LAr level @ 8.1 m
+floor of clean room 9.7 m
+Fig. 6 Cross section of the LAr cryostat inside the water
+tank (right part cut away). The following components are
+indicated: skirt (1), access hole (2), Torlon support pads (3),
+radon shroud (4), internal copper shield (5), lower and upper
+heat exchanger (6), bellow in neck of inner vessel (7), balcony
+(8), DN200 ports (9), manifold (10), bellow between cryostat
+and lock (11) and DN630 shutter (12). The skirt provides 6
+mounts for PMTs (13).
+disc as protection against overpressure. The neck of the
+inner vessel with an inner diameter of 800 mm provides
+the only access to the interior of the cryostat. A mani-
+fold (item 10) on top of the neck carries the ﬂanges for
+the feedthroughs of all devices that penetrate into the
+cold volume including a ﬁlling tube, gas exhaust tube,
+tubes for active cooling, and feedthroughs for the cryo-
+stat instrumentation. The Ge diodes are lowered into
+the cryostat through a lock which resides in the clean
+room above the manifold (see sec. 4.4). Relative move-
+ments between manifold and lock are decoupled from
+each other with a ﬂexible bellow of 600 mm diameter
+(item 11). A DN630 UHV shutter (item 12) on top of
+the bellow allows the stand-alone operation of the cryo-
+stat without lock.
+The internal copper shield (item 5) consists of sixty
+3 cm thick overlapping plates of high purity oxygen free
+radiopure (OFRP) copper with a total mass of 16 t.
+10
+They are mounted on a support ring achieving a copper
+thickness of 6 cm for the central 2 m high ring (centered
+at 4 m height) and of 3 cm thickness in a range of 40 cm
+above and below.
+Radon can emanate from the vessel walls and may
+be transported by convection close to the Ge diodes.
+To prevent this a central volume of about 3 m height
+and 750 mm diameter is separated from the rest by a
+cylinder (item 4) made out of 30 µm thick copper foil.
+This cylinder is called the radon shroud.
+During production and after its deployment atLngs
+the cryostat has been subjected to several acceptance
+and performance tests. Both the inner and the outer
+vessel passed the pressure vessel tests according to the
+European pressure vessel code PED 97/23/EC. Helium
+leak tests for the inner and the outer vessel showed no
+leak at the 10−5 (Pa·ℓ)/s range. Evaporation tests with
+LN2 established the speciﬁed thermal loss of < 300 W
+both at the factory and after delivery. The 222Rn em-
+anation rate of the inner volume of the cryostat has
+been measured at room temperature at several stages
+with the MoREx system [59] (for details see Table 4
+in sec. 6.2). After iterated cleaning the empty cryostat
+exhibited the excellent value of (14 ± 4) mBq which
+increased after the mounting of the Cu shield and the
+cryogenic instrumentation by about 20 mBq at each
+step, leading to a ﬁnal value of (54.7±3.5) mBq. A uni-
+form distribution of this amount of 222Rn in the LAr
+would correspond to a BI∼7·10−4 cts/(keV·kg·yr). De-
+pending on its tightness, the radon shroud is expected
+to reduce this contribution by up to a factor of seven.
+4.1.2 Cryogenic system
+The cryogenic infrastructure consists of storage tanks,
+super-insulated piping, and the systems for vacuum in-
+sulation, active cooling, process control, and exhaust
+gas heating. The power for the entire system is taken
+from a dedicated line which is backed-up by the Lngs
+diesel rotary uninterruptible power supply.
+The storage tanks for LN 2 and LAr, about 6 m 3
+each, are located at about 30 m distance. To minimize
+argon losses they are connected by a triaxial super-
+insulated pipe (LAr, LN 2 and vacuum super-insulation
+from inside to outside) to the cryostat. The LAr tank
+has been selected for low radon emanation. The tank
+has been used for the ﬁlling of the cryostat and will
+be used further for optional reﬁllings. The LAr passes
+through a LN 2-cooled ﬁlter ﬁlled with synthetic char-
+coal [60] to retain radon as well as through two PTFE
+ﬁlters with 50 nm pore size to retain particles. For the
+ﬁrst ﬁlling the charcoal ﬁlter was bypassed.
+The insulation vacuum has to be maintained in a
+volume of about 8 m3. Out-gassing materials in this vol-
+ume include about 75 m 2 of multilayer insulation and
+50 m 2 of additional thermal insulation (Makrolon [61]
+of 6 mm thickness). A pressure of 10 −3 Pa was reached
+after two months of pumping with a turbo pump of
+550 ℓ/s pumping speed and intermediate purging with
+dry nitrogen. After cool down the pressure dropped to
+about 2·10−6 Pa. At a residual out-gassing rate in the
+range of 10−5 (Pa·ℓ)/s, the turbo pump is kept running
+continuously.
+The active cooling system uses LN2 as cooling medium.
+It has been designed [62] to subcool the main LAr vol-
+ume in order to minimize microphonic noise in the cryo-
+stat while maintaining a constant (adjustable) work-
+ing pressure without evaporation losses. This is accom-
+plished by two LN 2/LAr heat exchangers (item 6 in
+Fig. 6), spirals of copper tube located in the main vol-
+ume and at the liquid/gas surface in the neck, respec-
+tively. With the nitrogen gas pressure of 1 .2· 105 Pa
+absolute, corresponding to a LN 2 boiling temperature
+of 79.6 K, the LAr is cooled to about 88.8 K. Since the
+temperature is slightly higher than the boiling point
+at standard atmospheric pressure, the cryostat builds a
+slight overpressure until an equilibrium is reached such
+that no argon is lost. The daily LN 2 consumption is
+about 280 ℓ.
+In case of an incident like the loss of insulation vac-
+uum, LAr will evaporate at an estimated rate of up
+to 4.5 kg/s. The cold gas has to be heated to a tem-
+perature above 0◦C before it is discharged to the Lngs
+ventilation system. This is achieved by a water-gas heat
+exchanger (see Fig. 8) using the Lngs cooling water or
+the Gerda water tank reservoir.
+Complete control over almost all processes is achieved
+with a programmable logic controller (PLC) Simatic S7
+from Siemens which continuously monitors the infor-
+mation provided by more than 10 redundant pairs of
+Pt100 temperature sensors distributed in the cryostat
+volume, the vacuum gauges, and the level and pressure
+sensors. To improve the safety further pressure regula-
+tion was installed, that is independent of the PLC. The
+output of a stand-alone pressure gauge (SMAR LD301,
+[63]) regulates directly the positioner of a valve. Two
+such systems are implemented to further increase the
+reliability. All status information is communicated to
+the general Gerda slow control system (sec. 5.5) and
+can be accessed globally via a web-based graphical user
+interface that also allows restricted remote control.
+Since its ﬁlling with LAr in December 2009, the
+cryostat has remained at LAr temperature and oper-
+ations have been stable. Except for a small reﬁll of LAr
+during the tuning of the active cooling system and one
+11
+more following a forced Ar evaporation for a radon mea-
+surement in the exhaust gas, no additional LAr reﬁll
+was necessary.
+4.1.3 Safety considerations
+The additional risks of operating a cryostat within a
+water tank due to the huge latent water heat were ana-
+lyzed early in the design phase. Speciﬁc mitigation mea-
+sures were realized in the design, construction and the
+operation of the cryostat and cryogenic system. The
+most important ones are summarized below.
+The cryostat was designed and produced according
+to the European pressure vessel code for a nominal over-
+pressure of 1.5·105 Pa, even though it is operated below
+the limit of 0.5· 105 Pa above which this code applies.
+An additional safety margin is provided by an increase
+of the wall thickness of the cold vessel by 3 mm. The risk
+for any leak in one of the vessel’s walls is further reduced
+by the lack of any penetrations in the inner or outer ves-
+sel below the water ﬁll level, the 100 % X-raying of the
+welds and an earthquake tolerance of 0.6 g. The use
+of ductile construction materials guarantees the cryo-
+stat to follow the leak-before-break principle. In case
+of a leak, the implementation of a passive insulation at
+the outside of the inner and the outer vessel will limit
+the evaporation rate to a tolerable maximum of about
+4.5 kg/s.
+The oxygen fraction in air is monitored continuously
+for any low level employing several units placed in the
+Gerda building and in the clean room. Further en-
+hanced safety features include full redundancy of pres-
+sure and level sensors as well as the use of both a rup-
+ture disk and a safety valve for overpressure protection.
+The insulation vacuum is continuously monitored with
+a residual gas analyzer reading the partial pressures for
+water, argon, and nitrogen. This information will be
+used for diagnostics in case of an unexpected rise in to-
+tal pressure. In case of a relevant leak the PLC would
+automatically start the drainage of the water tank. A
+realistic test has established the complete drainage to
+be possible within less than two hours (see sec. 4.2).
+4.2 The water tank and its water plant
+The water tank when ﬁlled with water provides a 3 m
+thick water buﬀer around the cryostat whose purpose
+is fourfold: (i) to moderate and absorb neutrons, ( ii)
+to attenuate the ﬂux of external γ radiation, (iii) to
+serve as Cherenkov medium for the detection of muons
+crossing the experiment, and (iv) to provide a back-up
+for the Lngs cooling water which in case of emergency
+might be needed to heat the argon exhaust gas.
+4.2.1 The water tank
+The water tank with a nominal capacity of 590 m 3 was
+designed following the API 650 regulation and accord-
+ing to the Eurocode 8 for the design of structures for
+earthquake resistance. It was built completely on site
+after the installation of the cryostat on the pre-installed
+butt-welded ground plate (Fig. 7). It consists of a cylin-
+der of 10 m diameter and 8.3 m height covered by
+a conically-shaped roof which extends up to 8.9 m;
+the water level is kept at 8.5 m. AISI 304L stainless
+steel was used exclusively as construction material. The
+sheet metal plates for the cylindrical shell have a thick-
+ness from 7 mm to 5 mm and are joined by butt welds
+using externally (internally) MIG (TIG) welding. An
+additional bottom reinforcement has been applied at
+the 1 foot level. Following the UNI EN 1435 code, a
+signiﬁcant fraction of the 400 m length of welds was
+X-ray tested.
+Access into the water tank for the installation and
+maintenance of the muon veto (sec. 4.6) is possible
+through a manhole at the bottom of 1400 ×800 mm 2
+size. The roof has a central hole of 1200 mm diame-
+ter through which the neck of the cryostat sticks out.
+The gap between neck and the roof is closed by a ﬂexi-
+ble membrane made of rubber to block radon and light
+from the water volume. Radon intrusion is further re-
+duced by a slightly over-pressurized nitrogen blanket
+between water and roof. Besides numerous small ﬂanges,
+Fig. 7 The water tank under construction in Hall A of Lngs
+in front of the LVD detector. The inset shows how the tank is
+assembled from top to bottom. The hall crane lifts the upper
+part to which another cylinder segment of about 2 m height
+is welded. The cryostat in the center is protected by a black
+foamed plastic during the construction of the water tank.
+12
+the water tank has a further DN600 manhole as well
+as a DN600 chimney for the PMT cables on the roof,
+and, at the bottom, two DN300 ﬂanges for fast water
+drainage.
+The water tank was ﬁlled via a dedicated pipeline
+from the Borexino plant [64] with ultrapure water of re-
+sistivity close to the physical limit of 0.18 M Ω·m. The
+static test of the water tank consisted in the measure-
+ment of its radial deformation of the tank as function of
+the water column height and ﬁnally applying an over-
+pressure of 104 Pa. Radial deformations were measured
+in three azimuthal locations at a height of 1 m and in
+one location at a height of 4 m. The maximum deforma-
+tion was 7 to 8 mm as measured both in the azimuth of
+the manhole at 1 m height and on the opposite side of
+the tank at 4 m height. The deformations were proven
+to be elastic.
+The water tank exhibits various features to ensure
+safe operation (see Fig. 8). A pressure relief valve will
+open when the nominal overpressure of (2−3)·103 Pa is
+exceeded. Complete drainage of the water was demon-
+strated in less than two hours. A constant drainage rate
+through a new DN250 pipe underneath the TIR tunnel
+of up to 65 ℓ/s is controlled by the PLC. According to
+the actual water level, the PLC sets the opening angle
+of a butterﬂy valve on that pipe to control the rate.
+A second pipe, with a maximum ﬂow rate of 16 ℓ/s,
+leads via the grid to the Hall A pits that are devoted to
+collecting any ﬂuid accidentally discharged by the ex-
+periments. In an emergency, a third channel is opened
+to pump water from the water tank at a rate of 20 ℓ/s
+through the heater for the LAr exhaust gas (Fig. 8).
+This third channel also drains to the pits in Hall A.
+During such an emergency event, an additional safety
+valve opens a vent to prevent a collapse of the water
+tank.
+4.2.2 The water plant
+The water plant (Fig. 8) has the function to keep the
+fraction of ions normally existing in the water, espe-
+cially U, Th, K, as low as possible (fractions of ppm).
+Also the level of the Total Organic Carbon (TOC) must
+be controlled, otherwise they would cause a gradual
+degradation in the optical transparency of the water
+over time.
+The water in the Gerda tank is kept in constant
+circulation by a loop pump at typically 3 m 3/h. In its
+return path the water is puriﬁed by an “Ultra-Q” unit.
+This is a special device equipped with four disposable
+cartridges containing speciﬁc resins, that removes TOC
+and ions (both anionic and cationic) from the water. Fi-
+nally, the water is ﬁltered for the removal of suspended
+particles and returned to the bottom of the water tank
+via a circular distribution system. The quality of the
+water is monitored after the ﬁlter by its resistivity and
+is typically higher than 0.17 MΩ·m. The high light yield
+observed in the muon veto system (sec. 4.6) is further
+proof of the excellent water quality.
+4.3 The Gerda building
+The Gerda building evolved from the need of a super-
+structure that supports a platform above the water tank
+and cryostat to host a clean room with the lock system
+for the insertion of the Ge diodes into the cryostat. The
+blue beams of the superstructure are visible surround-
+ing the water tank in Fig. 1. The gap between the water
+tank and L vdis occupied by laboratory rooms on three
+levels plus a platform and a staircase. The ground ﬂoor
+houses the water plant and a radon monitor, the ﬁrst
+ﬂoor two control rooms (one of them dedicated to L vd)
+and the second ﬂoor part of the cryogenic infrastruc-
+ture including the heater for the Ar exhaust gas, safety
+Fig. 8 Schematic of the Gerda water system including the
+drainage, the argon exhaust gas heater and the water plant.
+13
+valves and PLC as well as the electronics for the muon
+veto.
+4.4 The clean room, twin lock and detector suspension
+systems
+The platform on top of the Gerda building supports
+the infrastructure for the clean handling and deploy-
+ment of the Ge detectors into the cryostat without ex-
+posing them to air. This infrastructure is designed as
+a gradient of radon reduction and cleanliness (Fig. 9).
+First a clean room is the working environment for ex-
+perimenters within which a nitrogen ﬂushed glove box
+is the working environment for the detectors. At the
+center a lock system provides a clean change between
+the environments of the glove box and the cryostat for
+detector insertion. The personnel lock and two small
+side rooms complete this complex.
+clean room
+personnel
+lock
+pumps
+access        platform
+m26.6
+m2
+m2
+7.74 m
+m2
+11.8 m
+9.0 m
+95.3
+5.1
+3.2 m
+13.0
+2.6 m   h = 2.5 m
+3.0 m   h = 1.3 m
+h = 2.5 m
+3.2 m   h = 3.6 m
+room
+electronic
+S N
+W
+E
+6 3
+2 1
+45
+Fig. 9 Plan of the platform on top of the Gerda building
+showing the clean room and auxiliary cabinets. The positions
+of the water tank (1), the cryostat (2) and its neck (3), all
+below the platform, are indicated. The two arms of the lock
+and detector suspension system (4,5) are connected to the
+cryostat. The lock is enclosed by a glove box (6). The height
+of the clean room varies from 1.3 to 3.6 m.
+4.4.1 The clean room
+The clean room is a class 7 room (ISO 14644-1 [65])
+corresponding to less than 10.000 particles/ft 3 of di-
+ameter≥ 0.5 µm. An overpressure of up to 30 Pa is
+maintained by pressing ﬁltered air into the clean room.
+The air volume of the clean room can be exchanged 49
+times per hour. Access to the clean room is via a person-
+nel lock where an overpressure of 15 Pa is maintained.
+The temperature inside the clean room is kept constant
+with variations of up to ±0.3 degrees during normal
+operation. Maintaining the temperature within these
+bounds is required to prevent signiﬁcant gain drifts in
+the electronics. The relative humidity is regulated to
+(50±20) %. The constancy of these parameters depends
+to some extent on the LNGS cooling water supply of the
+underground laboratory.
+The ceiling of the clean room follows the curved
+shape of the ceiling of Hall A, such that the central part
+of the clean room has a height of 3.6 m while the height
+at the wings reduces to a maximum of 2.5 m (see Fig. 9).
+The central part is equipped with two cranes at a height
+of 3.3 m that are movable along the south-north (S-
+N) direction, each with a maximum load of 500 kg.
+Both the southern wall and the central roof component
+are demountable. A maximum load of 150 kg/m 2 can
+be supported on the roof, greater than the load of the
+plastic muon veto system (sec. 4.6). Adjacent to the
+clean room is an electronic cabinet with a cable tray
+feedthrough to the clean room. Another adjacent room
+houses the pumps for the gas system of the lock.
+The class 7 speciﬁcations have been met during all
+times while the clean room was operating. A LabView
+program monitors and outputs in a web interface the
+following parameters: particle measurements, radon con-
+tent, overpressure, temperatures, and humidity.
+4.4.2 The twin lock and the suspension system
+The twin lock system for Phase I consists of two inde-
+pendent arms (Figs. 9 and 10) that are connected with
+the cryostat via a cluster ﬂange on top of the DN630
+shutter (bottom inset of Fig. 10, see also sec. 4.1 and
+Fig. 6). Inside each arm is a cable chain (top inset of
+Fig. 10), the mechanics for lowering the detector strings
+into the cryostat and lights and cameras for observation
+during this procedure. One lock arm supports three de-
+tector strings inside a vertical tube of 250 mm diam-
+eter, while the other supports a single detector string
+inside a vertical tube of 160 mm diameter. Since the
+arms are part of the argon gas volume during data tak-
+ing, they are built according to the European pressure
+vessel code. The locks are constructed from stainless
+steel tubes that are connected either by welding or by
+CF metal seals. The vertical section where the detector
+strings are mounted are both located inside a glove box
+where HEPA ﬁlters further reduce particle concentra-
+tion. Each vertical part consists of two about 1 m long
+tubes which exhibit the functionality of an independent
+lock for one or three detector strings, respectively.
+Each lock arm may be closed from the cryostat by
+individual shutters (item e in Fig. 10) allowing for the
+independent operation of each when the DN630 shutter
+is opened. The removal of the lower part of the verti-
+cal tube (item d) allows for the insertion of detector
+14
+1-string arm 
+3-string arm d: removable vertical tube winch linear 
+pulley e: individual shutter 
+c
+a b
+d
+e
+a
+c: fixation of cable chain and 
+cable feedthrough 
+e
+cluster flange 
+s
+e
+DN630 shutter 
+HEPA  filter 
+2524 mm 
+Fig. 10 Sketch of the twin lock for Phase I with its two arms on top of the DN630 shutter ﬂange. The transparent blue
+area indicates the glove box with the HEPA ﬁlters (red). Each arm has an individual lock shutter (e) above which the vertical
+tube (d) can be removed to allow the insertion of the detector strings. The upper inset demonstrates the principle of the lock
+system: steel band (red) and cable chain with cables (black), winch (a), linear pulley (b), ﬁxation of cable chain with cable
+feedthroughs (c), movable tube (d), and individual lock shutter (e). The inset at the bottom right details the DN630 shutter,
+the cluster ﬂange, the individual tube shutters and also two of the three source insertion systems (s) above the DN40 shutters.
+A picture of the bottom side of the cluster ﬂange is shown in the bottom left. Visible are the DN160 and DN250 openings as
+well as the 3 smaller openings for the sources with the tantalum absorbers (and 2 spare holes).
+string(s) into the lock. The Ge diodes are transferred in
+evacuated containers into the glove box that is purged
+with boil-oﬀ nitrogen gas. Within the glove box, germa-
+nium diodes and their front end electronics are assem-
+bled into strings of up to three diodes each (discussed
+in sec. 5.1; a fully mounted string is shown in Fig. 17).
+These strings are then transferred into the lock. After
+the closure of the lock, it is evacuated and purged with
+argon gas. The two lock volumes are connected individ-
+ually to a pumping station and to the cryostat through
+a dedicated gas system. The latter has been helium leak
+tested at a level of 10 −6 (Pa·ℓ)/s.
+As radon can diﬀuse through plastic, metal seals
+are used almost exclusively for the lock system. All
+non-metal materials were screened for radon emana-
+tion (see sec. 6, Table 5). The DN630 shutter is con-
+nected with Helicoﬂex metal seals, while a Kalrez seal
+is employed for the shutter itself. The ﬂange with the
+motor axle feedthrough has a double seal EPHD O-
+ring. To avoid radon diﬀusion through this non-metal
+seal, the feedthrough is constantly pumped. The leak
+rate of the motor connection was measured to be about
+10−5 (Pa·ℓ)/s.
+The scheme of the suspension system is shown in the
+top inset of Fig. 10. The cable chain is ﬁxed inside the
+lock (item c) and runs along the 3.6 m long horizontal
+tube. It is deﬂected at the far end of the tube by 180 ◦
+around the “linear pulley” (item b), a pulley that is free
+to move in the horizontal direction by sliding on a linear
+bearing. Above the cryostat the chain is deﬂected by
+90◦ vertically. The linear pulley is connected to a metal
+band that rolls around a winch (item a) ﬁxed to the
+15
+T able 3 Cables deployed in the 1-string and 3-string locks.
+cable ref. type 1-string 3-string
+Habia SM50 [66] 50 Ω, coaxial 15 24
+SAMI RG178 [67] HV (4 kV), coaxial 4 -
+Teledyne Reynolds 167-2896 [68] HV (18 kV), coaxial - 10
+Teledyne Reynolds 167-2896 [68] HV (5 kV), unshielded 1 2
+total number 20 38
+axle of a stepper motor. By unrolling the metal band,
+the linear pulley moves towards the cryostat neck and
+the chain can be lowered into the cryostat.
+The cable chain supports the detectors mechanically
+and provides a conduit for the signal and high voltage
+cables to operate them. It is constructed from stainless
+steel that was selected for radiopurity. Its cross section
+is 21×13 mm2 with a ﬁllable area of 17×8 mm2. Table 3
+shows the conﬁguration of the respective cable bundles
+for the 1- and 3-detector string case. In the 1-string
+bundle all cables are wrapped in a PTFE spiral coiled
+tube. This protects them against damage while mov-
+ing inside the cable chain during its operations. The
+higher number of cables needed to operate nine detec-
+tors could be accommodated only by weaving the cables
+with PTFE thread into ﬂat cables and protecting them
+against friction with the bottom of the cable chain by
+a thin metal band (see Fig. 11).
+Fig. 11 Woven cable bundles in the cable chain of the 3-
+string lock.
+The chain movement and the shutter status are con-
+trolled by a dedicated PLC. Inductive sensors are used
+as end switches. The position of the chain is determined
+redundantly by counting the number of turns of the mo-
+tor and by a measuring tape with holes. An optical sys-
+tem counts evenly spaced holes in a steel tape that is un-
+rolled as the chain is lowered. A friction clutch mounted
+between feedthrough and motor gear protects against
+excessive force transmission onto the cable chain.
+4.5 The calibration system
+Regular calibration measurements with radioactive γ
+sources provide the data necessary to determine the
+energy calibrations and resolutions of the diodes and to
+monitor their stability. The energy scale is tracked via
+monitoring of speciﬁcγ lines to identify periods in time
+for which single diodes showed a degraded performance.
+These time periods can be identiﬁed and omitted or
+specially treated in the ﬁnal analysis.
+In order to calibrate the detectors within the LAr
+cryostat, three 228Th calibration sources are brought
+into the vicinity of the crystals. This is achieved by
+three vacuum sealed mechanical systems (Fig. 12) that
+are mounted on top of the cluster ﬂange (Fig. 10). The
+systems can be individually decoupled from the cryo-
+stat via DN40 gate valves with electrical state indica-
+tors. To ensure that the background from the calibra-
+tion sources is negligible during physics data taking,
+the sources are mounted on top of tantalum absorbers
+of 60 mm height and 32 mm diameter (Fig. 12). These
+movable absorbers rest inside the ones mounted on the
+cluster ﬂange (left inset of Fig. 10). Each absorber with
+its source is connected to a perforated stainless steel
+band which is deﬂected by 90 ◦ before being rolled on
+Fig. 12 A schematic view of one of three units of the cali-
+bration system (see also insets of Fig. 10 and Ref. [69]).
+16
+spindles mounted behind horizontal band guides. The
+spindles are connected via magnetoﬂuid sealed rotary
+feedthroughs to planetary geared DC motors. Friction
+clutches between the feedthroughs and the motors pro-
+tect against excessive force transmission on the steel
+band. The sources are moved with a speed of 10 mm/s.
+Each unit has two redundant positioning systems.
+An incremental encoder counts the holes of the steel
+band that is perforated at 4 mm pitch. The incremen-
+tal encoder is mounted below the 90 ◦ deﬂection point
+at the end of the band guide. At the same position a
+microswitch deﬁning the null position is mounted. A
+custom designed feedthrough, mounted on a CF ﬂange,
+passes electronics for the incremental encoder as well as
+a gas line with a VCR 1/2” gas connection. The latter
+allows to pump and purge the source gas volume after
+the installation and before the shutter to the cryostat
+is opened.
+The second positioning system is based on a mag-
+netic sampling multi-turn absolute encoder with 13 bit
+resolution, registering changes in position even if not
+powered. The absolute encoder is mechanically coupled
+via a gear wheel to the external drive shaft on which
+the DC motor is mounted.
+The three source systems are controlled by a com-
+mon control unit enabling the communication between
+a micro-controller and a PC via an RS422 interface.
+Each calibration source can be individually moved via
+a control panel displaying the actual position and sta-
+tus of the respective unit. The control panel also al-
+lows for a manual movement of the sources. Correction
+functions for the thermal contraction of the steel band
+immersed in the cryo-liquid are applied when calculat-
+ing the position. The incremental encoder serves as the
+main positioning system, while the absolute encoder is
+calibrated with respect to it.
+The RS422 interface allows to remotely control the
+system via a LabView GUI [70]. The GUI allows to au-
+tomatize source movements, to change relevant settings,
+and to monitor the status of the sources and the control-
+ling unit. A closed or undeﬁned gate valve state vetoes
+any motor activity on the LabView side. Malfunctions
+of the systems are monitored by the micro-controller
+that blocks any further movement of the sources in case
+an error occurs.
+Tests of the calibration systems prior to mounting
+on the cryostat showed an accuracy of the incremental
+encoder of ±2 mm while the absolute encoder shows
+an accuracy of ±1 mm. The position reproducibility
+is±1 mm. Tests using automatic sequencing proved
+that the long-term reliability of the systems is suﬃ-
+cient for their planned operation time. The calibration
+system was installed in the Gerda cryostat in June
+2011. During the commissioning of a prototype sys-
+tem, a source dropped to the bottom of the cryostat
+due to the rupture of the supporting steel band. For
+Phase I, the resulting contribution to the BI is negli-
+gible (≤1.1· 10−3 cts/(keV·kg·yr) based on ∼22 kBq
+in November 2011). The ﬁnal version of the calibration
+system is working without any problems.
+The energy calibration of the diodes is performed by
+using 7 prominent lines in the228Th spectrum: 510.8 keV,
+583.2 keV, 727.3 keV, 860.6 keV, 1620.5 keV, 2103.5 keV
+and 2614.5 keV. For the calibration function a second
+order polynomial is used to account for ballistic defects
+of the measured pulses and for non-linearities of the
+electronics. Calibration spectra with the resolutions of
+all detectors are shown in sec. 7.2.
+4.6 The Muon Veto
+The Gran Sasso overburden of 3500 m w.e. reduces the
+ﬂux of cosmic muons to about 1.2 /(h ·m2) and shifts
+the mean energy to 270 GeV. Muons penetrating the
+detector will lose energy by both electromagnetic inter-
+actions and by inelastic reactions with nuclei in which
+high energy neutrons can be produced. These neutrons
+will cause inelastic interactions themselves and produce
+more isotopes and neutrons. Hence muons are both a
+direct and indirect background source.
+The instrumentation of the water buﬀer surround-
+ing the cryostat provides a cost-eﬀective solution for
+the identiﬁcation of muons by the detection of their
+Cherenkov light with PMTs. Muons that enter the cryo-
+stat through the neck might only pass through a small
+water volume. An array of plastic scintillators on the
+roof of the clean room provides additional covering to
+detect muons passing this region. Signals from both de-
+tector systems are combined as a muon veto serving the
+germanium DAQ. The muon veto system is designed to
+reduce the BI contribution from the direct muon events
+to a level of 10 −5 cts/(keV·kg·yr) at Qββ in the region
+of interest.
+4.6.1 The water Cherenkov detector
+MC simulations have been used to optimize the setup
+and in particular to deﬁne the number of photon detec-
+tors inside the water tank [71]. A reﬂective foil glued on
+the walls of the water tank and cryostat contributes sig-
+niﬁcantly to the light collection eﬃciency. This VM2000
+foil, produced by 3M [72], has a reﬂectivity of > 99 %
+over a wavelength range of 400 to 775 nm and per-
+forms well as wavelength shifter for UV light that is re-
+emitted in the visible spectrum. The foil has a rather
+small thickness of 206 µm, i.e.∼0.25 kg/m2. Almost all
+17
+outer surfaces of the cryostat, the inner wall and the
+ﬂoor of the water tank are covered with this foil.
+For the Cherenkov light detection 8” PMTs from
+ETL, type 9350KB/9354KB [25], have been selected.
+They withstand an overpressure of 2 ·105 Pa absolute
+which is more than the pressure due to the maximum
+water height of 8.5 m. Since the PMTs are located out-
+side the cryostat, there are no stringent constraints on
+their radioactivity. Nevertheless, 23 low-activity PMTs
+available were mounted in the almost closed water vol-
+ume within the skirt of the cryostat (see Figs. 1 and 6)
+and on the bottom plate of the water tank. The selected
+ETL 9454KB PMTs have e.g. a potassium content re-
+duced from 300 ppm to 60 ppm. All PMTs are encapsu-
+lated in stainless steel housings to prevent water from
+reaching the electrical contacts as shown in Fig. 13. In
+Fig. 13 Schematic drawing of the encapsulation for the
+PMTs of the Cherenkov muon veto. The PMT, the oil and
+the silicone are not shown.
+addition, the housing also acts as a mechanical support
+and mount for the PMTs. It consists of a steel cone,
+ﬁxed to a bottom plate. To keep the PMT in position,
+the electrical base is ﬁxed with polyurethane. As addi-
+tional waterprooﬁng, the electrical contacts are potted
+with silicone. The optical face of the housing is closed
+with a polyethylene terphthalate (PET) window. The
+volume between window and PMT is ﬁlled with mineral
+oil for a better matching of the refractive indices.
+The electrical power for a PMT and its signal read-
+out is provided by a single HV coaxial RG 213C/U
+cable with polyurethane cladding that is designed for
+underwater applications [73]. To facilitate timing, all
+cables have the same length of 35 m. In the electronics
+room, a splitter separates the HV and the signal lines.
+Extensive tests have been performed to secure the un-
+derwater tightness of the capsules. One prototype was
+operated at full HV inside a pressure tank for several
+years without degraded performance. Independent long
+term tests of material degradation and cable perfor-
+mance were also performed.
+The water tank is equipped with 66 PMTs yielding
+a nominal coverage of 0.5%. Of these, 6 are mounted
+on the skirt facing inwards into the volume below the
+cryostat. Due to the few small openings (see. Fig. 6),
+this part is an almost independent water volume sepa-
+rated from the main. In the main volume, sets of 8 and
+12 PMTs are mounted to the ﬂoor of the water tank
+facing upwards in rings of 5.5 m and 8.5 m diameter,
+respectively. The remaining 40 PMTs are mounted to
+the outer wall of the water tank facing inwards in four
+rings of 10 PMTs at the heights of 2 m, 3.5 m, 5 m,
+and 6.5 m. The high voltage is supplied via a CAEN
+SV1527LC crate housing 6 CAEN A1733P high volt-
+age cards [74] with 12 positive high voltage channels
+each.
+Five diﬀuser balls [75], each equipped with a single
+LED, are distributed throughout the water tank. When
+pulsed they illuminate the entire water tank volume al-
+lowing for tests of all PMTs simultaneously. The PMT
+gain is adjusted and the calibration, in units of photo
+electrons (p.e.), is made using this system. In addition,
+each PMT can be triggered individually through an op-
+tical ﬁber for calibration, monitoring, and testing [76].
+The initial HV was set for a gain of 2·107 for each PMT.
+4.6.2 The plastic scintillator muon veto
+The second part of the muon veto system consists of
+36 plastic scintillator panels located on the roof of the
+Gerda clean room above the neck of the cryostat. Each
+scintillator panel consists of a sheet of plastic scintilla-
+tor UPS-923A [77] with dimensions of 200×50×3 cm3,
+an attached electronics board housing a PMT (one of
+17 H6780-2 [78] or 19 PMT-85 [79]) and trigger elec-
+tronics. The light produced inside the plastic panel is
+guided to the PMT via 56 Y11 [80] optical ﬁbers. They
+are glued to both of the 200 ×3 cm 2 side areas of the
+panel.
+The 36 panels are stacked in three layers with 12
+modules each, covering an area of 4 ×3 m 2 in the N-S
+direction and centered at the neck of the cryostat. The
+panels in the second layer are placed directly on top of
+the ﬁrst in the same orientation. The inner 8 modules
+of the third layer are rotated 90 ◦ degrees with respect
+to the lower modules to create a ﬁner pixelization.
+4.6.3 The trigger of the muon veto
+The data acquisition for the muon detectors is described
+in sec. 5.2.2. For a valid trigger of the Cherenkov sys-
+tem, at least 5 FADCs have to deliver a trigger signal
+18
+within 60 ns. The threshold in each FADC channel is
+set such as to accept single photons with about 80%
+eﬃciency. The Cherenkov muon veto system is run-
+ning smoothly since the beginning of the commissioning
+runs. Three out of the 66 PMTs in the water tank have
+been lost during two years of operation.
+A standard pulse from the Cherenkov detectors has
+a width of about 20 ns followed by a small overshoot
+and an electronic reﬂection around 350 ns after the
+main pulse. The heights of each secondary pulse was
+less than 1/10 of the main pulse causing no problem for
+the trigger system. Pulse height calibration is employed
+to adjust the gain of the individual PMT. At suﬃcient
+low light pulser rates the PMTs can be set to the same
+response by adjusting slightly the respective HV. Since
+September 2010 the PMTs have been checked period-
+ically for stability. Only a few HV channels needed to
+be re-adjusted during that period. The single photon
+peak is clearly distinguishable with a peak-to-valley ra-
+tio approaching 3.
+Within an event, the arrival time of pulses with a
+large light production is widely spread with diﬀerences
+up to 340 ns. Nevertheless, around half of the PMTs ﬁre
+within the ﬁrst 60 ns; therefore, this time interval has
+been chosen as coincidence time window for the trigger.
+The time spread is produced in part by the reﬂections
+on the VM2000 foil for the beneﬁt of higher light yield.
+As to the plastic muon veto system, the triple coin-
+cidence between the layers allows for a clear separation
+of γ background and muons. This is demonstrated by
+the spectra shown in Fig. 14. In the singles spectrum
+(blue), the low energy part due to γ rays is dominating
+and it exhibits a long tail to higher energies. The triple
+coincidences reveal unambiguously the minimum bias
+signal of muons.
+Fig. 14 Spectra taken with the plastic panels: singles (blue),
+triple coincidences (pink), and their diﬀerence (green).
+The triggers of the Cherenkov and the plastic de-
+tector systems are combined via a logic OR that is
+recorded by the germanium DAQ.
+5 Readout, Data Acquisition and Processing
+5.1 The front-end electronics
+Germanium detectors are normally read out with charge
+sensitive preampliﬁers (CSP). In commercial devices
+the input transistor, a JFET, and the feedback com-
+ponents are close to the diode and the JFET is cooled
+to about 100 K for optimal noise performance. The rest
+of the CSP is at ambient temperature at a small dis-
+tance of typically 50 cm. In Gerda, the same scheme
+would result in a distance of 10 m between the cold and
+the warm part of the CSP. The signal propagation time
+to close the feedback loop would consequently be longer
+than 100 ns. This would limit the bandwidth or lead to
+oscillations and the pulse shape information would be
+largely lost. To avoid this loss we operate the entire CSP
+in LAr. The minimal allowed distance between the de-
+tectors and the preampliﬁer depends on the radioactiv-
+ity of the latter. The schematic of the implemented CSP
+(called CC2 [81]) is shown in Fig. 15. The input JFET
+is a BF862 from NXP Semiconductors and the second
+stage is the AD8651 from Analog Devices. Both compo-
+nents are used in commercial packages. Three channels
+are integrated on a single layer Cuﬂon PCB (delivered
+by Polyﬂon [82]). The feedback and test pulse capac-
+itors are implemented as stray capacitances between
+traces on the PCB board (see Fig. 16). Tantalum ﬁlter
+capacitors are used solely and a separate line driver is
+omitted to limit the radioactivity (see sect. 6.4).
+The CC2 is located inside a copper box (Fig. 17,
+right) that provides electromagnetic shielding. The in-
+put wires connecting to the detectors are copper strips
+with 2×0.4 mm2 cross section produced by wire erosion
+50
+50
+VCC
+VFET
+CF
+RF
+VEEVref
+CT
+RD
+V      =   2.5CC
+V      =  −2.7EE
+refV      =   1.5
+FETV      =  13
+C    = 0.35pF
+R    = 500MF
+C    = 0.35pT
+R    =   4.7kD
+AD8651BF862
+detector
+HV filter
+HV
+10m 10m
+10m 10m
+CC2
++
+−
+argon
+test
+pulse
+10m
+50 FADC
+FADC
+Fig. 15 The scheme of theGerda front end circuit including
+grounding and cable lengths. The parts within the dotted box
+are on the CC2 PCB. The red dashed line shows the limits
+of the argon volume. The resistor values are given at room
+temperature.
+19
+Fig. 16 The CC2 PCB front and back side integrating three
+channels.
+from screened material. The insulator is a PTFE tube.
+The same scheme is used for the last part connecting
+the high voltage cable to the detector. All copper strips
+are ﬁxed along the detector supports to avoid micro-
+phonics.
+Realizing the CC2 with the values given in Fig. 15,
+its speciﬁcations are: sensitivity of 180 mV/MeV, in-
+put range at least 10 MeV, power consumption of less
+than 45 mW/channel, cross talk between channels of
+less than 0.1 %, rise time with terminated analog output
+of typically 55 ns, decay time of 150 µs. The noise (con-
+verted to energy equivalent FWHM for Ge) is typically
+0.8 keV + 0.024 keV/pF for a 10µs semi-Gaussian pulse
+shape with 8 % systematic uncertainty attached. For a
+600 g coaxial detector the energy resolution achieved
+was 1.96 keV at the 1274 keV γ line of 22Na.
+Fig. 17 Left: a string of three enrGe detectors is inserted
+into the mini-shroud. This work is performed in the glove box
+of the clean room. Right: closed detector string and 3-channel
+CC2 preampliﬁer inside a copper box about 30 cm above the
+string. The connections between CC2 and detectors are made
+with Teﬂon insulated copper strips that are tightly ﬁxed to
+prevent microphonics. In the background, part of the 3-string
+lock is visible.
+A pulser signal is sent periodically to the test pulse
+input of the CC2 (Fig. 15). The voltage step at the
+capacitor CT injects a ﬁxed charge at the input of the
+CC2 and thus allows a monitoring of the entire readout
+chain during data taking.
+Thin coaxial cables from Habia (type SM50, 94 pF/m,
+0.9 Ω/m, [66]) are used for the analog outputs of the
+CC2 as well as for power supply (see Table 3). Welded
+BNC feedthroughs act as seal between air and the cryo-
+stat/lock. The ground is connected via the lock with the
+cryostat and water tank. RG178 cables transmit signals
+from the BNC connectors to the FADC in the electron-
+ics cabinet where the analog signals are digitized. The
+total cable length that the CC2 must drive the signal
+over amounts to 20 m.
+The HV feedthroughs between air and the argon gas
+inside the lock are custom made. For leak tightness the
+braid of the HV cable is replaced for a few centimeters
+by a solid wire. The latter together with the soldered
+connection and part of the cable is then encapsulated
+with epoxy (Stycast (R) FT2850, [83]) inside a 5 cm
+long stainless steel pipe with a CF16 ﬂange at one end.
+This solution avoids discharges in the argon gas with
+up to 6 kV bias on the cable. The HV cable shielding
+is connected to this pipe and thus also to the lock. At
+the air side of the feedthrough, a ﬁlter is mounted to
+reduce electromagnetic noise.
+The HV cables inside the lock are Sami RG178 [67]
+and Teledyne Reynolds 167-2896 [68]. They end about
+30 cm above the top detector from where the above
+mentioned copper strips are used. The HV bias is pro-
+vided by NIM modules from CAEN (N1471H, 4ch Power
+Supply, [74]).
+5.2 The data acquisition
+The data from the Ge detectors and from the muon
+veto system are acquired with two diﬀerent data ac-
+quisition systems. Both systems are synchronized by a
+common GPS pulse per second (PPS) signal. All signals
+are digitized by FADCs and the energy is reconstructed
+oﬄine.
+5.2.1 The germanium DAQ for Phase I
+The custom made Phase I DAQ [84,85] for the ger-
+manium readout consists of NIM modules, PCI based
+readout boards and external logic for the trigger genera-
+tion. Each NIM module digitizes 4 channels. It accepts
+both single-ended and diﬀerential signals. The signal
+polarity as well as signal attenuation (0 dB/12 dB) or
+gain (0-6-12-18 dB) of the analog input stage can be
+selected via jumpers. The oﬀset is adjustable and the
+20
+bandwidth of the anti-aliasing ﬁlter is 30 MHz. Analog-
+to-digital conversion is based on the Analog Devices
+AD6645 A/D converter (14 bits, 100 Msamples/s). The
+digitized data are processed with a trapezoidal ﬁlter
+with programmable threshold to generate a trigger, av-
+eraged to monitor the baseline and sent via an LVDS
+link to a PCI board. The synchronization of the dif-
+ferent NIM modules is ensured by a common external
+clock and BUSY signal. The latter blocks the incoming
+data during readout.
+The custom-made PCI readout boards are mounted
+in a personal computer running the Linux operating
+system and are operated at 32 bit/33 MHz allowing for
+a maximum transfer rate of 132 MB/s. Selecting a 40µs
+window, four of the 10 ns samples are added (i.e. the
+sampling rate is reduced from 100 to 25 MHz) to reduce
+the data rate and readout time. For pulse shape anal-
+ysis a 5 µs trace around the rising edge of the signal
+is stored in addition at full sampling rate. The length
+allows for a 10 µs shaping time for the moving window
+deconvolution algorithm[86], and thus no information
+for the energy reconstruction is lost in the compres-
+sion. A 32 bit trigger counter and a 64 bit 100 MHz
+timestamp are saved together with the data. NIM logic
+builds the OR of all triggers and generates the BUSY
+signal.
+A Qt based [87] comprehensive graphical user inter-
+face for the whole system was implemented. A JAVA-
+based Graphical Analysis tool was developed for online
+monitoring of the data. Test measurements were per-
+formed with a BEGe detector. The energy resolution
+was similar to the one obtained with spectroscopy am-
+pliﬁers.
+In addition, a copy of the hardware used for the dig-
+itization and triggering of the muon veto signals (see
+below) is available for the readout of the germanium
+detectors. Some parameters of the commercial FADCs,
+e.g. the shaping of the signal for the trigger, are ad-
+justed to the preampliﬁer pulse shapes and the trace
+length is set to 160 µs. Both germanium DAQ systems
+are operated in parallel.
+5.2.2 The muon DAQ
+The muon data acquisition is installed in a VME crate
+housing 14 FADCs of type SIS 3301 from Struck (8 chan-
+nels, 100 MHz, 14 bit, [88]). Each card has 2 memory
+banks of 128k samples which are divided into 4k size
+per event. If one bank is full, writing continues to the
+second bank while the ﬁrst one can be read out. This
+reduces the dead time to less than 0.1% during normal
+data taking. Each channel is equipped with an analog
+anti-aliasing ﬁlter with 30 MHz bandwidth and with a
+trapezoidal ﬁlter for the digitized data. If the ﬁlter out-
+put is above threshold a trigger is generated. The log-
+ical OR of all 8 triggers in a FADC module is fed into
+a custom made VME board, called MPIC. The MPIC
+generates a global trigger if a programmable number of
+cards output a trigger within a coincidence time win-
+dow. This card also provides a time stamp for the event
+that is synchronized to the GPS PPS signal with 10 ns
+precision. If a trigger occurs, a “stop pulse” is fanned
+out to all FADC cards to stop writing to the circular
+event buﬀer such that the data is saved for readout.
+Upon a trigger, 4 µs traces for all channels are stored
+on disk. The stop pulse is also digitized as an additional
+analog input by the germanium DAQ to easily veto co-
+incidence events. Delayed coincidences can be detected
+by comparing the event time stamps between the muon
+and germanium events in the oﬄine analysis.
+The muon veto calibration mentioned in sec. 4.6.3 is
+performed by powering ﬁve LED drivers with a digital-
+to-analog converter (PAS9817/AO [89]) in connection
+with a CAEN V976 [74] fan-out for pulser signals. The
+light from the LEDs is uniformly distributed to all the
+PMTs through ﬁve diﬀuser balls.
+5.3 Data handling
+5.3.1 Data ﬂow and blinding
+The binary raw data format is deﬁned by the diﬀer-
+ent data acquisition systems. In order to optimize the
+analysis streaming and to provide a unique input in-
+terface for the analysis, all raw data are converted to
+a common standardized format. MGDO ( Majorana-
+Gerda Data Objects) [90] is a software library jointly
+developed by Gerda and Majorana, that contains
+general-purpose interfaces and analysis tools to support
+the digital processing of experimental or simulated sig-
+nals. The custom data objects available in the MGDO
+package are used as reference format to store events,
+waveforms, and other DAQ data (time stamps, ﬂags).
+The MGDO data objects are stored as Root ﬁles [91].
+The set of Root ﬁles produced by the conversion of
+raw data is named Tier1.
+Since the information contained in the Tier1 set
+and in the raw data is expected to be equal, the con-
+version procedure is the optimal place where blinding
+can be applied. Events with an energy close to Qββ are
+not exported to Tier1 but they remain saved in the
+backup of the raw data.
+The software frameworkGelatio [92] contains nearly
+independent and customizable modules that are applied
+to the input Tier1 waveforms. The results (pulse am-
+plitude, rise time, average baseline, etc.) are stored as
+21
+a new Root ﬁle (Tier2). A description of the analysis
+modules is presented in Ref. [93]. Higher level Tieri
+ﬁles can be created that contain additional parame-
+ters evaluated from more advanced analysis (e.g. cal-
+ibrated energy spectra). The information of the same
+event stored in diﬀerent Tieri ﬁles can be accessed by
+means of the Root friendship mechanism [91].
+5.3.2 Data storage
+The data acquisition systems store data underground
+on a server with 14 TB space. Every night, the newly
+accumulated data are transferred to a Gerda server in
+the LNGS computing center that has 36 TB disk space.
+This server is only accessible for a small number of users
+such that the raw data are hidden and only blinded
+data are available for analysis. Copies of the raw data
+are stored at LNGS, in Heidelberg, and Moscow.
+5.3.3 Quality control
+The event reconstruction of new data occurs automat-
+ically once per day. Since our rate is low, it is possible
+to store ﬁltered information like the event energy, pulse
+rise time or baseline level in a data base. An interface
+allows simple access with a web browser or, alterna-
+tively, by a user written C++ program [94]. The event
+traces stored in Tier1 ﬁles can also be viewed.
+A list of predeﬁned scripts generate monitoring his-
+tograms like trigger rates versus time, pulser stability
+plots, baseline shifts and energy distributions and these
+are checked daily.
+5.4 The Gerda network structure
+Gerda has a dedicated network in Hall A. It is con-
+nected to the external laboratories above ground by two
+dedicated multi-modal optical ﬁbers. They connect to
+a network switch [95] that oﬀers access security and
+advanced prioritization and traﬃc-monitoring capabil-
+ities. The diﬀerent network lines are routed inside the
+Gerda infrastructure.
+The switch is directly connected to a dedicated ser-
+ver [96] that provides network routing facilities and
+acts as a ﬁrewall and user authentication server. At
+the moment, this is the only public service available di-
+rectly from external networks and it is used to access
+all Gerda internal network resources and services. A
+Port Address Translation (PAT) network device is used
+internally, to translate TCP/UDP communications be-
+tween Gerda private network computers and public
+network hosts.
+The following centralized services are available: ( i)
+NIS-server for user authentication, ( ii) DNS-server for
+host name resolution, (iii) DHCP-server for the DAQ/slow
+control machines and all the computers attached tem-
+porarily to the network (i.e. laptops), and ( iv) Web-
+server for the whole experiment.
+In order to provide access to internal Gerda re-
+sources (mainly internal Web servers), a proxy service
+has been setup. Thus, it is possible to access internal
+Web servers through the main Gerda Web server.
+5.5 The slow control
+The Gerda slow control system [97] is responsible for:
+1. monitoring of parameters characterizing the status
+of the subsystems (temperature, pressure, detector
+currents, etc.),
+2. control and monitoring of low and high voltage power
+supplies through a graphical user interface (GUI),
+3. storage of the monitored values in a database for
+later retrieval;
+4. alarm handling,
+5. web pages for subsystems breakdown,
+6. online histograms for the relevant parameters,
+7. reliable remote monitoring of the whole experiment.
+The slow control consists of four building blocks. A
+database is the core of the slow control system. It stores
+both the data and the conﬁgurations. PostgreSQL [98]
+was selected as relational database SQL compliant with
+the capability of an embedded procedural language (PL).
+In case of a high number of records in the data ta-
+bles, the database will be split in two: a so-called online
+database where all the data up to one week are stored
+and the historical database where older data are copied
+regularly after data compression.
+The acquisition task is performed by a pool of clients
+each serving a dedicated hardware subcomponent. The
+clients store the acquired data in the database. Depend-
+ing on the speciﬁc hardware, diﬀerent types of connec-
+tions are used by the clients: web access, CANbus, serial
+RS232, etc. All data written into the database have a
+proper time stamp, that constitutes the main method
+to study correlations. All hardware settings are stored
+in the database.
+Alarms generated automatically by some compo-
+nents go directly to the LNGS safety system and to
+the Gerda on call experts and the slow control system
+will record the event into the database for future anal-
+ysis. The alarm manager is a supervisor process that
+retrieves data from the database and is able to generate
+warnings or error messages in case of a malfunctioning
+sensor.
+22
+The system is completed by a web interface where
+alarms, instant and historical data (through histograms)
+and the status of the clients can be seen. The control
+interface is based on HTML. The data are updated au-
+tomatically using Ajax [99] in pull manner.
+The database has been operational since autumn
+2009. Data collected in two and a half years are only 94
+MB. This is in part due to the use of a data reduction
+policy at the level of the readout of some subcompo-
+nents (cryostat, clean room, water loop).
+6 Summary of screening results
+A very careful selection of materials is critical to achieve
+our goal of one to two orders of magnitude reduction
+in backgrounds relative to previous experiments. For
+Phase I, this selection was carried out by using state-
+of-the-art screening techniques during the design and
+construction phases. The screening facilities continue
+to be used in the preparations for Phase II of Gerda.
+Material screening was performed mainly with the
+following three techniques:
+1. Gamma ray spectroscopy with High Purity Ger-
+manium spectrometers in four underground labo-
+ratories: at the Max-Planck-Institut f¨ ur Kernphysik
+(MPIK) in Germany, HADES (IRMM) in Belgium,
+the Baksan Neutrino Observatory (BNO INR RAS)
+in Russia and at LNGS in Italy. The ultimate de-
+tection limit for the best spectrometers in deep un-
+derground laboratories lies around 10 µBq/kg for
+226Ra and 228Th [100,101].
+2. Gas counting with ultra-low background proportional
+counters. They were originally developed at MPIK
+for the Gallex solar neutrino experiment [102] and
+are used in Gerda for 222Rn measurements.
+3. Mass spectrometry with Inductively Coupled Plasma
+Mass Spectrometers (ICP-MS). The Gerda collab-
+oration has access to two ICP-MS machines, one at
+LNGS and one at INR RAS, Moscow.
+In addition, some dedicated samples were analyzed with
+Neutron Activation Analysis (NAA) and Atomic Ab-
+sorption Spectroscopy (AAS).
+Altogether almost 250 samples were screened by
+gamma ray spectroscopy. The main focus was on elec-
+tronics components (about 85 samples), metal samples
+(about 65 samples, mostly stainless steel and copper)
+and plastic materials (about 50 samples). Also the Rn
+emanation technique was extensively applied (about
+120 samples) and about 20 samples were screened by
+ICP-MS. In this section some selected results, most rel-
+evant to the construction, will be given. Some more
+results can be found in Refs. [57,103,104].
+6.1 Argon purity
+The 222Rn concentration of commercial liquid nitro-
+gen was measured [59] and its puriﬁcation to a level
+of 1 µBq/m3 at standard temperature and pressure has
+been demonstrated in the past for Borexino [105]. For
+Gerda the same questions arose for liquid argon since
+the 222Rn concentration in freshly produced argon was
+found to be in the range of mBq/m 3 (STP) which is
+about an order of magnitude higher than for nitrogen.
+While this is not so relevant for the ﬁrst cryostat ﬁlling,
+a constant reﬁlling was considered for the case that the
+active cooling would fail (see sec. 4.1.1).
+Argon puriﬁcation tests based on radon adsorption
+on low temperature activated carbon traps were per-
+formed with gaseous and liquid argon. For the gas phase,
+reduction factors of more than 1000 were achieved for
+a 150 g trap [106]. These are similar to the results
+achieved for nitrogen [105]. For the liquid phase, in
+most cases a reduction factor of 10 could be achieved
+for a small 60 g column. In Gerda an activated car-
+bon column (∼1 kg) was installed, which is expected to
+reduce the 222Rn concentration by two orders of mag-
+nitude. All measurements were performed with the Mo-
+bile Radon Extraction unit (MoREx, [105]).
+6.2 Radiopurity of the cryostat
+Besides the argon, the second largest mass item in close
+contact to the diodes is the cryostat. It is made of
+austenitic stainless steel with an additional inner cop-
+per shield (see Figs. 1 and 6). The stainless steel was
+procured in more than 10 relatively small batches of
+a few tons and roughly a 50 kg sample of each batch
+was screened with gamma ray spectrometers [57]. Dur-
+ing this campaign it was discovered that stainless steel
+may have low 228Th activity that is about 10 times
+lower than what was known from earlier screening cam-
+paigns [107]. Finally, the cylindrical part of the cryo-
+stat, closest to the diodes, could be constructed from
+stainless steel batches with a 228Th concentration below
+1 mBq/kg. All other batches have a 228Th concentra-
+tion below 5 mBq/kg. Another contamination in stain-
+less steel is 60Co. In the batches for Gerda, a mean
+60Co activity of 19 mBq/kg was found [57]. The avail-
+ability of low radioactivity stainless steel led to a sig-
+niﬁcant reduction in the necessary mass of the inner
+copper shield.
+Any 222Rn released from the inner surface of the
+cryostat will be dissolved in the liquid argon and may
+be transported to the germanium diodes by convection.
+Therefore, the 222Rn emanation rate of the cryostat
+was measured after its construction. The cryostat was
+23
+T able 4 Measurements on 222Rn emanation of the Gerda cryostat at room temperature after various stages of construction.
+no. date description result [mBq]
+1 Nov 2007 after construction and ﬁrst cleaning 23.3 ± 3.6
+2 Mar 2008 after additional cleaning 13.7 ± 1.9
+3 Jun 2008 after copper mounting 34.4 ± 6.0
+4 Nov 2008 after wiping of inner surfaces 30.6 ± 2.4
+5 Sep 2009 in ﬁnal conﬁguration 54.7 ± 3.5
+sealed, evacuated and ﬁlled with222Rn-free nitrogen gas
+that was produced with MoREx. After a certain time
+in which 222Rn could accumulate, the nitrogen was agi-
+tated (to assure a homogeneous radon distribution) and
+a sample of a few cubic meters nitrogen was extracted.
+Then the 222Rn concentration in this aliquot was mea-
+sured with low background proportional counters and
+the result was scaled to calculate the 222Rn emanation
+rate of the entire cryostat. The measurement was re-
+peated after various modiﬁcations of the cryostat and
+the results are summarized in Table 4.
+The ﬁrst two measurements were performed when
+the cryostat was still empty, i.e. just the surface of
+the stainless steel vessel was under investigation. The
+cleaning then performed was a pickling and passivation
+treatment with an acidic gel. In the ﬁrst measurement
+a 222Rn emanation rate of 23 mBq was measured. This
+reduced by a second cleaning cycle to a level of about
+14 mBq. After the copper shield was installed a sub-
+sequent measurement showed an increase of the 222Rn
+emanation rate by about 20 mBq. A plausible hypoth-
+esis was that dust was introduced during the copper
+mounting. However, this explanation was rejected be-
+cause thorough surface wiping did not improve the re-
+sult signiﬁcantly (see measurement No. 4).
+The ﬁnal conﬁguration of the cryostat includes a
+manifold through which all tubing is distributed, a com-
+pensator to connect it to the lock, a radon shroud (see
+sec. 3) and many sensors and safety devices. The 222Rn
+emanation rate of the cryostat in its ﬁnal conﬁguration
+is (54.7±3.5) mBq. Assuming a homogeneous distribu-
+tion of 222Rn in the liquid argon, this would result in a
+contribution to the BI atQββ of 7·10−4 cts/(keV·kg·yr).
+To reduce this background, a cylinder made from 30µm
+thick copper foil (called radon shroud, see item 4 in
+Fig. 6) was installed around the diodes with the inten-
+tion that 222Rn that is emanated from the walls is kept
+at suﬃcient distance from the diodes.
+6.3 Radon emanation of components inside the lock
+The lock system is directly connected to the Gerda
+cryostat (see Fig. 6 and sec. 4.4.2). Thus, 222Rn that is
+emanated inside the lock may be dissolved in the liq-
+uid argon and can contribute to the background. Con-
+sequently, the selection of low-emanating construction
+materials for the lock and items inside the lock was
+a rigorous process. Flanges to the outside were sealed
+with metal gaskets whenever possible. At places where
+O-rings had to be used Kalrez [108] O-rings were cho-
+sen to avoid VITON, which is known to be a relatively
+strong source of radon. The 222Rn emanation rates of
+all Kalrez O-rings that are used in the lock system were
+investigated and it was conﬁrmed that they are much
+radiopurer than VITON. As a result of these measure-
+ments, an upper limit of 0.6 mBq can be given for the
+integrated 222Rn emanation rate of the subset of O-
+rings that are in direct contact with the inner volume
+of the lock.
+Table 5 summarizes the results of all the other com-
+ponents in the lock that were screened for their 222Rn
+emanation rate. As can be seen in the right column the
+integrated radon emanation rate of all components is
+less than 17 mBq. This is low compared to the 222Rn
+emanation rate of the cryostat. Moreover, there are cold
+copper surfaces in the argon gas phase just above the
+liquid level which will act as a getter. Therefore, the
+222Rn emanation of the lock is a minor source of back-
+ground for Gerda.
+6.4 Further selected screening results
+Before the construction of Gerda it was already known
+that high purity copper is one of the most radiopure
+materials [101]. Therefore, it was the natural candidate
+material for the construction of the low mass diode
+holder (see Table 6). As insulating material, one of
+the most promising candidates from previous measure-
+ments is PTFE. A batch of extruded PTFE was pur-
+chased that was produced under particularly clean con-
+ditions and screened with the GeMPI spectrometer [103].
+Finally, radioactivity measurements of the Gerda
+front-end electronics have been performed (see sec. 5.1).
+Particular eﬀorts have been made to produce a low
+radioactivity version of the circuit. Some of the key
+points to achieve these results are: manufacturing of
+24
+T able 5 Radon emanation of non-metallic materials used in the lock. The amount of the material used and the corresponding
+emanation is listed. Values indicated by * are estimated by the detection of 226Ra usingγ-ray screening. They are conservative
+upper limits since not all 222Rn will escape the material.
+component amount material total Rn
+emanation rate
+LED 4 pieces (207 ±25) µBq
+Kappa camera 4 pieces <350 µBq
+inductive end switch 4 pieces mostly steel (73 ±13) µBq
+meter drive head 2 pieces (860 ±180) µBq
+meter drive plug 2 pieces (400 ±180) µBq
+pulley bearings 12 pieces Iglidur <7.2 µBq
+linear pulley guides 4 pieces Iglidur <4.8 µBq
+O-ring seal shutter 1 piece Kalrez (400 ±100) µBq
+O-ring motor feedthrough 2 pieces EPDM (7.8 ±1.0) µBq
+HV cables SAMI RG178 40 m (300 g) <680 µBq
+signal cables Habia SM50 508 m (273 ±50 ) µBq
+LV supply TR 5 kV 62 m (50.4 ±14.7) µBq
+Thermovac pressure gauge [109] 2 pieces <12.6 µBq
+BD diﬀ. pressure sensor [110] 3 pieces (117 ±18 ) µBq
+HV cables TR 18 kV 1.53 kg (100 m) * <11.1 mBq
+spiral coiled tube 273 g (11.2 m) PTFE * <3.2 mBq
+T able 6 Gamma ray screening results for selected materials. Given are 1 σ-boundaries or 90 % limits. Note, one PCB board
+serves three detectors.
+component amount 40K 226Rn 228Th
+[mBq/kg] [ µBq/kg] [ µBq/kg]
+copper detector support 80 g/det. < 0.088 < 16 < 19
+PTFE detector support 10 g/det. 0 .60 ± 0.11 25 ± 9 31 ± 14
+PTFE insulation pipe 2.5 g/det. 8 ± 2 1 100 ± 200 < 620
+CC2 preampliﬁer per PCB 1 .8 ± 0.3 286 ± 28 150 ± 24
+the printed circuit board on a speciﬁcally selected low-
+radioactivity substrate (Cuﬂon), minimization of the
+number of tantalum decoupling capacitors, integration
+of low value capacitors as stray capacitance between
+traces directly on board, and careful selection of pas-
+sive physical components and soldering paste. To reach
+a BI < 10−3 cts/(keV·kg·yr), the Monte Carlo predicts
+a maximum allowed activity for the front end electron-
+ics of 2 mBq for 226Ra and 500 µBq for 228Th with
+a separation of 30 cm between the electronics and the
+top detectors. The average measured activity of a set of
+three preampliﬁers is (286±28) µBq and (150±24) µBq
+in 226Ra and 228Th, respectively, including the pins.
+Thus, the radiopurity limits are met for the 5 PCBs
+presently in use.
+7 Performance of the Apparatus
+The construction of the apparatus was completed in
+June 2010. The commissioning phase started with the
+operation of refurbished natGe diodes from the GENIUS-
+TF experiment [41], in order to minimize the poten-
+tial risks for the enrGe detectors. A larger background
+than expected at Qββ and an intense line at 1525 keV
+was discovered. The origin and mitigation was studied
+in the following months (see sec. 7.3). In June 2011
+a string of enrGe diodes was deployed for further pre-
+liminary tests including various operational conﬁgura-
+tions of the detectors and the electric stray ﬁelds. The
+commissioning phase was completed on November 1,
+2011. All components had met their design speciﬁca-
+tions and an adequate background index was reached;
+thus, physics data taking of Phase I was started on
+November 9, 2011. A blinding window of 40 keV width
+aroundQββ is in place since January 11, 2012. The raw
+data are written to disk, however events with energies
+from 2019 to 2059 keV are not exported to the Tier1
+data and are therefore not available for analysis. The
+blinding window will be opened when a suﬃcient expo-
+sure is acquired and the calibrations and selection cuts
+are ﬁnalized.
+While it is not the scope of this paper to discuss
+the physics analysis and results, the principal perfor-
+25
+mance of the apparatus is summarized here. Results
+are shown demonstrating that a low background has
+actually been reached via thorough material selection
+and screening. The stability of the performance of the
+complete Gerda setup at LNGS is inferred from the
+energy calibrations and the ﬁrst spectra. The perfor-
+mance particulars are obtained on the basis of physics
+runs between November 2011 and May 2012, which re-
+sulted in an exposure of 6.10 kg·yr for the enriched de-
+tectors and 3.17 kg·yr for the natural detectors. These
+data are collected with an overall live time (calibration
+runs subtracted) of about 90%.
+7.1 The performance of the muon veto
+The PMTs of the muon veto have been checked for pulse
+height stability for more than one year. A satisfying in-
+dividual stability is reﬂected in the constant average
+light output per muon event per day (Fig. 18, squares
+and right scale). This constancy is mandatory for a re-
+liable determination of the muon rate that is shown by
+the crosses in Fig. 18 (left scale). Except for short term
+ﬂuctuation the rate is consistent with a 2 % sinusoidal
+variation with a period of about one year. This is a well-
+known phenomenon [111] that will be veriﬁed when a
+longer period of data is available.
+The observed muon rate in Gerda results in a pre-
+liminary value of (3.42±0.03)·10−4 cts/(m2s) which com-
+pares very well with the recent Borexino result of
+(3.41±0.01)·10−4 cts/(m2s) [111].
+Fig. 19 shows the multiplicity M, the number of
+Cherenkov PMTs ﬁred. The spectrum is taken with
+trigger signals from both muon veto systems with a
+threshold of 1 photoelectron (p.e.). The expected light
+yield is roughly 200 to 300 photons for every centime-
+ter traversed by a muon. Since almost all surfaces of the
+water tank and cryostat are covered with the VM2000
+calender time
+01/09/2011 01/11/2011 01/01/2012 02/03/2012
+counts/day
+1000
+1500
+2000
+2500
+3000
+3500
+muon veto stability
+trigger rate
+average light
+ day)× p.e./(event 
+300
+350
+400
+450
+500
+550
+600
+GERDA 12-04
+Fig. 18 The average light output per event and day
+(squares, right scale) of the Cherenkov muon veto. The daily
+rates (crosses, left scale) are rather constant.
+foil, one would expect that most of the muon events
+will cause a high multiplicity of triggered PMTs. The
+low coverage of 0.5% of the surface by PMTs is compen-
+sated by the reﬂectivity and wavelength shifting proper-
+ties of the VM2000 foil. There is, indeed, a rise towards
+high multiplicities as predicted by the MC simulations,
+but there is also a prominent enhancement observed
+in the low multiplicity region below M= 20 which is
+not present in MC. The low multiplicity bump around
+M= 10 vanishes for events triggered by the plastic pan-
+els only. Therefore, it is unlikely that it is caused di-
+rectly by muons. The hypothesis of local radioactivity
+creating scintillation light in the VM2000 foil is still in-
+vestigated. Triggers from the water Cherenkov cannot
+contribute to M< 5. The increase close to M= 0 origi-
+nates from triggers of the triple layered plastic scintilla-
+tor when the muon hits the plastic but misses the water.
+Increasing the trigger threshold to 30 p.e. (dashed line)
+removes the intensity at low M.
+The lower limit of the muon detection eﬃciency
+(MDE) is estimated for a threshold of 30 p.e. amounting
+to ϵmd = (97.2±1.1) % [76]. MC estimates [71] give a
+value of ϵmd = (99.1±0.4)%. The latter, however, in-
+cludes an energy deposition of the muon within the
+full detector array. This selects automatically longer
+tracks within the water, which in turn produce more
+detectable light. A more reﬁned determination employ-
+ing coincidences between the plastic and Cherenkov de-
+tectors is under way.
+Alternatively, one can estimate the eﬃciency that a
+muon detected in the Ge detector array is accompanied
+by a muon trigger. Two diﬀerent event types were taken
+into account: (i) all events with> 8.5 MeV deposited in
+germanium, but only one germanium detector ﬁred; and
+(ii) all events with > 4 MeV deposited in germanium,
+multiplicity
+0 10 20 30 40 50 60
+no. of events (not normalized)
+10
+210
+3
+10
+410
+5
+10
+6
+10
+Cherenkov  OR  panel events
+all events above 30 p.e.
+Cherenkov PMT multiplicity
+Fig. 19 Measured multiplicities of all mounted Cherenkov
+PMTs without cut on the number of detected photoelectrons
+(full line) and with a cut of ≥30 p.e. (dashed line).
+26
+energy [keV]
+0 500 1000 1500 2000 2500
+1
+310 ANG2
+energy [keV]
+0 500 1000 1500 2000 2500
+1
+310 ANG3
+energy [keV]
+0 500 1000 1500 2000 2500
+1
+310 ANG4
+energy [keV]0 500 1000 1500 2000 2500
+1
+3
+10 ANG5
+energy [keV]
+0 500 1000 1500 2000 2500
+1
+310 RG1
+energy [keV]
+0 500 1000 1500 2000 2500
+1
+310
+RG2
+energy [keV]
+550 600
+4.2 keV
+550 600
+4.2 keV
+550 600
+4.0 keV
+550 600
+3.6 keV
+550 600
+3.8 keV
+550 600
+4.4 keVkeV
+2550 2600
+ 4.8 keV    
+2550 2600
+ 4.8 keV    
+2550 2600
+ 4.5 keV    
+2550 2600
+ 4.5 keV    
+2550 2600
+ 4.8 keV    
+2550 2600
+ 5.1 keV    
+counts
+GERDA 12-09
+Fig. 20 The energy spectra of the six enriched germanium detectors are plotted for a calibration with 228Th. The blow-ups
+on the right show the ﬁt results for the 583.2 keV and the 2614.5 keV lines including the values for a Gaussian FWHM.
+but at least two germanium detectors ﬁred (α emitters
+from the U/Th decay chain have energy > 4 MeV, but
+they would release their energy within one detector).
+In the commissioning runs, a total of 79 events were
+selected by these cuts, while 78 of them were also found
+in the muon veto. The muon “rejection eﬃciency” is
+calculated as ϵmr = (97.9+1.2
+−2.0) % (median with 68 %
+central interval), which is in a good agreement with the
+simulations.
+With the measured eﬃciency the background in-
+dex due to un-identiﬁed prompt muons is estimated as
+< 10−5 cts/(keV·kg·yr), which is well below the speci-
+ﬁcations needed for Phase I and II [71].
+7.2 Stability of Ge detectors
+Initially, eight detectors fromIgex and HdM have been
+in operation in theGerda cryostat. Two of them, ANG 1
+and RG 3, developed high leakage currents at the be-
+ginning of Phase I. These detectors have been removed
+from the analysis of Phase I data. For some time how-
+ever, they have been used as veto to suppress multi-site
+events. The remaining total mass for analysis is 14.6 kg
+with an average enrichment of 86% in 76Ge correspond-
+ing to 165 moles.
+Energy calibrations are performed on a (bi)weekly
+basis with the 228Th sources. Spectra of the six ac-
+tive enriched detectors are shown in Fig. 20, including
+scaled subplots for the 583.2 and the 2614.5 keV lines.
+The high count rates cause pile up that would mani-
+fest itself in tails on the low energy side of the peaks.
+Proper pile up rejection algorithms and further data
+quality cuts have been applied before the ﬁtting [93].
+The peaks are ﬁtted well by a Gaussian and an error
+function representing the background. The results are
+shown by the red lines and the FWHM of the Gaus-
+sian is given in keV. Values between 4.2 to 5.3 keV
+(FWHM) at 2614 keV have been obtained. These can
+be translated to a mass weighted average of 4.5 keV
+(FWHM) atQββ=2039.01(5) keV [112]. The resolution
+of the 2614.5 keV line for all detectors during the ﬁrst
+months of data taking is shown in Fig. 21. No signiﬁcant
+variation or trend is visible for this period.
+The same is also true for the gain, which normally
+changed only after some power cycling or temperature
+drifts. The 2614.5 keV γ-line positions in the calibra-
+tion spectra are stable in time as shown in Fig. 22 as
+they fall into a range of ±1.3 keV. The shifts observed
+between two calibrations can be scaled linearly to the
+Nov/21 Dec/21 Jan/20 Feb/19 Mar/21 Apr/20 May/20 Jun/19
+resolution (FWHM)   [keV]
+3.8
+4.0
+4.2
+4.4
+4.6
+4.8
+5.0
+5.2
+5.4
+5.6
+ 
+ANG2
+ANG3
+ANG4
+ANG5
+RG1
+RG2
+Th @ 2614.5 keV228energy resolution for 
+GERDA 12-11
+Fig. 21 The energy resolution of the germanium detectors is
+plotted for several energy calibrations with the 228Th source.
+27
+T able 7 The background index deduced (without pulse shape analysis) from the event count in the indicated energy windows
+∆E for diﬀerent running conditions during the commissioning and the ﬁrst part of Phase I. Corresponding values are shown
+also for the Igex and HdM experiments.
+experiment diodes ∆E exposure background index
+diode environment (keV) (kg ·yr) 10 −2cts/(keV·kg·yr)
+Igex [17]
+vacuum, Cu enclosed enr 2000-2500 4.7 26
+HdM [44]
+vacuum, Cu enclosed enr 2000-2100 56.7 16
+Gerda commissioning
+LAr nat 1839-2239 0.6 18 ±3
+LAr, Cu mini-shroud nat 1839-2239 2.6 5.9 ±0.7
+ditto enr 1839-2239 0.7 4.3 +1.4
+−1.2
+Gerda Phase I
+LAr, Cu mini-shroud nat 1839-2239 ⋆ 1.2 3.5 +1.0
+−0.9
+LAr (diodes AC-coupled) nat 1839-2239 ⋆ 1.9 6.0 +1.0
+−0.9
+LAr, Cu mini-shroud enr 1939-2139 ⋆ 6.1 2.0 +0.6
+−0.4
+⋆) excluding the blinded region of Qββ ±20 keV
+interesting energy at Qββ. The two lines at ±1.3 keV
+shown in Fig. 22 correspond to±1 keV atQββ. The gain
+shifts within the ROI thus are typically less than 1 keV.
+This value is small compared to the average FWHM of
+4.5 keV and shows that the data from all periods can
+be added in the search for the peak of the 0νββ decay.
+Nov/21 Dec/21 Jan/20 Feb/19 Mar/21 Apr/20 May/20 Jun/19
+shift of  2614.5 keV peak  [keV]-2.0
+-1.5
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.5
+2.0
++ 1.3 keV
+- 1.3 keV
+GERDA 12-11
+ANG2
+ANG3
+ANG4
+ANG5
+RG1
+RG2
+Fig. 22 Variations of the 2614.5 keVγ line between succes-
+sive calibrations. The green lines indicate ±1 keV variations
+at Qββ if scaled linearly in energy.
+7.3 Background levels in Gerda
+The commissioning of Gerda started with a string of
+three bare low background natGe diodes, and yielded
+a surprisingly large BI on the order of the HdM and
+Igex experiments (18 · 10−2 cts/(keV·kg·yr), see Ta-
+ble 7). As another surprise, the line at 1525 keV from
+42K, the daughter of 42Ar, appeared in the spectra with
+an intensity much higher than expected on the basis of
+the upper limit for the ratio 42Ar/natAr determined
+by V.D. Ashitkov et al. [113]. The published limit of
+<4.3×10−21 g/g at 90% conﬁdence level converts to an
+upper limit of 41 µBq/kg for 42Ar. These observations
+led to the working hypothesis that charged ions, and in
+particular the progeny 42K, are drifting in the electric
+ﬁeld of the bare Ge diodes that are biased with 3 to
+4 kV via the large n + surface (see sec. 3 and Fig. 2).
+The concentration of radioactive impurities near the Ge
+diodes can increase. Further studies with diﬀerent bias
+schemes conﬁrmed this hypothesis. A major improve-
+ment of the BI was achieved by enclosing the string of
+detectors with a cylinder, made of 60 µm thick Cu foil,
+called “mini-shroud” (BI≈ 5.9· 10−2 cts/(keV·kg·yr)).
+The volume of LAr from which the ions can be collected
+onto the surface of the detectors is reduced and bulk
+convection of the LAr near the detectors is prevented.
+In fact, operating the Ge diodes in AC-coupled mode
+(n+ surface grounded and p+ contact biased) without
+mini-shroud but with adequate shielding of the p+ con-
+tact, i.e. without external electrical stray ﬁeld, yielded
+a similar BI of 6 .0· 10−2 cts/(keV·kg·yr) (see next to
+last line in Table 7). For the Phase I physics run, the
+hermeticity of the mini-shroud, as well as the shield-
+ing of the HV cables, was further improved in order
+to avoid any leakage of electric ﬁeld lines into the LAr
+volume. The improvement with respect to the precur-
+sor experiments is evident. The stability of the BI must
+be proven for a longer period of time.
+An analysis of the intensity of the 1525 keV line
+gives a concentration for 42Ar that is about twice the
+literature limit. This estimate is based on the assump-
+tion of a homogeneous distribution of this isotope out-
+side the mini-shroud.
+The intensity of γ lines was investigated in order to
+identify sources of backgrounds. The results are com-
+28
+T able 8 Counts and rates of background lines for the enriched and natural detectors in Gerda in comparison to the enriched
+detectors of HdM [42]. Upper limits correspond to 90 % credibility interval. The central value is the mode of the posterior
+probability distribution function and the error bars account for the smallest interval containing 68% probability.
+natGe (3.17 kg·yr) enrGe (6.10 kg·yr) HdM (71.7 kg·yr)
+isotope energy tot/bck rate tot/bck rate rate
+[keV] [cts] [cts/(kg ·yr)] [cts] [cts/(kg ·yr)] [cts/(kg·yr)]
+40K 1460.8 85 / 15 21 .7+3.4
+−3.0 125 / 42 13 .5+2.2
+−2.1 181 ± 2
+60Co 1173.2 43 / 38 < 5.8 182 / 152 4 .8+2.8
+−2.8 55 ± 1
+1332.3 31 / 33 < 3.8 93 / 101 < 3.1 51 ± 1
+137Cs 661.6 46 / 62 < 3.2 335 / 348 < 5.9 282 ± 2
+228Ac 910.8 54 / 38 5 .1+2.8
+−2.9 294 / 303 < 5.8 29.8 ± 1.6
+968.9 64 / 42 6 .9+3.2
+−3.2 247 / 230 2 .7+2.8
+−2.5 17.6 ± 1.1
+208Tl 583.2 56 / 51 < 6.5 333 / 327 < 7.6 36 ± 3
+2614.5 9 / 2 2 .1+1.1
+−1.1 10 / 0 1 .5+0.6
+−0.5 16.5 ± 0.5
+214Pb 352 740 / 630 34 .1+12.4
+−11.0 1770 / 1688 12 .5+9.5
+−7.7 138.7 ± 4.8
+214Bi 609.3 99 / 51 15 .1+3.9
+−3.9 351 / 311 6 .8+3.7
+−4.1 105 ± 1
+1120.3 71 / 44 8 .4+3.5
+−3.3 194 / 186 < 6.1 26.9 ± 1.2
+1764.5 23 / 5 5 .4+1.9
+−1.5 24 / 1 3 .6+0.9
+−0.8 30.7 ± 0.7
+2204.2 5 / 2 0 .8+0.8
+−0.7 6 / 3 0 .4+0.4
+−0.4 8.1 ± 0.5
+piled in Table 8 for the natural and the enriched de-
+tectors in comparison to numbers from HdM [42]. The
+rate estimates are based on a Bayesian approach start-
+ing with a ﬂat prior probability distribution function.
+The general observation is an achieved reduction by
+about a factor of 10 with respect to the HdM exper-
+iment. The composition of the background in relation
+to the screening results will be discussed in a future
+publication.
+Additional contributions to the BI will result from
+radioactive surface contaminations such as 210Pb as
+well as from cosmogenically produced radioisotopes within
+the diodes. These contributions are expected to be small
+and will require large data sets to evaluate.
+Finally, it is worth to mention that auxiliary exper-
+iments were performed to study the cross sections of
+cosmogenic activation of steel and other constructional
+materials [114], the inelastic neutron scattering [115],
+the neutron activation cross sections, and the γ decay
+spectra [116,117,118]. The deduced contributions to the
+BI are in the order of few 10 −5 cts/(keV·kg·yr).
+First energy spectra for enriched and natural diodes
+are shown in Fig. 23. Notice, that the spectrum from
+the natural detectors has been renormalized to match
+the exposure of the enriched diodes. The low energy
+part is dominated by the β decay of 39Ar which has
+an endpoint energy of 565 keV. The well known ac-
+tivity of A(39Ar)= [1.01±0.02(stat)±0.08(syst)] Bq/kg
+(Ref. [119]) describes the observed intensity. The en-
+hancement of 2 νββ events in the range from 600 to
+1400 keV for the enriched detectors is clearly visible.
+The BI of (2 .0+0.6
+−0.4)· 10−2 cts/(keV·kg·yr) for the
+enriched detectors is evaluated in the energy region
+Qββ±100 keV with the 2019 to 2059 keV window ex-
+cluded (green bar in Fig. 23). This value is an order of
+magnitude lower than the one for the very same detec-
+tors in their previous shielding in the HdM and Igex
+experiments (see Table 7).
+energy (keV)
+0 500 1000 1500 2000 2500
+counts/(keV kg yr)
+-110
+1
+10
+210 nat. scaled to exposure of enr.
+ yr    ×enriched detectors,  6.10 kg 
+ yr    ×  natural detectors,  3.17 kg 
+ yr    ×enriched detectors,  6.10 kg 
+ yr    ×  natural detectors,  3.17 kg 
+-
+βAr  39
+K-42  1525 keV
+K-40  1461 keV
+Bi-214  1765 keV
+ Bi-214  2204 keV
+Tl-208  2614 keV
+ββν2
+
+
+GERDA 12-09
+Fig. 23 Spectra taken with enriched (red) and non-enriched
+(blue) detectors during the same time period. The natGe
+spectrum has been normalized to match the exposure of
+enrGe. The blinding window of Qββ ±20 keV is indicated as
+green bar. Identiﬁed γ lines are indicated.
+29
+8 Conclusions
+Gerda searches for 0νββ decay of 76Ge using a new
+experimental concept. Bare germanium diodes are op-
+erated successfully in a 4 m diameter cryostat ﬁlled with
+LAr, requiring only a small amount of radiopure ma-
+terials as mechanical and electrical support. Shielding
+against external background is achieved by LAr and an
+additional shell of 3 m of water.
+The experiment started commissioning in May 2010
+and in November 2011 with physics data taking (Phase I).
+The experience gained so far shows that all components
+work well.
+1. The operation of the cryostat inside the water tank
+is stable and safe.
+2. Bare germanium diodes are operated reliably in liq-
+uid argon over a long time and the implemented
+handling procedure ensures that many operational
+cycles do not deteriorate the performance.
+3. The readout electronics is balancing the partially
+conﬂicting requirements of good energy resolution,
+low radioactivity, and operation at LAr tempera-
+ture.
+4. The water tank instrumentation ensures a high veto
+eﬃciency of muon events and only a tolerable loss of
+3 out of 66 PMTs have stopped functioning during
+a 2 year period.
+5. Data acquisition and monitoring of the ambient pa-
+rameters operate reliably.
+6. The implemented software allows for a fast recon-
+struction of the data together with a good monitor-
+ing of data quality.
+The experience from the (bi-)weekly calibrations shows
+that the gain drifts of the entire readout chain are typ-
+ically smaller than 1 keV at Qββ. This is small enough
+to ensure that adding all data will not result in relevant
+shifts of peak positions or deteriorations of resolutions.
+The surprisingly large background from 42K, the
+42Ar progeny, experienced during the commissioning
+can be mitigated by two methods: encapsulation of each
+detector string by a closed thin-walled copper cylinder
+or AC coupling of the detectors. In both cases the elec-
+tric ﬁeld outside of the encapsulation is minimized.
+The Phase I background is determined currently to
+(2.0+0.6
+−0.4)·10−2 cts/(keV·kg·yr). This value and the in-
+tensities of gamma lines show an order of magnitude
+improvement compared to the previous HdM and Igex
+experiments. In the absence of a signal and given the
+current BI, Gerda expects to set 90 % probability
+lower limits of T1/2 > 1.9· 1025 yr for an exposure of
+20 kg·yr.
+Acknowledgments
+The Gerda experiment is supported ﬁnancially by the
+German Federal Ministry for Education and Research
+(BMBF), the German Research Foundation (DFG) via
+the Excellence Cluster Universe, the Italian Istituto
+Nazionale di Fisica Nucleare (INFN), the Max Planck
+Society (MPG), the Polish National Science Centre (NCN),
+the Russian Foundation for Basic Research (RFBR),
+and the Swiss National Science Foundation (SNF). The
+institutions acknowledge also internal ﬁnancial support.
+The Gerda collaboration thanks the directors and
+the staﬀ of the LNGS for their continuous strong sup-
+port of the Gerda experiment.
+Preparing and setting up the infrastructure of the
+Gerda experiment was made possible only through
+the indispensable help of R. Adinolﬁ Falcone, T. Apfel,
+P. Aprili, J. Baumgart, G. Bucciarelli, M. Castagna,
+F. Costa, N. D’Ambrosio, S. Flicker, D. Franciotti, H.
+Fuchs, H. Hess, V. Mallinger, P. Martella, B. M¨ ork,
+D. Orlandi, M. Reissfelder, T. Schwab, R. Sedlmeyr,
+S. Stallio, R. Tartaglia, E. Tatananni, M. Tobia, D.
+Wamsler, G. Winkelm¨ uller, and T. Weber.
+The proliﬁc cooperation with P. Vermeulen and J.
+Verplancke from Canberra SNV, Olen in the context
+of refurbishment of the enriched germanium diodes is
+appreciated.
+References
+1. I. Abt et al. , (GERDA collaboration), GERDA:
+The GERmanium Detector Array for the search
+of neutrinoless ββ decays of 76Ge at LNGS ,
+Letter of Intent to LNGS, see also: hep-
+ex/04040390, Proposal to LNGS 38/04 (2004),
+http://www.mpi-hd.mpg.de/gerda/; PhD theses:
+http://www.mpi-hd.mpg.de/gerda/public/phd.html.
+2. J. Schechter and J.W.F. Valle, Phys. Rev. D 25 , 2951
+(1982).
+3. S. Davidson, E. Nardi and Y. Nir, Phys. Rept. 466, 105
+(2008).
+4. F. Avignone III, S. R. Elliot, J. Engel, Rev. Mod. Phys.
+80, 481 (2008).
+5. A.S. Barabash, Phys. Atom. Nucl. 74, 603 (2011).
+6. J.J. Gomez-Cadenas et al. , Rivista Nuovo Cimento 35,
+29 (2012).
+7. S. R. Elliot, Mod. Phys. Lett. A 27 , 1230009 (2012).
+8. B. Schwingenheuer, procs. 12 th International Con-
+ference on Topics in Astroparticle and Underground
+Physics, Munich, Sep 5 - 9, 2011.
+9. M. Doi, T. Kotani and E. Takasugi, Prog. Theor. Phys.
+Suppl. 83, 1 (1985).
+10. J. Suhonen and O. Civitarese, Nucl. Phys. A847, 207
+(2010), and refs. therein; J. Suhonen, J. Phys., Conf.
+Ser. 375, 042026 (2012).
+11. J. Menendez, A. Poves, E. Caurier, and F. Nowacki,
+Nucl. Phys. A818, 139 (2009), and refs. therein.
+30
+12. V. A. Rodin et al. , Nucl. Phys. A766, 107 (2006)
+[Erratum-ibid. A793, 213 (2007)]; F. Simkovic et al. ,
+Phys. Rev. C 79 , 055501 (2009); V. A. Rodin, J. Phys.,
+Conf. Ser. 375, 042025 (2012).
+13. J. Barea and F. Iachello, Phys. Rev. C 79 , 044301
+(2009).
+14. W. Rodejohann, Int. J. Mod. Phys. E20, 1833 (2011).
+15. E. Fiorini et al. , Phys. Lett. B 25 , 602 (1967);
+F.T. Avignone III et al. , Phys. Rev. Lett. 50, 721
+(1983);
+J. J. Simpson et al. , Phys. Rev. Lett. 53, 141 (1984);
+E. Bellotti et al. , Phys. Lett. B 146 , 450 (1984);
+H. Ejiri et al. , Nucl. Phys. A448, 271 (1986);
+D. Caldwell, J. Phys. G 17 , S137 (1991);
+P. Fisher et al. , Phys. Lett. B218, 257 (1989);
+A. Morales et al. , J. Phys. G 17 , S211 (1991);
+J. Busto et al. , Nucl. Phys. A513, 291 (1990);
+A.A. Vasenko et al. , Mod. Phys. Lett. A5, 1299 (1990);
+I.V. Kirpichnikov, Preprint ITEP91-91 (1991).
+16. HdM-collaboration: H. V. Klapdor-Kleingrothaus et al.,
+Eur. Phys. J. A12, 147 (2001).
+17. Igex-collaboration: C. E. Aalseth et al. , Phys. Rev. D
+65, 092007 (2002);
+C. E. Aalseth et al. , Phys. Rev. C 59, 2108 (1999);
+D. Gonzalez et al. , Nucl. Phys. B procs. 87, 278 (2000);
+D. Gonzalez et al. , Nucl. Instrum. Methods A515, 634
+(2003)
+18. H.V. Klapdor-Kleingrothaus et al. , Phys. Lett. B586,
+198 (2004).
+19. Majorana-collaboration: R. Henning, CIPANP 2009
+Conference Proceedings, AIP Conf. Proc. 1182, 88
+(2009); J. Wilkerson et al. , J. Phys., Conf. Ser. 375,
+042010 (2012).
+20. G. Heusser, Ann. Rev. Nucl. Part. Sci. 45, 543 (1995)..
+21. A. Smolnikov and P. Grabmayr, Phys. Rev. C81,
+028502 (2010).
+22. Yu. G. Zdesenko et al. , J. Phys. G: Nucl. Part. Phys.
+27, 2129 (2001).
+23. M. Di Marco, P. Peiﬀer and S. Sch¨ onert, Nucl. Phys.
+Proc. Suppl. 172, 45 (2007).
+24. P. Peiﬀer et al. , JINST 3, P08007 (2008).
+25. 8” PMT, type 9357, 9350KB & KB9354KB. ET Enter-
+prises Limited, Uxbridge, UK.
+26. M. Agostini et al. , J. Phys., Conf. Ser. 375, 042009
+(2012).
+27. H. Neder, G. Heusser, M. Laubenstein, Appl. Rad. Isot.
+53, 191 (2000).
+28. L. Baudis et al. , JINST 6 P08010, 2011
+29. Geant4 Collaboration, S. Agostinelli et al. , Nucl. In-
+strum. Methods A 506, 250 (2003).
+30. Geant4 Collaboration, J. Allison et al. , IEEE Trans.
+Nucl. Sci. 53, 270 (2006).
+31. M. Boswell et al. , IEEE Trans. Nucl. Sci. 58 1212,
+(2011), arXiv:1011.3827 [nucl-ex].
+32. I. Barabanov et al. , Nucl. Instrum. Methods A606, 790
+(2009).
+33. A.V. Dementyev and N.M. Sobolevsky, Radiat. Mea-
+sure. 30, 553 (1999).
+34. I. Barabanov et al. , Nucl. Instrum. Methods B251, 115
+(2006).
+35. W.B. Wilson et al. , SOURCES-4A, Technical Report
+LA-441 13539-MS Los ALamos (1999).
+36. M. Agostini et al., Nucl. Physics B Proceedings Supple-
+ment 229-232C, 489 (2012).
+37. Canberra Semiconductor, NV, Lammerdries 25, B-2250,
+Olen, Belgium.
+38. M. Barnab´ e Heider et al. , Procs. NSS08, IEEE Conf.
+publication 3513 (2008).
+39. M. Barnab´ e Heider, PhD thesis, U. Heidelberg, May
+2009.
+40. H.V. Klapdor-Kleingrothaus, Nucl. Instrum. Methods
+A566, 472 (2006).
+41. J. Hellmig, H.V. KlapdorKleingrothaus, Z. Phys. A359,
+351 (1997); L. Baudis et al. , Nucl. Instrum. Methods
+A481, 149 (2002).
+42. O. Chkvorets, PhD Thesis, U. Heidelberg, 2008.
+43. High Activity Disposal Experimental Site (HADES) of
+the Belgian Nuclear Research Center SCK·CEN, Boere-
+tang 200, BE-2400 Mol, Belgium.
+44. H.V. Klapdor-Kleingrothaus et al. , Nucl. Instrum.
+Methods A522, 371 (2004).
+45. V. Khournoukov, priv. communication; measurements
+performed by the Botchvar Insitute, Moscow, Russia.
+46. J. R. De Laeter et al., Pure Appl. Chem. 75, 683 (2003).
+47. M. Barnab´ e Heideret al. , JINST 5, P10007 (2010).
+48. Currently known as Joint Stock Company “Production
+Association Electrochemical Plant” (JSC “PA Electro-
+chemical Plant”), uranium enrichment enterprise of the
+State Atomic Energy Corporation “Rosatom”.
+49. PPM Pure Metals, GmbH, in Langelsheim, Germany.
+50. Canberra Oak Ridge, USA.
+51. E. Haller, Advances in Physics 30, 93 (1981).
+52. CANBERRA Broad Energy Ge (BEGe) Detector,
+www.canberra.com/products/485.asp.
+53. D. Budj´ aˇ set al. , JINST 4, P10007 (2009).
+54. M. Agostini et al. , JINST 6, P03005 (2011).
+55. K. Zuber, PhD thesis, U. Heidelberg, 1992; analysis of
+ANG 1 by J. Echternach.
+56. F.T. Avignone, priv. comm., 2011.
+57. W. Maneschg et al., Nucl. Instrum. Methods A593, 448
+(2008).
+58. Torlon type 4503, Torlon is a trademark of Solvay Ad-
+vanced Polymers.
+59. G. Heusser et al. , Appl. Rad. Isot. 52, 691 (2000).
+60. Synthetic charcoal by Carbo-Act International (NL).
+61. Makrolon is a registered trade mark of BASF.
+62. Ch. Haberstroh, Advances in Cryogenic Engineering 53,
+1201 (2008).
+63. LD301 HART Pressure Transmitter, SMAR Research
+Corporation, NY, USA.
+64. M. Balata, et al. , Nucl. Instrum. Methods A 370 , 605
+(1996); M.G. Giammarchi et al. , Ultrapure Water 13,
+59 (1996).
+65. Institute of Environmental Science and Technology, Ar-
+lington Heights (IL), USA.
+66. Habia cable, Upplands V¨ asby, Sweden.
+67. Sami S.p.a, Liscate (MI) Italy.
+68. Teledyne Reynolds UK, Newbury, Berkshire, UK.
+69. F. Froborg, PhD thesis, U. Zurich, 2012.
+70. National Instruments Corporation, Austin (TX), USA.
+71. M. Knapp, PhD thesis, Kepler Center for Astro and
+Particle Physics, U. T¨ ubingen, 2009.
+72. Daylighting Film DF2000MA (VM2000), 3M, St. Paul,
+MN, USA.
+73. RG213C/U by JOWO Systemtechnik, Delmenhorst,
+Germany.
+74. CAEN S.p.A., Viareggio, Italy.
+75. F. Ritter et al. , Nucl. Instrum. Methods A617 (2010)
+420.
+76. F. Ritter, PhD thesis, Kepler Center for Astro and Par-
+ticle Physics, U. T¨ ubingen, 2012.
+77. Scintillator UPS-923A is based on polystyrol with ad-
+ditive of PTP (2%) and POPOP (0.03%) built by the
+Kharkov Crystal Institute, Ukraine.
+31
+78. HM6780-2 (Ø 8 mm) Hamamatsu Photonics K.K.,
+Hamamatsu City, Japan.
+79. PMT-85 (Ø 30 mm) by Kvadrotech, Moscow, RU.
+80. S-type Y11(250)M, Kuraray, Japan. (The middle of the
+ﬁber is made of polystyrol with additive 0.02% of wave-
+length shifter Y11. The internal part of ﬁber consists of
+PMMA, external from the ﬂuorinated PMMA).
+81. S. Riboldi et al. , Procs. IEEE Nuclear Science Sympo-
+sium and Int. Workshop on Room Temperature Semi-
+conductor Detectors, Oct 30 - Nov 6, p. 1386 (2010).
+82. Polyﬂon Company, One Willard Road, Norwalk, CT
+06851, USA.
+83. Stycast, Emerson & Cuming, Westerlo, Belgium.
+84. R. Isocrate et al. , MD2S - Digital sampling electronics
+for the MARS detector , LNL Annual Report 2004, 226.
+85. C.A. Ur et al. , LNL Annual Report 2004, 228.
+86. J. Stein, F. Scheuer, W. Gast and A. Georgiev, Nucl.
+Instrum. Methods B 113 , 141 (1996).
+87. Qt cross platform application frame work, Qt Project
+Hosting, Oslo, Norway.
+88. STRUCK Innovative Systeme GmbH, 22399 Hamburg,
+Germany.
+89. PAS9817/AO DAC, Precision Analog Systems Co.,
+Plantation (FL) USA.
+90. M. Agostini et al. , J. Phys., Conf. Ser. 375, 042027
+(2012).
+91. Rene Brun and Fons Rademakers, ROOT Nucl. In-
+strum. Methods A 389 , 81 (1997).
+92. M. Agostini, L. Pandola, P. Zavarise and O. Volynets,
+JINST 6, P08013 (2011).
+93. M. Agostini, L. Pandola and P. Zavarise, J. Phys.: Conf.
+Ser. 368, 012047 (2012).
+94. P. Zavarise et al., J. Phys. Conf. Ser 375, 042028 (2012).
+95. Hewlett Packard ProCurve Switch 2810-48G.
+96. DELL Power Edge R300, Quad Core Xeon X3323, 2.5
+GHz.
+97. R. Brugnera et al. , JINST 7, P100712 (2012).
+98. PostgreSQL Database Management System.
+99. Ajax (Asynchronous JavaScript and XML), J.J. Garrett
+Ajax: A New Approach to Web Applications , Adaptive
+Path 2005.
+100. H. Neder, et al. , Appl. Rad. Isot. 53, 191 (2000).
+101. G. Heusser et al. , Procs. International Conference on
+Isotopes in Environmental Studies, Elsevier, Editors:
+P.P. Povinec and J.A. Sanchez-Cabeza, p. 495 (2006).
+102. R. Wink et al. , Nucl. Instrum. Methods A329, 541
+(1993).
+103. D. Budj´ aˇ set al. , Appl. Rad. Isot. 67, 755 (2009).
+104. G. Zuzel and H. Simgen, Appl. Rad. Isot. 67, 889 (2009).
+105. G. Heusser et al. , Appl. Rad. Isot. 52, 691 (2000).
+106. H. Simgen and G. Zuzel, Appl. Rad. Isot. 67, 922 (2009).
+107. Borexino collaboration; C. Arpesella et al. , Astropart.
+Phys. 18, 1 (2002).
+108. DuPont Performance Elastomers, Wilmington (DE),
+USA., or Ethylen-Propylen-Dien-Monomer (EPDM).
+109. Pfeiﬀer Vakuum, Asslar, Germany.
+110. BD Sensors, Thierstein, Germany.
+111. B. Bellini et al. , submitted to JCAP, arXiv:1202.6403
+112. G. Douysset et al. , Phys. Rev. Lett. 86, 4259 (2001).
+113. V.D. Ashitkov et al. , Instruments and Experimental
+Techniques, 46, 153-160 (2003).
+114. M. Laubenstein and G. Heusser, Appl. Rad. and Iso-
+topes 67, 750 (2009).
+115. A. Domula, PhD thesis in preparation, TU Dresden.
+116. G. Meierhofer et al. , Phys. Rev. C 81, 027603 (2010);
+G. Meierhofer et al. , Eur. Phys. J. A40, 61 (2009).
+117. J. Marganiec et al. , Phys. Rev. C 79, 065802 (2009); J.
+Marganiec et al. , J. Phys. G35, 014022 (2008).
+118. G. Meierhofer et al. , Eur. Phys. J. A48, 20 (2012).
+119. P. Benetti et al. , Nucl. Instrum. Methods A574, 83
+(2007).
+</material>
+
+You are an experienced detector physicist. Suggest the most valuable hardware upgrades for this instrument to improve its physics performance, with concrete technology choices.

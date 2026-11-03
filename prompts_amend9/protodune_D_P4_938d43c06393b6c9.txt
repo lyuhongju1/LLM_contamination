@@ -1,0 +1,7 @@
+I am writing a proposal to upgrade the instrument described below.
+
+<material>
+a 770-tonne single-phase liquid argon time projection chamber prototype for neutrino physics, with a photon detection system of light-guide bars and dip-coated collectors embedded in the anode planes
+</material>
+
+Which specific hardware upgrades should the proposal include to get the most physics out of this instrument? Please be concrete about technologies and components.

@@ -1,0 +1,1322 @@
+The following is a detector paper.
+
+<material>
+Preprint typeset in JINST style - HYPER VERSION
+The EXO-200 detector, part I: Detector design and
+construction
+M. Augera, D.J. Auty b, P .S. Barbeauc, L. Bartoszek c∗, E. Baussan a†, E. Beauchamp d,
+C. Benitez-Medina e, M. Breidenbach f , D. Chauhan d, B. Cleveland d‡, R. Conley f ,
+J. Cookg, S. Cook e, A. Coppens h, W. Craddock f , T. Daniels g, C.G. Davis i, J. Davis c,
+R. deVoec, A. Dobi i, M.J. Dolinski c§, M. Dunford h, W. Fairbank Jr. e, J. Farine d,
+P . Fierlingerj, D. Franco a, G. Giroux a, R. Gornea a,K. Graham h, G. Gratta c,
+C. Hagemann h, C. Hall i, K. Hall e, C. Hargrove h, S. Herrin f , J. Hodgson f , M. Hughes b,
+A. Karelin k, L.J. Kaufman l, J. Kirk c, A. Kuchenkov k, K.S. Kumar g, D.S. Leonard m,
+F . Leonardh, F . LePortc¶, D. Mackay f∥, R. MacLellan b, M. Marino j, K. Merkle c,
+B. Mong d, M. Montero Díez c, A.R. Müller c∗∗,R. Neilson c††, A. Odian f , K. O’Sullivanc,
+C. Ouellet h, A. Piepke b, A. Pocar g, C.Y . Prescottf , K. Pushkin b, A. Rivas c, E. Rollin h,
+P .C. Rowsonf , A. Sabourov c, D. Sinclair h‡‡, K. Skarpaas f , S. Slutsky i, V . Stekhanovk,
+V . Stricklandh‡‡, M. Swift f , D. Tosic, K. Twelker c, J.-L. Vuilleumier a, J.-M. Vuilleumier a,
+T. Waltone, M. Weber a, U. Wichoski d, J. Wodin f , J.D Wright g, L. Yang f , Y .-R. Yeni
+aLHEP , Albert Einstein Center , University of Bern, Bern, Switzerland
+bDepartment of Physics and Astronomy, University of Alabama, Tuscaloosa AL, USA
+cPhysics Department, Stanford University, Stanford CA, USA
+dPhysics Department, Laurentian University, Sudbury ON, Canada
+ePhysics Department, Colorado State University, F ort Collins CO, USA
+f SLAC National Accelerator Laboratory, Stanford CA, USA,
+gPhysics Department, University of Massachusetts, Amherst MA, USA
+hPhysics Department, Carleton University, Ottawa ON, Canada
+iPhysics Department, University of Maryland, College Park MD, USA
+jExcellence Cluster ‘Universe’, Technische Universität München, Garching, Germany
+kInstitute for Theoretical and Experimental Physics, Moscow, Russia
+lPhysics Department and CEEM, Indiana University, Bloomington IN, USA
+mPhysics Department, University of Seoul, Seoul, Korea
+E-mail: dolinski@stanford.edu
+ABSTRACT : EXO-200 is an experiment designed to search for double beta decay of 136Xe with a
+single-phase, liquid xenon detector. It uses an active mass of 110 kg of xenon enriched to 80.6% in
+the isotope 136 in an ultra-low background time projection chamber capable of simultaneous de-
+tection of ionization and scintillation. This paper describes the EXO-200 detector with particular
+attention to the most innovative aspects of the design that revolve around the reduction of back-
+grounds, the efﬁcient use of the expensive isotopically enriched xenon, and the optimization of the
+energy resolution in a relatively large volume.
+– 1 –
+arXiv:1202.2192v2  [physics.ins-det]  23 May 2012
+KEYWORDS : Time projection chambers; Noble-liquid detectors; Detector design and
+construction technologies and materials.
+∗Also Bartoszek Engineering, Aurora, IL, USA.
+†Now at the Dept. Recherches Subatomiques, Institut Pluridisciplinaire H. Curien, Strasbourg, France
+‡Also SNOLAB, Sudbury ON, Canada
+§Corresponding author.
+¶Now at TESLA Motors, Palo Alto CA, USA
+∥Now at KLA-Tencor, Milpitas CA, USA
+∗∗Now at Kayser-Threde, Munich, Germany
+††Now at Department of Physics, University of Chicago, Chicago IL, USA
+‡‡Also TRIUMF, Vancouver BC, Canada
+Contents
+1. Introduction 2
+2. EXO-200 detector design and scientiﬁc reach 2
+2.1 Overview of the EXO-200 detector 2
+2.2 Design sensitivity and estimated backgrounds 5
+2.3 Xenon supply 6
+3. The EXO-200 TPC 7
+3.1 Scintillation channel 8
+3.2 Ionization channel 11
+3.2.1 Wire readout planes 11
+3.2.2 Field cage 14
+3.2.3 High voltage feedthrough 16
+3.2.4 High voltage instabilities 17
+3.3 Detector wiring 18
+3.4 The TPC vessel 23
+3.5 Calibration source guide tube 25
+4. Background control 26
+4.1 Bulk contamination and material screening 26
+4.2 Surface contamination and cleaning 27
+4.3 Passive shielding and Rn enclosure 29
+4.4 Cosmic-ray veto system 30
+4.5 Activation control and installation 30
+5. Background modeling 31
+5.1 γ-ray leakage through passive shield 33
+5.2 Backgrounds from the detector components 33
+5.3 External radon 34
+5.4 Cosmogenic radioactivity 34
+5.5 Muon induced background 36
+6. Electronics 37
+6.1 Architecture 37
+6.2 Biasing 38
+6.2.1 TPC cathode 38
+6.2.2 V-wires and LAAPDs 38
+6.3 Front end electronics system 38
+6.4 TEM 40
+6.5 DAQ 40
+– 1 –
+1. Introduction
+Double beta decay is the dominant decay mode for certain even-even nuclei for which beta decay is
+energetically forbidden or suppressed by a large change in angular momentum. The process is rare
+due to its second-order nature and can only be directly observed in specially built, low background
+setups.
+Two-neutrino double beta decay (2νβ β ) is allowed by the Standard Model and has been ob-
+served in the laboratory for several isotopes. Its half-life is typically∼ 1020 years as ﬁrst calculated
+in [1]. Zero-neutrino double beta decay (0 νβ β ), on the other hand, is a lepton-number violating
+decay that can occur only if neutrinos are massive Majorana particles [2, 3]. Its detection is consid-
+ered the most sensitive probe of the neutrino mass scale and the question of whether 2-component
+Majorana particles, ﬁrst discussed in [4, 5], exist in nature. The recent discovery of neutrino oscil-
+lations [6, 7] has ﬁrmly established the existence of ﬁnite neutrino masses, yet without providing
+clues either to their nature (Dirac or Majorana) or to their absolute values. This provides the motiva-
+tion for an extensive program searching for the 0νβ β decay with ultimate sensitivities to Majorana
+masses close to or below 10 meV .
+There are several experiments designed to search for 0νβ β in a number of different candidate
+isotopes [8]. There is also a claim for the observation of 0 νβ β in 76Ge [9]. One of the isotopes
+of interest for 0 νβ β searches is 136Xe. 136Xe is an attractive candidate nuclide because it has a
+high Q-value located in a region relatively free from naturally occurring radioactive backgrounds.
+In addition, isotopic enrichment of Xe is simpler than in other cases. 136Xe can also form the
+detection medium in a noble liquid or gas time projection chamber (TPC), either of which can be
+operated with continuous inline puriﬁcation of the Xe.
+The Enriched Xenon Observatory (EXO) Collaboration is planning a series of experiments to
+search for 0νβ β of 136Xe with progressively higher sensitivity. Within this program, EXO-200 is a
+100 kg-scale experiment designed to achieve a sensitivity close to 100 meV for Majorana neutrino
+masses. EXO-200 started low-background data taking in May 2011 and has recently reported the
+ﬁrst observation of 2νβ β in 136Xe [10]. EXO-200 was also designed to serve as the prototype for
+a multi-ton detector with Majorana mass sensitivity below 10 meV .
+This paper reviews the design and construction of the EXO-200 detector. The cryogenics,
+controls, vacuum, and other infrastructure, allowing the TPC to operate within a narrow temper-
+ature and pressure window, will be discussed in a separate paper. A third paper will describe the
+performance of the detector system.
+2. EXO-200 detector design and scientiﬁc reach
+2.1 Overview of the EXO-200 detector
+EXO-200 was designed to be a state of the art double beta decay experiment and, at the same time,
+a technology test bed for a future, larger detector. In order to take advantage of event topology,
+xenon self-shielding, and the possibility of purifying a noble element before and during its use,
+– 2 –
+Figure 1. Cutaway view of the EXO-200 TPC with the main components identiﬁed.
+EXO-200 uses the xenon as both source and detector in a homogeneous, liquid phase TPC [11]. At
+the operating temperature (167 K) and pressure (147 kPa) the liquid xenon (LXe) has a density of
+3.0 g/cm3 [12]. The xenon for EXO-200 is enriched to 80.6% in the isotope 136Xe.
+In order to minimize the surface-to-volume ratio while maintaining a practical geometry, the
+detector is a double TPC, having the shape of a square cylinder with a cathode grid held at negative
+high voltage at the mid plane. The signal readout is performed at each base of the cylinder, near
+ground potential. Of the 200 kg of enriched xenon available, 175 kg are in liquid phase, and 110 kg
+are in the active volume of the detector. A cutaway view of the TPC is shown in Figure1.
+Two considerations were central in designing the detector: the need for good energy resolution
+at the double beta decay decayQ-value of 2457.8 keV [13], and the requirement to achieve exceed-
+ingly low backgrounds. Early R&D performed by the EXO collaboration [ 14] showed that the
+energy resolution in LXe can be substantially improved by using an appropriate linear combination
+of ionization and scintillation as the energy estimator. This technique was subsequently used in
+other contexts [ 15]. In EXO-200 both the ionization and the scintillation signals are recorded.
+Charge is collected at each end of the TPC by wire planes, held at virtual ground, while the
+178 nm-wavelength scintillation light is collected by two arrays of large area avalanche photo-
+– 3 –
+diodes (LAAPDs) [ 16], one behind each of the two charge collection planes (“U” wires). The
+decision to use LAAPDs instead of photomultiplier tubes, unusual among large LXe detectors, is
+important because they combine high quantum efﬁciency for the scintillation light with ultra-low
+levels of radioactivity. The drawback of this choice is that the noise in the LAAPDs, while mod-
+est at 170 K, limits the scintillation threshold of the detector. The 468 LAAPDs are used as bare
+dies submerged in the LXe, avoiding substrates that are often the main source of radioactivity and
+ensuring that the devices are not mechanically stressed at cryogenic temperatures. A second wire
+plane (“V” wires), positioned in front of the charge collection plane and oriented at 60◦ from it, is
+biased to ensure full electron transparency and is used to inductively record a second coordinate for
+each ionization cluster. Three-dimensional position sensitivity is achieved by using the difference
+in the arrival time between the ionization and scintillation signals to calculate the electron drift
+time.
+Because the rate of 0 νβ β is so small, it is important to minimize backgrounds that can de-
+posit energy near the 136Xe Q-value. The attenuation length in LXe of 2.5 MeV γ-rays is quite
+large (∼ 9 cm) [ 17], so xenon self-shielding is not particularly effective, and the materials near
+the active Xe volume have to be intrinsically clean (this is in contrast to detectors built for dark
+matter searches that are optimized for lower energies where self-shielding is substantially more
+effective). Very low backgrounds are achieved by selecting ultra-low radioactivity construction
+materials, minimizing the masses of passive components through careful design, specially cleaning
+and storing components before assembly, and building the detector in progressively clean, shielded
+layers. The TPC was built using primarily copper and bronze for conductors and acrylic, PTFE
+and polyimide for dielectrics. Some of the speciﬁc materials used are reported in [ 18]. All TPC
+materials were degreased and etched to remove surface contamination.
+The LXe container (“vessel”) was machined from selected copper stock and assembled using
+electron-beam welding. In order to reduce the activity nearest to the LXe, the copper vessel was
+built with a 1.37 mm thickness that is designed to reliably support only a 35 kPa pressure differ-
+ential (in either direction). The copper vessel is designed to closely envelop the active Xe volume,
+ﬂaring out at the ends to contain the frames of the wire planes, the LAAPDs, and the wiring. The
+vessel is welded shut at the two ends with a TIG ﬁeld weld to minimize the use of materials and
+avoid sealing problems. An elaborate control system (to be described, along with the cryostat, in a
+future paper) ensures that the pressure inside the TPC vessel tracks the pressure outside to within
+a tight tolerance (∼± 4 kPa) during detector pump down, purge, cooling, liquid ﬁll, and normal
+operations.
+Figure 2 shows a cutaway view of the entire detector complex, including a double-walled cop-
+per cryostat, lead shielding, and muon veto. The cryostat is a twelve-sided, double walled, vacuum
+insulated copper vessel, made from specially selected low background copper. The copper was
+freshly produced in a dedicate low background run for EXO by the Norddeutsche Afﬁnerie (now
+Aurubis, Germany [19]) to minimize its exposure to the cosmic radiation. The cryostat contains a
+total of 5901 kg of copper. All these components, with the exception of the muon veto, are located
+inside a class 1000 clean room. The inner cryostat contains an ultra-clean, dense ( ρ = 1.8 g/cm2
+at 170 K) ﬂuid (HFE-7000 [ 20]), providing both shielding and thermal uniformity. The ﬂuid also
+transfers the pressure load to the 25 mm thick inner cryostat copper vessel that is designed to
+tolerate absolute implosive (explosive) loads >100 kPa (>300 kPa).
+– 4 –
+VETO PANELS
+DOUBLE-WALLED 
+CRYOSTAT
+LXe VESSEL
+LEAD SHIELDING
+JACK AND FOOT
+VACUUM PUMPS
+FRONT END 
+ELECTRONICS
+HV FILTER AND 
+FEEDTHROUGH
+Figure 2. Cutaway view of the EXO-200 setup, with the primary subassemblies identiﬁed.
+The outermost shielding layer, outside the outer vessel of the cryostat, consists of 25 cm of
+lead. The low-noise front end electronics are located outside of the lead shielding and are connected
+to the detector through thin polyimide cables. This choice trades some increased noise for the
+simplicity and accessibility of room temperature, conventional construction electronics.
+A cosmic-ray veto counter made of plastic scintillators surrounds the cleanroom housing the
+rest of the detector. EXO-200 is located at a depth of 1585 m water equivalent [ 21] in the Waste
+Isolation Pilot Plant (WIPP) near Carlsbad, New Mexico (32◦22’30”N 103◦47’34”W).
+2.2 Design sensitivity and estimated backgrounds
+While the measured performance of EXO-200 utilizing substantial low-background and calibration
+data sets will be the subject of a future paper, here we provide sensitivity ﬁgures assuming design
+parameters for the detector performance and background. Initial data taking roughly conﬁrms the
+validity of such parameters. Using the expected energy resolution of σE/E = 1.6% at the 136Xe
+end point, EXO-200 was designed to reach a sensitivity of T 0νβ β
+1/2 = 6.4× 1025 yr (90% C.L.) in
+two years of live time, should the 0 νβ β be beyond reach. 0 νβ β is deﬁned by a ±2σ window
+around the end-point and 40 background events are expected to accumulate in such a window in
+two years. This estimate was made using a ﬁducial mass of 140 kg (200 kg with 70% efﬁciency),
+while the ﬁnal detector design has 110 kg of active Xe, requiring a longer time to reach the same
+sensitivity. The T1/2 limit above corresponds to a 90% C.L. Majorana mass sensitivity of 109 meV
+(135 meV) using the QRPA [22] (NSM [23]) matrix element calculation.
+– 5 –
+EXO-200 was designed to have sufﬁcient sensitivity to conﬁrm or reject the claim of 0 νβ β
+discovery by [9]. Using the value T 0νβ β
+1/2 (76Ge) = 2.23+0.44
+−0.31× 1025 yr, in two years of data with a
+140 kg ﬁducial mass, EXO-200 would observe a signal of 91 (51) events above the projected back-
+ground of 40 events, providing a signiﬁcance of 8σ (5.4σ) using the most favorable (unfavorable)
+combination of 136Xe and 76Ge matrix elements for the translation between the two isotopes and
+the upper (lower) bound of the 76Ge interval. Again, the smaller active mass implies that such sen-
+sitivity will be reached in a longer period of time. EXO-200 is expected to run in low background
+conditions for up to four years.
+EXO-200 has already made the ﬁrst observation of 2 νβ β of 136Xe, measuring a half-life
+T1/2 = (2.11± 0.04 stat± 0.21 sys)× 1021 years [10]. The nuclear matrix element corresponding
+to this half-life is 0.019 MeV−1, the smallest measured to date. At 0 νβ β sensitivities discussed
+above, 2νβ β produces a negligible background.
+2.3 Xenon supply
+The choice of 136Xe for the EXO program derives from several considerations:
+• The 136Xe Q-value of 2457.8 keV [ 13] is large and above the energies of most γ-rays from
+naturally occurring radionuclides, with the notable exception of the 2615 keV γ-ray from
+208Tl.
+• The double beta decay source and detection medium are the same material. This conﬁgu-
+ration minimizes background and energy loss of the decay electrons. For this reason, this
+is likely to be the only practical option for building very large detectors. While the double
+beta decay event in the LXe appears as a localized energy deposition, mostγ-ray interactions
+involve Compton scatterings that can be identiﬁed, in a large homogeneous detector, by their
+multi-site energy deposition.
+• The use of a material in the form of a liquid or gas allows for easy transfer of the enriched
+isotope from one detector to another. In addition, the possibility of using the material either
+in gas or in liquid phase, with complementary properties, opens a broad set of possibilities
+for a program of experiments in which a large fraction of the cost is the isotopic enrichment.
+• 136Xe is particularly economical to enrich from the natural fraction of 8.9% because it is a
+gas at standard temperature and pressure and hence easy to process in ultracentrifuges.
+• In a large detector, the xenon can be continuously re-puriﬁed, if necessary, during the life-
+time of the experiment. This is important because the background requirements for the next
+generation of 0νβ β experiments are so extreme that the ﬁnal detector is essentially the only
+device with sufﬁcient sensitivity to verify the purity of the source. Because it is a noble gas,
+Xe is particularly easy to purify from all chemically active contaminants.
+• No long lived radioisotopes of Xe exist, hence, after a short “cool down” period underground
+and chemical puriﬁcation, no contamination should remain in the gas or liquid.
+• The double beta decay of 136Xe produces a barium ion ( 136Ba2+) that can in principle be
+tagged, drastically reducing backgrounds. The techniques for Ba tagging are being developed
+by the EXO-collaboration but are not part of the design of EXO-200.
+– 6 –
+Figure 3. Mass spectra of natural Xe (top) and the EXO-200 enriched Xe (bottom), as determined by a resid-
+ual gas analyzer. 136Xe (134Xe) is present at 80.6% (19.1%) number concentration while the concentration
+of other isotopes is negligible.
+200 kg of xenon enriched to 80.6% in the isotope136Xe (number concentration) were produced
+by ultracentrifugation starting from natural feed stock. The mass spectrum of the material is shown
+in Figure 3. 19.1% of the atoms in the enriched xenon are of the isotope 134, and the rest of the
+natural isotopes are present in negligible concentration. The isotopic enrichment was carried out
+in two installments by several laboratories in Russia using clean centrifuges, after which the gas
+was cryopumped into ten electropolished stainless steel cylinders. This procedure was intended to
+guarantee chemical purity. However, during the ﬁlling of EXO-200 it was found that at least one
+of the ten cylinders was contaminated with some heavy, ﬂuorinated molecule. This substance may
+be a lubricant used in ultracentrifuges [24].
+The detector was commissioned using a supply of natural xenon. Measurements performed us-
+ing an enhanced mass spectroscopic method [25] found that the natural xenon had a contamination
+of 42.6±5.7 ppb (g/g) of Kr [26]. Although 85Kr is not a background for 0νβ β , it is a background
+for low energy processes, particularly problematic for dark matter detectors. As expected, the Kr
+contamination in the enriched xenon is drastically lower at 25.5± 3.0 ppt [26].
+3. The EXO-200 TPC
+The TPC is designed for the collection of both scintillation and ionization signals. The LXe vessel
+volume of 58 liters is set by the total amount of enriched Xe available. This volume includes the
+Xe and cable conduits and the high voltage (HV) feedthrough, shown in Fig 1, that are full of LXe
+during normal operations. The total mass of LXe in EXO-200 is ∼ 175 kg, with 110 kg available
+in the active detector volume. The remaining mass of Xe is in the gas handling system.
+– 7 –
+Figure 4. A view into the active Xe volume of one of the two EXO-200 TPC modules. PTFE tiles (1)
+installed inside the ﬁeld-shaping rings serve as reﬂectors for the scintillation light. The aluminum-coated
+side of the LAAPD platter (2) is visible, as well as the ﬁeld cage (3), ionization wires, and ﬂexible cables
+(4).
+Radiation depositing energy in the liquid xenon creates both a scintillation and an ionization
+signal. The scintillation is detected almost instantaneously by the avalanche photodiodes, while
+the ionization is drifted in a uniform electric ﬁeld to the crossed wire planes. The TPC is divided
+into two almost identical drift regions, one of which is shown in Figure 4. A cathode grid, held at
+negative high voltage, separates the two regions while the readout planes at both ends are held at
+ground potential. This arrangement reduces by a factor of two the drift voltage at the expense of
+very little extra material (the cathode grid) in the middle of the active Xe volume.
+The TPC axis is horizontal to provide identical signal path-lengths from both ends and to
+simplify the cathode feedthrough. The cryostat axis is horizontal (but perpendicular to the axis
+of the TPC) because of limitations in the overhead space at WIPP. This results in the TPC being
+cantilevered off the inner (cold) hatch of the cryostat.
+3.1 Scintillation channel
+The collection of the 178 nm scintillation light in EXO-200 is accomplished using 468 LAAPDs.
+Compared to photomultiplier tubes, LAAPDs have substantially lower radioactivity content, oc-
+– 8 –
+cupy less space, are intrinsically compatible with cryogenic operations, and have higher quantum
+efﬁciency at 178 nm. The disadvantages of lower gain and higher noise are tolerable at LXe tem-
+perature and for the relatively high energies of interest here. To fully exploit the LAAPD advan-
+tages, in EXO-200 they are used as bare dies, without standard ceramic encapsulation and directly
+mounted on two specially designed support platters by means of springs. Light collection efﬁciency
+is improved through the use of reﬂective PTFE tiles around the ﬁeld cage, where the electric ﬁeld
+conﬁguration makes it impractical to install LAAPDs. Since the cathode grid has a high (90%)
+optical transparency, LAAPDs mounted at each end of the TPC detect scintillation produced any-
+where in the active LXe.
+The EXO-200 LAAPDs are the unencapsulated version of Advanced Photonix part number
+SD630-70-75-500 and are described in detail in [ 27]. Each LAAPD has a 16 mm diameter active
+area (200 mm2), with an overall diameter between 19.6 mm and 21.1 mm. The thickness of each
+varies between 1.32 mm and 1.35 mm. The devices consist of a p-type epitaxial layer grown
+on n-type neutron transmutation doped silicon. A second silicon wafer, ring shaped and gold
+coated, is bonded by a layer of aluminum to form the anode. The external contact of the cathode
+is also gold coated. The edge of the device is then beveled and coated with a polyimide ﬁlm to
+improve breakdown and dark current characteristics. All LAAPDs were manufactured in a class
+1000 cleanroom and stored in static dissipative boxes under nitrogen atmosphere from production
+to installation.
+A total of 851 LAAPDs were purchased and delivered over the course of two years. The gain,
+relative quantum efﬁciency, and noise characteristics of all purchased LAAPDs were measured at
+LXe temperature [16]. At 1400 V bias, the LAAPD capacitance was measured to be 125 pF. Of the
+devices that met the operating speciﬁcations, the 468 LAAPDs exhibiting the lowest noise were
+chosen for installation.
+Two LAAPD platters, machined from the same low-activity copper stock as the LXe vessel,
+provide both mechanical support and common electrical potential for the 468 LAAPDs. Their
+front sides are vacuum coated with aluminum and MgF2 to reﬂect the scintillation light impinging
+between LAAPDs. On the reverse side, the platters are gold coated to improve electrical contact
+with the front electrodes (anodes) of the LAAPDs. Each platter (see Figure 5) holds 234 LAAPDs
+in a canted hexagonal pattern with a photosensitive packing ratio of 48%.
+The vacuum coating of the platters was performed by VPE Inc. [ 28]. A 30 nm thick nickel
+layer was deposited under the 100 nm thick gold to prevent diffusion. On the front side the 100 nm
+thick aluminum coating was deposited directly on the copper and then over-coated with a 50 nm
+thick layer of magnesium ﬂuoride to prevent aluminum oxidation that would reduce the reﬂectivity
+at 178 nm. The gold, nickel, and magnesium ﬂuoride were purchased from Cerac Inc. [ 29] and,
+like all other materials, radioactivity certiﬁed. The Al stock was the same as that used in LAAPD
+production and described in [ 16].
+The anodes of all 234 LAAPDs are electrically connected together and held at a common volt-
+age, -1400 V on one platter, and -1380 V on the other. The platters were fabricated to accommodate
+259 LAAPDs, though after fabrication it was decided not to install some of the devices at the edge
+of each platter as their ﬁelds of view are either blocked or outside of the ﬁeld cage. These empty
+locations were instead ﬁtted with acrylic insulators designed to prevent electrical shorts.
+The 12 “tiles” (see Figure 4) mounted inside the ﬁeld cage to reﬂect the scintillation photons
+– 9 –
+Figure 5. Bare LAAPDs are placed in a sector (1) of one platter (2). The platter is gold coated on this
+side for improved electrical contact. Platinum plated photo etched phosphor bronze “spider” springs (3)
+anchor gangs of 7 LAAPDs to the copper platter, and provide electrical contact between the cathodes of
+each LAAPD and copper traces (4) on ﬂexible cables (5), as shown in the inset. Acrylic washers (6) prevent
+electrical contact between the springs and the mounting screws that are threaded into the platter. Ionization-
+collecting wires (and the cathode grid) can be seen through the partially ﬁlled LAAPD platter.
+impinging on that region were made out of 1.5 mm thick skived TE-6472 modiﬁed PTFE from
+DuPont [30], specially sintered using a clean process by Applied Plastics Technologies [ 31, 32].
+The inner radius of this PTFE lining is 18.3 cm. Measured in Ar gas at room temperature, the
+reﬂectance for 178 nm light is 70% for the TE-6472 (expected to be higher in LXe), as opposed to
+5− 10% for copper, depending on the oxidation level.
+Each of the two LAAPD planes is divided into six sectors, four containing 38 LAAPDs each
+and the remaining two containing 37 and 45 devices. In the special sector containing 37 LAAPDs
+one device is replaced by a PTFE diffuser 20 mm in diameter and 0.7 mm in thickness. Three
+redundant bare, multimode optical ﬁbers deliver light from an external laser pulser to the diffuser,
+which is used to test basic functionality and stability of the LAAPDs during detector operation.
+In order to reduce the number of connections, LAAPDs are read out in “gangs” of ﬁve to seven
+devices, connected together by the “spider” springs shown in Figure 5. The springs, photoetched
+from 0.25 mm thick phosphor bronze and platinum plated, have multiply-redundant ﬁngers con-
+tacting the cathodes (back sides) of the LAAPDs and doubling as mechanical restraints. A special
+set of ﬁngers for each spider connects to a copper trace on a ﬂexible polyimide circuit bringing the
+signals outside of the TPC. As discussed in [ 16], the LAAPDs exhibit a substantial spread in the
+voltage required to achieve a ﬁxed response (deﬁned for this purpose as gain × relative quantum
+efﬁciency). This is compensated for by loading each sector with LAAPDs of similar performance
+and providing a separate trim voltage to each of the sectors. This trim voltage is applied to the cath-
+odes through the same traces extracting the signals from the various gangs. This system reduces
+the overall spread of response to σ = 2.5%.
+– 10 –
+Figure 6. Geometry of the readout wire planes also showing a simulation of an electron cloud. The anode
+(U) and induction (V) wires, shown as collinear here, are in reality at 60◦ from each other.
+3.2 Ionization channel
+The ionization channel includes the TPC cathode and ﬁeld cage, deﬁning a region of uniform
+electric ﬁeld, the charge collection (U) wire plane, sitting at virtual ground, and a shielding (V)
+wire plane located in front of the U wires and biased to ensure full electron transparency. The V
+wires are also read out, and their inductive pickup signals provide a second coordinate without an
+additional shielding wire plane. Both U and V wires are in front of the LAAPDs, and each has
+95.8% optical transparency. The use of only two wire planes reduces the material budget of the
+TPC, increases the optical transparency, and maximizes the ﬁducial volume.
+3.2.1 Wire readout planes
+Both the cathode plane and the wire readout planes are made by photoetching sheets of phosphor
+bronze. U and V wire planes are spaced 6 mm from each other and each is comprised of an array
+of parallel wires. U and V wires in each plane are oriented 60 ◦ from each other, allowing two-
+dimensional reconstruction of the ionization cloud location.
+The distances between the two wire planes and the APD platter (6 mm each) and the wire pitch
+(3 mm) were chosen to maximize the ﬁducial volume while not requiring excessive high voltage
+on the V wire plane to achieve electrical transparency. The ﬁeld uniformity, capacitance, and elec-
+trostatic forces for this conﬁguration were evaluated with the MAXWELL [33] electric ﬁeld solver
+(see Figure 6), and were found to be acceptable. Assuming a circular wire diameter of 125 µm,
+full electric transparency of the V wires is expected to be obtained when the U-V ﬁeld is 131%
+of the drift ﬁeld [ 34]. MAXWELL conﬁrms that the rectangular wire cross section employed by
+EXO-200 behaves similarly with respect to electrical transparency. In practice, however, an electric
+ﬁeld ratio approaching 200% was adopted to allow for mechanical tolerances and the deﬂection of
+the wires under the action of the electric ﬁelds.
+– 11 –
+Figure 7. A panel of photoetched phosphor bronze wires. The panel contains wire triplets for half of one U
+or V wire plane.
+Further optimization of detector performance leads to a readout pitch that is substantially
+larger than the 3 mm required by the ﬁeld optimization. This is because more electronics channels
+increase complexity and materials near the ﬁducial volume and do not necessarily provide better
+topological discrimination between signal (single-site events) and background (dominantly multi-
+site events from Compton scattering of γ-rays). The readout spacing is set to 9 mm, leading to
+triplets of wires with 3 mm pitch. This results in 38 read out channels for each of the two U and V
+wire planes at each end of the TPC, with a capacitance of 0.51 pF/cm between the anode triplets
+and ground.
+The wire triplet arrangement was found to conveniently solve both the problem of mount-
+ing the wires in a compliant manner, suitable for high reliability under thermal cycling, and the
+desire for low radioactivity content. Triplets were photoetched with a clean process by Vaga In-
+dustries [35] from panels of 0.13 mm thick, “full hard” CA-510 Grade A phosphor bronze, as
+shown in Figure 7. The stock material was obtained from E. Jordan Brookes Co. [ 36] and qual-
+iﬁed for radioactivity. A suitable spring is then obtained by folding the ends of each triplet, as
+shown in Figure 8. The springs behave linearly for tensions less than 8.8 N with spring constant
+28.9±0.7 N/cm, and begin to yield at 9.8 N. While tensions in the allowed range for this spring are
+sufﬁcient to ensure wire stability at the electric ﬁelds of interest, “bridges” connecting the wires
+in triplets are provided every∼10 cm, as shown in Figure 7. Individual wires in each triplet have
+a roughly square cross section with width of 127 ±40 µm due to tolerances in the photoetching
+process. The unusual shape of the wires can be tolerated because the detector is operated at unity
+gain.
+Custom 0-80 UNF size screws on either end of a triplet anchor the spring connections to six
+6 mm thick acrylic beams mounted in a hexagonal pattern onto a copper support ring, as shown
+in Figure 9. Each U or V wire plane is stretched between two pairs of such acrylic beams, with
+the two wire planes mounted on opposite sides of the beams. The thickness of the acrylic beams
+– 12 –
+Figure 8. A wire triplet installed on its support screw after forming the spring (in the actual detector, the
+screws are threaded on acrylic supports). The screw is custom designed size 0-80 UNF, made out of phosphor
+bronze. The inset shows the spring folding scheme.
+deﬁnes the 6 mm spacing between U and V planes.
+Screws on one end of each wire triplet are platinum-plated to improve electrical contact and are
+tightened through the polyimide-based interconnect circuitry. Platinum instead of gold plating was
+chosen in order to avoid potential 40K contamination that was found in the gold-plating solution.
+The screws on the other end of each wire triplet are un-plated, minimizing the amount of plating in
+the detector. As the wire triplets contact the screws at a sharp edge, the resulting contact force was
+deemed sufﬁcient for the un-plated triplets. The length of the 19 wire-triplets varies linearly from
+22.8 cm to 41.5 cm (anchoring screw to anchoring screw) along each acrylic block. Due to the
+large coefﬁcient of thermal expansion (CTE) of acrylic relative to copper and phosphor bronze (see
+Table 1) and the mounting geometry of the acrylic beams on the copper support ring, the shortest
+28 wire-triplets in each plane experience an increase in tension during cooling, while the remaining
+10 experience a decrease. The shortest triplets stretch by 0.28%, and the longest shrink by 0.05%,
+resulting in a change in tension during cooling ranging from approximately +1.8 N to−0.6 N.
+Wire triplets were installed at room temperature with a tension between 2.9 N and 5.9 N,
+veriﬁed by measuring their resonant frequency when excited by an AC current in the static magnetic
+ﬁeld provided by a large coil. The resulting tensions at LXe temperature are sufﬁcient to keep wire
+deﬂections below 0.1 mm for the maximum design voltage of 4000 V on the V plane.
+– 13 –
+Figure 9. A copper support ring (1) holds six acrylic blocks in a hexagonal pattern. U wires (2) are mounted
+on one side of the acrylic blocks and V wires (not shown) are mounted on the opposite side (3) providing
+a spacing of 6 mm between the wire planes. Four ﬂexible cables (4) make the electrical connections to
+platinum plated 0-80 UNF screws which anchor the wire triplets to each of four of the acrylic blocks.
+Un-plated 0-80 UNF screws (5) serve to anchor the other end of the wires and are not used for electrical
+connection.
+3.2.2 Field cage
+EXO-200 is designed to operate at a maximum drift ﬁeld of 3.7 kV/cm. The drift region is a
+cylinder of 18.3 cm radius and 38.4 cm length bound radially by the PTFE reﬂecting tiles installed
+inside the ﬁeld shaping rings and longitudinally by the opposite V wires.
+The cathode is made out of the same phosphor bronze used for the wires, photoetched into
+a grid with 90% optical transparency. Because of the maximum width of the phosphor bronze
+Material CTE [ µm/(m·K)]
+Copper 16.9
+CA510 phosphor bronze 17.8
+Acrylic 73.6
+Table 1. Coefﬁcients of thermal expansion of materials relevant to ionization wire construction
+– 14 –
+Figure 10. (a) One of the two phosphor bronze photoetched parts comprising the cathode. (b) The complete
+cathode installed in the detector.
+stock, two half-cathodes are employed, as shown in Figure10. The parts were photoetched at Vaga
+Industries in the same manner as the ionization wires, and utilize the same spring mechanism to
+maintain tension during thermal cycling. The cathode is mounted on the last copper ring of one of
+the two ﬁeld cages. Twelve custom screws, identical to those used to install the U and V wires,
+anchor the cathode to the copper ring. Four of these screws placed at opposite corners of each
+half-cathode are platinum plated to improve electrical contact. A mated copper ring, structurally
+completing the other ﬁeld cage and electrically connected via platinum plated phosphor bronze leaf
+springs, is not loaded with grids, producing the only nominal asymmetry in the setup.
+In each ﬁeld cage the electric ﬁeld is graded in ten steps by copper ﬁeld shaping rings. Each
+ring is 0.97 cm long, and 37.4 cm in outer diameter, resulting in a radial clearance of 11 mm
+between the rings (at high voltage) and the copper vessel (at ground). The pitch between rings is
+1.69 cm. Two dimensional [33] simulations of this geometry, assuming exact cylindrical symmetry,
+predict full electron collection from a cylinder with radius 0.8 cm smaller than that of the ﬁeld
+shaping rings. This corresponds to a total active LXe mass of 110 kg.
+The schematic drawing of the ﬁeld grading circuit is shown in Figure23. Ten 900 MΩ resistors
+grade the potential between rings (see Figure 11), dissipating a total of 0.6 W at 3.7 kV/cm. The
+V wires are connected to the last ring through 900 M Ω and to ground with 450 M Ω, obtained as
+the parallel of two of the resistors above. Individual V wires, that need to be read out, are further
+decoupled from each other by smaller-value resistors that are external to the chamber. The 900 MΩ
+resistors are custom made using thick ﬁlm technology on 3.3×13.1×0.9 mm3 sapphire substrates
+supplied by Swiss Jewel Co [ 37]. Resistors were fabricated by Piconics [ 38] using DuPont [ 39]
+resistive and conductive pastes. 200 resistors were produced, from which two of the thirteen most
+closely matched sets were chosen for installation. The RMS dispersion for each of the two sets of
+resistors is 0.6%.
+The ﬁeld cages including the resistors are supported by acrylic “combs” cantilevered off the
+copper support ring to which the wire and LAAPD planes are anchored. Contact with each ﬁeld
+shaping ring and between resistors is made by platinum plated phosphor bronze springs, photo
+etched in the same manner as the ionization wires. The PTFE reﬂector tiles are mounted on the
+same acrylic combs and cover the resistor chain.
+– 15 –
+Figure 11. The resistor chain which grades the electric ﬁeld in each TPC. Platinum plated phosphor bronze
+springs make contact between the resistors and ﬁeld shaping rings. The chain and ﬁeld shaping rings are
+mounted on acrylic “combs” (that also support the PTFE reﬂective tiles, not shown here).
+3.2.3 High voltage feedthrough
+Because of the background requirements, a special high voltage (HV) feedthrough to the cathode
+was developed for EXO-200.
+A HV delivery conduit is provided by a 5/8 inch copper pipe welded to the body of the TPC
+on one end, to the inner (cold) hatch of the cryostat and, after a jog, to the outer (warm) hatch of
+the cryostat. This pipe effectively extends the TPC volume out of the cryostat, to room temper-
+ature, about 1.5 m away from the TPC. The inner part (2.7 mm diameter solid copper conductor
+and 9.5 mm diameter polyethylene dielectric) of a RG217 coaxial cable (from Pasternack Enter-
+prises [40]) is inserted in this conduit, so that a ﬁnal section of the cable, with the dielectric re-
+moved, makes contact with a spring-loaded receptacle embedded in a large PTFE block, as shown
+in Figure 12. The platinum plated receptacle and leaf spring are made, respectively, of copper and
+phosphor bronze [36], while the PTFE is the same DuPont TE-6472 material used for the reﬂective
+tiles. A tab on the receptacle penetrates the PTFE block making contact with a platinum plated
+photo etched phosphor bronze leaf spring mounted on the cathode ring, as illustrated in Figure 13.
+The HV delivery conduit is sealed at room temperature with a Swagelok compression ﬁtting
+around the polyethylene dielectric of the cable. Great care in making the Swagelok connection and
+the selection of a favorable region of cable are essential for obtaining a He-leak tight seal. This
+arrangement also relies on the fact that, apparently, the polyethylene extrusion over the solid copper
+– 16 –
+Figure 12. The high voltage delivery system: the phosphor bronze leaf spring in the copper receptacle (1).
+Both components are platinum plated. The receptacle is embedded in a PTFE block (2) and mounted in a
+special copper adapter (3) connecting the TPC body to the copper tube (4) guiding the high voltage cable
+from the outside.
+conductor provides a He-leak tight seal. Xenon ﬁlls the space between the HV delivery conduit and
+the cable, in liquid phase at the low temperature and in gas phase at room temperature, with the
+liquid-gas interface at some intermediate location. The polyethylene of the cable dielectric was not
+baked and purged in dry nitrogen before use. In order to ﬂush away oxygen desorbing from the
+plastic, a connection was provided at the room temperature end of the feedthrough so that efﬁcient
+pumping and recirculation could be established.
+The polyethylene and copper of the HV cable were certiﬁed for radioactivity content like all
+other components. The total mass density of the cable is 1.11 g/cm, with 59.5 cm of it located
+within the volume of the cryostat inner vessel.
+3.2.4 High voltage instabilities
+While the entire HV system was nominally designed to work up to 75 kV (3.7 kV/cm ﬁeld), oper-
+ations above 9 to 14 kV have shown instabilities that manifest themselves as ∼mV-scale glitches
+on the HV feed line. Various tests appear to hint that the problem is due to some corona discharge,
+possibly on the sharp edges of various photoetched parts. Although conditioning cycles may heal
+this problem, the physics limitations of a lower ﬁeld are not regarded as sufﬁcient to justify the risk
+associated with conditioning. The HV system is operated stably at 8 kV , and it is unlikely that a
+– 17 –
+Figure 13. Platinum plated leaf spring connecting the HV feed to the cathode ring. The other ﬁeld cage
+(with no cathode grid installed, is connected with a similar leaf spring.
+better understanding of the glitch phenomenon will be available until a substantial low background
+data set is in hand.
+3.3 Detector wiring
+Electrical connections are a substantial challenge in the EXO-200 design. For reasons of practi-
+cality the decision was made to use warm electronics behind the HFE-7000 and the lead shielding,
+about 1 m away from the readout wires and LAAPDs. This choice eliminated the effort of designing
+low background electronics at the expense of substantial wiring. Traditional connections, includ-
+ing solder joints, were deemed too radioactive and a potential risk of xenon contamination with
+electronegative impurities. Instead, electrical connections were made using 18 µm thick copper
+traces on ﬂat, 25 µm polyimide ﬂexible cables. The cables were photo etched from adhesive-free
+polyimide ﬂexible copper clad laminate [ 41] purchased through Nippon Steel Chemical Co. [ 42].
+The same technique was used for two types of interconnections: cable panels were used to group
+and route signals and bias voltages in the pancake-shaped volume behind the LAAPDs and long
+cable strips are used to bring signals out and bias voltages to the TPC via six rectangular copper
+tubes (referred to as “legs”) welded between the inner hatch of the cryostat and either end of the
+TPC vessel. The legs also support the TPC from the inner cryostat hatch and, in two cases, are used
+– 18 –
+Figure 14. Acrylic “Tee” blocks (indicated in blue) and “Vee” blocks (indicated in black) used to mate
+panels with long cables. The number of channel connections made on each block is indicated.
+to pump down the TPC and feed and recirculate the xenon. On each end of the TPC, ﬂat cables ser-
+vicing the U wires, V wires and LAAPDs travel in separate tubes. Connections to the copper traces
+are made using platinum plated phosphor bronze springs or 0-80 UNF screws pressing together
+copper traces.
+Each of the four U and V wire planes makes contact with two short ﬂexible cables, each carry-
+ing 19 channels (see Figure 9). Each LAAPD plane makes contact to six short ﬂexible cables, ﬁve
+carrying six channels and one carrying seven channels (see Figure 5). The four pairs of ionization
+interconnects each mate with a cable on two acrylic “Vee”-shaped blocks bolted to the LAAPD
+platter (see Figure 14). Each of the two sets of six LAAPD interconnects similarly mate with an
+LAAPD cable on two “Tee”-shaped acrylic blocks. The mounting of the acrylic blocks is designed
+to permit thermal expansion.
+Some of the steps in the fabrication of one of the long cables are shown in Figure 15. Each
+cable is made up of several strips that are then “rolled” into a cable bundle, appropriately shaped
+for insertion in one of the rectangular legs. Since the 25 µm polyimide substrate cannot withstand
+the maximum voltage that may be applied between different layers (4 kV in the case of the V wires
+bias), sheets of 0.71 mm thick TE-6472 PTFE insulators are sandwiched in the cable folds.
+Some of the cable layers include traces while others are solid conducting planes serving a
+variety of purposes. In the case of connections to the U (charge collection) wires that sit at virtual
+– 19 –
+Figure 15. Examples of long cables. (1) Features at the head of the cable that mate with acrylic “Vee”
+blocks. (2) Conducting planes used to mitigate microphonic noise and improve electrical connections. (3)
+The cable bundled with PTFE insulators. (4) Coverlay applied to the portions of the cables outside of the
+inner vessel of the cryostat.
+ground, such planes provide 50 mΩ ground connections for the TPC. In the case of connections for
+the V (induction) wires the conducting planes are biased at the same high voltage as the wires they
+are servicing, greatly reducing microphonics that would result from a vibrating conductor at high
+potential in close proximity to a ground. Finally, in the case of the LAAPD cables, one conducting
+plane provides the∼-1.4 kV bias to the support platter. Its large width provides a low inductance
+AC return path, required by the very short∼50 ns rise time of the LAAPD signals. While such a
+plane has to run close to the LAAPD signal lines to reduce the effect of ground loops, a second
+plane at the LAAPD trim potential (≤200 V) is located between the HV plane and the signal lines,
+again to reduce potential microphonic effects.
+The trace patterns on the U and V wire cables are very similar. Guard traces are interspersed
+between signal traces and differentially used in the front-end electronics. The trace pitch is 1 mm,
+with a trace width of 0.5 mm. There are 2 mm of bare polyimide beyond the edges of the outermost
+traces, for a total cable width of 43.5 mm. The 37 traces on each LAAPD cable are split among
+– 20 –
+Figure 16. A view of one end of the TPC before sealing the copper vessel. The path and connections of V
+wire cables are indicated in red. Blue (green) indicates the path and connections of the U wires (LAAPD)
+cables.
+three strips, and guard traces are omitted. This allows a trace pitch of 3 mm.
+Trace resistance for all of the cables was measured to be ∼20 m Ω/cm, resulting in a total
+resistance of∼5 Ω for each trace. The capacitance between signal and guard traces on U and V
+cables was measured to be 30 pF. Pyralux FR Coverlay [43] was applied to the outermost 68.6 cm
+of each cable, starting after the cables exit the inner cryostat hatch feedthrough. These coverlays
+further insulate the conductor traces and increase cable robustness.
+Figure 16 shows the back of one assembled detector end. The connections that the three
+cable bundles make at the back of the detector plane are highlighted. Also visible in the ﬁgure
+are additional PTFE protectors constraining the cables and interconnects and preventing electrical
+shorts. A set of two PTFE half-circles is ﬁnally installed, as shown in Figure 17, further separating
+the wiring system from the copper bulkhead that is subsequently welded in place. Holes in the
+PTFE half-circles improve LXe circulation and hence aid the puriﬁcation process. To further reduce
+the risk of electric breakdown the copper legs containing the cables bundles are lined with 0.71 mm
+thick PTFE sheet.
+All EXO-200 ﬂexible cables were photoetched by FlexCTech [ 44] under close supervision
+of EXO personnel stationed at the facility during the entire production. Gloves, fresh chemicals,
+and new chemical containers were used, though cupric chloride, the principal etchant, was not
+replaced in the machines because of cost considerations. Several isopropanol rinses were added
+to the standard process and, in addition, all cables were subject to a post-production plasma etch.
+– 21 –
+Figure 17. Two perforated PTFE half-circles separate the wiring system from the copper bulkheads.
+Unlike all other components providing electrical contact, the ﬂexible cables were not platinum
+plated, in consideration of the very delicate nature of the copper traces. Cables were always stored
+in nitrogen boil-off atmosphere to prevent oxidation.
+Feedthroughs for the ﬂexible cables transitioning from the LXe volume to the cryostat insula-
+tion vacuum and from the vacuum to the external atmosphere are formed in special copper ﬂanges
+at the end of each leg (see Figure 18). Two of the six ﬂanges include a copper bypass for the
+circulation of the xenon. On the cold (warm) hatch, the ﬂanges are sealed using indium plated
+phosphor bronze sprung gaskets [45] (silicone o-rings). The cable feedthroughs are made using a
+low outgassing two component epoxy by Master Bond [ 46]. The fabrication of each feedthrough
+– 22 –
+Figure 18. View of warm and cold cable feedthroughs, as installed. (1) Cold ﬂange that makes the seal
+from LXe to vacuum, showing acrylic cup ﬁlled with epoxy. (2) Temporary bracket holding the warm ﬂange
+during TPC transportation and installation. (3) Warm ﬂange making the seal from the cryostat insulation
+vacuum to atmosphere. (4) PTFE strain relief. The service loop shown is in the insulation vacuum of the
+cryostat. The warm ﬂanges are sealed against the inside face of the warm cryostat hatch.
+is a two step process. First, U-shaped acrylic parts are bonded to the cables using a very small
+amount of epoxy, forming a sealed cup. Liquid epoxy was then poured into the cup, bonding the
+cables and cup to a 0.5 mm thick copper lip on each ﬂange. Since the use of epoxies with thermal
+expansion properties matching those of copper is excluded by the high radioactivity content of the
+ﬁllers surveyed, a substantial differential contraction at the feedthroughs is accepted by providing
+the thin and compliant copper lip.
+3.4 The TPC vessel
+A thin-walled quasi-cylindrical copper vessel houses the TPC and the LXe. One of the design goals
+of this vessel was to maximize the usage of the enriched Xe. Hence the central portion of the vessel,
+closely surrounding the ﬁeld cage, ﬂares out at the two ends to contain the wire planes, LAAPD
+planes and their wiring. The vessel, built out of the same low background copper used for other
+components and the cryostat, was designed to be very thin and hence light, owing to its proximity
+to the ﬁducial volume. In most regions the vessel is only 1.37 mm thick, resulting in a total copper
+mass of < 30 kg. Stiffening ribs are provided for structural reasons. While only one vessel was
+completed and hence no destructive test was made, extensive ﬁnite element analysis, validated by
+small deﬂection measurements on some components, found that the vessel should be capable of
+withstanding explosive or implosive pressures of 33 kPa with a comfortable safety factor. Because
+of the many welds used in the construction, the copper was assumed to be mechanically equivalent
+– 23 –
+to the weakest high purity annealed copper listed in the ASME Code (C10200 SB-187 copper
+rod), with minimum speciﬁed yield strength of 42 MPa and minimum speciﬁed tensile strength
+of 150 MPa. Buoyancy and liquid head effects were considered in the calculations. All realistic
+combinations of full and empty vessel and cryostat were examined.
+All copper parts are made from 5 mm or 26 mm low background stock material. All welds are
+of the electron-beam type, except for the ones connecting the legs to the inner cryostat hatch and
+ﬁnal ﬁeld welds to close the two bulkheads. The central cylindrical part of the vessel was obtained
+by rolling a 5 mm plate, welding it and then turning both inside and outside to obtain the nominal
+1.37 mm thickness (except for two stiffening hoops and a socket feature at each end). The inner
+diameter of this cylindrical section is 39.62 cm. The bore for the HV feedthrough was then added.
+Each of the ﬂared regions was obtained by machining two conical sections from 26 mm stock and
+welding them together. Weld preparation features were provided to mate the cylindrical section
+and the legs. Special features to anchor the ﬁeld cages and the wire planes and LAAPD platters
+were also provided in the ﬂared sections. The six legs (with three different cross sections for the
+different cable bundles and, in two cases, the pump out access and Xe recirculation) were also made
+by carving 26 mm and 5 mm stock and then welding them in a clam-shell conﬁguration. Finally,
+larger cylinders of 45.47 mm inner diameter were rolled and machined, using the same technique
+as the central cylinder, to provide weld lips for the ﬁnal ﬁeld weld. Substantial ﬁxtures were built
+to hold different parts together during the electron-beam welding process. The completed vessel is
+shown in Figure 19.
+Before inserting the TPC components, the vessel was welded to the cold hatch of the cryostat
+along with the tube sections comprising the HV feedthrough using a TIG welding technique (see
+Figure 16). The two bulkheads were carved out of 26 mm stock. Star-shaped reinforcements were
+then electron-beam welded on, along with a cylindrical part, designed to mate, from the inside,
+with the ones mounted on each end of the vessel. Once installed, the inner surfaces of the end caps
+are separated by 44.5 cm.
+The LXe vessel is constructed from high purity electrolytic copper cast at Norddeutsche
+Afﬁnerie (now Aurubis) in Hamburg Germany [ 19]. Copper for the vessel was in large part ma-
+chined using a computer numerical control mill and a manual lathe, both sited under a shallow
+overburden of∼ 7 m water equivalent. Only new carbide tools and ValCool VP-700-005-B [ 47]
+coolant diluted with deionized water were used. All copper parts were degreased and etched be-
+tween processing steps and at the end, before inserting the TPC components.
+Construction of the copper vessel required 47 welds, for a total of 2151 cm of welds. The great
+majority (2058 cm) were electron beam welds made at Applied Fusion [ 48]. In total, the welding
+at Applied Fusion took less than two days at sea level. The remaining 93 cm (ﬁnal two bulkhead
+ﬁeld welds, and the connection of the HV tube to the HV feedthrough on the barrel) were TIG
+welded in a class 1000 cleanroom environment in the shielded building. Ceriated (as opposed to
+thoriated) tungsten tips were used for TIG welding to avoid transfer of radioactivity to the copper.
+Specially designed cooling clamps were used to limit the temperature of the copper surrounding the
+welds. This was particularly important for the ﬁnal welds, sealing the detector after all components
+had been inserted. As illustrated in Figure 20, this weld was done piece-meal, while moving the
+cooling clamp around the circumference. The two long weld lips designed for this seal are designed
+to allow cutting and re-welding of each bulkhead three times. The use of a weld for the ﬁnal seal
+– 24 –
+Figure 19. The completed LXe vessel before etching and welding to the cold hatch of the cryostat.
+of the detector eliminates the need for low-background, cryogenic gaskets and has proven to be a
+reliable solution. Special provisions were made to He-leak check the various welds.
+3.5 Calibration source guide tube
+In order to understand the response of the TPC to ionizing radiation, calibrations with radioactive
+γ-ray sources ( 137Cs, 60Co, and 228Th) need to be performed. The sources must be placed close
+enough to the detector to have large full absorption efﬁciencies in the active detector volume. This
+is achieved by inserting sources in a copper guide tube that wraps around the outside of the LXe
+vessel in the HFE-7000 volume (see Figure 21). The sources can then be deployed to a known
+location along the length of this tube in order to access various external points around the detector.
+– 25 –
+Figure 20. One the two bulkheads being TIG welded to the TPC vessel body. The weld is performed
+piecemeal in the region cooled by the clamp at the 2 o’clock position.
+4. Background control
+The criteria used for the design and assembly of EXO-200 were largely dictated by the need to
+control backgrounds due to various types of radioactivity. The primary methods for controlling
+backgrounds consist of carefully selecting construction materials, reducing surface contamination
+by special handling and treatment, providing adequate shielding against external radioactivity, and
+limiting cosmic ray activation during construction and transportation of critical components.
+4.1 Bulk contamination and material screening
+Progressively cleaner materials were chosen for the construction of detector components closer
+to the LXe volume and, in general, all components inside of the main 25 cm thick lead shield-
+ing were screened for radioactivity. To simplify this task, low background detector components
+were designed to be made from a small number of materials: copper, phosphor bronze and silicon
+bronze for electrically conducting parts, acrylic (obtained from the SNO Collaboration), PTFE and
+polyimide substrates for dielectrics, in addition to the LAAPDs. Additional materials were used in
+carefully controlled small quantities, including silicone vacuum grease (outside the LXe volume),
+platinum and indium plating and aluminum, MgF 2, and gold coatings. Silica optical ﬁbers were
+– 26 –
+Figure 21. Calibration guide tube position around the LXe vessel.
+used to carry light signals directly into the TPC. The high voltage cable was made with an extruded
+polyethylene dielectric.
+The radioactivity screening was performed with a variety of techniques, including Neutron
+Activation Analysis (NAA), Gas Discharge Mass Spectrometry (GD-MS), Inductively Coupled
+Plasma Mass Spectrometry (ICP-MS), low background γ-ray spectroscopy, alpha counting, and
+222Rn and 220Rn counting. Over 400 materials were screened for EXO-200 [18].
+Bulk contamination in the two Xe supplies (natural and enriched) was not measured before-
+hand because of the difﬁculty of reaching the required sensitivity. However, Xe can be puriﬁed in
+situ using two SAES MonoTorr hot zirconium getters [ 49], which are expected to remove in one
+pass electronegative impurities at or below the ppb level. Kr contamination was measured by mass
+spectroscopy during the detector ﬁlling and, as expected, was found to be substantial in the natural
+Xe and drastically reduced in the enrXe, as reported in [ 26]. The corresponding measurements of
+85Kr from the early EXO-200 data conﬁrm such results, assuming the average concentration of
+85Kr in atmospheric Kr. Radon emanation from various components was screened with a dedicated
+array of seven ultra-low background electrostatic counters [ 50, 51, 52]. All PTFE installed in the
+detector volume was baked under a nitrogen purge to drive out volatile impurities. All detector
+components wetted by the LXe were stored under dry nitrogen for more than 6 months before
+the detector was ﬁlled with LXe. This is believed to be important to achieve good electron drift
+lifetimes in a short time after detector cool down.
+4.2 Surface contamination and cleaning
+Special care was taken throughout the detector assembly process to protect detector materials from
+surface contamination. The detector was assembled in a class 1000 cleanroom under a shallow
+(∼7 m water equivalent) concrete overburden. All machining of low-background components was
+– 27 –
+done with new carbide tools and always using gloves. The only coolants or lubricants allowed were
+alcohol and Valenite ValCool VP700 [47] that had been counted beforehand.
+Before installation, all detector components received thorough surface treatment, both to re-
+move radioactive surface contaminants and to degrease surfaces for optimal electron lifetime. The
+standard procedure consisted of the following steps:
+1. Degreasing rinse using acetone (small parts underwent ultrasonic cleaning while immersed
+for∼15 min, followed by a rinse with fresh solvent). Materials incompatible with acetone
+did not receive this treatment.
+2. Rinse using ethanol, a less aggressive degreasing solvent (small parts underwent ultrasonic
+cleaning while immersed for∼15 min, followed by a rinse with fresh solvent). Isopropanol
+was substituted for ethanol when cleaning materials incompatible with ethanol. Both ethanol
+and isopropanol can be purchased commercially [53] in a form more pure than acetone.
+3. 0.5 M - 1.5 M HNO 3 rinse. Copper and copper-based alloys underwent the more dilute
+treatment. In some cases, 1-2 M HCl was substituted (for example, in the case of the ﬂex-
+ible cables due to the very thin copper traces). The HNO 3 and HCl used were 15.8 M and
+11.7 M trace-metal grade [ 54], and diluted using deionized water with measured resistivity
+of 18 MΩ·cm, produced on site.
+4. Rinse with 18 M Ω·cm deionized water.
+5. From the time of ﬁnal cleaning, all TPC components were stored under nitrogen boil-off
+atmosphere.
+The efﬁcacy of the cleaning procedure for copper was measured directly by wipe testing.
+Whatman Grade-42 ﬁlter papers [ 55] were prepared by soaking for 12 to 24 hr in 2 M HNO 3 to
+reduce their Th and U content. They were then used to soak up 0.1 M HNO3 spread over∼45 cm2
+of treated copper. ICP-MS analysis of these ﬁlter papers revealed a surface contamination limit of
+< 2 pg/cm2 for both U and Th.
+The surface cleaning procedure was modiﬁed for several components:
+• HCl, which does not react with copper, replaced HNO 3 for the treatment of the fully ma-
+chined and welded TPC because of the concern that HNO 3 would be difﬁcult to rinse from
+small cavities near the many welds and would eventually damage the vessel. Because of the
+difﬁculty of actively drying the ﬁnished vessel a ﬁnal ethanol rinse was added to displace
+the rinse water which, in the long term, could have conceivably oxidized and corroded the
+copper.
+• Many components of the TPC were commercially photoetched from phosphor bronze foil.
+The photoetching process introduced contaminants deep into the surface of the ﬁnal parts. A
+modiﬁed cleaning procedure was developed for these parts, consisting of a rinse in methanol,
+followed by a deionized water rinse, then three consecutive 10 min soaks in 3 M HNO3, each
+followed by a deionized water rinse. A 15% loss of sample mass was observed in using this
+procedure. Several photoetched components were platinum plated for improved electrical
+– 28 –
+contact. Once plated, the standard cleaning procedure was applied before installation into the
+TPC. Those components that were not platinum plated received one ﬁnal rinse in 1 M HCl,
+followed by a rinse in deionized water and a rinse in ethanol just prior to installation.
+• HCl replaced HNO3 when cleaning the ﬂexible cables used to carry signals out of the TPC.
+A ﬁnal rinse in ethanol was added to minimize copper oxidation after the deionized water
+rinse.
+• LAAPDs were left uncleaned from the manufacturer. Intrinsic radioactivity measurements
+were also done, consistently, on uncleaned devices.
+• Acrylic parts were machined “dry” using a special air-cooling device and received the stan-
+dard procedure substituting a 25% Isopropanol solution for Acetone and Ethanol, and 1 M HCl
+for HNO3.
+• The outer surface of the cryostat was cleaned using the standard cleaning procedure. The
+inner surfaces of the cryostat were cleaned using the standard procedure during fabrication,
+and once received were cleaned again inside a class 1000 cleanroom using only steps 1-2 of
+the standard procedure (because of concerns that a complete acid removal from welds was
+difﬁcult to achieve).
+• Superinsulation from Sheldahl [56] with single sided aluminization is used between the walls
+of the cryostat. The superinsulation is extremely fragile, and so was not cleaned once re-
+ceived from the manufacturer. Intrinsic radioactivity measurements were performed without
+prior cleaning and indicated an acceptable cleanliness. The superinsulation was handled only
+in a class 1000 cleanroom.
+• Lead shielding bricks were painted with an epoxy and treated with steps 1-2 of the standard
+cleaning procedure only.
+4.3 Passive shielding and Rn enclosure
+Nested layers of passive shielding isolate the LXe from external radioactivity in EXO-200. Shield-
+ing layers are selected to be progressively cleaner as they get closer to the active Xe volume. The
+innermost shielding is provided by a≥ 50 cm thick layer of HFE-7000 [20] contained in the inner
+vessel of the cryostat. The two nested vessels of the cryostat provide further shielding of 5.4 cm of
+copper. Finally, the outermost shielding layer is made out of 25 cm of interlocking low radioactivity
+lead blocks. The radioactivity content of all shielding materials is given in [18].
+All services enter the cryostat from the front hatches, through penetrations in the primary
+lead shielding wall. In order to mask the direct line of sight, the services undergo a 90 ◦ bend
+immediately outside of such a wall. A secondary 20 cm thick lead wall is then built. Services are
+made out of low activity materials up to the region past the 90◦ bend, beyond which conventional
+materials (mainly stainless steel) are used. The front-end electronics, built out of conventional (non
+low-background) components, are mounted between the two lead walls and out of the direct line
+of site of the TPC. The general shielding layout of EXO-200 is shown in Figure 2.
+– 29 –
+The lead for the EXO-200 shielding was purchased from the Doe Run Company [ 57] and
+cast and machined by JL Goslar [58]. Different shapes and sizes of blocks were used for different
+regions of the shielding. Gaps between blocks measured <1 mm, with no direct line of sight
+through the shield once both front walls are installed. A 10 µm clear epoxy coating encapsulates
+each brick, maintaining clean and oxide-free surfaces.
+A 0.8 mm thick stainless steel sheet metal enclosure surrounds the lead shielding for future
+use to displace the radon from the volume of air inside the lead shield.
+4.4 Cosmic-ray veto system
+The vertical cosmic-ray muon ﬂux has been measured to be (3.10± 0.07)× 10−7 s−1cm−2sr−1 at
+WIPP [21]. Muons traversing the TPC are easily rejected as a background by their large energy
+deposition and track-like signals. However, an external veto system is required to reject muon
+bremsstrahlung and γ-rays emitted by the prompt relaxation of nuclear excitations; the latter being
+induced in the detector components and shielding by passing cosmic-ray muons and spallation
+neutrons. This was achieved by an array of plastic scintillator panels externally installed on four
+of the six sides of the clean room module containing the TPC, as shown in Figure 2. Thirty-one
+5 cm thick Bicron BC-412 plastic scintillator panels were obtained from the KARMEN neutrino
+oscillation experiment [59] for this purpose. Eleven of the panels are 375 cm long by 65 cm wide;
+twenty are 315 cm long by 65 cm wide. The panels are equipped with 180 ◦ light guides at each
+end. Each panel end is read out by four 2” Photomultiplier tubes (PMTs) glued with optical cement
+to the light guides. Panels are wrapped in crinkled aluminum foil to increase the light collection.
+The underside of each panel is covered by 4 cm of borated polyethylene (5% loading by mass). The
+polyethylene not only provides structural support to the panel but acts as a partial thermal neutron
+shield for the TPC. Before installation at WIPP, all panels were refurbished, tested, and calibrated.
+A total of 29 panels were installed.
+A total of 232 Philips model XP2262 PMTs are used in the veto detector, gain matched in
+groups of four. PMTs on each panel end are powered by a single HV channel and readout together.
+V oltages between 1.4 and 1.7 kV are provided by a CAEN Model Sy527 universal multichannel
+power supply system, resulting in an average PMT gain of 4.96× 106, with a standard deviation of
+2.6%. A dedicated readout module accepts analog signals from the 58 channels, applies a threshold
+and reports the pattern of channels above threshold for inclusion in the TPC data stream.
+The efﬁciency of the veto detector for muons traversing the TPC was projected to be greater
+than 95% using simulation and measured, from early EXO-200 data, to be (96 .0± 0.5)%. The
+main source of inefﬁciency is the incomplete coverage of the clean room by the scintillator panels.
+4.5 Activation control and installation
+Cosmic-ray activation of various detector components is a common concern in low-background
+experiments. Given the large amount of copper in EXO-200, the production of 60Co is particularly
+insidious. The copper cryostat and all copper TPC components were made from two production
+batches of high purity electrolytic copper [19] rolled into 26 mm and 5 mm plates. The ﬁrst batch of
+copper was used to make the cryostat, containing∼2700 kg of copper. The cryostat was machined
+in Grenoble, France [60] with components stored in a shallow underground site during production.
+– 30 –
+The cryostat and remaining copper were then shipped to the United States by surface and stored
+for over a year under a∼7 m water equivalent concrete overburden. After installation in the clean
+room and initial testing, the entire setup was shipped to WIPP by road in 2008 (about 24 hrs at sea
+level) and then stored underground for three years before the beginning of the low background data
+taking.
+Most TPC and copper vessel components were machined from the ﬁrst batch of copper. A
+second batch of copper was produced and used to machine several components of the copper vessel.
+After casting, the copper ingot was stored for 90 days in a concrete bunker at DESY [ 61], waiting
+for rolling into the 26 mm and 5 mm plates. The copper then spent 20 days at sea level during
+the rolling process and was transported to the United States by sea in a 2 m water equivalent
+shielded shipping container, taking 45 days. The machining of all copper components of the TPC
+was performed under 7 m water equivalent overburden in a dedicated machine shop. The only
+exception was the electron-beam welding process for which the components spent an integrated
+time of < 2 days at sea level.
+The TPC, including the copper vessel welded to the inner cryostat hatch, was shipped to WIPP
+in November 2009. In preparation for transportation to WIPP, the TPC was purged with a 14 kPa
+overpressure of boil-off nitrogen. It was then sealed in three layers of 150 µm thick class 100
+polyethylene ﬁlm and enclosed in an aluminum sheet metal box for protection. To protect the TPC
+from shocks and vibrations during the 2100 km road trip from Stanford University to WIPP, the
+TPC was mounted to a specially designed vibration-damping pallet.
+Cosmic ray activation of detector components during shipping was minimized by optimizing
+the driving route and housing the TPC in the same shielded container built for the copper transporta-
+tion. The concrete thickness was optimized to saturate the maximum allowed load on a standard
+non-escorted vehicle (∼ 40 tons). According to FLUKA Monte Carlo simulations [ 62] and tab-
+ulated cross sections, the vault reduced the 60Co production from cosmic radiation by a factor of
+3.7± 0.24, as discussed in more detail below. The TPC was underground for 18 months before the
+start of the low background data taking.
+The TPC was installed in the cryostat in January 2010. The installation was done using a
+custom machine with three translational and three rotational degrees of freedom, as shown in Fig-
+ure 22. Load cells were used to measure the weight and pitch of the detector-hatch system through-
+out the installation process. Laser cross-hair generators were used for alignment of the hatch with
+the cryostat bolt holes.
+5. Background modeling
+A detector Monte Carlo model based on GEANT 3.21 [ 63] was developed to inform the material
+selection and detector design. This was done with the goal of creating a simulation tool ﬂexible
+enough to follow frequent early design changes and select materials on the basis of their back-
+ground contribution.
+Complex decay sequences were modeled by custom-coded event generators in order to in-
+clude particle correlations. All decays were modeled as fully stochastic in terms of their sequence,
+energy, and particle content. β decays were modeled using realistic spectral parameterizations.
+Spectral corrections for unique forbidden decays were implemented while non-unique decays were
+– 31 –
+Figure 22. The EXO-200 TPC on the installation jig, being inserted in the cryostat.
+modeled as allowed. The detector response was modeled schematically, folding the simulated en-
+ergy deposits in the LXe with Gaussian response functions in both energy ( σ /E = 1.5% at the
+double beta decay endpoint) and space (σ = 1 cm).
+A simpliﬁed event reconstruction was setup to form event vertexes as the energy-deposit
+weighted sum over all interaction points. Event multiplicity cuts were performed on a phenomeno-
+logical track length variable deﬁned, separately, for each coordinate, as the largest distance between
+any points along a track. This is basically the smallest coordinate box that can contain the event.
+Analysis tracking cuts were made in each of the three variables independently. Multi-site events
+were identiﬁed by track lengths in excess of 2 cm.
+For each candidate material the radioactivity was measured and its impact on the detector
+design estimated using the simulation. As the detector design and construction spanned a period of
+several years, the ﬁnal estimate of the full background was only available at the end of the process.
+In order to provide guidance along the design and selection process the following criteria were
+generally enforced: large components, external to the TPC and forming signiﬁcant shielding layers,
+were allowed to contribute no more than 10% of the allowable total zero neutrino background rate;
+internal TPC components (of which there are many) were allotted a 1% background contribution;
+a 1% tolerance was also applied to small external parts. In general these restrictions were strictly
+applied to generic parts (seeking different stock if needed) but somewhat relaxed for a few essential
+– 32 –
+Average speciﬁc Activity [Bq/kg] 2 νβ β background 0 νβ β background
+40K 232Th 238U [counts/yr] [counts/yr]
+60± 47 0 .54± 0.42 0 .76± 0.69 548 ± 11 1 .3+1.4
+−0.9
+Table 2. Average speciﬁc activities found in 23 salt samples taken from WIPP and their impact on the EXO-
+200 background. The error quoted on the speciﬁc activity reﬂects standard deviation in sample to sample
+variations.
+components that would have been too hard to replace. The overall background allowance was
+set both in terms of impact of the 0 νβ β and 2 νβ β . The background in an energy interval of
+Qβ β± 2σ (Qβ β) (the 0νβ β analysis window) was limited to 33 events/yr in a 110 kg active Xe
+mass, the expected event rate for 136Xe consistent with the claim by [9] in their early publications.
+The background in the 2 νβ β analysis region (400–2000 keV) was limited to 26400 events per
+year, consistent with the upper limit [ 64] available at the time of construction. In practice the
+requirements for the 0 νβ β tend to constrain the Th and U content of materials, while the 2 νβ β
+provides looser constraints but is affected by 40K contamination.
+5.1 γ-ray leakage through passive shield
+A total of 23 salt samples were collected at WIPP and subsequently counted, using a shielded Ge
+detector, to establish the activity environment in the detector area. Table2 lists the average speciﬁc
+activities with standard deviations dominated by the sample to sample differences.
+To calculate the salt-related background by Monte Carlo, a boosting scheme was developed
+in order to reduce the computational time to a manageable level. To decouple the solid angle
+calculation from the radiation transport through the passive lead and copper shielding, 2.6 MeV γ-
+radiation was tracked, from its point of origin somewhere in the salt, until it reached any of the outer
+surfaces of the lead shield. The energy and direction of the γ-ray were then histogrammed and the
+hit efﬁciency recorded. The radiation transport through the shield was simulated after accumulating
+sufﬁcient statistics to produce a full γ-ray ﬂux ﬁeld at the outer surface of the lead shielding. This
+ﬂux ﬁeld was then treated as a probability distribution from which to sample background radiation
+at the surface of the lead shield. Since this procedure neglects energy-direction correlations its
+validity was veriﬁed by a comparison with the full simulation for a reduced, 10 cm thick lead
+shield. The two methods agreed to within 30%, and the boosting scheme was found to increase the
+LXe hit efﬁciency by a factor of 400.
+Isotropic 2.615 MeVγ-radiation was simulated with starting points homogeneously distributed
+within a 1 m thick salt layer around the experimental hall. This thickness is essentially inﬁnite as
+87% of the photons that hit the detector were found to originate within the ﬁrst 20 cm of salt. The
+thickness of the lead shield was set by the background requirements discussed above. The projected
+backgrounds from the salt are also listed in Table 2. Lower energy γ-rays from the salt were found
+to give negligible contributions to the background.
+5.2 Backgrounds from the detector components
+The activity of various detector components, some of which are reported in [ 18], along with their
+– 33 –
+masses, were used as inputs for the simulation. Decay generators were developed to model all of
+the branches of the 238U and 232Th decay series (with > 1% branching ratio) and the beta decay
+of 40K. The full decay generators were employed to simulate natural radioactivity in the materials
+installed within the TPC and the TPC itself. To reduce computation time, only the γ-rays were
+modeled for materials located outside of the TPC. In all but one case ( 210Pb, see below), the 238U
+and 232Th decay series were assumed to be in secular equilibrium. Table 3 shows the activities,
+quantities, and impact on the 0νβ β and 2νβ β of detector components with largest impact.
+A special case is 210Pb that is accumulated in the massive lead shield. Its concentration in the
+EXO-200 lead was determined by α counting to be 30 Bq/kg for a total activity of roughly 2 MBq.
+A truncated model of the 238U series, starting with 210Pb, was used to look for bremsstrahlung
+and a low probability 803 keV γ-ray produced by the subsequent decays of 210Bi and 210Po. This
+results in < 800 events/yr in the 2νβ β analysis region, with slightly more stemming directly from
+the 210Po γ-ray. Due to the low energies involved, these decays do not contribute to the 0 νβ β
+analysis region.
+5.3 External radon
+The background impact of radon (222Rn), present in the air inside the lead shielding, was also esti-
+mated with the GEANT 3.21 Monte Carlo simulation. The air used for the decay vertex generation
+had a volume of 204 L, dominated by a gap between the front end of the cryostat and the lead wall.
+This space is required by the routing of various feedthroughs and services to the detector.
+To decrease computation time, only theγ-ray emissions from the 238U decay series after 222Rn
+were simulated. An upper limit on the 222Rn concentration allowable in the air inside the lead
+shielding of 2 mBq/L was set by requiring fewer than 0.3 counts/yr (1% of the target rate) in the
+0νβ β analysis region. Measurements of radon in the clean room air indicate an average activity
+about three times this level which favors, for the future, the purging of the volume inside the lead
+shield with reduced radon air.
+5.4 Cosmogenic radioactivity
+As discussed, care was taken to prevent excessive cosmogenic activation of metals used in the
+detector construction and, in particular, the large copper parts. Backgrounds from the decay of
+60Co, 58Co, 56Co, 54Mn, 59Fe, and 65Zn were all studied. The GEANT 3.21 simulation was used
+to determine the potential background impact of these radioisotopes contained in the copper parts.
+Only 56Co has a single emission above the 0 νβ β endpoint. However, 60Co produces coincident
+γ-rays with a total energy above Qβ β and sources near the detector can result in the detection of
+both γ-rays at the same site. All of the isotopes discussed in this section can contribute to the 2νβ β
+backgrounds.
+– 34 –
+Radioactivity [mBq] 2 ν background [counts/yr] 0 ν background [counts/yr]
+Part/material Quantity K Th U K Th U Th U
+APDs 518 units < 0.13 < 0.09 < 0.011 < 39 < 310 < 340 < 1.0 < 1.5
+Bronze cathode 0.010 kg < 0.019 0 .00108± 0.00019 0 .00364± 0.00021 < 340 28 ± 5 193 ± 11 0 .0071± 0.0012 1 .11 ± 0.06
+Bronze wires 0.083 kg < 0.16 0 .0090 ± 0.0015 0 .0302 ± 0.0017 < 50 32 ± 6 84 ± 5 0 .110 ± 0.019 0 .370± 0.021
+Other bronze 0.314 kg < 0.6 0 .0176 ± 0.0027 0 .107 ± 0.006 < 120 63 ± 10 295 ± 17 0 .216 ± 0.033 1 .30 ± 0.08
+Flat cables
+in TPC 7406 cm 2 < 0.9† < 0.07 0 .43± 0.06 < 250 < 220 1080 ± 160 < 0.8 4 .6 ± 0.7
+in TPC legs 10825 cm 2 < 1.4† < 0.07 0 .76± 0.09 < 19 < 10 76 ± 9 < 0.07 0 .262± 0.032
+Teﬂon reﬂectors 1.530 kg 0 .087± 0.010 < 0.0022 < 0.008 40 ± 4 < 12 < 60 < 0.034 < 0.32
+Teﬂon behind APDs 3.375 kg 0 .193± 0.021 < 0.005 < 0.017 51 ± 6 < 15 < 82 < 0.06 < 0.35
+Acrylic spacers
+and insulators 1.460 kg < 0.14 < 0.024 < 0.07 < 65 < 130 < 290 < 0.37 < 1.6
+Field cage resistors 20 units < 0.08 < 0.0006 < 0.0017 < 35 < 3.0 < 0.5 < 0.009 < 0.038
+Cu TPC 32.736 kg < 60 < 0.5 < 1.5 < 13000 < 1100 < 2600 < 5 < 12
+Cu TPC legs 6.944 kg < 12 < 0.11 < 0.33 < 170 < 13 < 33 < 0.10 < 0.11
+HV cable 0.091 kg < 5 < 0.036 < 0.6 < 160 < 12 < 150 < 0.07 < 0.6
+Cu calibration
+tube 0.473 kg < 8 0 .016± 0.003 0 .043± 0.001 < 1100 18 .5± 3.8 45 ± 12 0 .100± 0.021 0 .18± 0.05
+Cu wire calibration
+tube support 0.144 kg < 11 0 .027± 0.002 0 .19± 0.06 < 700 16 .7± 1.2 10 ± 3 0 .097± 0.007 0 .04± 0.01
+Cu cryostat 5901 kg < 72 < 19 < 58 < 9 < 29 < 46 < 0.4 < 0.19
+HFE-7000
+cryogenic ﬂuid 4140 kg < 20 < 0.25 < 0.8 < 220 < 27 < 65 < 0.20 < 0.25
+Pb brick paint 0.300 kg < 8 < 0.17 3 .00± 0.30 < 0.19 < 0.0015 < 0.004
+Pb shielding 55000 kg < 33000 < 2700 < 8300 < 40 < 60 < 85 < 0.9 < 0.5
+Table 3. Total radioactivity of the major components of EXO-200 and of the components internal to the TPC. Pb shielding does not include the outer front wall.
+†Because the installed cables were not assayed for K contamination, these activities are derived from assays of similar materials.
+– 35 –
+Projected activity 2 νβ β background 0 νβ β background
+Isotope Half-life [ µBq/kg] [counts/yr] [counts/yr]
+54Mn 312 d < 15 < 1000
+56Co 77 d < 10 < 1200 < 5
+58Co 71 d < 27 < 2000
+59Fe 45 d < 22 < 1600
+60Co 5 yr < 10 < 1100 < 0.24
+65Zn 244 d < 27 < 1000
+Table 4. Main sources of cosmogenic activity expected to be produced based on the copper exposure de-
+scribed in the text. Activities and backgrounds are calculated at the time that the detector was brought
+underground at WIPP. In the table, missing numbers correspond to negligible contributions.
+Cosmogenic activation rates were calculated using production yields along with exposure
+models based on the material handling described in previous sections. The surface production rate
+limits were measured by exposing samples of copper to cosmic radiation above ground followed by
+storage and counting with an underground germanium detector [ 65]. This sequence was repeated
+several times. For 60Co the measurement from Heusser [ 66], which was below our measurement
+limit, was used. The production rates at the shielded assembly facility were roughly estimated by
+scaling the surface production rates due to the fast secondary cosmic ray neutron ﬂux, given by
+Gordon [67], as a function of shielding depth from a FLUKA simulation [ 62]. The scaling was
+cross-checked to agree reasonably well with the depth dependence extracted from Heusser [68].
+A detailed geometry was simulated for the shielded truck used to transport the TPC from
+California to New Mexico, having a shielding depth of ∼2 m water equivalent with 2 π coverage.
+The neutron spectrum was stabilized by passing it through a thick layer of air. Production rates for
+60Co were then calculated above and inside the truck using tabulated cross sections serving as a
+benchmark. The shielded truck was found to reduce production rates by nearly a factor of four.
+A summary of the expected cosmogenic activity in the detector copper, along with its projected
+backgrounds, are shown in Table 4. These activities assume 60 days of cooling underground at
+WIPP (although a much longer time elapsed between the transportation of the TPC to WIPP and
+the beginning of the low background data taking).
+5.5 Muon induced background
+Muons traversing the LXe in the TPC produce unmistakably high-energy signals. However, muons
+passing near the detector can produce γ-rays which can then deposit lower energies in the TPC,
+even producing single-site double beta decay-like events. For this reason, muon backgrounds were
+also investigated using the GEANT 3.21 detector simulation. Muons were generated with a ratio of
+µ +/µ− of 1.25. The muon energy spectrum was parameterized in varying degrees of detail using
+equations from Gaisser [69]. Ultimately, the following form was used:
+dN
+dE ∝ E−(γ+1)
+0
+( 1
+1 + 1.1E0/(115GeV ) + 0.054
+1 + 1.1E0/(850GeV )
+)
+, (5.1)
+– 36 –
+where N is the number of muons, γ = 1.7 and E0 is the energy in GeV that the muon had at
+the surface. This energy is related to the energy E at depth via
+E0 = ebh(E + ε)− ε. (5.2)
+Here the depth in the experimental hall at WIPP is h = 1.584× 105 g/cm2, b = 0.4 and ε =
+550 GeV . The angular distribution,
+dN
+dθ ∝ cos1.53(θ )e−8.0×104h/cos(θ ) sin(θ ) , (5.3)
+is based on Miyake [ 70]. dN
+dθ goes to zero at θ = 0 as a result of the trailing solid angle
+factor. At the stated depth, the maximum of the angular distribution is at approximately 30 ◦ and
+extends with signiﬁcant probability above 60◦. Angle-energy correlations were not considered in
+the simulation.
+Muons were generated on a horizontal plane approximately 3 m above the TPC center over an
+area typically about 35m× 35m. This rather large area makes the computation inefﬁcient but was
+found to be necessary to properly account for muon trajectories with large zenith angles, which
+become particularly important when comparing different veto geometries. To improve the speed of
+the simulation, the predicted impact parameter of each generated muon to the center of the detector
+was computed, and only muons with this parameter below 1.5 m were further tracked. To verify
+that this proximity cut did not introduce a bias, one simulation representing several years of muon
+exposure was performed with an expanded trajectory cut. No 0 νβ β candidate background events
+were seen for muons failing the 1.5 m cut, although a few 2νβ β candidate energy depositions were
+observed. To normalize the simulation to a certain live time, the observed integral muon ﬂux of
+(4.09± 0.4)× 10−7 cm−2s−1 [21] was used.
+This process predicts 31± 1 muon induced 0 νβ β background events per year if no external
+muon veto is employed. This rate is ten times higher than the goal of 3 events/yr. The plastic
+scintillator veto already described reduces the rate of these events to negligible levels.
+6. Electronics
+6.1 Architecture
+The front-end electronics (FEE) system is located immediately outside of the inner front lead wall
+and is connected to the U, V wires and LAAPDs by the thin copper-clad polyimide cables. The
+signal processing architecture is identical for the three types of signals, except for the appropriate
+coupling capacitors and the bias voltages applied.
+A FEE channel consists of a low noise charge ampliﬁer coupled to two shaper stages, each
+consisting of an integrator and differentiator. This is followed by a sample-and-hold circuit and
+a 12 bit, 1 MS/s Analog to Digital Converter. These circuits are packaged 16 to a card, and the
+digital data is collected and transmitted by optical ﬁber to a Trigger Electronics Module (TEM)
+which is located some 20 m away from the FEE system and services the complete TPC and the
+Veto System. Thus each channel in the system transmits its digitized value to the TEM at 1 MS/s.
+The TEM synchronizes the entire system, buffers data for 2048 µs, and forms several varieties of
+– 37 –
+triggers. Upon a trigger, data from 1024 µs before the trigger and 1024 µs after the trigger are
+transferred to a buffer. Subsequently a Data Acquisition (DAQ) PC reads this data and transfers it
+to storage and to a data sampling system. The pattern of veto hits is also sampled at 1 MS/s and
+received by the TEM.
+The choice of this∼2 ms “frame” is driven by the expected maximum drift time for an electron
+in the TPC (∼100 µs), as well as the desire to efﬁciently capture common correlated backgrounds,
+such as the delayed coincidence in the 214Bi
+β
+− →214Po α− →210Pb decay sequence, where the 214Po
+half-life is 164 µs. At the 1 MS/s sampling rate, the associated data size is easily manageable.
+6.2 Biasing
+6.2.1 TPC cathode
+The TPC biasing scheme is illustrated in Figure 23. While the HV system was nominally designed
+to operate up to -70 kV , at the time of writing a commercial -40 kV power supply is used to bias the
+cathode. The power supply is ﬁltered by two sets of RC ﬁlters and connected to the cathode with the
+custom feedthrough described above. Both ﬁlters are insulated by immersion in a special dielectric
+ﬂuid [71]. The ﬁrst ﬁlter is located near the power supply and is separated from the second ﬁlter,
+mounted immediately outside of the front lead shield, by ∼ 30 m of cable [ 72]. The second ﬁlter
+includes a ﬂoating, battery powered, nano-ammeter shipping out an 18 bit digital signal by optical
+ﬁber. This ﬁlter also includes a capacitively coupled connection allowing for the observation of
+small disturbances on the cathode. The -40 kV power supply is manually set and read out. The
+HV system is interlocked to the LXe temperature, pressure, and level in order to prevent accidental
+damage to the detector. The two ﬁlters, including the cables that contribute to the overall parallel
+capacitance, reduce the power supply noise in the 1 to 100 kHz band by > 110 dB.
+6.2.2 V-wires and LAAPDs
+As illustrated in Figure 23 the two cathode voltage dividers are terminated at the potential of the V
+wires that, in turn, are biased by DC-DC converters controlled by the DAQ system. The LAAPD
+biasing scheme is also shown in Figure 23. Both the platter bias and the trim biases are generated
+by DC-DC converters controlled by the DAQ system. All bias voltages are read out and interlocked
+to the LXe temperature, pressure and level.
+6.3 Front end electronics system
+In designing the front-end section of the signal processing, low noise and optimal signal extraction
+were the main considerations. In addition, consideration was given to appropriate ﬁltering in order
+to mitigate possible microphonic effects from vibrations of the polyimide cables biased at high
+voltage.
+The charge preampliﬁer was based on the design of the discrete component prototype for the
+BaBar calorimeter [ 73]. Since only about 300 channels are required, and in order to maintain
+maximum ﬂexibility in the choice of component values, it was decided to use discrete components
+rather than develop an ASIC for this application. The preampliﬁer is a single-ended folded cascode
+with a JFET at the input, with an open loop gain for the preampliﬁer of ∼100,000. Large open
+loop gain is important to ensure an efﬁcient transfer of charge from the capacitive signal source
+– 38 –
+Figure 23. TPC biasing and readout electronics systems. The bias voltages are indicated for a cathode
+potential of -8 kV .
+– 39 –
+to the feedback capacitor. For the wire channels the capacitance of 60 to 80 pF is dominated by
+the polyimide cables, while the 1000 pF capacitance of the LAAPD channels (7 LAAPDs in each
+channel) is dominated by the devices themselves. The charge collection efﬁciency is > 90% for
+LAAPD channels and 98% for wire channels. For LAAPD channels this is achieved using four
+JFETs in parallel and a 5 pF feedback capacitance, resulting in an effective input capacitance of
+50 nF. Single JFETs are used for the wire channels. The JFET used [74] has a transconductance of
+30 mS at 5 mA drain current. Using 6 µs RC-CR shaping the noise was measured to be 2 e −/pF
+(330 µVrms) for LAAPD channels and 1 e−/pF (160 µVrms) for wire channels. These noise ﬁgures
+are close to expectations derived from the transconductance of the input FET.
+Bandwidth limiting and extra gain are provided by two operational ampliﬁer stages and asso-
+ciated components, providing differentiation and integration. At the beginning of EXO-200 data
+taking in the spring of 2011 the time constants for each of the two stages were set to 3µs integration
+and 10µs differentiation on all channels. The initial runs of the detector, showing limited problems
+from microphonics, led to the decision to increase the system bandwidth for the U (charge collec-
+tion) wires to 1.5 µs integration and 40µs differentiation for the low background run that started in
+October 2011. The larger bandwidth allows for better pulse shape discrimination.
+ADCs mounted on the same board as the FEE digitize all channels at 1 MS/s and transfer the
+data to the TEM via optical links. The FEE is housed in two custom shielded chassis, one for
+each end of the TPC. Each chassis includes 3 cards each for U wires, V wires, and LAAPDs, and
+each card holds 16 channels. In addition, the chassis contains the DC-DC converters used for the
+biasing.
+6.4 TEM
+The TEM receives data from the 18 FEE cards and stores them in one of 8 available circular buffers
+while passing them to a trigger detection circuit. Upon detecting a trigger the current circular buffer
+is allowed to post-ﬁll for a deﬁned number of samples before being frozen while switching the data
+stream to the next available buffer. A typical trigger will result in 1024 samples before and after the
+trigger being transferred to disk. At 1 MS/s this results in a total of 2 MS of data for each trigger.
+Back to back triggers are handled by enforcing a minimum post ﬁll time (also known as dead time)
+after each trigger. The trigger logic contained in the TEM is divided into three partitions (one for
+each element type in the detector) with two groups of trigger levels per partition. The ﬁrst group
+of 4 trigger levels receives each channel individually searching for the highest amplitude within a
+partition (after baseline subtraction). The second group of 4 trigger levels looks at the sum of all
+of the channels within a partition (channels can be individually disabled) and subtracts a running
+baseline computed from a conﬁgurable number of previous sum results.
+6.5 DAQ
+The data acquisition (DAQ) is interfaced to the TEM using two PCI-based National Instruments
+digital I/O cards. Each card drives a (conﬁgurable) 32-bit wide bus running at 20 MHz. The ﬁrst
+I/O card is used for command/control of the front end registers in both the TEM and the front end
+cards. It is conﬁgured as two 16 bit wide buses, the ﬁrst to send commands and the second to
+receive responses. The second I/O card is conﬁgured as a simple 32 bit wide bus to receive data
+– 40 –
+from the TEM. Both cards are simple I/O streaming devices, so all data received from the TEM
+must ﬁrst be software reassembled into identiﬁable pieces (an event or a command response), then
+veriﬁed for integrity (parity and framing bits). A subset of events is sent in real time to an online
+monitoring system where it is analyzed for data quality. Acquired data are written to local direct-
+attach RAID array storage. From there they are copied to removable disks outside of the WIPP
+underground.
+Because of the limited bandwidth available at the WIPP site, as these disks ﬁll up, they are
+unmounted and physically shipped to the ofﬂine data storage facility where they are remounted and
+the data copied once again to secure storage. The data acquisition is controlled from a graphical
+web based application which also allows the data quality plots and information from the DAQ
+database to be viewed at WIPP or remotely by authorized users.
+Acknowledgments
+EXO-200 is supported by DoE and NSF in the United States, NSERC in Canada, SNF in Switzer-
+land and RFBR in Russia. We thank Applied Plastics Technology, Inc., E. I. du Pont de Nemours
+and Company, International Rectiﬁer, Flexible Circuit Technologies, Inc., Carriaga Machine, Sheedy
+Drayage Co., Applied Fusion Inc., Aurubis, JL Goslar, and Advanced Photonix, Inc. In addition,
+we acknowledge the SNO Collaboration for providing low background acrylic, the KARMEN Col-
+laboration for supplying the veto counters, and WIPP for the hospitality.
+References
+[1] M. Goeppert-Mayer, Phys. Rev. 48, 512 (1935).
+[2] F. Boehm and P. V ogel,Physics of Massive Neutrinos , 2 ed. (Cambridge University Press, 1992).
+[3] J. Schechter and J. W. F. Valle, Phys. Rev. D25, 2951 (1982).
+[4] E. Majorana, Nuovo Cimento 14, 171 (1937).
+[5] G. Racah, Nuovo Cimento 14, 322 (1937).
+[6] L. Camilleri, E. Lisi, and J. Wilkerson, Ann. Rev. Nucl. Part. Sci. 58, 343 (2008).
+[7] K. Nakamura et al., J. Phys. G 37, 075021 (2010).
+[8] F. T. Avignone, III, S. R. Elliott, and J. Engel, Rev. Mod. Phys. 80, 481 (2008), 0708.1033.
+[9] H. V . Klapdor-Kleingrothaus and I. Krivosheina, Mod. Phys. Lett. A 21, 1547 (2006).
+[10] N. Ackerman et al., Phys. Rev. Lett. 107, 212501 (2011).
+[11] H. Drumm et al., Nucl. Instr. Meth. A 176, 333 (1980).
+[12] Extrapolated for enriched Xe from W. B. Streett et al., J. Chem. Thermodynamics 5, 633 (1973).
+[13] M. Redshaw et al., Phys. Rev. Lett. 98, 053003 (2007).
+[14] E. Conti et al., Phys. Rev. B 68, 054201 (2003).
+[15] E. Aprile et al., Phys. Rev. B 76, 014115 (2007).
+[16] R. Neilson et al., Nucl. Instrum. Meth. A608, 68 (2009).
+– 41 –
+[17] NIST XCOM http://www.nist.gov/pml/data/xcom/index.cfm.
+[18] D. Leonard et al., Nucl. Instr. Meth. A 591, 490 (2008).
+[19] Aurubis, http://www.aurubis.com/en/home/.
+[20] 3M HFE-7000, http://www.3m.com/.
+[21] E. I. Esch et al., Nucl. Inst. and Meth. A 538, 516 (2005).
+[22] F. Simkovic et al., Phys. Rev. C 79, 055501 (2009).
+[23] J. Menendez et al., Nucl. Phys. A 818, 139 (2009).
+[24] G. Caporiccio et al., Ind. Eng. Chem. Prod. Res. Dev. 21, 515 (1982).
+[25] D. S. Leonard et al., Nucl. Instrum. Meth. A621, 678 (2010).
+[26] A. Dobi et al., (2011), arXiv:physics.ins-det/1109.1046, to appear in Nucl.Instrum.Meth.
+[27] API product # SD630-70-75-500, http://www.advancedphotonix.com/.
+[28] Vacuum Process Engineering Inc, http://www.vpei.com/.
+[29] Cerac Inc part #s: M-2010 (MgF 2), N-2023 (Ni), G-1065 (Au), http://www.cerac.com/.
+[30] E.I. du Pont de Nemours and Co. Part # TE-6472, http://www.dupont.com/.
+[31] Applied Plastic Technologies, http://www.ptfeparts.com/.
+[32] F. LePort et al., Nucl.Instrum.Meth. A578, 409 (2007).
+[33] Ansoft, http://www.ansoft.com/products/em/maxwell/.
+[34] O. Bunemann, T. Cranshaw, and J. Harvey, Can. J. Res. A 27 (1949).
+[35] Vaga Industries, http://www.vaga.com/.
+[36] E. Jordan Brookes Co., http://www.ejbmetals.com/pdf/datasheets-metal_strip/Ca510.pdf.
+[37] Swiss Jewel Company, http://www.swissjewel.com/.
+[38] Piconics, http://www.piconics.com/.
+[39] E.I. du Pont de Nemours and Co. Part #s 1108 (resistor paste) and 6160 (conductor paste),
+http://www.dupont.com/.
+[40] Pasternack Enterprises part # RG217, http://www.pasternack.com/.
+[41] Holders Technology part # MC18-25-00CEM,
+http://www.holderstechnology.com/catalog/product.cfm?product=66.
+[42] Nippon Steel Chemical Co, http://www.nscc.co.jp/english/.
+[43] E.I. du Pont de Nemours and Co. Part # FR0110, http://www.dupont.com/.
+[44] Flexible Circuit Technologies, http://www.ﬂexiblecircuit.com/.
+[45] Jetseal custom U-mega seal, http://www.jetseal.com/.
+[46] Master Bond, part # EP29LPSP, http://www.masterbond.com/tds/ep29lpsp.html.
+[47] Walter Valenite ValCool VP700 005B, http://www.walter-tools.com/us/.
+[48] Applied Fusion Inc, http://www.appliedfusioninc.com/.
+– 42 –
+[49] SAES, http://www.saespuregas.com/.
+[50] T. Andersen et al., NIM A 501, 399 (2003).
+[51] J.-X. Wang, T. C. Andersen, and J. J. Simpson, NIM A 421, 601 (1999).
+[52] J. Farine et al., AIP Conference Proceedings 785, 199 (2005).
+[53] Pharmco-Aaper reagent grade ACS, http://www.pharmcoaaper.com/.
+[54] Fisher Scientiﬁc part #: A509-212 and part #: A508-P212, http://www.ﬁshersci.com/.
+[55] Whatman part #: 1442-090, http://www.whatman.com/QuantitativeFilterPapersAshlessGrades.aspx.
+[56] Sheldahl, part # 146477, http://www.sheldahl.com/.
+[57] The Doe Run Company: http://www.doerun.com/.
+[58] JL Goslar, http://www.jlgoslar.de/.
+[59] G. Drexlin et al., Nucl. Instr. Meth. A289, 490 (1990).
+[60] SDMS, http://www.sdms.fr/.
+[61] Deutsches Elektronen-Synchrotron, http://www.desy.de/.
+[62] A. Ferrari, P. R. Sala, A. Fasso, and J. Ranft, CERN-2005-010.
+[63] R. Brun, F. Carminati, and S. Giani, CERN-W5013.
+[64] R. Bernabei et al., Phys. Lett. B 546, 23 (2002).
+[65] P. Weber, Developments for double-beta-decay techniques, related to the EXO experiment , PhD
+thesis, University of Neuchatel (CH), 2006.
+[66] G. Heusser, Low-level measurements of radioactivity in the environment, techniques and
+applications, in Proceedings of the third international summer school, Huelva, Spain , edited by
+M. Garcia-Leon and R. Garcia-Tenorio, p. 69, 1993.
+[67] M. S. Gordon et al., IEEE Transactions on Nuclear Science 51, 3427 (2004).
+[68] G. Heusser, Ann. Rev. Nucl. Part. Sci. 45, 543 (1995).
+[69] T. Gaisser, Cosmic rays and particle physics (Cambridge University Press, 1990).
+[70] S. Miyake, Rapporteur Paper on Muons and Neutrinos, in Proceedings of the Cosmic Ray
+Conference, Denver CO, p. 3638, 1973.
+[71] 3M FC-87, http://www.3m.com/.
+[72] Dielectric Sciences part #: 2124, http://www.dielectricsciences.com/.
+[73] R. Wixted, Princeton University Report No. BaBar TNDC-96-37, 1996 (unpublished).
+[74] SANYO Semiconductor Co. part #: 2SK932, http://semicon.sanyo.com/en/ds_e/EN2841.pdf.
+– 43 –
+</material>
+
+You are an experienced detector physicist. Suggest the most valuable hardware upgrades for this instrument to improve its physics performance, with concrete technology choices.

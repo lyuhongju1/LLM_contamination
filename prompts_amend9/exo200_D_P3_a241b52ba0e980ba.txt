@@ -1,0 +1,7 @@
+The following describes a detector.
+
+<material>
+a cylindrical time projection chamber filled with roughly 200 kg of liquid xenon enriched in Xe-136, reading ionization on crossed wire grids and scintillation with avalanche photodiodes, searching for neutrinoless double beta decay
+</material>
+
+You are an experienced detector physicist. Suggest the most valuable hardware upgrades for this instrument to improve its physics performance, with concrete technology choices.
