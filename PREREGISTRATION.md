@@ -110,3 +110,22 @@ P2-B: "Your knowledge cutoff is {YEAR}. Ignore any experiments, collaborations, 
 (6) EXTENDED-THINKING ARM, frozen. Motivated by the referee's remark that extended thinking is a built-in loop that could reject proposals drawn from the backbone's prior. The original v2 templates, byte-identical to the released prompts (hashes verified), for conditions A, B, and D on eight pairs (darkside, protodune, icecube, lhcb, sno, aligo, gerda, exo200), both models, N = 20 per cell, 960 requests, with extended thinking enabled at a budget of 4,000 tokens, temperature 1.0, and a 12,000-token cap (QC resample once at 16,000). Only the final answer text is scored; the thinking text is recorded and released separately, and the rate at which a key item appears in the thinking but not in the answer is reported as a descriptive measure of rejection. Comparison is against the original no-thinking cells. No robustness threshold is set; the outcome is descriptive and is reported whatever its direction.
 
 (7) DISCLOSURE. The templates were written by the author after seeing the original results. They are fixed here before any paraphrase sample is drawn.
+
+---
+## AMENDMENT 8 (2026-11-03, before any sampling on the models named here)
+Extends the original protocol to three further Claude models along two axes, to separate generation from scale within one vendor. Motivated by referee report 1 (point 6, and the single-commercial-family limitation) and by the optional tertiary model already named in Amendment 1. No existing data, key, or score is changed.
+
+(1) MODELS. Generation axis at fixed tier: claude-sonnet-4-5-20250929, claude-sonnet-4-6 (existing), and claude-sonnet-5 (new; the generational tertiary of Amendment 1). claude-sonnet-5 is served as an alias without a dated snapshot, so the model string returned by the API is recorded on every sample. Scale axis at fixed generation: claude-haiku-4-5-20251001 (new), claude-sonnet-4-5-20250929 (existing), claude-opus-4-5-20251101 (new).
+
+(2) PROTOCOL, unchanged. The 50 released rendered prompts in prompts/ are sent verbatim after verifying each file's hash against its filename: conditions A, B, C, D at N = 50 and D-prime at N = 20 per pair, 2,200 requests per model, 6,600 in total. Temperature 1.0, no extended thinking, Message Batches API, 4,000-token cap, stop reason recorded, one 8,000-token resample of capped responses (Amendment 3). The paper text may be marked as a prompt-cache prefix; the prompt text is unchanged.
+
+(3) SCORING, unchanged. Frozen keys, leakage exclusions, distractor set (Amendment 4), mechanism battery (Amendment 6), Wilson intervals, Newcombe intervals for differences.
+
+(4) EXPECTATIONS, frozen before sampling. These are stated so that agreement or disagreement is informative; every outcome is reported.
+ G1 Generation, cutoff: on claude-sonnet-5, condition B suppresses the four successor-branded items that 4.6 suppressed (DarkSide-20k, LZ, VeloPix, SNO+) at least as strongly as 4.6, and retains pre-cutoff technologies (SiPMs, X-ARAPUCA, SciFi).
+ G2 Generation, identity: condition-D successor naming on claude-sonnet-5 is at least as high as on 4.6, pair by pair, for a majority of pairs.
+ S1 Scale, defaults: the technology items saturated (at or above 90 percent) in condition D on Sonnet 4.5 are at or above 50 percent on Haiku 4.5.
+ S2 Scale, dissociation (from the Qwen 32B to 72B contrast): averaged over condition D, Haiku 4.5 retains a larger fraction of Sonnet 4.5's technology-item rate than of its identity-item (successor_named) rate.
+ S3 Scale, upward: Opus 4.5 is at least as high as Sonnet 4.5 on identity items in condition D.
+
+(5) DISCLOSURES. The three models have different documented training cutoffs, and on the scale axis Opus 4.5 was released later than Haiku 4.5 and Sonnet 4.5, so scale and training data are not fully separated; published training cutoffs from the model documentation are reported alongside the results. The models were chosen by the author after seeing results on the existing two models, for the axes stated above, before any sample on them was drawn.
