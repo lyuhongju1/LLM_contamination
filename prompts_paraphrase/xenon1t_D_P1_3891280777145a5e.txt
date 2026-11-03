@@ -1,0 +1,7 @@
+Below is a short description of a physics instrument.
+
+<material>
+a dual-phase xenon time projection chamber for direct dark matter detection with roughly 2 tonnes of active target, read out by top and bottom PMT arrays inside a water Cherenkov muon veto
+</material>
+
+What changes to the hardware of the instrument described above would most improve its primary physics performance? Name specific technologies and components.

@@ -1,0 +1,7 @@
+You are advising the team that operates the instrument described below.
+
+<material>
+a kilotonne heavy-water Cherenkov detector in a deep underground cavity, viewed by an array of photomultipliers on a geodesic support structure, measuring solar neutrinos
+</material>
+
+Recommend the hardware upgrades you would prioritize to improve the instrument's main physics reach. Be specific about the technologies and components you would use.

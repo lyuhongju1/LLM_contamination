@@ -1,0 +1,7 @@
+You are advising the team that operates the instrument described below.
+
+<material>
+a dual-recycled Michelson interferometer with 4 km Fabry-Perot arm cavities, fused-silica test masses, and multi-stage seismic isolation, for gravitational-wave detection
+</material>
+
+Recommend the hardware upgrades you would prioritize to improve the instrument's main physics reach. Be specific about the technologies and components you would use.

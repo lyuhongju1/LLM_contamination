@@ -1,0 +1,7 @@
+Below is a short description of a physics instrument.
+
+<material>
+a dual-recycled Michelson interferometer with 4 km Fabry-Perot arm cavities, fused-silica test masses, and multi-stage seismic isolation, for gravitational-wave detection
+</material>
+
+What changes to the hardware of the instrument described above would most improve its primary physics performance? Name specific technologies and components.

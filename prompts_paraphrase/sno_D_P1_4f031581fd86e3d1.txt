@@ -1,0 +1,7 @@
+Below is a short description of a physics instrument.
+
+<material>
+a kilotonne heavy-water Cherenkov detector in a deep underground cavity, viewed by an array of photomultipliers on a geodesic support structure, measuring solar neutrinos
+</material>
+
+What changes to the hardware of the instrument described above would most improve its primary physics performance? Name specific technologies and components.

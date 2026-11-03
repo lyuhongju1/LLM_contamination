@@ -80,3 +80,33 @@ D-prime sampling completed: 400 samples, 397 terminating naturally, three cap-te
 
 ### Amendment 6 completion note, scale contrast (2026-08-06)
 The 72B run completed: 1,250 samples, all terminating naturally, paper conditions covering the five shortest baselines under the 32,768-token guard (a smaller subset than the 32B run's, which served at 49,152), condition D complete for all ten pairs. Outcome: salience-default items rise strongly with scale while successor naming, program-specific adopted technologies, and cutoff compliance remain absent, decomposing the frontier-model contamination into a default component that scales and an episodic component that does not appear in this family at either scale.
+---
+## AMENDMENT 7 (2026-11-03, before any paraphrase sampling)
+Motivated by referee report 1 (point 7 and the minor comment on A/D template wording). Each condition so far used a single prompt template, and the A and D templates differ in wording as well as content. This amendment adds a prompt-sensitivity study. It changes no existing score.
+
+(1) TEMPLATES, frozen here. Two paraphrase families, P1 and P2. Within each family the paper condition (A) and the description condition (D) share identical wording apart from the material supplied, removing the A/D wording confound. The cutoff condition (B) prepends a paraphrased cutoff instruction to the family's A template.
+
+P1-A: "Below is the text of a published paper describing a physics instrument.\n\n<material>\n{TEXT}\n</material>\n\nWhat changes to the hardware of the instrument described above would most improve its primary physics performance? Name specific technologies and components."
+P1-D: identical, with "Below is a short description of a physics instrument." and {GENERIC} in place of {TEXT}.
+P1-B: "Answer as of the end of {YEAR}: use only knowledge that was available by then, and nothing published, proposed, or announced afterward.\n\n" + P1-A.
+
+P2-A: "You are advising the team that operates the instrument described below.\n\n<material>\n{TEXT}\n</material>\n\nRecommend the hardware upgrades you would prioritize to improve the instrument's main physics reach. Be specific about the technologies and components you would use."
+P2-D: identical, with {GENERIC} in place of {TEXT}.
+P2-B: "Your knowledge cutoff is {YEAR}. Ignore any experiments, collaborations, technologies, or publications that appeared after {YEAR}.\n\n" + P2-A.
+
+{TEXT}, {GENERIC}, and {YEAR} are the same paper texts, condition-D generic descriptions, and years as the original sweep (keys.json). Condition C is not rerun.
+
+(2) SAMPLING, frozen. Conditions A, B, D; both families; all ten pairs; claude-sonnet-4-5-20250929 and claude-sonnet-4-6; N = 50 per cell; temperature 1.0; no extended thinking; 6,000 requests. Execution, QC, and resampling rules of Amendment 3 apply unchanged (Message Batches API, 4,000-token cap, stop reason recorded, single 8,000-token resample of capped responses). The supplied material block may be marked for prompt caching; caching does not change the prompt text, and every rendered prompt is hashed and released.
+
+(3) SCORING, frozen. The frozen keys of keys.json, the same leakage exclusions, Wilson 95 percent intervals, and Newcombe intervals for differences. No key is added or changed.
+
+(4) ROBUSTNESS CRITERIA, frozen before sampling. A finding is reported as robust to wording if it holds under both P1 and P2; otherwise the template dependence is reported as a finding.
+ R1 Saturation: each item at or above 90 percent in condition D on the original template remains at or above 75 percent in D under each family.
+ R2 Paper-triggered recall: VeloPix on Sonnet 4.5 has A minus D at or above 50 points under each family.
+ R3 Cutoff suppression on Sonnet 4.6: DarkSide-20k naming, inverted-coaxial detectors, VeloPix, and SNO+ naming each fall from A to B with a Newcombe interval excluding zero under each family.
+ R4 Anchoring: the significantly negative A minus D cells of the original template keep a negative point estimate under each family.
+ Per-item rates under all three templates and the maximum across-template shift per item are reported in full, whatever the outcome.
+
+(6) EXTENDED-THINKING ARM, frozen. Motivated by the referee's remark that extended thinking is a built-in loop that could reject proposals drawn from the backbone's prior. The original v2 templates, byte-identical to the released prompts (hashes verified), for conditions A, B, and D on eight pairs (darkside, protodune, icecube, lhcb, sno, aligo, gerda, exo200), both models, N = 20 per cell, 960 requests, with extended thinking enabled at a budget of 4,000 tokens, temperature 1.0, and a 12,000-token cap (QC resample once at 16,000). Only the final answer text is scored; the thinking text is recorded and released separately, and the rate at which a key item appears in the thinking but not in the answer is reported as a descriptive measure of rejection. Comparison is against the original no-thinking cells. No robustness threshold is set; the outcome is descriptive and is reported whatever its direction.
+
+(7) DISCLOSURE. The templates were written by the author after seeing the original results. They are fixed here before any paraphrase sample is drawn.

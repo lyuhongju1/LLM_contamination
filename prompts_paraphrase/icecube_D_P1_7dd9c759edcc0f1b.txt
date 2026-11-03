@@ -1,0 +1,7 @@
+Below is a short description of a physics instrument.
+
+<material>
+a cubic-kilometre ice Cherenkov neutrino observatory instrumented with thousands of single-PMT digital optical modules on vertical strings deep in glacial ice
+</material>
+
+What changes to the hardware of the instrument described above would most improve its primary physics performance? Name specific technologies and components.

@@ -1,0 +1,7 @@
+You are advising the team that operates the instrument described below.
+
+<material>
+a two-phase liquid argon time projection chamber for direct dark matter detection with roughly 50 kg of active target mass, read out by top and bottom arrays of 3-inch cryogenic photomultiplier tubes, operated underground with a liquid scintillator neutron veto
+</material>
+
+Recommend the hardware upgrades you would prioritize to improve the instrument's main physics reach. Be specific about the technologies and components you would use.

@@ -1,0 +1,7 @@
+You are advising the team that operates the instrument described below.
+
+<material>
+a single-arm forward spectrometer at a hadron collider optimized for heavy-flavour physics, with a silicon vertex detector around the interaction region and a hardware-plus-software trigger chain
+</material>
+
+Recommend the hardware upgrades you would prioritize to improve the instrument's main physics reach. Be specific about the technologies and components you would use.

@@ -1,0 +1,7 @@
+You are advising the team that operates the instrument described below.
+
+<material>
+a 770-tonne single-phase liquid argon time projection chamber prototype for neutrino physics, with a photon detection system of light-guide bars and dip-coated collectors embedded in the anode planes
+</material>
+
+Recommend the hardware upgrades you would prioritize to improve the instrument's main physics reach. Be specific about the technologies and components you would use.

@@ -1,0 +1,7 @@
+You are advising the team that operates the instrument described below.
+
+<material>
+an array of bare high-purity germanium diodes enriched in Ge-76, operated directly in liquid argon inside a water shield, searching for neutrinoless double beta decay
+</material>
+
+Recommend the hardware upgrades you would prioritize to improve the instrument's main physics reach. Be specific about the technologies and components you would use.
