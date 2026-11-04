@@ -11,6 +11,6 @@ All files are append-only JSONL with one record per API response. The final reco
 | `raw_amend10.jsonl` | 10 | Rerun of 9(c) with minimum reasoning per model and a 16,000-token cap; `thinking_setting` and `thinking_tokens` recorded | scored |
 | `*_batch_state.json` | 7–10 | Message Batches API batch ids, for audit | — |
 
-The concept-level judge outputs (Amendment 9 d) are withheld until the author's blind validation labels are complete, then added here.
+Amendment 9 (d) also registered a secondary concept-level scoring by a language-model judge (rubric in `judge_rubric.json`, runner in `code/run_judge.py`). It was run, but its validation against blind hand labels was not completed, so it is not used in the revision and its outputs are not released here. The regex scores are the only measure reported.
 
 Scoring scripts are in `analysis/revision/`; result tables are in `revision/`. The dating of answer-key items (referee point 1) is in `revision/dating_table.md`, and its independent re-check is in `revision/dating_verification.md`.
