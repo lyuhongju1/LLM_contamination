@@ -55,9 +55,9 @@ def api(method, path, body=None, raw_url=None):
         return [json.loads(l) for l in payload.decode().splitlines() if l.strip()]
     return json.loads(payload)
 
-def final_records(root):
+def final_records(root, sources=SOURCES):
     out = []
-    for src in SOURCES:
+    for src in sources:
         p = os.path.join(root, "data", src)
         if not os.path.exists(p): continue
         best = {}
@@ -80,14 +80,16 @@ def parse(text, keys):
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("root"); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--pilot", type=int, default=0)
+    ap.add_argument("--sources", nargs="+", default=SOURCES)
+    ap.add_argument("--tag", default="full")
     a = ap.parse_args()
     rub = json.load(open(os.path.join(HERE, "..", "judge_rubric.json") if not os.path.exists(os.path.join(HERE, "judge_rubric.json")) else os.path.join(HERE, "judge_rubric.json"), encoding="utf-8"))["pairs"]
-    recs = final_records(a.root)
+    recs = final_records(a.root, a.sources)
     print(f"{len(recs)} responses to judge: {Counter(r[1] for r in recs)}", flush=True)
     if a.pilot: recs = recs[::max(1, len(recs) // a.pilot)][:a.pilot]
     if a.dry_run:
         rid, src, k, resp = recs[0]; print(SYSTEM + "\n\n" + user_msg(k[1], rub[k[1]], resp[:400])); return
-    tag = f"pilot{a.pilot}" if a.pilot else "full"
+    tag = f"pilot{a.pilot}" if a.pilot else a.tag
     state_path = os.path.join(a.root, "data", f"judge_state_{tag}.json")
     state = json.load(open(state_path)) if os.path.exists(state_path) else {"batches": []}
     reqs = [{"custom_id": rid, "params": {"model": JUDGE, "max_tokens": 2000,
