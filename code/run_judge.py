@@ -13,7 +13,7 @@ KEY = os.environ.get("ANTHROPIC_API_KEY") or open(os.path.join(HERE, '..', '.ant
 API = "https://api.anthropic.com/v1"
 HDRS = {"Content-Type": "application/json", "x-api-key": KEY, "anthropic-version": "2023-06-01"}
 JUDGE = "claude-opus-5-5"
-SOURCES = ["raw_v2.jsonl", "raw_dprime.jsonl", "raw_local.jsonl", "raw_paraphrase.jsonl", "raw_models.jsonl", "raw_amend9.jsonl"]
+SOURCES = ["raw_v2.jsonl", "raw_dprime.jsonl", "raw_local.jsonl", "raw_paraphrase.jsonl", "raw_models.jsonl", "raw_amend9_ab.jsonl", "raw_amend10.jsonl"]
 
 SYSTEM = (
  "You are scoring responses in a study of what language models propose when asked to upgrade a physics detector. "
@@ -63,6 +63,7 @@ def final_records(root, sources=SOURCES):
         best = {}
         for l in open(p, encoding="utf-8"):
             r = json.loads(l)
+            if src == "raw_amend9_ab.jsonl" and r.get("template") == "O": continue  # superseded (Amendment 10)
             k = (r.get("template", "O"), r["pair"], r["condition"], r["model"], r["sample"])
             if k not in best or r.get("max_tokens", 0) > best[k].get("max_tokens", 0): best[k] = r
         for k, r in best.items():

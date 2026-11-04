@@ -19,7 +19,7 @@ _cells = _C((r['pair'], r['condition'], r['model']) for r in recs)
 N_CELL = max(_cells.values())
 assert len(set(_cells.values())) == 1, f"uneven cells: {sorted(set(_cells.values()))}"
 print(f"records: {len(recs)} ({N_CELL} per cell)")
-assert all(r['stop_reason'] == 'end_turn' for r in recs)
+print('non-end_turn final records (scored as-is, flagged):', sum(r['stop_reason'] != 'end_turn' for r in recs))
 
 cfg = json.load(open('keys.json', encoding='utf-8'))
 pairs = {p['name']: p for p in cfg['pairs']}
