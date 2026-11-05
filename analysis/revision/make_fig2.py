@@ -66,7 +66,7 @@ for ax, (m, title) in zip(axes, MODELS):
     ax.set_ylim(-0.7, len(sel) - 0.3)
 fig.legend(handles=[Line2D([], [], marker='o', ls='', color='black', label='A: paper'),
                     Line2D([], [], marker='o', ls='', markerfacecolor='white', markeredgecolor='black', label='B: paper with cutoff instruction')],
-           loc='lower center', ncol=2, frameon=False, fontsize=8.5, bbox_to_anchor=(0.5, -0.04))
-plt.tight_layout(rect=(0, 0.04, 1, 1)); plt.savefig(OUT, bbox_inches='tight'); plt.close()
+           loc='lower center', ncol=2, frameon=False, fontsize=8.5, bbox_to_anchor=(0.5, 0.0))
+plt.tight_layout(rect=(0, 0.035, 1, 1)); plt.savefig(OUT, bbox_inches='tight'); plt.close()
 print('LEGEND any mention (S4.6): A', loose[('A', 'claude-sonnet-4-6')], 'B', loose[('B', 'claude-sonnet-4-6')], 'D', loose[('D', 'claude-sonnet-4-6')])
 print('wrote', OUT)
