@@ -59,7 +59,8 @@ out = ["# Significant A-D cells: frozen key vs broader concept expression (explo
        "| sign | item | model | A frozen | A broad | B frozen | B broad | D frozen | D broad | A-D frozen | A-D broad [95% CI] |",
        "|---|---|---|---|---|---|---|---|---|---|---|"]
 snips = []
-for sign, lst in (('+', POS), ('-', NEG)):
+OTHER = [('xenon1t', 'radon_column', 'S4.5')]  # not significant in A-D; its A-to-B rise is quoted in the cutoff section
+for sign, lst in (('+', POS), ('-', NEG), ('n.s.', OTHER)):
     for pn, it, m in lst:
         key = keys[pn]['items'][it]['regex']; br = BROAD.get(f'{it}@{pn}', BROAD.get(it))
         row, kb = {}, {}
