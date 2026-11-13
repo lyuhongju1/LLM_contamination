@@ -42,21 +42,31 @@ MODELS = [('claude-sonnet-4-5-20250929', 'Sonnet 4.5'), ('claude-sonnet-4-6', 'S
 def rate(p, i, c, m):
     k = n[(p, c, m)]; return 100 * hits[(p, i, c, m)] / k if k else np.nan
 items.sort(key=lambda x: -sum(rate(x[0], x[1], 'A', m) for m, _ in MODELS[:2]))
-fig, axes = plt.subplots(1, 4, figsize=(12, 8.2), sharey=True)
+fig, axes = plt.subplots(1, 4, figsize=(7.4, 9.8), sharey=True)
 for ax, (m, title) in zip(axes, MODELS):
     M = np.array([[rate(p, i, c, m) for c in 'ABCD'] for p, i in items])
     ax.imshow(np.nan_to_num(M, nan=0), cmap='Greys', vmin=0, vmax=100, aspect='auto')
-    ax.set_xticks(range(4)); ax.set_xticklabels(list('ABCD')); ax.set_title(title, fontsize=10)
+    ax.set_xticks(range(4)); ax.set_xticklabels(list('ABCD')); ax.set_title(title, fontsize=10.5)
     for y in range(len(items)):
         for x in range(4):
             v = M[y, x]
             if np.isnan(v):
-                ax.add_patch(plt.Rectangle((x - .5, y - .5), 1, 1, color='white')); ax.text(x, y, '–', ha='center', va='center', fontsize=7)
+                ax.add_patch(plt.Rectangle((x - .5, y - .5), 1, 1, color='white')); ax.text(x, y, '–', ha='center', va='center', fontsize=8.5)
             else:
-                ax.text(x, y, f"{v:.0f}", ha='center', va='center', fontsize=6.5, color='white' if v > 55 else 'black')
-lab = {'successor_named': 'successor named'}
+                ax.text(x, y, f"{v:.0f}", ha="center", va="center", fontsize=7.4, color='white' if v > 55 else 'black')
+# display names, matching Table tab:dating
+PAIR = {'darkside': 'DarkSide', 'protodune': 'ProtoDUNE', 'xenon1t': 'XENON1T', 'lux': 'LUX', 'icecube': 'IceCube',
+        'gerda': 'GERDA', 'exo200': 'EXO-200', 'lhcb': 'LHCb', 'sno': 'SNO', 'aligo': 'aLIGO'}
+ITEM = {'successor_named': 'successor named', 'sipm_adoption': 'SiPM adoption', 'veto_upgrade_gd': 'Gd veto',
+        'xarapuca': 'X-ARAPUCA', 'coverage_increase': 'coverage increase', 'radon_column': 'radon column',
+        'neutron_veto': 'neutron veto', 'xenon_skin': 'xenon skin', 'outer_detector': 'outer detector',
+        'mdom': 'multi-PMT mDOM', 'degg': 'D-Egg', 'inverted_coaxial': 'inverted-coaxial',
+        'argon_instrumentation': 'argon instrumentation', 'tonne_scale': 'tonne scale', 'velopix': 'VeloPix',
+        'scifi': 'SciFi tracker', 'software_trigger': 'software trigger', 'scintillator_fill': 'scintillator fill',
+        'tellurium': 'tellurium', 'fd_squeezing': 'freq.-dep. squeezing', 'filter_cavity': 'filter cavity'}
+for ax in axes: ax.tick_params(axis='x', labelsize=9.5)
 axes[0].set_yticks(range(len(items)))
-axes[0].set_yticklabels([f"{p}: {lab.get(i, i.replace('_', ' '))}  [{CLS[(p, i)]}]" for p, i in items], fontsize=7)
+axes[0].set_yticklabels([f"{PAIR[p]}: {ITEM[i]}  [{CLS[(p, i)]}]" for p, i in items], fontsize=8.5)
 for tl, (p, i) in zip(axes[0].get_yticklabels(), items):
     if CLS[(p, i)] == 'Post': tl.set_fontweight('bold')
 plt.tight_layout(); plt.savefig(OUT, bbox_inches='tight'); plt.close()
